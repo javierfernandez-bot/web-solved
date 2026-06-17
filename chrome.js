@@ -62,10 +62,7 @@
   '<div class="footer__strip"><div class="wrap footer__strip-in">' +
     '<span class="footer__lanzadera">LANZADERA</span>' +
     '<div class="footer__eu">' +
-      '<span>GENERALITAT<br/>VALENCIANA</span>' +
-      '<span>I·V·F<br/>INSTITUT VALENCIÀ<br/>DE FINANCES</span>' +
-      '<span class="euflag">★</span>' +
-      '<span>Financiado por<br/>la Unión Europea</span>' +
+      '<img src="assets/ivf-fondo.jpg" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea"/>' +
     '</div>' +
   '</div></div>' +
   '<div class="footer__legal"><div class="wrap"><p>VOLSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: "Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.</p></div></div>' +
