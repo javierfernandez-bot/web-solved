@@ -15,7 +15,7 @@
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="auditorias.html"><b>Auditorías</b><span>Checklists proactivas y personalizadas</span></a>' +
+          '<a href="auditorias.html"><b>Registros/Checklist</b><span>Checklists proactivas y personalizadas</span></a>' +
           '<a href="incidencias.html"><b>Gestión de incidencias</b><span>Incidencias y acciones correctivas</span></a>' +
           '<a href="dashboard.html"><b>Dashboard</b><span>Datos e informes en tiempo real</span></a>' +
         '</div>' +
@@ -45,7 +45,7 @@
         '<h4>Solved</h4>' +
         '<ul>' +
           '<li><a href="index.html">Inicio</a></li>' +
-          '<li><a href="auditorias.html">Auditorías</a></li>' +
+          '<li><a href="auditorias.html">Registros/Checklist</a></li>' +
           '<li><a href="incidencias.html">Gestión de incidencias</a></li>' +
           '<li><a href="dashboard.html">Dashboard</a></li>' +
         '</ul>' +
