@@ -27,7 +27,7 @@
           '<a href="industria-alimentaria.html"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
         '</div>' +
       '</li>' +
-      '<li class="nav__item"><a class="nav__link" href="#">Blog</a></li>' +
+      '<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>' +
     '</ul>' +
     '<a class="btn btn--primary" href="' + demo + '">Solicita una demo</a>' +
   '</div></header>';
