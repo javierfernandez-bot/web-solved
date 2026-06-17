@@ -162,10 +162,13 @@ body { padding-top: 88px; }
 .bt__ico svg { width: 22px; height: 22px; }
 .bt b { font-size: 16px; font-weight: 600; color: var(--ink-900); }
 .bt p { font-size: 14px; color: var(--ink-600); margin: 8px 0 0 34px; line-height: 1.5; display: none; }
-.bt:has(p) { cursor: pointer; }
-.bt--active { background: #fff; border-color: var(--border-1); box-shadow: var(--shadow-1);
+/* abierto por defecto (primero) o al pasar el ratón */
+.bt--active, .bt:hover { background: #fff; border-color: var(--border-1); box-shadow: var(--shadow-1);
   border-left: 3px solid var(--blue); }
-.bt--active p { display: block; }
+.bt--active p, .bt:hover p { display: block; }
+/* al pasar el ratón por otro ítem, se cierra el que estaba abierto por defecto */
+.benefits-toggle:hover .bt--active:not(:hover) { background: transparent; border: 1px solid transparent; box-shadow: none; }
+.benefits-toggle:hover .bt--active:not(:hover) p { display: none; }
 
 /* =========================================================
    VALUE CARDS (home "mejor aliado")
