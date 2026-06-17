@@ -56,8 +56,12 @@ body { padding-top: 88px; }
 .nav__menu b { font-size: 20px; font-weight: 600; color: var(--ink-900); }
 .nav__menu span { font-size: 17px; color: var(--ink-400); }
 
-/* Blog embebido (WordPress en iframe), a pantalla completa bajo el header */
-.blog-frame { display: block; width: 100%; height: calc(100vh - 130px); border: 0; background: #fff; }
+/* Blog embebido (WordPress en iframe), a pantalla completa bajo el header.
+   --blog-crop = altura de la cabecera de WordPress que recortamos por arriba. */
+.blog-embed { position: relative; width: 100%; height: calc(100vh - 130px); overflow: hidden; background: #fff; }
+.blog-frame { position: absolute; left: 0; width: 100%; border: 0;
+  top: calc(-1 * var(--blog-crop, 96px));
+  height: calc(100% + var(--blog-crop, 96px)); }
 .blog-fallback { margin: 0; padding: 9px 10px; text-align: center; font-size: 13px; color: var(--ink-400); }
 .blog-fallback a { color: var(--blue); }
 
