@@ -162,7 +162,8 @@ body { padding-top: 88px; }
 .bt__ico svg { width: 22px; height: 22px; }
 .bt b { font-size: 16px; font-weight: 600; color: var(--ink-900); }
 .bt p { font-size: 14px; color: var(--ink-600); margin: 8px 0 0 34px; line-height: 1.5; display: none; }
-/* abierto por defecto (primero) o al pasar el ratón */
+.bt:has(p) { cursor: pointer; }
+/* abierto por defecto (primero), al pasar el ratón, o el seleccionado con clic */
 .bt--active, .bt:hover { background: #fff; border-color: var(--border-1); box-shadow: var(--shadow-1);
   border-left: 3px solid var(--blue); }
 .bt--active p, .bt:hover p { display: block; }

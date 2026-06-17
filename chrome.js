@@ -104,12 +104,29 @@
     }
   }
 
+  function initBenefitsToggle() {
+    var groups = document.querySelectorAll('.benefits-toggle');
+    for (var g = 0; g < groups.length; g++) {
+      (function (group) {
+        var items = group.querySelectorAll('.bt');
+        for (var i = 0; i < items.length; i++) {
+          if (!items[i].querySelector('p')) continue; // solo los que tienen descripción
+          items[i].addEventListener('click', function () {
+            for (var j = 0; j < items.length; j++) items[j].classList.remove('bt--active');
+            this.classList.add('bt--active'); // clic = se queda seleccionado
+          });
+        }
+      })(groups[g]);
+    }
+  }
+
   function inject() {
     var n = document.getElementById('nav');
     if (n) n.innerHTML = NAV;
     var f = document.getElementById('footer');
     if (f) f.innerHTML = FOOTER;
     injectHubSpot();
+    initBenefitsToggle();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject);
   else inject();
