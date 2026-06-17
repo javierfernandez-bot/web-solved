@@ -60,7 +60,7 @@
     '</div>' +
   '</div>' +
   '<div class="footer__strip"><div class="wrap footer__strip-in">' +
-    '<span class="footer__lanzadera">LANZADERA</span>' +
+    '<img class="footer__lanzadera" src="assets/lanzadera.png" alt="Lanzadera"/>' +
     '<div class="footer__eu">' +
       '<img src="assets/ivf-fondo.jpg" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea"/>' +
     '</div>' +
