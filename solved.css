@@ -271,9 +271,7 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
 .footer__in { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: var(--s-6); padding-bottom: var(--s-6); }
 .footer__brand img.f-logo { height: 30px; width: auto; display: block; margin-bottom: var(--s-2); filter: brightness(0) invert(1); }
 .footer__addr { font-size: 13px; color: rgba(255,255,255,.62); line-height: 1.55; margin: 0 0 var(--s-2); max-width: 30ch; }
-.footer__map { width: 100%; max-width: 280px; height: 130px; border-radius: var(--r-2); border: 0;
-  background: linear-gradient(135deg, #5b6b54, #7d8a6f); display: grid; place-items: center; text-align: center; }
-.footer__map span { font-size: 11px; color: rgba(255,255,255,.85); background: rgba(0,0,0,.35); padding: 6px 10px; border-radius: 4px; }
+.footer__map { width: 100%; max-width: 280px; height: 150px; border-radius: var(--r-2); border: 0; display: block; }
 .footer__social { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
   background: rgba(255,255,255,.12); color: #fff; margin-top: var(--s-2); }
 .footer__social svg { width: 16px; height: 16px; }
