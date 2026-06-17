@@ -1,0 +1,11 @@
+/* =========================================================
+   Solved · Design System — root stylesheet
+   Single entry point for consumers. Import this one file and
+   you get all Solved tokens, type, and base styles.
+
+       <link rel="stylesheet" href="styles.css">
+
+   DM Mono + Instrument Serif resolve via Google Fonts (or the
+   uploaded TTFs once present); DM Sans + Inter are bundled in fonts/.
+   ========================================================= */
+@import url('colors_and_type.css');
