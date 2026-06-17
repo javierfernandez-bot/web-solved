@@ -134,18 +134,11 @@
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contacto" data-screen-label="Dashboard · Contacto">
   <div class="wrap contact__in">
-    <form class="form-card" onsubmit="return false">
+    <div class="form-card">
       <h2>Habla con un experto en calidad industrial</h2>
-      <div class="form-row">
-        <div class="field"><label>Nombre</label><input placeholder="Nombre"/></div>
-        <div class="field"><label>Apellidos</label><input placeholder="Apellidos"/></div>
-      </div>
-      <div class="field"><label>Email empresa <span class="req">*</span></label><input placeholder="Email empresa"/></div>
-      <div class="field"><label>Número de teléfono <span class="req">*</span></label><input placeholder=""/></div>
-      <label class="check-row"><input type="checkbox"/> Quiero recibir novedades, invitaciones a eventos y noticias exclusivas. Ajusta tus preferencias en cualquier momento.</label>
-      <label class="check-row"><input type="checkbox"/> He leído y acepto la <a href="#">Política de Privacidad</a> <span class="req">*</span></label>
-      <button class="btn btn--primary" type="submit">Solicitar demostración</button>
-    </form>
+      <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689) -->
+      <div class="hs-contact-form"></div>
+    </div>
     <div class="contact__art">
       <img class="shot" src="assets/auditoria-formulario.png" alt="Solicita una demostración de Solved"/>
     </div>

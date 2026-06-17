@@ -258,18 +258,11 @@
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contacto" data-screen-label="Home · Contacto">
   <div class="wrap contact__in">
-    <form class="form-card" onsubmit="return false">
+    <div class="form-card">
       <h2>Habla con un especialista en calidad</h2>
-      <div class="form-row">
-        <div class="field"><label>Nombre</label><input placeholder="Nombre"/></div>
-        <div class="field"><label>Apellidos</label><input placeholder="Apellidos"/></div>
-      </div>
-      <div class="field"><label>Email empresa <span class="req">*</span></label><input placeholder="Email empresa"/></div>
-      <div class="field"><label>Número de teléfono <span class="req">*</span></label><input placeholder=""/></div>
-      <label class="check-row"><input type="checkbox"/> Quiero recibir novedades, invitaciones a eventos y noticias exclusivas. Ajusta tus preferencias en cualquier momento.</label>
-      <label class="check-row"><input type="checkbox"/> He leído y acepto la <a href="#">Política de Privacidad</a> <span class="req">*</span></label>
-      <button class="btn btn--primary" type="submit">Solicitar demostración</button>
-    </form>
+      <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689) -->
+      <div class="hs-contact-form"></div>
+    </div>
     <div class="contact__art">
       <img src="assets/contacto-operario.png" alt="Operario en almacén usando Solved" style="width:100%;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-2);"/>
     </div>

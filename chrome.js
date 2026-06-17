@@ -3,6 +3,11 @@
 (function () {
   var demo = '#contacto';
 
+  /* ====== HubSpot · formulario embebido ======
+     Portal 20010689 (data center na1). Pega tu Form ID de HubSpot abajo
+     y se renderizará automáticamente en cada sección de contacto. */
+  var HUBSPOT = { region: 'na1', portalId: '20010689', formId: 'f8dcbcf5-52c2-464d-a5b1-84824ce89992' };
+
   var NAV =
   '<header class="nav"><div class="wrap nav__in">' +
     '<a class="nav__logo" href="index.html"><img src="assets/logotipo-solved.png" alt="Solved"/></a>' +
@@ -66,11 +71,45 @@
   '<div class="footer__legal"><div class="wrap"><p>VOLSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: "Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.</p></div></div>' +
   '</footer>';
 
+  function buildHsForms() {
+    if (!window.hbspt || !window.hbspt.forms) return;
+    var holders = document.querySelectorAll('.hs-contact-form');
+    for (var i = 0; i < holders.length; i++) {
+      if (holders[i].getAttribute('data-hs-done')) continue;
+      if (!holders[i].id) holders[i].id = 'hs-form-' + i;
+      holders[i].setAttribute('data-hs-done', '1');
+      window.hbspt.forms.create({
+        region: HUBSPOT.region,
+        portalId: HUBSPOT.portalId,
+        formId: HUBSPOT.formId,
+        target: '#' + holders[i].id
+      });
+    }
+  }
+
+  function injectHubSpot() {
+    if (!document.querySelector('.hs-contact-form') || !HUBSPOT.formId) return;
+    if (window.hbspt && window.hbspt.forms) { buildHsForms(); return; }
+    if (!document.getElementById('hs-embed-script')) {
+      var s = document.createElement('script');
+      s.id = 'hs-embed-script';
+      s.src = 'https://js.hsforms.net/forms/embed/v2.js';
+      s.charset = 'utf-8';
+      s.onload = buildHsForms;
+      document.head.appendChild(s);
+    } else {
+      var t = setInterval(function () {
+        if (window.hbspt && window.hbspt.forms) { clearInterval(t); buildHsForms(); }
+      }, 150);
+    }
+  }
+
   function inject() {
     var n = document.getElementById('nav');
     if (n) n.innerHTML = NAV;
     var f = document.getElementById('footer');
     if (f) f.innerHTML = FOOTER;
+    injectHubSpot();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject);
   else inject();
