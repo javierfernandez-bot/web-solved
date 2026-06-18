@@ -53,8 +53,8 @@
       '<div class="footer__col">' +
         '<h4>Quick Links</h4>' +
         '<ul>' +
-          '<li><a href="#">Política de Cookies</a></li>' +
-          '<li><a href="#">Política de privacidad</a></li>' +
+          '<li><a href="politica-de-cookies.html">Política de Cookies</a></li>' +
+          '<li><a href="politica-de-privacidad.html">Política de privacidad</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
