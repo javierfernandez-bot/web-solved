@@ -74,6 +74,9 @@ body { padding-top: 88px; }
 .hero h1 .em-blue { color: var(--blue); }
 .hero__sub { font-size: 18px; line-height: 1.55; color: var(--ink-600); max-width: 50ch; margin: 0 0 var(--s-4); }
 .hero__art { position: relative; }
+/* Home: el h1 con el mismo ancho que el subtítulo (rem = mismo ancho real pese a distinta fuente) */
+body[data-screen-label="Home"] .hero h1,
+body[data-screen-label="Home"] .hero__sub { max-width: 34rem; }
 
 /* photo placeholder / image surface */
 .photo { position: relative; border-radius: var(--r-3); overflow: hidden; box-shadow: var(--shadow-3);
@@ -374,6 +377,8 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
   /* Hero */
   .hero h1 { font-size: 60px; }
   .hero__sub { font-size: 20px; max-width: 54ch; }
+  /* Home: imagen del hero ~15% más grande (columna de la imagen más ancha) */
+  body[data-screen-label="Home"] .hero__in { grid-template-columns: 1fr 1.35fr; }
   .btn--lg { padding: 17px 32px; font-size: 17px; }
 
   /* Section headings */
