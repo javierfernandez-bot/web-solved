@@ -392,7 +392,7 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
   /* "Optimiza tus procesos": altura natural, 100px arriba/abajo */
   .band-dark { padding: 100px 0; }
   /* Vídeo: altura natural, 200px arriba/abajo (no ocupa toda la pantalla) */
-  .section--video { min-height: auto; justify-content: flex-start; padding: 200px 0; }
+  .section--video { min-height: auto; justify-content: flex-start; padding: 100px 0; }
   /* Capacidades de auditorías: altura natural y poco margen arriba/abajo */
   .section--tight { min-height: auto; justify-content: flex-start; padding: var(--s-8) 0; }
   /* nav is sticky (72px); keep hero + nav to exactly one screen */
