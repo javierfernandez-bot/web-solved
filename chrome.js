@@ -117,6 +117,32 @@
     }
   }
 
+  function initCookieBanner() {
+    var KEY = 'solved_cookie_consent';
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    if (saved) return; // ya eligió antes: no volver a mostrar
+    var el = document.createElement('div');
+    el.className = 'cookie-banner';
+    el.setAttribute('role', 'dialog');
+    el.setAttribute('aria-label', 'Aviso de cookies');
+    el.innerHTML =
+      '<p class="cookie-banner__text">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="politica-de-cookies.html">Política de Cookies</a>.</p>' +
+      '<div class="cookie-banner__actions">' +
+        '<button class="btn btn--secondary" type="button" data-cookie="reject">Rechazar</button>' +
+        '<button class="btn btn--primary" type="button" data-cookie="accept">Aceptar</button>' +
+      '</div>';
+    document.body.appendChild(el);
+    requestAnimationFrame(function () { el.classList.add('cookie-banner--in'); });
+    el.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-cookie]');
+      if (!btn) return;
+      try { localStorage.setItem(KEY, btn.getAttribute('data-cookie')); } catch (e2) {}
+      el.classList.remove('cookie-banner--in');
+      setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 300);
+    });
+  }
+
   function inject() {
     var n = document.getElementById('nav');
     if (n) n.innerHTML = NAV;
@@ -124,6 +150,7 @@
     if (f) f.innerHTML = FOOTER;
     injectHubSpot();
     initBenefitsToggle();
+    initCookieBanner();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject);
   else inject();
