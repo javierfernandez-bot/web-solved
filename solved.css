@@ -29,17 +29,17 @@ img { max-width: 100%; }
 /* =========================================================
    NAV
    ========================================================= */
-.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(244,246,251,.85);
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(244,246,251,.68);
   backdrop-filter: saturate(160%) blur(12px); border-bottom: 1px solid var(--border-1); }
 /* fixed nav (88px) is out of flow — offset the page so content isn't hidden under it */
 body { padding-top: 88px; }
 /* no blue glow on the header CTA */
 .nav .btn--primary { box-shadow: none; }
 /* header elements at ~1.5x size */
-.nav .btn { padding: 13px 32px; font-size: 21px; gap: 11px; }
+.nav .btn { padding: 11px 26px; font-size: 18px; gap: 9px; }
 .nav__in { display: flex; align-items: center; gap: var(--s-3); height: 88px; }
 .nav__logo { display: flex; align-items: center; gap: 13px; }
-.nav__logo img { height: 39px; width: auto; display: block; }
+.nav__logo img { height: 46px; width: auto; display: block; }
 .nav__links { display: flex; align-items: center; gap: 3px; margin: 0 auto; list-style: none; padding: 0; }
 .nav__item { position: relative; }
 .nav__link { display: inline-flex; align-items: center; gap: 7px; background: none; border: 0;
