@@ -160,7 +160,7 @@ body { padding-top: 88px; }
 .video__frame iframe { width: 100%; height: 100%; border: 0; position: absolute; inset: 0; display: block; }
 
 /* Video section: no full-viewport height; 200px breathing room, larger frame */
-.section--video { min-height: auto; padding: 200px 0; }
+.section--video { min-height: auto; padding: 100px 0; }
 .video__play { position: relative; width: 64px; height: 64px; border-radius: 12px; background: #ff0000; color: #fff;
   display: grid; place-items: center; cursor: pointer; box-shadow: var(--shadow-2); }
 .video__play svg { width: 28px; height: 28px; margin-left: 3px; }
