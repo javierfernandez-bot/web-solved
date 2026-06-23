@@ -4,10 +4,9 @@
    (v2: "Plasma" purple accent removed — Solved uses blue + ink only.)
    ========================================================= */
 
-/* DM Mono + Instrument Serif resolve from Google Fonts here (the real
-   families — not a substitution). Replace with uploaded @font-face TTFs
-   for fully-offline use. Must stay above all other statements. */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap');
+/* DM Mono + Instrument Serif (Google Fonts) se cargan ahora vía <link> en el
+   <head> de cada página, en paralelo, para evitar el render-block encadenado
+   que provoca un @import dentro del CSS. */
 
 @font-face {
   font-family: 'DM Sans';

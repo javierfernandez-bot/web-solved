@@ -8,7 +8,7 @@ body { background: var(--bg-canvas); color: var(--fg-1); }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 var(--s-3); }
 .section { padding: var(--s-12) 0; }
 .section--tight { padding-top: var(--s-6); padding-bottom: var(--s-6); }
-img { max-width: 100%; }
+img { max-width: 100%; height: auto; }
 
 /* ---------- Buttons (pill, blue primary) ---------- */
 .btn { display: inline-flex; align-items: center; gap: 8px;
@@ -36,14 +36,14 @@ body { padding-top: 88px; }
 /* no blue glow on the header CTA */
 .nav .btn--primary { box-shadow: none; }
 /* header elements at ~1.5x size */
-.nav .btn { padding: 11px 26px; font-size: 18px; gap: 9px; }
+.nav .btn { padding: 11px 26px; font-size: 16.2px; gap: 9px; }
 .nav__in { display: flex; align-items: center; gap: var(--s-3); height: 88px; }
 .nav__logo { display: flex; align-items: center; gap: 13px; }
 .nav__logo img { height: 46px; width: auto; display: block; }
 .nav__links { display: flex; align-items: center; gap: 3px; margin: 0 auto; list-style: none; padding: 0; }
 .nav__item { position: relative; }
 .nav__link { display: inline-flex; align-items: center; gap: 7px; background: none; border: 0;
-  padding: 13px 24px; border-radius: var(--r-2); font-size: 21px; color: var(--ink-800);
+  padding: 13px 24px; border-radius: var(--r-2); font-size: 18.9px; color: var(--ink-800);
   cursor: pointer; font-weight: 500; font-family: var(--font-sans); }
 .nav__link:hover { background: var(--ink-100); color: var(--ink-900); }
 .nav__link svg { width: 19px; height: 19px; opacity: .55; }
@@ -54,8 +54,11 @@ body { padding-top: 88px; }
 .nav__item:hover .nav__menu { opacity: 1; visibility: visible; transform: translateY(0); }
 .nav__menu a { display: flex; flex-direction: column; gap: 3px; padding: 15px 18px; border-radius: var(--r-1); cursor: pointer; }
 .nav__menu a:hover { background: var(--ink-50); }
-.nav__menu b { font-size: 20px; font-weight: 600; color: var(--ink-900); }
-.nav__menu span { font-size: 17px; color: var(--ink-400); }
+.nav__menu b { font-size: 18px; font-weight: 600; color: var(--ink-900); }
+.nav__menu span { font-size: 15.3px; color: var(--ink-400); }
+/* hamburguesa y CTA móvil: ocultos en escritorio */
+.nav__toggle { display: none; }
+.nav__cta-mobile { display: none; }
 
 /* Blog embebido (WordPress en iframe), a pantalla completa bajo el header.
    --blog-crop = altura de la cabecera de WordPress que recortamos por arriba. */
@@ -231,6 +234,15 @@ body { padding-top: 88px; }
 .check { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--ink-700, var(--ink-800)); }
 .check svg { width: 20px; height: 20px; color: var(--blue); flex: 0 0 auto; margin-top: 1px; }
 
+/* Sección "La herramienta que se adapta…" (Auditorías): más margen arriba y textos +25% */
+.section--capabilities { margin-top: 20px; }
+.section--capabilities .section-head h2 { font-size: 47.5px; } /* móvil/tablet: 38 × 1.25 */
+.section--capabilities .check { font-size: 18.75px; }          /* 25 × 0.75 */
+.section--capabilities .check svg { width: 25px; height: 25px; }
+@media (min-width: 1001px) {
+  .section--capabilities .section-head h2 { font-size: 55px; } /* escritorio: 44 × 1.25 */
+}
+
 /* feature rows w/ inline icon list (auditorías / incidencias detail) */
 .feat-list { display: flex; flex-direction: column; gap: var(--s-3); }
 .feat { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; }
@@ -238,6 +250,27 @@ body { padding-top: 88px; }
 .feat__ico svg { width: 26px; height: 26px; }
 .feat b { font-size: 16px; color: var(--ink-900); display: block; margin-bottom: 3px; }
 .feat p { font-size: 14.5px; color: var(--ink-600); margin: 0; line-height: 1.5; }
+
+/* Secciones "Planifica…" (Auditorías) y "Detecta…" (Incidencias): contenido +33%, mismas proporciones */
+.section--planifica .feat p,
+.section--detecta .feat p { font-size: 19.3px; }              /* 14.5 × 1.33 */
+.section--planifica .feat b,
+.section--detecta .feat b { font-size: 21.3px; }              /* 16 × 1.33 (solo afecta a Detecta, que tiene títulos) */
+.section--planifica .feat__ico, .section--planifica .feat__ico svg,
+.section--detecta .feat__ico, .section--detecta .feat__ico svg { width: 35px; height: 35px; }
+
+/* =========================================================
+   FAQ (acordeón nativo <details>, accesible y sin JS)
+   ========================================================= */
+.faq { width: 820px; max-width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.faq__item { border: 1px solid var(--border-1); border-radius: var(--r-2); background: #fff; overflow: hidden; }
+.faq__item summary { cursor: pointer; padding: 18px 22px; font-size: 18px; font-weight: 600;
+  color: var(--ink-900); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after { content: "+"; font-size: 26px; line-height: 1; font-weight: 400; color: var(--blue); flex: 0 0 auto; transition: transform var(--dur-base) var(--ease-standard); }
+.faq__item[open] summary::after { content: "−"; }
+.faq__a { padding: 0 22px 18px; }
+.faq__a p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink-600); }
 
 /* =========================================================
    RESULT STAT CARDS (blue gradient squares)
@@ -249,6 +282,12 @@ body { padding-top: 88px; }
   box-shadow: var(--shadow-2); }
 .rstat b { font-size: 44px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
 .rstat span { font-size: 13.5px; color: rgba(255,255,255,.85); margin-top: 14px; line-height: 1.4; }
+
+/* Sección "Resultados que hablan por sí mismos" (Auditorías): textos y cuadrados +25% */
+.section--results-big .results { max-width: 80vw; }           /* ancho de la sección = 80% de la pantalla */
+.section--results-big .rstat { width: 300px; }                /* 240 × 1.25 (aspect-ratio mantiene la proporción) */
+.section--results-big .rstat b { font-size: 55px; }           /* 44 × 1.25 */
+.section--results-big .rstat span { font-size: 16.9px; }      /* 13.5 × 1.25 */
 
 /* =========================================================
    TESTIMONIALS
@@ -341,8 +380,56 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
   .statline { grid-template-columns: 1fr 1fr; gap: var(--s-4) var(--s-2); }
   .pain-grid { grid-template-columns: 1fr 1fr; }
   .check-grid { grid-template-columns: 1fr 1fr; }
-  .nav__links { display: none; }
   .footer__in { grid-template-columns: 1fr 1fr; }
+
+  /* ---- Header móvil: logo izquierda (más pequeño) + hamburguesa derecha ---- */
+  .nav__logo img { height: 34px; }
+  .nav__cta-desktop { display: none; }       /* el CTA pasa al panel desplegable */
+
+  .nav__toggle {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+    margin-left: auto; width: 44px; height: 44px; padding: 10px;
+    background: none; border: 0; cursor: pointer;
+  }
+  .nav__toggle span {
+    display: block; height: 2.5px; width: 100%; border-radius: 2px;
+    background: var(--ink-900); transition: transform var(--dur-base) var(--ease-standard), opacity var(--dur-base) var(--ease-standard);
+  }
+  .nav--open .nav__toggle span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+  .nav--open .nav__toggle span:nth-child(2) { opacity: 0; }
+  .nav--open .nav__toggle span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+  /* Panel desplegable bajo el header */
+  .nav__links {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 2px; margin: 0;
+    padding: var(--s-2) var(--s-3) var(--s-3);
+    background: rgba(244,246,251,.98); backdrop-filter: saturate(160%) blur(12px);
+    border-bottom: 1px solid var(--border-1); box-shadow: var(--shadow-2);
+    max-height: calc(100vh - 88px); overflow-y: auto;
+    display: none;
+  }
+  .nav--open .nav__links { display: flex; }
+
+  .nav__item { width: 100%; }
+  .nav__link { width: 100%; justify-content: space-between; font-size: 17.1px; }
+  .nav__link svg { transition: transform var(--dur-base) var(--ease-standard); }
+  .nav__item--open > .nav__link svg { transform: rotate(180deg); }
+
+  /* Submenús como acordeón (estáticos, sin hover) */
+  .nav__menu {
+    position: static; min-width: 0; opacity: 1; visibility: visible; transform: none;
+    border: 0; box-shadow: none; background: transparent; padding: 0 0 6px 12px;
+    display: none; transition: none;
+  }
+  .nav__item:hover .nav__menu { opacity: 1; visibility: visible; } /* anula el hover de escritorio */
+  .nav__item--open .nav__menu { display: block; }
+  .nav__menu b { font-size: 15.3px; }
+  .nav__menu span { font-size: 12.6px; }
+
+  /* CTA dentro del panel */
+  .nav__cta-mobile { display: block; margin-top: var(--s-2); }
+  .nav__cta-mobile .btn { width: 100%; text-align: center; justify-content: center; }
 }
 @media (max-width: 600px) {
   .statline, .pain-grid, .check-grid, .form-row, .footer__in { grid-template-columns: 1fr; }

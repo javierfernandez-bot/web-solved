@@ -10,7 +10,7 @@
 
   var NAV =
   '<header class="nav"><div class="wrap nav__in">' +
-    '<a class="nav__logo" href="index.html"><img src="assets/logotipo-solved.png" alt="Solved"/></a>' +
+    '<a class="nav__logo" href="index.html"><img src="assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
     '<ul class="nav__links">' +
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
@@ -28,15 +28,19 @@
         '</div>' +
       '</li>' +
       '<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>' +
+      '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Solicita una demo</a></li>' +
     '</ul>' +
-    '<a class="btn btn--primary" href="' + demo + '">Solicita una demo</a>' +
+    '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Solicita una demo</a>' +
+    '<button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">' +
+      '<span></span><span></span><span></span>' +
+    '</button>' +
   '</div></header>';
 
   var FOOTER =
   '<footer class="footer"><div class="wrap">' +
     '<div class="footer__in">' +
       '<div class="footer__brand">' +
-        '<img class="f-logo" src="assets/logotipo-solved.png" alt="Solved"/>' +
+        '<img class="f-logo" src="assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" loading="lazy" decoding="async"/>' +
         '<p class="footer__addr">Edificio Angels, Sc Puerto, 13, Poblados Marítimos, 46024 Valencia</p>' +
         '<iframe class="footer__map" src="https://maps.google.com/maps?q=Edificio%20Angels%2C%20Carrer%20del%20Port%2013%2C%2046024%20Valencia&z=16&output=embed" title="Ubicación de Solved — Edificio Angels, Valencia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>' +
         '<a class="footer__social" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21H19.6v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg></a>' +
@@ -60,9 +64,9 @@
     '</div>' +
   '</div>' +
   '<div class="footer__strip"><div class="wrap footer__strip-in">' +
-    '<img class="footer__lanzadera" src="assets/lanzadera.png" alt="Lanzadera"/>' +
+    '<img class="footer__lanzadera" src="assets/lanzadera.webp" alt="Lanzadera" width="1280" height="260" loading="lazy" decoding="async"/>' +
     '<div class="footer__eu">' +
-      '<img src="assets/ivf-fondo.jpg" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea"/>' +
+      '<img src="assets/ivf-fondo.webp" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea" width="2238" height="403" loading="lazy" decoding="async"/>' +
     '</div>' +
   '</div></div>' +
   '<div class="footer__legal"><div class="wrap"><p>VOLSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: "Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.</p></div></div>' +
@@ -117,6 +121,45 @@
     }
   }
 
+  function initMobileNav() {
+    var header = document.querySelector('.nav');
+    if (!header) return;
+    var toggle = header.querySelector('.nav__toggle');
+    var mq = window.matchMedia('(max-width: 1000px)');
+
+    // Hamburguesa: abre/cierra el panel
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav--open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      });
+    }
+
+    // Acordeón en móvil: los <button> (Productos, Industrias) despliegan su submenú al tocarlos
+    var triggers = header.querySelectorAll('.nav__item > button.nav__link');
+    for (var i = 0; i < triggers.length; i++) {
+      triggers[i].addEventListener('click', function () {
+        if (!mq.matches) return; // en escritorio sigue funcionando con hover
+        var item = this.parentNode;
+        var wasOpen = item.classList.contains('nav__item--open');
+        var items = header.querySelectorAll('.nav__item');
+        for (var j = 0; j < items.length; j++) items[j].classList.remove('nav__item--open');
+        if (!wasOpen) item.classList.add('nav__item--open');
+      });
+    }
+
+    // Al volver a escritorio, limpia el estado móvil
+    mq.addEventListener('change', function (e) {
+      if (!e.matches) {
+        header.classList.remove('nav--open');
+        var op = header.querySelectorAll('.nav__item--open');
+        for (var k = 0; k < op.length; k++) op[k].classList.remove('nav__item--open');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); }
+      }
+    });
+  }
+
   function initCookieBanner() {
     var KEY = 'solved_cookie_consent';
     var saved = null;
@@ -150,6 +193,7 @@
     if (f) f.innerHTML = FOOTER;
     injectHubSpot();
     initBenefitsToggle();
+    initMobileNav();
     initCookieBanner();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject);

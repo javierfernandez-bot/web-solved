@@ -1,0 +1,7 @@
+# robots.txt — https://trysolved.com
+# Se permite el rastreo completo (incluidos CSS y fuentes de /_ds/, necesarios
+# para que Google renderice e indexe correctamente en mobile-first).
+User-agent: *
+Allow: /
+
+Sitemap: https://trysolved.com/sitemap.xml
