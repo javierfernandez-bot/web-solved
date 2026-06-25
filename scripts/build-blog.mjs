@@ -13,7 +13,7 @@ import { config } from './config.mjs';
 import { getPosts } from './lib/wp.mjs';
 import { optimizeImage, buildPicture, cleanImageOutput } from './lib/images.mjs';
 import { collectImageUrls, sanitizeContent } from './lib/sanitize.mjs';
-import { renderPost, renderIndex, card, formatDateES, readingMinutes } from './lib/templates.mjs';
+import { renderPost, renderIndex, card, formatDateES, readingMinutes, clampWords } from './lib/templates.mjs';
 import { writeSitemap } from './lib/sitemap.mjs';
 
 const { OUT_DIR, SITE_URL, POSTS_PER_PAGE, RELATED_COUNT } = config;
@@ -34,7 +34,7 @@ function makeCardItem(post, blogPrefix, featuredMap) {
   return {
     slug: post.slug,
     title: post.title,
-    excerpt: post.excerpt,
+    excerpt: clampWords(post.excerpt, 100), // máx 100 palabras en las tarjetas
     cat: post.primaryCategory ? post.primaryCategory.name : null,
     dateISO: post.datePublished,
     dateText: formatDateES(post.datePublished),

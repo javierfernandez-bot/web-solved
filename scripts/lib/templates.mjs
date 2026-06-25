@@ -26,6 +26,12 @@ export function readingMinutes(text = '') {
   const words = text.trim().split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 200));
 }
+// Recorta un texto a un máximo de palabras (añade … si se cortó).
+export function clampWords(text = '', max = 100) {
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  if (words.length <= max) return text.trim();
+  return words.slice(0, max).join(' ').replace(/[.,;:]$/, '') + '…';
+}
 
 // <head> común a índice y post.
 function head({ title, description, canonical, ogType = 'website', ogImage = null, ogImageW = 1200, ogImageH = 630, jsonLdArray = [], rootPrefix }) {
