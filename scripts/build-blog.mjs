@@ -34,7 +34,7 @@ function makeCardItem(post, blogPrefix, featuredMap) {
   return {
     slug: post.slug,
     title: post.title,
-    excerpt: clampWords(post.excerpt, 100), // máx 100 palabras en las tarjetas
+    excerpt: clampWords(post.excerpt, 30), // máx 30 palabras en las tarjetas
     cat: post.primaryCategory ? post.primaryCategory.name : null,
     dateISO: post.datePublished,
     dateText: formatDateES(post.datePublished),
