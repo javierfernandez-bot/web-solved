@@ -58,8 +58,9 @@
       try {
         var doc = frame.contentDocument || frame.contentWindow.document;
         var style = doc.createElement('style');
-        // Ocultar footer de WP y bloquear su scroll interno por si acaso.
-        style.textContent = 'footer, .footer, .footer__strip, .footer__legal { display: none !important; }'
+        // Ocultar footer de WP (varios temas/markup posibles) y bloquear su scroll interno.
+        style.textContent = 'footer, .footer, #colophon, .site-footer, .footer__strip, .footer__legal,'
+                          + ' [class*="site-footer"], [id*="footer"] { display: none !important; }'
                           + 'html, body { overflow: hidden !important; }';
         doc.head.appendChild(style);
       } catch (e) { /* cross-origin en desarrollo: se ignora */ }
