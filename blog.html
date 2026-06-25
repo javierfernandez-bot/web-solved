@@ -28,20 +28,48 @@
 <!-- El footer único de la web lo inyecta chrome.js aquí -->
 <div id="footer"></div>
 
-<!-- Ocultar el footer de WordPress dentro del iframe para que no se duplique.
+<!-- Integrar el blog de WordPress: ocultar su footer (no duplicar el nuestro) y
+     ajustar el alto del iframe al de su contenido para que NO tenga scroll propio;
+     así toda la página comparte un único scroll.
      Mismo origen en producción (trysolved.com); en desarrollo cross-origin el try/catch lo ignora. -->
 <script>
   (function () {
     var frame = document.querySelector('.blog-frame');
-    if (!frame) return;
+    var embed = document.querySelector('.blog-embed');
+    if (!frame || !embed) return;
+
+    // Recorte de la cabecera de WP (px reales, resueltos desde --blog-crop en CSS).
+    function cropPx() { return -parseFloat(getComputedStyle(frame).top) || 0; }
+
+    function fit() {
+      try {
+        var doc = frame.contentDocument || frame.contentWindow.document;
+        var h = Math.max(
+          doc.body ? doc.body.scrollHeight : 0,
+          doc.documentElement ? doc.documentElement.scrollHeight : 0
+        );
+        if (!h) return;
+        frame.style.height = h + 'px';                 // iframe = alto del contenido → sin scroll interno
+        embed.style.height = Math.max(0, h - cropPx()) + 'px'; // contenedor = contenido menos la cabecera recortada
+      } catch (e) { /* cross-origin en desarrollo: se ignora */ }
+    }
+
     frame.addEventListener('load', function () {
       try {
         var doc = frame.contentDocument || frame.contentWindow.document;
         var style = doc.createElement('style');
-        style.textContent = 'footer, .footer, .footer__strip, .footer__legal { display: none !important; }';
+        // Ocultar footer de WP y bloquear su scroll interno por si acaso.
+        style.textContent = 'footer, .footer, .footer__strip, .footer__legal { display: none !important; }'
+                          + 'html, body { overflow: hidden !important; }';
         doc.head.appendChild(style);
       } catch (e) { /* cross-origin en desarrollo: se ignora */ }
+      fit();
+      // Re-medir cuando acaben de cargar fuentes/imágenes y cambien la altura.
+      setTimeout(fit, 400);
+      setTimeout(fit, 1500);
     });
+
+    window.addEventListener('resize', fit);
   })();
 </script>
 

@@ -60,13 +60,14 @@ body { padding-top: 88px; }
 .nav__toggle { display: none; }
 .nav__cta-mobile { display: none; }
 
-/* Blog embebido (WordPress en iframe), a pantalla completa bajo el header.
-   --blog-crop = altura de la cabecera de WordPress que recortamos por arriba. */
-.blog-embed { --blog-crop: 11vh; position: relative; width: 100%; height: calc(100vh - 88px); overflow: hidden; background: #fff; }
-/* iframe a 100vh para que el vh de dentro coincida con el de la página y el recorte sea exacto */
+/* Blog embebido (WordPress en iframe), integrado en el flujo de la página.
+   --blog-crop = altura de la cabecera de WordPress que recortamos por arriba.
+   La altura del iframe y del contenedor las fija chrome de blog.html en JS
+   (= alto real del contenido), así el iframe no tiene scroll propio y toda la
+   página comparte un único scroll. min-height es solo el fallback antes del JS. */
+.blog-embed { --blog-crop: 11vh; position: relative; width: 100%; min-height: calc(100vh - 88px); overflow: hidden; background: #fff; }
 .blog-frame { position: absolute; left: 0; width: 100%; border: 0;
-  top: calc(-1 * var(--blog-crop));
-  height: 100vh; }
+  top: calc(-1 * var(--blog-crop)); }
 
 /* =========================================================
    HERO (light, two columns)
