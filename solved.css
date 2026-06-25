@@ -66,8 +66,12 @@ body { padding-top: 88px; }
    (= alto real del contenido), así el iframe no tiene scroll propio y toda la
    página comparte un único scroll. min-height es solo el fallback antes del JS. */
 .blog-embed { --blog-crop: 11vh; position: relative; width: 100%; min-height: calc(100vh - 88px); overflow: hidden; background: #fff; }
+/* height: 100vh es el FALLBACK (cross-origin / antes del JS): el blog se ve con su
+   propio scroll. En producción (mismo origen) el JS de blog.html sustituye este alto
+   por el del contenido real y desaparece el scroll interno. */
 .blog-frame { position: absolute; left: 0; width: 100%; border: 0;
-  top: calc(-1 * var(--blog-crop)); }
+  top: calc(-1 * var(--blog-crop));
+  height: 100vh; }
 
 /* =========================================================
    HERO (light, two columns)
