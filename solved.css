@@ -60,19 +60,6 @@ body { padding-top: 88px; }
 .nav__toggle { display: none; }
 .nav__cta-mobile { display: none; }
 
-/* Blog embebido (WordPress en iframe), integrado en el flujo de la página.
-   --blog-crop = altura de la cabecera de WordPress que recortamos por arriba.
-   La altura del iframe y del contenedor las fija chrome de blog.html en JS
-   (= alto real del contenido), así el iframe no tiene scroll propio y toda la
-   página comparte un único scroll. min-height es solo el fallback antes del JS. */
-.blog-embed { --blog-crop: 11vh; position: relative; width: 100%; min-height: calc(100vh - 88px); overflow: hidden; background: #fff; }
-/* height: 100vh es el FALLBACK (cross-origin / antes del JS): el blog se ve con su
-   propio scroll. En producción (mismo origen) el JS de blog.html sustituye este alto
-   por el del contenido real y desaparece el scroll interno. */
-.blog-frame { position: absolute; left: 0; width: 100%; border: 0;
-  top: calc(-1 * var(--blog-crop));
-  height: 100vh; }
-
 /* =========================================================
    HERO (light, two columns)
    ========================================================= */
@@ -539,4 +526,117 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
   /* Contact */
   .form-card { padding: var(--s-8); }
   .form-card h2 { font-size: 30px; }
+}
+
+/* =========================================================
+   BLOG (generado desde WordPress headless · build-blog.mjs)
+   Reutiliza los design tokens del sistema. Sin estética nueva:
+   mismas fuentes, colores, sombras y radios que el resto del sitio.
+   ========================================================= */
+
+/* ---- Índice del blog ---- */
+.blog-index { padding-top: var(--s-8); }
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--s-4);
+  margin-top: var(--s-6);
+}
+.blog-card {
+  display: flex; flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-1);
+  border-radius: var(--r-3);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.blog-card:hover { box-shadow: var(--shadow-3); transform: translateY(-3px); }
+.blog-card__media { display: block; aspect-ratio: 16 / 9; background: var(--ink-50); overflow: hidden; }
+.blog-card__media--empty { background: linear-gradient(115deg, var(--blue-700), var(--blue-900)); }
+.blog-card__img, .blog-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.blog-card__body { display: flex; flex-direction: column; gap: 10px; padding: var(--s-3); flex: 1; }
+.blog-card__cat {
+  align-self: flex-start;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .04em;
+  color: var(--blue-600); background: var(--blue-50);
+  padding: 4px 10px; border-radius: var(--r-1);
+}
+.blog-card__title { font-size: 21px; line-height: 1.25; letter-spacing: -0.015em; margin: 0; }
+.blog-card__title a { color: var(--fg-1); text-decoration: none; }
+.blog-card__title a:hover { color: var(--blue-600); }
+.blog-card__excerpt { color: var(--fg-2); font-size: 15px; line-height: 1.55; margin: 0; flex: 1; }
+.blog-card__meta { color: var(--fg-3); font-size: 13px; margin: 0; }
+
+/* Paginación */
+.blog-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin-top: var(--s-8); }
+.blog-pager__num, .blog-pager__link {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 40px; height: 40px; padding: 0 12px;
+  border: 1px solid var(--border-1); border-radius: var(--r-1);
+  color: var(--fg-1); text-decoration: none; font-weight: 600; font-size: 15px;
+  background: var(--bg-surface);
+}
+.blog-pager__num:hover, .blog-pager__link:hover { border-color: var(--blue-300); color: var(--blue-600); }
+.blog-pager__num--current { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+/* ---- Página de post ---- */
+.post { padding: var(--s-8) 0 var(--s-12); }
+.post__wrap { max-width: 760px; }
+.post__crumbs { font-size: 13.5px; color: var(--fg-3); margin-bottom: var(--s-4); }
+.post__crumbs a { color: var(--fg-2); text-decoration: none; }
+.post__crumbs a:hover { color: var(--blue-600); }
+.post__crumbs span { margin: 0 6px; }
+.post__head { margin-bottom: var(--s-4); }
+.post__cat {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: 12.5px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .04em;
+  color: var(--blue-600); background: var(--blue-50);
+  padding: 4px 10px; border-radius: var(--r-1); margin-bottom: var(--s-2);
+}
+.post__head h1 { font-size: 40px; line-height: 1.12; letter-spacing: -0.025em; margin: 0 0 var(--s-2); }
+.post__meta { color: var(--fg-3); font-size: 14.5px; margin: 0; }
+.post__cover { margin: var(--s-4) 0 var(--s-6); border-radius: var(--r-3); overflow: hidden; box-shadow: var(--shadow-2); }
+.post__cover img { width: 100%; height: auto; display: block; }
+
+/* Tipografía del cuerpo del artículo */
+.post__body { color: var(--fg-1); font-size: 18px; line-height: 1.7; }
+.post__body > * + * { margin-top: var(--s-3); }
+.post__body h2 { font-size: 28px; line-height: 1.25; letter-spacing: -0.02em; margin-top: var(--s-6); }
+.post__body h3 { font-size: 22px; line-height: 1.3; letter-spacing: -0.015em; margin-top: var(--s-4); }
+.post__body h4 { font-size: 19px; margin-top: var(--s-4); }
+.post__body p { margin-bottom: 0; }
+.post__body a { color: var(--fg-link); text-decoration: underline; text-underline-offset: 2px; }
+.post__body a:hover { color: var(--blue-700); }
+.post__body ul, .post__body ol { padding-left: 1.4em; }
+.post__body li { margin-top: 8px; }
+.post__body img, .post__body picture { max-width: 100%; height: auto; border-radius: var(--r-2); }
+.post__body figure { margin: var(--s-4) 0; }
+.post__body figure img, .post__body figure picture { width: 100%; box-shadow: var(--shadow-1); }
+.post__body figcaption { color: var(--fg-3); font-size: 14px; text-align: center; margin-top: 10px; }
+.post__body blockquote {
+  border-left: 3px solid var(--blue); background: var(--ink-50);
+  padding: var(--s-3) var(--s-4); border-radius: 0 var(--r-2) var(--r-2) 0;
+  font-family: var(--font-serif); font-size: 22px; line-height: 1.4; color: var(--ink-800);
+}
+.post__body code {
+  font-family: var(--font-mono); font-size: .9em;
+  background: var(--ink-100); padding: 2px 6px; border-radius: var(--r-1);
+}
+.post__body pre { background: var(--ink-900); color: #fff; padding: var(--s-3); border-radius: var(--r-2); overflow: auto; }
+.post__body pre code { background: none; padding: 0; color: inherit; }
+.post__body table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.post__body th, .post__body td { border: 1px solid var(--border-1); padding: 10px 12px; text-align: left; }
+.post__foot { margin-top: var(--s-8); padding-top: var(--s-6); border-top: 1px solid var(--border-1); }
+.post__related { margin-top: var(--s-8); }
+.post__related > h2 { font-size: 24px; letter-spacing: -0.02em; margin-bottom: var(--s-4); }
+.blog-grid--related { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+
+@media (max-width: 600px) {
+  .post__head h1 { font-size: 30px; }
+  .post__body { font-size: 17px; }
+  .post__body h2 { font-size: 24px; }
+  .post__body blockquote { font-size: 19px; }
 }

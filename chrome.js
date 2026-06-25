@@ -1,33 +1,43 @@
 /* Solved · shared chrome — nav + footer injected into #nav and #footer.
-   Plain vanilla JS so every page stays light and directly editable. */
+   Plain vanilla JS so every page stays light and directly editable.
+
+   PATH-AWARE: this file may be loaded from the site root (chrome.js) or from a
+   nested blog post (../../chrome.js). We derive ROOT from this script's own
+   resolved URL so every internal link/asset works at any depth and on any host
+   (trysolved.com OR the github.io project page). */
 (function () {
-  var demo = '#contacto';
+  // ---- Root prefix: absolute URL of the folder that contains this script ----
+  var ME = document.currentScript;
+  var ROOT = (ME && ME.src) ? ME.src.replace(/[?#].*$/, '').replace(/[^/]+$/, '') : '';
+
+  // El CTA de demo apunta al #contacto de la propia página si existe; si no
+  // (p. ej. dentro de un post del blog), lleva al contacto de la home.
+  var demo = document.getElementById('contacto') ? '#contacto' : ROOT + 'index.html#contacto';
 
   /* ====== HubSpot · formulario embebido ======
-     Portal 20010689 (data center na1). Pega tu Form ID de HubSpot abajo
-     y se renderizará automáticamente en cada sección de contacto. */
+     Portal 20010689 (data center na1). */
   var HUBSPOT = { region: 'na1', portalId: '20010689', formId: 'f8dcbcf5-52c2-464d-a5b1-84824ce89992' };
 
   var NAV =
   '<header class="nav"><div class="wrap nav__in">' +
-    '<a class="nav__logo" href="index.html"><img src="assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
+    '<a class="nav__logo" href="' + ROOT + 'index.html"><img src="' + ROOT + 'assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
     '<ul class="nav__links">' +
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="auditorias.html"><b>Registros/Checklist</b><span>Checklists proactivas y personalizadas</span></a>' +
-          '<a href="incidencias.html"><b>Gestión de incidencias</b><span>Incidencias y acciones correctivas</span></a>' +
-          '<a href="dashboard.html"><b>Dashboard</b><span>Datos e informes en tiempo real</span></a>' +
+          '<a href="' + ROOT + 'auditorias.html"><b>Registros/Checklist</b><span>Checklists proactivas y personalizadas</span></a>' +
+          '<a href="' + ROOT + 'incidencias.html"><b>Gestión de incidencias</b><span>Incidencias y acciones correctivas</span></a>' +
+          '<a href="' + ROOT + 'dashboard.html"><b>Dashboard</b><span>Datos e informes en tiempo real</span></a>' +
         '</div>' +
       '</li>' +
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Industrias <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="industria-general.html"><b>Industria general</b><span>Fabricación y procesos</span></a>' +
-          '<a href="industria-alimentaria.html"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
+          '<a href="' + ROOT + 'industria-general.html"><b>Industria general</b><span>Fabricación y procesos</span></a>' +
+          '<a href="' + ROOT + 'industria-alimentaria.html"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
         '</div>' +
       '</li>' +
-      '<li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>' +
+      '<li class="nav__item"><a class="nav__link" href="' + ROOT + 'blog/">Blog</a></li>' +
       '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Solicita una demo</a></li>' +
     '</ul>' +
     '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Solicita una demo</a>' +
@@ -40,7 +50,7 @@
   '<footer class="footer"><div class="wrap">' +
     '<div class="footer__in">' +
       '<div class="footer__brand">' +
-        '<img class="f-logo" src="assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" loading="lazy" decoding="async"/>' +
+        '<img class="f-logo" src="' + ROOT + 'assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" loading="lazy" decoding="async"/>' +
         '<p class="footer__addr">Edificio Angels, Sc Puerto, 13, Poblados Marítimos, 46024 Valencia</p>' +
         '<iframe class="footer__map" src="https://maps.google.com/maps?q=Edificio%20Angels%2C%20Carrer%20del%20Port%2013%2C%2046024%20Valencia&z=16&output=embed" title="Ubicación de Solved — Edificio Angels, Valencia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>' +
         '<a class="footer__social" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21H19.6v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg></a>' +
@@ -48,25 +58,26 @@
       '<div class="footer__col">' +
         '<h4>Solved</h4>' +
         '<ul>' +
-          '<li><a href="index.html">Inicio</a></li>' +
-          '<li><a href="auditorias.html">Registros/Checklist</a></li>' +
-          '<li><a href="incidencias.html">Gestión de incidencias</a></li>' +
-          '<li><a href="dashboard.html">Dashboard</a></li>' +
+          '<li><a href="' + ROOT + 'index.html">Inicio</a></li>' +
+          '<li><a href="' + ROOT + 'auditorias.html">Registros/Checklist</a></li>' +
+          '<li><a href="' + ROOT + 'incidencias.html">Gestión de incidencias</a></li>' +
+          '<li><a href="' + ROOT + 'dashboard.html">Dashboard</a></li>' +
+          '<li><a href="' + ROOT + 'blog/">Blog</a></li>' +
         '</ul>' +
       '</div>' +
       '<div class="footer__col">' +
         '<h4>Quick Links</h4>' +
         '<ul>' +
-          '<li><a href="politica-de-cookies.html">Política de Cookies</a></li>' +
-          '<li><a href="politica-de-privacidad.html">Política de privacidad</a></li>' +
+          '<li><a href="' + ROOT + 'politica-de-cookies.html">Política de Cookies</a></li>' +
+          '<li><a href="' + ROOT + 'politica-de-privacidad.html">Política de privacidad</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
   '</div>' +
   '<div class="footer__strip"><div class="wrap footer__strip-in">' +
-    '<img class="footer__lanzadera" src="assets/lanzadera.webp" alt="Lanzadera" width="1280" height="260" loading="lazy" decoding="async"/>' +
+    '<img class="footer__lanzadera" src="' + ROOT + 'assets/lanzadera.webp" alt="Lanzadera" width="1280" height="260" loading="lazy" decoding="async"/>' +
     '<div class="footer__eu">' +
-      '<img src="assets/ivf-fondo.webp" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea" width="2238" height="403" loading="lazy" decoding="async"/>' +
+      '<img src="' + ROOT + 'assets/ivf-fondo.webp" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea" width="2238" height="403" loading="lazy" decoding="async"/>' +
     '</div>' +
   '</div></div>' +
   '<div class="footer__legal"><div class="wrap"><p>VOLSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: "Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.</p></div></div>' +
@@ -170,7 +181,7 @@
     el.setAttribute('role', 'dialog');
     el.setAttribute('aria-label', 'Aviso de cookies');
     el.innerHTML =
-      '<p class="cookie-banner__text">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="politica-de-cookies.html">Política de Cookies</a>.</p>' +
+      '<p class="cookie-banner__text">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="' + ROOT + 'politica-de-cookies.html">Política de Cookies</a>.</p>' +
       '<div class="cookie-banner__actions">' +
         '<button class="btn btn--secondary" type="button" data-cookie="reject">Rechazar</button>' +
         '<button class="btn btn--primary" type="button" data-cookie="accept">Aceptar</button>' +
