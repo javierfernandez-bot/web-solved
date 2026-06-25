@@ -20,10 +20,30 @@
 
 <div id="nav"></div>
 
-<!-- ============ BLOG (WordPress embebido, sin su cabecera) ============ -->
+<!-- ============ BLOG (WordPress embebido, sin su cabecera ni su footer) ============ -->
 <div class="blog-embed">
   <iframe class="blog-frame" src="https://trysolved.com/blog/" title="Blog de Solved"></iframe>
 </div>
+
+<!-- El footer único de la web lo inyecta chrome.js aquí -->
+<div id="footer"></div>
+
+<!-- Ocultar el footer de WordPress dentro del iframe para que no se duplique.
+     Mismo origen en producción (trysolved.com); en desarrollo cross-origin el try/catch lo ignora. -->
+<script>
+  (function () {
+    var frame = document.querySelector('.blog-frame');
+    if (!frame) return;
+    frame.addEventListener('load', function () {
+      try {
+        var doc = frame.contentDocument || frame.contentWindow.document;
+        var style = doc.createElement('style');
+        style.textContent = 'footer, .footer, .footer__strip, .footer__legal { display: none !important; }';
+        doc.head.appendChild(style);
+      } catch (e) { /* cross-origin en desarrollo: se ignora */ }
+    });
+  })();
+</script>
 
 <script src="chrome.js?v=20260623b"></script>
 </body>

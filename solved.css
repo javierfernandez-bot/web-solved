@@ -436,7 +436,7 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
   .hero h1 { font-size: 32px; }
   .section { padding: var(--s-8) 0; }
   .logos-track { gap: var(--s-6); }
-  .logos-track img { height: 40px; }
+  .logos-track img { height: 64px; }
 }
 
 /* =========================================================
@@ -453,7 +453,7 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
           mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
 .logos-track { display: flex; align-items: center; gap: var(--s-8); width: max-content; will-change: transform; }
-.logos-track img { height: 48px; width: auto; object-fit: contain; opacity: .85; flex: 0 0 auto; }
+.logos-track img { height: 77px; width: auto; object-fit: contain; opacity: .85; flex: 0 0 auto; }
 .logos-track--left  { animation: marquee-left  45s linear infinite; }
 .logos-track--right { animation: marquee-right 45s linear infinite; }
 .logos-carousel:hover .logos-track { animation-play-state: paused; }
@@ -504,7 +504,7 @@ img.quote__av { object-fit: cover; object-position: center 20%; }
   .statline { gap: var(--s-6); }
   .statline b { font-size: 72px; }
   .statline span { font-size: 16px; }
-  .logos-track img { height: 72px; }
+  .logos-track img { height: 115px; }
   .logos-track { gap: var(--s-12); }
 
   /* Video */
