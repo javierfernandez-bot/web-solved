@@ -8,6 +8,7 @@ import { config } from '../config.mjs';
 const { SITE_URL, ASSET_VERSION, ORG } = config;
 const V = `?v=${ASSET_VERSION}`;
 const DS = '_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css';
+const FONT_PRELOAD = '_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2';
 
 const MONTHS_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
@@ -70,6 +71,7 @@ ${graph}
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="${rootPrefix}${FONT_PRELOAD}"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
 <link rel="stylesheet" href="${rootPrefix}${DS}${V}"/>
 <link rel="stylesheet" href="${rootPrefix}solved.css${V}"/>
