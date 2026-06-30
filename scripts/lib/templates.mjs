@@ -33,6 +33,15 @@ export function clampWords(text = '', max = 100) {
   if (words.length <= max) return text.trim();
   return words.slice(0, max).join(' ').replace(/[.,;:]$/, '') + '…';
 }
+// Recorta a ~max caracteres en frontera de palabra, para meta description
+// (objetivo SEO ~150-160). Evita cortar a mitad de palabra y añade … si recorta.
+export function clampChars(text = '', max = 155) {
+  const t = text.replace(/\s+/g, ' ').trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).replace(/[.,;:–—-]$/, '').trim() + '…';
+}
 
 // <head> común a índice y post.
 function head({ title, description, canonical, ogType = 'website', ogImage = null, ogImageW = 1200, ogImageH = 630, jsonLdArray = [], rootPrefix }) {
@@ -96,12 +105,13 @@ function breadcrumbLd(items) {
 export function renderPost(post, ctx) {
   const { rootPrefix, blogPrefix, coverHtml, bodyHtml, canonical, ogImage, related, dateText, dateISO, modISO, readMins } = ctx;
   const cat = post.primaryCategory ? post.primaryCategory.name : null;
+  const metaDescription = clampChars(post.excerpt, 155);
 
   const blogPostLd = {
     '@type': 'BlogPosting',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
     headline: post.title,
-    description: post.excerpt,
+    description: metaDescription,
     image: ogImage ? [ogImage] : undefined,
     datePublished: dateISO,
     dateModified: modISO || dateISO,
@@ -125,8 +135,8 @@ export function renderPost(post, ctx) {
     : '';
 
   return `${head({
-    title: `${post.title} · Blog de Solved`,
-    description: post.excerpt,
+    title: `${post.title} · Solved`,
+    description: metaDescription,
     canonical,
     ogType: 'article',
     ogImage,
