@@ -12,11 +12,11 @@
 name: Rebuild blog
 
 on:
-  workflow_dispatch: {}          # solo botón manual en la pestaña Actions (Fase 1)
-  # Cron desactivado: en Fase 1 el blog se regenera a mano (npm run build:blog).
-  # Para activarlo en Fase 2, descomenta:
-  # schedule:
-  #   - cron: '0 6 * * *'        # cada día a las 06:00 UTC
+  workflow_dispatch: {}          # botón manual en la pestaña Actions (siempre disponible)
+  schedule:
+    # Cada día a las 19:00 UTC, ~1,5 h después del publicador diario de Make
+    # (que publica en WP sobre las 17:27 UTC) para recoger el post del día.
+    - cron: '0 19 * * *'
 
 permissions:
   contents: write                # para commitear el /blog regenerado
