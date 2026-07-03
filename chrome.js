@@ -37,7 +37,13 @@
           '<a href="' + ROOT + 'industria-alimentaria.html"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
         '</div>' +
       '</li>' +
-      '<li class="nav__item"><a class="nav__link" href="' + ROOT + 'blog/">Blog</a></li>' +
+      '<li class="nav__item">' +
+        '<button class="nav__link" type="button">Recursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
+        '<div class="nav__menu">' +
+          '<a href="' + ROOT + 'blog/"><b>Blog</b><span>Artículos y guías de calidad e industria</span></a>' +
+          '<a href="' + ROOT + 'glosario/"><b>Glosario</b><span>Términos industriales explicados</span></a>' +
+        '</div>' +
+      '</li>' +
       '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Solicita una demo</a></li>' +
     '</ul>' +
     '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Solicita una demo</a>' +
@@ -63,6 +69,7 @@
           '<li><a href="' + ROOT + 'incidencias.html">Gestión de incidencias</a></li>' +
           '<li><a href="' + ROOT + 'dashboard.html">Dashboard</a></li>' +
           '<li><a href="' + ROOT + 'blog/">Blog</a></li>' +
+          '<li><a href="' + ROOT + 'glosario/">Glosario</a></li>' +
         '</ul>' +
       '</div>' +
       '<div class="footer__col">' +

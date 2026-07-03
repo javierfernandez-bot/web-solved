@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png"/>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
+<title>Glosario de calidad y seguridad alimentaria · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Diccionario de términos clave en trazabilidad, calidad y operaciones de fábrica para la industria agroalimentaria."/>
+<link rel="canonical" href="https://trysolved.com/glosario/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#1E6BFF"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Solved"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:url" content="https://trysolved.com/glosario/"/>
+<meta property="og:title" content="Glosario de calidad y seguridad alimentaria · Solved"/>
+<meta property="og:description" content="Diccionario de términos clave en trazabilidad, calidad y operaciones de fábrica para la industria agroalimentaria."/>
+<meta property="og:image" content="https://trysolved.com/assets/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Glosario de calidad y seguridad alimentaria · Solved"/>
+<meta name="twitter:description" content="Diccionario de términos clave en trazabilidad, calidad y operaciones de fábrica para la industria agroalimentaria."/>
+<meta name="twitter:image" content="https://trysolved.com/assets/og-image.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"DefinedTermSet","@id":"https://trysolved.com/glosario/","name":"Glosario industrial de Solved","description":"Glosario de términos de calidad, producción y mejora continua en la industria.","url":"https://trysolved.com/glosario/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"Glosario","item":"https://trysolved.com/glosario/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
+<link rel="stylesheet" href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260623b"/>
+<link rel="stylesheet" href="../solved.css?v=20260623b"/>
+<!-- Estilos MÍNIMOS y locales, solo para el buscador/filtro A–Z. Usan los tokens
+     del design system (mismos colores, radios y tipografías del resto del sitio). -->
+<style>
+  .gloss-tools{display:flex;flex-wrap:wrap;gap:var(--s-4);align-items:center;justify-content:space-between;margin-bottom:var(--s-6)}
+  .gloss-search{flex:1 1 260px;max-width:440px;padding:.7rem 1rem;font:inherit;color:var(--fg-1);background:var(--bg-surface);border:1px solid var(--border-1);border-radius:var(--r-pill)}
+  .gloss-search:focus{outline:none;border-color:var(--blue)}
+  .gloss-az{display:flex;flex-wrap:wrap;gap:.3rem;list-style:none;padding:0;margin:0}
+  .gloss-az__btn{min-width:2rem;padding:.35rem .55rem;font:inherit;font-size:var(--fs-small);line-height:1;color:var(--fg-2);background:var(--bg-surface);border:1px solid var(--border-1);border-radius:var(--r-2);cursor:pointer;transition:color var(--dur-fast) var(--ease-standard),background var(--dur-fast) var(--ease-standard),border-color var(--dur-fast) var(--ease-standard)}
+  .gloss-az__btn:hover:not(:disabled){color:var(--fg-1);border-color:var(--border-2)}
+  .gloss-az__btn--active{color:var(--fg-on-blue);background:var(--blue);border-color:var(--blue)}
+  .gloss-az__btn:disabled{opacity:.35;cursor:default}
+  .gloss-term__sigla{font-family:var(--font-mono);color:var(--blue)}
+  .gloss-empty{color:var(--fg-3);padding:var(--s-6) 0;display:none}
+</style>
+</head>
+<body data-screen-label="Glosario">
+
+<div id="nav"></div>
+
+<section class="section blog-index">
+  <div class="wrap">
+    <header class="section-head">
+      <h1>Glosario de calidad y seguridad alimentaria</h1>
+      <p>Diccionario de términos clave en trazabilidad, calidad y operaciones de fábrica para la industria agroalimentaria.</p>
+    </header>
+
+    <!-- Buscador + filtro A–Z (JS vanilla, sin librerías). Las letras sin
+         términos se deshabilitan solas; al añadir términos se activan. -->
+    <div class="gloss-tools">
+      <input id="glossSearch" class="gloss-search" type="search" placeholder="Buscar término (p. ej. OEE, trazabilidad…)" aria-label="Buscar término en el glosario" autocomplete="off"/>
+      <ul class="gloss-az" id="glossAZ" aria-label="Filtrar por letra inicial">
+        <li><button class="gloss-az__btn gloss-az__btn--active" type="button" data-letter="">Todas</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="A">A</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="B">B</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="C">C</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="D">D</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="E">E</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="F">F</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="G">G</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="H">H</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="I">I</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="J">J</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="K">K</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="L">L</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="M">M</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="N">N</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="O">O</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="P">P</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="Q">Q</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="R">R</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="S">S</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="T">T</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="U">U</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="V">V</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="W">W</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="X">X</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="Y">Y</button></li>
+        <li><button class="gloss-az__btn" type="button" data-letter="Z">Z</button></li>
+      </ul>
+    </div>
+
+    <!-- ===================== LISTADO DE TÉRMINOS =====================
+      CÓMO AÑADIR UN TÉRMINO NUEVO:
+      1. Copia el bloque <article class="blog-card gloss-term"> … </article> de OEE.
+      2. data-letter = letra inicial en MAYÚSCULA (por la que se filtra en A–Z).
+      3. data-text  = texto en minúsculas y SIN acentos para el buscador
+         (incluye sigla + nombre completo + sinónimos).
+      4. El enlace apunta a /glosario/[slug]/ (una carpeta por término, con su
+         propio index.html — copia la plantilla de /glosario/oee/index.html).
+      Mantén las tarjetas ordenadas alfabéticamente para lectura humana.
+    -->
+    <div class="blog-grid" id="glossList">
+
+      <article class="blog-card gloss-term" data-letter="A" data-text="accion correctiva y preventiva (capa) metodologia para eliminar la causa de una no conformidad (correctiva) y evitar que vuelva a ocurrir (preventiva). estructura la mejora continua y es un requisito habitual en auditorias de certificacion.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">A</span>
+          <h2 class="blog-card__title"><a href="accion-correctiva-y-preventiva-capa/">Acción correctiva y preventiva (CAPA)</a></h2>
+          <p class="blog-card__excerpt">Metodología para eliminar la causa de una no conformidad (correctiva) y evitar que vuelva a ocurrir (preventiva). Estructura la mejora continua y es un requisito habitual en auditorías de certificación.</p>
+          <p class="blog-card__meta"><a href="accion-correctiva-y-preventiva-capa/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="A" data-text="alergenos sustancias que pueden provocar reacciones adversas (gluten, frutos secos, lacteos, etc.). su gestion exige control de contaminacion cruzada, etiquetado preciso y validacion de limpieza entre producciones.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">A</span>
+          <h2 class="blog-card__title"><a href="alergenos/">Alérgenos</a></h2>
+          <p class="blog-card__excerpt">Sustancias que pueden provocar reacciones adversas (gluten, frutos secos, lácteos, etc.). Su gestión exige control de contaminación cruzada, etiquetado preciso y validación de limpieza entre producciones.</p>
+          <p class="blog-card__meta"><a href="alergenos/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="A" data-text="analisis de causa raiz tecnica para identificar el origen real de un problema (5 porques, ishikawa) en lugar de tratar solo sus sintomas. evita que la misma incidencia se repita y reduce costes de no calidad.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">A</span>
+          <h2 class="blog-card__title"><a href="analisis-de-causa-raiz/">Análisis de causa raíz</a></h2>
+          <p class="blog-card__excerpt">Técnica para identificar el origen real de un problema (5 Porqués, Ishikawa) en lugar de tratar solo sus síntomas. Evita que la misma incidencia se repita y reduce costes de no calidad.</p>
+          <p class="blog-card__meta"><a href="analisis-de-causa-raiz/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="A" data-text="appcc (haccp) sistema de analisis de peligros y puntos de control critico. metodologia preventiva reconocida internacionalmente para identificar, evaluar y controlar los riesgos de seguridad alimentaria en cada fase del proceso productivo.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">A</span>
+          <h2 class="blog-card__title"><a href="appcc-haccp/">APPCC (HACCP)</a></h2>
+          <p class="blog-card__excerpt">Sistema de Análisis de Peligros y Puntos de Control Crítico. Metodología preventiva reconocida internacionalmente para identificar, evaluar y controlar los riesgos de seguridad alimentaria en cada fase del proceso productivo.</p>
+          <p class="blog-card__meta"><a href="appcc-haccp/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="A" data-text="auditoria de calidad evaluacion sistematica e independiente para verificar que los procesos cumplen normas, procedimientos internos y requisitos legales. puede ser interna, de cliente o de certificacion (ifs, brcgs, iso).">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">A</span>
+          <h2 class="blog-card__title"><a href="auditoria-de-calidad/">Auditoría de calidad</a></h2>
+          <p class="blog-card__excerpt">Evaluación sistemática e independiente para verificar que los procesos cumplen normas, procedimientos internos y requisitos legales. Puede ser interna, de cliente o de certificación (IFS, BRCGS, ISO).</p>
+          <p class="blog-card__meta"><a href="auditoria-de-calidad/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="A" data-text="auditoria interna evaluacion realizada por la propia organizacion para verificar su sistema de gestion antes de auditorias externas. detecta desviaciones a tiempo y demuestra madurez del sistema de calidad.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">A</span>
+          <h2 class="blog-card__title"><a href="auditoria-interna/">Auditoría interna</a></h2>
+          <p class="blog-card__excerpt">Evaluación realizada por la propia organización para verificar su sistema de gestión antes de auditorías externas. Detecta desviaciones a tiempo y demuestra madurez del sistema de calidad.</p>
+          <p class="blog-card__meta"><a href="auditoria-interna/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="B" data-text="brcgs brand reputation compliance global standards. esquema de certificacion de seguridad alimentaria de referencia internacional, especialmente demandado por el mercado britanico y la gran distribucion.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">B</span>
+          <h2 class="blog-card__title"><a href="brcgs/">BRCGS</a></h2>
+          <p class="blog-card__excerpt">Brand Reputation Compliance Global Standards. Esquema de certificación de seguridad alimentaria de referencia internacional, especialmente demandado por el mercado británico y la gran distribución.</p>
+          <p class="blog-card__meta"><a href="brcgs/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="C" data-text="contaminacion cruzada transferencia no intencionada de contaminantes o alergenos entre productos, superficies o equipos. prevenirla requiere procedimientos de limpieza, segregacion de flujos y registros de verificacion.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">C</span>
+          <h2 class="blog-card__title"><a href="contaminacion-cruzada/">Contaminación cruzada</a></h2>
+          <p class="blog-card__excerpt">Transferencia no intencionada de contaminantes o alérgenos entre productos, superficies o equipos. Prevenirla requiere procedimientos de limpieza, segregación de flujos y registros de verificación.</p>
+          <p class="blog-card__meta"><a href="contaminacion-cruzada/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="C" data-text="control de proceso vigilancia y registro de parametros criticos (temperatura, peso, ph, tiempo) durante la fabricacion para asegurar que el producto cumple especificaciones. la captura digital reduce errores y desviaciones.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">C</span>
+          <h2 class="blog-card__title"><a href="control-de-proceso/">Control de proceso</a></h2>
+          <p class="blog-card__excerpt">Vigilancia y registro de parámetros críticos (temperatura, peso, pH, tiempo) durante la fabricación para asegurar que el producto cumple especificaciones. La captura digital reduce errores y desviaciones.</p>
+          <p class="blog-card__meta"><a href="control-de-proceso/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="C" data-text="control estadistico de proceso (spc) uso de datos y graficos de control para vigilar la variabilidad de un proceso y detectar desviaciones antes de que generen producto no conforme. aumenta la estabilidad y reduce mermas.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">C</span>
+          <h2 class="blog-card__title"><a href="control-estadistico-de-proceso-spc/">Control estadístico de proceso (SPC)</a></h2>
+          <p class="blog-card__excerpt">Uso de datos y gráficos de control para vigilar la variabilidad de un proceso y detectar desviaciones antes de que generen producto no conforme. Aumenta la estabilidad y reduce mermas.</p>
+          <p class="blog-card__meta"><a href="control-estadistico-de-proceso-spc/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="F" data-text="ficha tecnica de producto documento con las especificaciones de un producto: composicion, caracteristicas fisico-quimicas, alergenos, conservacion y vida util. es clave para clientes, auditorias y etiquetado.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">F</span>
+          <h2 class="blog-card__title"><a href="ficha-tecnica-de-producto/">Ficha técnica de producto</a></h2>
+          <p class="blog-card__excerpt">Documento con las especificaciones de un producto: composición, características físico-químicas, alérgenos, conservación y vida útil. Es clave para clientes, auditorías y etiquetado.</p>
+          <p class="blog-card__meta"><a href="ficha-tecnica-de-producto/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="F" data-text="fssc 22000 esquema de certificacion reconocido por gfsi que combina iso 22000, los ppr sectoriales y requisitos adicionales. muy extendido en la industria de fabricacion de alimentos.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">F</span>
+          <h2 class="blog-card__title"><a href="fssc-22000/">FSSC 22000</a></h2>
+          <p class="blog-card__excerpt">Esquema de certificación reconocido por GFSI que combina ISO 22000, los PPR sectoriales y requisitos adicionales. Muy extendido en la industria de fabricación de alimentos.</p>
+          <p class="blog-card__meta"><a href="fssc-22000/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="G" data-text="gestion documental organizacion, control de versiones y acceso a la documentacion de calidad (procedimientos, registros, certificados). centralizarla digitalmente garantiza trabajar siempre con la version vigente y simplifica las auditorias.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">G</span>
+          <h2 class="blog-card__title"><a href="gestion-documental/">Gestión documental</a></h2>
+          <p class="blog-card__excerpt">Organización, control de versiones y acceso a la documentación de calidad (procedimientos, registros, certificados). Centralizarla digitalmente garantiza trabajar siempre con la versión vigente y simplifica las auditorías.</p>
+          <p class="blog-card__meta"><a href="gestion-documental/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="G" data-text="gfsi (global food safety initiative) iniciativa que reconoce y armoniza los principales esquemas de certificacion de seguridad alimentaria (ifs, brcgs, fssc 22000), facilitando su aceptacion por la distribucion internacional.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">G</span>
+          <h2 class="blog-card__title"><a href="gfsi/">GFSI (Global Food Safety Initiative)</a></h2>
+          <p class="blog-card__excerpt">Iniciativa que reconoce y armoniza los principales esquemas de certificación de seguridad alimentaria (IFS, BRCGS, FSSC 22000), facilitando su aceptación por la distribución internacional.</p>
+          <p class="blog-card__meta"><a href="gfsi/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="I" data-text="ifs food international featured standard. norma de certificacion reconocida por gfsi que evalua la seguridad y calidad de productos y procesos en fabricacion de alimentos, muy exigida por la distribucion europea.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">I</span>
+          <h2 class="blog-card__title"><a href="ifs-food/">IFS Food</a></h2>
+          <p class="blog-card__excerpt">International Featured Standard. Norma de certificación reconocida por GFSI que evalúa la seguridad y calidad de productos y procesos en fabricación de alimentos, muy exigida por la distribución europea.</p>
+          <p class="blog-card__meta"><a href="ifs-food/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="I" data-text="indicadores de no calidad metricas del coste de los fallos: reprocesos, mermas, reclamaciones, devoluciones. cuantificarlas convierte la calidad en un argumento economico y prioriza la mejora.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">I</span>
+          <h2 class="blog-card__title"><a href="indicadores-de-no-calidad/">Indicadores de no calidad</a></h2>
+          <p class="blog-card__excerpt">Métricas del coste de los fallos: reprocesos, mermas, reclamaciones, devoluciones. Cuantificarlas convierte la calidad en un argumento económico y prioriza la mejora.</p>
+          <p class="blog-card__meta"><a href="indicadores-de-no-calidad/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="I" data-text="inocuidad alimentaria garantia de que un alimento no provocara dano al consumirse segun su uso previsto. se sustenta en el control de peligros biologicos, quimicos y fisicos a lo largo de toda la cadena de fabricacion.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">I</span>
+          <h2 class="blog-card__title"><a href="inocuidad-alimentaria/">Inocuidad alimentaria</a></h2>
+          <p class="blog-card__excerpt">Garantía de que un alimento no provocará daño al consumirse según su uso previsto. Se sustenta en el control de peligros biológicos, químicos y físicos a lo largo de toda la cadena de fabricación.</p>
+          <p class="blog-card__meta"><a href="inocuidad-alimentaria/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="I" data-text="inspeccion de recepcion verificacion de materias primas y envases a su llegada frente a especificaciones acordadas. bloquear lo no conforme en la entrada evita problemas de calidad aguas abajo.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">I</span>
+          <h2 class="blog-card__title"><a href="inspeccion-de-recepcion/">Inspección de recepción</a></h2>
+          <p class="blog-card__excerpt">Verificación de materias primas y envases a su llegada frente a especificaciones acordadas. Bloquear lo no conforme en la entrada evita problemas de calidad aguas abajo.</p>
+          <p class="blog-card__meta"><a href="inspeccion-de-recepcion/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="I" data-text="iso 22000 norma internacional que integra los principios appcc en un sistema de gestion de la seguridad alimentaria (sgsa), aplicable a cualquier organizacion de la cadena alimentaria.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">I</span>
+          <h2 class="blog-card__title"><a href="iso-22000/">ISO 22000</a></h2>
+          <p class="blog-card__excerpt">Norma internacional que integra los principios APPCC en un sistema de gestión de la seguridad alimentaria (SGSA), aplicable a cualquier organización de la cadena alimentaria.</p>
+          <p class="blog-card__meta"><a href="iso-22000/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="K" data-text="kpi de produccion indicador clave que mide el desempeno de la fabrica: productividad, calidad, mermas, incidencias u oee. los kpi en tiempo real habilitan decisiones operativas agiles y mejora continua.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">K</span>
+          <h2 class="blog-card__title"><a href="kpi-de-produccion/">KPI de producción</a></h2>
+          <p class="blog-card__excerpt">Indicador clave que mide el desempeño de la fábrica: productividad, calidad, mermas, incidencias u OEE. Los KPI en tiempo real habilitan decisiones operativas ágiles y mejora continua.</p>
+          <p class="blog-card__meta"><a href="kpi-de-produccion/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="L" data-text="liberacion de producto decision de calidad que autoriza la salida de un lote tras verificar que cumple todas las especificaciones y controles. un flujo digital agiliza la liberacion y deja evidencia auditable.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">L</span>
+          <h2 class="blog-card__title"><a href="liberacion-de-producto/">Liberación de producto</a></h2>
+          <p class="blog-card__excerpt">Decisión de calidad que autoriza la salida de un lote tras verificar que cumple todas las especificaciones y controles. Un flujo digital agiliza la liberación y deja evidencia auditable.</p>
+          <p class="blog-card__meta"><a href="liberacion-de-producto/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="L" data-text="loteo / codificacion de lote asignacion de un identificador unico a cada agrupacion de producto fabricado. es la base de la trazabilidad ascendente y descendente y del control de vida util.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">L</span>
+          <h2 class="blog-card__title"><a href="loteo-codificacion-de-lote/">Loteo / codificación de lote</a></h2>
+          <p class="blog-card__excerpt">Asignación de un identificador único a cada agrupación de producto fabricado. Es la base de la trazabilidad ascendente y descendente y del control de vida útil.</p>
+          <p class="blog-card__meta"><a href="loteo-codificacion-de-lote/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="M" data-text="materia prima insumo que entra en el proceso productivo antes de su transformacion. su control de recepcion, especificaciones y trazabilidad determina la calidad del producto final.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">M</span>
+          <h2 class="blog-card__title"><a href="materia-prima/">Materia prima</a></h2>
+          <p class="blog-card__excerpt">Insumo que entra en el proceso productivo antes de su transformación. Su control de recepción, especificaciones y trazabilidad determina la calidad del producto final.</p>
+          <p class="blog-card__meta"><a href="materia-prima/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="M" data-text="mejora continua (kaizen) enfoque de optimizacion constante de procesos mediante pequenos cambios sostenidos. se apoya en datos de planta, kpi e historico de incidencias para identificar oportunidades.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">M</span>
+          <h2 class="blog-card__title"><a href="mejora-continua-kaizen/">Mejora continua (Kaizen)</a></h2>
+          <p class="blog-card__excerpt">Enfoque de optimización constante de procesos mediante pequeños cambios sostenidos. Se apoya en datos de planta, KPI e histórico de incidencias para identificar oportunidades.</p>
+          <p class="blog-card__meta"><a href="mejora-continua-kaizen/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="M" data-text="mermas perdidas de producto o materia prima durante el proceso (roturas, descartes, reprocesos, caducidades). medir y analizar las mermas es una de las palancas mas directas para mejorar la rentabilidad de la fabrica.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">M</span>
+          <h2 class="blog-card__title"><a href="mermas/">Mermas</a></h2>
+          <p class="blog-card__excerpt">Pérdidas de producto o materia prima durante el proceso (roturas, descartes, reprocesos, caducidades). Medir y analizar las mermas es una de las palancas más directas para mejorar la rentabilidad de la fábrica.</p>
+          <p class="blog-card__meta"><a href="mermas/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="M" data-text="mes (sistema de ejecucion de fabricacion) software que controla las operaciones de planta en tiempo real, conectando la planificacion del erp con la ejecucion en taller. complementa al erp aportando trazabilidad y control de proceso.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">M</span>
+          <h2 class="blog-card__title"><a href="mes/">MES (Sistema de Ejecución de Fabricación)</a></h2>
+          <p class="blog-card__excerpt">Software que controla las operaciones de planta en tiempo real, conectando la planificación del ERP con la ejecución en taller. Complementa al ERP aportando trazabilidad y control de proceso.</p>
+          <p class="blog-card__meta"><a href="mes/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="N" data-text="no conformidad incumplimiento de un requisito de calidad, seguridad alimentaria o especificacion detectado durante la produccion o inspeccion. su gestion sistematica —registro, analisis de causa raiz y accion correctiva— reduce reprocesos, mermas y reclamaciones de clientes.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">N</span>
+          <h2 class="blog-card__title"><a href="no-conformidad/">No conformidad</a></h2>
+          <p class="blog-card__excerpt">Incumplimiento de un requisito de calidad, seguridad alimentaria o especificación detectado durante la producción o inspección. Su gestión sistemática —registro, análisis de causa raíz y acción correctiva— reduce reprocesos, mermas y reclamaciones de clientes.</p>
+          <p class="blog-card__meta"><a href="no-conformidad/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="O" data-text="oee (eficiencia general de los equipos) metrica que combina disponibilidad, rendimiento y calidad para cuantificar la eficiencia real de una linea o maquina. es el estandar para detectar perdidas ocultas en produccion.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">O</span>
+          <h2 class="blog-card__title"><a href="oee/">OEE (Eficiencia General de los Equipos)</a></h2>
+          <p class="blog-card__excerpt">Métrica que combina disponibilidad, rendimiento y calidad para cuantificar la eficiencia real de una línea o máquina. Es el estándar para detectar pérdidas ocultas en producción.</p>
+          <p class="blog-card__meta"><a href="oee/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="P" data-text="plan de limpieza y desinfeccion (l+d) programa documentado de higiene de instalaciones y equipos, con frecuencias, productos y responsables. su verificacion es clave para prevenir contaminacion y superar auditorias.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">P</span>
+          <h2 class="blog-card__title"><a href="plan-de-limpieza-y-desinfeccion-ld/">Plan de limpieza y desinfección (L+D)</a></h2>
+          <p class="blog-card__excerpt">Programa documentado de higiene de instalaciones y equipos, con frecuencias, productos y responsables. Su verificación es clave para prevenir contaminación y superar auditorías.</p>
+          <p class="blog-card__meta"><a href="plan-de-limpieza-y-desinfeccion-ld/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="P" data-text="prerrequisitos (ppr) condiciones y actividades basicas de higiene necesarias para mantener un entorno seguro (mantenimiento, control de plagas, formacion, l+d). son la base sobre la que se construye el sistema appcc.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">P</span>
+          <h2 class="blog-card__title"><a href="prerrequisitos-ppr/">Prerrequisitos (PPR)</a></h2>
+          <p class="blog-card__excerpt">Condiciones y actividades básicas de higiene necesarias para mantener un entorno seguro (mantenimiento, control de plagas, formación, L+D). Son la base sobre la que se construye el sistema APPCC.</p>
+          <p class="blog-card__meta"><a href="prerrequisitos-ppr/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="P" data-text="punto de control critico (pcc) fase del proceso donde se aplica un control esencial para prevenir, eliminar o reducir un peligro alimentario a niveles aceptables. cada pcc requiere limites criticos definidos, vigilancia continua y registros documentados.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">P</span>
+          <h2 class="blog-card__title"><a href="punto-de-control-critico-pcc/">Punto de Control Crítico (PCC)</a></h2>
+          <p class="blog-card__excerpt">Fase del proceso donde se aplica un control esencial para prevenir, eliminar o reducir un peligro alimentario a niveles aceptables. Cada PCC requiere límites críticos definidos, vigilancia continua y registros documentados.</p>
+          <p class="blog-card__meta"><a href="punto-de-control-critico-pcc/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="R" data-text="reclamacion a proveedor comunicacion formal por un incumplimiento en materias primas, envases o servicios (calidad, cantidad, plazos o documentacion). gestionarlas de forma trazable protege margenes y alimenta la evaluacion objetiva de proveedores.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">R</span>
+          <h2 class="blog-card__title"><a href="reclamacion-a-proveedor/">Reclamación a proveedor</a></h2>
+          <p class="blog-card__excerpt">Comunicación formal por un incumplimiento en materias primas, envases o servicios (calidad, cantidad, plazos o documentación). Gestionarlas de forma trazable protege márgenes y alimenta la evaluación objetiva de proveedores.</p>
+          <p class="blog-card__meta"><a href="reclamacion-a-proveedor/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="R" data-text="registro de calidad documento o dato que evidencia el cumplimiento de controles y procedimientos en planta. digitalizar los registros elimina el papel, agiliza las auditorias y convierte los datos en indicadores accesibles en tiempo real.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">R</span>
+          <h2 class="blog-card__title"><a href="registro-de-calidad/">Registro de calidad</a></h2>
+          <p class="blog-card__excerpt">Documento o dato que evidencia el cumplimiento de controles y procedimientos en planta. Digitalizar los registros elimina el papel, agiliza las auditorías y convierte los datos en indicadores accesibles en tiempo real.</p>
+          <p class="blog-card__meta"><a href="registro-de-calidad/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="R" data-text="retirada de producto (recall) recuperacion de producto ya distribuido por un riesgo de seguridad o incumplimiento de especificaciones. una trazabilidad solida permite retiradas rapidas, acotadas y con menor impacto economico y reputacional.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">R</span>
+          <h2 class="blog-card__title"><a href="retirada-de-producto-recall/">Retirada de producto (recall)</a></h2>
+          <p class="blog-card__excerpt">Recuperación de producto ya distribuido por un riesgo de seguridad o incumplimiento de especificaciones. Una trazabilidad sólida permite retiradas rápidas, acotadas y con menor impacto económico y reputacional.</p>
+          <p class="blog-card__meta"><a href="retirada-de-producto-recall/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="S" data-text="seguridad alimentaria conjunto de practicas que garantizan que los alimentos no causan dano al consumidor. abarca higiene, control de peligros fisicos, quimicos y biologicos, trazabilidad y cumplimiento normativo en toda la cadena.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">S</span>
+          <h2 class="blog-card__title"><a href="seguridad-alimentaria/">Seguridad alimentaria</a></h2>
+          <p class="blog-card__excerpt">Conjunto de prácticas que garantizan que los alimentos no causan daño al consumidor. Abarca higiene, control de peligros físicos, químicos y biológicos, trazabilidad y cumplimiento normativo en toda la cadena.</p>
+          <p class="blog-card__meta"><a href="seguridad-alimentaria/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="T" data-text="trazabilidad alimentaria capacidad de seguir el recorrido de un producto a lo largo de toda la cadena, desde la materia prima hasta el consumidor final. permite identificar el origen de cada lote, ejecutar retiradas rapidas ante incidencias y cumplir un requisito legal (reglamento ce 178/2002) en la industria de fabricacion de alimentos.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">T</span>
+          <h2 class="blog-card__title"><a href="trazabilidad-alimentaria/">Trazabilidad alimentaria</a></h2>
+          <p class="blog-card__excerpt">Capacidad de seguir el recorrido de un producto a lo largo de toda la cadena, desde la materia prima hasta el consumidor final. Permite identificar el origen de cada lote, ejecutar retiradas rápidas ante incidencias y cumplir un requisito legal (Reglamento CE 178/2002) en la industria de fabricación de alimentos.</p>
+          <p class="blog-card__meta"><a href="trazabilidad-alimentaria/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="T" data-text="trazabilidad ascendente y descendente capacidad de rastrear hacia atras (materias primas y proveedores) y hacia adelante (destino del producto). ambas son imprescindibles para retiradas selectivas y respuesta ante incidencias.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">T</span>
+          <h2 class="blog-card__title"><a href="trazabilidad-ascendente-y-descendente/">Trazabilidad ascendente y descendente</a></h2>
+          <p class="blog-card__excerpt">Capacidad de rastrear hacia atrás (materias primas y proveedores) y hacia adelante (destino del producto). Ambas son imprescindibles para retiradas selectivas y respuesta ante incidencias.</p>
+          <p class="blog-card__meta"><a href="trazabilidad-ascendente-y-descendente/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="T" data-text="trazabilidad de envase control del origen y lote del material de acondicionamiento (etiquetas, films, botes). relevante para alergenos, reciclabilidad y cumplimiento de normativa de contacto alimentario.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">T</span>
+          <h2 class="blog-card__title"><a href="trazabilidad-de-envase/">Trazabilidad de envase</a></h2>
+          <p class="blog-card__excerpt">Control del origen y lote del material de acondicionamiento (etiquetas, films, botes). Relevante para alérgenos, reciclabilidad y cumplimiento de normativa de contacto alimentario.</p>
+          <p class="blog-card__meta"><a href="trazabilidad-de-envase/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="T" data-text="trazabilidad de lote un lote agrupa unidades producidas en condiciones homogeneas bajo un codigo unico. su trazabilidad es esencial para localizar producto ante una incidencia y ejecutar retiradas selectivas en lugar de masivas.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">T</span>
+          <h2 class="blog-card__title"><a href="trazabilidad-de-lote/">Trazabilidad de lote</a></h2>
+          <p class="blog-card__excerpt">Un lote agrupa unidades producidas en condiciones homogéneas bajo un código único. Su trazabilidad es esencial para localizar producto ante una incidencia y ejecutar retiradas selectivas en lugar de masivas.</p>
+          <p class="blog-card__meta"><a href="trazabilidad-de-lote/">Ver término →</a></p>
+        </div>
+      </article>
+      <article class="blog-card gloss-term" data-letter="V" data-text="vida util (shelf life) periodo durante el cual un producto mantiene sus condiciones de calidad y seguridad. su determinacion se apoya en estudios de estabilidad y condiciona fechas de consumo y logistica.">
+        <div class="blog-card__body">
+          <span class="blog-card__cat">V</span>
+          <h2 class="blog-card__title"><a href="vida-util-shelf-life/">Vida útil (shelf life)</a></h2>
+          <p class="blog-card__excerpt">Periodo durante el cual un producto mantiene sus condiciones de calidad y seguridad. Su determinación se apoya en estudios de estabilidad y condiciona fechas de consumo y logística.</p>
+          <p class="blog-card__meta"><a href="vida-util-shelf-life/">Ver término →</a></p>
+        </div>
+      </article>
+    </div>
+
+    <p class="gloss-empty" id="glossEmpty">No hay términos que coincidan con tu búsqueda.</p>
+  </div>
+</section>
+
+<div id="footer"></div>
+<script src="../chrome.js?v=20260623b"></script>
+<script>
+/* Glosario · buscador + filtro A–Z. JS vanilla, sin dependencias. */
+(function () {
+  var search = document.getElementById('glossSearch');
+  var azBtns = Array.prototype.slice.call(document.querySelectorAll('#glossAZ .gloss-az__btn'));
+  var cards  = Array.prototype.slice.call(document.querySelectorAll('#glossList .gloss-term'));
+  var empty  = document.getElementById('glossEmpty');
+  var activeLetter = '';
+
+  // Normaliza: minúsculas y sin acentos (para búsquedas tolerantes).
+  function norm(s) {
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  // Deshabilita las letras que aún no tienen ningún término.
+  var present = {};
+  cards.forEach(function (c) { present[(c.getAttribute('data-letter') || '').toUpperCase()] = true; });
+  azBtns.forEach(function (b) {
+    var l = b.getAttribute('data-letter');
+    if (l && !present[l]) b.disabled = true;
+  });
+
+  function apply() {
+    var q = norm(search ? search.value.trim() : '');
+    var shown = 0;
+    cards.forEach(function (c) {
+      var okLetter = !activeLetter || (c.getAttribute('data-letter') || '').toUpperCase() === activeLetter;
+      var okQuery  = !q || norm(c.getAttribute('data-text')).indexOf(q) > -1;
+      var show = okLetter && okQuery;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    if (empty) empty.style.display = shown ? 'none' : 'block';
+  }
+
+  azBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (b.disabled) return;
+      var l = b.getAttribute('data-letter') || '';
+      activeLetter = (activeLetter === l) ? '' : l; // volver a pulsar = quitar filtro
+      azBtns.forEach(function (x) {
+        x.classList.toggle('gloss-az__btn--active', (x.getAttribute('data-letter') || '') === activeLetter);
+      });
+      apply();
+    });
+  });
+
+  if (search) search.addEventListener('input', apply);
+  apply();
+})();
+</script>
+</body>
+</html>
