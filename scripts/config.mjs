@@ -1,12 +1,13 @@
 // =========================================================
 // Configuración del generador del blog (WordPress headless → estático)
-// Cambia WP_API_BASE el día que muevas WordPress a un subdominio:
-//   WP_API_BASE=https://cms.trysolved.com/wp-json/wp/v2 npm run build:blog
+// WordPress (CMS/API) vive en trysolved.es; el sitio estático publicado es
+// trysolved.com. Si mueves WordPress, cambia WP_API_BASE aquí o por entorno:
+//   WP_API_BASE=https://otro-dominio/wp-json/wp/v2 npm run build:blog
 // =========================================================
 
 export const config = {
   // ---- Origen de datos (WordPress REST API) ----
-  WP_API_BASE: process.env.WP_API_BASE || 'https://trysolved.com/wp-json/wp/v2',
+  WP_API_BASE: process.env.WP_API_BASE || 'https://trysolved.es/wp-json/wp/v2',
 
   // ---- Sitio estático (destino) ----
   SITE_URL: 'https://trysolved.com',   // base canónica del sitio publicado

@@ -48,7 +48,7 @@ Todo en `scripts/config.mjs`. Lo más importante:
 
 | Variable | Para qué |
 |---|---|
-| `WP_API_BASE` | URL de la WP API. Hoy `https://trysolved.com/wp-json/wp/v2`. **El día que muevas WordPress a un subdominio** (p. ej. `cms.trysolved.com`), cámbiala — o pásala por entorno: `WP_API_BASE=https://cms.trysolved.com/wp-json/wp/v2 npm run build:blog` |
+| `WP_API_BASE` | URL de la WP API. Hoy `https://trysolved.es/wp-json/wp/v2` (WordPress vive en `trysolved.es`; el sitio estático es `trysolved.com`). **El día que muevas WordPress**, cámbiala — o pásala por entorno: `WP_API_BASE=https://otro-dominio/wp-json/wp/v2 npm run build:blog` |
 | `SITE_URL` | Base canónica del sitio publicado (`https://trysolved.com`). |
 | `POSTS_PER_PAGE` | Posts por página del índice. |
 | `IMAGE_WIDTHS` | Anchos responsive que se generan. |
