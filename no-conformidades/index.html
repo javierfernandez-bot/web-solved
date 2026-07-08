@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.hsforms.net https://*.hsforms.com https://*.hs-scripts.com https://*.hscollectedforms.net https://*.hs-analytics.net https://*.hubspot.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://maps.google.com https://*.hsforms.com https://*.hsforms.net; connect-src 'self' https://*.hsforms.com https://*.hubspot.com https://*.hs-analytics.net https://*.hscollectedforms.net; object-src 'none'; base-uri 'self'; form-action 'self' https://*.hsforms.com; upgrade-insecure-requests"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon.png"/>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"/>
+<title>Acciones correctivas y no conformidades | Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Convierte cada incidencia o hallazgo de auditoría en un plan de acción con responsable, fecha y seguimiento automático. Análisis de causa raíz y cierre garantizado."/>
+<link rel="canonical" href="https://trysolved.com/no-conformidades/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#1E6BFF"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Solved"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:url" content="https://trysolved.com/no-conformidades/"/>
+<meta property="og:title" content="Acciones correctivas y no conformidades | Solved"/>
+<meta property="og:description" content="Convierte cada incidencia o hallazgo de auditoría en un plan de acción con responsable, fecha y seguimiento automático. Análisis de causa raíz y cierre garantizado."/>
+<meta property="og:image" content="https://trysolved.com/assets/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Acciones correctivas y no conformidades | Solved"/>
+<meta name="twitter:description" content="Convierte cada incidencia o hallazgo de auditoría en un plan de acción con responsable, fecha y seguimiento automático."/>
+<meta name="twitter:image" content="https://trysolved.com/assets/og-image.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"Acciones y no conformidades","item":"https://trysolved.com/no-conformidades/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué diferencia hay entre una incidencia y una acción correctiva?","acceptedAnswer":{"@type":"Answer","text":"La incidencia detecta el problema; la acción correctiva lo resuelve. En Solved, cada incidencia o hallazgo de auditoría genera un plan de acción con responsable, fecha de cierre y seguimiento hasta resolverlo."}},{"@type":"Question","name":"¿Cómo se asigna un responsable y una fecha a cada acción?","acceptedAnswer":{"@type":"Answer","text":"Al crear la acción eliges responsable y fecha de cierre. Esa persona recibe una notificación al instante por app y email, y Solved envía recordatorios antes de que venza el plazo."}},{"@type":"Question","name":"¿Solved gestiona las no conformidades de auditoría (ISO 9001, IFS, BRC)?","acceptedAnswer":{"@type":"Answer","text":"Sí. Registra cada no conformidad de auditoría o inspección, la asigna con responsable y plazo, y mantiene la trazabilidad completa desde la detección hasta el cierre. Es compatible con ISO 9001, IFS, BRC, ISO 22000 y APPCC."}},{"@type":"Question","name":"¿Qué es el análisis de causa raíz y para qué sirve?","acceptedAnswer":{"@type":"Answer","text":"Es una metodología lean para llegar al origen real del problema, no solo al síntoma. Solved vincula las acciones correctivas al análisis de causa raíz para que la solución sea definitiva y el problema no vuelva a repetirse."}},{"@type":"Question","name":"¿Puedo programar tareas planificadas además de las acciones correctivas?","acceptedAnswer":{"@type":"Answer","text":"Sí. Además del trabajo reactivo, puedes programar tareas recurrentes o puntuales y asignarlas a departamentos o personas, con el mismo seguimiento que las acciones correctivas."}}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"/>
+<link rel="stylesheet" href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260623b"/>
+<link rel="stylesheet" href="../solved.css?v=20260623b"/>
+<style>
+/* ===== Secciones normales · scroll lineal ===== */
+html{scroll-behavior:smooth;}
+html,body{overflow-x:clip;max-width:100%;}
+.flow,.stack-card{display:flex;align-items:center;justify-content:center;padding:80px 24px;position:relative;}
+#s-hero{min-height:100vh;width:100%;padding-top:100px;}
+.slide--tint{background:var(--ink-50);}
+.slide--dark{background:var(--ink-900);color:var(--fg-on-dark);}
+.slide__in{width:100%;max-width:1080px;display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;}
+.slide--center .slide__in{grid-template-columns:1fr;max-width:760px;text-align:center;}
+.slide__txt h1{font-size:46px;line-height:1.07;letter-spacing:-0.03em;margin:0 0 16px;}
+.slide__txt h2{font-size:35px;line-height:1.12;letter-spacing:-0.025em;margin:0 0 14px;}
+.slide__txt>p{font-size:18px;line-height:1.5;color:var(--fg-2);margin:0;}
+.slide__txt .kicker{margin-bottom:14px;}
+.slide__note{margin-top:18px !important;font-size:14px !important;color:var(--fg-3) !important;}
+@media (max-width:899px){ .slide__in{grid-template-columns:1fr;gap:34px;} .slide__txt h1{font-size:34px;} .slide__txt h2{font-size:27px;} .flow,.stack-card{padding:64px 20px;} }
+
+/* ===== COMPONENTES = UI de la app (Roboto + Material Symbols) ===== */
+.appui{font-family:'Roboto','Helvetica Neue',sans-serif;max-width:440px;margin-inline:auto;width:100%;}
+.appui .card{background:var(--bg-surface);border:1px solid var(--border-1);border-radius:var(--r-3);box-shadow:var(--shadow-3);padding:20px 22px;}
+.appui .row{display:flex;align-items:center;gap:11px;}
+.appui .pill{flex:none;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;}
+.appui .mono{font-family:'Roboto Mono','Roboto',monospace;font-size:11px;font-weight:500;}
+.appui .avatar{flex:none;width:32px;height:32px;border-radius:999px;color:var(--fg-on-dark);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;}
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;font-feature-settings:'liga';-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;font-size:20px;vertical-align:middle;}
+
+/* ===== Pestañas causa raíz (.rca) ===== */
+.rca{max-width:440px;margin-inline:auto;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:var(--r-3);box-shadow:var(--shadow-3);overflow:hidden;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.stack-card>input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
+.rca-tabs{display:flex;gap:8px;padding:16px 18px 0;}
+.rca-tab{flex:1;text-align:center;cursor:pointer;font-size:13px;font-weight:600;color:var(--fg-2);padding:9px 10px;border-radius:999px;background:var(--ink-50);border:1px solid var(--border-1);box-shadow:var(--shadow-1);transition:background .15s,color .15s,border-color .15s,box-shadow .15s,transform .05s;}
+.rca-tab:hover{color:var(--accion);border-color:var(--accion);background:var(--accion-bg);box-shadow:var(--shadow-2);}
+.rca-tab:active{transform:translateY(1px);}
+.rca-panels{padding:16px 18px 18px;display:grid;}
+.rca-p{grid-area:1/1;visibility:hidden;}
+#rca-5w:checked~.slide__in .rca-tab[for="rca-5w"],#rca-ish:checked~.slide__in .rca-tab[for="rca-ish"]{color:var(--fg-on-dark);background:var(--accion);border-color:var(--accion);}
+#rca-5w:checked~.slide__in .rca-p--5w{visibility:visible;}
+#rca-ish:checked~.slide__in .rca-p--ish{visibility:visible;}
+
+/* ===== Filtro por personas (.pf) ===== */
+.pf{max-width:440px;margin-inline:auto;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:var(--r-3);box-shadow:var(--shadow-3);overflow:hidden;font-family:'Roboto','Helvetica Neue',sans-serif;}
+/* inputs ocultos vía .slide>input */
+.pf-hd{display:flex;align-items:center;gap:8px;padding:16px 18px 0;}
+.pf-btns{display:flex;flex-wrap:wrap;gap:8px;padding:12px 18px 16px;border-bottom:1px solid var(--border-1);}
+.pf-btn{cursor:pointer;font-size:13px;font-weight:600;color:var(--fg-2);padding:7px 14px;border-radius:999px;background:var(--ink-50);border:1px solid var(--border-1);box-shadow:var(--shadow-1);transition:background .15s,color .15s,border-color .15s,box-shadow .15s,transform .05s;}
+.pf-btn:hover{color:var(--accion);border-color:var(--accion);background:var(--accion-bg);box-shadow:var(--shadow-2);}
+.pf-btn:active{transform:translateY(1px);}
+.pf-list{padding:14px 18px 16px;display:grid;}
+.pf-row{display:flex;align-items:center;gap:11px;}
+.pf-panel{grid-area:1/1;visibility:hidden;display:flex;flex-direction:column;gap:12px;}
+#pf-all:checked~.slide__in .pf-btn[for="pf-all"],#pf-juan:checked~.slide__in .pf-btn[for="pf-juan"],#pf-marcos:checked~.slide__in .pf-btn[for="pf-marcos"],#pf-raquel:checked~.slide__in .pf-btn[for="pf-raquel"]{color:var(--fg-on-dark);background:var(--accion);border-color:var(--accion);}
+#pf-all:checked~.slide__in .pf-panel--all{visibility:visible;}
+#pf-juan:checked~.slide__in .pf-panel--juan{visibility:visible;}
+#pf-marcos:checked~.slide__in .pf-panel--marcos{visibility:visible;}
+#pf-raquel:checked~.slide__in .pf-panel--raquel{visibility:visible;}
+
+#s-clientes{min-height:auto;padding:40px 24px;flex-direction:column;gap:22px;overflow:hidden;background:radial-gradient(720px 220px at 12% -10%, rgba(30,107,255,.30), rgba(30,107,255,0) 62%),radial-gradient(640px 260px at 92% 120%, rgba(14,58,143,.55), rgba(14,58,143,0) 60%),var(--ink-900);}
+#s-clientes .logos-carousel{width:100%;margin:0;}
+.chips-iso{display:inline-flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.chip-iso{font-size:13px;font-weight:500;padding:5px 12px;border-radius:999px;background:var(--ink-50);color:var(--fg-1);border:1px solid var(--border-1);}
+/* Notificación que aparece al entrar la sección en pantalla */
+.notif-pop{opacity:0;transform:translateY(-14px) scale(.95);transform-origin:top center;}
+.notif-pop.is-in{animation:notifPop 1.6s cubic-bezier(.2,.75,.3,1) forwards;}
+@keyframes notifPop{0%{opacity:0;transform:translateY(-14px) scale(.95);}55%{opacity:1;transform:translateY(3px) scale(1.015);}100%{opacity:1;transform:translateY(0) scale(1);}}
+.notif-pop.is-in .notif-bell{animation:bellRing .8s 1.2s ease;transform-origin:top center;}
+@keyframes bellRing{0%,100%{transform:rotate(0)}15%{transform:rotate(14deg)}30%{transform:rotate(-11deg)}45%{transform:rotate(7deg)}60%{transform:rotate(-4deg)}}
+@media (prefers-reduced-motion:reduce){.notif-pop{opacity:1;transform:none;}.notif-pop.is-in,.notif-pop.is-in .notif-bell{animation:none;}}
+</style>
+</head>
+<body data-screen-label="Acciones y no conformidades">
+
+<div id="nav"></div>
+
+
+<main class="deck">
+
+  <!-- ========== HERO ========== -->
+  <section class="flow" id="s-hero" data-screen-label="Acciones · Hero">
+    <div class="slide__in">
+      <div class="slide__txt">
+        <span class="kicker">Acciones · Tareas · No conformidades</span>
+        <h1>De la detección al cierre. Nada se queda sin resolver.</h1>
+        <p>Convierte cada incidencia o hallazgo de auditoría en un plan de acción con dueño, plazo y seguimiento automático. Solved no solo detecta lo que falla: lo lleva hasta el final.</p>
+        <div class="hero__cta" style="margin-top:26px;">
+          <a class="btn btn--primary btn--lg" href="#s-contacto">Solicita una demo</a>
+        </div>
+      </div>
+      <div class="appui">
+        <div class="card">
+          <div class="row" style="margin-bottom:16px;">
+            <span style="flex:none;width:30px;height:30px;border-radius:9px;background:var(--accion-bg);color:var(--accion);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:18px;">task_alt</span></span>
+            <span class="pill mono" style="background:var(--ink-50);color:var(--fg-2);">ACC-0473</span>
+            <span class="pill" style="margin-left:auto;background:var(--st-review-bg);color:var(--prio-media-fg);">En curso</span>
+          </div>
+          <div style="font-size:16px;font-weight:600;color:var(--fg-1);line-height:1.35;margin-bottom:16px;">Revisar sellado de la cámara 2 tras hallazgo de auditoría</div>
+          <div class="row" style="margin-bottom:16px;">
+            <span class="avatar" style="background:var(--role-resp);">MR</span>
+            <div style="line-height:1.3;"><div style="font-size:13px;font-weight:600;color:var(--fg-1);">Marta Ríos</div><div style="font-size:12px;color:var(--fg-3);">Responsable · Mantenimiento</div></div>
+            <span class="row" style="margin-left:auto;gap:6px;font-size:12px;font-weight:500;color:var(--fg-2);padding:5px 10px;border-radius:8px;background:var(--ink-50);border:1px solid var(--border-1);"><span class="material-symbols-outlined" style="font-size:15px;">event</span>Cierre 12 jun</span>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;margin-bottom:6px;">
+            <span style="text-transform:uppercase;letter-spacing:0.06em;color:var(--fg-3);font-size:10px;font-weight:500;">Progreso</span>
+            <span style="font-weight:700;color:var(--accion);">85%</span>
+          </div>
+          <div style="height:8px;border-radius:999px;background:var(--ink-50);overflow:hidden;margin-bottom:16px;"><div style="width:85%;height:100%;border-radius:999px;background:var(--accion);"></div></div>
+          <div style="display:flex;flex-direction:column;gap:9px;">
+            <div class="row" style="font-size:13px;color:var(--fg-2);"><span style="flex:none;width:20px;height:20px;border-radius:6px;background:var(--st-closed-bg);color:var(--st-closed);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:14px;">check</span></span>Análisis de causa raíz completado</div>
+            <div class="row" style="font-size:13px;color:var(--fg-2);"><span style="flex:none;width:20px;height:20px;border-radius:6px;background:var(--st-closed-bg);color:var(--st-closed);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:14px;">check</span></span>Recambio de junta solicitado</div>
+            <div class="row" style="font-size:13px;color:var(--fg-1);font-weight:500;"><span style="flex:none;width:20px;height:20px;border-radius:6px;background:var(--st-open-bg);color:var(--st-open);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:14px;">radio_button_unchecked</span></span>Verificación final del responsable de calidad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTES / LOGOS ========== -->
+  <section class="flow slide--dark slide--center" id="s-clientes" data-screen-label="Acciones · Clientes">
+    <div class="logos-carousel" aria-label="Empresas que confían en Solved">
+    <div class="logos-row">
+      <div class="logos-track logos-track--left">
+        <img src="../assets/clients/adhesivos-orcajada.webp" alt="Adhesivos Orcajada" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/asp-asepsia.webp" alt="ASP Asepsia" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/carnavi.webp" alt="Carnavi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/cartonajes-pans.webp" alt="Cartonajes Pans" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/delaviuda.webp" alt="Delaviuda" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/dogfy-diet.webp" alt="Dogfy Diet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/dulceria-la-rondena.webp" alt="Dulcería La Rondeña" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/exquisitarium.webp" alt="Exquisitarium" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/fritoper.webp" alt="Fritoper" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/ga-torres.webp" alt="G.A. Torres" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/gil-comes.webp" alt="Gil Comes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/gufresco.webp" alt="Gufresco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/ig-montes.webp" alt="Ignacio González Montes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/imperio-garlic.webp" alt="Imperio Garlic" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/inalsa.webp" alt="Inalsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/inga-foods.webp" alt="Inga Foods" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/laboratorios-almond.webp" alt="Laboratorios Almond" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/la-chinata.webp" alt="La Chinata" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/la-juvenil.webp" alt="La Juvenil" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/lomar.webp" alt="Lácteos Romar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/ownat.webp" alt="Ownat" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/pampling.webp" alt="Pampling" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/panificadora-alcala.webp" alt="Panificadora Alcalá" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/patatas-aguilar.webp" alt="Patatas Aguilar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/patatas-hijolusa.webp" alt="Patatas Hijolusa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/prilux.webp" alt="Prilux" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/riverbend.webp" alt="Riverbend" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/rujamar.webp" alt="Rujamar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/snacks-el-valle.webp" alt="Snacks El Valle" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/solulim.webp" alt="Solulim" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/stourgarden.webp" alt="Stourgarden" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/sucroliq.webp" alt="Sucroliq" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/tre-archi.webp" alt="Tre Archi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/trueco.webp" alt="Trueco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/tuflesa.webp" alt="Tuflesa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/wetaca.webp" alt="Wetaca" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/agroveco.webp" alt="Agroveco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/deterra.webp" alt="Deterra" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/golden-pet.webp" alt="Golden Pet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/jealsa.webp" alt="Jealsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/patatas-gomez.webp" alt="Patatas Gómez" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/piensos-procasa.webp" alt="Piensos Procasa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/royal-chef.webp" alt="Royal Chef" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/skretting.webp" alt="Skretting" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/top-form.webp" alt="Top Form" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/adhesivos-orcajada.webp" alt="Adhesivos Orcajada" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/asp-asepsia.webp" alt="ASP Asepsia" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/carnavi.webp" alt="Carnavi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/cartonajes-pans.webp" alt="Cartonajes Pans" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/delaviuda.webp" alt="Delaviuda" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/dogfy-diet.webp" alt="Dogfy Diet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/dulceria-la-rondena.webp" alt="Dulcería La Rondeña" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/exquisitarium.webp" alt="Exquisitarium" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/fritoper.webp" alt="Fritoper" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/ga-torres.webp" alt="G.A. Torres" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/gil-comes.webp" alt="Gil Comes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/gufresco.webp" alt="Gufresco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/ig-montes.webp" alt="Ignacio González Montes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/imperio-garlic.webp" alt="Imperio Garlic" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/inalsa.webp" alt="Inalsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/inga-foods.webp" alt="Inga Foods" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/laboratorios-almond.webp" alt="Laboratorios Almond" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/la-chinata.webp" alt="La Chinata" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/la-juvenil.webp" alt="La Juvenil" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/lomar.webp" alt="Lácteos Romar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/ownat.webp" alt="Ownat" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/pampling.webp" alt="Pampling" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/panificadora-alcala.webp" alt="Panificadora Alcalá" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/patatas-aguilar.webp" alt="Patatas Aguilar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/patatas-hijolusa.webp" alt="Patatas Hijolusa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/prilux.webp" alt="Prilux" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/riverbend.webp" alt="Riverbend" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/rujamar.webp" alt="Rujamar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/snacks-el-valle.webp" alt="Snacks El Valle" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/solulim.webp" alt="Solulim" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/stourgarden.webp" alt="Stourgarden" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/sucroliq.webp" alt="Sucroliq" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/tre-archi.webp" alt="Tre Archi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/trueco.webp" alt="Trueco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/tuflesa.webp" alt="Tuflesa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/wetaca.webp" alt="Wetaca" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/agroveco.webp" alt="Agroveco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/deterra.webp" alt="Deterra" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/golden-pet.webp" alt="Golden Pet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/jealsa.webp" alt="Jealsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/patatas-gomez.webp" alt="Patatas Gómez" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/piensos-procasa.webp" alt="Piensos Procasa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/royal-chef.webp" alt="Royal Chef" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/skretting.webp" alt="Skretting" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="../assets/clients/top-form.webp" alt="Top Form" width="500" height="500" decoding="async" loading="eager"/>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ========== 1 · RESPONSABILIDAD ========== -->
+  <section class="stack-card slide--tint" id="s-responsabilidad" data-screen-label="Acciones · Responsabilidad">
+    <div class="slide__in">
+      <div class="slide__txt">
+        <span class="kicker">Responsabilidad clara</span>
+        <h2>Cada acción tiene un dueño y una fecha</h2>
+        <p>Se acabó el «pensaba que lo hacías tú». Cuando asignas una acción, su responsable recibe una notificación al instante y sabe qué tiene que hacer y para cuándo.</p>
+        <div class="feat-list" style="margin-top:26px;">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div><b>Responsable y fecha de cierre en cada acción</b><p>Cada tarea nace con un dueño y un plazo. Sin ambigüedades sobre quién responde ni para cuándo.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span><div><b>Notificaciones automáticas por app y email</b><p>El responsable se entera en el momento en que se le asigna algo. Nada depende de un correo suelto.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></span><div><b>Recordatorios antes de que se pase el plazo</b><p>Solved avisa antes de que una acción se retrase, para que llegue cerrada a la fecha comprometida.</p></div></div>
+        </div>
+      </div>
+      <div class="appui">
+        <div class="card">
+          <div class="row notif-pop" style="align-items:flex-start;gap:12px;padding:13px 14px;border-radius:12px;background:var(--accion-bg);border:1px solid var(--border-1);margin-bottom:18px;">
+            <span style="flex:none;width:32px;height:32px;border-radius:9px;background:var(--accion);color:var(--fg-on-dark);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined notif-bell" style="font-size:18px;">notifications_active</span></span>
+            <div style="line-height:1.4;"><div style="font-size:14px;font-weight:600;color:var(--fg-1);">Nueva tarea asignada</div><div style="font-size:13px;color:var(--fg-2);">Revisar sellado de la cámara 2 · vence en 3 días</div></div>
+          </div>
+          <div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-3);margin-bottom:10px;font-weight:500;">Estado de mis acciones</div>
+          <div style="display:flex;flex-direction:column;gap:9px;">
+            <div class="row" style="padding:11px 13px;border-radius:10px;background:var(--ink-50);border:1px solid var(--border-1);"><span style="font-size:13px;color:var(--fg-1);flex:1;">Sustituir junta cámara 2</span><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrado OK</span></div>
+            <div class="row" style="padding:11px 13px;border-radius:10px;background:var(--ink-50);border:1px solid var(--border-1);"><span style="font-size:13px;color:var(--fg-1);flex:1;">Validar limpieza de línea 3</span><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">En revisión</span></div>
+            <div class="row" style="padding:11px 13px;border-radius:10px;background:var(--ink-50);border:1px solid var(--border-1);"><span style="font-size:13px;color:var(--fg-1);flex:1;">Calibrar sonda de temperatura</span><span class="pill" style="background:var(--st-open-bg);color:var(--st-open);">Abierto</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 2 · NO CONFORMIDADES ========== -->
+  <section class="stack-card" id="s-nc" data-screen-label="Acciones · No conformidades">
+    <div class="slide__in">
+      <div class="appui">
+        <div class="card">
+          <div class="row" style="margin-bottom:14px;"><span style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-2);font-weight:600;">No conformidades</span><span class="row" style="margin-left:auto;gap:6px;"><span class="pill" style="background:var(--accion-bg);color:var(--accion);">Todas</span><span class="pill" style="background:var(--ink-50);color:var(--fg-3);">Abiertas</span><span class="pill" style="background:var(--ink-50);color:var(--fg-3);">IFS</span></span></div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="row" style="padding:12px 13px;border-radius:10px;border:1px solid var(--border-1);"><span class="mono" style="padding:3px 7px;border-radius:6px;background:var(--ink-50);color:var(--fg-2);">NC-118</span><span style="font-size:13px;color:var(--fg-1);flex:1;line-height:1.3;">Etiquetado sin lote visible</span><span class="pill" style="background:var(--crit);color:var(--fg-on-dark);">Crítica</span></div>
+            <div class="row" style="padding:12px 13px;border-radius:10px;border:1px solid var(--border-1);"><span class="mono" style="padding:3px 7px;border-radius:6px;background:var(--ink-50);color:var(--fg-2);">NC-117</span><span style="font-size:13px;color:var(--fg-1);flex:1;line-height:1.3;">Registro de temperatura incompleto</span><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">En curso</span></div>
+            <div class="row" style="padding:12px 13px;border-radius:10px;border:1px solid var(--border-1);"><span class="mono" style="padding:3px 7px;border-radius:6px;background:var(--ink-50);color:var(--fg-2);">NC-115</span><span style="font-size:13px;color:var(--fg-1);flex:1;line-height:1.3;">Falta firma en control de recepción</span><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrada</span></div>
+          </div>
+          <div class="row" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border-1);gap:8px;font-size:12px;color:var(--fg-3);"><span class="material-symbols-outlined" style="font-size:16px;color:var(--st-closed);">verified</span>Trazabilidad completa hasta el cierre</div>
+        </div>
+      </div>
+      <div class="slide__txt">
+        <span class="kicker">No conformidades bajo control</span>
+        <h2>Cerradas antes de la próxima auditoría</h2>
+        <p>Registra cada no conformidad de auditoría o inspección, asígnala y sigue su estado hasta cerrarla. Cuando llegue el auditor, tendrás la evidencia lista.</p>
+        <div class="feat-list" style="margin-top:24px;">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><div><b>Registro de no conformidades de auditoría e inspección</b><p>Cada hallazgo queda documentado con su evidencia, sin papeles sueltos.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></span><div><b>Filtros por estado, tipo o responsable</b><p>Encuentra en segundos lo que sigue abierto, lo crítico o lo de un equipo concreto.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span><div><b>Trazabilidad completa desde la detección hasta el cierre</b><p>El histórico de cada no conformidad queda disponible para la auditoría.</p></div></div>
+        </div>
+        <div class="chips-iso"><span class="chip-iso">ISO 9001</span><span class="chip-iso">IFS</span><span class="chip-iso">BRC</span><span class="chip-iso">ISO 22000</span><span class="chip-iso">APPCC</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3 · CAUSA RAÍZ ========== -->
+  <section class="stack-card slide--tint" id="s-causaraiz" data-screen-label="Acciones · Causa raíz">
+    <input type="radio" name="rca" id="rca-5w" checked>
+    <input type="radio" name="rca" id="rca-ish">
+    <div class="slide__in">
+      <div class="appui">
+        <div class="rca">
+          <div class="rca-tabs">
+            <label class="rca-tab" for="rca-5w">5 porqués</label>
+            <label class="rca-tab" for="rca-ish">Ishikawa</label>
+          </div>
+          <div class="rca-panels">
+            <div class="rca-p rca-p--5w">
+              <div class="row"><span class="pill" style="background:var(--crit);color:var(--fg-on-dark);">Síntoma</span><span style="font-size:14px;color:var(--fg-1);">Producto rechazado en línea 3</span></div>
+              <div style="width:2px;height:22px;background:var(--border-1);margin:6px 0 6px 34px;"></div>
+              <div class="row"><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">¿Por qué?</span><span style="font-size:14px;color:var(--fg-1);">Sellado de envase defectuoso</span></div>
+              <div style="width:2px;height:22px;background:var(--border-1);margin:6px 0 6px 34px;"></div>
+              <div class="row"><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">¿Por qué?</span><span style="font-size:14px;color:var(--fg-1);">Junta de la selladora desgastada</span></div>
+              <div style="width:2px;height:22px;background:var(--accion);margin:6px 0 6px 34px;"></div>
+              <div class="row" style="gap:12px;padding:12px 13px;border-radius:10px;background:var(--accion-bg);border:1px solid var(--border-1);"><span class="pill" style="background:var(--accion);color:var(--fg-on-dark);">Causa raíz</span><span style="font-size:14px;font-weight:600;color:var(--fg-1);">Sin plan de recambio preventivo</span></div>
+            </div>
+            <div class="rca-p rca-p--ish">
+              <svg viewBox="0 0 360 200" width="100%" role="img" aria-label="Diagrama de Ishikawa" style="display:block;font-family:'Roboto','Helvetica Neue',sans-serif;">
+                <line x1="14" y1="100" x2="248" y2="100" style="stroke:var(--ink-400);stroke-width:2"/>
+                <polygon points="248,94 258,100 248,106" style="fill:var(--ink-400)"/>
+                <rect x="258" y="74" width="94" height="52" rx="10" style="fill:var(--accion-bg);stroke:var(--accion)"/>
+                <text x="305" y="96" text-anchor="middle" style="fill:var(--fg-1);font-size:11px;font-weight:700">Producto</text>
+                <text x="305" y="111" text-anchor="middle" style="fill:var(--fg-1);font-size:11px;font-weight:700">rechazado</text>
+                <line x1="42" y1="44" x2="72" y2="100" style="stroke:var(--accion);stroke-width:2"/>
+                <text x="42" y="36" text-anchor="middle" style="fill:var(--fg-1);font-size:11px;font-weight:700">Máquina</text>
+                <text x="84" y="62" style="fill:var(--accion);font-size:9px;font-weight:600">junta desgastada</text>
+                <line x1="150" y1="44" x2="178" y2="100" style="stroke:var(--ink-200);stroke-width:1.6"/>
+                <text x="150" y="36" text-anchor="middle" style="fill:var(--fg-2);font-size:11px;font-weight:600">Método</text>
+                <line x1="42" y1="156" x2="72" y2="100" style="stroke:var(--ink-200);stroke-width:1.6"/>
+                <text x="42" y="170" text-anchor="middle" style="fill:var(--fg-2);font-size:11px;font-weight:600">Material</text>
+                <line x1="150" y1="156" x2="178" y2="100" style="stroke:var(--ink-200);stroke-width:1.6"/>
+                <text x="150" y="170" text-anchor="middle" style="fill:var(--fg-2);font-size:11px;font-weight:600">Mano de obra</text>
+              </svg>
+              <div style="margin-top:8px;font-size:12px;color:var(--fg-2);text-align:center;">Agrupa las causas por familias hasta aislar la raíz.</div>
+            </div>
+          </div>
+          <div class="row" style="gap:10px;padding:12px 18px;border-top:1px solid var(--border-1);background:var(--ink-50);font-size:13px;color:var(--fg-2);"><span class="material-symbols-outlined" style="font-size:18px;color:var(--st-closed);">check_circle</span>Acción correctiva: alta de preventivo en GMAO</div>
+        </div>
+      </div>
+      <div class="slide__txt">
+        <span class="kicker">Análisis de causa raíz</span>
+        <h2>Que el problema no vuelva a pasar</h2>
+        <p>Apagar el fuego no basta. Llega al origen del problema, no solo al síntoma, con un método — los 5 porqués o el diagrama de Ishikawa — para que la solución sea definitiva.</p>
+        <div class="feat-list" style="margin-top:24px;">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span><div><b>Métodos probados: 5 porqués e Ishikawa</b><p>Elige la técnica según el problema, con un método estructurado en vez de improvisar.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span><div><b>Acciones correctivas vinculadas al análisis</b><p>Cada causa raíz genera su acción correctiva, atacando el origen y no el síntoma.</p></div></div>
+        </div>
+        <p class="slide__note">Cambia de método en el panel →</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4 · SEGUIMIENTO / FILTRO ========== -->
+  <section class="stack-card" id="s-seguimiento" data-screen-label="Acciones · Seguimiento">
+    <input type="radio" name="pf" id="pf-all" checked>
+    <input type="radio" name="pf" id="pf-juan">
+    <input type="radio" name="pf" id="pf-marcos">
+    <input type="radio" name="pf" id="pf-raquel">
+    <div class="slide__in">
+      <div class="slide__txt">
+        <span class="kicker">Seguimiento automático</span>
+        <h2>Visibilidad sin perseguir a nadie</h2>
+        <p>El progreso se actualiza solo. De un vistazo ves qué está hecho, qué está en curso y qué se retrasa — y puedes filtrar por responsable sin ir preguntando uno por uno.</p>
+        <div class="feat-list" style="margin-top:24px;">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-6.2-8.5"/><path d="M21 4v5h-5"/></svg></span><div><b>Actualización automática del progreso</b><p>Cuando alguien avanza en una acción, el estado se refleja solo. Nadie reporta a mano.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><div><b>Filtra por responsable en un clic</b><p>Mira solo las acciones de una persona para saber al momento cómo va cada equipo.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span><div><b>Vista de conjunto de todo lo que está abierto</b><p>Una sola pantalla con todo lo pendiente para decidir dónde poner el foco.</p></div></div>
+        </div>
+        <p class="slide__note">Filtra por persona en el panel →</p>
+      </div>
+      <div class="appui">
+        <div class="pf">
+          <div class="pf-hd"><span style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-2);font-weight:600;">Acciones por responsable</span></div>
+          <div class="pf-btns">
+            <label class="pf-btn" for="pf-all">Todos</label>
+            <label class="pf-btn" for="pf-juan">Juan</label>
+            <label class="pf-btn" for="pf-marcos">Marcos</label>
+            <label class="pf-btn" for="pf-raquel">Raquel</label>
+          </div>
+          <div class="pf-list"><div class="pf-panel pf-panel--all"><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-resp);">J</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Sustituir junta cámara 2</div><div style="font-size:11px;color:var(--fg-3);">Juan · Mantenimiento</div></div><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrado OK</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-resp);">J</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Calibrar sonda de temperatura</div><div style="font-size:11px;color:var(--fg-3);">Juan · Mantenimiento</div></div><span class="pill" style="background:var(--st-open-bg);color:var(--st-open);">Abierto</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--registro);">M</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Validar limpieza de línea 3</div><div style="font-size:11px;color:var(--fg-3);">Marcos · Producción</div></div><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">En revisión</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--registro);">M</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Revisar etiquetado de lote</div><div style="font-size:11px;color:var(--fg-3);">Marcos · Producción</div></div><span class="pill" style="background:var(--st-open-bg);color:var(--st-open);">Abierto</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-verif);">R</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Cerrar NC-118 (etiquetado)</div><div style="font-size:11px;color:var(--fg-3);">Raquel · Calidad</div></div><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">En curso</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-verif);">R</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Verificación final cámara 2</div><div style="font-size:11px;color:var(--fg-3);">Raquel · Calidad</div></div><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrado OK</span></div></div><div class="pf-panel pf-panel--juan"><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-resp);">J</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Sustituir junta cámara 2</div><div style="font-size:11px;color:var(--fg-3);">Juan · Mantenimiento</div></div><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrado OK</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-resp);">J</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Calibrar sonda de temperatura</div><div style="font-size:11px;color:var(--fg-3);">Juan · Mantenimiento</div></div><span class="pill" style="background:var(--st-open-bg);color:var(--st-open);">Abierto</span></div></div><div class="pf-panel pf-panel--marcos"><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--registro);">M</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Validar limpieza de línea 3</div><div style="font-size:11px;color:var(--fg-3);">Marcos · Producción</div></div><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">En revisión</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--registro);">M</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Revisar etiquetado de lote</div><div style="font-size:11px;color:var(--fg-3);">Marcos · Producción</div></div><span class="pill" style="background:var(--st-open-bg);color:var(--st-open);">Abierto</span></div></div><div class="pf-panel pf-panel--raquel"><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-verif);">R</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Cerrar NC-118 (etiquetado)</div><div style="font-size:11px;color:var(--fg-3);">Raquel · Calidad</div></div><span class="pill" style="background:var(--st-review-bg);color:var(--prio-media-fg);">En curso</span></div><div class="pf-row"><span class="avatar" style="width:30px;height:30px;background:var(--role-verif);">R</span><div style="flex:1;line-height:1.25;"><div style="font-size:13px;color:var(--fg-1);">Verificación final cámara 2</div><div style="font-size:11px;color:var(--fg-3);">Raquel · Calidad</div></div><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrado OK</span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5 · COLABORACIÓN ========== -->
+  <section class="stack-card slide--tint" id="s-colaboracion" data-screen-label="Acciones · Colaboración">
+    <div class="slide__in">
+      <div class="appui">
+        <div class="card">
+          <div class="row" style="gap:8px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border-1);"><span class="mono" style="padding:3px 7px;border-radius:6px;background:var(--ink-50);color:var(--fg-2);">ACC-0473</span><span style="font-size:13px;font-weight:600;color:var(--fg-1);">Sellado cámara 2</span></div>
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div style="display:flex;gap:10px;"><span class="avatar" style="width:30px;height:30px;background:var(--role-resp);">MR</span><div><div style="font-size:12px;color:var(--fg-3);margin-bottom:3px;"><b style="color:var(--fg-1);">Marta (Mantenimiento)</b> · 09:14</div><div style="font-size:13px;color:var(--fg-1);background:var(--ink-50);border-radius:10px;padding:9px 12px;line-height:1.4;">Junta sustituida. ¿Podéis validar la limpieza antes de arrancar?</div></div></div>
+            <div style="display:flex;gap:10px;"><span class="avatar" style="width:30px;height:30px;background:var(--role-verif);">JC</span><div><div style="font-size:12px;color:var(--fg-3);margin-bottom:3px;"><b style="color:var(--fg-1);">Jorge (Calidad)</b> · 09:31</div><div style="font-size:13px;color:var(--fg-1);background:var(--ink-50);border-radius:10px;padding:9px 12px;line-height:1.4;">Limpieza validada. Cierro la acción y adjunto el registro.</div></div></div>
+          </div>
+          <div class="row" style="margin-top:16px;gap:10px;padding:9px 12px;border-radius:10px;border:1px solid var(--border-1);color:var(--fg-3);font-size:13px;">Escribe un comentario…<span style="margin-left:auto;flex:none;width:28px;height:28px;border-radius:8px;background:var(--accion);color:var(--fg-on-dark);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:16px;">send</span></span></div>
+        </div>
+      </div>
+      <div class="slide__txt">
+        <span class="kicker">Puente entre departamentos</span>
+        <h2>Todos los departamentos y tus externos, en la misma acción</h2>
+        <p>La mayoría de los problemas se resuelven entre varias áreas —y a veces con proveedores o contratistas de fuera—. Cada acción tiene su zona de comentarios para que todos los implicados se coordinen sin salir de Solved ni perderse en correos.</p>
+        <div class="feat-list" style="margin-top:24px;">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><b>Asignación de acciones entre departamentos</b><p>Deriva y comparte acciones entre equipos sin que nada se caiga entre medias.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><div><b>Asigna también a externos de fuera de la empresa</b><p>Proveedores, contratistas o auditores reciben y resuelven su acción sin necesidad de ser usuarios de tu Solved.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><b>Zona de comentarios en cada acción</b><p>Toda la conversación vive junto al problema, no en cadenas de correo.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6 · TAREAS PLANIFICADAS ========== -->
+  <section class="flow slide--center" id="s-tareas" data-screen-label="Acciones · Tareas planificadas">
+    <div class="slide__in">
+      <div class="slide__txt">
+        <span class="kicker">Tareas planificadas</span>
+        <h2>¿Y el trabajo que ya sabes que toca? También</h2>
+        <p>No todo es reactivo. Programa tareas recurrentes o puntuales y asígnalas a departamentos o personas, con el mismo seguimiento que las acciones correctivas.</p>
+        <div class="appui" style="max-width:520px;margin-top:30px;">
+          <div class="card" style="display:flex;align-items:center;gap:16px;text-align:left;">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:var(--accion-bg);color:var(--accion);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:28px;">event_repeat</span></span>
+            <div><div style="font-size:14px;font-weight:600;color:var(--fg-1);">Limpieza profunda · línea 2</div><div style="font-size:12px;color:var(--fg-3);margin-top:2px;">Cada lunes · asignada a Producción · próxima 15 jun</div></div>
+            <span class="pill" style="margin-left:auto;flex:none;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--st-open-bg);color:var(--st-open);">Recurrente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="flow slide--center" id="s-faq" data-screen-label="Acciones · FAQ">
+    <div class="slide__in">
+      <div class="section-head" style="margin-bottom:var(--s-4);"><h2>Preguntas frecuentes</h2></div>
+      <div class="faq" style="text-align:left;">
+        <details class="faq__item" name="faq" open><summary>¿Qué diferencia hay entre una incidencia y una acción correctiva?</summary><div class="faq__a"><p>La incidencia detecta el problema; la acción correctiva lo resuelve. Cada incidencia o hallazgo de auditoría genera un plan de acción con responsable, fecha de cierre y seguimiento hasta resolverlo.</p></div></details>
+        <details class="faq__item" name="faq"><summary>¿Cómo se asigna un responsable y una fecha a cada acción?</summary><div class="faq__a"><p>Al crear la acción eliges responsable y fecha de cierre. Esa persona recibe una notificación al instante por app y email, y Solved envía recordatorios antes de que venza el plazo.</p></div></details>
+        <details class="faq__item" name="faq"><summary>¿Solved gestiona las no conformidades de auditoría (ISO 9001, IFS, BRC)?</summary><div class="faq__a"><p>Sí. Registra cada no conformidad de auditoría o inspección, la asigna con responsable y plazo, y mantiene la trazabilidad completa desde la detección hasta el cierre. Compatible con ISO 9001, IFS, BRC, ISO 22000 y APPCC.</p></div></details>
+        <details class="faq__item" name="faq"><summary>¿Qué es el análisis de causa raíz y para qué sirve?</summary><div class="faq__a"><p>Es una metodología lean para llegar al origen real del problema, no solo al síntoma. Solved vincula las acciones correctivas al análisis para que la solución sea definitiva y no se repita.</p></div></details>
+        <details class="faq__item" name="faq"><summary>¿Puedo programar tareas planificadas además de las acciones correctivas?</summary><div class="faq__a"><p>Sí. Además del trabajo reactivo, puedes programar tareas recurrentes o puntuales y asignarlas a departamentos o personas, con el mismo seguimiento que las acciones correctivas.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="flow" id="s-contacto" data-screen-label="Acciones · Contacto">
+    <div class="slide__in">
+      <div class="form-card">
+        <h2>Habla con un experto en calidad industrial</h2>
+        <div class="hs-contact-form"></div>
+      </div>
+      <div class="contact__art">
+        <img class="shot" src="../assets/auditoria-formulario.webp" alt="Solicita una demostración de Solved" width="1622" height="2048" decoding="async" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+<script src="../chrome.js?v=20260623b"></script>
+<script>
+/* La notificación de "Cada acción tiene un dueño y una fecha" aparece al entrar en pantalla */
+(function(){
+  var el=document.querySelector('.notif-pop');
+  if(!el)return;
+  if(!('IntersectionObserver' in window)){el.classList.add('is-in');return;}
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); } });
+  },{threshold:0,rootMargin:'0px 0px -38% 0px'});
+  io.observe(el);
+})();
+</script>
+</body>
+</html>

@@ -25,9 +25,13 @@
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="' + ROOT + 'auditorias.html"><b>Registros/Checklist</b><span>Checklists proactivas y personalizadas</span></a>' +
-          '<a href="' + ROOT + 'incidencias.html"><b>Gestión de incidencias</b><span>Incidencias y acciones correctivas</span></a>' +
-          '<a href="' + ROOT + 'dashboard.html"><b>Dashboard</b><span>Datos e informes en tiempo real</span></a>' +
+          '<a href="' + ROOT + 'incidencias.html"><b>Incidencias</b><span>Registra, asigna y resuelve con cierre documentado</span></a>' +
+          '<a href="' + ROOT + 'auditorias.html"><b>Registros y auditorías</b><span>Controles, checklists y auditorías digitales</span></a>' +
+          '<a href="' + ROOT + 'no-conformidades/"><b>Tareas, acciones y no conformidades</b><span>Acciones correctivas y seguimiento hasta el cierre</span></a>' +
+          '<a href="' + ROOT + 'gestor-documental/"><b>Gestor documental</b><span>Documentación centralizada con control de caducidades</span></a>' +
+          '<a href="' + ROOT + 'mantenimiento/"><b>Mantenimiento y activos (GMAO)</b><span>Averías, activos con QR y preventivo desde planta</span></a>' +
+          '<a href="' + ROOT + 'dashboard.html"><b>KPIs y dashboards</b><span>Visión 360º en tiempo real e informes automáticos</span></a>' +
+          '<a href="' + ROOT + 'integraciones/"><b>Integraciones</b><span>Conecta tu ERP, MES y GMAO</span></a>' +
         '</div>' +
       '</li>' +
       '<li class="nav__item">' +

@@ -40,6 +40,7 @@ export const config = {
     { loc: '/',                          changefreq: 'weekly',  priority: '1.0' },
     { loc: '/auditorias.html',           changefreq: 'monthly', priority: '0.9' },
     { loc: '/incidencias.html',          changefreq: 'monthly', priority: '0.9' },
+    { loc: '/no-conformidades/',         changefreq: 'monthly', priority: '0.9' },
     { loc: '/dashboard.html',            changefreq: 'monthly', priority: '0.9' },
     { loc: '/industria-alimentaria.html',changefreq: 'monthly', priority: '0.8' },
     { loc: '/industria-general.html',    changefreq: 'monthly', priority: '0.8' },

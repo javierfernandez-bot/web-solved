@@ -44,9 +44,11 @@
 <section class="hero" data-screen-label="Home · Hero">
   <div class="wrap hero__in">
     <div class="hero__txt">
-      <h1>Operaciones más eficientes para tu fábrica</h1>
-      <p class="hero__sub">El Software que centraliza control de calidad, mejora continua y optimización de procesos.</p>
-      <a class="btn btn--primary btn--lg" href="#contacto">Solicita una demo gratis</a>
+      <h1>La plataforma de operaciones y calidad para tu fábrica</h1>
+      <p class="hero__sub">Solved conecta calidad, producción y mantenimiento: registros, incidencias, auditorías, documentación y KPIs en tiempo real. Sin papel, sin islas de información.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="#contacto">Solicita una demo gratis</a>
+      </div>
     </div>
     <div class="hero__art">
       <img src="assets/hero-image.webp" alt="Operarias en planta alimentaria usando la app Solved" style="width:100%;display:block;" width="1958" height="1360" decoding="async" fetchpriority="high"/>
@@ -176,50 +178,83 @@
   </div>
 </section>
 
-<!-- ============ PRODUCTS ============ -->
-<section class="section" data-screen-label="Home · Productos">
+<!-- ============ MODULES ============ -->
+<section class="section" data-screen-label="Home · Módulos">
   <div class="wrap">
     <div class="section-head">
-      <h2>La solución para gestionar incidencias en tu fábrica</h2>
-      <p>Las mejores herramientas para la gestión de incidencias de todas las áreas de tu fábrica</p>
+      <h2>Todo lo que tu planta necesita, en una sola plataforma</h2>
+      <p>Calidad, producción y mantenimiento conectados: elige por dónde empezar y amplía sin cambiar de herramienta.</p>
     </div>
 
-    <div class="prow">
-      <div class="prow__art">
-        <div class="device">
-          <img src="assets/producto-auditorias.webp" alt="App Solved: realizar inspección en el móvil" style="width:100%;max-width:460px;display:block;" width="1800" height="1800" decoding="async" loading="lazy"/>
-        </div>
-      </div>
-      <div class="prow__txt">
-        <h3>Auditorías</h3>
-        <p>Prevé problemas con checklist personalizadas y proactivas.</p>
-        <a class="btn btn--primary" href="auditorias.html">Revisa tus ítems</a>
-      </div>
+    <div class="modules">
+      <a class="mod-card" href="incidencias.html">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+        <h3>Incidencias</h3>
+        <p>Registra, asigna y resuelve cualquier problema en segundos, con responsable y cierre documentado.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
+
+      <a class="mod-card" href="auditorias.html">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6"/><path d="M9 12h6"/><path d="M9 17h4"/></svg></span>
+        <h3>Registros y auditorías</h3>
+        <p>Digitaliza controles, checklists y auditorías con plantillas a tu medida, rellenables desde el móvil.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
+
+      <a class="mod-card" href="no-conformidades/">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+        <h3>Tareas, acciones y no conformidades</h3>
+        <p>Asigna tareas y acciones correctivas, gestiona las no conformidades con responsable y fecha de cierre, y haz seguimiento hasta resolverlas.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
+
+      <a class="mod-card" href="gestor-documental/">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+        <h3>Gestor documental</h3>
+        <p>Centraliza tu documentación y controla caducidades con alertas automáticas.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
+
+      <a class="mod-card" href="mantenimiento/">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5.2 5.2L3 18l3 3 6.5-6.5a4 4 0 0 0 5.2-5.2l-2.6 2.6-2.1-.5-.5-2.1z"/></svg></span>
+        <h3>Mantenimiento y activos (GMAO)</h3>
+        <p>Gestiona averías, activos con QR y mantenimiento preventivo desde planta.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
+
+      <a class="mod-card" href="dashboard.html">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="12" y="7" width="3" height="10" rx="1"/><rect x="17" y="3" width="3" height="14" rx="1"/></svg></span>
+        <h3>KPIs y dashboards</h3>
+        <p>Visión 360º en tiempo real de calidad y operaciones, con informes automáticos.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
+
+      <a class="mod-card" href="integraciones/">
+        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 7h2a3 3 0 0 1 0 6h-2"/><path d="M9 17H7a3 3 0 0 1 0-6h2"/><path d="M8 12h8"/></svg></span>
+        <h3>Integraciones</h3>
+        <p>Conecta Solved con tu ERP, MES y GMAO. Complementamos tu stack, no lo reemplazamos.</p>
+        <span class="mod-card__go">Ver módulo →</span>
+      </a>
     </div>
 
-    <div class="prow prow--rev">
-      <div class="prow__art">
-        <div class="device">
-          <img src="assets/producto-incidencias.webp" alt="App Solved: gestión de incidencias y acciones correctivas" style="width:100%;max-width:580px;display:block;" width="1800" height="1800" decoding="async" loading="lazy"/>
-        </div>
+    <!-- Tres bloques de refuerzo -->
+    <div class="feature-row">
+      <div class="feature-box">
+        <h3>Complementa tu ERP/MES, no lo reemplaza</h3>
+        <p>Solved convive con tu MES o ERP y aporta la capa operativa de planta que esos sistemas no cubren. Sin migraciones ni cambios en tu stack.</p>
+        <a href="integraciones/">Ver integraciones →</a>
       </div>
-      <div class="prow__txt">
-        <h3>Incidencias y acciones correctivas</h3>
-        <p>Centraliza incidencias, asigna responsables y prioriza tareas.</p>
-        <a class="btn btn--primary" href="incidencias.html">Reporta tus incidencias</a>
+      <div class="feature-box">
+        <h3>Adopción sin fricción en planta</h3>
+        <ul>
+          <li>Formación integrada paso a paso en cada tarea.</li>
+          <li>Pensado para que el operario lo adopte sin resistencia.</li>
+          <li>Implementación en 2-3 semanas.</li>
+        </ul>
       </div>
-    </div>
-
-    <div class="prow">
-      <div class="prow__art">
-        <div class="device">
-          <img src="assets/producto-informes.webp" alt="App Solved: informes y datos en tiempo real" style="width:100%;max-width:620px;display:block;" width="1800" height="1800" decoding="async" loading="lazy"/>
-        </div>
-      </div>
-      <div class="prow__txt">
-        <h3>Informes</h3>
-        <p>Accede a datos en tiempo real y obtén una visión estratégica.</p>
-        <a class="btn btn--primary" href="dashboard.html">Decide en base a tus datos</a>
+      <div class="feature-box">
+        <h3>De la incidencia al cierre</h3>
+        <p class="flow"><span>Registra</span><i>→</i><span>asigna responsable</span><i>→</i><span>notifica</span><i>→</i><span>cierre documentado</span></p>
       </div>
     </div>
   </div>

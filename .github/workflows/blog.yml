@@ -14,9 +14,10 @@ name: Rebuild blog
 on:
   workflow_dispatch: {}          # botón manual en la pestaña Actions (siempre disponible)
   schedule:
-    # Cada día a las 19:00 UTC, ~1,5 h después del publicador diario de Make
-    # (que publica en WP sobre las 17:27 UTC) para recoger el post del día.
-    - cron: '0 19 * * *'
+    # Cada día a las 08:00 hora de España (verano CEST = 06:00 UTC). Recoge el
+    # post que el publicador diario de Make dejó publicado la tarde anterior
+    # (~17:27 UTC). Nota: el cron es fijo en UTC, así que en invierno cae a las 07:00.
+    - cron: '0 6 * * *'
 
 permissions:
   contents: write                # para commitear el /blog regenerado

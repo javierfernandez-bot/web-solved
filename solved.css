@@ -210,6 +210,66 @@ body { padding-top: 88px; }
 .vcard a:hover { gap: 9px; }
 
 /* =========================================================
+   MODULE CARDS (home · componente reutilizable de módulo)
+   Título + descripción + icono + enlace. Grid responsive,
+   mobile-first. Se reutilizará en el desplegable de nav.
+   ========================================================= */
+.modules { display: grid; grid-template-columns: 1fr; gap: var(--s-3); }
+@media (min-width: 601px)  { .modules { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1001px) { .modules { grid-template-columns: repeat(3, 1fr); } }
+.mod-card { background: #fff; border: 1px solid var(--border-1); border-radius: var(--r-3);
+  padding: var(--s-4); display: flex; flex-direction: column; gap: 12px; text-decoration: none;
+  box-shadow: var(--shadow-1); transition: box-shadow var(--dur-slow) var(--ease-soft), transform var(--dur-slow) var(--ease-soft), border-color var(--dur-slow) var(--ease-soft); }
+.mod-card:hover { box-shadow: var(--shadow-3); transform: translateY(-3px); border-color: var(--blue-200, var(--border-1)); }
+.mod-card:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.mod-card__ico { width: 44px; height: 44px; border-radius: var(--r-2); background: var(--blue-50); color: var(--blue-700); display: grid; place-items: center; flex: 0 0 auto; }
+.mod-card__ico svg { width: 22px; height: 22px; }
+.mod-card h3 { font-size: 18px; margin: 0; color: var(--ink-900); letter-spacing: -0.01em; }
+.mod-card p { font-size: 15px; color: var(--ink-600); margin: 0; line-height: 1.5; flex: 1; }
+.mod-card__go { color: var(--blue-700); font-weight: 600; font-size: 14px; display: inline-flex; gap: 6px; align-items: center; }
+.mod-card:hover .mod-card__go { gap: 9px; }
+
+/* --- Hero: doble CTA --- */
+.hero__cta { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+
+/* --- Bloques de refuerzo bajo los módulos --- */
+.feature-row { display: grid; grid-template-columns: 1fr; gap: var(--s-4); margin-top: var(--s-6); }
+@media (min-width: 861px) { .feature-row { grid-template-columns: repeat(3, 1fr); } }
+.feature-box { background: #fff; border: 1px solid var(--border-1); border-radius: var(--r-3); padding: var(--s-4); }
+.feature-box h3 { font-size: 19px; margin: 0 0 10px; color: var(--ink-900); letter-spacing: -0.01em; }
+.feature-box p { font-size: 15px; color: var(--ink-600); margin: 0 0 12px; line-height: 1.55; }
+.feature-box ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.feature-box li { font-size: 15px; color: var(--ink-800); line-height: 1.45; display: flex; gap: 10px; align-items: flex-start; }
+.feature-box li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); margin-top: 7px; flex: 0 0 auto; }
+.feature-box a { color: var(--blue-700); font-weight: 600; font-size: 14px; display: inline-flex; gap: 6px; align-items: center; }
+.feature-box a:hover { gap: 9px; }
+.flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 0; }
+.flow span { background: var(--blue-50); color: var(--blue-700); font-weight: 600; font-size: 14px; padding: 7px 14px; border-radius: var(--r-pill); }
+.flow i { color: var(--ink-400); font-style: normal; font-weight: 700; }
+
+/* --- Línea de normativa bajo la franja de logos --- */
+.compliance-note { text-align: center; margin: var(--s-4) auto 0; max-width: 70ch;
+  font-size: 15px; color: var(--ink-600); }
+.compliance-note b { color: var(--ink-900); font-weight: 600; }
+.band-dark .compliance-note { color: rgba(255,255,255,.72); }
+.band-dark .compliance-note b { color: #fff; }
+
+/* --- Diagrama de integraciones (lienzo fijo 1200×660, scroll en móvil) --- */
+.intg-frame { display: flex; justify-content: center; }
+@media (max-width: 1240px) {
+  .intg-frame { justify-content: flex-start; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 10px; }
+}
+.intg-cta { text-align: center; margin-top: var(--s-6); }
+.intg-cta p { font-size: 18px; color: var(--ink-600); margin: 0 0 var(--s-3); }
+
+/* --- Stub "próximamente" (páginas placeholder) --- */
+.stub { text-align: center; max-width: 640px; margin: 0 auto; padding: var(--s-12) 0; }
+.stub__badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: var(--r-pill);
+  background: var(--blue-50); color: var(--blue-700); font-size: 13px; font-weight: 600; margin-bottom: var(--s-3); }
+.stub h1 { font-size: 44px; line-height: 1.08; letter-spacing: -0.03em; font-weight: 600; margin: 0 0 var(--s-3); }
+.stub__sub { font-size: 18px; line-height: 1.55; color: var(--ink-600); margin: 0 0 var(--s-4); }
+
+/* =========================================================
    PAIN CARDS (industria pages)
    ========================================================= */
 .pain-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--s-2); }
