@@ -42,8 +42,8 @@ jobs:
       - name: Generar el blog
         run: npm run build:blog
         env:
-          # Cambia esto cuando WordPress viva en un subdominio:
-          WP_API_BASE: https://trysolved.com/wp-json/wp/v2
+          # WordPress (CMS/API) vive en trysolved.es; el sitio estático es trysolved.com.
+          WP_API_BASE: https://trysolved.es/wp-json/wp/v2
 
       - name: Commit si hay cambios
         run: |
