@@ -7,8 +7,8 @@
 //  - enlaces a otros posts de WP → /blog/{slug}/ ; externos → rel/target seguros
 // =========================================================
 import * as cheerio from 'cheerio';
-import { WP_ORIGIN } from '../config.mjs';
 import { buildPicture } from './images.mjs';
+import { resolveInternalHref } from './links.mjs';
 
 const localizable = (url = '') => url.includes('/wp-content/');
 
@@ -27,8 +27,10 @@ export function collectImageUrls(html) {
  * Limpia el contenido y devuelve HTML listo para inyectar en .post__body.
  * @param imageMap  Map<url, imageData> ya optimizadas (de images.optimizeImage)
  * @param blogPrefix ruta desde la página hasta /blog/ (p. ej. '../')
+ * @param rootPrefix ruta desde la página hasta la raíz del sitio (p. ej. '../../')
+ * @param slugs      Set con los slugs de posts publicados (para validar enlaces internos)
  */
-export function sanitizeContent(html, imageMap, blogPrefix) {
+export function sanitizeContent(html, imageMap, blogPrefix, rootPrefix = `${blogPrefix}../`, slugs = new Set()) {
   const $ = cheerio.load(html, null, false);
 
   // 1) Fuera elementos no deseados.
@@ -53,15 +55,18 @@ export function sanitizeContent(html, imageMap, blogPrefix) {
   // 3) Reescribir enlaces.
   $('a[href]').each((_, el) => {
     const $a = $(el);
-    let href = $a.attr('href');
+    const href = $a.attr('href');
     if (!href) return;
-    if (href.startsWith(WP_ORIGIN)) {
-      // ¿permalink de post? (un único segmento de ruta) → /blog/{slug}/
-      const p = new URL(href).pathname.replace(/^\/|\/$/g, '');
-      if (p && !p.includes('/') && !/\.[a-z0-9]+$/i.test(p)) {
-        $a.attr('href', `${blogPrefix}${p}/`);
-      }
-    } else if (/^https?:\/\//i.test(href)) {
+    // Internos (nuestro dominio o root-relativos): corregir a la URL real del
+    // sitio estático (o quitar el enlace si el destino no existe).
+    const res = resolveInternalHref(href, { blogPrefix, rootPrefix, slugs });
+    if (res) {
+      if (res.unwrap) $a.replaceWith($a.contents());
+      else $a.attr('href', res.href);
+      return;
+    }
+    // Externos: abrir en pestaña nueva de forma segura.
+    if (/^https?:\/\//i.test(href)) {
       $a.attr('target', '_blank').attr('rel', 'noopener noreferrer');
     }
   });

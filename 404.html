@@ -9,6 +9,18 @@
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png"/>
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
 <title>Página no encontrada (404) · Solved</title>
+<script>
+/* Rescate de URLs de artículos sin el prefijo /blog/ (enlaces externos/antiguos):
+   /{slug-con-guiones}/ → /blog/{slug}/. Guarda anti-bucle: no actúa dentro de /blog/. */
+(function () {
+  var p = location.pathname;
+  if (p.indexOf('/blog/') === 0) return;
+  var seg = p.replace(/^\/+|\/+$/g, '').split('/');
+  if (seg.length === 1 && /-/.test(seg[0]) && !/\.[a-z0-9]+$/i.test(seg[0])) {
+    location.replace('/blog/' + seg[0] + '/' + location.hash);
+  }
+})();
+</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
