@@ -72,7 +72,10 @@ body { padding-top: 88px; overflow-x: clip; }
 .hero__sub { font-size: 20px; line-height: 1.55; color: var(--ink-600); max-width: 40rem; margin: 0 0 var(--s-4); }
 .hero__art { position: relative; }
 /* Home hero — foto con componentes flotantes (mismo estilo que la hero de tareas) */
-.hero__art > img { border-radius: var(--r-3); box-shadow: var(--shadow-3); }
+/* Los heroes de producto/industria son composiciones PNG con fondo transparente y
+   sus propias esquinas/sombras horneadas: no aplicar tarjeta (radius/box-shadow),
+   o la sombra rectangular dibuja un "fondo" alrededor de la zona transparente. */
+.hero__art > img { border-radius: 0; box-shadow: none; }
 .hfx { position: absolute; z-index: 2; display: flex; align-items: center; gap: 12px; background: var(--bg-surface); border: 1px solid var(--border-1); border-radius: 18px; box-shadow: 0 24px 54px rgba(11,18,32,.17), 0 6px 16px rgba(11,18,32,.09); padding: 14px 22px; font-size: 18px; font-weight: 700; color: var(--fg-1); white-space: nowrap; }
 .hfx__ico { flex: none; width: 44px; height: 44px; border-radius: 13px; display: grid; place-items: center; background: var(--blue); color: var(--fg-on-blue); }
 .hfx__ico .bico { width: 25px; height: 25px; }

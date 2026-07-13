@@ -26,7 +26,7 @@ export const config = {
   IMAGE_WIDTHS: [480, 768, 1200],  // anchos responsive (no se amplían si el original es menor)
   RELATED_COUNT: 3,                // posts relacionados por categoría
 
-  ASSET_VERSION: '20260708j',      // ?v= para cache-busting de CSS/JS (igual que el resto del sitio)
+  ASSET_VERSION: '20260713a',      // ?v= para cache-busting de CSS/JS (igual que el resto del sitio)
 
   // ---- Identidad para SEO / JSON-LD ----
   ORG: {
