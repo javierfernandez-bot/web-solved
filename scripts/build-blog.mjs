@@ -78,6 +78,7 @@ async function main() {
   // 4) Renderizar cada post.
   const rootPrefix = '../../'; // blog/{slug}/index.html → raíz del repo
   const blogPrefix = '../';    // blog/{slug}/index.html → /blog/
+  const slugs = new Set(posts.map((p) => p.slug)); // para validar enlaces internos del contenido
   for (const post of posts) {
     const canonical = `${SITE_URL}/blog/${post.slug}/`;
     const featured = post.featured ? featuredMap.get(post.featured.url) : null;
@@ -86,7 +87,7 @@ async function main() {
       : '';
     const ogImage = featured ? `${SITE_URL}/blog/assets/${featured.jpg || featured.largestWebp}` : null;
 
-    const bodyHtml = sanitizeContent(post.contentHtml, contentImageMap, blogPrefix);
+    const bodyHtml = sanitizeContent(post.contentHtml, contentImageMap, blogPrefix, rootPrefix, slugs);
 
     // Relacionados: misma categoría, excluyendo el propio, máx RELATED_COUNT.
     const catId = post.primaryCategory ? post.primaryCategory.id : null;

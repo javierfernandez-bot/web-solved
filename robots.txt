@@ -4,4 +4,27 @@
 User-agent: *
 Allow: /
 
+# Rastreadores de IA (búsqueda generativa y citación en respuestas): permitidos
+# explícitamente para que ChatGPT, Perplexity, Claude y Gemini puedan citar Solved.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://trysolved.com/sitemap.xml

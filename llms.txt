@@ -1,0 +1,23 @@
+# Solved
+
+> Solved es un software para fábricas que centraliza en una sola plataforma el control de calidad, la gestión de incidencias, las auditorías, las no conformidades y la mejora continua, accesible desde móvil, tablet y PC. Está pensado para la industria alimentaria y la fabricación en general.
+
+Solved (de VOLSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las operaciones de planta y elimina el papel: registros y checklists, incidencias con responsable y cierre documentado, no conformidades y acciones correctivas con seguimiento hasta el cierre, auditorías digitales (compatibles con ISO 9001, IFS, BRC, ISO 22000 y APPCC) y KPIs en tiempo real. Complementa tu ERP, MES o GMAO sin reemplazarlos. La implementación media es de 2 a 3 semanas y más de 100 empresas industriales ya lo utilizan. El acceso es mediante demostración gratuita (no hay autoservicio de precios público).
+
+## Producto
+- [Incidencias](https://trysolved.com/incidencias.html): registra, asigna y resuelve incidencias en segundos, con responsable y cierre documentado.
+- [Registros y auditorías](https://trysolved.com/auditorias.html): digitaliza controles, checklists y auditorías con plantillas rellenables desde el móvil.
+- [Tareas, acciones y no conformidades](https://trysolved.com/no-conformidades/): acciones correctivas, gestión de no conformidades y análisis de causa raíz con seguimiento hasta el cierre.
+- [KPIs y dashboards](https://trysolved.com/dashboard.html): visión 360º en tiempo real de calidad y operaciones, con informes automáticos.
+
+## Industrias
+- [Industria alimentaria](https://trysolved.com/industria-alimentaria.html): control de calidad, APPCC y trazabilidad para fábricas de alimentación.
+- [Industria general](https://trysolved.com/industria-general.html): calidad e incidencias para fabricación, packaging y química.
+
+## Recursos
+- [Blog](https://trysolved.com/blog/): artículos sobre calidad, auditorías, incidencias y mejora continua en la industria.
+- [Glosario del sector agroalimentario](https://trysolved.com/glosario/): definiciones de términos de calidad e inocuidad alimentaria.
+
+## Contacto
+- Demostración gratuita: https://trysolved.com/#contacto
+- Empresa: VOLSTONE TECHNOLOGY SERVICES S.L. — Edificio Angels, Carrer del Port 13, 46024 Valencia (España).

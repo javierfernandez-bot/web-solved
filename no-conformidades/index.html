@@ -31,9 +31,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="preload" as="image" type="image/webp" href="../assets/tanques-hero.webp" fetchpriority="high"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"/>
-<link rel="stylesheet" href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260623b"/>
-<link rel="stylesheet" href="../solved.css?v=20260623b"/>
+<link rel="stylesheet" href="../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260708j"/>
+<link rel="stylesheet" href="../solved.css?v=20260708j"/>
 <style>
 /* ===== Secciones normales · scroll lineal ===== */
 html{scroll-behavior:smooth;}
@@ -44,12 +45,53 @@ html,body{overflow-x:clip;max-width:100%;}
 .slide--dark{background:var(--ink-900);color:var(--fg-on-dark);}
 .slide__in{width:100%;max-width:1080px;display:grid;grid-template-columns:1.02fr 1fr;gap:56px;align-items:center;}
 .slide--center .slide__in{grid-template-columns:1fr;max-width:760px;text-align:center;}
+@media (min-width:900px){ .slide--rev .slide__in{direction:rtl;} .slide--rev .slide__in>*{direction:ltr;} }
 .slide__txt h1{font-size:46px;line-height:1.07;letter-spacing:-0.03em;margin:0 0 16px;}
 .slide__txt h2{font-size:35px;line-height:1.12;letter-spacing:-0.025em;margin:0 0 14px;}
 .slide__txt>p{font-size:18px;line-height:1.5;color:var(--fg-2);margin:0;}
 .slide__txt .kicker{margin-bottom:14px;}
 .slide__note{margin-top:18px !important;font-size:14px !important;color:var(--fg-3) !important;}
 @media (max-width:899px){ .slide__in{grid-template-columns:1fr;gap:34px;} .slide__txt h1{font-size:34px;} .slide__txt h2{font-size:27px;} .flow,.stack-card{padding:64px 20px;} }
+
+/* ===== Hero · imagen real de planta + detalle estético ===== */
+.hero-vis{position:relative;width:100%;max-width:460px;margin-inline:auto;}
+.hero-vis>img{width:100%;height:auto;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-3);}
+.hero-vis::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-14%;height:60%;background:radial-gradient(60% 100% at 50% 100%,var(--accion-bg),transparent 72%);filter:blur(24px);z-index:-1;}
+.hero-vis__badge{position:absolute;left:-24px;bottom:26px;display:flex;align-items:center;gap:14px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:15px 20px 15px 16px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.hero-vis__pill{position:absolute;top:22px;right:-22px;display:flex;align-items:center;gap:14px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:14px 20px 14px 16px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.hero-vis__ico{flex:none;width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;}
+.hero-vis__ico .material-symbols-outlined{font-size:22px;}
+.hero-vis__ico--closed{background:var(--st-closed-bg);color:var(--st-closed);}
+.hero-vis__ico--open{background:var(--st-open-bg);color:var(--st-open);}
+.hero-vis__ico--late{background:rgba(224,49,49,.12);color:var(--crit);}
+@keyframes heroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+@keyframes heroFloatAlt{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-vis__badge{animation:heroFloat 4.8s ease-in-out infinite;}
+  .hero-vis__pill{animation:heroFloatAlt 5.6s ease-in-out infinite;}
+}
+@media (max-width:899px){ .hero-vis{max-width:520px;} .hero-vis__badge{left:6px;} .hero-vis__pill{right:2px;} }
+
+/* Hero más grande: texto e imagen llenan más la pantalla (solo desktop) */
+@media (min-width:900px){
+  #s-hero .slide__in{max-width:1200px;gap:64px;}
+  #s-hero .slide__txt h1{font-size:58px;}
+  #s-hero .slide__txt>p{font-size:20px;}
+  #s-hero .hero-vis{max-width:560px;}
+}
+
+/* ===== No conformidades · foto de planta con la tarjeta solapada ===== */
+.appui:has(.nc-vis){max-width:620px;}
+.nc-vis{position:relative;width:100%;padding:0 0 170px 0;}
+.nc-vis__photo{width:100%;height:auto;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-3);}
+.nc-vis::after{content:"";position:absolute;left:-4%;right:-4%;bottom:2%;height:52%;background:radial-gradient(60% 100% at 40% 100%,var(--accion-bg),transparent 72%);filter:blur(24px);z-index:-1;}
+.nc-vis .card{position:absolute;left:-104px;bottom:-40px;width:min(380px,82%);padding:15px 17px;box-shadow:var(--shadow-3);}
+.nc-vis .card .mono{white-space:nowrap;}
+@media (max-width:899px){
+  .appui:has(.nc-vis){max-width:540px;}
+  .nc-vis{padding-bottom:0;}
+  .nc-vis .card{position:relative;left:auto;bottom:auto;width:92%;margin:-48px auto 0;}
+}
 
 /* ===== COMPONENTES = UI de la app (Roboto + Material Symbols) ===== */
 .appui{font-family:'Roboto','Helvetica Neue',sans-serif;max-width:440px;margin-inline:auto;width:100%;}
@@ -65,11 +107,11 @@ html,body{overflow-x:clip;max-width:100%;}
 .stack-card>input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
 .rca-tabs{display:flex;gap:8px;padding:16px 18px 0;}
 .rca-tab{flex:1;text-align:center;cursor:pointer;font-size:13px;font-weight:600;color:var(--fg-2);padding:9px 10px;border-radius:999px;background:var(--ink-50);border:1px solid var(--border-1);box-shadow:var(--shadow-1);transition:background .15s,color .15s,border-color .15s,box-shadow .15s,transform .05s;}
-.rca-tab:hover{color:var(--accion);border-color:var(--accion);background:var(--accion-bg);box-shadow:var(--shadow-2);}
+.rca-tab:hover{color:var(--blue);border-color:var(--blue);background:var(--blue-50);box-shadow:var(--shadow-2);}
 .rca-tab:active{transform:translateY(1px);}
 .rca-panels{padding:16px 18px 18px;display:grid;}
 .rca-p{grid-area:1/1;visibility:hidden;}
-#rca-5w:checked~.slide__in .rca-tab[for="rca-5w"],#rca-ish:checked~.slide__in .rca-tab[for="rca-ish"]{color:var(--fg-on-dark);background:var(--accion);border-color:var(--accion);}
+#rca-5w:checked~.slide__in .rca-tab[for="rca-5w"],#rca-ish:checked~.slide__in .rca-tab[for="rca-ish"]{color:var(--fg-on-dark);background:var(--blue);border-color:var(--blue);}
 #rca-5w:checked~.slide__in .rca-p--5w{visibility:visible;}
 #rca-ish:checked~.slide__in .rca-p--ish{visibility:visible;}
 
@@ -79,16 +121,33 @@ html,body{overflow-x:clip;max-width:100%;}
 .pf-hd{display:flex;align-items:center;gap:8px;padding:16px 18px 0;}
 .pf-btns{display:flex;flex-wrap:wrap;gap:8px;padding:12px 18px 16px;border-bottom:1px solid var(--border-1);}
 .pf-btn{cursor:pointer;font-size:13px;font-weight:600;color:var(--fg-2);padding:7px 14px;border-radius:999px;background:var(--ink-50);border:1px solid var(--border-1);box-shadow:var(--shadow-1);transition:background .15s,color .15s,border-color .15s,box-shadow .15s,transform .05s;}
-.pf-btn:hover{color:var(--accion);border-color:var(--accion);background:var(--accion-bg);box-shadow:var(--shadow-2);}
+.pf-btn:hover{color:var(--blue);border-color:var(--blue);background:var(--blue-50);box-shadow:var(--shadow-2);}
 .pf-btn:active{transform:translateY(1px);}
 .pf-list{padding:14px 18px 16px;display:grid;}
 .pf-row{display:flex;align-items:center;gap:11px;}
 .pf-panel{grid-area:1/1;visibility:hidden;display:flex;flex-direction:column;gap:12px;}
-#pf-all:checked~.slide__in .pf-btn[for="pf-all"],#pf-juan:checked~.slide__in .pf-btn[for="pf-juan"],#pf-marcos:checked~.slide__in .pf-btn[for="pf-marcos"],#pf-raquel:checked~.slide__in .pf-btn[for="pf-raquel"]{color:var(--fg-on-dark);background:var(--accion);border-color:var(--accion);}
+#pf-all:checked~.slide__in .pf-btn[for="pf-all"],#pf-juan:checked~.slide__in .pf-btn[for="pf-juan"],#pf-marcos:checked~.slide__in .pf-btn[for="pf-marcos"],#pf-raquel:checked~.slide__in .pf-btn[for="pf-raquel"]{color:var(--fg-on-dark);background:var(--blue);border-color:var(--blue);}
 #pf-all:checked~.slide__in .pf-panel--all{visibility:visible;}
 #pf-juan:checked~.slide__in .pf-panel--juan{visibility:visible;}
 #pf-marcos:checked~.slide__in .pf-panel--marcos{visibility:visible;}
 #pf-raquel:checked~.slide__in .pf-panel--raquel{visibility:visible;}
+
+/* Colaboración — misma distribución que #s-nc (No conformidades): foto con conversación superpuesta */
+.nc-vis--chat{padding-bottom:0;font-family:'Roboto','Helvetica Neue',sans-serif;transform:translateX(30px);}
+.split__msg{position:absolute;max-width:54%;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:10px 12px;font-size:12.5px;line-height:1.35;color:var(--fg-1);}
+.split__msg::after{display:none;}
+.split__who{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;margin-bottom:4px;}
+.split__who .avatar{flex:none;width:20px;height:20px;border-radius:999px;color:var(--fg-on-dark);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;}
+.split__msg--l{left:3%;top:11%;transform:translate(-80px,-60px);}
+.split__msg--l::after{display:none;}
+.split__msg--l .split__who{color:var(--role-resp);}
+.split__msg--l .split__who .avatar{background:var(--role-resp);}
+.split__msg--r{right:3%;bottom:12%;transform:translate(80px,60px);}
+.split__msg--r::after{right:-13px;border-left-color:var(--bg-surface);}
+.split__msg--r .split__who{color:var(--role-verif);justify-content:flex-end;}
+.split__msg--r .split__who .avatar{background:var(--role-verif);}
+.split__msg--r{text-align:right;}
+@media (max-width:540px){ .split__msg{font-size:11px;max-width:60%;padding:8px 10px;} .split__who .avatar{width:18px;height:18px;} }
 
 #s-clientes{min-height:auto;padding:40px 24px;flex-direction:column;gap:22px;overflow:hidden;background:radial-gradient(720px 220px at 12% -10%, rgba(30,107,255,.30), rgba(30,107,255,0) 62%),radial-gradient(640px 260px at 92% 120%, rgba(14,58,143,.55), rgba(14,58,143,0) 60%),var(--ink-900);}
 #s-clientes .logos-carousel{width:100%;margin:0;}
@@ -118,31 +177,23 @@ html,body{overflow-x:clip;max-width:100%;}
         <h1>De la detección al cierre. Nada se queda sin resolver.</h1>
         <p>Convierte cada incidencia o hallazgo de auditoría en un plan de acción con dueño, plazo y seguimiento automático. Solved no solo detecta lo que falla: lo lleva hasta el final.</p>
         <div class="hero__cta" style="margin-top:26px;">
-          <a class="btn btn--primary btn--lg" href="#s-contacto">Solicita una demo</a>
+          <a class="btn btn--primary btn--lg" href="#contacto">Solicita una demo</a>
         </div>
       </div>
-      <div class="appui">
-        <div class="card">
-          <div class="row" style="margin-bottom:16px;">
-            <span style="flex:none;width:30px;height:30px;border-radius:9px;background:var(--accion-bg);color:var(--accion);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:18px;">task_alt</span></span>
-            <span class="pill mono" style="background:var(--ink-50);color:var(--fg-2);">ACC-0473</span>
-            <span class="pill" style="margin-left:auto;background:var(--st-review-bg);color:var(--prio-media-fg);">En curso</span>
+      <div class="hero-vis">
+        <img src="../assets/tanques-hero.webp" alt="Dos operarias con casco inspeccionan tanques de acero inoxidable con una tablet en planta" width="700" height="500" decoding="async" fetchpriority="high"/>
+        <div class="hero-vis__pill">
+          <span class="hero-vis__ico hero-vis__ico--late"><span class="material-symbols-outlined">event_busy</span></span>
+          <div style="line-height:1.25;">
+            <div style="font-size:14px;font-weight:600;color:var(--crit);">Tarea pasada de fecha</div>
+            <div style="font-size:12px;color:var(--fg-3);">Marta Ríos · venció hace 2 días</div>
           </div>
-          <div style="font-size:16px;font-weight:600;color:var(--fg-1);line-height:1.35;margin-bottom:16px;">Revisar sellado de la cámara 2 tras hallazgo de auditoría</div>
-          <div class="row" style="margin-bottom:16px;">
-            <span class="avatar" style="background:var(--role-resp);">MR</span>
-            <div style="line-height:1.3;"><div style="font-size:13px;font-weight:600;color:var(--fg-1);">Marta Ríos</div><div style="font-size:12px;color:var(--fg-3);">Responsable · Mantenimiento</div></div>
-            <span class="row" style="margin-left:auto;gap:6px;font-size:12px;font-weight:500;color:var(--fg-2);padding:5px 10px;border-radius:8px;background:var(--ink-50);border:1px solid var(--border-1);"><span class="material-symbols-outlined" style="font-size:15px;">event</span>Cierre 12 jun</span>
-          </div>
-          <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;margin-bottom:6px;">
-            <span style="text-transform:uppercase;letter-spacing:0.06em;color:var(--fg-3);font-size:10px;font-weight:500;">Progreso</span>
-            <span style="font-weight:700;color:var(--accion);">85%</span>
-          </div>
-          <div style="height:8px;border-radius:999px;background:var(--ink-50);overflow:hidden;margin-bottom:16px;"><div style="width:85%;height:100%;border-radius:999px;background:var(--accion);"></div></div>
-          <div style="display:flex;flex-direction:column;gap:9px;">
-            <div class="row" style="font-size:13px;color:var(--fg-2);"><span style="flex:none;width:20px;height:20px;border-radius:6px;background:var(--st-closed-bg);color:var(--st-closed);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:14px;">check</span></span>Análisis de causa raíz completado</div>
-            <div class="row" style="font-size:13px;color:var(--fg-2);"><span style="flex:none;width:20px;height:20px;border-radius:6px;background:var(--st-closed-bg);color:var(--st-closed);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:14px;">check</span></span>Recambio de junta solicitado</div>
-            <div class="row" style="font-size:13px;color:var(--fg-1);font-weight:500;"><span style="flex:none;width:20px;height:20px;border-radius:6px;background:var(--st-open-bg);color:var(--st-open);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:14px;">radio_button_unchecked</span></span>Verificación final del responsable de calidad</div>
+        </div>
+        <div class="hero-vis__badge">
+          <span class="hero-vis__ico hero-vis__ico--closed"><span class="material-symbols-outlined">task_alt</span></span>
+          <div style="line-height:1.25;">
+            <div style="font-size:15px;font-weight:600;color:var(--fg-1);">Acción cerrada</div>
+            <div style="font-size:12px;color:var(--fg-3);">ACC-0473 · verificada en planta</div>
           </div>
         </div>
       </div>
@@ -283,6 +334,8 @@ html,body{overflow-x:clip;max-width:100%;}
   <section class="stack-card" id="s-nc" data-screen-label="Acciones · No conformidades">
     <div class="slide__in">
       <div class="appui">
+        <div class="nc-vis">
+        <img class="nc-vis__photo" src="../assets/ordenador_fabrica.jpg" alt="Operaria de calidad con bata, mascarilla y guantes registra datos en el ordenador de la planta" width="700" height="467" loading="lazy" decoding="async"/>
         <div class="card">
           <div class="row" style="margin-bottom:14px;"><span style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-2);font-weight:600;">No conformidades</span><span class="row" style="margin-left:auto;gap:6px;"><span class="pill" style="background:var(--accion-bg);color:var(--accion);">Todas</span><span class="pill" style="background:var(--ink-50);color:var(--fg-3);">Abiertas</span><span class="pill" style="background:var(--ink-50);color:var(--fg-3);">IFS</span></span></div>
           <div style="display:flex;flex-direction:column;gap:10px;">
@@ -291,6 +344,7 @@ html,body{overflow-x:clip;max-width:100%;}
             <div class="row" style="padding:12px 13px;border-radius:10px;border:1px solid var(--border-1);"><span class="mono" style="padding:3px 7px;border-radius:6px;background:var(--ink-50);color:var(--fg-2);">NC-115</span><span style="font-size:13px;color:var(--fg-1);flex:1;line-height:1.3;">Falta firma en control de recepción</span><span class="pill" style="background:var(--st-closed-bg);color:var(--st-closed);">Cerrada</span></div>
           </div>
           <div class="row" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border-1);gap:8px;font-size:12px;color:var(--fg-3);"><span class="material-symbols-outlined" style="font-size:16px;color:var(--st-closed);">verified</span>Trazabilidad completa hasta el cierre</div>
+        </div>
         </div>
       </div>
       <div class="slide__txt">
@@ -308,7 +362,7 @@ html,body{overflow-x:clip;max-width:100%;}
   </section>
 
   <!-- ========== 3 · CAUSA RAÍZ ========== -->
-  <section class="stack-card slide--tint" id="s-causaraiz" data-screen-label="Acciones · Causa raíz">
+  <section class="stack-card slide--tint slide--rev" id="s-causaraiz" data-screen-label="Acciones · Causa raíz">
     <input type="radio" name="rca" id="rca-5w" checked>
     <input type="radio" name="rca" id="rca-ish">
     <div class="slide__in">
@@ -365,7 +419,7 @@ html,body{overflow-x:clip;max-width:100%;}
   </section>
 
   <!-- ========== 4 · SEGUIMIENTO / FILTRO ========== -->
-  <section class="stack-card" id="s-seguimiento" data-screen-label="Acciones · Seguimiento">
+  <section class="stack-card slide--rev" id="s-seguimiento" data-screen-label="Acciones · Seguimiento">
     <input type="radio" name="pf" id="pf-all" checked>
     <input type="radio" name="pf" id="pf-juan">
     <input type="radio" name="pf" id="pf-marcos">
@@ -398,16 +452,19 @@ html,body{overflow-x:clip;max-width:100%;}
   </section>
 
   <!-- ========== 5 · COLABORACIÓN ========== -->
-  <section class="stack-card slide--tint" id="s-colaboracion" data-screen-label="Acciones · Colaboración">
+  <section class="stack-card slide--tint slide--rev" id="s-colaboracion" data-screen-label="Acciones · Colaboración">
     <div class="slide__in">
       <div class="appui">
-        <div class="card">
-          <div class="row" style="gap:8px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border-1);"><span class="mono" style="padding:3px 7px;border-radius:6px;background:var(--ink-50);color:var(--fg-2);">ACC-0473</span><span style="font-size:13px;font-weight:600;color:var(--fg-1);">Sellado cámara 2</span></div>
-          <div style="display:flex;flex-direction:column;gap:14px;">
-            <div style="display:flex;gap:10px;"><span class="avatar" style="width:30px;height:30px;background:var(--role-resp);">MR</span><div><div style="font-size:12px;color:var(--fg-3);margin-bottom:3px;"><b style="color:var(--fg-1);">Marta (Mantenimiento)</b> · 09:14</div><div style="font-size:13px;color:var(--fg-1);background:var(--ink-50);border-radius:10px;padding:9px 12px;line-height:1.4;">Junta sustituida. ¿Podéis validar la limpieza antes de arrancar?</div></div></div>
-            <div style="display:flex;gap:10px;"><span class="avatar" style="width:30px;height:30px;background:var(--role-verif);">JC</span><div><div style="font-size:12px;color:var(--fg-3);margin-bottom:3px;"><b style="color:var(--fg-1);">Jorge (Calidad)</b> · 09:31</div><div style="font-size:13px;color:var(--fg-1);background:var(--ink-50);border-radius:10px;padding:9px 12px;line-height:1.4;">Limpieza validada. Cierro la acción y adjunto el registro.</div></div></div>
+        <div class="nc-vis nc-vis--chat" role="img" aria-label="Dos operarios de distintos departamentos hablando sobre la misma acción en Solved: mantenimiento en planta y calidad en oficina">
+          <img class="nc-vis__photo" src="../assets/pantalla-dividida.webp" alt="" width="900" height="500" loading="lazy" decoding="async"/>
+          <div class="split__msg split__msg--l">
+            <span class="split__who"><span class="avatar">MR</span>Mario · Mantenimiento</span>
+            Junta sustituida. ¿Podéis validar la limpieza antes de arrancar?
           </div>
-          <div class="row" style="margin-top:16px;gap:10px;padding:9px 12px;border-radius:10px;border:1px solid var(--border-1);color:var(--fg-3);font-size:13px;">Escribe un comentario…<span style="margin-left:auto;flex:none;width:28px;height:28px;border-radius:8px;background:var(--accion);color:var(--fg-on-dark);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:16px;">send</span></span></div>
+          <div class="split__msg split__msg--r">
+            <span class="split__who">Jorge · Calidad<span class="avatar">JC</span></span>
+            Limpieza validada. Cierro la acción y adjunto el registro. ✔
+          </div>
         </div>
       </div>
       <div class="slide__txt">
@@ -418,24 +475,6 @@ html,body{overflow-x:clip;max-width:100%;}
           <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><b>Asignación de acciones entre departamentos</b><p>Deriva y comparte acciones entre equipos sin que nada se caiga entre medias.</p></div></div>
           <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><div><b>Asigna también a externos de fuera de la empresa</b><p>Proveedores, contratistas o auditores reciben y resuelven su acción sin necesidad de ser usuarios de tu Solved.</p></div></div>
           <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><b>Zona de comentarios en cada acción</b><p>Toda la conversación vive junto al problema, no en cadenas de correo.</p></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 6 · TAREAS PLANIFICADAS ========== -->
-  <section class="flow slide--center" id="s-tareas" data-screen-label="Acciones · Tareas planificadas">
-    <div class="slide__in">
-      <div class="slide__txt">
-        <span class="kicker">Tareas planificadas</span>
-        <h2>¿Y el trabajo que ya sabes que toca? También</h2>
-        <p>No todo es reactivo. Programa tareas recurrentes o puntuales y asígnalas a departamentos o personas, con el mismo seguimiento que las acciones correctivas.</p>
-        <div class="appui" style="max-width:520px;margin-top:30px;">
-          <div class="card" style="display:flex;align-items:center;gap:16px;text-align:left;">
-            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:var(--accion-bg);color:var(--accion);display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined" style="font-size:28px;">event_repeat</span></span>
-            <div><div style="font-size:14px;font-weight:600;color:var(--fg-1);">Limpieza profunda · línea 2</div><div style="font-size:12px;color:var(--fg-3);margin-top:2px;">Cada lunes · asignada a Producción · próxima 15 jun</div></div>
-            <span class="pill" style="margin-left:auto;flex:none;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--st-open-bg);color:var(--st-open);">Recurrente</span>
-          </div>
         </div>
       </div>
     </div>
@@ -456,14 +495,15 @@ html,body{overflow-x:clip;max-width:100%;}
   </section>
 
   <!-- ========== CONTACTO ========== -->
-  <section class="flow" id="s-contacto" data-screen-label="Acciones · Contacto">
-    <div class="slide__in">
+  <section class="contact" id="contacto" data-screen-label="Acciones · Contacto">
+    <div class="wrap contact__in">
       <div class="form-card">
-        <h2>Habla con un experto en calidad industrial</h2>
+        <h2>Habla con un especialista en calidad</h2>
+        <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689) -->
         <div class="hs-contact-form"></div>
       </div>
       <div class="contact__art">
-        <img class="shot" src="../assets/auditoria-formulario.webp" alt="Solicita una demostración de Solved" width="1622" height="2048" decoding="async" loading="lazy"/>
+        <img src="../assets/contacto-operario.webp" alt="Operario en almacén usando Solved" style="width:100%;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-2);" width="1024" height="910" decoding="async" loading="lazy"/>
       </div>
     </div>
   </section>
@@ -471,7 +511,7 @@ html,body{overflow-x:clip;max-width:100%;}
 </main>
 
 <div id="footer"></div>
-<script src="../chrome.js?v=20260623b"></script>
+<script src="../chrome.js?v=20260708j"></script>
 <script>
 /* La notificación de "Cada acción tiene un dueño y una fecha" aparece al entrar en pantalla */
 (function(){

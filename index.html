@@ -27,19 +27,20 @@
 <meta name="twitter:description" content="El software para fábricas que centraliza control de calidad, gestión de incidencias y mejora continua. Digitaliza tus operaciones y decide con datos en tiempo real."/>
 <meta name="twitter:image" content="https://trysolved.com/assets/og-image.png"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
-<link rel="preload" as="image" href="assets/hero-image.webp" fetchpriority="high"/>
+<link rel="preload" as="image" href="assets/botella-incidencia.webp"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://trysolved.com/#organization", "name": "Solved", "legalName": "VOLSTONE TECHNOLOGY SERVICES S.L.", "url": "https://trysolved.com/", "logo": {"@type": "ImageObject", "url": "https://trysolved.com/assets/logotipo-solved.webp"}, "description": "Software para fábricas que centraliza control de calidad, gestión de incidencias y mejora continua.", "address": {"@type": "PostalAddress", "streetAddress": "Edificio Angels, Carrer del Port, 13", "addressLocality": "Valencia", "postalCode": "46024", "addressCountry": "ES"}}, {"@type": "WebSite", "@id": "https://trysolved.com/#website", "url": "https://trysolved.com/", "name": "Solved", "inLanguage": "es", "publisher": {"@id": "https://trysolved.com/#organization"}}, {"@type": "SoftwareApplication", "name": "Solved", "applicationCategory": "BusinessApplication", "operatingSystem": "Web, iOS, Android", "url": "https://trysolved.com/", "description": "Plataforma de control de calidad, checklists digitales, gestión de incidencias e informes en tiempo real para la industria.", "publisher": {"@id": "https://trysolved.com/#organization"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es Solved?", "acceptedAnswer": {"@type": "Answer", "text": "Solved es un software para fábricas que centraliza el control de calidad, la gestión de incidencias y la mejora continua en una sola plataforma, accesible desde móvil, tablet y PC."}}, {"@type": "Question", "name": "¿Para qué empresas está pensado Solved?", "acceptedAnswer": {"@type": "Answer", "text": "Para fábricas e industrias —alimentaria, química, packaging, fabricación general— que quieren digitalizar checklists, auditorías e incidencias y eliminar el papel."}}, {"@type": "Question", "name": "¿Solved se integra con mi ERP, MES o GMAO?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Solved se conecta con los principales sistemas ERP, MES y GMAO del mercado para evitar la duplicidad de datos y centralizar la gestión."}}, {"@type": "Question", "name": "¿Puedo usar Solved desde el móvil?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Solved funciona en móvil, tablet y PC, para que tu equipo registre y consulte información desde la planta de producción o en movimiento."}}, {"@type": "Question", "name": "¿Cuánto tarda la implementación?", "acceptedAnswer": {"@type": "Answer", "text": "La implementación media de Solved es de 2 a 3 semanas, con acompañamiento durante todo el proceso de puesta en marcha."}}]}]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
-<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260623b"/>
-<link rel="stylesheet" href="solved.css?v=20260623b"/>
+<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260708j"/>
+<link rel="stylesheet" href="solved.css?v=20260708j"/>
 </head>
 <body data-screen-label="Home">
 
 <div id="nav"></div>
 
+<main>
 <!-- ============ HERO ============ -->
 <section class="hero" data-screen-label="Home · Hero">
   <div class="wrap hero__in">
@@ -51,7 +52,73 @@
       </div>
     </div>
     <div class="hero__art">
-      <img src="assets/hero-image.webp" alt="Operarias en planta alimentaria usando la app Solved" style="width:100%;display:block;" width="1958" height="1360" decoding="async" fetchpriority="high"/>
+      <div class="demo" role="img" aria-label="Interfaz de Solved creando una incidencia desde una tablet">
+        <div class="demo__tablet">
+          <div class="demo__app" id="solvedDemo">
+            <!-- Pantalla 1: lista de incidencias -->
+            <div class="demo__screen demo__screen--list">
+              <div class="demo__head">
+                <img class="demo__logo-img" src="assets/logotipo-solved.webp" alt="Solved" width="1975" height="713"/>
+                <span class="demo__head-sp">Incidencias</span>
+              </div>
+              <div class="demo__list">
+                <div class="demo__item">
+                  <span class="demo__idot demo__idot--prog"></span>
+                  <div class="demo__itxt"><b>Sensor de temperatura · cámara 3</b><span>Mantenimiento · hace 1 h</span></div>
+                  <span class="demo__tag demo__tag--prog">En curso</span>
+                </div>
+                <div class="demo__item">
+                  <span class="demo__idot demo__idot--open"></span>
+                  <div class="demo__itxt"><b>Etiquetado incorrecto · lote 214</b><span>Calidad · hace 3 h</span></div>
+                  <span class="demo__tag demo__tag--open">Abierta</span>
+                </div>
+                <div class="demo__item">
+                  <span class="demo__idot demo__idot--done"></span>
+                  <div class="demo__itxt"><b>Derrame en zona de envasado</b><span>Producción · ayer</span></div>
+                  <span class="demo__tag demo__tag--done">Cerrada</span>
+                </div>
+              </div>
+              <div class="demo__cta"><i class="bico" style="--bico:url('assets/iconos/mas.svg')"></i>Crear incidencia<span class="demo__cursor"></span></div>
+            </div>
+            <!-- Pantalla 2: formulario -->
+            <div class="demo__screen demo__screen--form">
+              <div class="demo__subhead"><i class="bico" style="--bico:url('assets/iconos/atras.svg')"></i>Nueva incidencia</div>
+              <div class="demo__body">
+                <div class="demo__step demo__step--cat">
+                  <span class="demo__lbl">Categoría</span>
+                  <div class="demo__field demo__select"><span>Calidad</span><i class="bico" style="--bico:url('assets/iconos/desplegado.svg')"></i></div>
+                </div>
+                <div class="demo__step demo__step--desc">
+                  <span class="demo__lbl">Descripción</span>
+                  <div class="demo__field demo__area demo__field--desc"><span class="demo__typed" data-text="Fuga en el sellado del tapón. Nivel de llenado irregular."></span><span class="demo__caret"></span></div>
+                </div>
+                <div class="demo__step demo__step--prio">
+                  <span class="demo__lbl">Prioridad</span>
+                  <div class="demo__pills"><span class="demo__pill">Baja</span><span class="demo__pill">Media</span><span class="demo__pill demo__pill--hi">Alta</span></div>
+                </div>
+                <div class="demo__step demo__step--evid">
+                  <span class="demo__lbl">Evidencia</span>
+                  <div class="demo__evid">
+                    <img src="assets/botella-incidencia.webp" alt="" width="60" height="46"/>
+                    <span class="demo__evid-t">botella_incidencia.png<span>1 foto adjunta</span></span>
+                    <span class="demo__ok"><i class="bico" style="--bico:url('assets/iconos/aceptar.svg')"></i></span>
+                  </div>
+                </div>
+                <div class="demo__step demo__step--submit"><div class="demo__submit">Enviar incidencia</div></div>
+              </div>
+              <div class="demo__done">
+                <span class="demo__done-ico"><i class="bico" style="--bico:url('assets/iconos/aceptar.svg')"></i></span>
+                <span class="demo__done-txt">Incidencia enviada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo__video">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="assets/embotelladora-agua.mp4" type="video/mp4"/>
+          </video>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -188,53 +255,33 @@
 
     <div class="modules">
       <a class="mod-card" href="incidencias.html">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+        <span class="mod-card__ico"><i class="bico" style="--bico:url('assets/iconos/reportar.svg')"></i></span>
         <h3>Incidencias</h3>
         <p>Registra, asigna y resuelve cualquier problema en segundos, con responsable y cierre documentado.</p>
         <span class="mod-card__go">Ver módulo →</span>
       </a>
 
       <a class="mod-card" href="auditorias.html">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6"/><path d="M9 12h6"/><path d="M9 17h4"/></svg></span>
+        <span class="mod-card__ico"><i class="bico" style="--bico:url('assets/iconos/lista.svg')"></i></span>
         <h3>Registros y auditorías</h3>
         <p>Digitaliza controles, checklists y auditorías con plantillas a tu medida, rellenables desde el móvil.</p>
         <span class="mod-card__go">Ver módulo →</span>
       </a>
 
       <a class="mod-card" href="no-conformidades/">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+        <span class="mod-card__ico"><i class="bico" style="--bico:url('assets/iconos/aceptar.svg')"></i></span>
         <h3>Tareas, acciones y no conformidades</h3>
         <p>Asigna tareas y acciones correctivas, gestiona las no conformidades con responsable y fecha de cierre, y haz seguimiento hasta resolverlas.</p>
         <span class="mod-card__go">Ver módulo →</span>
       </a>
 
-      <a class="mod-card" href="gestor-documental/">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
-        <h3>Gestor documental</h3>
-        <p>Centraliza tu documentación y controla caducidades con alertas automáticas.</p>
-        <span class="mod-card__go">Ver módulo →</span>
-      </a>
-
-      <a class="mod-card" href="mantenimiento/">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 0-5.2 5.2L3 18l3 3 6.5-6.5a4 4 0 0 0 5.2-5.2l-2.6 2.6-2.1-.5-.5-2.1z"/></svg></span>
-        <h3>Mantenimiento y activos (GMAO)</h3>
-        <p>Gestiona averías, activos con QR y mantenimiento preventivo desde planta.</p>
-        <span class="mod-card__go">Ver módulo →</span>
-      </a>
-
       <a class="mod-card" href="dashboard.html">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6" rx="1"/><rect x="12" y="7" width="3" height="10" rx="1"/><rect x="17" y="3" width="3" height="14" rx="1"/></svg></span>
+        <span class="mod-card__ico"><i class="bico" style="--bico:url('assets/iconos/grafico-torta.svg')"></i></span>
         <h3>KPIs y dashboards</h3>
         <p>Visión 360º en tiempo real de calidad y operaciones, con informes automáticos.</p>
         <span class="mod-card__go">Ver módulo →</span>
       </a>
 
-      <a class="mod-card" href="integraciones/">
-        <span class="mod-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 7h2a3 3 0 0 1 0 6h-2"/><path d="M9 17H7a3 3 0 0 1 0-6h2"/><path d="M8 12h8"/></svg></span>
-        <h3>Integraciones</h3>
-        <p>Conecta Solved con tu ERP, MES y GMAO. Complementamos tu stack, no lo reemplazamos.</p>
-        <span class="mod-card__go">Ver módulo →</span>
-      </a>
     </div>
 
     <!-- Tres bloques de refuerzo -->
@@ -242,7 +289,6 @@
       <div class="feature-box">
         <h3>Complementa tu ERP/MES, no lo reemplaza</h3>
         <p>Solved convive con tu MES o ERP y aporta la capa operativa de planta que esos sistemas no cubren. Sin migraciones ni cambios en tu stack.</p>
-        <a href="integraciones/">Ver integraciones →</a>
       </div>
       <div class="feature-box">
         <h3>Adopción sin fricción en planta</h3>
@@ -349,8 +395,10 @@
     </div>
   </div>
 </section>
+</main>
 
 <div id="footer"></div>
-<script src="chrome.js?v=20260623b"></script>
+<script src="chrome.js?v=20260708j"></script>
+<script src="hero-demo.js?v=20260708j" defer></script>
 </body>
 </html>
