@@ -26,8 +26,8 @@
 <meta name="twitter:title" content="Checklists y registros digitales de calidad · Solved"/>
 <meta name="twitter:description" content="Crea checklists y registros digitales para cada proceso e inspección. Cumple los estándares de calidad y ahorra tiempo en auditorías y certificaciones con Solved."/>
 <meta name="twitter:image" content="https://trysolved.com/assets/og-image.png"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
-<link rel="preload" as="image" href="assets/auditoria-hero.webp" fetchpriority="high"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"/>
+<link rel="preload" as="image" href="assets/auditoria-hero.webp?v=20260714" fetchpriority="high"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://trysolved.com/"}, {"@type": "ListItem", "position": 2, "name": "Registros / Checklist", "item": "https://trysolved.com/auditorias.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es una checklist digital?", "acceptedAnswer": {"@type": "Answer", "text": "Es una lista de verificación que tu equipo rellena desde el móvil, tablet o PC en lugar del papel, con registro automático de fecha, responsable y resultados en tiempo real."}}, {"@type": "Question", "name": "¿Puedo personalizar las checklists para cada proceso?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Solved permite crear plantillas a medida para cada control, inspección o procedimiento, adaptadas a tus estándares y a tu operativa."}}, {"@type": "Question", "name": "¿Solved ayuda a cumplir IFS, BRC o ISO 9001?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Con registros digitales siempre disponibles y actualizados, simplificas el cumplimiento normativo y ahorras tiempo en auditorías y certificaciones."}}, {"@type": "Question", "name": "¿Puedo programar la frecuencia de cada control?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Estableces la frecuencia y la fecha de cada procedimiento, y Solved avisa y asigna responsables para que no se quede nada sin hacer."}}, {"@type": "Question", "name": "¿Funciona desde cualquier dispositivo?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Puedes rellenar y revisar tus registros desde móvil, tablet o PC, estés donde estés."}}]}]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -35,6 +35,26 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
 <link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260713a"/>
 <link rel="stylesheet" href="solved.css?v=20260713a"/>
+<style>
+/* Hero con foto + elementos flotantes (mismo patrón que la página de tareas y acciones) */
+.hero-vis{position:relative;width:100%;max-width:480px;margin-inline:auto;}
+.hero-vis>img{width:100%;height:auto;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-3);}
+.hero-vis::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-14%;height:60%;background:radial-gradient(60% 100% at 50% 100%,var(--st-open-bg),transparent 72%);filter:blur(24px);z-index:-1;}
+.hero-vis__badge{position:absolute;left:-24px;bottom:26px;display:flex;align-items:center;gap:14px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:15px 20px 15px 16px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.hero-vis__pill{position:absolute;top:22px;right:-22px;display:flex;align-items:center;gap:14px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:14px 20px 14px 16px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.hero-vis__ico{flex:none;width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;}
+.hero-vis__ico .material-symbols-outlined{font-size:22px;}
+.hero-vis__ico--closed{background:var(--st-closed-bg);color:var(--st-closed);}
+.hero-vis__ico--open{background:var(--st-open-bg);color:var(--st-open);}
+@keyframes heroFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+@keyframes heroFloatAlt{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-vis__badge{animation:heroFloat 4.8s ease-in-out infinite;}
+  .hero-vis__pill{animation:heroFloatAlt 5.6s ease-in-out infinite;}
+}
+@media (max-width:899px){ .hero-vis{max-width:520px;} .hero-vis__badge{left:6px;} .hero-vis__pill{right:2px;} }
+.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;font-feature-settings:'liga';-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;font-size:20px;vertical-align:middle;}
+</style>
 </head>
 <body data-screen-label="Auditorías">
 
@@ -49,7 +69,23 @@
       <a class="btn btn--primary btn--lg" href="#contacto">Descubre cómo funciona</a>
     </div>
     <div class="hero__art">
-      <img class="shot" src="assets/auditoria-hero.webp" alt="Listas de verificación personalizables en la app de Solved" width="1840" height="1308" decoding="async" fetchpriority="high"/>
+      <div class="hero-vis">
+        <img src="assets/auditoria-hero.webp?v=20260714" alt="Dos operarios con casco revisan una checklist en tablet y portapapeles en planta" width="750" height="500" decoding="async" fetchpriority="high"/>
+        <div class="hero-vis__pill">
+          <span class="hero-vis__ico hero-vis__ico--closed"><span class="material-symbols-outlined">task_alt</span></span>
+          <div style="line-height:1.25;">
+            <div style="font-size:15px;font-weight:600;color:var(--fg-1);">Checklist completada</div>
+            <div style="font-size:12px;color:var(--fg-3);">8/8 controles · Línea 2</div>
+          </div>
+        </div>
+        <div class="hero-vis__badge">
+          <span class="hero-vis__ico hero-vis__ico--open"><span class="material-symbols-outlined">fact_check</span></span>
+          <div style="line-height:1.25;">
+            <div style="font-size:15px;font-weight:600;color:var(--fg-1);">Registro firmado</div>
+            <div style="font-size:12px;color:var(--fg-3);">Recepción MP · hoy 09:24</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
