@@ -26,8 +26,8 @@
 <meta name="twitter:title" content="Solved · Gestión de incidencias y no conformidades"/>
 <meta name="twitter:description" content="Detecta, registra y resuelve incidencias y no conformidades desde cualquier dispositivo. Automatiza flujos y reduce los tiempos de respuesta con Solved."/>
 <meta name="twitter:image" content="https://trysolved.com/assets/og-image.png"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
-<link rel="preload" as="image" href="assets/incidencia-hero.webp" fetchpriority="high"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;500;700&display=swap"/>
+<link rel="preload" as="image" href="assets/incidencia-hero.webp?v=20260714" fetchpriority="high"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://trysolved.com/"}, {"@type": "ListItem", "position": 2, "name": "Gestión de incidencias", "item": "https://trysolved.com/incidencias.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cómo se registra una incidencia en Solved?", "acceptedAnswer": {"@type": "Answer", "text": "Desde móvil, tablet o PC, en segundos: describes el problema, adjuntas fotos o vídeos y asignas responsables, directamente en la planta de producción."}}, {"@type": "Question", "name": "¿Puedo automatizar la resolución de incidencias?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Configuras flujos de trabajo personalizados para que cada incidencia llegue a la persona correcta sin demoras y se resuelva más rápido."}}, {"@type": "Question", "name": "¿Solved gestiona las no conformidades?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Centraliza incidencias y no conformidades en un solo lugar, con seguimiento desde el aviso hasta la acción correctiva y su cierre."}}, {"@type": "Question", "name": "¿Se integra con ERP, MES o GMAO?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Solved se conecta con tus herramientas de producción y mantenimiento para evitar duplicidad de datos."}}, {"@type": "Question", "name": "¿Puedo ver métricas e informes de incidencias?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Accedes a gráficos y tendencias en tiempo real para detectar puntos críticos y prevenir problemas recurrentes."}}]}]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -35,6 +35,36 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
 <link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260713a"/>
 <link rel="stylesheet" href="solved.css?v=20260713a"/>
+<style>
+/* Hero con foto + 3 notificaciones que aparecen en secuencia */
+.hero-vis{position:relative;width:100%;max-width:480px;margin-inline:auto;}
+.hero-vis>img{width:100%;height:auto;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-3);}
+.hero-vis::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-14%;height:60%;background:radial-gradient(60% 100% at 50% 100%,var(--st-open-bg),transparent 72%);filter:blur(24px);z-index:-1;}
+.note{position:absolute;z-index:2;display:flex;align-items:center;gap:13px;max-width:252px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:13px 17px 13px 14px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.note__ico{flex:none;width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;}
+.note__ico .material-symbols-outlined{font-size:22px;}
+.note__ico--alarm{background:rgba(224,49,49,.12);color:#E03131;}
+.note__ico--gen{background:var(--st-open-bg);color:var(--blue);}
+.note__ico--assign{background:#E4F7EA;color:#1B8A3C;}
+.note b{display:block;font-size:13.5px;font-weight:600;color:var(--fg-1);line-height:1.25;}
+.note span{display:block;font-size:11.5px;color:var(--fg-3);line-height:1.25;margin-top:1px;}
+.note--alarm{top:-14px;right:-24px;}
+.note--gen{top:128px;left:-42px;}
+.note--assign{bottom:-20px;right:-16px;max-width:264px;}
+@keyframes cardPop{0%,4%{opacity:0;transform:scale(.82) translateY(8px);}11%,80%{opacity:1;transform:scale(1) translateY(0);}88%,100%{opacity:0;transform:scale(.82) translateY(8px);}}
+/* Sin animación (y prefers-reduced-motion) = las 3 notificaciones visibles */
+@media (prefers-reduced-motion:no-preference){
+  .note{opacity:0;animation:cardPop 7.5s ease-in-out infinite;}
+  .note--alarm{animation-delay:.2s;}
+  .note--gen{animation-delay:1.15s;}
+  .note--assign{animation-delay:2.1s;}
+}
+@media (max-width:899px){
+  .hero-vis{max-width:520px;}
+  .note{max-width:232px;}
+  .note--alarm{right:0;} .note--gen{left:0;top:32%;} .note--assign{right:0;}
+}
+</style>
 </head>
 <body data-screen-label="Incidencias">
 
@@ -49,7 +79,21 @@
       <a class="btn btn--primary btn--lg" href="#contacto">Descubre cómo funciona</a>
     </div>
     <div class="hero__art">
-      <img class="shot" src="assets/incidencia-hero.webp" alt="Gestión de incidencias y no conformidades en Solved" width="1632" height="1488" decoding="async" fetchpriority="high"/>
+      <div class="hero-vis">
+        <img src="assets/incidencia-hero.webp?v=20260714" alt="Operario con chaleco reflectante sonríe mientras registra una incidencia en la tablet en el almacén" width="750" height="500" decoding="async" fetchpriority="high"/>
+        <div class="note note--alarm">
+          <span class="note__ico note__ico--alarm"><span class="material-symbols-outlined">notifications_active</span></span>
+          <div><b>Temperatura fuera de rango</b><span>Sensor · Cámara 3 · 12,4 °C</span></div>
+        </div>
+        <div class="note note--gen">
+          <span class="note__ico note__ico--gen"><span class="material-symbols-outlined">bolt</span></span>
+          <div><b>Incidencia generada</b><span>Automáticamente · #INC-0293</span></div>
+        </div>
+        <div class="note note--assign">
+          <span class="note__ico note__ico--assign"><span class="material-symbols-outlined">engineering</span></span>
+          <div><b>Se te ha asignado una incidencia</b><span>Marcos · Mantenimiento</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

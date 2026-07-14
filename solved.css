@@ -4,6 +4,22 @@
    Blue is the only marketing accent; light canvas, dark bands.
    ========================================================= */
 
+/* Iconos Material Symbols Outlined — autoalojados (mismo origen, no dependen de Google) */
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(assets/fonts/material-symbols-outlined.woff2) format('woff2');
+}
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal; font-style: normal;
+  font-size: 20px; line-height: 1; letter-spacing: normal; text-transform: none;
+  display: inline-block; white-space: nowrap; direction: ltr;
+  font-feature-settings: 'liga'; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased;
+}
+
 body { background: var(--bg-canvas); color: var(--fg-1); }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 var(--s-3); }
 .section { padding: var(--s-12) 0; }
