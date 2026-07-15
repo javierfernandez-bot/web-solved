@@ -33,8 +33,39 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
-<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260713a"/>
-<link rel="stylesheet" href="solved.css?v=20260713a"/>
+<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260715a"/>
+<link rel="stylesheet" href="solved.css?v=20260715a"/>
+<style>
+/* Diagrama de flujo/integraciones (home) — scopeado a .solved-flow */
+.solved-flow{
+  --blue:#2F86F6;--blue-dk:#1257C4;--orange:#F97316;--orange-dk:#C24A06;
+  --purple:#A855F7;--purple-dk:#7327C4;--cyan:#0EA5C9;--cyan-dk:#0A6E88;
+  --slate:#64748B;--slate-dk:#3B4759;--white-dk:#C7CFDA;--solved-dk:#1442B8;
+  --line:#C3CBD6;--ink:#3A4353;
+  --s:0.86;width:calc(1200px*var(--s));max-width:100%;height:calc(700px*var(--s));
+  margin:26px auto 0;position:relative;overflow:hidden;
+}
+.solved-flow *{box-sizing:border-box;margin:0;padding:0}
+.solved-flow .stage{position:absolute;top:0;left:0;width:1200px;height:700px;transform-origin:top left;transform:scale(var(--s));
+  background-image:radial-gradient(rgba(120,135,160,.20) 1px,transparent 1px);background-size:26px 26px}
+.solved-flow .stage>svg{position:absolute;inset:0;width:1200px;height:700px;overflow:visible;z-index:1}
+.solved-flow .n{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;z-index:2}
+.solved-flow .gs{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;background:rgba(25,35,55,.16);filter:blur(9px)}
+.solved-flow .dia{display:grid;place-items:center;border-radius:24px;transform:rotate(45deg);position:relative}
+.solved-flow .dia>*{transform:rotate(-45deg);display:block}
+.solved-flow .dia svg{width:42px;height:42px}
+.solved-flow .ms{font-family:'Material Symbols Outlined';color:#fff;font-size:42px;line-height:1;
+  font-feature-settings:'liga';font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
+.solved-flow .cyl{display:grid;place-items:center;border-radius:50%;overflow:hidden;position:relative}
+.solved-flow .lb{margin-top:14px;background:#fff;color:var(--ink);font-weight:500;
+  padding:7px 14px;border-radius:9px;box-shadow:0 4px 14px rgba(25,35,55,.14);white-space:nowrap}
+.solved-flow .cap{position:absolute;transform:translateX(-50%);font-size:11px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:#94A3B8;z-index:2}
+@media(max-width:1120px){.solved-flow{--s:0.72}}
+@media(max-width:900px){.solved-flow{--s:0.58}}
+@media(max-width:640px){.solved-flow{--s:0.42}}
+@media(max-width:470px){.solved-flow{--s:0.32}}
+</style>
 </head>
 <body data-screen-label="Home">
 
@@ -236,13 +267,125 @@
 </section>
 
 <!-- ============ VIDEO ============ -->
-<section class="section section--video" data-screen-label="Home · Video">
+<section class="section" data-screen-label="Home · Integraciones">
   <div class="wrap">
-    <div class="section-head"><h2>Descubre Solved en 1 minuto</h2></div>
-    <div class="video__frame">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/geyd5Gd8yjI?si=046iVZ19E9yLTa7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="section-head">
+      <h2>Se integra con el software de tu fábrica</h2>
+      <p>Solved recoge lo que ocurre en tus sistemas —sensores, correo, ERP— lo ordena con IA y devuelve dashboards, tareas y datos estructurados. Todo conectado, sin duplicar trabajo ni islas de información.</p>
+    </div>
+    <div class="solved-flow" role="img" aria-label="Solved conecta desencadenantes (sensores, correo, registros en planta) con resultados: dashboards, tareas asignadas y datos estructurados al ERP.">
+      <div class="stage">
+        <svg viewBox="0 0 1200 700">
+          <path id="e1"  d="M150 150 L 600 350" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <path id="e2a" d="M150 350 L 375 350" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <path id="e2b" d="M375 350 L 600 350" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <path id="e3"  d="M150 550 L 600 370" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <path id="e4"  d="M600 350 L 1050 150" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <path id="e5"  d="M600 350 L 1050 350" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <path id="e6"  d="M600 350 L 1050 550" fill="none" stroke="var(--line)" stroke-width="1.4"/>
+          <g id="pulses"></g>
+        </svg>
+
+        <div class="cap" style="left:150px;top:34px">Desencadenantes</div>
+        <div class="cap" style="left:600px;top:34px">Solved</div>
+        <div class="cap" style="left:1050px;top:34px">Resultados</div>
+
+        <div class="n" style="left:150px;top:150px">
+          <div style="position:relative;width:96px;height:96px">
+            <div class="gs" style="width:92px;height:19px;top:96px"></div>
+            <div class="dia" style="width:96px;height:96px;background:var(--slate);box-shadow:1px 1px 0 var(--slate-dk),2px 2px 0 var(--slate-dk),3px 3px 0 var(--slate-dk),4px 4px 0 var(--slate-dk),5px 5px 0 var(--slate-dk),6px 6px 0 var(--slate-dk),7px 7px 0 var(--slate-dk)"><span class="ms">sensors</span></div>
+          </div>
+          <div class="lb" style="font-size:14px">Sensor en máquina</div>
+        </div>
+        <div class="n" style="left:150px;top:350px">
+          <div style="position:relative;width:96px;height:96px">
+            <div class="gs" style="width:92px;height:19px;top:96px"></div>
+            <div class="dia" style="width:96px;height:96px;background:#FFFFFF;box-shadow:1px 1px 0 var(--white-dk),2px 2px 0 var(--white-dk),3px 3px 0 var(--white-dk),4px 4px 0 var(--white-dk),5px 5px 0 var(--white-dk),6px 6px 0 var(--white-dk),7px 7px 0 var(--white-dk)"><span class="ms" style="color:#0F6CBD;font-size:46px">mail</span></div>
+          </div>
+          <div class="lb" style="font-size:14px">Reclamación de cliente</div>
+        </div>
+        <div class="n" style="left:150px;top:550px">
+          <div style="position:relative;width:96px;height:96px">
+            <div class="gs" style="width:92px;height:19px;top:96px"></div>
+            <div class="dia" style="width:96px;height:96px;background:var(--purple);box-shadow:1px 1px 0 var(--purple-dk),2px 2px 0 var(--purple-dk),3px 3px 0 var(--purple-dk),4px 4px 0 var(--purple-dk),5px 5px 0 var(--purple-dk),6px 6px 0 var(--purple-dk),7px 7px 0 var(--purple-dk)"><svg viewBox="0 -960 960 960" width="42" height="42" fill="#FFFFFF"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg></div>
+          </div>
+          <div class="lb" style="font-size:14px">Registro en planta · No conformidad</div>
+        </div>
+        <div class="n" style="left:375px;top:350px">
+          <div style="position:relative;width:84px;height:84px">
+            <div class="gs" style="width:80px;height:16px;top:84px"></div>
+            <div class="dia" style="width:84px;height:84px;background:var(--cyan);box-shadow:1px 1px 0 var(--cyan-dk),2px 2px 0 var(--cyan-dk),3px 3px 0 var(--cyan-dk),4px 4px 0 var(--cyan-dk),5px 5px 0 var(--cyan-dk),6px 6px 0 var(--cyan-dk),7px 7px 0 var(--cyan-dk)"><svg viewBox="0 -960 960 960" width="38" height="38" fill="#FFFFFF"><path d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm242.5-97.5Q420-475 420-500t-17.5-42.5Q385-560 360-560t-42.5 17.5Q300-525 300-500t17.5 42.5Q335-440 360-440t42.5-17.5Zm240 0Q660-475 660-500t-17.5-42.5Q625-560 600-560t-42.5 17.5Q540-525 540-500t17.5 42.5Q575-440 600-440t42.5-17.5ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"/></svg></div>
+          </div>
+          <div class="lb" style="font-size:13px">IA · clasifica y prioriza</div>
+        </div>
+        <div class="n" style="left:1050px;top:150px">
+          <div style="position:relative;width:96px;height:96px">
+            <div class="gs" style="width:92px;height:19px;top:96px"></div>
+            <div class="dia" style="width:96px;height:96px;background:var(--blue);box-shadow:1px 1px 0 var(--blue-dk),2px 2px 0 var(--blue-dk),3px 3px 0 var(--blue-dk),4px 4px 0 var(--blue-dk),5px 5px 0 var(--blue-dk),6px 6px 0 var(--blue-dk),7px 7px 0 var(--blue-dk)"><svg viewBox="0 -960 960 960" width="42" height="42" fill="#FFFFFF"><path d="M280-280h80v-200h-80v200Zm320 0h80v-400h-80v400Zm-160 0h80v-120h-80v120Zm0-200h80v-80h-80v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg></div>
+          </div>
+          <div class="lb" style="font-size:14px">Dashboard e indicadores</div>
+        </div>
+        <div class="n" style="left:1050px;top:350px">
+          <div style="position:relative;width:96px;height:96px">
+            <div class="gs" style="width:92px;height:19px;top:96px"></div>
+            <div class="dia" style="width:96px;height:96px;background:var(--orange);box-shadow:1px 1px 0 var(--orange-dk),2px 2px 0 var(--orange-dk),3px 3px 0 var(--orange-dk),4px 4px 0 var(--orange-dk),5px 5px 0 var(--orange-dk),6px 6px 0 var(--orange-dk),7px 7px 0 var(--orange-dk)"><svg viewBox="0 -960 960 960" width="42" height="42" fill="#FFFFFF"><path d="m438-240 226-226-58-58-169 169-84-84-57 57 142 142ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg></div>
+          </div>
+          <div class="lb" style="font-size:14px">Tarea asignada</div>
+        </div>
+        <div class="n" style="left:1050px;top:550px">
+          <div style="position:relative;width:96px;height:96px">
+            <div class="gs" style="width:92px;height:19px;top:96px"></div>
+            <div class="dia" style="width:96px;height:96px;background:#FFFFFF;box-shadow:1px 1px 0 var(--white-dk),2px 2px 0 var(--white-dk),3px 3px 0 var(--white-dk),4px 4px 0 var(--white-dk),5px 5px 0 var(--white-dk),6px 6px 0 var(--white-dk),7px 7px 0 var(--white-dk)"><span class="ms" style="color:#0F6CBD;font-size:48px">database</span></div>
+          </div>
+          <div class="lb" style="font-size:14px">Datos estructurados al ERP</div>
+        </div>
+
+        <div class="n" style="left:600px;top:350px">
+          <div style="position:relative;width:150px;height:150px">
+            <div class="gs" style="width:146px;height:28px;top:156px"></div>
+            <div class="cyl" style="width:150px;height:150px;background:#fff;box-shadow:0 3px 0 var(--solved-dk),0 6px 0 var(--solved-dk),0 9px 0 var(--solved-dk),0 12px 0 var(--solved-dk),0 15px 0 var(--solved-dk),0 18px 0 var(--solved-dk)">
+              <img src="assets/logotipo-solved.webp" alt="Solved" style="width:118px;height:auto;display:block">
+            </div>
+          </div>
+          <div class="lb" style="font-size:16px;margin-top:26px">Solved</div>
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+  (function(){
+    var g=document.getElementById('pulses');
+    if(!g) return;
+    var NS='http://www.w3.org/2000/svg';
+    [
+      {p:'e1', c:'#64748B', d:2.4, b:0.0},
+      {p:'e2a',c:'#0F6CBD', d:1.4, b:0.6},
+      {p:'e2b',c:'#0EA5C9', d:1.4, b:2.0},
+      {p:'e3', c:'#A855F7', d:2.4, b:1.2},
+      {p:'e4', c:'#2F86F6', d:2.6, b:3.0},
+      {p:'e5', c:'#F97316', d:2.4, b:3.5},
+      {p:'e6', c:'#0EA5C9', d:2.8, b:4.0}
+    ].forEach(function(r){
+      [[9,.30],[3.6,1]].forEach(function(pair,i){
+        var c=document.createElementNS(NS,'circle');
+        c.setAttribute('r',pair[0]);
+        c.setAttribute('fill', i===0 ? r.c : '#ffffff');
+        c.setAttribute('opacity',pair[1]);
+        var m=document.createElementNS(NS,'animateMotion');
+        m.setAttribute('dur',r.d+'s');
+        m.setAttribute('begin',r.b+'s');
+        m.setAttribute('repeatCount','indefinite');
+        m.setAttribute('calcMode','spline');
+        m.setAttribute('keyPoints','0;1');
+        m.setAttribute('keyTimes','0;1');
+        m.setAttribute('keySplines','0.4 0 0.6 1');
+        var mp=document.createElementNS(NS,'mpath');
+        mp.setAttributeNS('http://www.w3.org/1999/xlink','href','#'+r.p);
+        m.appendChild(mp); c.appendChild(m); g.appendChild(c);
+      });
+    });
+  })();
+  </script>
 </section>
 
 <!-- ============ MODULES ============ -->
@@ -284,25 +427,6 @@
 
     </div>
 
-    <!-- Tres bloques de refuerzo -->
-    <div class="feature-row">
-      <div class="feature-box">
-        <h3>Complementa tu ERP/MES, no lo reemplaza</h3>
-        <p>Solved convive con tu MES o ERP y aporta la capa operativa de planta que esos sistemas no cubren. Sin migraciones ni cambios en tu stack.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Adopción sin fricción en planta</h3>
-        <ul>
-          <li>Formación integrada paso a paso en cada tarea.</li>
-          <li>Pensado para que el operario lo adopte sin resistencia.</li>
-          <li>Implementación en 2-3 semanas.</li>
-        </ul>
-      </div>
-      <div class="feature-box">
-        <h3>De la incidencia al cierre</h3>
-        <p class="flow"><span>Registra</span><i>→</i><span>asigna responsable</span><i>→</i><span>notifica</span><i>→</i><span>cierre documentado</span></p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -398,7 +522,7 @@
 </main>
 
 <div id="footer"></div>
-<script src="chrome.js?v=20260713a"></script>
-<script src="hero-demo.js?v=20260713a" defer></script>
+<script src="chrome.js?v=20260715a"></script>
+<script src="hero-demo.js?v=20260715a" defer></script>
 </body>
 </html>
