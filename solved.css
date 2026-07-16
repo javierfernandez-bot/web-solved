@@ -330,7 +330,6 @@ body { padding-top: 88px; overflow-x: clip; }
    ========================================================= */
 .modules { display: grid; grid-template-columns: 1fr; gap: var(--s-3); }
 @media (min-width: 601px)  { .modules { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1001px) { .modules { grid-template-columns: repeat(3, 1fr); } }
 .mod-card { background: #fff; border: 1px solid var(--border-1); border-radius: var(--r-3);
   padding: var(--s-4); display: flex; flex-direction: column; gap: 12px; text-decoration: none;
   box-shadow: var(--shadow-1); transition: box-shadow var(--dur-slow) var(--ease-soft), transform var(--dur-slow) var(--ease-soft), border-color var(--dur-slow) var(--ease-soft); }
