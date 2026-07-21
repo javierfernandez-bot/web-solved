@@ -40,17 +40,19 @@
 .hero-vis{position:relative;width:100%;max-width:480px;margin-inline:auto;}
 .hero-vis>img{width:100%;height:auto;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-3);}
 .hero-vis::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-14%;height:60%;background:radial-gradient(60% 100% at 50% 100%,var(--st-open-bg),transparent 72%);filter:blur(24px);z-index:-1;}
-.note{position:absolute;z-index:2;display:flex;align-items:center;gap:13px;max-width:252px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:13px 17px 13px 14px;font-family:'Roboto','Helvetica Neue',sans-serif;}
-.note__ico{flex:none;width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;}
-.note__ico .material-symbols-outlined{font-size:22px;}
-.note__ico--alarm{background:rgba(224,49,49,.12);color:#E03131;}
-.note__ico--gen{background:var(--st-open-bg);color:var(--blue);}
-.note__ico--assign{background:#E4F7EA;color:#1B8A3C;}
-.note b{display:block;font-size:13.5px;font-weight:600;color:var(--fg-1);line-height:1.25;}
-.note span{display:block;font-size:11.5px;color:var(--fg-3);line-height:1.25;margin-top:1px;}
-.note--alarm{top:-14px;right:-24px;}
-.note--gen{top:128px;left:-42px;}
-.note--assign{bottom:-20px;right:-16px;max-width:264px;}
+.note{position:absolute;z-index:2;display:flex;align-items:center;gap:13px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:13px 18px 13px 15px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.note__ico{flex:none;width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;}
+.note__ico .material-symbols-outlined{font-size:23px;line-height:1;}
+.note__ico--alarm{background:rgba(224,49,49,.12);color:var(--crit);}
+.note__ico--gen{background:var(--st-open-bg);color:var(--st-open);}
+.note__ico--assign{background:var(--st-closed-bg);color:var(--st-closed);}
+.note__tx{min-width:0;}
+.note__tx b{display:block;font-size:14px;font-weight:600;line-height:1.25;color:var(--fg-1);white-space:nowrap;}
+.note__tx span{display:block;font-size:12px;color:var(--fg-3);line-height:1.3;margin-top:2px;white-space:nowrap;}
+.note--alarm .note__tx b{color:var(--crit);}
+.note--alarm{top:-16px;right:-20px;}
+.note--gen{top:150px;left:-40px;}
+.note--assign{bottom:-18px;right:-14px;}
 @keyframes cardPop{0%,4%{opacity:0;transform:scale(.82) translateY(8px);}11%,80%{opacity:1;transform:scale(1) translateY(0);}88%,100%{opacity:0;transform:scale(.82) translateY(8px);}}
 /* Sin animación (y prefers-reduced-motion) = las 3 notificaciones visibles */
 @media (prefers-reduced-motion:no-preference){
@@ -83,15 +85,15 @@
         <img src="assets/incidencia-hero.webp?v=20260714" alt="Operario con chaleco reflectante sonríe mientras registra una incidencia en la tablet en el almacén" width="750" height="500" decoding="async" fetchpriority="high"/>
         <div class="note note--alarm">
           <span class="note__ico note__ico--alarm"><span class="material-symbols-outlined">notifications_active</span></span>
-          <div><b>Temperatura fuera de rango</b><span>Sensor · Cámara 3 · 12,4 °C</span></div>
+          <div class="note__tx"><b>Temperatura fuera de rango</b><span>Sensor · Cámara 3 · 12,4 °C</span></div>
         </div>
         <div class="note note--gen">
           <span class="note__ico note__ico--gen"><span class="material-symbols-outlined">bolt</span></span>
-          <div><b>Incidencia generada</b><span>Automáticamente · #INC-0293</span></div>
+          <div class="note__tx"><b>Incidencia generada</b><span>Automáticamente · #INC-0293</span></div>
         </div>
         <div class="note note--assign">
-          <span class="note__ico note__ico--assign"><span class="material-symbols-outlined">engineering</span></span>
-          <div><b>Se te ha asignado una incidencia</b><span>Marcos · Mantenimiento</span></div>
+          <span class="note__ico note__ico--assign"><span class="material-symbols-outlined">person</span></span>
+          <div class="note__tx"><b>Incidencia asignada</b><span>Marcos · Mantenimiento</span></div>
         </div>
       </div>
     </div>
