@@ -10,6 +10,7 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import { config } from '../config.mjs';
+import { fetchRetry } from './net.mjs';
 
 const { IMAGE_WIDTHS, IMG_OUT_DIR, CACHE_DIR } = config;
 const SRC_CACHE = path.join(CACHE_DIR, 'src');
@@ -27,7 +28,7 @@ async function downloadOriginal(url) {
   const ext = (path.extname(new URL(url).pathname) || '.img').split('?')[0];
   const cached = path.join(SRC_CACHE, key + ext);
   if (await exists(cached)) return cached;
-  const res = await fetch(url);
+  const res = await fetchRetry(url);
   if (!res.ok) throw new Error(`No se pudo descargar imagen ${res.status} ${url}`);
   const buf = Buffer.from(await res.arrayBuffer());
   await fs.writeFile(cached, buf);

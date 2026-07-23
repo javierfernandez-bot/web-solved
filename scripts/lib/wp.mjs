@@ -4,6 +4,7 @@
 // cómoda para las plantillas (sin acoplarse al shape crudo de WP).
 // =========================================================
 import { config } from '../config.mjs';
+import { fetchRetry } from './net.mjs';
 
 const { WP_API_BASE, PER_PAGE } = config;
 
@@ -55,7 +56,7 @@ async function fetchAll(endpoint, extraParams = '') {
   let totalPages = 1;
   do {
     const url = `${WP_API_BASE}/${endpoint}?per_page=${PER_PAGE}&page=${page}${extraParams}`;
-    const res = await fetch(url, { headers: { Accept: 'application/json' } });
+    const res = await fetchRetry(url, { headers: { Accept: 'application/json' } });
     if (!res.ok) {
       throw new Error(`WP API ${res.status} ${res.statusText} en ${url}`);
     }
