@@ -10,23 +10,52 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
 <title>Página no encontrada (404) · Solved</title>
 <script>
-/* Rescate de URLs de artículos sin el prefijo /blog/ (enlaces externos/antiguos):
-   /{slug-con-guiones}/ → /blog/{slug}/. Guarda anti-bucle: no actúa dentro de /blog/. */
+/* Rescate de URLs rotas de enlaces externos/antiguos y del índice de Google.
+   1) Páginas del sitio pedidas como carpeta: /incidencias/ → /incidencias.html
+      (también las que llevan guion, que antes caían en el rescate de blog y
+      acababan en un 404 de /blog/).
+   2) Artículos sin el prefijo /blog/: /{slug-con-guiones}/ → /blog/{slug}/.
+   Guarda anti-bucle: no actúa dentro de /blog/. */
 (function () {
   var p = location.pathname;
   if (p.indexOf('/blog/') === 0) return;
   var seg = p.replace(/^\/+|\/+$/g, '').split('/');
-  if (seg.length === 1 && /-/.test(seg[0]) && !/\.[a-z0-9]+$/i.test(seg[0])) {
-    location.replace('/blog/' + seg[0] + '/' + location.hash);
-  }
+  if (seg.length !== 1 || /\.[a-z0-9]+$/i.test(seg[0])) return;
+  var one = seg[0].toLowerCase();
+
+  /* Páginas estáticas (mismos alias que scripts/lib/links.mjs). */
+  var STATIC = {
+    'incidencias': '/incidencias.html',
+    'auditorias': '/auditorias.html',
+    'registros-y-auditorias': '/auditorias.html',
+    'registros-auditorias': '/auditorias.html',
+    'dashboard': '/dashboard.html',
+    'kpis': '/dashboard.html',
+    'kpis-y-dashboards': '/dashboard.html',
+    'industria-alimentaria': '/industria-alimentaria.html',
+    'industria-general': '/industria-general.html',
+    'politica-de-cookies': '/politica-de-cookies.html',
+    'politica-de-privacidad': '/politica-de-privacidad.html'
+  };
+  /* Alias que no tienen página propia. */
+  var DEMO = ['demo', 'solicitar-demo', 'pedir-demo', 'solicita-una-demo', 'solicita-demo',
+    'prueba-gratis', 'prueba-gratuita', 'contacto', 'contactar', 'contacta'];
+  var HOME = ['funcionalidades', 'caracteristicas', 'producto', 'productos',
+    'casos-de-exito', 'casos-exito', 'clientes', 'precios', 'pricing', 'planes', 'soluciones'];
+
+  if (STATIC[one]) { location.replace(STATIC[one] + location.hash); return; }
+  if (DEMO.indexOf(one) !== -1) { location.replace('/index.html#contacto'); return; }
+  if (HOME.indexOf(one) !== -1) { location.replace('/index.html'); return; }
+
+  if (/-/.test(one)) location.replace('/blog/' + seg[0] + '/' + location.hash);
 })();
 </script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
-<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260716a"/>
-<link rel="stylesheet" href="solved.css?v=20260716a"/>
+<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260723a"/>
+<link rel="stylesheet" href="solved.css?v=20260723a"/>
 </head>
 <body data-screen-label="404">
 
@@ -46,6 +75,6 @@
 </section>
 
 <div id="footer"></div>
-<script src="chrome.js?v=20260716a"></script>
+<script src="chrome.js?v=20260723a"></script>
 </body>
 </html>
