@@ -317,6 +317,30 @@
     fit();
   }
 
+  /* Cierra el player y baja al formulario de contacto del final de la página.
+     Un <a href="#contacto"> a secas no sirve: el player va en position:fixed
+     por encima de todo y el scroll está bloqueado con .svt-fs-lock, así que el
+     salto de ancla no se ve. Hay que salir primero y desplazar después. */
+  function goToContact() {
+    exitFullscreen();
+    var target = document.getElementById('contacto');
+    if (!target) { location.hash = '#contacto'; return; }
+    // Se mide aquí mismo, sin esperar a requestAnimationFrame: exitFullscreen()
+    // ya ha devuelto la sección a su sitio y getBoundingClientRect fuerza el
+    // relayout, así que la posición es la definitiva. Además rAF no se ejecuta
+    // si la pestaña deja de estar visible, y ahí el CTA no llevaría a ninguna
+    // parte — que es justo lo que hay que evitar.
+    var top = Math.max(0, target.getBoundingClientRect().top + window.scrollY - navHeight() - 16);
+    var from = window.scrollY;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: top, behavior: reduce ? 'auto' : 'smooth' });
+    // Red de seguridad: si el scroll suave no arranca (pestaña en segundo
+    // plano, ajustes del navegador, animación cancelada), saltamos en seco.
+    setTimeout(function () {
+      if (Math.abs(top - from) > 4 && Math.abs(window.scrollY - from) < 4) window.scrollTo(0, top);
+    }, 300);
+  }
+
   function restart() {
     clearT();
     st.step = 0; st.done = false; st.paused = false; st.started = true;
@@ -340,10 +364,18 @@
   /* ---------- events ---------- */
   root.addEventListener('click', function (e) {
     var t = e.target.closest('[data-act]');
-    if (!t) return;
+    if (!t) {
+      // Salir pinchando en cualquier sitio. Dos zonas muertas dejaban al
+      // usuario encerrado: el overlay de fin (que ocupa toda la pantalla) y el
+      // marco alrededor del mock cuando el 1160px no llena el viewport.
+      if (!root.classList.contains('is-fs')) return;
+      if (st.done || e.target === root) exitFullscreen();
+      return;
+    }
     var act = t.getAttribute('data-act');
     if (act === 'start') start();
     else if (act === 'close') exitFullscreen();
+    else if (act === 'contact') { e.preventDefault(); goToContact(); }
     else if (act === 'next') { if (!st.started) { start(); return; } clearTimeout(T.auto); next(); }
     else if (act === 'restart') restart();
     else if (act === 'pause') togglePause();

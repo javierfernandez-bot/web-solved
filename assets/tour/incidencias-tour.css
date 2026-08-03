@@ -211,7 +211,9 @@
 .svt-prog-bar.is-run{ animation:svtProg linear forwards; }
 
 /* ---------- DONE ---------- */
-.svt-done{ position:absolute; inset:0; z-index:70; background:rgba(11,18,32,.55); display:grid; place-items:center; }
+/* Cursor de "pinchar para cerrar": al acabar, cualquier punto del overlay
+   (incluida la tarjeta, salvo sus botones) cierra el player. */
+.svt-done{ position:absolute; inset:0; z-index:70; background:rgba(11,18,32,.55); display:grid; place-items:center; cursor:pointer; }
 .svt-done[hidden]{ display:none; }
 .svt-done-card{ width:380px; background:#fff; border-radius:16px; padding:30px; text-align:center; box-shadow:0 24px 60px rgba(11,18,32,.32); }
 .svt-done-ico{ width:58px; height:58px; border-radius:50%; background:var(--st-closed-bg); display:grid; place-items:center; color:var(--st-closed); margin:0 auto 16px; }
@@ -233,7 +235,10 @@ html.svt-fs-lock, body.svt-fs-lock { overflow: hidden !important; }
 .svt.is-fs .svt-strip { display: none; }
 .svt.is-fs .svt-close {
   display: grid; place-items: center;
-  position: fixed; top: 16px; right: 16px; z-index: 10;
+  /* Por encima de .svt-done (70) y .svt-cover (66): son hermanos suyos dentro
+     de #svt, así que con un z-index menor el overlay de fin tapaba la X y se
+     tragaba sus clics — el usuario se quedaba encerrado al acabar el tour. */
+  position: fixed; top: 16px; right: 16px; z-index: 90;
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
   background: rgba(255,255,255,.14); color: #fff; border: 1px solid rgba(255,255,255,.30);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
