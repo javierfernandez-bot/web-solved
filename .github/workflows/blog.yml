@@ -1,25 +1,31 @@
 # =========================================================
-# Fase 2 (opcional) — Regenera el blog desde WordPress y commitea los cambios.
+# Regenera el blog desde WordPress y commitea los cambios.
 #
-# Se ejecuta SOLO cuando tú quieras:
-#   - manualmente desde la pestaña "Actions" → "Run workflow"
-#   - automáticamente cada día (cron) por si publicaste algo en WP
+# Se dispara de tres formas, de más a menos fiable:
+#   - repository_dispatch (tipo `wp-published`): el Publicador de Make lo llama
+#     nada más publicar en WordPress. Es la vía buena: el post está en la web a
+#     los ~3 min, sin depender de que GitHub respete un cron.
+#   - schedule: tres pasadas de seguridad al día. GitHub retrasa y a veces se
+#     salta directamente los crons de los repos gratuitos, así que no basta con
+#     una sola. El build es idempotente: pasar de más no rompe nada.
+#   - workflow_dispatch: botón manual en la pestaña "Actions".
 #
-# No despliega por su cuenta nada raro: hace push a main, y GitHub Pages publica
-# como con cualquier otro commit. Para activarlo, basta con que este archivo esté
-# en main; para "apagarlo", comenta el bloque `schedule`.
+# No despliega nada raro: hace push a main y GitHub Pages publica como con
+# cualquier otro commit.
 # =========================================================
 name: Rebuild blog
 
 on:
   workflow_dispatch: {}          # botón manual en la pestaña Actions (siempre disponible)
+  repository_dispatch:
+    types: [wp-published]        # lo dispara Make justo después de publicar en WP
   schedule:
-    # El Publicador de Make publica en WP a las 07:00 España (05:00 UTC). Este
-    # rebuild recoge el post del día. GitHub retrasa el cron gratuito (peor en
-    # minuto :00), así que usamos minuto impar + una 2ª pasada de refuerzo por si
-    # GitHub se salta la primera. El cron es fijo en UTC (en invierno cae 1 h antes).
-    - cron: '23 5 * * *'   # ~07:23 España (verano) — objetivo principal ~8:00
-    - cron: '23 7 * * *'   # ~09:23 España — refuerzo si la primera se retrasa/salta
+    # El Publicador de Make publica en WP a las 07:00 España (05:00 UTC). Usamos
+    # minuto impar porque GitHub encola peor los crons en el minuto :00. El cron
+    # es fijo en UTC (en invierno cae 1 h antes en hora española).
+    - cron: '23 5 * * *'    # ~07:23 España (verano) — pasada principal
+    - cron: '23 7 * * *'    # ~09:23 España — refuerzo si la primera se retrasa/salta
+    - cron: '23 11 * * *'   # ~13:23 España — última red por si el edge de WP estuvo caído
 
 permissions:
   contents: write                # para commitear el /blog regenerado
@@ -32,20 +38,49 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version: '22'
           cache: npm
 
       - run: npm ci
 
+      # El script ya reintenta cada petición ~1 min (scripts/lib/net.mjs). Esto
+      # cubre el caso peor: que el edge de Hostinger esté rechazando conexiones
+      # durante varios minutos seguidos. Entre intentos hay 2 min de margen.
       - name: Generar el blog
-        run: npm run build:blog
         env:
           # WordPress (CMS/API) vive en trysolved.es; el sitio estático es trysolved.com.
           WP_API_BASE: https://trysolved.es/wp-json/wp/v2
+        run: |
+          for intento in 1 2 3; do
+            if npm run build:blog; then
+              exit 0
+            fi
+            if [ "$intento" -lt 3 ]; then
+              echo "::warning::build:blog falló (intento $intento/3). Reintento en 2 min."
+              sleep 120
+            fi
+          done
+          echo "::error::build:blog falló 3 veces seguidas. Mira el diagnóstico de red de abajo."
+          exit 1
+
+      # Si llegamos aquí es que WordPress no respondió en ~6 min. Dejamos huella
+      # de cómo se veía la red desde el runner para no tener que adivinar después.
+      - name: Diagnóstico de red (solo si falla)
+        if: failure()
+        run: |
+          echo "== DNS =="
+          getent ahosts trysolved.es || true
+          echo "== 5 peticiones a la WP API =="
+          for i in 1 2 3 4 5; do
+            curl -sS -o /dev/null --max-time 20 \
+              -w "  code=%{http_code} ip=%{remote_ip} t=%{time_total}s\n" \
+              "https://trysolved.es/wp-json/wp/v2/posts?per_page=1" \
+              || echo "  curl falló (código de salida $?)"
+          done
 
       - name: Commit si hay cambios
         run: |
