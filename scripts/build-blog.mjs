@@ -16,6 +16,21 @@ import { collectImageUrls, sanitizeContent } from './lib/sanitize.mjs';
 import { renderPost, renderIndex, card, formatDateES, readingMinutes, clampWords } from './lib/templates.mjs';
 import { writeSitemap } from './lib/sitemap.mjs';
 
+// Overrides SEO por slug (seo/overrides.json). Opcional: si el fichero no existe
+// o está mal formado, el build sigue funcionando exactamente como antes.
+const SEO_OVERRIDES = await (async () => {
+  try {
+    const raw = await fs.readFile(new URL('../seo/overrides.json', import.meta.url), 'utf8');
+    const parsed = JSON.parse(raw);
+    delete parsed._readme;
+    console.log(`  ✓ ${Object.keys(parsed).length} overrides SEO cargados`);
+    return parsed;
+  } catch (err) {
+    console.log(`  · sin overrides SEO (${err.code || err.message})`);
+    return {};
+  }
+})();
+
 const { OUT_DIR, SITE_URL, POSTS_PER_PAGE, RELATED_COUNT } = config;
 
 async function writeFile(relPath, html) {
@@ -98,6 +113,7 @@ async function main() {
 
     const html = renderPost(post, {
       rootPrefix, blogPrefix, coverHtml, bodyHtml, canonical, ogImage,
+      seo: SEO_OVERRIDES[post.slug] || {},
       related,
       dateISO: post.datePublished,
       modISO: post.dateModified,
