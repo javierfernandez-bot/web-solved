@@ -44,7 +44,7 @@ export function clampChars(text = '', max = 155) {
 }
 
 // <head> común a índice y post.
-function head({ title, description, canonical, ogType = 'website', ogImage = null, ogImageW = 1200, ogImageH = 630, jsonLdArray = [], rootPrefix }) {
+function head({ title, description, canonical, ogType = 'website', ogImage = null, ogImageW = 1200, ogImageH = 630, jsonLdArray = [], robots = 'index, follow', rootPrefix }) {
   const img = ogImage || `${SITE_URL}/assets/og-image.png`;
   const graph = jsonLdArray.length
     ? `<script type="application/ld+json">${jsonld({ '@context': 'https://schema.org', '@graph': jsonLdArray })}</script>`
@@ -61,7 +61,7 @@ function head({ title, description, canonical, ogType = 'website', ogImage = nul
 <!-- SEO:start -->
 <meta name="description" content="${esc(description)}"/>
 <link rel="canonical" href="${esc(canonical)}"/>
-<meta name="robots" content="index, follow"/>
+<meta name="robots" content="${esc(robots)}"/>
 <meta name="theme-color" content="#1E6BFF"/>
 <meta property="og:type" content="${ogType}"/>
 <meta property="og:site_name" content="Solved"/>
@@ -104,8 +104,9 @@ function breadcrumbLd(items) {
 // ---------- PLANTILLA DE POST ----------
 export function renderPost(post, ctx) {
   const { rootPrefix, blogPrefix, coverHtml, bodyHtml, canonical, ogImage, related, dateText, dateISO, modISO, readMins } = ctx;
+  const ov = ctx.seo || {};
   const cat = post.primaryCategory ? post.primaryCategory.name : null;
-  const metaDescription = clampChars(post.excerpt, 155);
+  const metaDescription = ov.description || clampChars(post.excerpt, 155);
 
   const blogPostLd = {
     '@type': 'BlogPosting',
@@ -135,12 +136,13 @@ export function renderPost(post, ctx) {
     : '';
 
   return `${head({
-    title: `${post.title} · Solved`,
+    title: ov.title || `${post.title} · Solved`,
     description: metaDescription,
-    canonical,
+    canonical: ov.canonical || canonical,
     ogType: 'article',
     ogImage,
     jsonLdArray: [blogPostLd, crumbs],
+    robots: ov.robots,
     rootPrefix,
   })}
 <body data-screen-label="Blog · Post">
@@ -150,14 +152,14 @@ export function renderPost(post, ctx) {
 <article class="post">
   <div class="wrap post__wrap">
     <nav class="post__crumbs" aria-label="Migas de pan">
-      <a href="${rootPrefix}index.html">Inicio</a> <span>/</span>
+      <a href="${rootPrefix}">Inicio</a> <span>/</span>
       <a href="${blogPrefix}">Blog</a> <span>/</span>
       <span aria-current="page">${esc(post.title)}</span>
     </nav>
 
     <header class="post__head">
       ${cat ? `<span class="post__cat">${esc(cat)}</span>` : ''}
-      <h1>${esc(post.title)}</h1>
+      <h1>${esc(ov.h1 || post.title)}</h1>
       <p class="post__meta">Por ${esc(post.author)} · <time datetime="${esc(dateISO)}">${esc(dateText)}</time> · ${readMins} min de lectura</p>
     </header>
 
