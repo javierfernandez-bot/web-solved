@@ -1,0 +1,43 @@
+{
+  "_readme": "Overrides SEO por slug de post. El build los aplica ENCIMA de lo que llega de WordPress. Campos opcionales: title (etiqueta title completa, con sufijo de marca), description, h1, robots, canonical. Si un slug no aparece aquí, se comporta como siempre.",
+  "ficha-tecnica-de-producto-sin-fallos": {
+    "title": "Ficha técnica de producto: qué incluir y ejemplo · Solved",
+    "description": "Qué debe incluir una ficha técnica de producto alimentario: campos obligatorios, errores que fallan en auditoría y cómo versionarla sin líos."
+  },
+  "analisis-de-peligros-que-evita-sustos": {
+    "title": "Análisis de peligros APPCC: tipos y cómo evaluarlos · Solved",
+    "description": "Qué es el análisis de peligros en APPCC, tipos de peligros biológicos, químicos y físicos y cómo evaluar probabilidad y gravedad con criterio."
+  },
+  "plan-appcc-sin-errores-paso-a-paso": {
+    "title": "Plan APPCC: cómo hacerlo paso a paso · Solved",
+    "description": "Cómo hacer un plan APPCC paso a paso: prerrequisitos, análisis de peligros, PCC, límites críticos, vigilancia y registros. Con ejemplo práctico."
+  },
+  "auditoria-interna-de-calidad-sin-sustos": {
+    "title": "Auditoría interna de calidad: guía y checklist · Solved",
+    "description": "Cómo preparar y ejecutar una auditoría interna de calidad: plan, checklist, registro de hallazgos y seguimiento de acciones correctivas."
+  },
+  "control-de-alergenos-sin-riesgos": {
+    "title": "Control de alérgenos: requisitos y cómo aplicarlo · Solved",
+    "description": "Requisitos del control de alérgenos en industria alimentaria: evaluación de riesgo, contaminación cruzada, etiquetado y validación de limpieza."
+  },
+  "retirada-de-producto-alimentario-sin-caos": {
+    "title": "Retirada de producto alimentario: cómo hacerla · Solved",
+    "description": "Cómo ejecutar una retirada de producto alimentario: criterios de decisión, comunicación, trazabilidad de lote y simulacros para llegar a tiempo."
+  },
+  "analisis-de-causa-raiz-que-evita-recaidas": {
+    "title": "Análisis de causa raíz: métodos y ejemplos · Solved",
+    "description": "Métodos de análisis de causa raíz con ejemplos: 5 porqués, Ishikawa y análisis de barreras, y cómo cerrar el ciclo para evitar recaídas."
+  },
+  "acciones-correctivas-y-preventivas-que-funcionan": {
+    "title": "Acciones correctivas y preventivas: CAPA y ejemplos · Solved",
+    "description": "Diferencia entre acción correctiva y preventiva, ejemplos reales de CAPA y cómo verificar la eficacia antes de cerrar una no conformidad."
+  },
+  "plan-de-limpieza-y-desinfeccion-clave": {
+    "title": "Plan de limpieza y desinfección: cómo hacerlo · Solved",
+    "description": "Cómo elaborar un plan de limpieza y desinfección: superficies, productos, frecuencias, responsables y validación mediante controles analíticos."
+  },
+  "gestion-de-reclamaciones-que-fideliza-clientes": {
+    "title": "Gestión de reclamaciones: proceso paso a paso · Solved",
+    "description": "Proceso paso a paso para gestionar reclamaciones de clientes: registro, clasificación, investigación, respuesta y análisis de recurrencias."
+  }
+}
