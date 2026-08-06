@@ -88,6 +88,13 @@ jobs:
       - name: Generar páginas puente de las URLs antiguas
         run: npm run build:redirects
 
+      # Enlazado interno: los posts no enlazaban al glosario, las fichas del
+      # glosario no enlazaban a nada y no habia ni un CTA a producto en todo el
+      # blog. El mapa esta en seo/enlazado.json. Va despues de build:blog porque
+      # necesita el /blog ya generado.
+      - name: Enlazado interno del blog y del glosario
+        run: npm run build:enlaces
+
       - name: Commit si hay cambios
         run: |
           git config user.name  "blog-bot"
