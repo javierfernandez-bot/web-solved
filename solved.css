@@ -477,13 +477,14 @@ body { padding-top: 88px; overflow-x: clip; }
 /* =========================================================
    TESTIMONIALS
    ========================================================= */
-.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-3); align-items: start; }
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-3); align-items: stretch; }
 .testi-card { width: 100%; height: auto; display: block; border-radius: var(--r-3); }
 .quote { background: #fff; border: 1px solid var(--border-1); border-radius: var(--r-3); padding: var(--s-4);
-  display: flex; flex-direction: column; gap: var(--s-3); box-shadow: var(--shadow-1); }
-.quote__logo { height: 30px; display: flex; align-items: center; }
-.quote__logo img { height: 28px; width: auto; object-fit: contain; }
-.quote > p { font-size: 15px; line-height: 1.55; color: var(--ink-800); margin: 0; text-wrap: pretty; flex: 1; }
+  display: flex; flex-direction: column; gap: var(--s-3); box-shadow: var(--shadow-1); margin: 0; height: 100%; }
+.quote__logo { height: 36px; display: flex; align-items: center; }
+.quote__logo img { height: 34px; width: auto; max-width: 60%; object-fit: contain; object-position: left center; }
+.quote blockquote { margin: 0; flex: 1; }
+.quote > p, .quote blockquote p { font-size: 15px; line-height: 1.55; color: var(--ink-800); margin: 0; text-wrap: pretty; }
 .quote__by { display: flex; align-items: center; gap: 12px; }
 .quote__av { width: 42px; height: 42px; border-radius: 50%; background: var(--blue); color: #fff;
   display: grid; place-items: center; font-weight: 600; font-size: 14px; flex: 0 0 auto;
