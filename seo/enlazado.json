@@ -1,18 +1,18 @@
 {
   "_readme": "Mapa de enlazado interno. Lo consume scripts/build-enlaces.mjs, que inyecta un bloque delimitado por los comentarios enlazado:inicio y enlazado:fin en cada post de /blog y en cada ficha de /glosario. Es idempotente: si el bloque ya existe, lo reemplaza. Las rutas de producto se escriben absolutas desde la raiz; el script las convierte a relativas.",
   "maxTerminosPorPost": 4,
-  "productoPorDefecto": "/industria-general.html",
+  "productoPorDefecto": "/industria-general/",
   "productoPorCategoria": {
-    "Gestion de incidencias": "/incidencias.html",
-    "Gestión de incidencias": "/incidencias.html",
-    "Auditorias y certificaciones": "/auditorias.html",
-    "Auditorías y certificaciones": "/auditorias.html",
-    "Calidad y mejora continua": "/dashboard.html",
-    "Trazabilidad": "/industria-alimentaria.html",
-    "Seguridad alimentaria": "/industria-alimentaria.html"
+    "Gestion de incidencias": "/incidencias/",
+    "Gestión de incidencias": "/incidencias/",
+    "Auditorias y certificaciones": "/auditorias/",
+    "Auditorías y certificaciones": "/auditorias/",
+    "Calidad y mejora continua": "/dashboard/",
+    "Trazabilidad": "/industria-alimentaria/",
+    "Seguridad alimentaria": "/industria-alimentaria/"
   },
   "cta": {
-    "/incidencias.html": {
+    "/incidencias/": {
       "titulo": "Gestiona las incidencias de tu planta con Solved",
       "texto": "Registra, asigna y cierra incidencias desde el movil, con evidencias y trazabilidad completa.",
       "boton": "Ver gestion de incidencias"
@@ -22,22 +22,22 @@
       "texto": "Acciones correctivas y preventivas con responsable, plazo y evidencia en un solo flujo.",
       "boton": "Ver no conformidades"
     },
-    "/auditorias.html": {
+    "/auditorias/": {
       "titulo": "Prepara tus auditorias sin carreras de ultima hora",
       "texto": "Checklists, evidencias y hallazgos ordenados para ISO 9001, IFS, BRCGS o FSSC 22000.",
       "boton": "Ver auditorias"
     },
-    "/dashboard.html": {
+    "/dashboard/": {
       "titulo": "Mide la calidad en tiempo real",
       "texto": "KPIs, mermas y reincidencias en un cuadro de mando que se actualiza solo.",
       "boton": "Ver el dashboard"
     },
-    "/industria-alimentaria.html": {
+    "/industria-alimentaria/": {
       "titulo": "Calidad y seguridad alimentaria en una sola herramienta",
       "texto": "APPCC, alergenos, trazabilidad y fichas tecnicas, siempre listos para auditoria.",
       "boton": "Ver Solved para alimentacion"
     },
-    "/industria-general.html": {
+    "/industria-general/": {
       "titulo": "Solved para cualquier planta de produccion",
       "texto": "Incidencias, calidad y datos de proceso, sea cual sea tu sector.",
       "boton": "Ver Solved para industria"
@@ -50,7 +50,7 @@
     },
     "alergenos": {
       "articulo": "control-de-alergenos-sin-riesgos",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "analisis-de-causa-raiz": {
       "articulo": "analisis-de-causa-raiz-que-evita-recaidas",
@@ -58,95 +58,95 @@
     },
     "appcc-haccp": {
       "articulo": "plan-appcc-sin-errores-paso-a-paso",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "auditoria-de-calidad": {
       "articulo": "auditoria-de-calidad-sin-errores-ni-sustos",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "auditoria-interna": {
       "articulo": "auditoria-interna-de-calidad-sin-sustos",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "brcgs": {
       "articulo": "certificacion-brc-la-guia-definitiva",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "contaminacion-cruzada": {
       "articulo": "control-de-alergenos-sin-riesgos",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "control-de-proceso": {
       "articulo": "deja-de-perder-registros-de-control-de-calidad",
-      "producto": "/dashboard.html"
+      "producto": "/dashboard/"
     },
     "control-estadistico-de-proceso-spc": {
       "articulo": "7-kpis-de-control-de-calidad-que-si-importan",
-      "producto": "/dashboard.html"
+      "producto": "/dashboard/"
     },
     "ficha-tecnica-de-producto": {
       "articulo": "ficha-tecnica-de-producto-sin-fallos",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "fssc-22000": {
       "articulo": "iso-22000-la-guia-practica-y-definitiva",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "gestion-documental": {
       "articulo": "gestion-documental-calidad-alimentaria-guia-practica-2026",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "gfsi": {
       "articulo": "normas-iso-clave-en-la-industria-alimentaria",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "ifs-food": {
       "articulo": "certificacion-ifs-food-guia-esencial",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "indicadores-de-no-calidad": {
       "articulo": "kpis-de-calidad",
-      "producto": "/dashboard.html"
+      "producto": "/dashboard/"
     },
     "inocuidad-alimentaria": {
       "articulo": "seguridad-alimentaria-guia-imprescindible",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "inspeccion-de-recepcion": {
       "articulo": "control-de-calidad-de-proveedores-evita-fallos",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "iso-22000": {
       "articulo": "iso-22000-la-guia-practica-y-definitiva",
-      "producto": "/auditorias.html"
+      "producto": "/auditorias/"
     },
     "kpi-de-produccion": {
       "articulo": "7-kpis-de-control-de-calidad-que-si-importan",
-      "producto": "/industria-general.html"
+      "producto": "/industria-general/"
     },
     "liberacion-de-producto": {
       "articulo": "deja-de-perder-registros-de-control-de-calidad",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "loteo-codificacion-de-lote": {
       "articulo": "trazabilidad-alimentaria-que-es-y-como-gestionarla-bien",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "materia-prima": {
       "articulo": "control-de-calidad-de-proveedores-evita-fallos",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "mejora-continua-kaizen": {
       "articulo": "como-aplicar-la-mejora-continua-a-traves-de-los-datos",
-      "producto": "/dashboard.html"
+      "producto": "/dashboard/"
     },
     "mermas": {
       "articulo": "como-aplicar-la-mejora-continua-a-traves-de-los-datos",
-      "producto": "/industria-general.html"
+      "producto": "/industria-general/"
     },
     "mes": {
       "articulo": "como-integrar-la-gestion-de-incidencias-erp-mes-gmao",
-      "producto": "/industria-general.html"
+      "producto": "/industria-general/"
     },
     "no-conformidad": {
       "articulo": "gestion-de-no-conformidades-en-alimentacion-guia-completa",
@@ -154,19 +154,19 @@
     },
     "oee": {
       "articulo": "7-kpis-de-control-de-calidad-que-si-importan",
-      "producto": "/industria-general.html"
+      "producto": "/industria-general/"
     },
     "plan-de-limpieza-y-desinfeccion-ld": {
       "articulo": "plan-de-limpieza-y-desinfeccion-clave",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "prerrequisitos-ppr": {
       "articulo": "prerrequisitos-ppr-la-base-de-un-appcc-solido",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "punto-de-control-critico-pcc": {
       "articulo": "plan-appcc-sin-errores-paso-a-paso",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "reclamacion-a-proveedor": {
       "articulo": "control-de-calidad-de-proveedores-evita-fallos",
@@ -174,35 +174,35 @@
     },
     "registro-de-calidad": {
       "articulo": "deja-de-perder-registros-de-control-de-calidad",
-      "producto": "/dashboard.html"
+      "producto": "/dashboard/"
     },
     "retirada-de-producto-recall": {
       "articulo": "retirada-de-producto-alimentario-sin-caos",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "seguridad-alimentaria": {
       "articulo": "seguridad-alimentaria-guia-imprescindible",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "trazabilidad-alimentaria": {
       "articulo": "trazabilidad-alimentaria-que-es-y-como-gestionarla-bien",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "trazabilidad-ascendente-y-descendente": {
       "articulo": "importancia-de-la-trazabilidad",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "trazabilidad-de-envase": {
       "articulo": "trazabilidad-iso-9001-guia-practica-real",
-      "producto": "/industria-general.html"
+      "producto": "/industria-general/"
     },
     "trazabilidad-de-lote": {
       "articulo": "importancia-de-la-trazabilidad",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     },
     "vida-util-shelf-life": {
       "articulo": "vida-util-de-un-alimento-como-calcularla-bien",
-      "producto": "/industria-alimentaria.html"
+      "producto": "/industria-alimentaria/"
     }
   }
 }

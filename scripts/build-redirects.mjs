@@ -38,20 +38,28 @@ async function existe(p) {
   }
 }
 
+// Mismo formato que los stubs .html de la raiz, para que el sitio tenga una sola
+// clase de pagina puente y npm run check:seo pueda validarlas todas igual:
+// el refresh lleva ruta relativa a la raiz (no URL absoluta), el canonical si es
+// absoluto, noindex+follow para que Google no indexe la puente pero siga el
+// enlace, y location.replace conservando query y hash.
 function bridgePage(dest) {
-  const safe = esc(config.SITE_URL + dest);
+  const ruta = esc(dest);
+  const abs = esc(config.SITE_URL + dest);
   return [
     '<!doctype html>',
     '<html lang="es">',
     '<head>',
     '<meta charset="utf-8">',
     '<meta name="viewport" content="width=device-width, initial-scale=1">',
-    '<meta http-equiv="refresh" content="0; url=' + safe + '">',
-    '<link rel="canonical" href="' + safe + '">',
     '<title>Esta pagina se ha movido - Solved</title>',
+    '<link rel="canonical" href="' + abs + '">',
+    '<meta name="robots" content="noindex, follow">',
+    '<meta http-equiv="refresh" content="0; url=' + ruta + '">',
+    "<script>location.replace('" + ruta + "' + location.search + location.hash);</script>",
     '</head>',
     '<body>',
-    '<p>Esta pagina se ha movido. Si tu navegador no te lleva solo, <a href="' + safe + '">continua aqui</a>.</p>',
+    '<p>Esta pagina se ha movido. Si tu navegador no te lleva solo, <a href="' + ruta + '">continua aqui</a>.</p>',
     '</body>',
     '</html>',
     '',

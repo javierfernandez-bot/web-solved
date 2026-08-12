@@ -5,17 +5,20 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.hsforms.net https://*.hsforms.com https://*.hs-scripts.com https://*.hscollectedforms.net https://*.hs-analytics.net https://*.hubspot.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://maps.google.com https://*.hsforms.com https://*.hsforms.net; connect-src 'self' https://*.hsforms.com https://*.hubspot.com https://*.hs-analytics.net https://*.hscollectedforms.net; object-src 'none'; base-uri 'self'; form-action 'self' https://*.hsforms.com; upgrade-insecure-requests"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="robots" content="noindex,follow"/>
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
-<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png"/>
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png"/>
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
 <title>Página no encontrada (404) · Solved</title>
 <script>
 /* Rescate de URLs rotas de enlaces externos/antiguos y del índice de Google.
-   1) Páginas del sitio pedidas como carpeta: /incidencias/ → /incidencias.html
+   1) Alias y variantes de páginas del sitio: /kpis/ → /dashboard/ (las rutas
+      canónicas /incidencias/, /auditorias/… ya existen y no llegan aquí)
       (también las que llevan guion, que antes caían en el rescate de blog y
       acababan en un 404 de /blog/).
    2) Artículos sin el prefijo /blog/: /{slug-con-guiones}/ → /blog/{slug}/.
-   Guarda anti-bucle: no actúa dentro de /blog/. */
+   Guardas anti-bucle: no actúa dentro de /blog/, y nunca redirige a la misma
+   ruta que ya se está pidiendo (si /incidencias/ llegase a faltar, se muestra
+   el 404 en vez de rebotar contra sí misma indefinidamente). */
 (function () {
   var p = location.pathname;
   if (p.indexOf('/blog/') === 0) return;
@@ -25,17 +28,17 @@
 
   /* Páginas estáticas (mismos alias que scripts/lib/links.mjs). */
   var STATIC = {
-    'incidencias': '/incidencias.html',
-    'auditorias': '/auditorias.html',
-    'registros-y-auditorias': '/auditorias.html',
-    'registros-auditorias': '/auditorias.html',
-    'dashboard': '/dashboard.html',
-    'kpis': '/dashboard.html',
-    'kpis-y-dashboards': '/dashboard.html',
-    'industria-alimentaria': '/industria-alimentaria.html',
-    'industria-general': '/industria-general.html',
-    'politica-de-cookies': '/politica-de-cookies.html',
-    'politica-de-privacidad': '/politica-de-privacidad.html'
+    'incidencias': '/incidencias/',
+    'auditorias': '/auditorias/',
+    'registros-y-auditorias': '/auditorias/',
+    'registros-auditorias': '/auditorias/',
+    'dashboard': '/dashboard/',
+    'kpis': '/dashboard/',
+    'kpis-y-dashboards': '/dashboard/',
+    'industria-alimentaria': '/industria-alimentaria/',
+    'industria-general': '/industria-general/',
+    'politica-de-cookies': '/politica-de-cookies/',
+    'politica-de-privacidad': '/politica-de-privacidad/'
   };
   /* Alias que no tienen página propia. */
   var DEMO = ['demo', 'solicitar-demo', 'pedir-demo', 'solicita-una-demo', 'solicita-demo',
@@ -43,9 +46,12 @@
   var HOME = ['funcionalidades', 'caracteristicas', 'producto', 'productos',
     'casos-de-exito', 'casos-exito', 'clientes', 'precios', 'pricing', 'planes', 'soluciones'];
 
-  if (STATIC[one]) { location.replace(STATIC[one] + location.hash); return; }
-  if (DEMO.indexOf(one) !== -1) { location.replace('/index.html#contacto'); return; }
-  if (HOME.indexOf(one) !== -1) { location.replace('/index.html'); return; }
+  if (STATIC[one]) {
+    if (STATIC[one] === p) return;   // ya estamos ahí: no rebotar
+    location.replace(STATIC[one] + location.hash); return;
+  }
+  if (DEMO.indexOf(one) !== -1) { location.replace('/#contacto'); return; }
+  if (HOME.indexOf(one) !== -1) { location.replace('/'); return; }
 
   if (/-/.test(one)) location.replace('/blog/' + seg[0] + '/' + location.hash);
 })();
@@ -53,9 +59,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
-<link rel="stylesheet" href="_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260803a"/>
-<link rel="stylesheet" href="solved.css?v=20260803a"/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260803a"/>
+<link rel="stylesheet" href="/solved.css?v=20260803a"/>
 </head>
 <body data-screen-label="404">
 
@@ -67,14 +73,14 @@
     <h2>No encontramos esta página</h2>
     <p>Puede que el enlace haya cambiado o ya no exista. Vuelve al inicio o explora nuestros productos.</p>
     <div style="display:flex;gap:var(--s-2);justify-content:center;flex-wrap:wrap;margin-top:var(--s-4);">
-      <a class="btn btn--primary" href="index.html">Volver al inicio</a>
-      <a class="btn btn--secondary" href="auditorias.html">Registros / Checklist</a>
-      <a class="btn btn--secondary" href="incidencias.html">Gestión de incidencias</a>
+      <a class="btn btn--primary" href="/">Volver al inicio</a>
+      <a class="btn btn--secondary" href="/auditorias/">Registros / Checklist</a>
+      <a class="btn btn--secondary" href="/incidencias/">Gestión de incidencias</a>
     </div>
   </div>
 </section>
 
 <div id="footer"></div>
-<script src="chrome.js?v=20260803a"></script>
+<script src="/chrome.js?v=20260803a"></script>
 </body>
 </html>

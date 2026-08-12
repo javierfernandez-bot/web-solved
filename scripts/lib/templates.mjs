@@ -44,6 +44,20 @@ export function clampChars(text = '', max = 155) {
 }
 
 // <head> común a índice y post.
+// Nodo Organization completo, con el mismo @id que usa el resto del sitio para
+// que Google lo trate como la misma entidad venga de donde venga la página.
+function orgLd() {
+  return {
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: ORG.name,
+    legalName: ORG.legalName,
+    url: ORG.url,
+    logo: { '@type': 'ImageObject', url: ORG.logo },
+    sameAs: ORG.sameAs,
+  };
+}
+
 function head({ title, description, canonical, ogType = 'website', ogImage = null, ogImageW = 1200, ogImageH = 630, jsonLdArray = [], robots = 'index, follow', rootPrefix }) {
   const img = ogImage || `${SITE_URL}/assets/og-image.png`;
   const graph = jsonLdArray.length
@@ -117,7 +131,7 @@ export function renderPost(post, ctx) {
     datePublished: dateISO,
     dateModified: modISO || dateISO,
     author: { '@type': 'Person', name: post.author },
-    publisher: { '@type': 'Organization', name: ORG.name, logo: { '@type': 'ImageObject', url: ORG.logo } },
+    publisher: orgLd(),
     articleSection: cat || undefined,
   };
   const crumbs = breadcrumbLd([
@@ -204,7 +218,7 @@ export function renderIndex({ cards, page, totalPages, rootPrefix, blogPrefix, c
     '@id': `${SITE_URL}/blog/`,
     name: 'Blog de Solved',
     description: 'Ideas, guías y novedades sobre calidad, incidencias y digitalización industrial.',
-    publisher: { '@type': 'Organization', name: ORG.name, logo: { '@type': 'ImageObject', url: ORG.logo } },
+    publisher: orgLd(),
     url: `${SITE_URL}/blog/`,
   };
   const crumbs = breadcrumbLd([

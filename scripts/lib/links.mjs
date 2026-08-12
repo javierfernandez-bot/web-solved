@@ -5,24 +5,24 @@
 // Reglas (solo se tocan enlaces INTERNOS absolutos a trysolved.com/.es o
 // root-relativos "/...". Los relativos "../slug/" de las plantillas NO se tocan):
 //   - /blog/{slug} o /{slug}  → {blogPrefix}{slug}/        (si el slug existe)
-//   - /incidencias, /dashboard/, … → {rootPrefix}pagina.html
-//   - /demo, /landing-*, …    → {rootPrefix}index.html#contacto
-//   - /funcionalidades, /casos-de-exito, … → {rootPrefix}index.html
+//   - /incidencias, /dashboard/, … → {rootPrefix}pagina/
+//   - /demo, /landing-*, …    → {rootPrefix}#contacto
+//   - /funcionalidades, /casos-de-exito, … → {rootPrefix}
 //   - destino desconocido     → se quita el enlace (unwrap), se conserva el texto
 
 // Páginas estáticas del sitio (clave normalizada sin barras → ruta real).
 const STATIC = new Map([
-  ['', 'index.html'], ['index.html', 'index.html'], ['inicio', 'index.html'], ['home', 'index.html'],
-  ['incidencias', 'incidencias.html'], ['incidencias.html', 'incidencias.html'],
-  ['auditorias', 'auditorias.html'], ['auditorias.html', 'auditorias.html'],
-  ['registros-y-auditorias', 'auditorias.html'], ['registros-auditorias', 'auditorias.html'],
-  ['dashboard', 'dashboard.html'], ['dashboard.html', 'dashboard.html'],
-  ['kpis', 'dashboard.html'], ['kpis-y-dashboards', 'dashboard.html'],
-  ['industria-alimentaria', 'industria-alimentaria.html'], ['industria-alimentaria.html', 'industria-alimentaria.html'],
-  ['industria-general', 'industria-general.html'], ['industria-general.html', 'industria-general.html'],
+  ['', ''], ['index.html', ''], ['inicio', ''], ['home', ''],
+  ['incidencias', 'incidencias/'], ['incidencias/', 'incidencias/'],
+  ['auditorias', 'auditorias/'], ['auditorias/', 'auditorias/'],
+  ['registros-y-auditorias', 'auditorias/'], ['registros-auditorias', 'auditorias/'],
+  ['dashboard', 'dashboard/'], ['dashboard/', 'dashboard/'],
+  ['kpis', 'dashboard/'], ['kpis-y-dashboards', 'dashboard/'],
+  ['industria-alimentaria', 'industria-alimentaria/'], ['industria-alimentaria/', 'industria-alimentaria/'],
+  ['industria-general', 'industria-general/'], ['industria-general/', 'industria-general/'],
   ['no-conformidades', 'no-conformidades/'],
-  ['politica-de-cookies', 'politica-de-cookies.html'], ['politica-de-cookies.html', 'politica-de-cookies.html'],
-  ['politica-de-privacidad', 'politica-de-privacidad.html'], ['politica-de-privacidad.html', 'politica-de-privacidad.html'],
+  ['politica-de-cookies', 'politica-de-cookies/'], ['politica-de-cookies/', 'politica-de-cookies/'],
+  ['politica-de-privacidad', 'politica-de-privacidad/'], ['politica-de-privacidad/', 'politica-de-privacidad/'],
   ['glosario', 'glosario/'], ['blog', 'blog/'],
 ]);
 
@@ -74,8 +74,8 @@ export function resolveInternalHref(raw, { blogPrefix, rootPrefix, slugs }) {
     const one = (parts[0] || '').toLowerCase();
     if (STATIC.has(one)) return { href: `${rootPrefix}${STATIC.get(one)}${hash}` };
     if (slugs.has(one)) return { href: `${blogPrefix}${one}/${hash}` };
-    if (DEMO.has(one)) return { href: `${rootPrefix}index.html#contacto` };
-    if (HOME.has(one)) return { href: `${rootPrefix}index.html` };
+    if (DEMO.has(one)) return { href: `${rootPrefix}#contacto` };
+    if (HOME.has(one)) return { href: `${rootPrefix}` };
     return { unwrap: true };
   }
 
