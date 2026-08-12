@@ -12,7 +12,7 @@
 
   // El CTA de demo apunta al #contacto de la propia página si existe; si no
   // (p. ej. dentro de un post del blog), lleva al contacto de la home.
-  var demo = document.getElementById('contacto') ? '#contacto' : ROOT + 'index.html#contacto';
+  var demo = document.getElementById('contacto') ? '#contacto' : ROOT + '#contacto';
 
   /* ====== HubSpot · formulario embebido ======
      Portal 20010689 (data center na1). */
@@ -20,22 +20,22 @@
 
   var NAV =
   '<header class="nav"><div class="wrap nav__in">' +
-    '<a class="nav__logo" href="' + ROOT + 'index.html"><img src="' + ROOT + 'assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
+    '<a class="nav__logo" href="' + ROOT + '"><img src="' + ROOT + 'assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
     '<ul class="nav__links">' +
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="' + ROOT + 'incidencias.html"><b>Incidencias</b><span>Registra, asigna y resuelve con cierre documentado</span></a>' +
-          '<a href="' + ROOT + 'auditorias.html"><b>Registros y auditorías</b><span>Controles, checklists y auditorías digitales</span></a>' +
+          '<a href="' + ROOT + 'incidencias/"><b>Incidencias</b><span>Registra, asigna y resuelve con cierre documentado</span></a>' +
+          '<a href="' + ROOT + 'auditorias/"><b>Registros y auditorías</b><span>Controles, checklists y auditorías digitales</span></a>' +
           '<a href="' + ROOT + 'no-conformidades/"><b>Tareas, acciones y no conformidades</b><span>Acciones correctivas y seguimiento hasta el cierre</span></a>' +
-          '<a href="' + ROOT + 'dashboard.html"><b>KPIs y dashboards</b><span>Visión 360º en tiempo real e informes automáticos</span></a>' +
+          '<a href="' + ROOT + 'dashboard/"><b>KPIs y dashboards</b><span>Visión 360º en tiempo real e informes automáticos</span></a>' +
         '</div>' +
       '</li>' +
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Industrias <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="' + ROOT + 'industria-general.html"><b>Industria general</b><span>Fabricación y procesos</span></a>' +
-          '<a href="' + ROOT + 'industria-alimentaria.html"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
+          '<a href="' + ROOT + 'industria-general/"><b>Industria general</b><span>Fabricación y procesos</span></a>' +
+          '<a href="' + ROOT + 'industria-alimentaria/"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
         '</div>' +
       '</li>' +
       '<li class="nav__item">' +
@@ -65,10 +65,10 @@
       '<div class="footer__col">' +
         '<h4>Solved</h4>' +
         '<ul>' +
-          '<li><a href="' + ROOT + 'index.html">Inicio</a></li>' +
-          '<li><a href="' + ROOT + 'auditorias.html">Registros/Checklist</a></li>' +
-          '<li><a href="' + ROOT + 'incidencias.html">Gestión de incidencias</a></li>' +
-          '<li><a href="' + ROOT + 'dashboard.html">Dashboard</a></li>' +
+          '<li><a href="' + ROOT + '">Inicio</a></li>' +
+          '<li><a href="' + ROOT + 'auditorias/">Registros/Checklist</a></li>' +
+          '<li><a href="' + ROOT + 'incidencias/">Gestión de incidencias</a></li>' +
+          '<li><a href="' + ROOT + 'dashboard/">Dashboard</a></li>' +
           '<li><a href="' + ROOT + 'blog/">Blog</a></li>' +
           '<li><a href="' + ROOT + 'glosario/">Glosario</a></li>' +
         '</ul>' +
@@ -76,8 +76,8 @@
       '<div class="footer__col">' +
         '<h4>Quick Links</h4>' +
         '<ul>' +
-          '<li><a href="' + ROOT + 'politica-de-cookies.html">Política de Cookies</a></li>' +
-          '<li><a href="' + ROOT + 'politica-de-privacidad.html">Política de privacidad</a></li>' +
+          '<li><a href="' + ROOT + 'politica-de-cookies/">Política de Cookies</a></li>' +
+          '<li><a href="' + ROOT + 'politica-de-privacidad/">Política de privacidad</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
@@ -189,7 +189,7 @@
     el.setAttribute('role', 'dialog');
     el.setAttribute('aria-label', 'Aviso de cookies');
     el.innerHTML =
-      '<p class="cookie-banner__text">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="' + ROOT + 'politica-de-cookies.html">Política de Cookies</a>.</p>' +
+      '<p class="cookie-banner__text">Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra <a href="' + ROOT + 'politica-de-cookies/">Política de Cookies</a>.</p>' +
       '<div class="cookie-banner__actions">' +
         '<button class="btn btn--secondary" type="button" data-cookie="reject">Rechazar</button>' +
         '<button class="btn btn--primary" type="button" data-cookie="accept">Aceptar</button>' +

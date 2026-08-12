@@ -150,7 +150,7 @@ export function renderPost(post, ctx) {
 <article class="post">
   <div class="wrap post__wrap">
     <nav class="post__crumbs" aria-label="Migas de pan">
-      <a href="${rootPrefix}index.html">Inicio</a> <span>/</span>
+      <a href="${rootPrefix}">Inicio</a> <span>/</span>
       <a href="${blogPrefix}">Blog</a> <span>/</span>
       <span aria-current="page">${esc(post.title)}</span>
     </nav>
