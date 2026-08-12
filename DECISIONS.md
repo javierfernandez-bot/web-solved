@@ -172,21 +172,22 @@ esto hay que poder repetirlo:
 
 ---
 
-## Pendiente de confirmación humana
+## Razón social — resuelto (agosto 2026)
 
-**⚠️ La razón social aparece escrita de dos formas distintas en el repo:**
+La razón social aparecía escrita de dos formas: `politica-de-privacidad/`
+(la que lleva el CIF) decía **Voltstone**, y `llms.txt` + el JSON-LD de las 118
+páginas decían **VOLSTONE**.
 
-| Fuente | Dice |
-|---|---|
-| `politica-de-privacidad/index.html` (con CIF B05424866) | **Voltstone** Technology Services, S.L. |
-| `llms.txt` y el JSON-LD de la home | **VOLSTONE** TECHNOLOGY SERVICES S.L. |
+Comprobado en los registros públicos por CIF **B05424866**: la denominación
+correcta es **VOLTSTONE TECHNOLOGY SERVICES S.L.** (con T). Se ha corregido el
+`legalName` en todo el sitio (JSON-LD de las páginas ya generadas, `llms.txt` y
+`scripts/config.mjs`, que es el que lo reinyecta en cada rebuild del blog). La
+página legal ya era correcta y no se ha tocado.
 
-Se ha usado **VOLSTONE** en el JSON-LD, que es lo que ya había y lo que se
-decidió al arrancar, pero la página legal —que lleva el CIF y es la que tiene
-valor jurídico— dice *Voltstone*. Conviene comprobarlo en el Registro Mercantil
-y unificar las tres fuentes. No se ha cambiado ningún texto legal.
-
-**⚠️ El domicilio también difiere:** el JSON-LD y `llms.txt` dicen «Edificio
-Angels, Carrer del Port 13, 46024 Valencia»; la política de privacidad dice
-«Calle Utiel 58, bajo, 46901 Torrent (Valencia)». Se ha mantenido el del
-JSON-LD por no tocar nada, pero uno de los dos está desactualizado.
+**⚠️ Sigue pendiente el domicilio.** El JSON-LD y `llms.txt` dicen «Edificio
+Angels, Carrer del Port 13, 46024 Valencia»; la política de privacidad y el
+registro mercantil dicen «Calle Utiel 58, bajo, 46901 Torrent (Valencia)». Puede
+ser legítimo (domicilio social ≠ oficina), así que **no se ha tocado**: si la
+oficina real es la de Torrent, hay que cambiar el `PostalAddress` del JSON-LD y
+`llms.txt`, porque el domicilio del JSON-LD es el que Google usa como señal
+local.

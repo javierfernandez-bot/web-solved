@@ -31,7 +31,7 @@ export const config = {
   // ---- Identidad para SEO / JSON-LD ----
   ORG: {
     name: 'Solved',
-    legalName: 'VOLSTONE TECHNOLOGY SERVICES S.L.',
+    legalName: 'VOLTSTONE TECHNOLOGY SERVICES S.L.',
     url: 'https://trysolved.com/',
     logo: 'https://trysolved.com/assets/logotipo-solved.webp',
     twitter: '@solved',

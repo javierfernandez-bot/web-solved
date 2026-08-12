@@ -2,7 +2,7 @@
 
 > Solved es un software para fábricas que centraliza en una sola plataforma el control de calidad, la gestión de incidencias, las auditorías, las no conformidades y la mejora continua, accesible desde móvil, tablet y PC. Está pensado para la industria alimentaria y la fabricación en general.
 
-Solved (de VOLSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las operaciones de planta y elimina el papel: registros y checklists, incidencias con responsable y cierre documentado, no conformidades y acciones correctivas con seguimiento hasta el cierre, auditorías digitales (compatibles con ISO 9001, IFS, BRC, ISO 22000 y APPCC) y KPIs en tiempo real. Complementa tu ERP, MES o GMAO sin reemplazarlos. La implementación media es de 2 a 3 semanas y más de 100 empresas industriales ya lo utilizan. El acceso es mediante demostración gratuita (no hay autoservicio de precios público).
+Solved (de VOLTSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las operaciones de planta y elimina el papel: registros y checklists, incidencias con responsable y cierre documentado, no conformidades y acciones correctivas con seguimiento hasta el cierre, auditorías digitales (compatibles con ISO 9001, IFS, BRC, ISO 22000 y APPCC) y KPIs en tiempo real. Complementa tu ERP, MES o GMAO sin reemplazarlos. La implementación media es de 2 a 3 semanas. El acceso es mediante demostración gratuita (no hay autoservicio de precios público).
 
 ## Producto
 - [Incidencias](https://trysolved.com/incidencias/): registra, asigna y resuelve incidencias en segundos, con responsable y cierre documentado.
@@ -20,4 +20,4 @@ Solved (de VOLSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las 
 
 ## Contacto
 - Demostración gratuita: https://trysolved.com/#contacto
-- Empresa: VOLSTONE TECHNOLOGY SERVICES S.L. — Edificio Angels, Carrer del Port 13, 46024 Valencia (España).
+- Empresa: VOLTSTONE TECHNOLOGY SERVICES S.L. — Edificio Angels, Carrer del Port 13, 46024 Valencia (España).
