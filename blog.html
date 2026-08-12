@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Stub de redirección: /blog.html era el blog antiguo (iframe a WordPress) y
+     se eliminó al pasar al blog headless bajo /blog/. Google la tenía indexada,
+     así que se recupera la señal en vez de dejarla en 404. GitHub Pages no
+     permite 301 de servidor; el meta refresh instantáneo + canonical se trata
+     como redirección permanente. -->
+<title>Blog · Solved</title>
+<link rel="canonical" href="https://trysolved.com/blog/"/>
+<meta name="robots" content="noindex, follow"/>
+<meta http-equiv="refresh" content="0; url=/blog/"/>
+<script>location.replace('/blog/' + location.search + location.hash);</script>
+</head>
+<body>
+<p>Esta página se ha movido. Si no se te redirige automáticamente,
+<a href="/blog/">ve al Blog</a>.</p>
+</body>
+</html>

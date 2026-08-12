@@ -9,7 +9,7 @@ import { createHash } from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
-import { config } from '../config.mjs';
+import { config, WP_ORIGIN } from '../config.mjs';
 import { fetchRetry } from './net.mjs';
 
 const { IMAGE_WIDTHS, IMG_OUT_DIR, CACHE_DIR } = config;
@@ -21,15 +21,31 @@ async function exists(p) { try { await fs.access(p); return true; } catch { retu
 
 function keyFor(url) { return createHash('sha1').update(url).digest('hex').slice(0, 12); }
 
+// Los posts anteriores a la migración traen imágenes apuntando al WordPress
+// viejo (https://trysolved.com/wp-content/…). Ese dominio lo sirve ahora el
+// sitio estático, así que descargarlas de ahí da 404, la imagen no se localiza
+// y el post se queda con un hotlink roto. El contenido sigue estando en el
+// WordPress actual, en la misma ruta: basta con reapuntar el origen.
+function toCurrentOrigin(url) {
+  try {
+    const u = new URL(url);
+    if (u.pathname.includes('/wp-content/') && u.origin !== WP_ORIGIN) {
+      return WP_ORIGIN + u.pathname + u.search;
+    }
+  } catch { /* URL relativa o inválida: se deja tal cual */ }
+  return url;
+}
+
 // Descarga el original (cacheado por URL) y devuelve su ruta local.
 async function downloadOriginal(url) {
   await ensureDir(SRC_CACHE);
+  const src = toCurrentOrigin(url);
   const key = keyFor(url);
-  const ext = (path.extname(new URL(url).pathname) || '.img').split('?')[0];
+  const ext = (path.extname(new URL(src).pathname) || '.img').split('?')[0];
   const cached = path.join(SRC_CACHE, key + ext);
   if (await exists(cached)) return cached;
-  const res = await fetchRetry(url);
-  if (!res.ok) throw new Error(`No se pudo descargar imagen ${res.status} ${url}`);
+  const res = await fetchRetry(src);
+  if (!res.ok) throw new Error(`No se pudo descargar imagen ${res.status} ${src}`);
   const buf = Buffer.from(await res.arrayBuffer());
   await fs.writeFile(cached, buf);
   return cached;
