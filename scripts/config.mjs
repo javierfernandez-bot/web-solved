@@ -36,15 +36,17 @@ export const config = {
   },
 
   // ---- Páginas estáticas del sitio (para regenerar sitemap.xml) ----
+  // Solo URLs canónicas: /ruta/ sin extensión, nunca los stubs .html ni las
+  // páginas noindex (las dos legales). El lastmod lo pone el generador.
   STATIC_PAGES: [
-    { loc: '/',                          changefreq: 'weekly',  priority: '1.0' },
-    { loc: '/auditorias.html',           changefreq: 'monthly', priority: '0.9' },
-    { loc: '/incidencias.html',          changefreq: 'monthly', priority: '0.9' },
-    { loc: '/no-conformidades/',         changefreq: 'monthly', priority: '0.9' },
-    { loc: '/dashboard.html',            changefreq: 'monthly', priority: '0.9' },
-    { loc: '/industria-alimentaria.html',changefreq: 'monthly', priority: '0.8' },
-    { loc: '/industria-general.html',    changefreq: 'monthly', priority: '0.8' },
-    { loc: '/glosario/',                 changefreq: 'weekly',  priority: '0.7' },
+    { loc: '/',                                    changefreq: 'weekly',  priority: '1.0' },
+    { loc: '/auditorias/',                         changefreq: 'monthly', priority: '0.9' },
+    { loc: '/incidencias/',                        changefreq: 'monthly', priority: '0.9' },
+    { loc: '/no-conformidades/',                   changefreq: 'monthly', priority: '0.9' },
+    { loc: '/dashboard/',                          changefreq: 'monthly', priority: '0.9' },
+    { loc: '/industria-alimentaria/',              changefreq: 'monthly', priority: '0.8' },
+    { loc: '/industria-general/',                  changefreq: 'monthly', priority: '0.8' },
+    { loc: '/glosario/',                           changefreq: 'weekly',  priority: '0.7' },
     { loc: '/glosario/accion-correctiva-y-preventiva-capa/', changefreq: 'monthly', priority: '0.6' },
     { loc: '/glosario/alergenos/', changefreq: 'monthly', priority: '0.6' },
     { loc: '/glosario/analisis-de-causa-raiz/', changefreq: 'monthly', priority: '0.6' },
