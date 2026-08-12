@@ -6,7 +6,9 @@
   "description": "Sitio estático de Solved (trysolved.com) + generador del blog headless desde WordPress.",
   "scripts": {
     "build:blog": "node scripts/build-blog.mjs",
-    "build:sitemap": "node scripts/build-sitemap.mjs"
+    "build:sitemap": "node scripts/build-sitemap.mjs",
+    "check:seo": "node scripts/check-seo.mjs",
+    "serve": "node scripts/serve.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
