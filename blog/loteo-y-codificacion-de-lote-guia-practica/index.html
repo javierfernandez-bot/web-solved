@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicon.png"/>
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png"/>
+<title>Loteo y codificación de lote: guía práctica · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Aprende qué es el loteo y codificación de lote, cómo codificar correctamente y evita errores comunes en tu planta de producción."/>
+<link rel="canonical" href="https://trysolved.com/blog/loteo-y-codificacion-de-lote-guia-practica/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#1E6BFF"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Solved"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:url" content="https://trysolved.com/blog/loteo-y-codificacion-de-lote-guia-practica/"/>
+<meta property="og:title" content="Loteo y codificación de lote: guía práctica · Solved"/>
+<meta property="og:description" content="Aprende qué es el loteo y codificación de lote, cómo codificar correctamente y evita errores comunes en tu planta de producción."/>
+<meta property="og:image" content="https://trysolved.com/blog/assets/632094330b3b-1200.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Loteo y codificación de lote: guía práctica · Solved"/>
+<meta name="twitter:description" content="Aprende qué es el loteo y codificación de lote, cómo codificar correctamente y evita errores comunes en tu planta de producción."/>
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/632094330b3b-1200.jpg"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/blog/loteo-y-codificacion-de-lote-guia-practica/"},"headline":"Loteo y codificación de lote: guía práctica","description":"Aprende qué es el loteo y codificación de lote, cómo codificar correctamente y evita errores comunes en tu planta de producción.","image":["https://trysolved.com/blog/assets/632094330b3b-1200.jpg"],"datePublished":"2026-08-21T00:00:00Z","dateModified":"2026-08-21T00:00:00Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Trazabilidad"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/blog/"},{"@type":"ListItem","position":3,"name":"Loteo y codificación de lote: guía práctica","item":"https://trysolved.com/blog/loteo-y-codificacion-de-lote-guia-practica/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"/>
+<link rel="stylesheet" href="../../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260803a"/>
+<link rel="stylesheet" href="../../solved.css?v=20260803a"/>
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Migas de pan">
+      <a href="../../">Inicio</a> <span>/</span>
+      <a href="../">Blog</a> <span>/</span>
+      <span aria-current="page">Loteo y codificación de lote: guía práctica</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Trazabilidad</span>
+      <h1>Loteo y codificación de lote: guía práctica</h1>
+      <p class="post__meta">Por Claudia · <time datetime="2026-08-21T00:00:00Z">21 de agosto de 2026</time> · 7 min de lectura</p>
+    </header>
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="../assets/632094330b3b-480.avif 480w, ../assets/632094330b3b-768.avif 768w, ../assets/632094330b3b-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="../assets/632094330b3b-480.webp 480w, ../assets/632094330b3b-768.webp 768w, ../assets/632094330b3b-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="../assets/632094330b3b-1200.jpg" width="1200" height="670" alt="Loteo y codificación de lote: guía práctica" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<h2>Loteo y codificación de lote: guía práctica</h2>
+<p>El <strong>loteo y codificación de lote</strong> es una de las tareas más críticas en cualquier planta de producción alimentaria. Parece una cuestión técnica menor, pero cuando llega una alerta de seguridad alimentaria o hay que ejecutar una retirada de mercado, el criterio con el que se definieron los lotes y la forma en que se codificaron marcan la diferencia entre retirar cien unidades o cien palés enteros. En este artículo te explicamos qué es el loteo, cómo codificar correctamente un lote alimentario y cómo evitar los errores más comunes en planta.</p>
+<h2>Qué es el loteo y por qué un mal criterio de lote complica cualquier retirada de producto</h2>
+<p>El loteo es el proceso por el que una empresa agrupa unidades de producto bajo un mismo identificador —el número de lote— con el objetivo de poder rastrear su origen, su recorrido y su destino en cualquier momento. Este identificador es la clave que conecta el producto terminado con las materias primas utilizadas, las condiciones de producción, los controles de calidad realizados y los clientes a los que se distribuyó.</p>
+<p>Un criterio de lote mal definido tiene consecuencias muy concretas. Imagina que agrupas en un mismo lote la producción de tres turnos consecutivos usando materias primas de diferentes proveedores. Si aparece una no conformidad vinculada a una de esas materias primas, no podrás aislar el problema: tendrás que bloquear y revisar toda la producción de esos tres turnos, con el coste económico y reputacional que eso conlleva.</p>
+<p>La <a href="../trazabilidad-alimentaria-que-es-y-como-gestionarla-bien/" target="_blank" rel="noopener">trazabilidad de lote</a> exige que puedas identificar y seguir cualquier alimento a lo largo de toda la cadena de producción, transformación y distribución, tal y como establece el <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">Reglamento (CE) n.º 178/2002 sobre legislación alimentaria general</a> (Reglamento [CE] 178/2002, 2002). Para cumplir con esta obligación de manera eficiente, el lote debe ser lo suficientemente pequeño como para acotar el alcance de cualquier incidencia, pero lo suficientemente amplio como para que su gestión no se convierta en inviable administrativamente.</p>
+<p>Un buen criterio de lote suele tener en cuenta variables como el proveedor y número de lote de la materia prima principal, la línea de producción, el turno o la fecha de fabricación. Cuantos más de estos factores estén recogidos en la definición del lote, más precisa será tu capacidad de respuesta ante cualquier problema.</p>
+<h2>Cómo se codifica un lote: qué información debe llevar y qué normativa lo exige</h2>
+<p>La <strong>codificación de lote alimentario</strong> no es libre: existe una obligación legal de marcar los productos con un número de lote que permita su identificación. Esta exigencia forma parte del sistema de trazabilidad de lote que todo operador alimentario debe tener implementado.</p>
+<p>El <strong>número de lote</strong> debe aparecer en el etiquetado del producto y tiene que ser suficientemente claro para que tanto los operadores internos como las autoridades competentes puedan, a partir de él, recuperar toda la información asociada a esa producción. No existe un formato único obligatorio, pero sí hay buenas prácticas ampliamente adoptadas en el sector.</p>
+<p>Un código de lote típico en la industria agroalimentaria suele incluir alguna combinación de los siguientes elementos:</p>
+<ul>
+<li><strong>Fecha de producción</strong>: en formato numérico comprimido, por ejemplo AAMMDD o el día juliano del año.</li>
+<li><strong>Turno o franja horaria</strong>: especialmente relevante en plantas con producción continua.</li>
+<li><strong>Línea de producción</strong>: para diferenciar entre varias líneas que fabrican simultáneamente el mismo producto.</li>
+<li><strong>Código de producto o referencia interna</strong>: para cruzar el lote con la ficha técnica correspondiente.</li>
+</ul>
+<p>Por ejemplo, un código como <em>240915-L2-T1</em> podría interpretarse como: producción del 15 de septiembre de 2024, línea 2, turno de mañana. Este tipo de codificación estructurada facilita enormemente las búsquedas y los filtros en cualquier sistema de gestión de calidad.</p>
+<p>Desde el punto de vista normativo, el <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">Reglamento (CE) 852/2004 relativo a la higiene de los productos alimenticios</a> (Reglamento [CE] 852/2004, 2004) establece que los operadores de empresa alimentaria deben disponer de procedimientos documentados que garanticen la seguridad de sus productos, lo que incluye poder identificar y retirar cualquier lote de manera eficaz. La codificación coherente y bien diseñada es una de las bases de ese sistema.</p>
+<h2>Errores habituales al lotear en planta: lotes demasiado grandes, mezclas y códigos duplicados</h2>
+<p>En la práctica diaria de planta, el proceso de loteo y codificación de lote concentra algunos errores recurrentes que comprometen seriamente la trazabilidad y la capacidad de respuesta ante incidencias.</p>
+<p><strong>Lotes demasiado grandes.</strong> Es el error más frecuente. Al agrupar producciones de varios días, turnos o incluso semanas bajo un mismo número de lote, el alcance potencial de cualquier problema se dispara. Si hay que hacer una retirada, el impacto económico se multiplica innecesariamente. La solución pasa por definir lotes más acotados, aunque eso implique gestionar un mayor número de registros.</p>
+<p><strong>Mezcla de materias primas de distintos lotes sin documentación.</strong> Cuando en mitad de un proceso de producción se cambia el saco de ingrediente pero no se registra el nuevo número de lote de proveedor, se rompe la cadena de trazabilidad. El producto terminado queda asociado a un lote de materia prima incorrecto o incompleto. Este tipo de error es especialmente frecuente en producciones largas o cuando el proceso depende de la memoria del operario de turno.</p>
+<p><strong>Códigos duplicados.</strong> Sucede cuando el sistema de asignación de lotes no está automatizado y se generan manualmente. Dos operarios en dos líneas distintas pueden asignar el mismo código a producciones diferentes, lo que hace imposible distinguir el producto correcto del que tiene un problema. Un software de gestión de calidad con generación automática de lotes elimina este riesgo de raíz.</p>
+<p><strong>Falta de coherencia entre el lote en etiqueta y el lote en el sistema interno.</strong> Ocurre cuando la etiqueta de producto y la documentación de producción no coinciden. Este desajuste puede deberse a errores tipográficos, a reetiquetados no documentados o a cambios de última hora no registrados. En una auditoría o en una retirada de producto, este tipo de incoherencia genera un problema muy serio.</p>
+<h2>Cómo automatizar el loteo y la codificación sin depender de que alguien lo anote a mano</h2>
+<p>La dependencia del registro manual es el origen de la mayoría de los errores de codificación de lote en planta. La solución más efectiva para eliminar ese riesgo es integrar el sistema de loteo en un software de calidad que genere, asigne y registre los números de lote de forma automática y vinculada al proceso productivo real.</p>
+<p>Un sistema bien configurado permite definir los criterios de lote una sola vez —fecha, turno, línea, referencia de producto— y que el código se genere automáticamente cuando se abre una orden de producción. Ese código queda asociado de forma inmediata a las materias primas utilizadas, a los controles realizados y, al finalizar la producción, a los destinatarios del envío.</p>
+<p>Las ventajas de este enfoque son claras: se eliminan los errores de transcripción, se garantiza la unicidad de cada código, se crea automáticamente el rastro documental necesario para cualquier auditoría y se reduce el tiempo de respuesta ante una posible alerta alimentaria de horas a minutos.</p>
+<p>Además, cuando el sistema de loteo está integrado con el módulo de trazabilidad, basta con introducir un número de lote para obtener de inmediato toda la información asociada: proveedor de la materia prima, fecha y condiciones de producción, controles de calidad superados, cantidad producida y clientes a los que se distribuyó. Esto es exactamente lo que exige la normativa vigente y lo que esperan ver los auditores de cualquier estándar de referencia del sector.</p>
+<p>Implementar un sistema de loteo y codificación sólido no es solo una obligación legal: es una inversión en la capacidad de respuesta de tu empresa y en la confianza que generás en tus clientes y en las autoridades de control. El primer paso es revisar los criterios de lote que estás usando hoy y preguntarte: si mañana hubiera una alerta, ¿cuánto producto tendría que bloquear?</p>
+<h2>Referencias</h2>
+<ul>
+<li>Reglamento (CE) n.o 178/2002 del Parlamento Europeo y del Consejo, de 28 de enero de 2002, por el que se establecen los principios y los requisitos generales de la legislacion alimentaria. (2002). <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es</a></li>
+<li>Reglamento (CE) n.o 852/2004 del Parlamento Europeo y del Consejo, de 29 de abril de 2004, relativo a la higiene de los productos alimenticios. (2004). <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es</a></li>
+</ul>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Terminos relacionados</h2>
+      <ul>
+        <li><a href="../../glosario/seguridad-alimentaria/">Seguridad alimentaria</a></li>
+        <li><a href="../../glosario/trazabilidad-de-lote/">Trazabilidad de lote</a></li>
+        <li><a href="../../glosario/no-conformidad/">No conformidad</a></li>
+        <li><a href="../../glosario/materia-prima/">Materia prima</a></li>
+      </ul>
+    </aside>
+
+    <aside class="post__cta">
+            <h2 class="post__cta-title">Calidad y seguridad alimentaria en una sola herramienta</h2>
+            <p>APPCC, alergenos, trazabilidad y fichas tecnicas, siempre listos para auditoria.</p>
+            <p><a class="btn btn--primary" href="../../industria-alimentaria/">Ver Solved para alimentacion</a></p>
+          </aside>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="../">← Volver al blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Sigue leyendo</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="../trazabilidad-de-envase-que-es-y-como-gestionarla/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="../assets/ce0e672a3e09-480.avif 480w, ../assets/ce0e672a3e09-768.avif 768w, ../assets/ce0e672a3e09-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="../assets/ce0e672a3e09-480.webp 480w, ../assets/ce0e672a3e09-768.webp 768w, ../assets/ce0e672a3e09-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="../assets/ce0e672a3e09-1200.jpg" width="1200" height="670" alt="Trazabilidad de envase: qué es y cómo gestionarla" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Trazabilidad</span>
+          <h2 class="blog-card__title"><a href="../trazabilidad-de-envase-que-es-y-como-gestionarla/">Trazabilidad de envase: qué es y cómo gestionarla</a></h2>
+          <p class="blog-card__excerpt">Descubre qué es la trazabilidad de envase, por qué es crucial para tu negocio y cómo gestionarla vinculada a la trazabilidad del producto de forma eficiente.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-22T00:00:00Z">22 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="../trazabilidad-ascendente-y-descendente-guia-practica/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="../assets/fadbd3e13f65-480.avif 480w, ../assets/fadbd3e13f65-768.avif 768w, ../assets/fadbd3e13f65-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="../assets/fadbd3e13f65-480.webp 480w, ../assets/fadbd3e13f65-768.webp 768w, ../assets/fadbd3e13f65-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="../assets/fadbd3e13f65-1200.jpg" width="1200" height="655" alt="Trazabilidad ascendente y descendente: guía práctica" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Trazabilidad</span>
+          <h2 class="blog-card__title"><a href="../trazabilidad-ascendente-y-descendente-guia-practica/">Trazabilidad ascendente y descendente: guía práctica</a></h2>
+          <p class="blog-card__excerpt">Descubre qué es la trazabilidad ascendente y descendente, cómo implementarla en tu empresa y por qué es esencial para garantizar la seguridad del producto.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-12T00:00:00Z">12 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="../retirada-de-producto-alimentario-sin-caos/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="../assets/0b778dd1b89c-480.avif 480w, ../assets/0b778dd1b89c-768.avif 768w, ../assets/0b778dd1b89c-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="../assets/0b778dd1b89c-480.webp 480w, ../assets/0b778dd1b89c-768.webp 768w, ../assets/0b778dd1b89c-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="../assets/0b778dd1b89c-1200.jpg" width="1200" height="655" alt="Equipo con tablet localizando lotes en un almacén durante una retirada de producto alimentario" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Trazabilidad</span>
+          <h2 class="blog-card__title"><a href="../retirada-de-producto-alimentario-sin-caos/">Retirada de producto alimentario sin caos</a></h2>
+          <p class="blog-card__excerpt">Descubre cómo ejecutar una retirada de producto alimentario de forma ordenada. Pasos clave, trazabilidad y soluciones para identificar lotes rápidamente.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-02T00:00:00Z">2 de agosto de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="../../chrome.js?v=20260803a"></script>
+</body>
+</html>
