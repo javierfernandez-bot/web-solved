@@ -20,12 +20,17 @@
     "iso-22000-la-guia-practica-y-definitiva": "/software-iso-22000/",
     "iso-22000-que-es-y-a-quien-le-exige-certificarse": "/software-iso-22000/",
     "fssc-22000-que-es-y-como-obtener-la-certificacion": "/software-iso-22000/",
-    "normas-iso-clave-en-la-industria-alimentaria": "/software-iso-22000/",
+    "normas-iso-clave-en-la-industria-alimentaria": "/software-certificaciones/",
     "homologacion-de-proveedores-guia-practica": "/homologacion-de-proveedores/",
     "auditoria-de-proveedores-de-calidad": "/homologacion-de-proveedores/",
     "control-de-calidad-de-proveedores-evita-fallos": "/homologacion-de-proveedores/",
     "reclamacion-a-proveedor-como-gestionarla-bien": "/homologacion-de-proveedores/",
-    "inspeccion-de-recepcion-de-materia-prima": "/homologacion-de-proveedores/"
+    "inspeccion-de-recepcion-de-materia-prima": "/homologacion-de-proveedores/",
+    "certificacion-ifs-food-guia-esencial": "/software-certificaciones/",
+    "certificacion-brc-la-guia-definitiva": "/software-certificaciones/",
+    "brcgs-que-es-y-que-exige-la-certificacion": "/software-certificaciones/",
+    "gfsi-que-es-y-que-norma-te-conviene": "/software-certificaciones/",
+    "normas-y-estandares-de-calidad": "/software-certificaciones/"
   },
   "cta": {
     "/incidencias/": {
@@ -72,6 +77,11 @@
       "titulo": "Homologa a tus proveedores desde calidad",
       "texto": "Certificados con caducidad, fichas tecnicas e incidencias de recepcion en un mismo expediente.",
       "boton": "Ver homologacion de proveedores"
+    },
+    "/software-certificaciones/": {
+      "titulo": "Una sola vez, para la norma que te auditen",
+      "texto": "IFS, BRCGS, ISO 9001 o FSSC 22000: los mismos registros, la misma trazabilidad y las mismas acciones.",
+      "boton": "Ver Solved para certificaciones"
     }
   },
   "terminos": {
@@ -101,7 +111,7 @@
     },
     "brcgs": {
       "articulo": "brcgs-que-es-y-que-exige-la-certificacion",
-      "producto": "/auditorias/"
+      "producto": "/software-certificaciones/"
     },
     "contaminacion-cruzada": {
       "articulo": "control-de-alergenos-sin-riesgos",
@@ -129,11 +139,11 @@
     },
     "gfsi": {
       "articulo": "gfsi-que-es-y-que-norma-te-conviene",
-      "producto": "/auditorias/"
+      "producto": "/software-certificaciones/"
     },
     "ifs-food": {
       "articulo": "certificacion-ifs-food-guia-esencial",
-      "producto": "/auditorias/"
+      "producto": "/software-certificaciones/"
     },
     "indicadores-de-no-calidad": {
       "articulo": "indicadores-de-no-calidad-cuales-medir-y-por-que",

@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://trysolved.com/industria-alimentaria/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,6 +50,12 @@
   </url>
   <url>
     <loc>https://trysolved.com/software-iso-22000/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trysolved.com/software-certificaciones/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
