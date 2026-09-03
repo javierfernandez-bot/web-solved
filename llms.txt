@@ -13,7 +13,7 @@ Solved (de VOLTSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las
 ## Soluciones
 - [Software de APPCC](https://trysolved.com/software-appcc/): controles de puntos críticos, prerrequisitos y verificaciones registrados en planta, con evidencia.
 - [Software para ISO 22000](https://trysolved.com/software-iso-22000/): registros, PPR, no conformidades y auditoría interna con la evidencia que pide la norma (también FSSC 22000).
-- [Homologación de proveedores](https://trysolved.com/homologacion-de-proveedores/): certificados con caducidad, fichas técnicas e incidencias de recepción en un expediente por proveedor.
+- [Homologación de proveedores](https://trysolved.com/homologacion-de-proveedores/): el gestor documental aplicado a proveedores — certificados con caducidad, fichas técnicas e incidencias de recepción en un expediente por proveedor. No es un módulo aparte.
 
 ## Industrias
 - [Industria alimentaria](https://trysolved.com/industria-alimentaria/): control de calidad, APPCC y trazabilidad para fábricas de alimentación.
