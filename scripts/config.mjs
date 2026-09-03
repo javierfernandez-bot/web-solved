@@ -52,6 +52,9 @@ export const config = {
     { loc: '/dashboard/',                          changefreq: 'monthly', priority: '0.9' },
     { loc: '/industria-alimentaria/',              changefreq: 'monthly', priority: '0.8' },
     { loc: '/industria-general/',                  changefreq: 'monthly', priority: '0.8' },
+    { loc: '/software-appcc/',                     changefreq: 'monthly', priority: '0.8' },
+    { loc: '/software-iso-22000/',                 changefreq: 'monthly', priority: '0.8' },
+    { loc: '/homologacion-de-proveedores/',        changefreq: 'monthly', priority: '0.8' },
     { loc: '/glosario/',                           changefreq: 'weekly',  priority: '0.7' },
   ],
 };
