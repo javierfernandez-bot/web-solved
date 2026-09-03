@@ -10,6 +10,12 @@ Solved (de VOLTSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las
 - [Tareas, acciones y no conformidades](https://trysolved.com/no-conformidades/): acciones correctivas, gestión de no conformidades y análisis de causa raíz con seguimiento hasta el cierre.
 - [KPIs y dashboards](https://trysolved.com/dashboard/): visión 360º en tiempo real de calidad y operaciones, con informes automáticos.
 
+## Soluciones
+- [Software de APPCC](https://trysolved.com/software-appcc/): controles de puntos críticos, prerrequisitos y verificaciones registrados en planta, con evidencia.
+- [Software para ISO 22000](https://trysolved.com/software-iso-22000/): registros, PPR, no conformidades y auditoría interna con la evidencia que pide la norma (también FSSC 22000).
+- [Software para certificaciones](https://trysolved.com/software-certificaciones/): IFS, BRCGS, ISO 9001, FSSC 22000, ISO 14001 y 45001 con los mismos registros, la misma trazabilidad y la misma auditoría interna. Solved no trae los requisitos de la norma cargados: sostiene su ejecución y deja la evidencia.
+- [Homologación de proveedores](https://trysolved.com/homologacion-de-proveedores/): el gestor documental aplicado a proveedores — certificados con caducidad, fichas técnicas e incidencias de recepción en un expediente por proveedor. No es un módulo aparte.
+
 ## Industrias
 - [Industria alimentaria](https://trysolved.com/industria-alimentaria/): control de calidad, APPCC y trazabilidad para fábricas de alimentación.
 - [Industria general](https://trysolved.com/industria-general/): calidad e incidencias para fabricación, packaging y química.
