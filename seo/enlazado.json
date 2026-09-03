@@ -69,7 +69,7 @@
       "producto": "/auditorias/"
     },
     "brcgs": {
-      "articulo": "certificacion-brc-la-guia-definitiva",
+      "articulo": "brcgs-que-es-y-que-exige-la-certificacion",
       "producto": "/auditorias/"
     },
     "contaminacion-cruzada": {
@@ -89,7 +89,7 @@
       "producto": "/industria-alimentaria/"
     },
     "fssc-22000": {
-      "articulo": "iso-22000-la-guia-practica-y-definitiva",
+      "articulo": "fssc-22000-que-es-y-como-obtener-la-certificacion",
       "producto": "/auditorias/"
     },
     "gestion-documental": {
@@ -97,7 +97,7 @@
       "producto": "/industria-alimentaria/"
     },
     "gfsi": {
-      "articulo": "normas-iso-clave-en-la-industria-alimentaria",
+      "articulo": "gfsi-que-es-y-que-norma-te-conviene",
       "producto": "/auditorias/"
     },
     "ifs-food": {
@@ -105,7 +105,7 @@
       "producto": "/auditorias/"
     },
     "indicadores-de-no-calidad": {
-      "articulo": "kpis-de-calidad",
+      "articulo": "indicadores-de-no-calidad-cuales-medir-y-por-que",
       "producto": "/dashboard/"
     },
     "inocuidad-alimentaria": {
@@ -113,7 +113,7 @@
       "producto": "/industria-alimentaria/"
     },
     "inspeccion-de-recepcion": {
-      "articulo": "control-de-calidad-de-proveedores-evita-fallos",
+      "articulo": "inspeccion-de-recepcion-de-materia-prima",
       "producto": "/industria-alimentaria/"
     },
     "iso-22000": {
@@ -125,15 +125,15 @@
       "producto": "/industria-general/"
     },
     "liberacion-de-producto": {
-      "articulo": "deja-de-perder-registros-de-control-de-calidad",
+      "articulo": "liberacion-de-producto-como-hacerla-sin-riesgos",
       "producto": "/industria-alimentaria/"
     },
     "loteo-codificacion-de-lote": {
-      "articulo": "trazabilidad-alimentaria-que-es-y-como-gestionarla-bien",
+      "articulo": "loteo-y-codificacion-de-lote-guia-practica",
       "producto": "/industria-alimentaria/"
     },
     "materia-prima": {
-      "articulo": "control-de-calidad-de-proveedores-evita-fallos",
+      "articulo": "inspeccion-de-recepcion-de-materia-prima",
       "producto": "/industria-alimentaria/"
     },
     "mejora-continua-kaizen": {
@@ -141,7 +141,7 @@
       "producto": "/dashboard/"
     },
     "mermas": {
-      "articulo": "como-aplicar-la-mejora-continua-a-traves-de-los-datos",
+      "articulo": "mermas-en-produccion-como-medirlas-y-reducirlas",
       "producto": "/industria-general/"
     },
     "mes": {
@@ -149,7 +149,7 @@
       "producto": "/industria-general/"
     },
     "no-conformidad": {
-      "articulo": "gestion-de-no-conformidades-en-alimentacion-guia-completa",
+      "articulo": "no-conformidad-que-es-y-como-gestionarla",
       "producto": "/no-conformidades/"
     },
     "oee": {
@@ -165,15 +165,15 @@
       "producto": "/industria-alimentaria/"
     },
     "punto-de-control-critico-pcc": {
-      "articulo": "plan-appcc-sin-errores-paso-a-paso",
+      "articulo": "punto-de-control-critico-pcc-guia-practica",
       "producto": "/industria-alimentaria/"
     },
     "reclamacion-a-proveedor": {
-      "articulo": "control-de-calidad-de-proveedores-evita-fallos",
+      "articulo": "reclamacion-a-proveedor-como-gestionarla-bien",
       "producto": "/no-conformidades/"
     },
     "registro-de-calidad": {
-      "articulo": "deja-de-perder-registros-de-control-de-calidad",
+      "articulo": "registro-de-calidad-que-debe-incluir-y-como-llevarlo",
       "producto": "/dashboard/"
     },
     "retirada-de-producto-recall": {
@@ -189,15 +189,15 @@
       "producto": "/industria-alimentaria/"
     },
     "trazabilidad-ascendente-y-descendente": {
-      "articulo": "importancia-de-la-trazabilidad",
+      "articulo": "trazabilidad-ascendente-y-descendente-guia-practica",
       "producto": "/industria-alimentaria/"
     },
     "trazabilidad-de-envase": {
-      "articulo": "trazabilidad-iso-9001-guia-practica-real",
+      "articulo": "trazabilidad-de-envase-que-es-y-como-gestionarla",
       "producto": "/industria-general/"
     },
     "trazabilidad-de-lote": {
-      "articulo": "importancia-de-la-trazabilidad",
+      "articulo": "loteo-y-codificacion-de-lote-guia-practica",
       "producto": "/industria-alimentaria/"
     },
     "vida-util-shelf-life": {
