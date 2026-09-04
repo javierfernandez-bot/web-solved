@@ -50,7 +50,11 @@ jobs:
       # El script ya reintenta cada petición ~1 min (scripts/lib/net.mjs). Esto
       # cubre el caso peor: que el edge de Hostinger esté rechazando conexiones
       # durante varios minutos seguidos. Entre intentos hay 2 min de margen.
+      # `continue-on-error` no significa "da igual que falle": el veredicto lo da el
+      # paso siguiente, que distingue un fallo nuestro de que Hostinger no responda.
       - name: Generar el blog
+        id: build
+        continue-on-error: true
         env:
           # WordPress (CMS/API) vive en trysolved.es; el sitio estático es trysolved.com.
           WP_API_BASE: https://trysolved.es/wp-json/wp/v2
@@ -64,28 +68,63 @@ jobs:
               sleep 120
             fi
           done
-          echo "::error::build:blog falló 3 veces seguidas. Mira el diagnóstico de red de abajo."
+          echo "build:blog falló 3 veces seguidas."
           exit 1
 
-      # Si llegamos aquí es que WordPress no respondió en ~6 min. Dejamos huella
-      # de cómo se veía la red desde el runner para no tener que adivinar después.
-      - name: Diagnóstico de red (solo si falla)
-        if: failure()
+      # ¿De quién es el fallo? Sin esto, cada caída de unos minutos del edge de
+      # Hostinger mandaba un correo de "workflow failed" que la pasada siguiente
+      # ya había arreglado. Seis de los últimos sesenta runs fueron eso, y a base
+      # de correos que no había que mirar se pierde el hábito de mirarlos — que es
+      # justo lo que necesita la alarma de verdad (el Vigilante del blog).
+      #
+      # Así que sondeamos WordPress justo después de fallar:
+      #   - WordPress contesta  → el build está roto de verdad → rojo, correo, a mirarlo.
+      #   - WordPress no contesta → no había nada que hacer → verde con aviso; la
+      #     siguiente pasada del cron lo recupera sola. Si la caída dura de verdad,
+      #     el Vigilante (que también pega a WordPress) es quien tiene que gritar.
+      - name: ¿Fallo nuestro o WordPress caído?
+        if: steps.build.outcome == 'failure'
         run: |
           echo "== DNS =="
           getent ahosts trysolved.es || true
+
           echo "== 5 peticiones a la WP API =="
+          ok=0
           for i in 1 2 3 4 5; do
-            curl -sS -o /dev/null --max-time 20 \
-              -w "  code=%{http_code} ip=%{remote_ip} t=%{time_total}s\n" \
-              "https://trysolved.es/wp-json/wp/v2/posts?per_page=1" \
-              || echo "  curl falló (código de salida $?)"
+            code=$(curl -sS -o /dev/null --max-time 20 \
+              -w "%{http_code}" "https://trysolved.es/wp-json/wp/v2/posts?per_page=1" \
+              || echo "000")
+            echo "  intento $i: code=$code"
+            [ "$code" = "200" ] && ok=$((ok + 1))
+            sleep 5
           done
+          echo "WordPress respondió 200 en $ok de 5 intentos."
+
+          # 4 de 5: WordPress puede parpadear justo mientras sondeamos. Pedimos que
+          # esté claramente sano antes de acusar al build.
+          if [ "$ok" -ge 4 ]; then
+            echo "::error title=El build del blog está roto::WordPress responde con normalidad ($ok/5), así que el fallo de build:blog es nuestro. Mira el log del paso anterior."
+            {
+              echo "### Rebuild blog"
+              echo ""
+              echo "- ⛔ **build:blog falló con WordPress sano ($ok/5).** Fallo real, revisar el log."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          echo "::warning title=WordPress no respondía::build:blog falló, pero la WP API solo contestó $ok de 5 veces. Se da por transitorio: lo recupera la siguiente pasada del cron."
+          {
+            echo "### Rebuild blog"
+            echo ""
+            echo "- ⚠️ **WordPress no respondía ($ok/5).** No se ha regenerado nada; lo reintenta el cron siguiente."
+            echo "- Si el blog acaba de verdad sin publicar, quien avisa es el Vigilante (repo \`seo-loop\`)."
+          } >> "$GITHUB_STEP_SUMMARY"
 
       # Páginas puente para las URLs de la época WordPress que Google sigue
       # teniendo indexadas y que hoy devuelven 404. El mapa está en
       # seo/redirects.json y el generador en scripts/build-redirects.mjs.
       - name: Generar páginas puente de las URLs antiguas
+        if: steps.build.outcome == 'success'
         run: npm run build:redirects
 
       # Enlazado interno: los posts no enlazaban al glosario, las fichas del
@@ -93,9 +132,11 @@ jobs:
       # blog. El mapa esta en seo/enlazado.json. Va despues de build:blog porque
       # necesita el /blog ya generado.
       - name: Enlazado interno del blog y del glosario
+        if: steps.build.outcome == 'success'
         run: npm run build:enlaces
 
       - name: Commit si hay cambios
+        if: steps.build.outcome == 'success'
         run: |
           git config user.name  "blog-bot"
           git config user.email "blog-bot@users.noreply.github.com"
