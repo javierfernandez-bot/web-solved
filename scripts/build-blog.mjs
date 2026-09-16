@@ -33,6 +33,38 @@ const SEO_OVERRIDES = await (async () => {
 
 const { OUT_DIR, SITE_URL, POSTS_PER_PAGE, RELATED_COUNT } = config;
 
+// Páginas estáticas que viven dentro de /blog pero NO proceden de WordPress
+// (landings puntuales, noindex). El build limpia /blog por completo cada vez
+// (idempotencia frente a WP), así que hay que sacarlas antes de borrar y
+// devolverlas después o desaparecerían en el siguiente rebuild automático.
+const BLOG_STATIC_PAGES = ['webinar-patatas-aguilar'];
+const STATIC_BACKUP_DIR = path.join('.cache', 'blog-static-backup');
+
+async function backupBlogStaticPages() {
+  await fs.rm(STATIC_BACKUP_DIR, { recursive: true, force: true });
+  for (const slug of BLOG_STATIC_PAGES) {
+    const src = path.join(OUT_DIR, slug);
+    try {
+      await fs.cp(src, path.join(STATIC_BACKUP_DIR, slug), { recursive: true });
+    } catch {
+      // no existía todavía (primer despliegue de la página) — nada que preservar
+    }
+  }
+}
+
+async function restoreBlogStaticPages() {
+  for (const slug of BLOG_STATIC_PAGES) {
+    const src = path.join(STATIC_BACKUP_DIR, slug);
+    try {
+      await fs.cp(src, path.join(OUT_DIR, slug), { recursive: true });
+      console.log(`  ✓ página estática preservada: /blog/${slug}/`);
+    } catch {
+      // no había backup (no existe aún esta página estática)
+    }
+  }
+  await fs.rm(STATIC_BACKUP_DIR, { recursive: true, force: true });
+}
+
 async function writeFile(relPath, html) {
   const full = path.join(OUT_DIR === 'blog' ? '.' : '.', relPath);
   await fs.mkdir(path.dirname(full), { recursive: true });
@@ -65,7 +97,9 @@ async function main() {
   const posts = await getPosts();
   console.log(`  ✓ ${posts.length} posts`);
 
-  // 2) Ahora sí, limpiar salida anterior (idempotencia).
+  // 2) Ahora sí, limpiar salida anterior (idempotencia), preservando antes
+  // las páginas estáticas de /blog que no proceden de WordPress.
+  await backupBlogStaticPages();
   await fs.rm(OUT_DIR, { recursive: true, force: true });
   await cleanImageOutput();
 
@@ -137,6 +171,9 @@ async function main() {
     await writeFile(isFirst ? 'blog/index.html' : `blog/page/${page}/index.html`, html);
   }
   console.log(`  ✓ índice (${totalPages} página/s)`);
+
+  // 5.5) Restaurar páginas estáticas de /blog (no proceden de WordPress).
+  await restoreBlogStaticPages();
 
   // 6) Sitemap.
   const count = await writeSitemap(posts, today);

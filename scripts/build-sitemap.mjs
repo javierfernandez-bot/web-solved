@@ -43,7 +43,9 @@ entries.push({
 // (imágenes) y blog/page/ (paginación del índice: /blog/page/2/…), que nunca
 // ha estado en el sitemap y se deja igual para no cambiar lo que ya rastrea
 // Google. Los posts se alcanzan igual desde el índice y desde el sitemap.
-const EXCLUIDAS = new Set(['assets', 'page']);
+// También se excluyen las páginas estáticas de /blog no generadas desde
+// WordPress (landings puntuales, noindex) — ver BLOG_STATIC_PAGES en build-blog.mjs.
+const EXCLUIDAS = new Set(['assets', 'page', 'webinar-patatas-aguilar']);
 const dirs = (await fs.readdir('blog', { withFileTypes: true }))
   .filter(e => e.isDirectory() && !EXCLUIDAS.has(e.name))
   .map(e => e.name)
