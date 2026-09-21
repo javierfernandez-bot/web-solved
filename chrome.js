@@ -82,6 +82,7 @@
         '<ul>' +
           '<li><a href="' + ROOT + 'politica-de-cookies/">Política de Cookies</a></li>' +
           '<li><a href="' + ROOT + 'politica-de-privacidad/">Política de privacidad</a></li>' +
+          '<li><a href="' + ROOT + 'terminos-y-condiciones/">Términos y condiciones</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
