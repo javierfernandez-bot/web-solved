@@ -53,7 +53,13 @@
           '<a href="' + EN_ROOT + 'glosario/"><b>Glossary</b><span>Industrial terms explained</span></a>' +
         '</div>' +
       '</li>' +
-      '<li class="nav__item nav__item--lang"><a class="nav__link nav__lang" href="' + esPath + '">ES</a></li>' +
+      '<li class="nav__item nav__item--lang">' +
+        '<button class="nav__link" type="button">EN <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
+        '<div class="nav__menu nav__menu--lang">' +
+          '<a href="' + esPath + '"><b>Español</b></a>' +
+          '<a href="' + window.location.pathname + '" aria-current="true"><b>English</b></a>' +
+        '</div>' +
+      '</li>' +
       '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Request a demo</a></li>' +
     '</ul>' +
     '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Request a demo</a>' +
