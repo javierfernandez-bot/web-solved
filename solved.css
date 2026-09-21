@@ -72,6 +72,7 @@ body { padding-top: 88px; overflow-x: clip; }
 .nav__menu a:hover { background: var(--ink-50); }
 .nav__menu b { font-size: 18px; font-weight: 600; color: var(--ink-900); }
 .nav__menu span { font-size: 15.3px; color: var(--ink-400); }
+.nav__lang { padding: 13px 16px; font-weight: 700; }
 /* hamburguesa y CTA móvil: ocultos en escritorio */
 .nav__toggle { display: none; }
 .nav__cta-mobile { display: none; }

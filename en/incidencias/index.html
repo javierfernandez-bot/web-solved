@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.hsforms.net https://*.hsforms.com https://*.hs-scripts.com https://*.hscollectedforms.net https://*.hs-analytics.net https://*.hubspot.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://maps.google.com https://*.hsforms.com https://*.hsforms.net; connect-src 'self' https://*.hsforms.com https://*.hubspot.com https://*.hs-analytics.net https://*.hscollectedforms.net; object-src 'none'; base-uri 'self'; form-action 'self' https://*.hsforms.com; upgrade-insecure-requests"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png"/>
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
+<title>Solved · Issue &amp; Non-Conformity Management</title>
+<!-- SEO:start -->
+<meta name="description" content="Detect, log and resolve issues and non-conformities from any device. Automate workflows and cut response times with Solved."/>
+<link rel="canonical" href="https://trysolved.com/en/incidencias/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#1E6BFF"/>
+<link rel="alternate" hreflang="es" href="https://trysolved.com/incidencias/"/>
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/incidencias/"/>
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/incidencias/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Solved"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://trysolved.com/en/incidencias/"/>
+<meta property="og:title" content="Solved · Issue &amp; Non-Conformity Management"/>
+<meta property="og:description" content="Detect, log and resolve issues and non-conformities from any device. Automate workflows and cut response times with Solved."/>
+<meta property="og:image" content="https://trysolved.com/assets/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Solved · Issue &amp; Non-Conformity Management"/>
+<meta name="twitter:description" content="Detect, log and resolve issues and non-conformities from any device. Automate workflows and cut response times with Solved."/>
+<meta name="twitter:image" content="https://trysolved.com/assets/og-image.png"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Roboto:wght@400;500;700&display=swap"/>
+<link rel="preload" as="image" href="/assets/incidencia-hero.webp?v=20260714" fetchpriority="high"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://trysolved.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Issue management", "item": "https://trysolved.com/en/incidencias/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you log an issue in Solved?", "acceptedAnswer": {"@type": "Answer", "text": "From mobile, tablet or PC, in seconds: describe the problem, attach photos or videos and assign owners, right there on the production floor."}}, {"@type": "Question", "name": "Can I automate issue resolution?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Set up custom workflows so every issue reaches the right person without delay and gets resolved faster."}}, {"@type": "Question", "name": "Does Solved manage non-conformities?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It centralizes issues and non-conformities in one place, tracking everything from the initial report to the corrective action and its closure."}}, {"@type": "Question", "name": "Does it integrate with ERP, MES or CMMS?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Solved connects with your production and maintenance tools to avoid duplicate data."}}, {"@type": "Question", "name": "Can I see issue metrics and reports?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Access real-time charts and trends to spot critical points and prevent recurring problems."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://trysolved.com/en/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/en/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Solved","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","url":"https://trysolved.com/en/incidencias/","description":"Detect, log and resolve issues and non-conformities from any device. Automate workflows and cut response times with Solved.","publisher":{"@id":"https://trysolved.com/en/#organization"}}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260803a"/>
+<link rel="stylesheet" href="/solved.css?v=20260803a"/>
+<link rel="stylesheet" href="/assets/tour/incidencias-tour.css?v=20260803a"/>
+<style>
+/* Hero con foto + 3 notificaciones que aparecen en secuencia */
+.hero-vis{position:relative;width:100%;max-width:480px;margin-inline:auto;}
+.hero-vis>img{width:100%;height:auto;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-3);}
+.hero-vis::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-14%;height:60%;background:radial-gradient(60% 100% at 50% 100%,var(--st-open-bg),transparent 72%);filter:blur(24px);z-index:-1;}
+.note{position:absolute;z-index:2;display:flex;align-items:center;gap:13px;background:var(--bg-surface);border:1px solid var(--border-1);border-radius:16px;box-shadow:var(--shadow-3);padding:13px 18px 13px 15px;font-family:'Roboto','Helvetica Neue',sans-serif;}
+.note__ico{flex:none;width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;}
+.note__ico .material-symbols-outlined{font-size:23px;line-height:1;}
+.note__ico--alarm{background:rgba(224,49,49,.12);color:var(--crit);}
+.note__ico--gen{background:var(--st-open-bg);color:var(--st-open);}
+.note__ico--assign{background:var(--st-closed-bg);color:var(--st-closed);}
+.note__tx{min-width:0;}
+.note__tx b{display:block;font-size:14px;font-weight:600;line-height:1.25;color:var(--fg-1);white-space:nowrap;}
+.note__tx span{display:block;font-size:12px;color:var(--fg-3);line-height:1.3;margin-top:2px;white-space:nowrap;}
+.note--alarm .note__tx b{color:var(--crit);}
+.note--alarm{top:-16px;right:-20px;}
+.note--gen{top:150px;left:-40px;}
+.note--assign{bottom:-18px;right:-14px;}
+@keyframes cardPop{0%,4%{opacity:0;transform:scale(.82) translateY(8px);}11%,80%{opacity:1;transform:scale(1) translateY(0);}88%,100%{opacity:0;transform:scale(.82) translateY(8px);}}
+/* Sin animación (y prefers-reduced-motion) = las 3 notificaciones visibles */
+@media (prefers-reduced-motion:no-preference){
+  .note{opacity:0;animation:cardPop 7.5s ease-in-out infinite;}
+  .note--alarm{animation-delay:.2s;}
+  .note--gen{animation-delay:1.15s;}
+  .note--assign{animation-delay:2.1s;}
+}
+@media (max-width:899px){
+  .hero-vis{max-width:520px;}
+  .note{max-width:232px;}
+  .note--alarm{right:0;} .note--gen{left:0;top:32%;} .note--assign{right:0;}
+}
+</style>
+</head>
+<body data-screen-label="Incidencias">
+
+<div id="nav"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero hero--md" data-screen-label="Incidencias · Hero">
+  <div class="wrap hero__in">
+    <div class="hero__txt">
+      <h1>Centralize and resolve every issue and non-conformity from one place</h1>
+      <p class="hero__sub">Detect, log and resolve issues with the speed your team needs. From the first report to resolution, everything under control.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="#contacto">Request a free demo</a>
+        <a class="btn btn--secondary btn--lg" href="#demo-guiada" data-svt-open>See how it works in 25 sec</a>
+      </div>
+    </div>
+    <div class="hero__art">
+      <div class="hero-vis">
+        <img src="/assets/incidencia-hero.webp?v=20260714" alt="Worker in a hi-vis vest smiles while logging an issue on a tablet in the warehouse" width="750" height="500" decoding="async" fetchpriority="high"/>
+        <div class="note note--alarm">
+          <span class="note__ico note__ico--alarm"><span class="material-symbols-outlined">notifications_active</span></span>
+          <div class="note__tx"><b>Temperature out of range</b><span>Sensor · Cold room 3 · 12.4°C</span></div>
+        </div>
+        <div class="note note--gen">
+          <span class="note__ico note__ico--gen"><span class="material-symbols-outlined">bolt</span></span>
+          <div class="note__tx"><b>Issue generated</b><span>Automatically · #INC-0293</span></div>
+        </div>
+        <div class="note note--assign">
+          <span class="note__ico note__ico--assign"><span class="material-symbols-outlined">person</span></span>
+          <div class="note__tx"><b>Issue assigned</b><span>Marcos · Maintenance</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGOS BAND ============ -->
+<section class="band-navy" data-screen-label="Incidencias · Logos">
+  <div class="logos-carousel" aria-label="Companies that trust Solved">
+    <div class="logos-row">
+      <div class="logos-track logos-track--left">
+        <img src="/assets/clients/adhesivos-orcajada.webp" alt="Adhesivos Orcajada" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/asp-asepsia.webp" alt="ASP Asepsia" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/carnavi.webp" alt="Carnavi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/cartonajes-pans.webp" alt="Cartonajes Pans" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/delaviuda.webp" alt="Delaviuda" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/dogfy-diet.webp" alt="Dogfy Diet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/dulceria-la-rondena.webp" alt="Dulcería La Rondeña" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/exquisitarium.webp" alt="Exquisitarium" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/fritoper.webp" alt="Fritoper" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/ga-torres.webp" alt="G.A. Torres" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/gil-comes.webp" alt="Gil Comes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/gufresco.webp" alt="Gufresco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/ig-montes.webp" alt="Ignacio González Montes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/imperio-garlic.webp" alt="Imperio Garlic" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/inalsa.webp" alt="Inalsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/inga-foods.webp" alt="Inga Foods" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/laboratorios-almond.webp" alt="Laboratorios Almond" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/la-chinata.webp" alt="La Chinata" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/la-juvenil.webp" alt="La Juvenil" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/lomar.webp" alt="Lácteos Romar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/ownat.webp" alt="Ownat" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/pampling.webp" alt="Pampling" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/panificadora-alcala.webp" alt="Panificadora Alcalá" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/patatas-aguilar.webp" alt="Patatas Aguilar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/patatas-hijolusa.webp" alt="Patatas Hijolusa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/prilux.webp" alt="Prilux" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/riverbend.webp" alt="Riverbend" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/rujamar.webp" alt="Rujamar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/snacks-el-valle.webp" alt="Snacks El Valle" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/solulim.webp" alt="Solulim" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/stourgarden.webp" alt="Stourgarden" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/sucroliq.webp" alt="Sucroliq" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/tre-archi.webp" alt="Tre Archi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/trueco.webp" alt="Trueco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/tuflesa.webp" alt="Tuflesa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/wetaca.webp" alt="Wetaca" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/agroveco.webp" alt="Agroveco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/deterra.webp" alt="Deterra" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/golden-pet.webp" alt="Golden Pet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/jealsa.webp" alt="Jealsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/patatas-gomez.webp" alt="Patatas Gómez" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/piensos-procasa.webp" alt="Piensos Procasa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/royal-chef.webp" alt="Royal Chef" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/skretting.webp" alt="Skretting" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/top-form.webp" alt="Top Form" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/adhesivos-orcajada.webp" alt="Adhesivos Orcajada" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/asp-asepsia.webp" alt="ASP Asepsia" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/carnavi.webp" alt="Carnavi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/cartonajes-pans.webp" alt="Cartonajes Pans" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/delaviuda.webp" alt="Delaviuda" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/dogfy-diet.webp" alt="Dogfy Diet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/dulceria-la-rondena.webp" alt="Dulcería La Rondeña" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/exquisitarium.webp" alt="Exquisitarium" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/fritoper.webp" alt="Fritoper" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/ga-torres.webp" alt="G.A. Torres" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/gil-comes.webp" alt="Gil Comes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/gufresco.webp" alt="Gufresco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/ig-montes.webp" alt="Ignacio González Montes" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/imperio-garlic.webp" alt="Imperio Garlic" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/inalsa.webp" alt="Inalsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/inga-foods.webp" alt="Inga Foods" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/laboratorios-almond.webp" alt="Laboratorios Almond" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/la-chinata.webp" alt="La Chinata" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/la-juvenil.webp" alt="La Juvenil" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/lomar.webp" alt="Lácteos Romar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/ownat.webp" alt="Ownat" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/pampling.webp" alt="Pampling" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/panificadora-alcala.webp" alt="Panificadora Alcalá" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/patatas-aguilar.webp" alt="Patatas Aguilar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/patatas-hijolusa.webp" alt="Patatas Hijolusa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/prilux.webp" alt="Prilux" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/riverbend.webp" alt="Riverbend" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/rujamar.webp" alt="Rujamar" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/snacks-el-valle.webp" alt="Snacks El Valle" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/solulim.webp" alt="Solulim" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/stourgarden.webp" alt="Stourgarden" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/sucroliq.webp" alt="Sucroliq" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/tre-archi.webp" alt="Tre Archi" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/trueco.webp" alt="Trueco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/tuflesa.webp" alt="Tuflesa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/wetaca.webp" alt="Wetaca" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/agroveco.webp" alt="Agroveco" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/deterra.webp" alt="Deterra" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/golden-pet.webp" alt="Golden Pet" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/jealsa.webp" alt="Jealsa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/patatas-gomez.webp" alt="Patatas Gómez" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/piensos-procasa.webp" alt="Piensos Procasa" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/royal-chef.webp" alt="Royal Chef" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/skretting.webp" alt="Skretting" width="500" height="500" decoding="async" loading="eager"/>
+        <img src="/assets/clients/top-form.webp" alt="Top Form" width="500" height="500" decoding="async" loading="eager"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS SPLIT ============ -->
+<section class="section" data-screen-label="Incidencias · Más allá">
+  <div class="wrap split">
+    <div class="split__txt">
+      <h2>Beyond issue tracking: optimize quality and stay compliant effortlessly</h2>
+      <div class="benefits-toggle">
+        <div class="bt bt--active">
+          <div class="bt__row"><span class="bt__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.2-8.5"/><path d="M21 4v5h-5"/></svg></span><b>Save time on audits and certifications</b></div>
+          <p>Simplify regulatory compliance (IFS, BRC, ISO 9001, etc.) with digital records that are always available and updated in real time.</p>
+        </div>
+        <div class="bt">
+          <div class="bt__row"><span class="bt__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span><b>Anticipate problems and prevent recurring issues</b></div>
+          <p>Spot trends with automatic reports, identify failure patterns and make strategic decisions before problems affect production.</p>
+        </div>
+        <div class="bt">
+          <div class="bt__row"><span class="bt__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg></span><b>Connect it with your ERP, MES or CMMS</b></div>
+          <p>Avoid duplicate data and streamline management by connecting Solved with your production and maintenance tools.</p>
+        </div>
+        <div class="bt">
+          <div class="bt__row"><span class="bt__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><b>Cut costs and improve efficiency</b></div>
+          <p>Eliminate paperwork, cut response times and boost your quality team's productivity, with a direct impact on operating costs.</p>
+        </div>
+        <div class="bt">
+          <div class="bt__row"><span class="bt__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><b>Log issues anywhere, without delays</b></div>
+          <p>From mobile, tablet or PC, log any problem in seconds with photos and videos, right there on the production floor.</p>
+        </div>
+      </div>
+      <a class="btn btn--primary" href="#contacto">Request a demo</a>
+    </div>
+    <div class="split__art">
+      <img class="shot" src="/assets/incidencia-acordion.webp" alt="Regulatory compliance and digital records in Solved" width="1880" height="1488" decoding="async" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section class="section section--results-big" data-screen-label="Incidencias · Resultados">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Results that speak for themselves</h2>
+      <p>See how our customers' metrics improved in the first year</p>
+    </div>
+    <div class="results">
+      <div class="rstat"><b>-67%</b><span>Less time spent documenting issues</span></div>
+      <div class="rstat"><b>+18%</b><span>Increase in productivity for quality teams</span></div>
+      <div class="rstat"><b>90%</b><span>Of issues resolved within 48 hours</span></div>
+      <div class="rstat"><b>+€70,000</b><span>In annual savings on operating costs</span></div>
+      <div class="rstat"><b>100%</b><span>Compatible with ERP, MES and CMMS systems</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETECTA ============ -->
+<section class="section section--detecta" data-screen-label="Incidencias · Detecta">
+  <div class="wrap">
+    <div class="section-head"><h2>Detect, log and resolve issues in seconds</h2></div>
+
+    <div class="split" style="margin-bottom:var(--s-8);">
+      <div class="split__art">
+        <img class="shot" src="/assets/incidencia-card-1.webp" alt="Logging issues on the spot with Solved" width="1688" height="1280" decoding="async" loading="lazy"/>
+      </div>
+      <div class="split__txt">
+        <div class="feat-list">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b>Log issues at the exact time and place they happen</b><p>From mobile, tablet or PC, document every detail, attach photos or videos, assign owners and track progress in real time.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-6.2-8.5"/><path d="M21 4v5h-5"/></svg></span><div><b>Automate workflows to speed up resolution</b><p>Set up custom processes so every issue reaches the right person without delay.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="split__txt">
+        <div class="feat-list">
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><div><b>Manage issues from any device</b><p>No need to wait until you're back at the office &mdash; log, review and update issues anytime, anywhere.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7"/><rect x="13" y="6" width="3" height="11"/></svg></span><div><b>Access real-time metrics and reports</b><p>Check issue charts and trends to spot critical points and prevent future problems.</p></div></div>
+          <div class="feat"><span class="feat__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg></span><div><b>Integration with other systems (ERP, MES, CMMS)</b><p>Streamline management by connecting Solved with your production and maintenance tools.</p></div></div>
+        </div>
+      </div>
+      <div class="split__art">
+        <img class="shot" src="/assets/incidencia-card-2.webp" alt="Tracking issues from any device with Solved" width="1688" height="1280" decoding="async" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO GUIADA (TOUR) ============ -->
+<section class="section section--tight" id="demo-guiada" data-screen-label="Incidencias · Demo guiada">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>See how to log an issue in 25 sec</h2>
+      <p>A guided demo of the issue management module: from detection to corrective action.</p>
+    </div>
+      <div id="svt" class="svt">
+            <div class="svt-fit">
+
+              <!-- STRIP -->
+              <div class="svt-strip">
+                <span class="svt-kicker">Guided demo</span>
+                <span class="svt-sub">Issue management module &mdash; from detection to corrective action</span>
+                <span style="flex:1"></span>
+                <button type="button" class="svt-restart" data-act="restart">↻ Restart</button>
+              </div>
+
+              <!-- BROWSER CARD -->
+              <div class="svt-card">
+                <div class="svt-chrome">
+                  <span class="svt-dot" style="background:#FF5F57"></span>
+                  <span class="svt-dot" style="background:#FEBC2E"></span>
+                  <span class="svt-dot" style="background:#28C840"></span>
+                  <div class="svt-omni-wrap">
+                    <div class="svt-omni">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B95A7" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                      <span class="svt-url" data-svt="url">app.trysolved.com/incidents</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="svt-stage" data-svt="stage">
+                  <div class="svt-zoom" data-svt="zoom">
+
+                    <!-- TOP BAR -->
+                    <div class="svt-topbar">
+                      <button class="svt-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+                      <img src="/assets/logotipo-solved.webp" alt="Solved" class="svt-logo-w">
+                      <span class="svt-vbar"></span>
+                      <span class="svt-topttl">Issues</span>
+                      <span style="flex:1"></span>
+                      <button class="svt-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button>
+                      <button class="svt-ic" style="position:relative"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="svt-badge">3</span></button>
+                      <button class="svt-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></button>
+                      <span class="svt-avatar">j</span>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="svt-body">
+                      <!-- SIDEBAR -->
+                      <div class="svt-side">
+                        <div class="svt-side-co">
+                          <img src="/assets/tour/tour-empresa.webp" alt="PopCorn Mediterránea" class="svt-side-logo">
+                          <b>PopCorn Mediterránea</b>
+                        </div>
+                        <div class="svt-nav"><span class="ms">home</span> Home</div>
+                        <div class="svt-nav svt-nav--on"><span class="ms">assignment</span> Issues</div>
+                        <div class="svt-nav"><span class="ms">note</span> Actions</div>
+                        <div class="svt-nav"><span class="ms">checklist</span> Records</div>
+                        <div class="svt-nav"><span class="ms">smart_toy</span> AI</div>
+                        <div class="svt-nav"><span class="ms">bar_chart</span> OpenSearch</div>
+                        <div class="svt-nav"><span class="ms">description</span> Reports</div>
+                        <div class="svt-nav"><span class="ms">folder</span> Documents</div>
+                        <span style="flex:1"></span>
+                        <div class="svt-nav svt-nav--del"><span class="ms">delete</span> Trash</div>
+                      </div>
+
+                      <!-- MAIN -->
+                      <div class="svt-main" data-svt="main">
+
+                        <!-- LIST SCREEN -->
+                        <div class="svt-screen" data-screen="list">
+                          <div class="svt-listtop">
+                            <div class="svt-seg">
+                              <button class="svt-seg-b svt-seg-b--on"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M9 4v16"/></svg> Table</button>
+                              <button class="svt-seg-b"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg> Calendar</button>
+                              <button class="svt-seg-b"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="5" height="16" rx="1"/><rect x="10" y="4" width="5" height="11" rx="1"/><rect x="17" y="4" width="4" height="14" rx="1"/></svg> Kanban</button>
+                            </div>
+                            <div class="svt-seg svt-seg--status">
+                              <button class="svt-seg-b svt-seg-b--ston">Open <span class="svt-cnt svt-cnt--on" data-svt="openCount">4</span></button>
+                              <button class="svt-seg-b">In Review <span class="svt-cnt">1</span></button>
+                              <button class="svt-seg-b">Closed <span class="svt-cnt">6</span></button>
+                            </div>
+                            <button class="svt-add" data-tour="addBtn" data-act="next"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Add Issue</button>
+                          </div>
+
+                          <div class="svt-tablecard">
+                            <div class="svt-tbar">
+                              <button class="svt-tbar-b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+                              <button class="svt-tbar-b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg></button>
+                              <button class="svt-tbar-b" style="color:#F59F00"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18l-5.8 3 1.1-6.5L2.6 9.8l6.5-.9z"/></svg></button>
+                              <button class="svt-tbar-b" style="color:#1E6BFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg></button>
+                              <span style="flex:1"></span>
+                              <div class="svt-show">Show: <span class="svt-show-n">50</span> <span class="svt-show-r">1–<span data-svt="openCount2">4</span> of <span data-svt="openCount3">4</span></span></div>
+                            </div>
+                            <table class="svt-table">
+                              <thead><tr>
+                                <th style="width:48px"></th><th>Description</th><th>Start Date</th><th>Supplier</th><th>Priority</th><th>Owner</th><th>Status</th><th>Due date</th>
+                              </tr></thead>
+                              <tbody>
+                                <tr class="svt-newrow" data-tour="newRow" data-act="next">
+                                  <td><span class="svt-chk"><span class="svt-box"></span><svg width="15" height="15" viewBox="0 0 24 24" fill="#F59F00"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18l-5.8 3 1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span></td>
+                                  <td><div class="svt-desc"><img src="/assets/tour/tour-fuga.webp" alt="" class="svt-thumb"><div><div class="svt-code svt-code--new">UTD26_163_001 <span class="svt-pdot"></span></div><div class="svt-dtxt">Oil leak on conveyor belt L3</div></div></div></td>
+                                  <td><span class="svt-num">Now</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#1E6BFF">J</span> Javier</span></td>
+                                  <td><span class="svt-tag svt-tag--med">Medium</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#1E6BFF">J</span> Javier</span></td>
+                                  <td class="svt-state">Open</td>
+                                  <td><span class="svt-num">26/06/2026 18:00</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span class="svt-chk"><span class="svt-box"></span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C7CFDD" stroke-width="1.8"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18l-5.8 3 1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span></td>
+                                  <td><div class="svt-desc"><span class="svt-thumb svt-thumb--ph"><span class="ms">image</span></span><div><div class="svt-code">UTD26_162_001</div><div class="svt-dtxt">KO on 'LIGHTING' &mdash; Warehouse Control</div></div></div></td>
+                                  <td><span class="svt-num">17:12</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#F2700F">G</span> Ginés</span></td>
+                                  <td><span class="svt-tag svt-tag--high">High</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#8B4FE0">A</span> Ana</span></td>
+                                  <td class="svt-state">Open</td>
+                                  <td><span class="svt-num">20/06/2026 09:00</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span class="svt-chk"><span class="svt-box"></span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C7CFDD" stroke-width="1.8"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18l-5.8 3 1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span></td>
+                                  <td><div class="svt-desc"><img src="/assets/tour/tour-liquido.webp" alt="" class="svt-thumb"><div><div class="svt-code">UTD26_160_001</div><div class="svt-dtxt">Unknown liquid on the packaging machine</div></div></div></td>
+                                  <td><span class="svt-num">11:10</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#1E6BFF">C</span> Carmen</span></td>
+                                  <td><span class="svt-tag svt-tag--med">Medium</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#0E9F6E">L</span> Luis</span></td>
+                                  <td class="svt-state">Open</td>
+                                  <td><span class="svt-num">24/06/2026 12:00</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span class="svt-chk"><span class="svt-box"></span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C7CFDD" stroke-width="1.8"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18l-5.8 3 1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span></td>
+                                  <td><div class="svt-desc"><img src="/assets/tour/tour-lote.webp" alt="" class="svt-thumb"><div><div class="svt-code">UTD26_157_REC</div><div class="svt-dtxt">Damaged batch</div></div></div></td>
+                                  <td><span class="svt-num">22/06/2026 10:16</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#1E6BFF">C</span> Carmen</span></td>
+                                  <td><span class="svt-tag svt-tag--med">Medium</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#E0489B">M</span> Marta</span></td>
+                                  <td class="svt-state">Open</td>
+                                  <td><span class="svt-num svt-num--crit">00:00</span></td>
+                                </tr>
+                                <tr>
+                                  <td><span class="svt-chk"><span class="svt-box"></span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C7CFDD" stroke-width="1.8"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 18l-5.8 3 1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span></td>
+                                  <td><div class="svt-desc"><img src="/assets/tour/tour-cinta.webp" alt="" class="svt-thumb"><div><div class="svt-code">UTD26_154_001</div><div class="svt-dtxt">Conveyor belt breakdown</div></div></div></td>
+                                  <td><span class="svt-num">17/06/2026 15:36</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#F2700F">G</span> Ginés</span></td>
+                                  <td><span class="svt-tag svt-tag--med">Medium</span></td>
+                                  <td><span class="svt-user"><span class="svt-ava" style="background:#8B4FE0">A</span> Ana</span></td>
+                                  <td class="svt-state">Open</td>
+                                  <td><span class="svt-num svt-num--crit">18/06/2026 12:00</span></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <!-- PICKER SCREEN -->
+                        <div class="svt-screen" data-screen="picker" hidden>
+                          <div class="svt-pick">
+                            <div class="svt-pick-hero">
+                              <span class="svt-pick-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="8" x2="20" y2="8"/><circle cx="9" cy="8" r="2" fill="#fff"/><line x1="4" y1="16" x2="20" y2="16"/><circle cx="15" cy="16" r="2" fill="#fff"/></svg></span>
+                              <div><div class="svt-pick-t">Set up the initial details</div><div class="svt-pick-s">Select the site and the issue category</div></div>
+                            </div>
+                            <div class="svt-pick-grid">
+                              <div class="svt-pcard">
+                                <div class="svt-pcard-h"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1E6BFF" stroke-width="1.8"><path d="M3 21h18M5 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16M9 8h2M9 12h2M9 16h2"/></svg> Select the site</div>
+                                <div class="svt-pcard-empty"><div class="svt-pe-t">No plant assigned</div><div class="svt-pe-s">Selected automatically</div></div>
+                              </div>
+                              <div class="svt-pcard svt-pcard--cat" data-tour="catCards" data-act="next">
+                                <div class="svt-pcard-h"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1E6BFF" stroke-width="1.8"><circle cx="8" cy="9" r="4"/><path d="m14 5 6 6M20 5l-6 6"/></svg> Issue Category</div>
+                                <div class="svt-cats">
+                                  <div class="svt-cat"><span class="svt-cat-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4l-2.7 2.7-2-2 2.7-2.7z"/></svg></span><span class="svt-cat-t">Maintenance</span></div>
+                                  <div class="svt-cat"><span class="svt-cat-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg></span><span class="svt-cat-t">Quality</span></div>
+                                  <div class="svt-cat"><span class="svt-cat-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3.2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6 6l1.5 1.5M16.5 16.5 18 18M18 6l-1.5 1.5M7.5 16.5 6 18"/></svg></span><span class="svt-cat-t">Production</span></div>
+                                  <div class="svt-cat svt-cat--rec" data-tour="recRow"><span class="svt-cat-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span class="svt-cat-t svt-cat-t--rec">Claim</span><span class="svt-cat-tpl">your template →</span></div>
+                                  <div class="svt-cat"><span class="svt-cat-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></span><span class="svt-cat-t">Non-conformity</span></div>
+                                  <div class="svt-cat"><span class="svt-cat-ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l5-3v3l5-3v16M9 12h2M9 16h2"/></svg></span><span class="svt-cat-t">Suppliers</span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- FORM SCREEN -->
+                        <div class="svt-screen" data-screen="form" hidden>
+                          <div class="svt-form">
+                            <div class="svt-form-hero">
+                              <span class="svt-form-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></span>
+                              <div><div class="svt-form-t">Issue Details</div><div class="svt-form-s">6 fields · Template: Claim</div></div>
+                            </div>
+
+                            <div class="svt-field" data-fill="desc">
+                              <div class="svt-field-lbl"><span class="svt-step-n">1</span><span class="svt-req">Description</span></div>
+                              <div class="svt-field-card">
+                                <div class="svt-fq">What happened?</div>
+                                <div class="svt-fob">⚠ Required</div>
+                                <div class="svt-textarea" data-svt="descBox"><span data-svt="typed"></span><span class="svt-cursor" data-svt="cursor"></span></div>
+                              </div>
+                            </div>
+
+                            <div class="svt-field" data-fill="date">
+                              <div class="svt-field-lbl"><span class="svt-step-n">2</span><span class="svt-field-name">Start Date</span></div>
+                              <div class="svt-field-card">
+                                <div class="svt-fq svt-fq--sm">Start Date</div>
+                                <div class="svt-datewrap" data-svt="dateFilled" hidden>
+                                  <span class="svt-datechip">26/06/2026 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8B95A7" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>
+                                  <span class="svt-datechip">18:00 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8B95A7" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                                </div>
+                                <div class="svt-datewrap" data-svt="dateEmpty">
+                                  <span class="svt-datechip svt-datechip--e">dd/mm/yyyy <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C7CFDD" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>
+                                  <span class="svt-datechip svt-datechip--e">--:-- <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C7CFDD" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="svt-field" data-fill="photo">
+                              <div class="svt-field-lbl"><span class="svt-step-n">6</span><span class="svt-field-name">File(s)</span></div>
+                              <div class="svt-field-card">
+                                <div class="svt-fq svt-fq--sm">Want to add a photo of the issue?</div>
+                                <div class="svt-photo" data-svt="photoFilled" hidden>
+                                  <img src="/assets/tour/tour-fuga.webp" alt="" class="svt-photo-img">
+                                  <div class="svt-photo-meta"><div class="svt-photo-n">fuga_aceite_L3.jpg</div><div class="svt-photo-s">1.8 MB · uploaded successfully</div></div>
+                                  <span class="svt-photo-ok"><span class="ms">check_circle</span> Attached</span>
+                                </div>
+                                <div class="svt-drop" data-svt="photoEmpty"><span class="ms" style="font-size:28px;color:#B4BCCB">add_photo_alternate</span><span>Drag and drop or select a file</span></div>
+                              </div>
+                            </div>
+
+                            <div class="svt-submit" data-fill="submit">
+                              <span class="svt-submit-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+                              <div class="svt-submit-tx"><div class="svt-submit-t">Confirm Submission</div><div class="svt-submit-s">Check that all the information is correct</div></div>
+                              <button class="svt-send" data-tour="submitBtn" data-act="next">Submit issue <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div><!-- /main -->
+                    </div><!-- /body -->
+
+                    <!-- MANAGER PUSH -->
+                    <div class="svt-push" data-svt="push" hidden>
+                      <div class="svt-push-top">
+                        <img src="/assets/logotipo-solved.webp" alt="Solved" class="svt-push-logo">
+                        <span class="svt-push-dot"></span><span class="svt-push-ago">now</span>
+                        <span style="flex:1"></span>
+                        <span class="svt-push-tag">Owner</span>
+                      </div>
+                      <div class="svt-push-t">New issue assigned</div>
+                      <div class="svt-push-s">UTD26_163_001 · Oil leak on conveyor belt L3 has been logged and automatically sent to you.</div>
+                    </div>
+
+                  </div><!-- /zoom -->
+
+                  <!-- COACHMARK -->
+                  <div class="svt-coach-layer" data-svt="coachLayer">
+                    <div class="svt-coach">
+                      <div class="svt-coach-row">
+                        <img src="/assets/logotipo-solved.webp" alt="Solved" class="svt-coach-logo">
+                        <div class="svt-coach-main">
+                          <div class="svt-coach-kicker" data-svt="kicker">Step 1 of 4</div>
+                          <div class="svt-coach-msg" data-svt="message">Click Add Issue to get started.</div>
+                          <div class="svt-coach-foot">
+                            <div class="svt-dots" data-svt="dots"></div>
+                            <span style="flex:1"></span>
+                            <button type="button" class="svt-pause" data-act="pause" data-svt="pause"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="svt-prog"><div class="svt-prog-bar" data-svt="prog"></div></div>
+                    </div>
+                  </div>
+
+                </div><!-- /stage -->
+              </div><!-- /card -->
+            </div><!-- /fit -->
+
+            <!-- COVER · VER DEMO — overlay a tamaño real (legible en móvil) -->
+            <div class="svt-cover" data-svt="cover">
+              <button type="button" class="svt-play" data-act="start" aria-label="Watch demo">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg>
+              </button>
+              <div class="svt-cover-t">Watch the interactive demo</div>
+              <div class="svt-cover-s">Walk through the issue management module in 4 steps &mdash; from detection to the automatic alert sent to the owner (~25 sec).</div>
+            </div>
+
+            <!-- DONE — overlay a tamaño real -->
+            <div class="svt-done" data-svt="done" hidden>
+              <div class="svt-done-card">
+                <span class="svt-done-ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg></span>
+                <div class="svt-done-t">Tour complete</div>
+                <div class="svt-done-s">That's how fast an issue gets logged, with Solved automatically notifying the owner. Want to see it with your own processes?</div>
+                <a class="svt-done-cta" href="#contacto" data-act="contact">Book a demo with the Solved team <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <button type="button" class="svt-done-ghost" data-act="restart">↻ Watch again</button>
+              </div>
+            </div>
+
+            <!-- CERRAR (solo en pantalla completa) -->
+            <button type="button" class="svt-close" data-act="close" aria-label="Close demo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+          </div><!-- /#svt -->
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--tight" data-screen-label="Incidencias · FAQ">
+  <div class="wrap">
+    <div class="section-head"><h2>Frequently asked questions</h2></div>
+    <div class="faq">
+      <details class="faq__item" name="faq" open><summary>How do you log an issue in Solved?</summary><div class="faq__a"><p>From mobile, tablet or PC, in seconds: describe the problem, attach photos or videos and assign owners, right there on the production floor.</p></div></details>
+      <details class="faq__item" name="faq"><summary>Can I automate issue resolution?</summary><div class="faq__a"><p>Yes. Set up custom workflows so every issue reaches the right person without delay and gets resolved faster.</p></div></details>
+      <details class="faq__item" name="faq"><summary>Does Solved manage non-conformities?</summary><div class="faq__a"><p>Yes. It centralizes issues and non-conformities in one place, tracking everything from the initial report to the corrective action and its closure.</p></div></details>
+      <details class="faq__item" name="faq"><summary>Does it integrate with ERP, MES or CMMS?</summary><div class="faq__a"><p>Yes. Solved connects with your production and maintenance tools to avoid duplicate data.</p></div></details>
+      <details class="faq__item" name="faq"><summary>Can I see issue metrics and reports?</summary><div class="faq__a"><p>Yes. Access real-time charts and trends to spot critical points and prevent recurring problems.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contacto" data-screen-label="Incidencias · Contacto">
+  <div class="wrap contact__in">
+    <div class="form-card">
+      <h2>Talk to an operations specialist</h2>
+      <!-- HubSpot form (rendered via chrome.en.js → Portal 20010689) -->
+      <div class="hs-contact-form"></div>
+    </div>
+    <div class="contact__art">
+      <img src="/assets/contacto-operario.webp" alt="Warehouse worker using Solved" style="width:100%;display:block;border-radius:var(--r-3);box-shadow:var(--shadow-2);" width="1024" height="910" decoding="async" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+<script src="/assets/tour/incidencias-tour.js?v=20260803a" defer></script>
+<script src="/chrome.en.js?v=20260803a"></script>
+</body>
+</html>

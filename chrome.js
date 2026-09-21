@@ -18,6 +18,9 @@
      Portal 20010689 (data center na1). */
   var HUBSPOT = { region: 'na1', portalId: '20010689', formId: 'f8dcbcf5-52c2-464d-a5b1-84824ce89992' };
 
+  // Enlace al equivalente en inglés (mismo slug bajo /en/).
+  var enPath = '/en' + window.location.pathname;
+
   var NAV =
   '<header class="nav"><div class="wrap nav__in">' +
     '<a class="nav__logo" href="' + ROOT + '"><img src="' + ROOT + 'assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
@@ -45,6 +48,7 @@
           '<a href="' + ROOT + 'glosario/"><b>Glosario</b><span>Términos industriales explicados</span></a>' +
         '</div>' +
       '</li>' +
+      '<li class="nav__item nav__item--lang"><a class="nav__link nav__lang" href="' + enPath + '">EN</a></li>' +
       '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Solicita una demo</a></li>' +
     '</ul>' +
     '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Solicita una demo</a>' +

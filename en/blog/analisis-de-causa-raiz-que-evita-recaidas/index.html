@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png"/>
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>
+<title>Root Cause Analysis: Methods and Examples · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Root cause analysis methods with examples: 5 whys, Ishikawa, and barrier analysis, and how to close the loop to prevent recurrence."/>
+<link rel="canonical" href="https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/"/>
+<link rel="alternate" hreflang="es" href="https://trysolved.com/blog/analisis-de-causa-raiz-que-evita-recaidas/"/>
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/"/>
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/blog/analisis-de-causa-raiz-que-evita-recaidas/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#1E6BFF"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Solved"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/"/>
+<meta property="og:title" content="Root Cause Analysis: Methods and Examples · Solved"/>
+<meta property="og:description" content="Root cause analysis methods with examples: 5 whys, Ishikawa, and barrier analysis, and how to close the loop to prevent recurrence."/>
+<meta property="og:image" content="https://trysolved.com/blog/assets/1939735a5b1e-1200.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Root Cause Analysis: Methods and Examples · Solved"/>
+<meta name="twitter:description" content="Root cause analysis methods with examples: 5 whys, Ishikawa, and barrier analysis, and how to close the loop to prevent recurrence."/>
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/1939735a5b1e-1200.jpg"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/"},"headline":"Root Cause Analysis: Methods and Examples","description":"Root cause analysis methods with examples: 5 whys, Ishikawa, and barrier analysis, and how to close the loop to prevent recurrence.","image":["https://trysolved.com/blog/assets/1939735a5b1e-1200.jpg"],"datePublished":"2026-07-27T00:00:00Z","dateModified":"2026-08-05T10:12:02Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/en/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/en/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Quality & Continuous Improvement"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://trysolved.com/en/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/en/blog/"},{"@type":"ListItem","position":3,"name":"Root Cause Analysis: Methods and Examples","item":"https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"/>
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260803a"/>
+<link rel="stylesheet" href="/solved.css?v=20260803a"/>
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Breadcrumb">
+      <a href="../../">Home</a> <span>/</span>
+      <a href="../">Blog</a> <span>/</span>
+      <span aria-current="page">Root Cause Analysis: Methods and Examples</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Quality &amp; Continuous Improvement</span>
+      <h1>Root Cause Analysis: Methods and Examples</h1>
+      <p class="post__meta">By Claudia · <time datetime="2026-07-27T00:00:00Z">July 27, 2026</time> · 6 min read</p>
+    </header>
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/1939735a5b1e-480.avif 480w, /blog/assets/1939735a5b1e-768.avif 768w, /blog/assets/1939735a5b1e-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/1939735a5b1e-480.webp 480w, /blog/assets/1939735a5b1e-768.webp 768w, /blog/assets/1939735a5b1e-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/1939735a5b1e-1200.jpg" width="1200" height="655" alt="Quality team working on a root cause analysis at a whiteboard" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<h2>Root cause analysis that prevents recurrence</h2>
+<p>When a non-conformity shows up at a food plant, the immediate reaction is usually to fix the visible problem: pull the batch, redo the process, correct the record. But without a rigorous <strong>root cause analysis</strong>, that same problem will resurface weeks or months later. Identifying why something happened — not just what happened — is the difference between managing quality reactively and building a genuinely robust system.</p>
+<h2>What root cause analysis is</h2>
+<p>Root cause analysis (RCA) is a structured methodology for looking past the symptom of a problem to identify its real origin. In the food industry, this approach is essential for meeting food safety management system requirements and for responding properly to internal and external audits.</p>
+<p>It's not limited to major failures. Any deviation, however small it seems, can hide a systemic weakness: a poorly designed procedure, insufficient training, deteriorating infrastructure, or poor communication between departments. As set out in <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">Regulation (EC) 852/2004 on the hygiene of foodstuffs</a> (Regulation [EC] 852/2004, 2004), food business operators must implement permanent procedures based on HACCP principles — which requires exactly this kind of systematic analysis to guarantee control of critical points.</p>
+<p>A well-executed root cause analysis produces three outcomes: the immediate correction to contain the problem, the corrective action to eliminate the cause, and the preventive action to stop similar situations from happening in other processes or areas.</p>
+<h2>Main methods: the 5 whys and Ishikawa</h2>
+<p>There are various tools for carrying out a root cause analysis. The most widely used in the food industry, for their practicality and ease of communication, are the 5 whys method and the Ishikawa diagram (or cause-and-effect diagram).</p>
+<p><strong>The 5 whys method</strong> involves repeatedly asking "why?" of each answer you get until you reach the root cause of the problem. Generally, three to five iterations are enough to move past the symptoms and reach a structural cause. For example:</p>
+<ul>
+<li><strong>Problem:</strong> Metal was detected in a batch of <a href="../control-de-calidad-en-conservas-retos-y-soluciones-digitales/">canned goods</a>.</li>
+<li><strong>Why?</strong> The metal detector didn't trigger the alarm.</li>
+<li><strong>Why?</strong> The detector wasn't calibrated correctly.</li>
+<li><strong>Why?</strong> Calibration wasn't performed on the scheduled date.</li>
+<li><strong>Why?</strong> There was no alert system to notify the maintenance manager.</li>
+<li><strong>Why?</strong> The maintenance plan had no automatic reminders built in.</li>
+</ul>
+<p>The root cause isn't the uncalibrated detector — it's the absence of a preventive maintenance management system. The corrective action needs to target that level.</p>
+<p><strong>The Ishikawa diagram</strong>, also known as the fishbone diagram, is especially useful when a problem has several possible causes or involves multiple departments. You start from the effect (the problem) and explore causes grouped into classic categories such as manpower, machinery, materials, method, environment, and measurement. This big-picture view makes teamwork easier and keeps the analysis from being skewed by a single department's perspective.</p>
+<p>Both tools complement each other: the 5 whys help you dig deeper into each branch of the Ishikawa diagram, while the diagram makes sure no category of potential causes gets overlooked.</p>
+<h2>How to apply root cause analysis to real non-conformities</h2>
+<p><a href="../gestion-de-calidad-ventaja-competitiva/">Non-conformity analysis</a> is the most common context for applying RCA at a food company. The process follows a logical sequence that's worth respecting to get solid results.</p>
+<p><strong>1. Precise problem description.</strong> Before analyzing, you need to clearly define what happened: when, where, in which product, in which process, and how often. A vague description leads to a shallow analysis. Use objective data: records, test results, production reports.</p>
+<p><strong>2. Team formation.</strong> Root cause analysis shouldn't be a one-person job. Involving the people who took part in the process brings different perspectives and reduces the risk of organizational causes staying hidden. The quality manager acts as a facilitator, not the sole judge.</p>
+<p><strong>3. Applying the chosen tool.</strong> Pick the method that fits the problem's complexity. For specific, well-defined issues, the 5 whys are enough. For multi-factor or recurring problems, Ishikawa offers a more complete view.</p>
+<p><strong>4. Defining actions.</strong> Once the root cause is identified, corrective actions are set with an owner, a deadline, and verification criteria. It's essential to distinguish between the correction (what's done immediately) and the corrective action (what eliminates the cause).</p>
+<p><strong>5. Verifying effectiveness.</strong> No root cause analysis is complete without checking that the actions worked. After a reasonable amount of time, review whether the problem has reappeared and whether the related <a href="../7-kpis-de-control-de-calidad-que-si-importan/">indicators</a> have improved.</p>
+<h2>How to record the analysis and its closure in Solved</h2>
+<p>One of the main obstacles in non-conformity management is scattered information: the analysis sits in an email, the action in a spreadsheet, and the closure only in the manager's memory. This makes audits harder, blocks organizational learning, and makes it impossible to spot recurring <a href="../como-detectar-patrones-de-incidencias/">patterns</a>.</p>
+<p>With <a href="../../incidencias/">Solved's issue management module</a>, root cause analysis is built directly into the non-conformity workflow. From the same issue record, the quality team can document the method used, the causes identified, and the actions defined, assigning an owner and deadline to each one.</p>
+<p>The system tracks the status of each action in real time and generates automatic alerts as the closing deadline approaches. Once all actions are complete, the manager can log the effectiveness verification and formally close the non-conformity, leaving a complete, auditable trail of the whole process.</p>
+<p>Solved also makes trend analysis easier: with every non-conformity recorded in a structured way, you can identify which root causes recur most often, which areas concentrate the most issues, or which suppliers generate the most deviations. This information is extremely valuable for management system review and for prioritizing improvement investments.</p>
+<p>Managing quality with real data, documented processes, and tools that make the team's work easier isn't just a matter of regulatory compliance — it's a <a href="../gestion-de-calidad-ventaja-competitiva/">real competitive advantage</a> for any food industry company. Root cause analysis, properly built into the system, is one of the pillars of that advantage.</p>
+<h2>References</h2>
+<ul>
+<li>Regulation (EC) No 852/2004 of the European Parliament and of the Council of 29 April 2004 on the hygiene of foodstuffs. (2004). <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es</a></li>
+</ul>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Related terms</h2>
+      <ul>
+        <li><a href="../../glosario/analisis-de-causa-raiz/">Root cause analysis</a></li>
+        <li><a href="../../glosario/no-conformidad/">Non-conformity</a></li>
+      </ul>
+    </aside>
+
+    <aside class="post__cta">
+            <h2 class="post__cta-title">Measure quality in real time</h2>
+            <p>KPIs, waste, and recurring issues in a dashboard that updates itself.</p>
+            <p><a class="btn btn--primary" href="../../dashboard/">View the dashboard</a></p>
+          </aside>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="../">← Back to blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Keep reading</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="../inteligencia-artificial-en-el-control-de-calidad/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/9a1028420d1a-480.avif 480w, /blog/assets/9a1028420d1a-768.avif 768w, /blog/assets/9a1028420d1a-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/9a1028420d1a-480.webp 480w, /blog/assets/9a1028420d1a-768.webp 768w, /blog/assets/9a1028420d1a-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/9a1028420d1a-1200.jpg" width="1200" height="670" alt="Artificial intelligence in quality control" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Quality & Continuous Improvement</span>
+          <h2 class="blog-card__title"><a href="../inteligencia-artificial-en-el-control-de-calidad/">Artificial intelligence in quality control</a></h2>
+          <p class="blog-card__excerpt">Discover how artificial intelligence in food quality control automates issue classification, alerts, and pattern detection without replacing human verification.</p>
+          <p class="blog-card__meta"><time datetime="2026-09-15T00:00:00Z">September 15, 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="../software-de-calidad-para-la-industria-conservera/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/8e9b4cb2ec58-480.avif 480w, /blog/assets/8e9b4cb2ec58-768.avif 768w, /blog/assets/8e9b4cb2ec58-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/8e9b4cb2ec58-480.webp 480w, /blog/assets/8e9b4cb2ec58-768.webp 768w, /blog/assets/8e9b4cb2ec58-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/8e9b4cb2ec58-1200.jpg" width="1200" height="670" alt="Quality software for the canning industry" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Quality & Continuous Improvement</span>
+          <h2 class="blog-card__title"><a href="../software-de-calidad-para-la-industria-conservera/">Quality software for the canning industry</a></h2>
+          <p class="blog-card__excerpt">Control quality at your cannery with software specialized in sterilization, hermetic sealing, and batch traceability. A complete HACCP system that adapts to your campaign.</p>
+          <p class="blog-card__meta"><time datetime="2026-09-14T00:00:00Z">September 14, 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="../software-de-calidad-para-cooperativas-agroalimentarias/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/1bd491380ce9-480.avif 480w, /blog/assets/1bd491380ce9-768.avif 768w, /blog/assets/1bd491380ce9-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/1bd491380ce9-480.webp 480w, /blog/assets/1bd491380ce9-768.webp 768w, /blog/assets/1bd491380ce9-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/1bd491380ce9-1200.jpg" width="1200" height="670" alt="Quality software for agri-food cooperatives" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Quality & Continuous Improvement</span>
+          <h2 class="blog-card__title"><a href="../software-de-calidad-para-cooperativas-agroalimentarias/">Quality software for agri-food cooperatives</a></h2>
+          <p class="blog-card__excerpt">Discover quality software for agri-food cooperatives that integrates multiple plants, supplier approval, and full traceability. Solve your challenges.</p>
+          <p class="blog-card__meta"><time datetime="2026-09-11T00:00:00Z">September 11, 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="/chrome.en.js?v=20260803a"></script>
+</body>
+</html>
