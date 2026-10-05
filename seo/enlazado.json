@@ -13,6 +13,9 @@
   },
   "productoPorPost": {
     "gestion-de-no-conformidades-en-alimentacion-guia-completa": "/no-conformidades/",
+    "software-de-auditoria-alimentaria-como-elegir": "/software-auditoria-alimentaria/",
+    "checklists-digitales-para-control-de-calidad": "/checklists-digitales/",
+    "software-de-trazabilidad-alimentaria-como-elegir": "/software-trazabilidad-alimentaria/",
     "appcc-digital-como-pasar-del-papel-al-software-en-tu-empresa": "/software-appcc/",
     "plan-appcc-sin-errores-paso-a-paso": "/software-appcc/",
     "analisis-de-peligros-que-evita-sustos": "/software-appcc/",
@@ -34,6 +37,21 @@
     "normas-y-estandares-de-calidad": "/software-certificaciones/"
   },
   "cta": {
+    "/software-auditoria-alimentaria/": {
+      "titulo": "El software de auditoria que se usa en planta",
+      "texto": "Planifica, audita desde el movil con foto y firma, y cierra cada hallazgo con su accion correctiva.",
+      "boton": "Ver software de auditoria"
+    },
+    "/checklists-digitales/": {
+      "titulo": "Checklists digitales que no dejan huecos",
+      "texto": "Campos obligatorios, foto como evidencia y hora y responsable automaticos, sin depender de informatica.",
+      "boton": "Ver checklists digitales"
+    },
+    "/software-trazabilidad-alimentaria/": {
+      "titulo": "Trazabilidad que no depende de que alguien la apunte",
+      "texto": "De la recepcion a la expedicion, cada lote queda vinculado solo. Informes en minutos, no en horas.",
+      "boton": "Ver software de trazabilidad"
+    },
     "/incidencias/": {
       "titulo": "Gestiona las incidencias de tu planta con Solved",
       "texto": "Registra, asigna y cierra incidencias desde el movil, con evidencias y trazabilidad completa.",

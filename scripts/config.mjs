@@ -56,6 +56,9 @@ export const config = {
     { loc: '/software-iso-22000/',                 changefreq: 'monthly', priority: '0.8' },
     { loc: '/software-certificaciones/',            changefreq: 'monthly', priority: '0.8' },
     { loc: '/homologacion-de-proveedores/',        changefreq: 'monthly', priority: '0.8' },
+    { loc: '/software-auditoria-alimentaria/',     changefreq: 'monthly', priority: '0.8' },
+    { loc: '/checklists-digitales/',               changefreq: 'monthly', priority: '0.8' },
+    { loc: '/software-trazabilidad-alimentaria/',  changefreq: 'monthly', priority: '0.8' },
     { loc: '/glosario/',                           changefreq: 'weekly',  priority: '0.7' },
 
     // ---- Versión en inglés (/en/…), mismos slugs ----
