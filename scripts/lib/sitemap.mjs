@@ -12,6 +12,7 @@
 // =========================================================
 import { execFile } from 'node:child_process';
 import { promises as fs } from 'node:fs';
+import path from 'node:path';
 import { promisify } from 'node:util';
 import { config } from '../config.mjs';
 
@@ -76,6 +77,32 @@ export async function writeSitemap(posts, today) {
     const lastmod = (post.dateModified || post.datePublished || '').slice(0, 10) || today;
     entries.push({ loc: `/blog/${post.slug}/`, lastmod, changefreq: 'monthly', priority: '0.6' });
   }
+
+  // Blog en inglés (/en/blog/…): no viene de la API de WordPress (solo se
+  // traducen manualmente), así que se descubre leyendo disco, igual que
+  // build-sitemap.mjs. Si no existe todavía /en/blog/, se omite sin más.
+  try {
+    await fs.access('en/blog/index.html');
+    entries.push({
+      loc: '/en/blog/',
+      lastmod: await gitLastmod('en/blog/index.html', today),
+      changefreq: 'weekly',
+      priority: '0.7',
+    });
+    const EXCLUIDAS = new Set(['assets', 'page', 'webinar-patatas-aguilar']);
+    const dirs = (await fs.readdir('en/blog', { withFileTypes: true }))
+      .filter(e => e.isDirectory() && !EXCLUIDAS.has(e.name))
+      .map(e => e.name)
+      .sort();
+    for (const slug of dirs) {
+      const file = path.join('en/blog', slug, 'index.html');
+      try { await fs.access(file); } catch { continue; }
+      const html = await fs.readFile(file, 'utf8');
+      const m = html.match(/"dateModified"\s*:\s*"([^"]+)"/) || html.match(/"datePublished"\s*:\s*"([^"]+)"/);
+      const lastmod = m ? m[1].slice(0, 10) : await gitLastmod(file, today);
+      entries.push({ loc: `/en/blog/${slug}/`, lastmod, changefreq: 'monthly', priority: '0.6' });
+    }
+  } catch { /* en/blog/ no existe todavía */ }
 
   await fs.writeFile('sitemap.xml', renderSitemap(entries), 'utf8');
   return entries.length;
