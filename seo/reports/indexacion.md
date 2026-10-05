@@ -1,8 +1,10 @@
 # Auditoría de indexación — 5 octubre 2026
 
 Estado auditado: `main` en `abe3672` (incluye la fusión de 21 artículos duplicados,
-PR #13, mergeada hoy durante esta misma auditoría). Verificado contra el repo y
-contra el sitio en vivo (`curl` a `trysolved.com`).
+PR #13, mergeada hoy durante esta misma auditoría), más 9 páginas puente nuevas
+añadidas en esta misma rama tras cruzar el export real de Search Console
+(sección 6). Verificado contra el repo, el sitio en vivo (`curl` a
+`trysolved.com`) y el informe de Índice > Páginas de GSC.
 
 ## Resumen
 
@@ -10,14 +12,15 @@ contra el sitio en vivo (`curl` a `trysolved.com`).
 |---|---|
 | Enlaces internos rotos (apuntan a un 404) | **0** |
 | Enlaces internos a `.html` o `http://` | **0** |
-| Páginas `noindex` sin explicación conocida | **0** de 67 |
+| Páginas `noindex` sin explicación conocida | **0** de 67 (comprobado también contra las 27 que ve GSC: ninguna accidental) |
 | Redirecciones en cadena (stub → stub) | **0** |
 | `sitemap.xml` con URLs no canónicas/duplicadas | **0** (280 URLs, `check:seo` limpio) |
 | `http://` y `www.` → `https://trysolved.com/` | **OK**, 301 real de GitHub Pages, un solo salto |
+| De los 105 URLs no indexados en GSC | **9 huecos reales corregidos**; el resto es ruido de WordPress (`/feed/`, fragmentos de Elementor) sin arreglo razonable, o ya está cubierto y pendiente de recrawl |
 
-`npm run check:seo` pasa limpio (`✔ Sin fallos`) sobre las 379 páginas HTML del
-sitio. El resto de este informe detalla cómo se verificó cada punto y qué
-queda fuera de lo que el repo puede resolver por sí solo.
+`npm run check:seo` pasa limpio (`✔ Sin fallos`) sobre las 388 páginas HTML del
+sitio. El resto de este informe detalla cómo se verificó cada punto; la
+sección 6 tiene el cruce URL por URL contra Search Console.
 
 ## 1. 404 con enlaces internos, noindex, cadenas
 
@@ -127,24 +130,79 @@ Pages del repositorio y que el `CNAME` (`trysolved.com`) está bien resuelto.
 No hace falta tocar nada: es un ajuste de la cuenta de GitHub, no algo que viva
 en el repo, así que no hay cambio de código posible ni necesario aquí.
 
-## Lo que no se pudo cerrar desde el repo
+## 6. Cruce contra el export real de Search Console
 
-1. **La lista exacta de los ~105 URLs no indexados de GSC.** Sin el export de
-   Índice > Páginas no puedo saber cuáles de los 52 "404" y 10 "rastreada sin
-   indexar" ya están cubiertos por este trabajo (los 21 recién fusionados, o
-   los ~30 ya existentes) y cuáles son rutas que todavía no conozco. Pégame o
-   sube ese CSV y cruzo la lista entrada por entrada.
-2. **27 páginas marcadas `noindex` en GSC.** Las 67 `noindex` de aquí están
-   todas justificadas, pero no sé si coinciden con las 27 que ve Search
-   Console: puede haber solape con el glosario en español (40 fichas, pendiente
-   de pasar a `noindex` en la rama sin mergear `seo/integra-pendientes`, que
-   reduciría further el recuento de indexadas-pero-no-deseadas), o puede haber
-   URLs que GSC marca `noindex` por una señal que no sale de este repo (una
-   cabecera `X-Robots-Tag`, por ejemplo, que no uso en ningún punto del
-   pipeline y que tendría que venir de GitHub Pages o de algo externo).
-3. **"Enforce HTTPS" en sí** solo lo pude verificar por su efecto (el 301 en
-   vivo), no inspeccionando el ajuste directamente — no tengo acceso a la
-   pestaña Settings → Pages del repositorio desde aquí.
+Conseguí acceso a Índice > Páginas de GSC (propiedad `sc-domain:trysolved.com`,
+última actualización 21/9/26) y repasé las 7 categorías, 105 URLs, una a una.
+
+| Motivo | Páginas | Qué había de verdad |
+|---|---|---|
+| No se ha encontrado (404) | 52 | Ver desglose abajo |
+| Excluida por `noindex` | 27 | Las 27 coinciden con el mecanismo de puentes o con páginas legales/landing ya conocidas. Ninguna accidental. |
+| Página con redirección | 11 | El `http://`→`https://`, el `www`→sin `www`, y 8 puentes conocidos. **Esto es el sistema funcionando como toca**, no un problema. |
+| Página alternativa con canonical adecuada | 3 | Variantes de la home con parámetros de consulta (`?wpr_mega_menu=…`, `?zsG1…`) y `/index.html`. Google ya respeta el canonical. Sin acción. |
+| Duplicada: sin canonical del usuario | 1 | `https://admin.qa.trysolved.com/` — **no es este repo**. Es el entorno QA de la app Solved, en otro subdominio, indexado porque esta propiedad GSC es de dominio completo. Hay que arreglarlo en la app (añadir `noindex` al entorno QA), no aquí. |
+| Rastreada, sin indexar | 10 | Mezcla de rutas ya cubiertas con puentes (pendientes de recrawl) y artefactos WordPress sin valor (`__trashed-3`, fragmentos de Elementor). |
+| Duplicada: Google eligió otro canonical | 1 | `/tipos-de-auditoria-de-calidad/` — es el propio puente de raíz; Google indiza el destino en vez de reconocer el refresh como redirección. Comportamiento esperado de un meta refresh, no arreglable sin un 301 real. |
+
+### Los 52 "404": qué es ruido y qué corregí
+
+La mitad larga son artefactos de WordPress que no tienen arreglo con una
+redirección (y no deberían tenerlo):
+
+- **~20 son `/feed/`**: cada post y categoría de WordPress generaba un RSS
+  automático; esas URLs no tienen destino razonable y es correcto que
+  desaparezcan.
+- **`/fr/`, `/it/`, `/fr/histoire-a-succes/…`, `/storia-di-successo/`,
+  `politique-de-cookies`**: el WordPress de `trysolved.es` tiene instalado
+  **Polylang** (lo vi en la lista de plugins), así que es creíble que en algún
+  momento hubiera versión francesa e italiana de verdad. No hay contenido
+  actual al que redirigirlas — decide tú si se resucitan o se dejan morir.
+- **`/assets/docs/Documento-integracion-1.pdf`, `/mega_menus/home/`,
+  `/solved-en/`**: páginas o ficheros de la época WordPress sin equivalente
+  conocido. Sin más contexto, no hay destino seguro al que mandarlas.
+- **`/funcionalidades`, `/demo`, `/casos-de-exito`**: ya los rescata
+  `404.html` del lado del cliente (alias a `/` o a `/#contacto`). Es una
+  decisión de diseño ya tomada (rescate suave para quien navega, sin crear una
+  página puente nueva); no la he tocado.
+
+Y **9 eran huecos reales**, que ya corregí en `seo/redirects.json` (incluidos
+en el commit de esta rama):
+
+| URL que Google indexó | Redirige ahora a |
+|---|---|
+| `/incidencias-recurrentes/` | `/blog/incidencias-recurrentes/` (superviviente de la fusión de ayer, sin puente de raíz) |
+| `/software-de-gestion-de-incidencias-guia-para-elegir/` | `/blog/software-de-gestion-de-incidencias-guia-para-elegir/` (ídem) |
+| `/como-integrar-la-gestion-de-incidencias-erp-mes-gmao/` | `/blog/como-integrar-la-gestion-de-incidencias-erp-mes-gmao/` (el post existe, solo le faltaba el puente) |
+| `/blog/trazabilidad-alimentaria` (sin barra final) | `/blog/trazabilidad-alimentaria-que-es-y-como-gestionarla-bien/` (slug antiguo, el post cambió de nombre) |
+| `/blog/gestion-documental-calidad` | `/blog/gestion-documental-calidad-alimentaria-guia-practica-2026/` (mismo caso) |
+| `/category/development/` | `/blog/` (mismo patrón que `category/uncategorized`) |
+| `/homepage` | `/` |
+| `/privacy-policy/` | `/en/politica-de-privacidad/` — **confianza baja**, es mi mejor suposición del equivalente en inglés, no una certeza |
+| `/politique-de-cookies/` | `/en/politica-de-cookies/` — **misma reserva**, y encima en francés sin sitio en francés detrás |
+
+Las dos últimas (`privacy-policy`, `politique-de-cookies`) son juicios míos,
+no hechos verificados — si prefieres quitarlas o apuntarlas a otro sitio,
+dímelo.
+
+`npm run check:seo` sigue limpio después de añadir las 9 (`✔ Sin fallos`,
+388 páginas, 280 URLs en el sitemap).
+
+## Lo que sigue sin poder cerrarse desde el repo
+
+1. **`admin.qa.trysolved.com` indexado.** No es parte de este repositorio;
+   hace falta tocar la configuración de ese entorno (robots o `noindex`) desde
+   donde se gestione la app, no la web.
+2. **Si resucitar `/fr/` e `/it/` o dejarlos morir.** Decisión de negocio, no
+   técnica.
+3. **`/privacy-policy/` y `/politique-de-cookies/`**, señalados arriba como
+   mis mejores suposiciones, pendientes de que las confirmes.
+4. **27 `noindex` de GSC vs. 67 de aquí**: las 67 están justificadas, pero no
+   puedo saber si Google ya vio el `noindex` del glosario en español (en la
+   rama sin mergear `seo/integra-pendientes`) o si cuenta otras 27 distintas.
+   Se aclarará solo cuando esa rama se mergee y Google recrawlee.
+5. **"Enforce HTTPS"** lo verifiqué por su efecto (301 en vivo), no inspeccionando
+   el ajuste directamente — no tengo acceso a Settings → Pages del repositorio.
 
 ## Cambios de esta tarea
 
@@ -152,6 +210,7 @@ Todo en la rama `seo/auditoria-indexacion` (sin mergear, a la espera de tu OK):
 
 - `scripts/build-sitemap.mjs`: ya estaba corregido en el PR #13 de la fusión;
   esta rama solo lo hereda.
+- `seo/redirects.json`: 9 páginas puente nuevas (ver tabla arriba).
 - `seo/reports/indexacion.md`: este informe.
 
 No se ha tocado contenido de ninguna página, tal y como pedías.
