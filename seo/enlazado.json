@@ -18,19 +18,15 @@
     "punto-de-control-critico-pcc-guia-practica": "/software-appcc/",
     "prerrequisitos-ppr-la-base-de-un-appcc-solido": "/software-appcc/",
     "iso-22000-la-guia-practica-y-definitiva": "/software-iso-22000/",
-    "iso-22000-que-es-y-a-quien-le-exige-certificarse": "/software-iso-22000/",
     "fssc-22000-que-es-y-como-obtener-la-certificacion": "/software-iso-22000/",
     "normas-iso-clave-en-la-industria-alimentaria": "/software-certificaciones/",
     "homologacion-de-proveedores-guia-practica": "/homologacion-de-proveedores/",
     "auditoria-de-proveedores-de-calidad": "/homologacion-de-proveedores/",
-    "control-de-calidad-de-proveedores-evita-fallos": "/homologacion-de-proveedores/",
     "reclamacion-a-proveedor-como-gestionarla-bien": "/homologacion-de-proveedores/",
     "inspeccion-de-recepcion-de-materia-prima": "/homologacion-de-proveedores/",
     "certificacion-ifs-food-guia-esencial": "/software-certificaciones/",
     "certificacion-brc-la-guia-definitiva": "/software-certificaciones/",
-    "brcgs-que-es-y-que-exige-la-certificacion": "/software-certificaciones/",
-    "gfsi-que-es-y-que-norma-te-conviene": "/software-certificaciones/",
-    "normas-y-estandares-de-calidad": "/software-certificaciones/"
+    "gfsi-que-es-y-que-norma-te-conviene": "/software-certificaciones/"
   },
   "cta": {
     "/incidencias/": {
@@ -110,7 +106,7 @@
       "producto": "/auditorias/"
     },
     "brcgs": {
-      "articulo": "brcgs-que-es-y-que-exige-la-certificacion",
+      "articulo": "certificacion-brc-la-guia-definitiva",
       "producto": "/software-certificaciones/"
     },
     "contaminacion-cruzada": {
@@ -190,7 +186,7 @@
       "producto": "/industria-general/"
     },
     "no-conformidad": {
-      "articulo": "no-conformidad-que-es-y-como-gestionarla",
+      "articulo": "gestion-de-no-conformidades-en-alimentacion-guia-completa",
       "producto": "/no-conformidades/"
     },
     "oee": {
@@ -214,7 +210,7 @@
       "producto": "/homologacion-de-proveedores/"
     },
     "registro-de-calidad": {
-      "articulo": "registro-de-calidad-que-debe-incluir-y-como-llevarlo",
+      "articulo": "deja-de-perder-registros-de-control-de-calidad",
       "producto": "/dashboard/"
     },
     "retirada-de-producto-recall": {
