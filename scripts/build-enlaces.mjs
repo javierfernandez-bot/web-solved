@@ -63,6 +63,32 @@ const cuerpoDe = (html) => {
   return html.slice(i, j === -1 ? html.length : j).replace(/<[^>]+>/g, ' ');
 };
 
+// Hash corto y estable de un slug, para rotar que anclas le tocan a cada
+// articulo sin depender de un orden externo (idempotente entre ejecuciones).
+function hashSlug(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+// 2-3 enlaces contextuales hacia el modulo de producto que le toca al
+// articulo/ficha, con texto de ancla que rota segun el slug para no repetir
+// siempre la misma frase. Devuelve '' si el slug no tiene modulo asignado.
+function bloqueModulo(MODULOS, tipo, slug) {
+  const nombreModulo = MODULOS[tipo] && MODULOS[tipo][slug];
+  if (!nombreModulo) return '';
+  const mod = MODULOS.modulos && MODULOS.modulos[nombreModulo];
+  if (!mod || !mod.anclas || !mod.anclas.length) return '';
+  const n = Math.min(2 + (hashSlug(slug) % 2), mod.anclas.length); // 2 o 3 enlaces
+  const offset = hashSlug(slug + tipo) % mod.anclas.length;
+  const elegidas = [];
+  for (let i = 0; i < n; i++) elegidas.push(mod.anclas[(offset + i) % mod.anclas.length]);
+  const enlaces = elegidas
+    .map((ancla) => '<a href="' + rel(mod.url) + '">' + esc(ancla) + '</a>')
+    .join(', ');
+  return '<p class="post__modulo">Relacionado: ' + enlaces + '.</p>';
+}
+
 function bloqueCta(MAPA, producto) {
   const c = MAPA.cta && MAPA.cta[producto];
   if (!c) { aviso('sin texto de CTA para ' + producto); return ''; }
@@ -122,6 +148,7 @@ function inyectar(html, bloque, ancla) {
 
 async function main() {
   const MAPA = await leerJson(path.join('seo', 'enlazado.json'));
+  const MODULOS = await leerJson(path.join('seo', 'modulos.json'));
   const max = Number(MAPA.maxTerminosPorPost) || 4;
   const porDefecto = MAPA.productoPorDefecto || '/industria-general.html';
 
@@ -166,7 +193,7 @@ async function main() {
     }
 
     const relacionados = detectarTerminos(cuerpoDe(html), terminos, max, []);
-    const bloque = [bloqueTerminos(relacionados), bloqueCta(MAPA, producto)].filter(Boolean).join('\n\n    ');
+    const bloque = [bloqueTerminos(relacionados), bloqueModulo(MODULOS, 'blog', e.name), bloqueCta(MAPA, producto)].filter(Boolean).join('\n\n    ');
     const nuevo = inyectar(html, bloque, ANCLA_POST);
     if (nuevo === null) { saltados++; continue; }
     if (nuevo !== html) await fs.writeFile(file, nuevo, 'utf8');
@@ -192,6 +219,8 @@ async function main() {
         partes.push('<p class="post__more">Guia completa: <a href="../../blog/' + cfg.articulo + '/">' + esc(titulo) + '</a></p>');
       }
     }
+    const modulo = bloqueModulo(MODULOS, 'glosario', t.slug);
+    if (modulo) partes.push(modulo);
     const producto = cfg.producto || porDefecto;
     const cta = bloqueCta(MAPA, producto);
     if (cta) partes.push(cta);
