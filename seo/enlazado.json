@@ -1,5 +1,5 @@
 {
-  "_readme": "Mapa de enlazado interno. Lo consume scripts/build-enlaces.mjs, que inyecta un bloque delimitado por los comentarios enlazado:inicio y enlazado:fin en cada post de /blog y en cada ficha de /glosario. Es idempotente: si el bloque ya existe, lo reemplaza. Las rutas de producto se escriben absolutas desde la raiz; el script las convierte a relativas.",
+  "_readme": "Mapa de enlazado interno. Lo consume scripts/build-enlaces.mjs, que inyecta un bloque delimitado por los comentarios enlazado:inicio y enlazado:fin en cada post de /blog y en cada ficha de /glosario. Es idempotente: si el bloque ya existe, lo reemplaza. Las rutas de producto se escriben absolutas desde la raiz; el script las convierte a relativas. El CTA de un post sale de su categoria (productoPorCategoria), salvo que el post este en productoPorPost, que manda sobre la categoria.",
   "maxTerminosPorPost": 4,
   "productoPorDefecto": "/industria-general/",
   "productoPorCategoria": {
@@ -10,6 +10,27 @@
     "Calidad y mejora continua": "/dashboard/",
     "Trazabilidad": "/industria-alimentaria/",
     "Seguridad alimentaria": "/industria-alimentaria/"
+  },
+  "productoPorPost": {
+    "appcc-digital-como-pasar-del-papel-al-software-en-tu-empresa": "/software-appcc/",
+    "plan-appcc-sin-errores-paso-a-paso": "/software-appcc/",
+    "analisis-de-peligros-que-evita-sustos": "/software-appcc/",
+    "punto-de-control-critico-pcc-guia-practica": "/software-appcc/",
+    "prerrequisitos-ppr-la-base-de-un-appcc-solido": "/software-appcc/",
+    "iso-22000-la-guia-practica-y-definitiva": "/software-iso-22000/",
+    "iso-22000-que-es-y-a-quien-le-exige-certificarse": "/software-iso-22000/",
+    "fssc-22000-que-es-y-como-obtener-la-certificacion": "/software-iso-22000/",
+    "normas-iso-clave-en-la-industria-alimentaria": "/software-certificaciones/",
+    "homologacion-de-proveedores-guia-practica": "/homologacion-de-proveedores/",
+    "auditoria-de-proveedores-de-calidad": "/homologacion-de-proveedores/",
+    "control-de-calidad-de-proveedores-evita-fallos": "/homologacion-de-proveedores/",
+    "reclamacion-a-proveedor-como-gestionarla-bien": "/homologacion-de-proveedores/",
+    "inspeccion-de-recepcion-de-materia-prima": "/homologacion-de-proveedores/",
+    "certificacion-ifs-food-guia-esencial": "/software-certificaciones/",
+    "certificacion-brc-la-guia-definitiva": "/software-certificaciones/",
+    "brcgs-que-es-y-que-exige-la-certificacion": "/software-certificaciones/",
+    "gfsi-que-es-y-que-norma-te-conviene": "/software-certificaciones/",
+    "normas-y-estandares-de-calidad": "/software-certificaciones/"
   },
   "cta": {
     "/incidencias/": {
@@ -41,6 +62,26 @@
       "titulo": "Solved para cualquier planta de produccion",
       "texto": "Incidencias, calidad y datos de proceso, sea cual sea tu sector.",
       "boton": "Ver Solved para industria"
+    },
+    "/software-appcc/": {
+      "titulo": "Digitaliza el APPCC de tu planta con Solved",
+      "texto": "Controles de puntos criticos, prerrequisitos y verificaciones con hora, responsable y evidencia.",
+      "boton": "Ver software de APPCC"
+    },
+    "/software-iso-22000/": {
+      "titulo": "ISO 22000 sin reconstruir la evidencia",
+      "texto": "Registros, prerrequisitos, no conformidades y auditoria interna en un solo sistema.",
+      "boton": "Ver software para ISO 22000"
+    },
+    "/homologacion-de-proveedores/": {
+      "titulo": "Homologa a tus proveedores desde calidad",
+      "texto": "Certificados con caducidad, fichas tecnicas e incidencias de recepcion en un mismo expediente.",
+      "boton": "Ver homologacion de proveedores"
+    },
+    "/software-certificaciones/": {
+      "titulo": "Una sola vez, para la norma que te auditen",
+      "texto": "IFS, BRCGS, ISO 9001 o FSSC 22000: los mismos registros, la misma trazabilidad y las mismas acciones.",
+      "boton": "Ver Solved para certificaciones"
     }
   },
   "terminos": {
@@ -58,7 +99,7 @@
     },
     "appcc-haccp": {
       "articulo": "plan-appcc-sin-errores-paso-a-paso",
-      "producto": "/industria-alimentaria/"
+      "producto": "/software-appcc/"
     },
     "auditoria-de-calidad": {
       "articulo": "auditoria-de-calidad-sin-errores-ni-sustos",
@@ -70,7 +111,7 @@
     },
     "brcgs": {
       "articulo": "brcgs-que-es-y-que-exige-la-certificacion",
-      "producto": "/auditorias/"
+      "producto": "/software-certificaciones/"
     },
     "contaminacion-cruzada": {
       "articulo": "control-de-alergenos-sin-riesgos",
@@ -90,7 +131,7 @@
     },
     "fssc-22000": {
       "articulo": "fssc-22000-que-es-y-como-obtener-la-certificacion",
-      "producto": "/auditorias/"
+      "producto": "/software-iso-22000/"
     },
     "gestion-documental": {
       "articulo": "gestion-documental-calidad-alimentaria-guia-practica-2026",
@@ -98,11 +139,11 @@
     },
     "gfsi": {
       "articulo": "gfsi-que-es-y-que-norma-te-conviene",
-      "producto": "/auditorias/"
+      "producto": "/software-certificaciones/"
     },
     "ifs-food": {
       "articulo": "certificacion-ifs-food-guia-esencial",
-      "producto": "/auditorias/"
+      "producto": "/software-certificaciones/"
     },
     "indicadores-de-no-calidad": {
       "articulo": "indicadores-de-no-calidad-cuales-medir-y-por-que",
@@ -110,15 +151,15 @@
     },
     "inocuidad-alimentaria": {
       "articulo": "seguridad-alimentaria-guia-imprescindible",
-      "producto": "/industria-alimentaria/"
+      "producto": "/software-iso-22000/"
     },
     "inspeccion-de-recepcion": {
       "articulo": "inspeccion-de-recepcion-de-materia-prima",
-      "producto": "/industria-alimentaria/"
+      "producto": "/homologacion-de-proveedores/"
     },
     "iso-22000": {
       "articulo": "iso-22000-la-guia-practica-y-definitiva",
-      "producto": "/auditorias/"
+      "producto": "/software-iso-22000/"
     },
     "kpi-de-produccion": {
       "articulo": "7-kpis-de-control-de-calidad-que-si-importan",
@@ -134,7 +175,7 @@
     },
     "materia-prima": {
       "articulo": "inspeccion-de-recepcion-de-materia-prima",
-      "producto": "/industria-alimentaria/"
+      "producto": "/homologacion-de-proveedores/"
     },
     "mejora-continua-kaizen": {
       "articulo": "como-aplicar-la-mejora-continua-a-traves-de-los-datos",
@@ -162,15 +203,15 @@
     },
     "prerrequisitos-ppr": {
       "articulo": "prerrequisitos-ppr-la-base-de-un-appcc-solido",
-      "producto": "/industria-alimentaria/"
+      "producto": "/software-appcc/"
     },
     "punto-de-control-critico-pcc": {
       "articulo": "punto-de-control-critico-pcc-guia-practica",
-      "producto": "/industria-alimentaria/"
+      "producto": "/software-appcc/"
     },
     "reclamacion-a-proveedor": {
       "articulo": "reclamacion-a-proveedor-como-gestionarla-bien",
-      "producto": "/no-conformidades/"
+      "producto": "/homologacion-de-proveedores/"
     },
     "registro-de-calidad": {
       "articulo": "registro-de-calidad-que-debe-incluir-y-como-llevarlo",
