@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://trysolved.com/blog/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -379,18 +379,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/alergenos-alimentarios-control-y-gestion-en-planta/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/analisis-de-causa-raiz-en-calidad-como-hacerlo/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/analisis-de-causa-raiz-que-evita-recaidas/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -403,13 +391,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/appcc-digital-como-pasar-del-papel-al-software-en-tu-empresa/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <loc>https://trysolved.com/blog/app-movil-de-un-software-de-calidad-que-debe-permitir/</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/auditoria-de-calidad-sin-errores-ni-sustos/</loc>
+    <loc>https://trysolved.com/blog/appcc-digital-como-pasar-del-papel-al-software-en-tu-empresa/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -417,18 +405,6 @@
   <url>
     <loc>https://trysolved.com/blog/auditoria-de-proveedores-de-calidad/</loc>
     <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/auditoria-interna-de-calidad-sin-sustos/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/auditoria-iso-9001/</loc>
-    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -441,18 +417,6 @@
   <url>
     <loc>https://trysolved.com/blog/automatizacion-de-flujos-de-incidencias-gana-tiempo-y-reduce-errores/</loc>
     <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/automatizacion-de-reportes-de-calidad/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/brcgs-que-es-y-que-exige-la-certificacion/</loc>
-    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -499,12 +463,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/como-detectar-patrones-de-incidencias/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/como-implantar-un-sistema-de-gestion-de-calidad-sgc/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -535,19 +493,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/comparativa-gestion-de-incidencias-en-excel-vs-software-especializado/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/control-de-alergenos-sin-riesgos/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/control-de-calidad-de-proveedores-evita-fallos/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -585,12 +531,6 @@
   <url>
     <loc>https://trysolved.com/blog/coste-de-la-no-calidad-en-la-industria-alimentaria/</loc>
     <lastmod>2026-09-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/criterios-de-auditoria-iso-9001-lo-esencial/</loc>
-    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -715,12 +655,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/gestor-de-incidencias-como-elegir-el-mejor/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/gfsi-que-es-y-que-norma-te-conviene/</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -735,12 +669,6 @@
   <url>
     <loc>https://trysolved.com/blog/ifs-logistics-que-es-y-a-quien-exige-certificarse/</loc>
     <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/importancia-de-la-trazabilidad/</loc>
-    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -775,12 +703,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/iso-22000-que-es-y-a-quien-le-exige-certificarse/</loc>
-    <lastmod>2026-08-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/kpi-de-produccion-cuales-medir-en-planta/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -788,12 +710,6 @@
   </url>
   <url>
     <loc>https://trysolved.com/blog/kpis-clave-para-medir-la-eficacia-de-la-gestion-de-incidencias-en-la-industria/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/kpis-de-calidad/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -823,19 +739,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/no-conformidad-que-es-y-como-gestionarla/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/normas-iso-clave-en-la-industria-alimentaria/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/normas-y-estandares-de-calidad/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -889,12 +793,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/registro-de-calidad-que-debe-incluir-y-como-llevarlo/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/retirada-de-producto-alimentario-sin-caos/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -937,20 +835,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/blog/software-de-calidad-para-congelados-y-pescado/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/blog/software-de-calidad-para-cooperativas-agroalimentarias/</loc>
     <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/software-de-calidad-para-fabricas-de-piensos/</loc>
-    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -987,12 +873,6 @@
   <url>
     <loc>https://trysolved.com/blog/software-de-calidad-para-la-industria-lactea/</loc>
     <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/blog/software-de-calidad-para-la-industria-pet-food/</loc>
-    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1111,18 +991,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/alergenos-alimentarios-control-y-gestion-en-planta/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/analisis-de-causa-raiz-en-calidad-como-hacerlo/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -1141,26 +1009,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/auditoria-de-calidad-sin-errores-ni-sustos/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/auditoria-de-proveedores-de-calidad/</loc>
     <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/auditoria-interna-de-calidad-sin-sustos/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/auditoria-iso-9001/</loc>
-    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1173,18 +1023,6 @@
   <url>
     <loc>https://trysolved.com/en/blog/automatizacion-de-flujos-de-incidencias-gana-tiempo-y-reduce-errores/</loc>
     <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/automatizacion-de-reportes-de-calidad/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/brcgs-que-es-y-que-exige-la-certificacion/</loc>
-    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1231,12 +1069,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/como-detectar-patrones-de-incidencias/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/como-implantar-un-sistema-de-gestion-de-calidad-sgc/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -1255,19 +1087,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/comparativa-gestion-de-incidencias-en-excel-vs-software-especializado/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/control-de-alergenos-sin-riesgos/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/control-de-calidad-de-proveedores-evita-fallos/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1293,12 +1113,6 @@
   <url>
     <loc>https://trysolved.com/en/blog/control-de-temperatura-en-la-industria-alimentaria/</loc>
     <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/criterios-de-auditoria-iso-9001-lo-esencial/</loc>
-    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1399,12 +1213,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/gestor-de-incidencias-como-elegir-el-mejor/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/gfsi-que-es-y-que-norma-te-conviene/</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -1419,12 +1227,6 @@
   <url>
     <loc>https://trysolved.com/en/blog/ifs-logistics-que-es-y-a-quien-exige-certificarse/</loc>
     <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/importancia-de-la-trazabilidad/</loc>
-    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1459,12 +1261,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/iso-22000-que-es-y-a-quien-le-exige-certificarse/</loc>
-    <lastmod>2026-08-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/kpi-de-produccion-cuales-medir-en-planta/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -1472,12 +1268,6 @@
   </url>
   <url>
     <loc>https://trysolved.com/en/blog/kpis-clave-para-medir-la-eficacia-de-la-gestion-de-incidencias-en-la-industria/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/kpis-de-calidad/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1501,19 +1291,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/no-conformidad-que-es-y-como-gestionarla/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/normas-iso-clave-en-la-industria-alimentaria/</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/normas-y-estandares-de-calidad/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1555,12 +1333,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/registro-de-calidad-que-debe-incluir-y-como-llevarlo/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/retirada-de-producto-alimentario-sin-caos/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -1579,20 +1351,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://trysolved.com/en/blog/software-de-calidad-para-congelados-y-pescado/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://trysolved.com/en/blog/software-de-calidad-para-cooperativas-agroalimentarias/</loc>
     <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/software-de-calidad-para-fabricas-de-piensos/</loc>
-    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1629,12 +1389,6 @@
   <url>
     <loc>https://trysolved.com/en/blog/software-de-calidad-para-la-industria-lactea/</loc>
     <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://trysolved.com/en/blog/software-de-calidad-para-la-industria-pet-food/</loc>
-    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

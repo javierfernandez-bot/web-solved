@@ -32,7 +32,16 @@ async function postLastmod(file) {
 const entries = await staticEntries(today);
 
 // Índice del blog: español + inglés (mismo slug bajo /en/blog/, si existe).
-const EXCLUIDAS = new Set(['assets', 'page', 'webinar-patatas-aguilar']);
+// Las páginas puente de artículos fusionados viven en blog/<slug>/index.html,
+// igual que un post real, así que el escaneo por disco no las distingue solo:
+// se excluyen los slugs que seo/redirects.json mapea bajo "blog/…".
+const redirectsMap = JSON.parse(await fs.readFile('seo/redirects.json', 'utf8'));
+const EXCLUIDAS = new Set([
+  'assets', 'page', 'webinar-patatas-aguilar',
+  ...Object.keys(redirectsMap)
+    .filter(k => k.startsWith('blog/'))
+    .map(k => k.slice('blog/'.length)),
+]);
 
 let posts = 0;
 for (const blogDir of ['blog', 'en/blog']) {
