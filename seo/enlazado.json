@@ -61,11 +61,11 @@
       "producto": "/industria-alimentaria/"
     },
     "auditoria-de-calidad": {
-      "articulo": "auditoria-de-calidad-sin-errores-ni-sustos",
+      "articulo": "como-realizar-una-auditoria-de-calidad-interna-paso-a-paso",
       "producto": "/auditorias/"
     },
     "auditoria-interna": {
-      "articulo": "auditoria-interna-de-calidad-sin-sustos",
+      "articulo": "como-realizar-una-auditoria-de-calidad-interna-paso-a-paso",
       "producto": "/auditorias/"
     },
     "brcgs": {
@@ -105,7 +105,7 @@
       "producto": "/auditorias/"
     },
     "indicadores-de-no-calidad": {
-      "articulo": "kpis-de-calidad",
+      "articulo": "7-kpis-de-control-de-calidad-que-si-importan",
       "producto": "/dashboard/"
     },
     "inocuidad-alimentaria": {
@@ -113,7 +113,7 @@
       "producto": "/industria-alimentaria/"
     },
     "inspeccion-de-recepcion": {
-      "articulo": "control-de-calidad-de-proveedores-evita-fallos",
+      "articulo": "auditoria-de-proveedores-de-calidad",
       "producto": "/industria-alimentaria/"
     },
     "iso-22000": {
@@ -133,7 +133,7 @@
       "producto": "/industria-alimentaria/"
     },
     "materia-prima": {
-      "articulo": "control-de-calidad-de-proveedores-evita-fallos",
+      "articulo": "auditoria-de-proveedores-de-calidad",
       "producto": "/industria-alimentaria/"
     },
     "mejora-continua-kaizen": {
@@ -169,7 +169,7 @@
       "producto": "/industria-alimentaria/"
     },
     "reclamacion-a-proveedor": {
-      "articulo": "control-de-calidad-de-proveedores-evita-fallos",
+      "articulo": "auditoria-de-proveedores-de-calidad",
       "producto": "/no-conformidades/"
     },
     "registro-de-calidad": {
@@ -189,7 +189,7 @@
       "producto": "/industria-alimentaria/"
     },
     "trazabilidad-ascendente-y-descendente": {
-      "articulo": "importancia-de-la-trazabilidad",
+      "articulo": "trazabilidad-alimentaria-que-es-y-como-gestionarla-bien",
       "producto": "/industria-alimentaria/"
     },
     "trazabilidad-de-envase": {
@@ -197,7 +197,7 @@
       "producto": "/industria-general/"
     },
     "trazabilidad-de-lote": {
-      "articulo": "importancia-de-la-trazabilidad",
+      "articulo": "trazabilidad-alimentaria-que-es-y-como-gestionarla-bien",
       "producto": "/industria-alimentaria/"
     },
     "vida-util-shelf-life": {
