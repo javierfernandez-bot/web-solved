@@ -146,6 +146,7 @@ async function main() {
 
   // 2. Posts: terminos relacionados + CTA de producto segun categoria.
   const dirBlog = path.join(ROOT, 'blog');
+  const postsMapeados = new Set();
   let posts = 0;
   let saltados = 0;
   for (const e of await fs.readdir(dirBlog, { withFileTypes: true })) {
@@ -155,8 +156,12 @@ async function main() {
     try { html = await fs.readFile(file, 'utf8'); } catch { continue; }
 
     const cat = categoriaDe(html);
-    const producto = (MAPA.productoPorCategoria && MAPA.productoPorCategoria[cat]) || porDefecto;
-    if (cat && !(MAPA.productoPorCategoria && MAPA.productoPorCategoria[cat])) {
+    // Un post concreto puede llevar a una pagina de producto propia
+    // (productoPorPost). Si no la tiene, manda su categoria.
+    const porPost = MAPA.productoPorPost && MAPA.productoPorPost[e.name];
+    if (porPost) postsMapeados.add(e.name);
+    const producto = porPost || (MAPA.productoPorCategoria && MAPA.productoPorCategoria[cat]) || porDefecto;
+    if (!porPost && cat && !(MAPA.productoPorCategoria && MAPA.productoPorCategoria[cat])) {
       aviso('categoria sin producto asignado: ' + cat + ' (' + e.name + ')');
     }
 
@@ -166,6 +171,10 @@ async function main() {
     if (nuevo === null) { saltados++; continue; }
     if (nuevo !== html) await fs.writeFile(file, nuevo, 'utf8');
     posts++;
+  }
+
+  for (const slug of Object.keys(MAPA.productoPorPost || {})) {
+    if (!postsMapeados.has(slug)) aviso('productoPorPost apunta a un post que no existe en /blog: ' + slug);
   }
 
   // 3. Fichas del glosario: guia completa + CTA de producto.
