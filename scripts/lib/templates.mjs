@@ -125,7 +125,7 @@ export function renderPost(post, ctx) {
   const blogPostLd = {
     '@type': 'BlogPosting',
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-    headline: post.title,
+    headline: ov.h1 || post.title,
     description: metaDescription,
     image: ogImage ? [ogImage] : undefined,
     datePublished: dateISO,
