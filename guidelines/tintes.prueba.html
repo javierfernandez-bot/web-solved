@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>Prueba · Tintes de escena — Solved DS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="/ds/tokens.css"/>
+<link rel="stylesheet" href="/ds/tint.css"/>
+<style>
+/* Prueba estática del paso 7: sólo sirve para juzgar si los seis tintes se
+   leen como familia. Nada de aquí es todavía el componente: cuando SceneCard
+   exista, esta página se reescribe encima de él. */
+body{margin:0;background:var(--ds-surface);color:var(--ds-text)}
+.wrap{max-width:var(--container);margin-inline:auto;padding:64px 32px}
+h1{font:var(--type-display-lg);letter-spacing:var(--tracking-display-lg);margin:0 0 8px}
+.lede{font:var(--type-body-lg);color:var(--ds-text-2);max-width:62ch;margin:0 0 40px}
+h2{font:var(--type-heading-md);margin:56px 0 4px}
+.nota{font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-mute);max-width:70ch;margin:0 0 24px}
+
+.rejilla{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.sc{grid-column:span 4}
+.sc2{grid-column:span 2}
+.sc2 span{display:block;margin-top:8px;font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-mute)}
+.swatch{aspect-ratio:1/1;border-radius:16px;border:1px solid var(--color-hairline);background-color:var(--ds-surface)}
+.swatch--oscura{background-color:var(--color-graphite-900);border-color:#2A2E34}
+
+/* Marco: radio 16, hairline, overflow hidden, SIN sombra. */
+.escena{
+  position:relative;aspect-ratio:1/1;border-radius:16px;overflow:hidden;
+  border:1px solid var(--color-hairline);background:var(--ds-surface);
+  transition:border-color var(--ds-motion);
+}
+.escena:hover{border-color:var(--color-hairline-input)}
+/* El lienzo teñido es una capa aparte para poder ponerlo sobre blanco o sobre
+   grafito sin tocar el marco. */
+.lienzo{position:absolute;inset:0}
+.escena--oscura{background:var(--color-graphite-900)}
+
+.titulo{
+  position:absolute;top:20px;left:20px;right:20px;z-index:2;
+  font:var(--type-body-md);letter-spacing:var(--tracking-body);color:var(--color-ink);
+}
+.escena--oscura .titulo{color:#fff}
+
+/* El fragmento: aquí un bloque gris. Recortado por al menos un borde — se sale
+   por abajo y por la derecha a propósito. */
+.frag{
+  position:absolute;left:64px;right:-52px;top:104px;bottom:-36px;
+  border-radius:10px;background:#E7EBF0;border:1px solid #DDE3EA;
+  box-shadow:rgba(12,32,64,.10) 0 8px 24px;
+}
+.escena--oscura .frag{background:#23262B;border-color:#33373D}
+/* Rayas que insinúan filas de tabla, para que el bloque no sea un rectángulo
+   plano y se vea cómo pesa el tinte contra contenido real. */
+.frag::before{
+  content:"";position:absolute;inset:18px 24px auto 18px;height:112px;
+  background:repeating-linear-gradient(180deg,#D7DDE5 0 9px,transparent 9px 28px);
+}
+.escena--oscura .frag::before{background:repeating-linear-gradient(180deg,#3A3F46 0 9px,transparent 9px 28px)}
+
+.gris{filter:grayscale(1)}
+.pie{font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-mute);margin-top:14px}
+code{font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;background:var(--color-canvas-soft);padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Tintes de escena — prueba de familia</h1>
+  <p class="lede">Los seis tintes de <code>ds/tint.css</code> con bloques grises en lugar de capturas.
+  La pregunta única de esta página: ¿se leen como una familia o como seis fondos sueltos?
+  Todos comparten <code>--tint-angle: 145deg</code>; grafito va al 8 %, KPIs al 12 %, IA al 16 % pero sólo sobre grafito.</p>
+
+  <h2>El tinte solo, sin nada encima</h2>
+  <p class="nota">Los seis lienzos desnudos, al mismo tamaño y con el mismo ángulo. Aquí es donde se ve si la
+  familia existe: la mancha tiene que caer al mismo sitio y pesar lo mismo en las seis. El grafito es la
+  referencia de peso — si un cromático se le adelanta, está demasiado alto.</p>
+
+  <div class="rejilla">
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-incidencias)"></div><span>Incidencias · 10 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-acciones)"></div><span>Acciones · 10 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-checklists)"></div><span>Checklists · 10 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-activos)"></div><span>Activos · 8 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-kpis)"></div><span>KPIs · 12 %</span></div>
+    <div class="sc2"><div class="swatch swatch--oscura" style="background-image:var(--tint-ia)"></div><span>IA · 16 % sobre grafito</span></div>
+  </div>
+
+  <h2>Cómo se eligió el azul de KPIs</h2>
+  <p class="nota">El único choque de la familia, y el registro de por qué <code>--module-kpis</code> acabó siendo
+  <code>#3FAFD6</code>. Incidencias queda fija a la izquierda; a su lado, las cinco variantes que se probaron.
+  <strong>A</strong> era el punto de partida (el azul de marca aclarado) y es indistinguible del vecino.
+  <strong>B</strong> separa, pero es el cian de movimiento, que no puede teñir nada.
+  <strong>C</strong> no es otro color: es el mismo más flojo, y parece un error de opacidad.
+  <strong>E</strong> lleva tres paradas y el tinte son dos.
+  <strong>D</strong> es la elegida: la mínima temperatura que se lee sin dejar de ser azul.</p>
+
+  <div class="rejilla">
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-incidencias)"></div><span>Incidencias · #0F68F4 10 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:linear-gradient(var(--tint-angle),rgba(90,150,255,.12) 0%,rgba(90,150,255,0) var(--tint-stop))"></div><span>A · #5A96FF 12 % (spec)</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:linear-gradient(var(--tint-angle),rgba(31,214,245,.12) 0%,rgba(31,214,245,0) var(--tint-stop))"></div><span>B · cian 12 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:linear-gradient(var(--tint-angle),rgba(15,104,244,.06) 0%,rgba(15,104,244,0) var(--tint-stop))"></div><span>C · mismo azul 6 %</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:var(--tint-kpis)"></div><span>D · #3FAFD6 12 % — elegida</span></div>
+    <div class="sc2"><div class="swatch" style="background-image:linear-gradient(var(--tint-angle),rgba(90,150,255,.12) 0%,rgba(31,214,245,.05) 55%,rgba(90,150,255,0) var(--tint-stop))"></div><span>E · frío con deriva cian</span></div>
+  </div>
+
+  <h2>Los seis, a color</h2>
+  <p class="nota">Reparto 4+4+4 dos veces, proporción 1:1 en todas. Uniformes a propósito: si las tarjetas
+  variaran de tamaño, la comparación sería de composición y no de color.</p>
+
+  <div class="rejilla">
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-incidencias)"></div><div class="titulo">Incidencias</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-acciones)"></div><div class="titulo">Acciones correctivas</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-checklists)"></div><div class="titulo">Checklists y registros</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-activos)"></div><div class="titulo">Activos</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-kpis)"></div><div class="titulo">KPIs y dashboards</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena escena--oscura"><div class="lienzo" style="background:var(--tint-ia)"></div><div class="titulo">Capa de IA</div><div class="frag"></div></div></div>
+  </div>
+  <p class="pie">De izquierda a derecha y de arriba abajo: azul · naranja · violeta · grafito · azul frío · morado sobre grafito.</p>
+
+  <h2>Los mismos, en gris</h2>
+  <p class="nota">Prueba de que el color no está haciendo un trabajo que le toca al contenido.
+  Si aquí las tarjetas se vuelven indistinguibles entre sí, el problema no es el tinte: es que los
+  fragmentos no dicen nada por su cuenta.</p>
+
+  <div class="rejilla gris">
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-incidencias)"></div><div class="titulo">Incidencias</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-acciones)"></div><div class="titulo">Acciones correctivas</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-checklists)"></div><div class="titulo">Checklists y registros</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-activos)"></div><div class="titulo">Activos</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-kpis)"></div><div class="titulo">KPIs y dashboards</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena escena--oscura"><div class="lienzo" style="background:var(--tint-ia)"></div><div class="titulo">Capa de IA</div><div class="frag"></div></div></div>
+  </div>
+
+  <h2>Control: IA sobre blanco</h2>
+  <p class="nota">La razón de la regla. A la izquierda, <code>--tint-ia</code> donde debe ir. A la derecha, el mismo
+  token sobre blanco: al 16 % deja de ser señal y pasa a ser un morado decorativo, que es exactamente
+  lo que el sistema no permite.</p>
+
+  <div class="rejilla">
+    <div class="sc"><div class="escena escena--oscura"><div class="lienzo" style="background:var(--tint-ia)"></div><div class="titulo">Capa de IA · correcto</div><div class="frag"></div></div></div>
+    <div class="sc"><div class="escena"><div class="lienzo" style="background:var(--tint-ia)"></div><div class="titulo">Capa de IA · prohibido</div><div class="frag"></div></div></div>
+  </div>
+
+</div>
+</body>
+</html>

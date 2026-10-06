@@ -8,13 +8,12 @@ Solved (de VOLTSTONE TECHNOLOGY SERVICES S.L., Valencia, España) digitaliza las
 - [Incidencias](https://trysolved.com/incidencias/): registra, asigna y resuelve incidencias en segundos, con responsable y cierre documentado.
 - [Registros y auditorías](https://trysolved.com/auditorias/): digitaliza controles, checklists y auditorías con plantillas rellenables desde el móvil.
 - [Tareas, acciones y no conformidades](https://trysolved.com/no-conformidades/): acciones correctivas, gestión de no conformidades y análisis de causa raíz con seguimiento hasta el cierre.
+- [Gestor documental](https://trysolved.com/gestor-documental/): procedimientos, fichas técnicas y certificados con su versión, su fecha de revisión, su fecha de expiración y su estado de validación (validado o pendiente de validación). Cada carpeta puede llevar su lista de documentos requeridos y avisa de los que faltan; vista de calendario por fecha de expiración.
+- [Gestión de activos](https://trysolved.com/gestion-de-activos/): cada máquina, línea o instalación con su ficha, su código QR y su historial — las incidencias, los registros y las acciones de ese equipo en un solo sitio. No es un GMAO: no lleva repuestos, ni costes, ni horas de mano de obra, y se integra con el GMAO si ya existe.
 - [KPIs y dashboards](https://trysolved.com/dashboard/): visión 360º en tiempo real de calidad y operaciones, con informes automáticos.
 
 ## Soluciones
-- [Software de APPCC](https://trysolved.com/software-appcc/): controles de puntos críticos, prerrequisitos y verificaciones registrados en planta, con evidencia.
-- [Software para ISO 22000](https://trysolved.com/software-iso-22000/): registros, PPR, no conformidades y auditoría interna con la evidencia que pide la norma (también FSSC 22000).
-- [Software para certificaciones](https://trysolved.com/software-certificaciones/): IFS, BRCGS, ISO 9001, FSSC 22000, ISO 14001 y 45001 con los mismos registros, la misma trazabilidad y la misma auditoría interna. Solved no trae los requisitos de la norma cargados: sostiene su ejecución y deja la evidencia.
-- [Homologación de proveedores](https://trysolved.com/homologacion-de-proveedores/): el gestor documental aplicado a proveedores — certificados con caducidad, fichas técnicas e incidencias de recepción en un expediente por proveedor. No es un módulo aparte.
+- [GMAO para mantenimiento](https://trysolved.com/software-gmao/): ficha y QR por equipo, avería enganchada al aviso que la abrió, preventivo programado como registro y KPIs por máquina. No es un GMAO completo — no lleva repuestos, ni costes, ni horas de mano de obra — y se integra con el GMAO que ya exista.
 
 ## Industrias
 - [Industria alimentaria](https://trysolved.com/industria-alimentaria/): control de calidad, APPCC y trazabilidad para fábricas de alimentación.

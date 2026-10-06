@@ -1,0 +1,1269 @@
+{
+  "Fallos e incidencias que se detectan tarde y no dejan rastro de su resolución.": {
+    "en": "Faults and incidents spotted late that leave no trace of how they were resolved.",
+    "fr": "Des défaillances et des incidents détectés tard et qui ne laissent aucune trace de leur résolution.",
+    "it": "Guasti e anomalie rilevati tardi e che non lasciano traccia della loro risoluzione.",
+    "de": "Fehler und Störungen, die zu spät auffallen und keine Spur ihrer Behebung hinterlassen.",
+    "pt": "Falhas e ocorrências detetadas tarde e que não deixam rasto da sua resolução."
+  },
+  "Mantenimientos mal planificados o ejecutados sin trazabilidad.": {
+    "en": "Maintenance badly planned or carried out with no traceability.",
+    "fr": "Des maintenances mal planifiées ou réalisées sans traçabilité.",
+    "it": "Manutenzioni mal pianificate o eseguite senza tracciabilità.",
+    "de": "Schlecht geplante oder ohne Nachvollziehbarkeit ausgeführte Instandhaltung.",
+    "pt": "Manutenções mal planeadas ou executadas sem rastreabilidade."
+  },
+  "Documentación crítica repartida en carpetas, sin control ni acceso sencillo.": {
+    "en": "Critical documents scattered across folders, uncontrolled and hard to reach.",
+    "fr": "Une documentation critique éparpillée dans des dossiers, sans contrôle ni accès simple.",
+    "it": "Documentazione critica sparsa in cartelle, senza controllo né accesso semplice.",
+    "de": "Kritische Dokumente über Ordner verstreut, ohne Lenkung und ohne einfachen Zugriff.",
+    "pt": "Documentação crítica dispersa em pastas, sem controlo nem acesso simples."
+  },
+  "Formación no estandarizada que depende de la experiencia del operario anterior.": {
+    "en": "Training that is not standardised and depends on the previous operator's experience.",
+    "fr": "Une formation non standardisée qui dépend de l'expérience de l'opérateur précédent.",
+    "it": "Formazione non standardizzata che dipende dall'esperienza dell'operatore precedente.",
+    "de": "Nicht standardisierte Einarbeitung, die von der Erfahrung des Vorgängers abhängt.",
+    "pt": "Formação não padronizada que depende da experiência do operador anterior."
+  },
+  "Un único sistema para coordinar la planta y estandarizar cada proceso": {
+    "en": "One system to coordinate the plant and standardise every process",
+    "fr": "Un seul système pour coordonner l'usine et standardiser chaque processus",
+    "it": "Un unico sistema per coordinare lo stabilimento e standardizzare ogni processo",
+    "de": "Ein einziges System, um das Werk zu koordinieren und jeden Prozess zu vereinheitlichen",
+    "pt": "Um único sistema para coordenar a fábrica e padronizar cada processo"
+  },
+  "Solved estructura las operaciones, reduce el error manual y sostiene la mejora continua en planta, sin depender de soportes en papel ni de desarrollos improvisados.": {
+    "en": "Solved gives operations a structure, cuts manual error and keeps continuous improvement going on the floor, without relying on paper or improvised builds.",
+    "fr": "Solved structure les opérations, réduit l'erreur manuelle et soutient l'amélioration continue en usine, sans dépendre du papier ni de développements improvisés.",
+    "it": "Solved struttura l'operatività, riduce l'errore manuale e sostiene il miglioramento continuo in stabilimento, senza dipendere dalla carta né da sviluppi improvvisati.",
+    "de": "Solved gibt dem Betrieb Struktur, senkt manuelle Fehler und trägt die kontinuierliche Verbesserung im Werk – ohne Papier und ohne improvisierte Eigenentwicklungen.",
+    "pt": "A Solved estrutura as operações, reduz o erro manual e sustenta a melhoria contínua na fábrica, sem depender de suportes em papel nem de desenvolvimentos improvisados."
+  },
+  "Registros digitales accesibles en tiempo real desde cualquier dispositivo.": {
+    "en": "Digital records available in real time from any device.",
+    "fr": "Des enregistrements numériques accessibles en temps réel depuis n'importe quel appareil.",
+    "it": "Registrazioni digitali accessibili in tempo reale da qualsiasi dispositivo.",
+    "de": "Digitale Aufzeichnungen, in Echtzeit von jedem Gerät abrufbar.",
+    "pt": "Registos digitais acessíveis em tempo real a partir de qualquer dispositivo."
+  },
+  "Gestión de incidencias con responsables, seguimiento y cierre documentado.": {
+    "en": "Incident management with owners, follow-up and a documented closure.",
+    "fr": "Une gestion des incidents avec responsables, suivi et clôture documentée.",
+    "it": "Gestione delle anomalie con responsabili, monitoraggio e chiusura documentata.",
+    "de": "Störungsmanagement mit Verantwortlichen, Nachverfolgung und dokumentiertem Abschluss.",
+    "pt": "Gestão de ocorrências com responsáveis, acompanhamento e encerramento documentado."
+  },
+  "Comunicación ágil entre equipos de producción, calidad, mantenimiento y prevención.": {
+    "en": "Quick communication between production, quality, maintenance and safety teams.",
+    "fr": "Une communication agile entre les équipes de production, qualité, maintenance et prévention.",
+    "it": "Comunicazione agile tra squadre di produzione, qualità, manutenzione e sicurezza.",
+    "de": "Schnelle Abstimmung zwischen Produktion, Qualität, Instandhaltung und Arbeitsschutz.",
+    "pt": "Comunicação ágil entre as equipas de produção, qualidade, manutenção e prevenção."
+  },
+  "Documentación ordenada y disponible para auditorías, inspecciones y análisis.": {
+    "en": "Documents in order and ready for audits, inspections and analysis.",
+    "fr": "Une documentation ordonnée et disponible pour les audits, les inspections et l'analyse.",
+    "it": "Documentazione ordinata e disponibile per audit, ispezioni e analisi.",
+    "de": "Geordnete Dokumentation, bereit für Audits, Inspektionen und Auswertungen.",
+    "pt": "Documentação organizada e disponível para auditorias, inspeções e análises."
+  },
+  "Capacitación integrada en el proceso: cada tarea guía al operario paso a paso.": {
+    "en": "Training built into the process: each task walks the operator through it step by step.",
+    "fr": "La formation intégrée au processus : chaque tâche guide l'opérateur pas à pas.",
+    "it": "Formazione integrata nel processo: ogni attività guida l'operatore passo dopo passo.",
+    "de": "Einarbeitung im Prozess: Jede Aufgabe führt den Werker Schritt für Schritt.",
+    "pt": "Formação integrada no processo: cada tarefa guia o operador passo a passo."
+  },
+  "Una planta de industria general": {
+    "en": "One manufacturing plant",
+    "fr": "Une usine de l'industrie manufacturière",
+    "it": "Uno stabilimento manifatturiero",
+    "de": "Ein Werk der Fertigungsindustrie",
+    "pt": "Uma fábrica de indústria geral"
+  },
+  "en producción con Solved": {
+    "en": "running on Solved",
+    "fr": "en production avec Solved",
+    "it": "in produzione con Solved",
+    "de": "im Produktivbetrieb mit Solved",
+    "pt": "em produção com a Solved"
+  },
+  "Prilux fabrica iluminación y gestiona cuatro unidades de negocio con un único departamento de calidad. Recorrió las tres fases habituales —papel, hoja de cálculo y sistema— e implantó Solved en 2024.": {
+    "en": "Prilux manufactures lighting and runs four business units with a single quality department. It went through the three usual stages — paper, spreadsheet and system — and rolled out Solved in 2024.",
+    "fr": "Prilux fabrique de l'éclairage et gère quatre unités d'affaires avec un seul service qualité. L'entreprise a traversé les trois phases habituelles — papier, tableur et système — et a déployé Solved en 2024.",
+    "it": "Prilux produce illuminazione e gestisce quattro unità di business con un unico reparto qualità. Ha attraversato le tre fasi consuete — carta, foglio di calcolo e sistema — e ha avviato Solved nel 2024.",
+    "de": "Prilux fertigt Beleuchtung und führt vier Geschäftsbereiche mit einer einzigen Qualitätsabteilung. Das Unternehmen durchlief die üblichen drei Phasen – Papier, Tabelle und System – und führte Solved 2024 ein.",
+    "pt": "A Prilux fabrica iluminação e gere quatro unidades de negócio com um único departamento de qualidade. Percorreu as três fases habituais — papel, folha de cálculo e sistema — e implementou a Solved em 2024."
+  },
+  "inspecciones de material de entrada al año": {
+    "en": "incoming material inspections a year",
+    "fr": "inspections de matériel entrant par an",
+    "it": "ispezioni di materiale in ingresso all'anno",
+    "de": "Wareneingangsprüfungen pro Jahr",
+    "pt": "inspeções de material de entrada por ano"
+  },
+  "unidades de negocio con casuísticas distintas": {
+    "en": "business units with different needs",
+    "fr": "unités d'affaires aux cas de figure différents",
+    "it": "unità di business con casistiche diverse",
+    "de": "Geschäftsbereiche mit unterschiedlichen Anforderungen",
+    "pt": "unidades de negócio com casuísticas distintas"
+  },
+  "el año en que dejaron el papel y el Excel": {
+    "en": "the year they left paper and Excel behind",
+    "fr": "l'année où ils ont abandonné le papier et Excel",
+    "it": "l'anno in cui hanno lasciato carta ed Excel",
+    "de": "das Jahr, in dem sie Papier und Excel hinter sich ließen",
+    "pt": "o ano em que deixaram o papel e o Excel"
+  },
+  "Móvil y tablet": {
+    "en": "Phone and tablet",
+    "fr": "Téléphone et tablette",
+    "it": "Telefono e tablet",
+    "de": "Smartphone und Tablet",
+    "pt": "Telemóvel e tablet"
+  },
+  "del operario de fábrica a dirección": {
+    "en": "from the shop-floor operator to management",
+    "fr": "de l'opérateur d'usine à la direction",
+    "it": "dall'operatore di fabbrica alla direzione",
+    "de": "vom Werker bis zur Geschäftsleitung",
+    "pt": "do operador de fábrica à direção"
+  },
+  "Prilux: del papel a la hoja de cálculo y de ahí al registro desde el móvil en toda la planta. Caso en vídeo.": {
+    "en": "Prilux: from paper to spreadsheet and from there to logging on a phone across the whole plant. Video case study.",
+    "fr": "Prilux : du papier au tableur, puis à la saisie sur téléphone dans toute l'usine. Cas en vidéo.",
+    "it": "Prilux: dalla carta al foglio di calcolo e da lì alla registrazione dal telefono in tutto lo stabilimento. Caso in video.",
+    "de": "Prilux: von Papier über die Tabelle bis zur Erfassung per Smartphone im ganzen Werk. Fallstudie als Video.",
+    "pt": "Prilux: do papel à folha de cálculo e daí ao registo pelo telemóvel em toda a fábrica. Caso em vídeo."
+  },
+  "Los controles de cada línea, en la tablet del turno": {
+    "en": "Each line's checks, on the shift tablet",
+    "fr": "Les contrôles de chaque ligne, sur la tablette du poste",
+    "it": "I controlli di ogni linea, sul tablet del turno",
+    "de": "Die Kontrollen jeder Linie auf dem Schicht-Tablet",
+    "pt": "Os controlos de cada linha, no tablet do turno"
+  },
+  "Metal, packaging, iluminación o varias líneas de negocio simultáneas: los mismos controles, cada uno con su pauta.": {
+    "en": "Metal, packaging, lighting or several business lines at once: the same checks, each with its own procedure.",
+    "fr": "Métal, emballage, éclairage ou plusieurs lignes d'activité en parallèle : les mêmes contrôles, chacun avec sa procédure.",
+    "it": "Metallo, packaging, illuminazione o più linee di business insieme: gli stessi controlli, ciascuno con la sua procedura.",
+    "de": "Metall, Verpackung, Beleuchtung oder mehrere Geschäftslinien gleichzeitig: dieselben Kontrollen, jede mit eigenem Verfahren.",
+    "pt": "Metal, embalagem, iluminação ou várias linhas de negócio em simultâneo: os mesmos controlos, cada um com o seu procedimento."
+  },
+  "Un control por línea, buscable por lote": {
+    "en": "One check per line, searchable by batch",
+    "fr": "Un contrôle par ligne, consultable par lot",
+    "it": "Un controllo per linea, ricercabile per lotto",
+    "de": "Eine Kontrolle je Linie, nach Charge durchsuchbar",
+    "pt": "Um controlo por linha, pesquisável por lote"
+  },
+  "Control de arranque · Línea 3": {
+    "en": "Start-up check · Line 3",
+    "fr": "Contrôle de démarrage · Ligne 3",
+    "it": "Controllo di avvio · Linea 3",
+    "de": "Anlaufkontrolle · Linie 3",
+    "pt": "Controlo de arranque · Linha 3"
+  },
+  "Pauta propia por línea": {
+    "en": "Its own procedure per line",
+    "fr": "Une procédure propre par ligne",
+    "it": "Procedura propria per linea",
+    "de": "Eigenes Verfahren je Linie",
+    "pt": "Procedimento próprio por linha"
+  },
+  "Turnos cubiertos": {
+    "en": "Shifts covered",
+    "fr": "Postes couverts",
+    "it": "Turni coperti",
+    "de": "Abgedeckte Schichten",
+    "pt": "Turnos cobertos"
+  },
+  "Buscar por lote": {
+    "en": "Search by batch",
+    "fr": "Rechercher par lot",
+    "it": "Cerca per lotto",
+    "de": "Nach Charge suchen",
+    "pt": "Pesquisar por lote"
+  },
+  "Al momento": {
+    "en": "Instantly",
+    "fr": "Instantanément",
+    "it": "Immediato",
+    "de": "Sofort",
+    "pt": "De imediato"
+  },
+  "Alcance inicial de la implantación": {
+    "en": "The rollout's initial scope",
+    "fr": "Périmètre initial du déploiement",
+    "it": "Perimetro iniziale dell'avvio",
+    "de": "Anfangsumfang der Einführung",
+    "pt": "Âmbito inicial da implementação"
+  },
+  "La implantación no requiere alcance total desde el inicio. Se selecciona el módulo más crítico —habitualmente incidencias— y el alcance se amplía después, sin migrar de sistema ni repetir la formación.": {
+    "en": "The rollout does not need full scope from the start. You pick the most critical module — usually incidents — and widen the scope later, without migrating systems or repeating the training.",
+    "fr": "Le déploiement n'exige pas un périmètre complet dès le départ. On choisit le module le plus critique — généralement les incidents — et on élargit ensuite, sans migrer de système ni refaire la formation.",
+    "it": "L'avvio non richiede il perimetro completo fin dall'inizio. Si sceglie il modulo più critico — di solito le anomalie — e il perimetro si amplia dopo, senza migrare di sistema né ripetere la formazione.",
+    "de": "Die Einführung braucht nicht von Anfang an den vollen Umfang. Man wählt das kritischste Modul – meist Störungen – und erweitert später, ohne Systemwechsel und ohne die Schulung zu wiederholen.",
+    "pt": "A implementação não exige âmbito total desde o início. Seleciona-se o módulo mais crítico — habitualmente ocorrências — e o âmbito alarga-se depois, sem migrar de sistema nem repetir a formação."
+  },
+  "Móvil, tablet y PC": {
+    "en": "Phone, tablet and PC",
+    "fr": "Téléphone, tablette et PC",
+    "it": "Telefono, tablet e PC",
+    "de": "Smartphone, Tablet und PC",
+    "pt": "Telemóvel, tablet e PC"
+  },
+  "se registra donde se trabaja": {
+    "en": "you log where you work",
+    "fr": "on enregistre là où l'on travaille",
+    "it": "si registra dove si lavora",
+    "de": "erfasst wird dort, wo gearbeitet wird",
+    "pt": "regista-se onde se trabalha"
+  },
+  "API abierta": {
+    "en": "Open API",
+    "fr": "API ouverte",
+    "it": "API aperta",
+    "de": "Offene API",
+    "pt": "API aberta"
+  },
+  "si el sistema no figura en el catálogo": {
+    "en": "if your system is not in the catalogue",
+    "fr": "si le système ne figure pas au catalogue",
+    "it": "se il sistema non è nel catalogo",
+    "de": "falls Ihr System nicht im Katalog steht",
+    "pt": "se o sistema não constar do catálogo"
+  },
+  "El control se firma en el punto de ejecución y un resultado KO genera la incidencia automáticamente.": {
+    "en": "The check is signed where it is carried out and a KO result raises the incident automatically.",
+    "fr": "Le contrôle est signé au point d'exécution et un résultat KO crée l'incident automatiquement.",
+    "it": "Il controllo si firma nel punto di esecuzione e un esito KO genera l'anomalia automaticamente.",
+    "de": "Die Kontrolle wird am Ausführungsort unterschrieben, und ein KO-Ergebnis erzeugt die Störung automatisch.",
+    "pt": "O controlo é assinado no ponto de execução e um resultado KO gera a ocorrência automaticamente."
+  },
+  "— registro en la línea, con evidencia y responsable, sin pasar por la oficina.": {
+    "en": "— logged at the line, with evidence and an owner, without going through the office.",
+    "fr": "— saisie sur la ligne, avec preuve et responsable, sans passer par le bureau.",
+    "it": "— registrazione in linea, con evidenza e responsabile, senza passare dall'ufficio.",
+    "de": "— an der Linie erfasst, mit Nachweis und Verantwortlichem, ohne Umweg über das Büro.",
+    "pt": "— registo na linha, com evidência e responsável, sem passar pelo escritório."
+  },
+  "— controles y checklists digitalizados, con respuestas acotadas y evidencia firmada.": {
+    "en": "— digitised checks and checklists, with bounded answers and signed evidence.",
+    "fr": "— contrôles et checklists numérisés, avec réponses fermées et preuve signée.",
+    "it": "— controlli e checklist digitalizzati, con risposte chiuse ed evidenza firmata.",
+    "de": "— digitalisierte Kontrollen und Checklisten, mit festen Antworten und unterschriebenem Nachweis.",
+    "pt": "— controlos e checklists digitalizados, com respostas fechadas e evidência assinada."
+  },
+  "— cada desviación deriva en una tarea con responsable y fecha de cierre.": {
+    "en": "— every deviation turns into a task with an owner and a closing date.",
+    "fr": "— chaque écart donne lieu à une tâche avec responsable et date de clôture.",
+    "it": "— ogni deviazione genera un'attività con responsabile e data di chiusura.",
+    "de": "— jede Abweichung wird zur Aufgabe mit Verantwortlichem und Abschlusstermin.",
+    "pt": "— cada desvio origina uma tarefa com responsável e data de encerramento."
+  },
+  "— el cuadro de mando que genera la propia operación, sin volcados manuales.": {
+    "en": "— the dashboard the work itself produces, with no manual dumps.",
+    "fr": "— le tableau de bord que génère l'exploitation elle-même, sans transferts manuels.",
+    "it": "— il cruscotto che genera l'operatività stessa, senza travasi manuali.",
+    "de": "— das Dashboard, das der Betrieb selbst erzeugt, ohne manuelle Übertragungen.",
+    "pt": "— o painel de controlo que a própria operação gera, sem transferências manuais."
+  },
+  "Referencias: equipos de planta que ya utilizan Solved": {
+    "en": "References: plant teams already using Solved",
+    "fr": "Références : des équipes d'usine qui utilisent déjà Solved",
+    "it": "Referenze: squadre di stabilimento che già usano Solved",
+    "de": "Referenzen: Werksteams, die Solved bereits nutzen",
+    "pt": "Referências: equipas de fábrica que já utilizam a Solved"
+  },
+  "Ver el caso de Prilux en vídeo →": {
+    "en": "Watch the Prilux case study →",
+    "fr": "Voir le cas Prilux en vidéo →",
+    "it": "Guarda il caso Prilux in video →",
+    "de": "Fallstudie Prilux als Video →",
+    "pt": "Ver o caso da Prilux em vídeo →"
+  },
+  "¿Para qué sectores industriales sirve Solved?": {
+    "en": "Which industrial sectors is Solved for?",
+    "fr": "À quels secteurs industriels Solved s'adresse-t-il ?",
+    "it": "Per quali settori industriali serve Solved?",
+    "de": "Für welche Industriebranchen eignet sich Solved?",
+    "pt": "Para que setores industriais serve a Solved?"
+  },
+  "Para fabricación, químico, packaging, metal y cualquier industria que necesite estandarizar y digitalizar sus procesos de calidad.": {
+    "en": "For manufacturing, chemicals, packaging, metal and any industry that needs to standardise and digitise its quality processes.",
+    "fr": "Pour la fabrication, la chimie, l'emballage, le métal et toute industrie devant standardiser et numériser ses processus qualité.",
+    "it": "Per manifattura, chimico, packaging, metallo e qualsiasi industria che debba standardizzare e digitalizzare i propri processi di qualità.",
+    "de": "Für Fertigung, Chemie, Verpackung, Metall und jede Branche, die ihre Qualitätsprozesse vereinheitlichen und digitalisieren muss.",
+    "pt": "Para fabrico, química, embalagem, metal e qualquer indústria que precise de padronizar e digitalizar os seus processos de qualidade."
+  },
+  "¿Estandariza procesos entre plantas y equipos?": {
+    "en": "Does it standardise processes across plants and teams?",
+    "fr": "Standardise-t-il les processus entre usines et équipes ?",
+    "it": "Standardizza i processi tra stabilimenti e squadre?",
+    "de": "Vereinheitlicht es Prozesse über Werke und Teams hinweg?",
+    "pt": "Padroniza processos entre fábricas e equipas?"
+  },
+  "Sí. Solved unifica procedimientos y checklists para que todos los equipos trabajen con el mismo estándar.": {
+    "en": "Yes. Solved unifies procedures and checklists so every team works to the same standard.",
+    "fr": "Oui. Solved unifie procédures et checklists pour que toutes les équipes travaillent selon le même standard.",
+    "it": "Sì. Solved unifica procedure e checklist perché tutte le squadre lavorino con lo stesso standard.",
+    "de": "Ja. Solved vereinheitlicht Verfahren und Checklisten, damit alle Teams nach demselben Standard arbeiten.",
+    "pt": "Sim. A Solved unifica procedimentos e checklists para que todas as equipas trabalhem com o mesmo padrão."
+  },
+  "¿Se integra con los sistemas que ya uso?": {
+    "en": "Does it integrate with the systems I already use?",
+    "fr": "S'intègre-t-il aux systèmes que j'utilise déjà ?",
+    "it": "Si integra con i sistemi che già uso?",
+    "de": "Lässt es sich in meine bestehenden Systeme integrieren?",
+    "pt": "Integra-se com os sistemas que já uso?"
+  },
+  "Sí. Se conecta con el ERP, el MES y el GMAO ya implantados para centralizar la información sin duplicar datos.": {
+    "en": "Yes. It connects to the ERP, MES and CMMS already in place to bring information together without duplicating data.",
+    "fr": "Oui. Il se connecte à l'ERP, au MES et à la GMAO déjà en place pour centraliser l'information sans dupliquer les données.",
+    "it": "Sì. Si collega a ERP, MES e CMMS già in uso per centralizzare le informazioni senza duplicare i dati.",
+    "de": "Ja. Es verbindet sich mit vorhandenem ERP, MES und Instandhaltungssystem, um Informationen zu bündeln, ohne Daten zu duplizieren.",
+    "pt": "Sim. Liga-se ao ERP, ao MES e ao GMAO já implementados para centralizar a informação sem duplicar dados."
+  },
+  "¿Reduce errores y mejora la visibilidad?": {
+    "en": "Does it cut errors and improve visibility?",
+    "fr": "Réduit-il les erreurs et améliore-t-il la visibilité ?",
+    "it": "Riduce gli errori e migliora la visibilità?",
+    "de": "Senkt es Fehler und verbessert die Transparenz?",
+    "pt": "Reduz erros e melhora a visibilidade?"
+  },
+  "Sí. La digitalización de registros e incidencias reduce el error manual y aporta visibilidad en tiempo real de toda la operación.": {
+    "en": "Yes. Digitising records and incidents cuts manual error and gives real-time visibility of the whole operation.",
+    "fr": "Oui. La numérisation des enregistrements et des incidents réduit l'erreur manuelle et donne une visibilité en temps réel sur toute l'exploitation.",
+    "it": "Sì. La digitalizzazione di registrazioni e anomalie riduce l'errore manuale e dà visibilità in tempo reale su tutta l'operatività.",
+    "de": "Ja. Die Digitalisierung von Aufzeichnungen und Störungen senkt manuelle Fehler und schafft Transparenz über den gesamten Betrieb in Echtzeit.",
+    "pt": "Sim. A digitalização de registos e ocorrências reduz o erro manual e proporciona visibilidade em tempo real de toda a operação."
+  },
+  "Mecánico de taller consultando el parte en el móvil": {
+    "en": "A workshop mechanic checking the report on a phone",
+    "fr": "Un mécanicien d'atelier consulte le rapport sur son téléphone",
+    "it": "Un meccanico d'officina consulta il rapporto sul telefono",
+    "de": "Ein Werkstattmechaniker liest die Meldung auf dem Smartphone",
+    "pt": "Mecânico de oficina a consultar a parte no telemóvel"
+  },
+  "Dos técnicas de planta revisando un control junto a los tanques de proceso": {
+    "en": "Two plant technicians reviewing a check beside the process tanks",
+    "fr": "Deux techniciennes d'usine examinent un contrôle près des cuves de process",
+    "it": "Due tecniche di stabilimento rivedono un controllo accanto ai serbatoi di processo",
+    "de": "Zwei Werkstechnikerinnen prüfen eine Kontrolle neben den Prozesstanks",
+    "pt": "Duas técnicas de fábrica a rever um controlo junto aos tanques de processo"
+  },
+  "Software de planta para industria alimentaria · Solved": {
+    "en": "Plant software for the food industry · Solved",
+    "fr": "Logiciel d'usine pour l'industrie agroalimentaire · Solved",
+    "it": "Software di stabilimento per l'industria alimentare · Solved",
+    "de": "Werkssoftware für die Lebensmittelindustrie · Solved",
+    "pt": "Software de fábrica para a indústria alimentar · Solved"
+  },
+  "Registros de APPCC, controles de proceso y trazabilidad de lote en el móvil de planta. La documentación de IFS o BRC, generada en la propia línea de producción.": {
+    "en": "HACCP records, process checks and batch traceability on the shop-floor phone. The IFS or BRC paperwork, produced on the production line itself.",
+    "fr": "Enregistrements HACCP, contrôles de procédé et traçabilité de lot sur le téléphone de l'usine. La documentation IFS ou BRC, produite sur la ligne de production elle-même.",
+    "it": "Registrazioni HACCP, controlli di processo e tracciabilità di lotto sul telefono di stabilimento. La documentazione IFS o BRC, generata sulla linea di produzione stessa.",
+    "de": "HACCP-Aufzeichnungen, Prozesskontrollen und Chargenrückverfolgbarkeit auf dem Werks-Smartphone. Die IFS- oder BRC-Unterlagen entstehen direkt an der Produktionslinie.",
+    "pt": "Registos de HACCP, controlos de processo e rastreabilidade de lote no telemóvel de fábrica. A documentação de IFS ou BRC, gerada na própria linha de produção."
+  },
+  "Industria alimentaria": {
+    "en": "Food industry",
+    "fr": "Industrie agroalimentaire",
+    "it": "Industria alimentare",
+    "de": "Lebensmittelindustrie",
+    "pt": "Indústria alimentar"
+  },
+  "Controla el APPCC de tu planta desde el móvil": {
+    "en": "Run your plant's HACCP from a phone",
+    "fr": "Pilotez le HACCP de votre usine depuis le téléphone",
+    "it": "Controlla l'HACCP del tuo stabilimento dal telefono",
+    "de": "Steuern Sie das HACCP Ihres Werks per Smartphone",
+    "pt": "Controle o HACCP da sua fábrica a partir do telemóvel"
+  },
+  "y llega a la auditoría de IFS o BRC con los registros hechos.": {
+    "en": "and reach the IFS or BRC audit with the records already done.",
+    "fr": "et arrivez à l'audit IFS ou BRC avec les enregistrements déjà faits.",
+    "it": "e arriva all'audit IFS o BRC con le registrazioni già fatte.",
+    "de": "und kommen Sie mit fertigen Aufzeichnungen ins IFS- oder BRC-Audit.",
+    "pt": "e chegue à auditoria de IFS ou BRC com os registos feitos."
+  },
+  "APPCC, controles de proceso y trazabilidad de lote, en el móvil de planta. Cuando llega la auditoría, los registros ya están rellenados, firmados y revisados.": {
+    "en": "HACCP, process checks and batch traceability, on the shop-floor phone. By the time the audit arrives, the records are filled in, signed and reviewed.",
+    "fr": "HACCP, contrôles de procédé et traçabilité de lot, sur le téléphone de l'usine. Quand l'audit arrive, les enregistrements sont déjà remplis, signés et révisés.",
+    "it": "HACCP, controlli di processo e tracciabilità di lotto, sul telefono di stabilimento. Quando arriva l'audit, le registrazioni sono già compilate, firmate e riviste.",
+    "de": "HACCP, Prozesskontrollen und Chargenrückverfolgbarkeit auf dem Werks-Smartphone. Wenn das Audit kommt, sind die Aufzeichnungen ausgefüllt, unterschrieben und geprüft.",
+    "pt": "HACCP, controlos de processo e rastreabilidade de lote, no telemóvel de fábrica. Quando chega a auditoria, os registos já estão preenchidos, assinados e revistos."
+  },
+  "Ineficiencias que consumen horas de turno": {
+    "en": "Inefficiencies that eat up shift hours",
+    "fr": "Des inefficacités qui consomment des heures de poste",
+    "it": "Inefficienze che consumano ore di turno",
+    "de": "Ineffizienzen, die Schichtstunden verschlingen",
+    "pt": "Ineficiências que consomem horas de turno"
+  },
+  "Las operaciones en planta requieren agilidad, coordinación y datos fiables. Sin una solución digital útil y adaptada a la operativa diaria, los procesos se vuelven lentos, propensos a errores y difíciles de auditar.": {
+    "en": "Plant operations need speed, coordination and reliable data. Without a digital tool that is useful and fits the daily routine, processes turn slow, error-prone and hard to audit.",
+    "fr": "Les opérations en usine exigent agilité, coordination et données fiables. Sans une solution numérique utile et adaptée au quotidien, les processus deviennent lents, propices aux erreurs et difficiles à auditer.",
+    "it": "L'operatività di stabilimento richiede agilità, coordinamento e dati affidabili. Senza una soluzione digitale utile e adatta al lavoro quotidiano, i processi diventano lenti, esposti a errori e difficili da verificare.",
+    "de": "Werksabläufe brauchen Tempo, Abstimmung und verlässliche Daten. Ohne ein digitales Werkzeug, das nützlich ist und zum Alltag passt, werden Prozesse langsam, fehleranfällig und schwer prüfbar.",
+    "pt": "As operações na fábrica exigem agilidade, coordenação e dados fiáveis. Sem uma solução digital útil e adaptada à operativa diária, os processos tornam-se lentos, propensos a erros e difíceis de auditar."
+  },
+  "Los registros en papel no se revisan a tiempo, lo que genera retrasos en la toma de decisiones.": {
+    "en": "Paper records are not reviewed in time, which delays decisions.",
+    "fr": "Les enregistrements papier ne sont pas révisés à temps, ce qui retarde les décisions.",
+    "it": "Le registrazioni su carta non si rivedono in tempo, il che ritarda le decisioni.",
+    "de": "Papieraufzeichnungen werden nicht rechtzeitig geprüft, was Entscheidungen verzögert.",
+    "pt": "Os registos em papel não são revistos a tempo, o que gera atrasos na tomada de decisões."
+  },
+  "Las incidencias se comunican de forma informal, sin trazabilidad ni responsables definidos.": {
+    "en": "Incidents are passed on informally, with no traceability and no named owners.",
+    "fr": "Les incidents se communiquent de façon informelle, sans traçabilité ni responsables définis.",
+    "it": "Le anomalie si comunicano in modo informale, senza tracciabilità né responsabili definiti.",
+    "de": "Störungen werden informell weitergegeben, ohne Nachvollziehbarkeit und ohne benannte Verantwortliche.",
+    "pt": "As ocorrências comunicam-se de forma informal, sem rastreabilidade nem responsáveis definidos."
+  },
+  "Los controles de limpieza y de puntos críticos (CCPs) carecen de evidencia digital de ejecución.": {
+    "en": "Cleaning and critical control point (CCP) checks have no digital evidence that they were done.",
+    "fr": "Les contrôles de nettoyage et des points critiques (CCP) n'ont pas de preuve numérique d'exécution.",
+    "it": "I controlli di pulizia e dei punti critici (CCP) non hanno evidenza digitale di esecuzione.",
+    "de": "Reinigungs- und CCP-Kontrollen haben keinen digitalen Ausführungsnachweis.",
+    "pt": "Os controlos de limpeza e de pontos críticos (CCP) carecem de evidência digital de execução."
+  },
+  "Por otro lado, la preparación de auditorías resulta compleja y dispersa, basada en múltiples documentos.": {
+    "en": "On top of that, preparing for audits is complex and scattered across many documents.",
+    "fr": "Par ailleurs, la préparation des audits est complexe et dispersée entre de multiples documents.",
+    "it": "Inoltre, la preparazione degli audit è complessa e dispersa tra molti documenti.",
+    "de": "Hinzu kommt: Die Auditvorbereitung ist aufwendig und über viele Dokumente verstreut.",
+    "pt": "Além disso, a preparação de auditorias é complexa e dispersa, assente em múltiplos documentos."
+  },
+  "Asimismo, la formación operativa depende demasiado del conocimiento de personas clave.": {
+    "en": "And operational training leans too heavily on what a few key people know.",
+    "fr": "De plus, la formation opérationnelle dépend trop du savoir de quelques personnes clés.",
+    "it": "Inoltre, la formazione operativa dipende troppo dalla conoscenza di poche persone chiave.",
+    "de": "Zudem hängt die betriebliche Einarbeitung zu stark am Wissen einzelner Schlüsselpersonen.",
+    "pt": "Do mesmo modo, a formação operacional depende demasiado do conhecimento de pessoas-chave."
+  },
+  "Registra, controla y mejora": {
+    "en": "Record, control and improve",
+    "fr": "Enregistrez, contrôlez et améliorez",
+    "it": "Registra, controlla e migliora",
+    "de": "Erfassen, kontrollieren und verbessern",
+    "pt": "Registe, controle e melhore"
+  },
+  "sin salir de la línea.": {
+    "en": "without leaving the line.",
+    "fr": "sans quitter la ligne.",
+    "it": "senza uscire dalla linea.",
+    "de": "ohne die Linie zu verlassen.",
+    "pt": "sem sair da linha."
+  },
+  "Solved centraliza la información operativa de planta: qué ocurre, cuándo ocurre y quién lo ejecuta, en soporte digital, accesible y trazable.": {
+    "en": "Solved brings the plant's operational information together: what happens, when it happens and who does it, in a digital form that is accessible and traceable.",
+    "fr": "Solved centralise l'information opérationnelle de l'usine : ce qui se passe, quand et qui l'exécute, sur un support numérique, accessible et traçable.",
+    "it": "Solved centralizza le informazioni operative dello stabilimento: cosa accade, quando accade e chi lo esegue, in forma digitale, accessibile e tracciabile.",
+    "de": "Solved bündelt die betrieblichen Informationen des Werks: was passiert, wann es passiert und wer es tut – digital, zugänglich und nachvollziehbar.",
+    "pt": "A Solved centraliza a informação operativa da fábrica: o que acontece, quando acontece e quem o executa, em suporte digital, acessível e rastreável."
+  },
+  "Gestión rápida y trazable de incidencias, con responsables asignados.": {
+    "en": "Fast, traceable incident handling with owners assigned.",
+    "fr": "Une gestion rapide et traçable des incidents, avec responsables assignés.",
+    "it": "Gestione rapida e tracciabile delle anomalie, con responsabili assegnati.",
+    "de": "Schnelle, nachvollziehbare Störungsbearbeitung mit zugewiesenen Verantwortlichen.",
+    "pt": "Gestão rápida e rastreável de ocorrências, com responsáveis atribuídos."
+  },
+  "Comunicación fluida entre calidad, producción y mantenimiento.": {
+    "en": "Smooth communication between quality, production and maintenance.",
+    "fr": "Une communication fluide entre qualité, production et maintenance.",
+    "it": "Comunicazione fluida tra qualità, produzione e manutenzione.",
+    "de": "Reibungslose Abstimmung zwischen Qualität, Produktion und Instandhaltung.",
+    "pt": "Comunicação fluida entre qualidade, produção e manutenção."
+  },
+  "Formación práctica integrada en los registros, sin necesidad de repetir procesos.": {
+    "en": "Hands-on training built into the records, with no need to repeat processes.",
+    "fr": "Une formation pratique intégrée aux enregistrements, sans avoir à répéter les processus.",
+    "it": "Formazione pratica integrata nelle registrazioni, senza dover ripetere i processi.",
+    "de": "Praxisnahe Einarbeitung in den Aufzeichnungen, ohne Prozesse wiederholen zu müssen.",
+    "pt": "Formação prática integrada nos registos, sem necessidade de repetir processos."
+  },
+  "Auditorías más simples, con toda la documentación en un solo lugar.": {
+    "en": "Simpler audits, with all the paperwork in one place.",
+    "fr": "Des audits plus simples, avec toute la documentation au même endroit.",
+    "it": "Audit più semplici, con tutta la documentazione in un solo posto.",
+    "de": "Einfachere Audits, mit der gesamten Dokumentation an einem Ort.",
+    "pt": "Auditorias mais simples, com toda a documentação num só lugar."
+  },
+  "Generación automática de documentos: reclamaciones a proveedor, informes y reportes.": {
+    "en": "Documents generated automatically: supplier claims, reports and summaries.",
+    "fr": "Génération automatique de documents : réclamations fournisseurs, rapports et comptes rendus.",
+    "it": "Generazione automatica di documenti: reclami al fornitore, report e resoconti.",
+    "de": "Automatisch erzeugte Dokumente: Lieferantenreklamationen, Berichte und Auswertungen.",
+    "pt": "Geração automática de documentos: reclamações a fornecedores, relatórios e reportes."
+  },
+  "El registro se ejecuta en la línea, no en la oficina": {
+    "en": "The record is made at the line, not in the office",
+    "fr": "L'enregistrement se fait sur la ligne, pas au bureau",
+    "it": "La registrazione si fa in linea, non in ufficio",
+    "de": "Erfasst wird an der Linie, nicht im Büro",
+    "pt": "O registo faz-se na linha, não no escritório"
+  },
+  "El registro debe poder ejecutarse a pie de máquina y con guantes: si exige un puesto de ordenador, la incidencia no llega a registrarse.": {
+    "en": "Logging has to work at the machine and with gloves on: if it needs a desktop, the incident never gets logged.",
+    "fr": "La saisie doit pouvoir se faire au pied de la machine et avec des gants : si elle exige un poste informatique, l'incident n'est jamais enregistré.",
+    "it": "La registrazione deve poter avvenire a bordo macchina e con i guanti: se richiede una postazione PC, l'anomalia non viene registrata.",
+    "de": "Erfassen muss an der Maschine und mit Handschuhen gehen: Verlangt es einen PC-Arbeitsplatz, wird die Störung nie erfasst.",
+    "pt": "O registo tem de poder ser feito junto à máquina e com luvas: se exigir um posto de computador, a ocorrência acaba por não ser registada."
+  },
+  "El parte, desde el móvil de la línea": {
+    "en": "The report, from the phone at the line",
+    "fr": "Le rapport, depuis le téléphone de la ligne",
+    "it": "Il rapporto, dal telefono di linea",
+    "de": "Die Meldung vom Smartphone an der Linie",
+    "pt": "A parte, a partir do telemóvel da linha"
+  },
+  "Creada desde el móvil · 14:07": {
+    "en": "Created on the phone · 14:07",
+    "fr": "Créé depuis le téléphone · 14:07",
+    "it": "Creata dal telefono · 14:07",
+    "de": "Am Smartphone angelegt · 14:07",
+    "pt": "Criada a partir do telemóvel · 14:07"
+  },
+  "UTD26_164_001 · Temperatura fuera de rango": {
+    "en": "UTD26_164_001 · Temperature out of range",
+    "fr": "UTD26_164_001 · Température hors plage",
+    "it": "UTD26_164_001 · Temperatura fuori range",
+    "de": "UTD26_164_001 · Temperatur außerhalb des Bereichs",
+    "pt": "UTD26_164_001 · Temperatura fora do intervalo"
+  },
+  "Cámara 2 · turno de tarde": {
+    "en": "Cold room 2 · afternoon shift",
+    "fr": "Chambre 2 · poste d'après-midi",
+    "it": "Cella 2 · turno pomeriggio",
+    "de": "Kühlraum 2 · Spätschicht",
+    "pt": "Câmara 2 · turno da tarde"
+  },
+  "2 fotos": {
+    "en": "2 photos",
+    "fr": "2 photos",
+    "it": "2 foto",
+    "de": "2 Fotos",
+    "pt": "2 fotos"
+  },
+  "Dos plantas de alimentación": {
+    "en": "Two food plants",
+    "fr": "Deux usines agroalimentaires",
+    "it": "Due stabilimenti alimentari",
+    "de": "Zwei Lebensmittelwerke",
+    "pt": "Duas fábricas alimentares"
+  },
+  "Una industria cárnica con más de cuarenta años de actividad y una panificadora que ha pasado de dos a cinco centros. Distinto producto, mismo punto de partida: la información de planta no se consolidaba en ningún sistema.": {
+    "en": "A meat processor with more than forty years behind it and a bakery that has gone from two sites to five. Different product, same starting point: plant information was not coming together in any system.",
+    "fr": "Une entreprise de viande forte de plus de quarante ans d'activité et une boulangerie industrielle passée de deux à cinq sites. Produit différent, même point de départ : l'information d'usine ne se consolidait dans aucun système.",
+    "it": "Un'azienda carnea con oltre quarant'anni di attività e un panificio industriale passato da due a cinque centri. Prodotto diverso, stesso punto di partenza: le informazioni di stabilimento non si consolidavano in nessun sistema.",
+    "de": "Ein Fleischverarbeiter mit über vierzig Jahren Geschichte und eine Großbäckerei, die von zwei auf fünf Standorte gewachsen ist. Anderes Produkt, gleicher Ausgangspunkt: Die Werksinformationen liefen in keinem System zusammen.",
+    "pt": "Uma indústria de carnes com mais de quarenta anos de atividade e uma padaria industrial que passou de dois a cinco centros. Produto diferente, mesmo ponto de partida: a informação de fábrica não se consolidava em nenhum sistema."
+  },
+  "2 h/día": {
+    "en": "2 h/day",
+    "fr": "2 h/jour",
+    "it": "2 h/giorno",
+    "de": "2 Std./Tag",
+    "pt": "2 h/dia"
+  },
+  "dedicadas al registro manual de incidencias": {
+    "en": "spent logging incidents by hand",
+    "fr": "consacrées à la saisie manuelle des incidents",
+    "it": "dedicate alla registrazione manuale delle anomalie",
+    "de": "für das manuelle Erfassen von Störungen",
+    "pt": "dedicadas ao registo manual de ocorrências"
+  },
+  "módulos unificados en un sistema": {
+    "en": "modules unified in one system",
+    "fr": "modules unifiés dans un système",
+    "it": "moduli unificati in un sistema",
+    "de": "Module in einem System vereint",
+    "pt": "módulos unificados num sistema"
+  },
+  "Día cero": {
+    "en": "Day zero",
+    "fr": "Jour zéro",
+    "it": "Giorno zero",
+    "de": "Tag null",
+    "pt": "Dia zero"
+  },
+  "desde el alta del usuario ya se registra": {
+    "en": "logging starts the moment the user is created",
+    "fr": "la saisie commence dès la création de l'utilisateur",
+    "it": "si registra già dalla creazione dell'utente",
+    "de": "Erfasst wird ab dem Anlegen des Benutzers",
+    "pt": "desde a criação do utilizador já se regista"
+  },
+  "Carnavi: dos horas diarias dedicadas al registro manual de incidencias.": {
+    "en": "Carnavi: two hours a day spent logging incidents by hand.",
+    "fr": "Carnavi : deux heures par jour consacrées à la saisie manuelle des incidents.",
+    "it": "Carnavi: due ore al giorno dedicate alla registrazione manuale delle anomalie.",
+    "de": "Carnavi: zwei Stunden täglich für das manuelle Erfassen von Störungen.",
+    "pt": "Carnavi: duas horas diárias dedicadas ao registo manual de ocorrências."
+  },
+  "Panificadora Alcalá: del registro en papel a cinco plantas sobre un único sistema.": {
+    "en": "Panificadora Alcalá: from paper records to five plants on a single system.",
+    "fr": "Panificadora Alcalá : de l'enregistrement papier à cinq usines sur un seul système.",
+    "it": "Panificadora Alcalá: dalla registrazione su carta a cinque stabilimenti su un unico sistema.",
+    "de": "Panificadora Alcalá: von Papieraufzeichnungen zu fünf Werken auf einem einzigen System.",
+    "pt": "Panificadora Alcalá: do registo em papel a cinco fábricas sobre um único sistema."
+  },
+  "Aplicaciones específicas": {
+    "en": "Specific applications",
+    "fr": "Applications spécifiques",
+    "it": "Applicazioni specifiche",
+    "de": "Konkrete Anwendungen",
+    "pt": "Aplicações específicas"
+  },
+  "Cuatro aplicaciones de Solved en planta alimentaria, con su alcance respectivo.": {
+    "en": "Four uses of Solved in a food plant, each with its own scope.",
+    "fr": "Quatre applications de Solved en usine agroalimentaire, chacune avec son périmètre.",
+    "it": "Quattro applicazioni di Solved in stabilimento alimentare, ciascuna con il proprio perimetro.",
+    "de": "Vier Einsätze von Solved im Lebensmittelwerk, jeweils mit eigenem Umfang.",
+    "pt": "Quatro aplicações da Solved em fábrica alimentar, cada uma com o seu âmbito."
+  },
+  "controles de puntos críticos, prerrequisitos y verificaciones registrados en planta, con hora, responsable y evidencia.": {
+    "en": "critical control points, prerequisites and verifications logged on the floor, with time, owner and evidence.",
+    "fr": "points critiques, prérequis et vérifications enregistrés en usine, avec heure, responsable et preuve.",
+    "it": "punti critici, prerequisiti e verifiche registrati in stabilimento, con ora, responsabile ed evidenza.",
+    "de": "kritische Lenkungspunkte, Basisvoraussetzungen und Verifizierungen im Werk erfasst – mit Uhrzeit, Verantwortlichem und Nachweis.",
+    "pt": "controlos de pontos críticos, pré-requisitos e verificações registados na fábrica, com hora, responsável e evidência."
+  },
+  "Software de APPCC:": {
+    "en": "HACCP software:",
+    "fr": "Logiciel HACCP :",
+    "it": "Software HACCP:",
+    "de": "HACCP-Software:",
+    "pt": "Software de HACCP:"
+  },
+  "Ver software de APPCC →": {
+    "en": "See HACCP software →",
+    "fr": "Voir le logiciel HACCP →",
+    "it": "Vedi il software HACCP →",
+    "de": "Zur HACCP-Software →",
+    "pt": "Ver software de HACCP →"
+  },
+  "APPCC:": {
+    "en": "HACCP:",
+    "fr": "HACCP :",
+    "it": "HACCP:",
+    "de": "HACCP:",
+    "pt": "HACCP:"
+  },
+  "la evidencia que pide la norma, generada en planta — registros, prerrequisitos, no conformidades y auditoría interna.": {
+    "en": "the evidence the standard asks for, produced on the floor — records, prerequisites, non-conformities and internal audit.",
+    "fr": "la preuve exigée par la norme, produite en usine — enregistrements, prérequis, non-conformités et audit interne.",
+    "it": "l'evidenza che chiede la norma, generata in stabilimento — registrazioni, prerequisiti, non conformità e audit interno.",
+    "de": "der von der Norm geforderte Nachweis, im Werk erzeugt – Aufzeichnungen, Basisvoraussetzungen, Abweichungen und internes Audit.",
+    "pt": "a evidência que a norma exige, gerada na fábrica — registos, pré-requisitos, não conformidades e auditoria interna."
+  },
+  "Software para ISO 22000:": {
+    "en": "ISO 22000 software:",
+    "fr": "Logiciel pour ISO 22000 :",
+    "it": "Software per ISO 22000:",
+    "de": "Software für ISO 22000:",
+    "pt": "Software para ISO 22000:"
+  },
+  "ISO 22000:": {
+    "en": "ISO 22000:",
+    "fr": "ISO 22000 :",
+    "it": "ISO 22000:",
+    "de": "ISO 22000:",
+    "pt": "ISO 22000:"
+  },
+  "Ver software para ISO 22000 →": {
+    "en": "See ISO 22000 software →",
+    "fr": "Voir le logiciel pour ISO 22000 →",
+    "it": "Vedi il software per ISO 22000 →",
+    "de": "Zur Software für ISO 22000 →",
+    "pt": "Ver software para ISO 22000 →"
+  },
+  "IFS, BRCGS, ISO 9001 y FSSC 22000 con los mismos registros y la misma trazabilidad, hechos una sola vez.": {
+    "en": "IFS, BRCGS, ISO 9001 and FSSC 22000 on the same records and the same traceability, done once.",
+    "fr": "IFS, BRCGS, ISO 9001 et FSSC 22000 avec les mêmes enregistrements et la même traçabilité, faits une seule fois.",
+    "it": "IFS, BRCGS, ISO 9001 e FSSC 22000 con le stesse registrazioni e la stessa tracciabilità, fatte una volta sola.",
+    "de": "IFS, BRCGS, ISO 9001 und FSSC 22000 mit denselben Aufzeichnungen und derselben Rückverfolgbarkeit – einmal gemacht.",
+    "pt": "IFS, BRCGS, ISO 9001 e FSSC 22000 com os mesmos registos e a mesma rastreabilidade, feitos uma única vez."
+  },
+  "Software para certificaciones:": {
+    "en": "Certification software:",
+    "fr": "Logiciel pour les certifications :",
+    "it": "Software per le certificazioni:",
+    "de": "Software für Zertifizierungen:",
+    "pt": "Software para certificações:"
+  },
+  "certificados, fichas técnicas e incidencias de recepción en un expediente por proveedor. Es el gestor documental, no un módulo aparte.": {
+    "en": "certificates, spec sheets and goods-in incidents in one file per supplier. It is the document manager, not a separate module.",
+    "fr": "certificats, fiches techniques et incidents de réception dans un dossier par fournisseur. C'est la gestion documentaire, pas un module à part.",
+    "it": "certificati, schede tecniche e anomalie di ricevimento in un fascicolo per fornitore. È la gestione documentale, non un modulo a parte.",
+    "de": "Zertifikate, Datenblätter und Wareneingangsstörungen in einer Akte je Lieferant. Das ist das Dokumentenmanagement, kein eigenes Modul.",
+    "pt": "certificados, fichas técnicas e ocorrências de receção num processo por fornecedor. É a gestão documental, não um módulo à parte."
+  },
+  "Homologación de proveedores:": {
+    "en": "Supplier approval:",
+    "fr": "Homologation des fournisseurs :",
+    "it": "Qualifica fornitori:",
+    "de": "Lieferantenfreigabe:",
+    "pt": "Homologação de fornecedores:"
+  },
+  "Referencias del sector alimentario": {
+    "en": "References from the food sector",
+    "fr": "Références du secteur agroalimentaire",
+    "it": "Referenze del settore alimentare",
+    "de": "Referenzen aus der Lebensmittelbranche",
+    "pt": "Referências do setor alimentar"
+  },
+  "¿Solved sirve para el APPCC?": {
+    "en": "Is Solved suitable for HACCP?",
+    "fr": "Solved convient-il pour le HACCP ?",
+    "it": "Solved serve per l'HACCP?",
+    "de": "Eignet sich Solved für HACCP?",
+    "pt": "A Solved serve para o HACCP?"
+  },
+  "Sí. Digitaliza el APPCC y sus prerrequisitos, con registros trazables y disponibles en todo momento para auditorías e inspecciones.": {
+    "en": "Yes. It digitises HACCP and its prerequisites, with traceable records available at any moment for audits and inspections.",
+    "fr": "Oui. Il numérise le HACCP et ses prérequis, avec des enregistrements traçables et disponibles à tout moment pour les audits et inspections.",
+    "it": "Sì. Digitalizza l'HACCP e i suoi prerequisiti, con registrazioni tracciabili e sempre disponibili per audit e ispezioni.",
+    "de": "Ja. Es digitalisiert HACCP und dessen Basisvoraussetzungen, mit nachvollziehbaren Aufzeichnungen, die jederzeit für Audits und Inspektionen bereitstehen.",
+    "pt": "Sim. Digitaliza o HACCP e os seus pré-requisitos, com registos rastreáveis e disponíveis a qualquer momento para auditorias e inspeções."
+  },
+  "¿Ayuda a superar auditorías IFS o BRC?": {
+    "en": "Does it help pass IFS or BRC audits?",
+    "fr": "Aide-t-il à réussir les audits IFS ou BRC ?",
+    "it": "Aiuta a superare gli audit IFS o BRC?",
+    "de": "Hilft es, IFS- oder BRC-Audits zu bestehen?",
+    "pt": "Ajuda a passar em auditorias IFS ou BRC?"
+  },
+  "Sí. Mantiene los registros de calidad y seguridad alimentaria actualizados y accesibles, lo que reduce el trabajo previo a la certificación.": {
+    "en": "Yes. It keeps quality and food safety records current and available, which cuts the work before certification.",
+    "fr": "Oui. Il maintient les enregistrements qualité et sécurité alimentaire à jour et accessibles, ce qui réduit le travail préalable à la certification.",
+    "it": "Sì. Mantiene le registrazioni di qualità e sicurezza alimentare aggiornate e accessibili, riducendo il lavoro prima della certificazione.",
+    "de": "Ja. Es hält Qualitäts- und Lebensmittelsicherheitsaufzeichnungen aktuell und verfügbar, was die Arbeit vor der Zertifizierung reduziert.",
+    "pt": "Sim. Mantém os registos de qualidade e segurança alimentar atualizados e acessíveis, o que reduz o trabalho prévio à certificação."
+  },
+  "¿Permite la trazabilidad en planta?": {
+    "en": "Does it enable traceability on the floor?",
+    "fr": "Permet-il la traçabilité en usine ?",
+    "it": "Consente la tracciabilità in stabilimento?",
+    "de": "Ermöglicht es Rückverfolgbarkeit im Werk?",
+    "pt": "Permite a rastreabilidade na fábrica?"
+  },
+  "Sí. El sistema registra controles, lotes y verificaciones, lo que garantiza la trazabilidad y el cumplimiento a lo largo de todo el proceso.": {
+    "en": "Yes. The system records checks, batches and verifications, which secures traceability and compliance right through the process.",
+    "fr": "Oui. Le système enregistre contrôles, lots et vérifications, ce qui garantit la traçabilité et la conformité tout au long du processus.",
+    "it": "Sì. Il sistema registra controlli, lotti e verifiche, garantendo tracciabilità e conformità lungo tutto il processo.",
+    "de": "Ja. Das System erfasst Kontrollen, Chargen und Verifizierungen und sichert damit Rückverfolgbarkeit und Normerfüllung über den gesamten Prozess.",
+    "pt": "Sim. O sistema regista controlos, lotes e verificações, o que garante a rastreabilidade e a conformidade ao longo de todo o processo."
+  },
+  "¿Elimina el papel en la planta alimentaria?": {
+    "en": "Does it get paper out of the food plant?",
+    "fr": "Élimine-t-il le papier dans l'usine agroalimentaire ?",
+    "it": "Elimina la carta nello stabilimento alimentare?",
+    "de": "Schafft es das Papier im Lebensmittelwerk ab?",
+    "pt": "Elimina o papel na fábrica alimentar?"
+  },
+  "Sí. El registro se realiza íntegramente desde móvil o tablet, lo que elimina el soporte en papel y los errores de transcripción.": {
+    "en": "Yes. Everything is logged from a phone or tablet, which removes paper and transcription errors.",
+    "fr": "Oui. La saisie se fait intégralement depuis un téléphone ou une tablette, ce qui supprime le papier et les erreurs de recopie.",
+    "it": "Sì. La registrazione avviene interamente da telefono o tablet, il che elimina la carta e gli errori di trascrizione.",
+    "de": "Ja. Erfasst wird vollständig per Smartphone oder Tablet – das beseitigt Papier und Übertragungsfehler.",
+    "pt": "Sim. O registo é feito integralmente a partir do telemóvel ou do tablet, o que elimina o suporte em papel e os erros de transcrição."
+  },
+  "Operaria de una planta alimentaria registrando controles en el ordenador de línea": {
+    "en": "A food plant operator logging checks on the line computer",
+    "fr": "Une opératrice d'usine agroalimentaire saisit des contrôles sur l'ordinateur de ligne",
+    "it": "Un'operatrice di uno stabilimento alimentare registra controlli sul computer di linea",
+    "de": "Eine Werkerin in einem Lebensmittelwerk erfasst Kontrollen am Linienrechner",
+    "pt": "Operadora de uma fábrica alimentar a registar controlos no computador de linha"
+  },
+  "Software de APPCC para plantas alimentarias · Solved": {
+    "en": "HACCP software for food plants · Solved",
+    "fr": "Logiciel HACCP pour usines agroalimentaires · Solved",
+    "it": "Software HACCP per stabilimenti alimentari · Solved",
+    "de": "HACCP-Software für Lebensmittelwerke · Solved",
+    "pt": "Software de HACCP para fábricas alimentares · Solved"
+  },
+  "Software de APPCC para planta: PCC, prerrequisitos y verificaciones registrados desde el móvil, con evidencia, notificación de vencimiento y trazabilidad.": {
+    "en": "HACCP software for the plant: CCPs, prerequisites and verifications logged from a phone, with evidence, due-date alerts and traceability.",
+    "fr": "Logiciel HACCP pour l'usine : CCP, prérequis et vérifications enregistrés depuis le téléphone, avec preuve, alerte d'échéance et traçabilité.",
+    "it": "Software HACCP per lo stabilimento: CCP, prerequisiti e verifiche registrati dal telefono, con evidenza, avviso di scadenza e tracciabilità.",
+    "de": "HACCP-Software fürs Werk: CCPs, Basisvoraussetzungen und Verifizierungen per Smartphone erfasst – mit Nachweis, Fristbenachrichtigung und Rückverfolgbarkeit.",
+    "pt": "Software de HACCP para a fábrica: CCP, pré-requisitos e verificações registados a partir do telemóvel, com evidência, notificação de prazo e rastreabilidade."
+  },
+  "Software de APPCC": {
+    "en": "HACCP software",
+    "fr": "Logiciel HACCP",
+    "it": "Software HACCP",
+    "de": "HACCP-Software",
+    "pt": "Software de HACCP"
+  },
+  "Registra tus PCC y prerrequisitos en el punto de control": {
+    "en": "Log your CCPs and prerequisites at the control point",
+    "fr": "Enregistrez vos CCP et prérequis au point de contrôle",
+    "it": "Registra i tuoi CCP e prerequisiti nel punto di controllo",
+    "de": "Erfassen Sie CCPs und Basisvoraussetzungen am Kontrollpunkt",
+    "pt": "Registe os seus CCP e pré-requisitos no ponto de controlo"
+  },
+  "y ten la verificación del APPCC lista sin volcar un solo dato.": {
+    "en": "and have the HACCP verification ready without moving a single figure by hand.",
+    "fr": "et disposez de la vérification HACCP sans recopier la moindre donnée.",
+    "it": "e avere la verifica HACCP pronta senza travasare un solo dato.",
+    "de": "und halten Sie die HACCP-Verifizierung bereit, ohne einen einzigen Wert zu übertragen.",
+    "pt": "e tenha a verificação do HACCP pronta sem transcrever um único dado."
+  },
+  "Solved digitaliza tus controles de puntos críticos, los prerrequisitos y sus verificaciones. Cada registro sale con hora, responsable y evidencia, y un valor fuera de límites abre una acción con dueño y plazo.": {
+    "en": "Solved digitises your critical control points, the prerequisites and their verifications. Every record carries a time, an owner and evidence, and a value outside limits opens an action with an owner and a deadline.",
+    "fr": "Solved numérise vos points critiques, les prérequis et leurs vérifications. Chaque enregistrement porte une heure, un responsable et une preuve, et une valeur hors limites ouvre une action avec responsable et échéance.",
+    "it": "Solved digitalizza i tuoi punti critici, i prerequisiti e le loro verifiche. Ogni registrazione esce con ora, responsabile ed evidenza, e un valore fuori limite apre un'azione con titolare e scadenza.",
+    "de": "Solved digitalisiert Ihre kritischen Lenkungspunkte, die Basisvoraussetzungen und deren Verifizierungen. Jede Aufzeichnung trägt Uhrzeit, Verantwortlichen und Nachweis, und ein Wert außerhalb der Grenzen öffnet eine Maßnahme mit Verantwortlichem und Frist.",
+    "pt": "A Solved digitaliza os seus controlos de pontos críticos, os pré-requisitos e as respetivas verificações. Cada registo sai com hora, responsável e evidência, e um valor fora dos limites abre uma ação com responsável e prazo."
+  },
+  "El APPCC en papel no falla en la auditoría, falla en la operación diaria": {
+    "en": "Paper HACCP does not fail at the audit, it fails in the daily routine",
+    "fr": "Le HACCP sur papier n'échoue pas à l'audit, il échoue au quotidien",
+    "it": "L'HACCP su carta non fallisce all'audit, fallisce nell'operatività quotidiana",
+    "de": "HACCP auf Papier scheitert nicht im Audit, sondern im Alltag",
+    "pt": "O HACCP em papel não falha na auditoria, falha na operação diária"
+  },
+  "El plan suele estar correctamente redactado. La discontinuidad aparece entre el plan y la línea: quién registró cada control, a qué hora y qué actuación siguió a una desviación.": {
+    "en": "The plan is usually written properly. The break appears between the plan and the line: who logged each check, at what time and what was done after a deviation.",
+    "fr": "Le plan est en général correctement rédigé. La rupture apparaît entre le plan et la ligne : qui a enregistré chaque contrôle, à quelle heure et quelle action a suivi un écart.",
+    "it": "Il piano di solito è scritto correttamente. La discontinuità appare tra il piano e la linea: chi ha registrato ogni controllo, a che ora e quale intervento è seguito a una deviazione.",
+    "de": "Der Plan ist meist sauber geschrieben. Der Bruch entsteht zwischen Plan und Linie: wer welche Kontrolle wann erfasst hat und was auf eine Abweichung folgte.",
+    "pt": "O plano costuma estar corretamente redigido. A descontinuidade surge entre o plano e a linha: quem registou cada controlo, a que hora e que atuação se seguiu a um desvio."
+  },
+  "Los partes de PCC se cumplimentan de forma retrospectiva al cierre del turno, y en algunos casos en la víspera de la auditoría.": {
+    "en": "CCP reports get filled in retrospectively at the end of the shift, and sometimes the night before the audit.",
+    "fr": "Les rapports de CCP sont remplis rétrospectivement en fin de poste, et parfois la veille de l'audit.",
+    "it": "I rapporti dei CCP si compilano a posteriori a fine turno, e a volte alla vigilia dell'audit.",
+    "de": "CCP-Meldungen werden rückwirkend am Schichtende ausgefüllt – manchmal am Vorabend des Audits.",
+    "pt": "As partes de CCP são preenchidas retrospetivamente no fecho do turno e, nalguns casos, na véspera da auditoria."
+  },
+  "El soporte en papel se deteriora o se extravía, y un registro ausente no admite reconstrucción.": {
+    "en": "Paper gets damaged or lost, and a missing record cannot be reconstructed.",
+    "fr": "Le papier s'abîme ou se perd, et un enregistrement manquant ne peut pas être reconstitué.",
+    "it": "La carta si rovina o si perde, e una registrazione assente non si può ricostruire.",
+    "de": "Papier verdirbt oder geht verloren, und eine fehlende Aufzeichnung lässt sich nicht rekonstruieren.",
+    "pt": "O suporte em papel deteriora-se ou extravia-se, e um registo em falta não admite reconstrução."
+  },
+  "La desviación se anota al margen del parte, sin constancia de su corrección, su responsable ni su evidencia.": {
+    "en": "The deviation is jotted in the margin of the report, with no record of the correction, the owner or the evidence.",
+    "fr": "L'écart est noté en marge du rapport, sans trace de sa correction, de son responsable ni de sa preuve.",
+    "it": "La deviazione si annota a margine del rapporto, senza traccia della correzione, del responsabile né dell'evidenza.",
+    "de": "Die Abweichung wird an den Rand der Meldung notiert – ohne Beleg für Korrektur, Verantwortlichen oder Nachweis.",
+    "pt": "O desvio é anotado à margem da parte, sem registo da sua correção, do seu responsável nem da sua evidência."
+  },
+  "La transcripción de los partes a hoja de cálculo para emitir la verificación consume días de trabajo cada mes.": {
+    "en": "Copying the reports into a spreadsheet to issue the verification eats up days of work every month.",
+    "fr": "La recopie des rapports dans un tableur pour émettre la vérification consomme des jours de travail chaque mois.",
+    "it": "La trascrizione dei rapporti in un foglio di calcolo per emettere la verifica consuma giorni di lavoro ogni mese.",
+    "de": "Das Abtippen der Meldungen in eine Tabelle für die Verifizierung kostet jeden Monat Arbeitstage.",
+    "pt": "A transcrição das partes para folha de cálculo, para emitir a verificação, consome dias de trabalho todos os meses."
+  },
+  "No existe forma de comprobar en tiempo real si un control programado se ha ejecutado.": {
+    "en": "There is no way to check in real time whether a scheduled check was actually done.",
+    "fr": "Il n'existe aucun moyen de vérifier en temps réel si un contrôle programmé a bien été exécuté.",
+    "it": "Non esiste modo di verificare in tempo reale se un controllo programmato è stato eseguito.",
+    "de": "Es gibt keine Möglichkeit, in Echtzeit zu prüfen, ob eine geplante Kontrolle ausgeführt wurde.",
+    "pt": "Não existe forma de verificar em tempo real se um controlo programado foi executado."
+  },
+  "Del parte en papel al registro con hora, responsable y evidencia": {
+    "en": "From the paper report to a record with time, owner and evidence",
+    "fr": "Du rapport papier à l'enregistrement avec heure, responsable et preuve",
+    "it": "Dal rapporto su carta alla registrazione con ora, responsabile ed evidenza",
+    "de": "Von der Papiermeldung zur Aufzeichnung mit Uhrzeit, Verantwortlichem und Nachweis",
+    "pt": "Da parte em papel ao registo com hora, responsável e evidência"
+  },
+  "Cada control del plan APPCC se configura como una plantilla que el operario cumplimenta desde el móvil o la tablet en el propio puesto. La organización define los campos, la frecuencia y los límites críticos.": {
+    "en": "Each check in the HACCP plan is set up as a template the operator fills in from a phone or tablet at the workstation. The organisation defines the fields, the frequency and the critical limits.",
+    "fr": "Chaque contrôle du plan HACCP est configuré comme un modèle que l'opérateur remplit depuis un téléphone ou une tablette au poste. L'organisation définit les champs, la fréquence et les limites critiques.",
+    "it": "Ogni controllo del piano HACCP si configura come un modello che l'operatore compila da telefono o tablet nella postazione. L'organizzazione definisce i campi, la frequenza e i limiti critici.",
+    "de": "Jede Kontrolle des HACCP-Plans wird als Vorlage angelegt, die der Werker per Smartphone oder Tablet am Arbeitsplatz ausfüllt. Die Organisation legt Felder, Frequenz und kritische Grenzwerte fest.",
+    "pt": "Cada controlo do plano HACCP configura-se como um modelo que o operador preenche a partir do telemóvel ou do tablet no próprio posto. A organização define os campos, a frequência e os limites críticos."
+  },
+  "Plantillas por control: temperaturas, higiene personal, recepción, limpieza o detector de metales, con campos y límites propios.": {
+    "en": "Templates per check: temperatures, personal hygiene, goods-in, cleaning or metal detector, each with its own fields and limits.",
+    "fr": "Des modèles par contrôle : températures, hygiène du personnel, réception, nettoyage ou détecteur de métaux, avec leurs champs et limites propres.",
+    "it": "Modelli per controllo: temperature, igiene del personale, ricevimento, pulizia o metal detector, con campi e limiti propri.",
+    "de": "Vorlagen je Kontrolle: Temperaturen, Personalhygiene, Wareneingang, Reinigung oder Metalldetektor – mit eigenen Feldern und Grenzwerten.",
+    "pt": "Modelos por controlo: temperaturas, higiene pessoal, receção, limpeza ou detetor de metais, com campos e limites próprios."
+  },
+  "Frecuencia y responsable programados: el sistema notifica antes del vencimiento y deja constancia de la no ejecución.": {
+    "en": "Frequency and owner scheduled: the system notifies before the due date and leaves a record when a check is not done.",
+    "fr": "Fréquence et responsable programmés : le système notifie avant l'échéance et garde trace de la non-exécution.",
+    "it": "Frequenza e responsabile programmati: il sistema avvisa prima della scadenza e lascia traccia della mancata esecuzione.",
+    "de": "Frequenz und Verantwortlicher geplant: Das System meldet sich vor Ablauf und dokumentiert, wenn eine Kontrolle nicht ausgeführt wurde.",
+    "pt": "Frequência e responsável programados: o sistema notifica antes do prazo e deixa registo da não execução."
+  },
+  "Actuación ante desviación: el registro genera una incidencia con responsable, plazo y evidencia fotográfica hasta su cierre.": {
+    "en": "Action on a deviation: the record raises an incident with an owner, a deadline and photo evidence through to closure.",
+    "fr": "Action en cas d'écart : l'enregistrement crée un incident avec responsable, échéance et preuve photo jusqu'à sa clôture.",
+    "it": "Intervento sulla deviazione: la registrazione genera un'anomalia con responsabile, scadenza ed evidenza fotografica fino alla chiusura.",
+    "de": "Handeln bei Abweichung: Die Aufzeichnung erzeugt eine Störung mit Verantwortlichem, Frist und Fotonachweis bis zum Abschluss.",
+    "pt": "Atuação perante desvio: o registo gera uma ocorrência com responsável, prazo e evidência fotográfica até ao seu encerramento."
+  },
+  "Prerrequisitos en el mismo sistema: limpieza y desinfección, control de plagas, formación, agua, mantenimiento y proveedores, con su histórico.": {
+    "en": "Prerequisites in the same system: cleaning and disinfection, pest control, training, water, maintenance and suppliers, each with its history.",
+    "fr": "Les prérequis dans le même système : nettoyage et désinfection, lutte contre les nuisibles, formation, eau, maintenance et fournisseurs, avec leur historique.",
+    "it": "Prerequisiti nello stesso sistema: pulizia e disinfezione, controllo infestanti, formazione, acqua, manutenzione e fornitori, con il loro storico.",
+    "de": "Basisvoraussetzungen im selben System: Reinigung und Desinfektion, Schädlingsbekämpfung, Schulung, Wasser, Instandhaltung und Lieferanten – mit ihrer Historie.",
+    "pt": "Pré-requisitos no mesmo sistema: limpeza e desinfeção, controlo de pragas, formação, água, manutenção e fornecedores, com o seu histórico."
+  },
+  "Verificación sin transcripción: el histórico se filtra por línea, turno, producto o fecha y se exporta bajo demanda.": {
+    "en": "Verification without retyping: the history filters by line, shift, product or date and exports on demand.",
+    "fr": "Vérification sans recopie : l'historique se filtre par ligne, poste, produit ou date et s'exporte à la demande.",
+    "it": "Verifica senza trascrizione: lo storico si filtra per linea, turno, prodotto o data e si esporta su richiesta.",
+    "de": "Verifizierung ohne Abtippen: Die Historie lässt sich nach Linie, Schicht, Produkt oder Datum filtern und auf Wunsch exportieren.",
+    "pt": "Verificação sem transcrição: o histórico filtra-se por linha, turno, produto ou data e exporta-se a pedido."
+  },
+  "Solved no redacta el plan APPCC ni determina los puntos críticos: ejecuta lo que el plan establece y consolida la evidencia de cumplimiento.": {
+    "en": "Solved does not write the HACCP plan or decide the critical points: it carries out what the plan sets and gathers the evidence of compliance.",
+    "fr": "Solved ne rédige pas le plan HACCP et ne détermine pas les points critiques : il exécute ce que le plan prévoit et consolide la preuve de conformité.",
+    "it": "Solved non redige il piano HACCP né determina i punti critici: esegue ciò che il piano stabilisce e consolida l'evidenza di conformità.",
+    "de": "Solved schreibt weder den HACCP-Plan noch bestimmt es die kritischen Punkte: Es führt aus, was der Plan vorgibt, und bündelt den Nachweis der Erfüllung.",
+    "pt": "A Solved não redige o plano HACCP nem determina os pontos críticos: executa o que o plano estabelece e consolida a evidência de cumprimento."
+  },
+  "Responsables de calidad de una o varias plantas": {
+    "en": "Quality managers of one or several plants",
+    "fr": "Des responsables qualité d'une ou plusieurs usines",
+    "it": "Responsabili qualità di uno o più stabilimenti",
+    "de": "Qualitätsverantwortliche für ein oder mehrere Werke",
+    "pt": "Responsáveis da qualidade de uma ou várias fábricas"
+  },
+  "Plantas que se certifican en IFS, BRCGS o FSSC 22000": {
+    "en": "Plants certified to IFS, BRCGS or FSSC 22000",
+    "fr": "Des usines certifiées IFS, BRCGS ou FSSC 22000",
+    "it": "Stabilimenti che si certificano IFS, BRCGS o FSSC 22000",
+    "de": "Werke mit Zertifizierung nach IFS, BRCGS oder FSSC 22000",
+    "pt": "Fábricas que se certificam em IFS, BRCGS ou FSSC 22000"
+  },
+  "Fábricas que trabajan a varios turnos": {
+    "en": "Factories working several shifts",
+    "fr": "Des usines qui travaillent en plusieurs postes",
+    "it": "Fabbriche che lavorano su più turni",
+    "de": "Fabriken im Mehrschichtbetrieb",
+    "pt": "Fábricas que trabalham por turnos"
+  },
+  "Grupos con dos o más centros y un solo equipo de calidad": {
+    "en": "Groups with two or more sites and a single quality team",
+    "fr": "Des groupes avec deux sites ou plus et une seule équipe qualité",
+    "it": "Gruppi con due o più centri e una sola squadra qualità",
+    "de": "Gruppen mit zwei oder mehr Standorten und nur einem Qualitätsteam",
+    "pt": "Grupos com dois ou mais centros e uma única equipa de qualidade"
+  },
+  "Plantas que hoy llevan el APPCC en carpetas y Excel": {
+    "en": "Plants running HACCP on folders and spreadsheets today",
+    "fr": "Des usines qui gèrent aujourd'hui le HACCP dans des classeurs et Excel",
+    "it": "Stabilimenti che oggi gestiscono l'HACCP con raccoglitori ed Excel",
+    "de": "Werke, die HACCP heute in Ordnern und Excel führen",
+    "pt": "Fábricas que hoje gerem o HACCP em pastas e Excel"
+  },
+  "Producción y mantenimiento que también registran controles": {
+    "en": "Production and maintenance teams that also log checks",
+    "fr": "La production et la maintenance qui enregistrent aussi des contrôles",
+    "it": "Produzione e manutenzione che registrano anch'esse controlli",
+    "de": "Produktion und Instandhaltung, die ebenfalls Kontrollen erfassen",
+    "pt": "Produção e manutenção que também registam controlos"
+  },
+  "Referencias de equipos de calidad": {
+    "en": "References from quality teams",
+    "fr": "Références d'équipes qualité",
+    "it": "Referenze di squadre qualità",
+    "de": "Referenzen von Qualitätsteams",
+    "pt": "Referências de equipas de qualidade"
+  },
+  "¿Puedo usar mis propias plantillas de control?": {
+    "en": "Can I use my own check templates?",
+    "fr": "Puis-je utiliser mes propres modèles de contrôle ?",
+    "it": "Posso usare i miei modelli di controllo?",
+    "de": "Kann ich meine eigenen Kontrollvorlagen nutzen?",
+    "pt": "Posso usar os meus próprios modelos de controlo?"
+  },
+  "Sí. Los partes en uso se replican sin modificaciones: los mismos campos, los mismos límites críticos y la misma frecuencia. El plan APPCC no se adapta al software.": {
+    "en": "Yes. The reports in use are replicated unchanged: the same fields, the same critical limits and the same frequency. The HACCP plan does not bend to the software.",
+    "fr": "Oui. Les rapports en usage sont reproduits sans modification : mêmes champs, mêmes limites critiques et même fréquence. Le plan HACCP ne s'adapte pas au logiciel.",
+    "it": "Sì. I rapporti in uso si replicano senza modifiche: gli stessi campi, gli stessi limiti critici e la stessa frequenza. Il piano HACCP non si adatta al software.",
+    "de": "Ja. Die genutzten Meldungen werden unverändert nachgebildet: dieselben Felder, dieselben kritischen Grenzwerte und dieselbe Frequenz. Der HACCP-Plan passt sich nicht der Software an.",
+    "pt": "Sim. As partes em uso replicam-se sem alterações: os mesmos campos, os mesmos limites críticos e a mesma frequência. O plano HACCP não se adapta ao software."
+  },
+  "¿Qué pasa cuando un control se sale de límites?": {
+    "en": "What happens when a check goes outside its limits?",
+    "fr": "Que se passe-t-il quand un contrôle sort des limites ?",
+    "it": "Cosa succede quando un controllo esce dai limiti?",
+    "de": "Was passiert, wenn eine Kontrolle die Grenzwerte verlässt?",
+    "pt": "O que acontece quando um controlo sai dos limites?"
+  },
+  "El propio registro abre una acción correctiva con responsable, plazo y evidencia, enlazada al control que la originó. La verificación posterior no hay que reconstruirla: ya está hecha.": {
+    "en": "The record itself opens a corrective action with an owner, a deadline and evidence, linked to the check that caused it. The later verification does not need reconstructing: it is already done.",
+    "fr": "L'enregistrement lui-même ouvre une action corrective avec responsable, échéance et preuve, liée au contrôle d'origine. La vérification ultérieure n'a pas à être reconstituée : elle est déjà faite.",
+    "it": "La registrazione stessa apre un'azione correttiva con responsabile, scadenza ed evidenza, collegata al controllo che l'ha originata. La verifica successiva non va ricostruita: è già fatta.",
+    "de": "Die Aufzeichnung selbst öffnet eine Korrekturmaßnahme mit Verantwortlichem, Frist und Nachweis – verknüpft mit der auslösenden Kontrolle. Die spätere Verifizierung muss nicht rekonstruiert werden: Sie ist bereits erledigt.",
+    "pt": "O próprio registo abre uma ação corretiva com responsável, prazo e evidência, associada ao controlo que a originou. A verificação posterior não precisa de ser reconstruída: já está feita."
+  },
+  "¿Sirve para preparar una auditoría IFS, BRCGS o FSSC 22000?": {
+    "en": "Is it useful for preparing an IFS, BRCGS or FSSC 22000 audit?",
+    "fr": "Sert-il à préparer un audit IFS, BRCGS ou FSSC 22000 ?",
+    "it": "Serve per preparare un audit IFS, BRCGS o FSSC 22000?",
+    "de": "Taugt es zur Vorbereitung eines IFS-, BRCGS- oder FSSC-22000-Audits?",
+    "pt": "Serve para preparar uma auditoria IFS, BRCGS ou FSSC 22000?"
+  },
+  "Sí. Cada registro sale con fecha, hora, responsable y evidencia, y se filtra por periodo, línea o producto, que es justo lo que pide el auditor cuando toma una muestra.": {
+    "en": "Yes. Every record carries a date, a time, an owner and evidence, and filters by period, line or product — exactly what the auditor asks for when taking a sample.",
+    "fr": "Oui. Chaque enregistrement porte date, heure, responsable et preuve, et se filtre par période, ligne ou produit, ce que demande précisément l'auditeur lorsqu'il prélève un échantillon.",
+    "it": "Sì. Ogni registrazione esce con data, ora, responsabile ed evidenza, e si filtra per periodo, linea o prodotto, che è esattamente ciò che chiede l'auditor quando prende un campione.",
+    "de": "Ja. Jede Aufzeichnung trägt Datum, Uhrzeit, Verantwortlichen und Nachweis und lässt sich nach Zeitraum, Linie oder Produkt filtern – genau das, was der Auditor bei einer Stichprobe verlangt.",
+    "pt": "Sim. Cada registo sai com data, hora, responsável e evidência, e filtra-se por período, linha ou produto, que é exatamente o que o auditor pede ao recolher uma amostra."
+  },
+  "¿Cuánto se tarda en ponerlo en marcha?": {
+    "en": "How long does it take to get running?",
+    "fr": "Combien de temps faut-il pour le mettre en service ?",
+    "it": "Quanto ci vuole a metterlo in funzione?",
+    "de": "Wie lange dauert die Inbetriebnahme?",
+    "pt": "Quanto tempo demora a pôr em funcionamento?"
+  },
+  "La implantación media es de dos a tres semanas y depende del número de controles, no del tamaño de la planta: se cargan las plantillas existentes y el despliegue arranca por una línea o un turno.": {
+    "en": "A typical rollout takes two to three weeks and depends on the number of checks, not on the size of the plant: the existing templates are loaded and the rollout starts on one line or one shift.",
+    "fr": "Le déploiement moyen dure deux à trois semaines et dépend du nombre de contrôles, pas de la taille de l'usine : on charge les modèles existants et le déploiement démarre sur une ligne ou un poste.",
+    "it": "L'avvio medio è di due o tre settimane e dipende dal numero di controlli, non dalle dimensioni dello stabilimento: si caricano i modelli esistenti e la diffusione parte da una linea o da un turno.",
+    "de": "Eine Einführung dauert im Schnitt zwei bis drei Wochen und hängt von der Zahl der Kontrollen ab, nicht von der Werksgröße: Die vorhandenen Vorlagen werden geladen, und der Rollout beginnt an einer Linie oder in einer Schicht.",
+    "pt": "A implementação média demora de duas a três semanas e depende do número de controlos, não do tamanho da fábrica: carregam-se os modelos existentes e a implementação arranca por uma linha ou um turno."
+  },
+  "¿Sustituye a mi consultor de APPCC?": {
+    "en": "Does it replace my HACCP consultant?",
+    "fr": "Remplace-t-il mon consultant HACCP ?",
+    "it": "Sostituisce il mio consulente HACCP?",
+    "de": "Ersetzt es meinen HACCP-Berater?",
+    "pt": "Substitui o meu consultor de HACCP?"
+  },
+  "No. Solved no escribe el plan ni decide los puntos críticos. Lo que hace es que se ejecute todos los días y que quede demostrado.": {
+    "en": "No. Solved does not write the plan or decide the critical points. What it does is make sure the plan is carried out every day and that it can be proven.",
+    "fr": "Non. Solved n'écrit pas le plan et ne décide pas des points critiques. Ce qu'il fait, c'est qu'il soit appliqué tous les jours et que ce soit démontré.",
+    "it": "No. Solved non scrive il piano né decide i punti critici. Quello che fa è che venga eseguito ogni giorno e che resti dimostrato.",
+    "de": "Nein. Solved schreibt weder den Plan noch bestimmt es die kritischen Punkte. Es sorgt dafür, dass er jeden Tag ausgeführt wird – und dass sich das belegen lässt.",
+    "pt": "Não. A Solved não escreve o plano nem decide os pontos críticos. O que faz é garantir que é executado todos os dias e que fica demonstrado."
+  },
+  "Dos responsables de calidad revisan un control del plan APPCC en una tablet dentro de un obrador": {
+    "en": "Two quality managers review a HACCP plan check on a tablet inside a bakery workshop",
+    "fr": "Deux responsables qualité examinent un contrôle du plan HACCP sur une tablette dans un fournil",
+    "it": "Due responsabili qualità rivedono un controllo del piano HACCP su un tablet dentro un laboratorio di panificazione",
+    "de": "Zwei Qualitätsverantwortliche prüfen eine HACCP-Kontrolle auf einem Tablet in einer Backstube",
+    "pt": "Dois responsáveis da qualidade revêm um controlo do plano HACCP num tablet dentro de um obrador"
+  },
+  "Software para ISO 22000 y FSSC 22000 en planta · Solved": {
+    "en": "Software for ISO 22000 and FSSC 22000 on the plant floor · Solved",
+    "fr": "Logiciel pour ISO 22000 et FSSC 22000 en usine · Solved",
+    "it": "Software per ISO 22000 e FSSC 22000 in stabilimento · Solved",
+    "de": "Software für ISO 22000 und FSSC 22000 im Werk · Solved",
+    "pt": "Software para ISO 22000 e FSSC 22000 na fábrica · Solved"
+  },
+  "Software para ISO 22000 e inocuidad alimentaria: registros, PPR, no conformidades, verificación y auditoría interna con la evidencia que exige la norma.": {
+    "en": "Software for ISO 22000 and food safety: records, PRPs, non-conformities, verification and internal audit with the evidence the standard demands.",
+    "fr": "Logiciel pour ISO 22000 et sécurité des aliments : enregistrements, PRP, non-conformités, vérification et audit interne avec la preuve exigée par la norme.",
+    "it": "Software per ISO 22000 e sicurezza alimentare: registrazioni, PRP, non conformità, verifica e audit interno con l'evidenza richiesta dalla norma.",
+    "de": "Software für ISO 22000 und Lebensmittelsicherheit: Aufzeichnungen, Basisprogramme, Abweichungen, Verifizierung und internes Audit mit dem von der Norm geforderten Nachweis.",
+    "pt": "Software para ISO 22000 e segurança alimentar: registos, PPR, não conformidades, verificação e auditoria interna com a evidência exigida pela norma."
+  },
+  "ISO 22000 y FSSC 22000": {
+    "en": "ISO 22000 and FSSC 22000",
+    "fr": "ISO 22000 et FSSC 22000",
+    "it": "ISO 22000 e FSSC 22000",
+    "de": "ISO 22000 und FSSC 22000",
+    "pt": "ISO 22000 e FSSC 22000"
+  },
+  "Mantén tu sistema ISO 22000 al día sin trabajo administrativo": {
+    "en": "Keep your ISO 22000 system current without the admin work",
+    "fr": "Maintenez votre système ISO 22000 à jour sans travail administratif",
+    "it": "Mantieni il tuo sistema ISO 22000 aggiornato senza lavoro amministrativo",
+    "de": "Halten Sie Ihr ISO-22000-System aktuell, ohne Verwaltungsaufwand",
+    "pt": "Mantenha o seu sistema ISO 22000 atualizado sem trabalho administrativo"
+  },
+  "y ten la evidencia hecha antes de que llegue el auditor.": {
+    "en": "and have the evidence ready before the auditor arrives.",
+    "fr": "et disposez de la preuve avant l'arrivée de l'auditeur.",
+    "it": "e avere l'evidenza pronta prima che arrivi l'auditor.",
+    "de": "und halten Sie den Nachweis bereit, bevor der Auditor kommt.",
+    "pt": "e tenha a evidência pronta antes de o auditor chegar."
+  },
+  "La norma no exige un software: exige poder demostrar qué se controló, quién lo hizo y qué se hizo cuando algo se salió. Solved lo registra en el momento y en el puesto, y lo deja ordenado para la auditoría.": {
+    "en": "The standard does not require software: it requires being able to prove what was checked, who did it and what was done when something went out of range. Solved records it there and then at the workstation, and leaves it in order for the audit.",
+    "fr": "La norme n'exige pas un logiciel : elle exige de pouvoir démontrer ce qui a été contrôlé, par qui et ce qui a été fait quand quelque chose est sorti des limites. Solved l'enregistre sur le moment et au poste, et le laisse en ordre pour l'audit.",
+    "it": "La norma non richiede un software: richiede di poter dimostrare cosa è stato controllato, chi l'ha fatto e cosa si è fatto quando qualcosa è uscito dai limiti. Solved lo registra sul momento e nella postazione, e lo lascia in ordine per l'audit.",
+    "de": "Die Norm verlangt keine Software: Sie verlangt den Nachweis, was kontrolliert wurde, wer es tat und was geschah, als etwas aus dem Rahmen fiel. Solved erfasst das sofort am Arbeitsplatz und legt es geordnet fürs Audit ab.",
+    "pt": "A norma não exige um software: exige poder demonstrar o que se controlou, quem o fez e o que se fez quando algo saiu dos limites. A Solved regista-o no momento e no posto, e deixa-o organizado para a auditoria."
+  },
+  "El coste de mantener la certificación supera el de obtenerla": {
+    "en": "Keeping the certification costs more than getting it",
+    "fr": "Maintenir la certification coûte plus cher que l'obtenir",
+    "it": "Mantenere la certificazione costa più che ottenerla",
+    "de": "Die Zertifizierung zu halten kostet mehr, als sie zu erlangen",
+    "pt": "O custo de manter a certificação ultrapassa o de a obter"
+  },
+  "El sistema se implanta una vez y se degrada de forma progresiva: los registros se retrasan, la verificación se concentra al final del periodo y la auditoría interna deriva en una recopilación documental de urgencia.": {
+    "en": "The system is set up once and then decays: records fall behind, verification piles up at the end of the period and the internal audit turns into an emergency document hunt.",
+    "fr": "Le système est mis en place une fois puis se dégrade progressivement : les enregistrements prennent du retard, la vérification se concentre en fin de période et l'audit interne se transforme en collecte documentaire d'urgence.",
+    "it": "Il sistema si implanta una volta e si degrada progressivamente: le registrazioni si accumulano in ritardo, la verifica si concentra a fine periodo e l'audit interno diventa una raccolta documentale d'urgenza.",
+    "de": "Das System wird einmal eingeführt und verfällt dann nach und nach: Aufzeichnungen geraten in Rückstand, die Verifizierung ballt sich am Periodenende, und das interne Audit wird zur Dokumentensuche in letzter Minute.",
+    "pt": "O sistema implementa-se uma vez e degrada-se progressivamente: os registos atrasam-se, a verificação concentra-se no final do período e a auditoria interna acaba numa recolha documental de urgência."
+  },
+  "La información documentada se reparte entre unidades de red, almacenamiento en la nube y archivo físico, sin control de la versión vigente.": {
+    "en": "The documented information is split across network drives, cloud storage and physical files, with no control over which version is current.",
+    "fr": "L'information documentée se répartit entre lecteurs réseau, stockage cloud et archives physiques, sans contrôle de la version en vigueur.",
+    "it": "Le informazioni documentate si dividono tra unità di rete, archiviazione cloud e archivio fisico, senza controllo della versione vigente.",
+    "de": "Die dokumentierte Information verteilt sich auf Netzlaufwerke, Cloud-Speicher und Papierarchiv – ohne Kontrolle darüber, welche Version gilt.",
+    "pt": "A informação documentada reparte-se entre unidades de rede, armazenamento na nuvem e arquivo físico, sem controlo da versão em vigor."
+  },
+  "Las correcciones y las acciones correctivas se acuerdan en reunión y no quedan registradas.": {
+    "en": "Corrections and corrective actions are agreed in a meeting and never written down.",
+    "fr": "Les corrections et les actions correctives sont décidées en réunion et ne sont pas consignées.",
+    "it": "Correzioni e azioni correttive si concordano in riunione e non restano registrate.",
+    "de": "Korrekturen und Korrekturmaßnahmen werden in Besprechungen vereinbart und nirgends festgehalten.",
+    "pt": "As correções e as ações corretivas acordam-se em reunião e não ficam registadas."
+  },
+  "El seguimiento y la medición se reconstruyen manualmente en hoja de cálculo en las semanas previas a la auditoría.": {
+    "en": "Monitoring and measurement get rebuilt by hand in a spreadsheet in the weeks before the audit.",
+    "fr": "Le suivi et la mesure sont reconstitués à la main dans un tableur dans les semaines précédant l'audit.",
+    "it": "Monitoraggio e misurazione si ricostruiscono a mano in un foglio di calcolo nelle settimane precedenti l'audit.",
+    "de": "Überwachung und Messung werden in den Wochen vor dem Audit von Hand in einer Tabelle rekonstruiert.",
+    "pt": "O acompanhamento e a medição reconstroem-se manualmente em folha de cálculo nas semanas anteriores à auditoria."
+  },
+  "Registros digitales, en tiempo real y desde cualquier dispositivo": {
+    "en": "Digital records, in real time and from any device",
+    "fr": "Des enregistrements numériques, en temps réel et depuis n'importe quel appareil",
+    "it": "Registrazioni digitali, in tempo reale e da qualsiasi dispositivo",
+    "de": "Digitale Aufzeichnungen, in Echtzeit und von jedem Gerät aus",
+    "pt": "Registos digitais, em tempo real e a partir de qualquer dispositivo"
+  },
+  "Los controles de cada línea se cumplimentan en digital y quedan accesibles en el momento. La capacitación va dentro del propio registro: cada control lleva su pauta y guía al operario paso a paso, sin manual aparte.": {
+    "en": "The checks for each production line are completed digitally and are available straight away. Training sits inside the record itself: every check carries its procedure and guides the operator step by step, with no separate manual.",
+    "fr": "Les contrôles de chaque ligne de production sont remplis en numérique et restent accessibles immédiatement. La formation est intégrée à l'enregistrement lui-même : chaque contrôle porte sa procédure et guide l'opérateur pas à pas, sans manuel séparé.",
+    "it": "I controlli di ogni linea di produzione si compilano in digitale e restano accessibili subito. La formazione è dentro la registrazione stessa: ogni controllo porta la sua procedura e guida l'operatore passo dopo passo, senza un manuale a parte.",
+    "de": "Die Kontrollen jeder Fertigungslinie werden digital ausgefüllt und sind sofort verfügbar. Die Schulung steckt in der Aufzeichnung selbst: Jede Kontrolle führt ihr Verfahren mit und leitet den Werker Schritt für Schritt an, ohne getrenntes Handbuch.",
+    "pt": "Os controlos de cada linha preenchem-se em digital e ficam acessíveis de imediato. A formação vai dentro do próprio registo: cada controlo leva o seu procedimento e guia o operador passo a passo, sem manual à parte."
+  },
+  "Incidencias con responsable, seguimiento y cierre documentado": {
+    "en": "Incidents with an owner, follow-up and documented closure",
+    "fr": "Des incidents avec responsable, suivi et clôture documentée",
+    "it": "Anomalie con responsabile, monitoraggio e chiusura documentata",
+    "de": "Störungen mit Verantwortlichem, Nachverfolgung und dokumentiertem Abschluss",
+    "pt": "Ocorrências com responsável, acompanhamento e encerramento documentado"
+  },
+  "La incidencia se abre en el punto de detección, con su categoría, su responsable y su fecha, y el seguimiento queda documentado hasta el cierre sea cual sea el canal por el que llegó el aviso.": {
+    "en": "The incident is opened at the point of detection, with its category, its owner and its date, and the follow-up is documented through to closure whatever channel the alert came in by.",
+    "fr": "L'incident est ouvert au point de détection, avec sa catégorie, son responsable et sa date, et le suivi reste documenté jusqu'à la clôture, quel que soit le canal par lequel l'alerte est arrivée.",
+    "it": "L'anomalia si apre nel punto di rilevamento, con la sua categoria, il suo responsabile e la sua data, e il monitoraggio resta documentato fino alla chiusura, qualunque sia il canale da cui è arrivato l'avviso.",
+    "de": "Die Störung wird am Ort der Feststellung eröffnet — mit Kategorie, Verantwortlichem und Datum —, und die Nachverfolgung bleibt bis zum Abschluss dokumentiert, über welchen Kanal die Benachrichtigung auch eingegangen ist.",
+    "pt": "A ocorrência abre-se no ponto de deteção, com a sua categoria, o seu responsável e a sua data, e o acompanhamento fica documentado até ao encerramento, seja qual for o canal por onde chegou o alerta."
+  },
+  "Ver la gestión de incidencias →": {
+    "en": "See incident management →",
+    "fr": "Voir la gestion des incidents →",
+    "it": "Guarda la gestione delle anomalie →",
+    "de": "Störungsmanagement ansehen →",
+    "pt": "Ver a gestão de ocorrências →"
+  },
+  "Comunicación entre producción, calidad, mantenimiento y prevención": {
+    "en": "Communication between production, quality, maintenance and safety",
+    "fr": "La communication entre production, qualité, maintenance et prévention",
+    "it": "Comunicazione tra produzione, qualità, manutenzione e prevenzione",
+    "de": "Kommunikation zwischen Produktion, Qualität, Instandhaltung und Arbeitsschutz",
+    "pt": "Comunicação entre produção, qualidade, manutenção e prevenção"
+  },
+  "De cada incidencia sale una acción con dueño y plazo, y el reparto no depende de que alguien lo distribuya. Cada equipo ve lo que tiene abierto y lo que vence, sin reclamarlo de un departamento a otro.": {
+    "en": "Every incident produces an action with an owner and a due date, and the hand-off does not depend on anyone distributing it. Each team sees what it has open and what is falling due, without chasing it from one department to another.",
+    "fr": "Chaque incident donne lieu à une action avec responsable et échéance, et la répartition ne dépend pas de quelqu'un qui la distribue. Chaque équipe voit ce qu'elle a d'ouvert et ce qui arrive à échéance, sans le réclamer d'un service à l'autre.",
+    "it": "Da ogni anomalia nasce un'azione con responsabile e scadenza, e la ripartizione non dipende da qualcuno che la distribuisca. Ogni squadra vede che cosa ha di aperto e che cosa sta per scadere, senza doverlo chiedere da un reparto all'altro.",
+    "de": "Aus jeder Störung entsteht eine Maßnahme mit Verantwortlichem und Frist, und die Verteilung hängt nicht davon ab, dass jemand sie zuteilt. Jedes Team sieht, was offen ist und was fällig wird, ohne es von einer Abteilung zur anderen einfordern zu müssen.",
+    "pt": "De cada ocorrência sai uma ação com responsável e prazo, e a distribuição não depende de alguém a fazer. Cada equipa vê o que tem em aberto e o que está a vencer, sem ter de o reclamar de um departamento para outro."
+  },
+  "Documentación e informes disponibles para auditorías e inspecciones": {
+    "en": "Documentation and reports ready for audits and inspections",
+    "fr": "Documentation et rapports disponibles pour les audits et les inspections",
+    "it": "Documentazione e report disponibili per audit e ispezioni",
+    "de": "Dokumentation und Berichte für Audits und Inspektionen verfügbar",
+    "pt": "Documentação e relatórios disponíveis para auditorias e inspeções"
+  },
+  "La documentación queda ordenada y localizable, y los informes se generan sobre los datos de planta ya registrados: lo que se enseña en una auditoría o en una inspección no hay que prepararlo la víspera.": {
+    "en": "Documentation stays ordered and findable, and reports are generated from the plant data already recorded: what you show in an audit or an inspection does not have to be put together the night before.",
+    "fr": "La documentation reste ordonnée et localisable, et les rapports sont générés à partir des données d'usine déjà enregistrées : ce que l'on présente lors d'un audit ou d'une inspection n'a pas à être préparé la veille.",
+    "it": "La documentazione resta ordinata e rintracciabile, e i report vengono generati sui dati di stabilimento già registrati: ciò che si mostra in un audit o in un'ispezione non va preparato la sera prima.",
+    "de": "Die Dokumentation bleibt geordnet und auffindbar, und die Berichte entstehen aus den bereits erfassten Werksdaten: Was im Audit oder bei einer Inspektion gezeigt wird, muss nicht am Vorabend zusammengestellt werden.",
+    "pt": "A documentação fica organizada e localizável, e os relatórios geram-se a partir dos dados de fábrica já registados: o que se mostra numa auditoria ou numa inspeção não precisa de ser preparado na véspera."
+  },
+  "Lo que Solved coordina en una planta industrial": {
+    "en": "What Solved coordinates in an industrial plant",
+    "fr": "Ce que Solved coordonne dans une usine industrielle",
+    "it": "Che cosa coordina Solved in uno stabilimento industriale",
+    "de": "Was Solved in einem Industriewerk koordiniert",
+    "pt": "O que a Solved coordena numa fábrica industrial"
+  },
+  "Gestión rápida y trazable de incidencias, con responsable asignado": {
+    "en": "Fast, traceable incident management with an assigned owner",
+    "fr": "Une gestion rapide et traçable des incidents, avec responsable désigné",
+    "it": "Gestione rapida e tracciabile delle anomalie, con responsabile assegnato",
+    "de": "Schnelle, rückverfolgbare Störungsbearbeitung mit zugewiesenem Verantwortlichen",
+    "pt": "Gestão rápida e rastreável de ocorrências, com responsável atribuído"
+  },
+  "El parte se abre en la propia línea, con su prioridad y su evidencia fotográfica, y queda trazado desde el aviso hasta el cierre. Da igual por dónde entre: acaba siendo la misma incidencia.": {
+    "en": "The report is opened on the production line itself, with its priority and its photographic evidence, and stays traced from the alert through to closure. However it comes in, it ends up as the same incident.",
+    "fr": "Le rapport est ouvert sur la ligne de production elle-même, avec sa priorité et sa preuve photographique, et reste tracé de l'alerte à la clôture. Quel que soit le canal d'entrée, il devient le même incident.",
+    "it": "Il rapporto si apre sulla linea di produzione stessa, con la sua priorità e la sua evidenza fotografica, e resta tracciato dall'avviso fino alla chiusura. Da qualunque parte entri, diventa la stessa anomalia.",
+    "de": "Die Meldung wird direkt an der Fertigungslinie eröffnet — mit Priorität und fotografischem Nachweis — und bleibt von der Benachrichtigung bis zum Abschluss rückverfolgbar. Worüber sie auch eingeht: Am Ende ist es dieselbe Störung.",
+    "pt": "A parte abre-se na própria linha, com a sua prioridade e a sua evidência fotográfica, e fica rastreada desde o alerta até ao encerramento. Não importa por onde entra: acaba por ser a mesma ocorrência."
+  },
+  "Comunicación entre calidad, producción y mantenimiento": {
+    "en": "Communication between quality, production and maintenance",
+    "fr": "La communication entre qualité, production et maintenance",
+    "it": "Comunicazione tra qualità, produzione e manutenzione",
+    "de": "Kommunikation zwischen Qualität, Produktion und Instandhaltung",
+    "pt": "Comunicação entre qualidade, produção e manutenção"
+  },
+  "De cada desviación sale una acción con responsable y fecha de cierre, y los tres equipos trabajan sobre el mismo circuito: nadie reenvía el parte ni lo vuelve a escribir para el turno siguiente.": {
+    "en": "Every deviation produces an action with an owner and a closing date, and the three teams work on the same circuit: nobody forwards the report or writes it out again for the next shift.",
+    "fr": "Chaque écart donne lieu à une action avec responsable et date de clôture, et les trois équipes travaillent sur le même circuit : personne ne fait suivre le rapport ni ne le réécrit pour le poste suivant.",
+    "it": "Da ogni deviazione nasce un'azione con responsabile e data di chiusura, e le tre squadre lavorano sullo stesso circuito: nessuno inoltra il rapporto né lo riscrive per il turno successivo.",
+    "de": "Aus jeder Abweichung entsteht eine Maßnahme mit Verantwortlichem und Abschlussdatum, und die drei Teams arbeiten im selben Ablauf: Niemand leitet die Meldung weiter oder schreibt sie für die nächste Schicht noch einmal.",
+    "pt": "De cada desvio sai uma ação com responsável e data de encerramento, e as três equipas trabalham no mesmo circuito: ninguém reencaminha a parte nem a volta a escrever para o turno seguinte."
+  },
+  "Formación práctica integrada en los registros": {
+    "en": "Practical training built into the records",
+    "fr": "Une formation pratique intégrée aux enregistrements",
+    "it": "Formazione pratica integrata nelle registrazioni",
+    "de": "Praktische Schulung, in die Aufzeichnungen eingebaut",
+    "pt": "Formação prática integrada nos registos"
+  },
+  "El control lleva dentro la pauta con la que se ejecuta, así que quien lo rellena no depende de quién se lo enseñó ni repite el proceso: el registro guía y deja la evidencia firmada.": {
+    "en": "The check carries the procedure it is performed with, so whoever fills it in does not depend on who trained them, nor repeat the process: the record guides and leaves signed evidence.",
+    "fr": "Le contrôle porte en lui la procédure avec laquelle il s'exécute : celui qui le remplit ne dépend donc pas de qui le lui a montré et ne refait pas le processus — l'enregistrement guide et laisse une preuve signée.",
+    "it": "Il controllo porta con sé la procedura con cui si esegue, quindi chi lo compila non dipende da chi glielo ha insegnato né ripete il processo: la registrazione guida e lascia l'evidenza firmata.",
+    "de": "Die Kontrolle führt das Verfahren mit, nach dem sie ausgeführt wird: Wer sie ausfüllt, ist damit nicht davon abhängig, wer es ihm gezeigt hat, und wiederholt den Prozess nicht — die Aufzeichnung leitet an und hinterlässt einen unterschriebenen Nachweis.",
+    "pt": "O controlo leva consigo o procedimento com que se executa, por isso quem o preenche não depende de quem lho ensinou nem repete o processo: o registo guia e deixa a evidência assinada."
+  },
+  "Auditorías y documentos generados sobre lo ya registrado": {
+    "en": "Audits and documents generated from what is already recorded",
+    "fr": "Des audits et des documents générés à partir de ce qui est déjà enregistré",
+    "it": "Audit e documenti generati su ciò che è già registrato",
+    "de": "Audits und Dokumente aus dem, was bereits erfasst ist",
+    "pt": "Auditorias e documentos gerados a partir do que já está registado"
+  },
+  "Toda la documentación queda en un único sitio para la auditoría, y los documentos —reclamaciones a proveedor, informes y reportes— se generan sobre los datos de los registros, sin volver a teclearlos.": {
+    "en": "All the documentation sits in one place for the audit, and the documents — supplier claims, reports and summaries — are generated from the data in the records, without typing it again.",
+    "fr": "Toute la documentation se trouve au même endroit pour l'audit, et les documents — réclamations fournisseur, rapports et états — sont générés à partir des données des enregistrements, sans les ressaisir.",
+    "it": "Tutta la documentazione si trova in un unico posto per l'audit, e i documenti — reclami al fornitore, report e resoconti — vengono generati sui dati delle registrazioni, senza riscriverli.",
+    "de": "Die gesamte Dokumentation liegt für das Audit an einem Ort, und die Dokumente — Lieferantenreklamationen, Berichte und Auswertungen — entstehen aus den Daten der Aufzeichnungen, ohne sie erneut einzutippen.",
+    "pt": "Toda a documentação fica num único local para a auditoria, e os documentos — reclamações a fornecedores, relatórios e reportes — geram-se a partir dos dados dos registos, sem os voltar a escrever."
+  },
+  "Lo que Solved centraliza en una planta alimentaria": {
+    "en": "What Solved centralises in a food plant",
+    "fr": "Ce que Solved centralise dans une usine agroalimentaire",
+    "it": "Che cosa centralizza Solved in uno stabilimento alimentare",
+    "de": "Was Solved in einem Lebensmittelwerk zentralisiert",
+    "pt": "O que a Solved centraliza numa fábrica alimentar"
+  }
+}

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>Escenas de producto — Solved DS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="/ds/tokens.css"/>
+<link rel="stylesheet" href="/ds/tint.css"/>
+<link rel="stylesheet" href="/ds/scene.css"/>
+<style>
+/* Sólo la página de guideline. El componente vive entero en ds/scene.css: si
+   algo de aquí hiciera falta para que una escena se vea bien, estaría allí. */
+body{margin:0;background:var(--ds-surface);color:var(--ds-text)}
+.wrap{max-width:var(--container);margin-inline:auto;padding:64px 32px 120px}
+h1{font:var(--type-display-lg);letter-spacing:var(--tracking-display-lg);margin:0 0 8px}
+.lede{font:var(--type-body-lg);color:var(--ds-text-2);max-width:64ch;margin:0 0 12px}
+h2{font:var(--type-heading-md);margin:64px 0 4px}
+h3{font:var(--type-body-md);margin:0 0 6px}
+.nota{font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-mute);max-width:72ch;margin:0 0 24px}
+.pie{font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-mute);margin-top:14px}
+code{font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;background:var(--color-canvas-soft);padding:1px 5px;border-radius:4px}
+.gris{filter:grayscale(1)}
+
+/* Esquema de fragmento, sólo para esta guía: aquí lo que se demuestra es el
+   tinte, el reparto y el recorte, y seis pantallas completas taparían eso.
+   La pantalla de verdad va en HTML con ds/app.css — ver la home.
+   Datos de demo coherentes entre las seis. */
+.cap{background:#fff;border:1px solid #E3E8EE;border-radius:10px;overflow:hidden;width:100%;height:100%;
+  display:flex;flex-direction:column}
+/* Rellena lo que quede de alto con filas insinuadas: el fragmento tiene que
+   parecer una lista que sigue, no una tabla de cuatro registros y vacío. */
+.cap__fill{flex:1;background:repeating-linear-gradient(180deg,
+  transparent 0 32px,#F1F4F8 32px 33px)}
+.scene[data-module="ia"] .cap__fill{background:repeating-linear-gradient(180deg,
+  transparent 0 32px,#262A30 32px 33px)}
+.scene[data-module="ia"] .cap{background:#1B2026;border-color:#33373D}
+.cap__bar{display:flex;gap:8px;align-items:center;padding:9px 12px;border-bottom:1px solid #EDF1F5;
+  font:var(--type-micro-cap);letter-spacing:var(--tracking-micro-cap);color:var(--ds-text-mute);text-transform:uppercase}
+.scene[data-module="ia"] .cap__bar{border-bottom-color:#33373D;color:#8A929B}
+.cap__row{display:grid;grid-template-columns:104px 1fr 76px 64px;gap:10px;align-items:center;
+  padding:9px 12px;border-bottom:1px solid #F1F4F8;font-size:11px;line-height:1.35;color:var(--ds-text-2);white-space:nowrap}
+.scene[data-module="ia"] .cap__row{border-bottom-color:#262A30;color:#C9CFD6}
+.cap__id{font-family:ui-monospace,SFMono-Regular,monospace;font-size:10px;color:var(--ds-text-mute);letter-spacing:-.2px}
+.cap__chip{justify-self:start;font-size:10px;padding:2px 7px;border-radius:var(--ds-radius-pill);white-space:nowrap}
+.cap__chip--abierta{background:#E8F1FE;color:#0B54C8}
+.cap__chip--curso{background:#FDEBDC;color:#B4560B}
+.cap__chip--ok{background:#E4F6EA;color:#12813B}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--color-status-warn);display:inline-block}
+
+.anti{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+.anti figure{margin:0}
+.anti .demo{position:relative;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--color-hairline);background:#fff}
+.anti figcaption{font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-2);margin-top:10px}
+.anti figcaption b{font-weight:var(--font-weight-medium);color:var(--color-status-fault)}
+.mini{position:absolute;left:16%;top:30%;right:-12%;bottom:-10%;border-radius:8px;background:#E7EBF0;border:1px solid #DDE3EA;box-shadow:rgba(12,32,64,.10) 0 8px 24px}
+.mini--centrado{left:22%;right:22%;top:24%;bottom:24%;border-radius:8px}
+.rot{position:absolute;inset:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Escenas de producto</h1>
+  <p class="lede">Una tarjeta que enseña un fragmento real de la aplicación flotando sobre un lienzo teñido,
+  cortado por el borde del marco. Sustituye a cualquier rejilla de "features" con icono y párrafo.</p>
+  <p class="nota">El tinte lo dicta <code>data-module</code>. No hay forma de pasar un color a mano —ni prop, ni
+  variable, ni clase—: si una escena pide otro color, lo que hay que cambiar es el módulo que enseña.
+  Ficha completa en <code>ds/scene.prompt.md</code>.</p>
+  <p class="nota">Los fragmentos de esta página son esquemas: aquí se demuestran el tinte, el reparto y el
+  recorte. La pantalla que va dentro de una escena se construye en HTML con <code>ds/app.css</code> —no con
+  capturas, decisión del cliente— y está montada en la home.</p>
+
+  <h2>La rejilla, con los seis tintes</h2>
+  <p class="nota">Reparto <code>8+4</code> · <code>4+4+4</code> · <code>12</code>: seis escenas, la ancha en la
+  primera fila, ordenadas por verbos (registrar → resolver → demostrar → integrar) y no por importancia comercial.
+  La pregunta que responde esta vista: ¿se leen como una familia? Comparten <code>--tint-angle</code>, así que la
+  mancha cae al mismo sitio en las seis. Con la consola abierta esta rejilla no debe decir nada:
+  <code>ds/scene-dev.js</code> sólo habla cuando algo se sale de las reglas.</p>
+
+  <div class="scene-grid" id="rejilla">
+
+    <article class="scene" data-module="incidencias" data-span="8" data-ratio="4:3">
+      <h3 class="scene__title">Toda la planta reporta desde el móvil</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Incidencias · Paterna</div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Fuga en envasadora L3</span><span class="cap__chip cap__chip--abierta">Abierta</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_007</span><span>Etiquetado fuera de tolerancia</span><span class="cap__chip cap__chip--curso">En curso</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_114</span><span>Temperatura cámara 2</span><span class="cap__chip cap__chip--ok">Cerrada</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_098</span><span>Parada no programada L1</span><span class="cap__chip cap__chip--curso">En curso</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_061</span><span>Defecto de sellado</span><span class="cap__chip cap__chip--ok">Cerrada</span><span>12 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="scene" data-module="acciones" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">Cada incidencia acaba en una acción con dueño</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Acciones</div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Sustituir junta</span><span class="cap__chip cap__chip--curso">En curso</span><span>15 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_007</span><span>Recalibrar báscula</span><span class="cap__chip cap__chip--abierta">Abierta</span><span>16 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_114</span><span>Revisar sonda</span><span class="cap__chip cap__chip--ok">Hecha</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_098</span><span>Formación turno B</span><span class="cap__chip cap__chip--curso">En curso</span><span>17 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="scene" data-module="checklists" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">La ronda de calidad, firmada y con evidencia</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Registros · Paterna</div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0341</span><span>Prerrequisitos PPR</span><span class="cap__chip cap__chip--ok">OK</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0340</span><span>Limpieza L3</span><span class="cap__chip cap__chip--ok">OK</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0338</span><span>Control de alérgenos</span><span class="cap__chip cap__chip--curso">2 KO</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0335</span><span>Recepción materia prima</span><span class="cap__chip cap__chip--ok">OK</span><span>13 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="scene" data-module="activos" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">El histórico de cada máquina, en su ficha</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Activos · Envasadora L3</div>
+          <div class="cap__row"><span class="cap__id">ACT_L3_ENV</span><span>Preventivo trimestral</span><span class="cap__chip cap__chip--ok">Hecho</span><span>02 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Fuga en envasadora</span><span class="cap__chip cap__chip--abierta">Abierta</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_061</span><span>Defecto de sellado</span><span class="cap__chip cap__chip--ok">Cerrada</span><span>12 mar</span></div>
+          <div class="cap__row"><span class="cap__id">ACT_L3_ENV</span><span>Cambio de formato</span><span class="cap__chip cap__chip--ok">Hecho</span><span>11 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="scene" data-module="kpis" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">Lo que tardáis en cerrar, por planta y por turno</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Dashboard · marzo 2026</div>
+          <div class="cap__row"><span class="cap__id">PATERNA</span><span>Tiempo medio de cierre</span><span>2,4 d</span><span><span class="dot"></span> −18 %</span></div>
+          <div class="cap__row"><span class="cap__id">ALZIRA</span><span>Tiempo medio de cierre</span><span>3,1 d</span><span><span class="dot"></span> −4 %</span></div>
+          <div class="cap__row"><span class="cap__id">PATERNA</span><span>Incidencias reincidentes</span><span>7</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">ALZIRA</span><span>Checklists sin cerrar</span><span>3</span><span>14 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="scene" data-module="ia" data-span="12" data-ratio="21:9">
+      <h3 class="scene__title">La causa raíz, propuesta a partir del histórico</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Análisis · Envasadora L3</div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Patrón: fuga tras cambio de formato</span><span class="cap__chip cap__chip--curso">4 casos</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_061</span><span>Mismo turno, misma junta</span><span class="cap__chip cap__chip--curso">3 casos</span><span>12 mar</span></div>
+          <div class="cap__row"><span class="cap__id">ACT_L3_ENV</span><span>Preventivo con 9 días de retraso</span><span class="cap__chip cap__chip--abierta">Aviso</span><span>02 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_189_044</span><span>Sugerencia: adelantar el preventivo</span><span class="cap__chip cap__chip--ok">Propuesta</span><span>14 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <p class="pie">Los identificadores, las plantas y las fechas son los mismos en las seis: <code>UTD26_191_002</code>
+  aparece en Incidencias, en Acciones y en Activos, y es la misma avería. Datos incoherentes entre tarjetas se ven
+  antes que un tinte mal puesto.</p>
+
+  <h2>La misma rejilla, en gris</h2>
+  <p class="nota"><strong>La prueba:</strong> si en gris las tarjetas se vuelven indistinguibles, el color estaba
+  haciendo un trabajo que le tocaba al contenido. Aquí siguen diciendo cosas distintas —listado, tareas con dueño,
+  checklist firmada, ficha de máquina, cifras, análisis— porque lo que las separa es el fragmento, y el tinte sólo
+  las nombra. Si algún día esta vista se vuelve un muestrario de rectángulos iguales, el arreglo no es subir el
+  tinte: es cambiar las pantallas.</p>
+
+  <div class="scene-grid gris" aria-hidden="true">
+    <article class="scene" data-module="incidencias" data-span="8" data-ratio="4:3">
+      <h3 class="scene__title">Toda la planta reporta desde el móvil</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Incidencias · Paterna</div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Fuga en envasadora L3</span><span class="cap__chip cap__chip--abierta">Abierta</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_007</span><span>Etiquetado fuera de tolerancia</span><span class="cap__chip cap__chip--curso">En curso</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_114</span><span>Temperatura cámara 2</span><span class="cap__chip cap__chip--ok">Cerrada</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_098</span><span>Parada no programada L1</span><span class="cap__chip cap__chip--curso">En curso</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_061</span><span>Defecto de sellado</span><span class="cap__chip cap__chip--ok">Cerrada</span><span>12 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+    <article class="scene" data-module="acciones" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">Cada incidencia acaba en una acción con dueño</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Acciones</div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Sustituir junta</span><span class="cap__chip cap__chip--curso">En curso</span><span>15 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_007</span><span>Recalibrar báscula</span><span class="cap__chip cap__chip--abierta">Abierta</span><span>16 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_114</span><span>Revisar sonda</span><span class="cap__chip cap__chip--ok">Hecha</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_098</span><span>Formación turno B</span><span class="cap__chip cap__chip--curso">En curso</span><span>17 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+    <article class="scene" data-module="checklists" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">La ronda de calidad, firmada y con evidencia</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Registros · Paterna</div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0341</span><span>Prerrequisitos PPR</span><span class="cap__chip cap__chip--ok">OK</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0340</span><span>Limpieza L3</span><span class="cap__chip cap__chip--ok">OK</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0338</span><span>Control de alérgenos</span><span class="cap__chip cap__chip--curso">2 KO</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">CHK_26_0335</span><span>Recepción materia prima</span><span class="cap__chip cap__chip--ok">OK</span><span>13 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+    <article class="scene" data-module="activos" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">El histórico de cada máquina, en su ficha</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Activos · Envasadora L3</div>
+          <div class="cap__row"><span class="cap__id">ACT_L3_ENV</span><span>Preventivo trimestral</span><span class="cap__chip cap__chip--ok">Hecho</span><span>02 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Fuga en envasadora</span><span class="cap__chip cap__chip--abierta">Abierta</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_061</span><span>Defecto de sellado</span><span class="cap__chip cap__chip--ok">Cerrada</span><span>12 mar</span></div>
+          <div class="cap__row"><span class="cap__id">ACT_L3_ENV</span><span>Cambio de formato</span><span class="cap__chip cap__chip--ok">Hecho</span><span>11 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+    <article class="scene" data-module="kpis" data-span="4" data-ratio="1:1">
+      <h3 class="scene__title">Lo que tardáis en cerrar, por planta y por turno</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Dashboard · marzo 2026</div>
+          <div class="cap__row"><span class="cap__id">PATERNA</span><span>Tiempo medio de cierre</span><span>2,4 d</span><span><span class="dot"></span> −18 %</span></div>
+          <div class="cap__row"><span class="cap__id">ALZIRA</span><span>Tiempo medio de cierre</span><span>3,1 d</span><span><span class="dot"></span> −4 %</span></div>
+          <div class="cap__row"><span class="cap__id">PATERNA</span><span>Incidencias reincidentes</span><span>7</span><span>13 mar</span></div>
+          <div class="cap__row"><span class="cap__id">ALZIRA</span><span>Checklists sin cerrar</span><span>3</span><span>14 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+    <article class="scene" data-module="ia" data-span="12" data-ratio="21:9">
+      <h3 class="scene__title">La causa raíz, propuesta a partir del histórico</h3>
+      <div class="scene__media" data-crop="br">
+        <div class="cap">
+          <div class="cap__bar">Análisis · Envasadora L3</div>
+          <div class="cap__row"><span class="cap__id">UTD26_191_002</span><span>Patrón: fuga tras cambio de formato</span><span class="cap__chip cap__chip--curso">4 casos</span><span>14 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_190_061</span><span>Mismo turno, misma junta</span><span class="cap__chip cap__chip--curso">3 casos</span><span>12 mar</span></div>
+          <div class="cap__row"><span class="cap__id">ACT_L3_ENV</span><span>Preventivo con 9 días de retraso</span><span class="cap__chip cap__chip--abierta">Aviso</span><span>02 mar</span></div>
+          <div class="cap__row"><span class="cap__id">UTD26_189_044</span><span>Sugerencia: adelantar el preventivo</span><span class="cap__chip cap__chip--ok">Propuesta</span><span>14 mar</span></div>
+          <div class="cap__fill"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <h2>Anti-patrones</h2>
+  <p class="nota">Los siete de siempre. Cada uno está pintado a mano en esta página: ninguno se puede
+  construir con <code>ds/scene.css</code>, y ése es el motivo de que el componente no acepte color.</p>
+
+  <div class="anti">
+
+    <figure>
+      <div class="demo" style="background-image:linear-gradient(145deg,rgba(15,104,244,.34) 0%,rgba(15,104,244,0) 78%)">
+        <div class="mini"></div>
+      </div>
+      <figcaption><b>Tinte al 34 %.</b> Por encima del 12 % el lienzo compite con el fragmento, que es lo único
+      que tiene que leerse. La tarjeta pasa a ser un fondo con algo encima.</figcaption>
+    </figure>
+
+    <figure>
+      <div class="demo" style="display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border:0;background:none">
+        <div style="border-radius:12px;border:1px solid var(--color-hairline);background-image:linear-gradient(145deg,rgba(15,104,244,.12) 0%,rgba(15,104,244,0) 78%)"></div>
+        <div style="border-radius:12px;border:1px solid var(--color-hairline);background-image:linear-gradient(300deg,rgba(249,115,22,.12) 0%,rgba(249,115,22,0) 78%)"></div>
+      </div>
+      <figcaption><b>Dos ángulos en la misma rejilla.</b> Si cada tinte cae hacia un lado, la rejilla se
+      descompone: el ojo lee fondos sueltos en vez de una familia. Por eso el ángulo es una sola variable.</figcaption>
+    </figure>
+
+    <figure>
+      <div class="demo">
+        <div class="rot" style="background:
+          radial-gradient(60% 80% at 20% 30%,rgba(31,214,245,.55),transparent 60%),
+          radial-gradient(50% 70% at 70% 60%,rgba(168,85,247,.55),transparent 60%),
+          linear-gradient(120deg,rgba(15,104,244,.5),rgba(249,115,22,.35))"></div>
+        <div class="mini"></div>
+      </div>
+      <figcaption><b>Material de gradiente dentro.</b> La seda trenzada es del hero y tiene presupuesto de dos
+      apariciones grandes por página. Dentro de una escena, el fragmento desaparece.</figcaption>
+    </figure>
+
+    <figure>
+      <div class="demo" style="background-image:var(--tint-incidencias)">
+        <div class="mini mini--centrado"></div>
+      </div>
+      <figcaption><b>Fragmento entero y centrado.</b> Sin recorte no dice "esto continúa": parece un icono grande.
+      El corte por el borde es el gesto que sostiene el patrón.</figcaption>
+    </figure>
+
+    <figure>
+      <div class="demo" style="background-image:var(--tint-acciones);box-shadow:rgba(12,32,64,.22) 0 18px 40px">
+        <div class="mini"></div>
+      </div>
+      <figcaption><b>Sombra en el marco.</b> La única sombra del componente es la del fragmento; si también la
+      lleva el marco, se pierde la lectura de "ventana" y la escena flota sin razón.</figcaption>
+    </figure>
+
+    <figure>
+      <div class="demo" style="background-image:var(--tint-checklists)">
+        <div class="mini"></div>
+        <div style="position:absolute;top:12px;right:12px;width:28px;height:28px;display:grid;place-items:center;
+          border:1px solid var(--color-hairline);border-radius:6px;background:rgba(255,255,255,.72);color:#6C757E;font-size:13px">↗</div>
+      </div>
+      <figcaption><b>Expandir que no expande.</b> Una afordancia falsa cuesta más confianza de la que gana. En
+      <code>ds/scene.css</code> el icono sin <code>data-expand-target</code> no se pinta.</figcaption>
+    </figure>
+
+  </div>
+
+  <p class="nota" style="margin-top:28px">Y el séptimo, que no cabe en una viñeta: <b style="color:var(--color-status-fault)">tres
+  tarjetas</b>. Enseñar tres módulos vende corto — van cuatro o seis. Lo avisa <code>ds/scene-dev.js</code>.</p>
+
+</div>
+<script src="/ds/scene-dev.js"></script>
+</body>
+</html>

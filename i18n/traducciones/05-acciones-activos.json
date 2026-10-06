@@ -1,0 +1,521 @@
+{
+  "¿Qué son las listas de documentos requeridos?": { "en": "What are required-document lists?", "fr": "Que sont les listes de documents requis ?", "it": "Che cosa sono gli elenchi di documenti richiesti?", "de": "Was sind Listen erforderlicher Dokumente?", "pt": "O que são as listas de documentos obrigatórios?" },
+  "Son la lista de los documentos que una carpeta debe contener. Se definen por carpeta y el propio módulo avisa cuando a una lista le faltan documentos, así que la carpeta incompleta se detecta antes de la auditoría y no durante.": {
+    "en": "They are the list of documents a folder must hold. They are defined per folder and the module itself warns when a list is short, so the incomplete folder is spotted before the audit rather than during it.",
+    "fr": "C'est la liste des documents qu'un dossier doit contenir. Elle se définit par dossier et le module alerte lui-même quand il manque des documents à une liste : le dossier incomplet est repéré avant l'audit et non pendant.",
+    "it": "Sono l'elenco dei documenti che una cartella deve contenere. Si definiscono per cartella e il modulo stesso avvisa quando a un elenco mancano documenti, così la cartella incompleta si individua prima dell'audit e non durante.",
+    "de": "Sie sind die Liste der Dokumente, die ein Ordner enthalten muss. Sie werden je Ordner festgelegt, und das Modul meldet selbst, wenn einer Liste Dokumente fehlen – so fällt der unvollständige Ordner vor dem Audit auf und nicht währenddessen.",
+    "pt": "São a lista dos documentos que uma pasta deve conter. Definem-se por pasta e o próprio módulo avisa quando faltam documentos numa lista, para que a pasta incompleta seja detetada antes da auditoria, e não durante."
+  },
+  "¿Es un módulo aparte?": { "en": "Is it a separate module?", "fr": "Est-ce un module à part ?", "it": "È un modulo a parte?", "de": "Ist das ein eigenes Modul?", "pt": "É um módulo à parte?" },
+  "Documentos es un módulo del sistema, con su propia entrada en el menú, y se activa como los demás. La homologación de proveedores, en cambio, no es un módulo distinto: es este mismo gestor documental aplicado al proveedor, junto a sus incidencias de recepción.": {
+    "en": "Documents is a module of the system, with its own menu entry, and it is switched on like the rest. Supplier approval, on the other hand, is not a separate module: it is this same document manager applied to the supplier, alongside their goods-in incidents.",
+    "fr": "Documents est un module du système, avec sa propre entrée de menu, et s'active comme les autres. L'homologation des fournisseurs, en revanche, n'est pas un module distinct : c'est cette même gestion documentaire appliquée au fournisseur, avec ses incidents de réception.",
+    "it": "Documenti è un modulo del sistema, con la sua voce di menu, e si attiva come gli altri. La qualifica fornitori, invece, non è un modulo diverso: è questa stessa gestione documentale applicata al fornitore, insieme alle sue anomalie di ricevimento.",
+    "de": "Dokumente ist ein Modul des Systems mit eigenem Menüeintrag und wird wie die anderen aktiviert. Die Lieferantenfreigabe dagegen ist kein eigenes Modul: Sie ist dasselbe Dokumentenmanagement, angewandt auf den Lieferanten – zusammen mit dessen Wareneingangsstörungen.",
+    "pt": "Documentos é um módulo do sistema, com a sua própria entrada no menu, e ativa-se como os restantes. A homologação de fornecedores, por sua vez, não é um módulo distinto: é esta mesma gestão documental aplicada ao fornecedor, juntamente com as suas ocorrências de receção."
+  },
+  "¿Hay que reorganizar toda la documentación para empezar?": {
+    "en": "Do we have to reorganise all the documents to start?",
+    "fr": "Faut-il réorganiser toute la documentation pour commencer ?",
+    "it": "Bisogna riorganizzare tutta la documentazione per iniziare?",
+    "de": "Muss die gesamte Dokumentation für den Start umsortiert werden?",
+    "pt": "É preciso reorganizar toda a documentação para começar?"
+  },
+  "No. El árbol de carpetas y subcarpetas se crea como convenga, así que puedes reproducir el que ya usas y subir lo vigente. Lo que cambia no es la organización: es que cada documento pasa a tener fecha, estado y responsable.": {
+    "en": "No. The tree of folders and subfolders is built however suits you, so you can reproduce the one you already use and upload what is current. What changes is not the organisation: it is that each document now has a date, a status and an owner.",
+    "fr": "Non. L'arborescence de dossiers et sous-dossiers se crée comme vous voulez : vous pouvez reproduire celle que vous utilisez déjà et téléverser ce qui est en vigueur. Ce qui change, ce n'est pas l'organisation : c'est que chaque document a désormais une date, un statut et un responsable.",
+    "it": "No. L'albero di cartelle e sottocartelle si crea come conviene, quindi puoi riprodurre quello che già usi e caricare ciò che è vigente. Ciò che cambia non è l'organizzazione: è che ogni documento ora ha data, stato e responsabile.",
+    "de": "Nein. Der Baum aus Ordnern und Unterordnern wird so angelegt, wie es passt – Sie können den bestehenden nachbauen und das Gültige hochladen. Was sich ändert, ist nicht die Ordnung: Jedes Dokument hat nun Datum, Status und Verantwortlichen.",
+    "pt": "Não. A árvore de pastas e subpastas cria-se como for conveniente, por isso pode reproduzir a que já utiliza e carregar o que está em vigor. O que muda não é a organização: é que cada documento passa a ter data, estado e responsável."
+  },
+  "Técnico de calidad en la nave de una fábrica de alimentación consultando un procedimiento en una carpeta de anillas, con una tablet en la otra mano": {
+    "en": "A quality technician in a food factory hall reading a procedure in a ring binder, a tablet in the other hand",
+    "fr": "Un technicien qualité dans la halle d'une usine agroalimentaire consulte une procédure dans un classeur, une tablette dans l'autre main",
+    "it": "Un tecnico della qualità nel capannone di uno stabilimento alimentare consulta una procedura in un raccoglitore ad anelli, con un tablet nell'altra mano",
+    "de": "Ein Qualitätstechniker in der Halle eines Lebensmittelwerks liest ein Verfahren im Ringordner, in der anderen Hand ein Tablet",
+    "pt": "Um técnico de qualidade no pavilhão de uma fábrica alimentar a consultar um procedimento numa pasta de argolas, com um tablet na outra mão"
+  },
+  "Responsable consultando la documentación en la tablet junto a las estanterías del almacén": {
+    "en": "A manager checking the documents on a tablet beside the warehouse racking",
+    "fr": "Un responsable consulte la documentation sur la tablette près des rayonnages de l'entrepôt",
+    "it": "Un responsabile consulta la documentazione sul tablet accanto alle scaffalature del magazzino",
+    "de": "Ein Verantwortlicher prüft die Dokumente auf dem Tablet neben den Lagerregalen",
+    "pt": "Um responsável a consultar a documentação no tablet junto às estantes do armazém"
+  },
+  "Gestor documental": { "en": "Document manager", "fr": "Gestionnaire documentaire", "it": "Gestore documentale", "de": "Dokumentenverwaltung", "pt": "Gestão documental" },
+  "Acciones correctivas y no conformidades en planta · Solved": {
+    "en": "Corrective actions and non-conformities on the plant floor · Solved",
+    "fr": "Actions correctives et non-conformités en usine · Solved",
+    "it": "Azioni correttive e non conformità in stabilimento · Solved",
+    "de": "Korrekturmaßnahmen und Abweichungen im Werk · Solved",
+    "pt": "Ações corretivas e não conformidades na fábrica · Solved"
+  },
+  "Cada no conformidad, con responsable, fecha y análisis de causa raíz. Trazabilidad completa de la detección al cierre, con seguimiento automático del plazo.": {
+    "en": "Every non-conformity, with an owner, a date and a root cause analysis. Full traceability from detection to closure, with the deadline tracked automatically.",
+    "fr": "Chaque non-conformité, avec responsable, date et analyse de cause racine. Traçabilité complète de la détection à la clôture, avec suivi automatique de l'échéance.",
+    "it": "Ogni non conformità, con responsabile, data e analisi della causa radice. Tracciabilità completa dal rilevamento alla chiusura, con monitoraggio automatico della scadenza.",
+    "de": "Jede Abweichung mit Verantwortlichem, Datum und Ursachenanalyse. Vollständige Nachvollziehbarkeit von der Erkennung bis zum Abschluss, mit automatischer Fristenverfolgung.",
+    "pt": "Cada não conformidade, com responsável, data e análise da causa raiz. Rastreabilidade completa da deteção ao encerramento, com acompanhamento automático do prazo."
+  },
+  "Acciones · Tareas · No conformidades": { "en": "Actions · Tasks · Non-conformities", "fr": "Actions · Tâches · Non-conformités", "it": "Azioni · Attività · Non conformità", "de": "Maßnahmen · Aufgaben · Abweichungen", "pt": "Ações · Tarefas · Não conformidades" },
+  "Cierra cada no conformidad con responsable y plazo,": {
+    "en": "Close every non-conformity with an owner and a deadline,",
+    "fr": "Clôturez chaque non-conformité avec responsable et échéance,",
+    "it": "Chiudi ogni non conformità con responsabile e scadenza,",
+    "de": "Schließen Sie jede Abweichung mit Verantwortlichem und Frist ab,",
+    "pt": "Encerre cada não conformidade com responsável e prazo,"
+  },
+  "y llega a la auditoría con las acciones correctivas demostradas.": {
+    "en": "and walk into the audit with the corrective actions proven.",
+    "fr": "et arrivez à l'audit avec les actions correctives démontrées.",
+    "it": "e arriva all'audit con le azioni correttive dimostrate.",
+    "de": "und kommen Sie mit belegten Korrekturmaßnahmen ins Audit.",
+    "pt": "e chegue à auditoria com as ações corretivas comprovadas."
+  },
+  "Convierte cada incidencia o hallazgo de auditoría en un plan de acción con responsable, plazo y seguimiento automático. Solved no se queda en detectar el problema: documenta cómo se resolvió.": {
+    "en": "Turn every incident or audit finding into an action plan with an owner, a deadline and automatic follow-up. Solved does not stop at spotting the problem: it documents how it was solved.",
+    "fr": "Transformez chaque incident ou constat d'audit en un plan d'action avec responsable, échéance et suivi automatique. Solved ne s'arrête pas à détecter le problème : il documente comment il a été résolu.",
+    "it": "Trasforma ogni anomalia o rilievo di audit in un piano d'azione con responsabile, scadenza e monitoraggio automatico. Solved non si ferma a rilevare il problema: documenta come è stato risolto.",
+    "de": "Machen Sie aus jeder Störung oder jedem Auditbefund einen Maßnahmenplan mit Verantwortlichem, Frist und automatischer Nachverfolgung. Solved bleibt nicht beim Erkennen des Problems stehen: Es dokumentiert, wie es gelöst wurde.",
+    "pt": "Transforme cada ocorrência ou constatação de auditoria num plano de ação com responsável, prazo e acompanhamento automático. O Solved não se limita a detetar o problema: documenta como foi resolvido."
+  },
+  "De la desviación al cierre, en un solo circuito": {
+    "en": "From deviation to closure, in one circuit",
+    "fr": "De l'écart à la clôture, en un seul circuit",
+    "it": "Dalla deviazione alla chiusura, in un solo circuito",
+    "de": "Von der Abweichung bis zum Abschluss, in einem Kreislauf",
+    "pt": "Do desvio ao encerramento, num único circuito"
+  },
+  "Una incidencia de la línea, un hallazgo de auditoría y una reclamación de cliente entran por sitios distintos y acaban en lo mismo: una acción con responsable, con plazo y con la evidencia de cómo se resolvió.": {
+    "en": "An incident on the line, an audit finding and a customer complaint come in through different doors and end up as the same thing: an action with an owner, a deadline and the evidence of how it was solved.",
+    "fr": "Un incident de ligne, un constat d'audit et une réclamation client entrent par des portes différentes et aboutissent au même endroit : une action avec responsable, échéance et la preuve de sa résolution.",
+    "it": "Un'anomalia di linea, un rilievo di audit e un reclamo del cliente entrano da porte diverse e finiscono nella stessa cosa: un'azione con responsabile, scadenza ed evidenza di come è stata risolta.",
+    "de": "Eine Störung an der Linie, ein Auditbefund und eine Kundenreklamation kommen über verschiedene Wege herein und enden gleich: als Maßnahme mit Verantwortlichem, Frist und dem Nachweis, wie sie gelöst wurde.",
+    "pt": "Uma ocorrência da linha, uma constatação de auditoria e uma reclamação de cliente entram por vias diferentes e acabam no mesmo sítio: uma ação com responsável, com prazo e com a evidência de como foi resolvida."
+  },
+  "Entra": { "en": "It arrives", "fr": "Elle arrive", "it": "Entra", "de": "Eingang", "pt": "Entra" },
+  "La desviación llega desde donde se detecta: una incidencia abierta en planta, un hallazgo de la auditoría o una reclamación de cliente. Ninguna necesita abrir un expediente aparte.": {
+    "en": "The deviation comes from wherever it is spotted: an incident opened on the floor, an audit finding or a customer complaint. None of them needs a separate file.",
+    "fr": "L'écart arrive de là où il est détecté : un incident ouvert en usine, un constat d'audit ou une réclamation client. Aucun n'exige d'ouvrir un dossier à part.",
+    "it": "La deviazione arriva da dove viene rilevata: un'anomalia aperta in stabilimento, un rilievo di audit o un reclamo del cliente. Nessuna richiede di aprire un fascicolo a parte.",
+    "de": "Die Abweichung kommt von dort, wo sie erkannt wird: eine im Werk geöffnete Störung, ein Auditbefund oder eine Kundenreklamation. Keine braucht eine eigene Akte.",
+    "pt": "O desvio chega de onde é detetado: uma ocorrência aberta na fábrica, uma constatação de auditoria ou uma reclamação de cliente. Nenhuma delas precisa de abrir um processo à parte."
+  },
+  "Se analiza": { "en": "It is analysed", "fr": "Elle est analysée", "it": "Si analizza", "de": "Analyse", "pt": "Analisa-se" },
+  "El análisis de causa se hace dentro de la propia acción y con método —los 5 porqués o el diagrama de Ishikawa—, no en un documento suelto que nadie vuelve a abrir.": {
+    "en": "The root cause analysis happens inside the action itself and by the book — five whys or an Ishikawa diagram — not in a loose document nobody opens again.",
+    "fr": "L'analyse de cause se fait dans l'action elle-même et avec méthode — les 5 pourquoi ou le diagramme d'Ishikawa —, pas dans un document isolé que personne ne rouvre.",
+    "it": "L'analisi delle cause si fa dentro l'azione stessa e con metodo — i 5 perché o il diagramma di Ishikawa —, non in un documento sparso che nessuno riapre.",
+    "de": "Die Ursachenanalyse geschieht methodisch in der Maßnahme selbst – fünf Warum oder Ishikawa-Diagramm –, nicht in einem losen Dokument, das niemand wieder öffnet.",
+    "pt": "A análise de causa faz-se dentro da própria ação e com método — os 5 porquês ou o diagrama de Ishikawa —, não num documento avulso que ninguém volta a abrir."
+  },
+  "Se asigna": { "en": "It is assigned", "fr": "Elle est assignée", "it": "Si assegna", "de": "Zuweisung", "pt": "Atribui-se" },
+  "La acción sale con responsable y fecha de cierre. El aviso se emite en el momento de asignarla, por aplicación y por correo, y el sistema recuerda antes de que venza el plazo.": {
+    "en": "The action leaves with an owner and a closing date. The alert goes out the moment it is assigned, in the app and by email, and the system reminds before the deadline passes.",
+    "fr": "L'action part avec responsable et date de clôture. L'alerte est émise au moment de l'attribution, par application et par courriel, et le système relance avant l'échéance.",
+    "it": "L'azione esce con responsabile e data di chiusura. L'avviso parte al momento dell'assegnazione, via app e via mail, e il sistema ricorda prima della scadenza.",
+    "de": "Die Maßnahme entsteht mit Verantwortlichem und Abschlusstermin. Die Benachrichtigung geht beim Zuweisen raus, per App und E-Mail, und das System erinnert vor Ablauf der Frist.",
+    "pt": "A ação sai com responsável e data de encerramento. O alerta é emitido no momento em que é atribuída, por aplicação e por email, e o sistema relembra antes de o prazo terminar."
+  },
+  "Se cierra": { "en": "It is closed", "fr": "Elle est clôturée", "it": "Si chiude", "de": "Abschluss", "pt": "Encerra-se" },
+  "La verificación queda firmada y el histórico —quién, cuándo y con qué evidencia— está disponible el día que lo pide el auditor, sin reconstruirlo a posteriori.": {
+    "en": "The verification is signed off and the history — who, when and with what evidence — is there the day the auditor asks, with nothing reconstructed after the fact.",
+    "fr": "La vérification est signée et l'historique — qui, quand et avec quelle preuve — est disponible le jour où l'auditeur le demande, sans reconstitution a posteriori.",
+    "it": "La verifica resta firmata e lo storico — chi, quando e con quale evidenza — è disponibile il giorno in cui lo chiede l'auditor, senza ricostruirlo a posteriori.",
+    "de": "Die Prüfung ist unterschrieben, und die Historie – wer, wann und mit welchem Nachweis – liegt an dem Tag vor, an dem der Auditor fragt, ohne nachträgliche Rekonstruktion.",
+    "pt": "A verificação fica assinada e o histórico — quem, quando e com que evidência — está disponível no dia em que o auditor o pede, sem ser preciso reconstruí-lo depois."
+  },
+  "Una acción es siempre lo mismo: alguien, una fecha y una prueba": {
+    "en": "An action is always the same three things: someone, a date and a proof",
+    "fr": "Une action, c'est toujours la même chose : quelqu'un, une date et une preuve",
+    "it": "Un'azione è sempre la stessa cosa: qualcuno, una data e una prova",
+    "de": "Eine Maßnahme ist immer dasselbe: jemand, ein Datum und ein Beleg",
+    "pt": "Uma ação é sempre a mesma coisa: alguém, uma data e uma prova"
+  },
+  "La reclamación al proveedor sale con causa, medida y plazo": {
+    "en": "The supplier claim goes out with a cause, a measure and a deadline",
+    "fr": "La réclamation au fournisseur part avec cause, mesure et échéance",
+    "it": "Il reclamo al fornitore esce con causa, misura e scadenza",
+    "de": "Die Lieferantenreklamation geht mit Ursache, Maßnahme und Frist hinaus",
+    "pt": "A reclamação ao fornecedor sai com causa, medida e prazo"
+  },
+  "UTD26_164_EXQ · Reclamación de cliente": { "en": "UTD26_164_EXQ · Customer complaint", "fr": "UTD26_164_EXQ · Réclamation client", "it": "UTD26_164_EXQ · Reclamo cliente", "de": "UTD26_164_EXQ · Kundenreklamation", "pt": "UTD26_164_EXQ · Reclamação de cliente" },
+  "Pedido 4471 · etiquetado": { "en": "Order 4471 · labelling", "fr": "Commande 4471 · étiquetage", "it": "Ordine 4471 · etichettatura", "de": "Auftrag 4471 · Kennzeichnung", "pt": "Encomenda 4471 · rotulagem" },
+  "Análisis de causas": { "en": "Root cause analysis", "fr": "Analyse des causes", "it": "Analisi delle cause", "de": "Ursachenanalyse", "pt": "Análise das causas" },
+  "Pendiente": { "en": "Pending", "fr": "En attente", "it": "In sospeso", "de": "Ausstehend", "pt": "Pendente" },
+  "El proveedor": { "en": "The supplier", "fr": "Le fournisseur", "it": "Il fornitore", "de": "Der Lieferant", "pt": "O fornecedor" },
+  "En 2 días": { "en": "In 2 days", "fr": "Dans 2 jours", "it": "Tra 2 giorni", "de": "In 2 Tagen", "pt": "Em 2 dias" },
+  "Se asigna y se avisa, sin que nadie reparta el trabajo": {
+    "en": "Assigned and notified, with nobody handing out the work",
+    "fr": "Attribuée et notifiée, sans que personne ne répartisse le travail",
+    "it": "Si assegna e si avvisa, senza che nessuno distribuisca il lavoro",
+    "de": "Zugewiesen und benachrichtigt, ohne dass jemand Arbeit verteilt",
+    "pt": "Atribuída e notificada, sem que ninguém distribua o trabalho"
+  },
+  "Recordatorio a 24 h del plazo": { "en": "Reminder 24 h before the deadline", "fr": "Rappel 24 h avant l'échéance", "it": "Promemoria 24 h prima della scadenza", "de": "Erinnerung 24 Std. vor Fristende", "pt": "Lembrete 24 h antes do prazo" },
+  "Revisar sellado de la cámara 2": { "en": "Check the seal on cold room 2", "fr": "Vérifier l'étanchéité de la chambre 2", "it": "Verificare la tenuta della cella 2", "de": "Abdichtung von Kühlraum 2 prüfen", "pt": "Verificar a vedação da câmara 2" },
+  "Nueva tarea asignada": { "en": "New task assigned", "fr": "Nouvelle tâche assignée", "it": "Nuova attività assegnata", "de": "Neue Aufgabe zugewiesen", "pt": "Nova tarefa atribuída" },
+  "Juan · Mantenimiento": { "en": "Juan · Maintenance", "fr": "Juan · Maintenance", "it": "Juan · Manutenzione", "de": "Juan · Instandhaltung", "pt": "Juan · Manutenção" },
+  "En 3 días": { "en": "In 3 days", "fr": "Dans 3 jours", "it": "Tra 3 giorni", "de": "In 3 Tagen", "pt": "Em 3 dias" },
+  "Aviso": { "en": "Alert", "fr": "Alerte", "it": "Avviso", "de": "Benachrichtigung", "pt": "Alerta" },
+  "App y correo": { "en": "App and email", "fr": "Application et courriel", "it": "App e mail", "de": "App und E-Mail", "pt": "Aplicação e email" },
+  "La no conformidad, cerrada antes de la próxima auditoría": {
+    "en": "The non-conformity, closed before the next audit",
+    "fr": "La non-conformité, clôturée avant le prochain audit",
+    "it": "La non conformità, chiusa prima del prossimo audit",
+    "de": "Die Abweichung, geschlossen vor dem nächsten Audit",
+    "pt": "A não conformidade, encerrada antes da próxima auditoria"
+  },
+  "NC-118 · Etiquetado sin lote visible": { "en": "NC-118 · Labelling without a visible batch code", "fr": "NC-118 · Étiquetage sans lot visible", "it": "NC-118 · Etichettatura senza lotto visibile", "de": "NC-118 · Kennzeichnung ohne sichtbare Charge", "pt": "NC-118 · Rotulagem sem lote visível" },
+  "Hallazgo de auditoría IFS": { "en": "IFS audit finding", "fr": "Constat d'audit IFS", "it": "Rilievo di audit IFS", "de": "IFS-Auditbefund", "pt": "Constatação de auditoria IFS" },
+  "Acción correctiva": { "en": "Corrective action", "fr": "Action corrective", "it": "Azione correttiva", "de": "Korrekturmaßnahme", "pt": "Ação corretiva" },
+  "Cerrada": { "en": "Closed", "fr": "Clôturée", "it": "Chiusa", "de": "Abgeschlossen", "pt": "Encerrada" },
+  "Evidencia": { "en": "Evidence", "fr": "Preuve", "it": "Evidenza", "de": "Nachweis", "pt": "Evidência" },
+  "Foto y registro": { "en": "Photo and record", "fr": "Photo et enregistrement", "it": "Foto e registrazione", "de": "Foto und Aufzeichnung", "pt": "Foto e registo" },
+  "Trazabilidad": { "en": "Traceability", "fr": "Traçabilité", "it": "Tracciabilità", "de": "Rückverfolgbarkeit", "pt": "Rastreabilidade" },
+  "De la detección al cierre": { "en": "From detection to closure", "fr": "De la détection à la clôture", "it": "Dal rilevamento alla chiusura", "de": "Von der Erkennung bis zum Abschluss", "pt": "Da deteção ao encerramento" },
+  "Quién tiene qué abierto, sin ir a preguntarlo": {
+    "en": "Who has what open, without going round asking",
+    "fr": "Qui a quoi en cours, sans avoir à le demander",
+    "it": "Chi ha cosa aperto, senza doverlo chiedere",
+    "de": "Wer was offen hat – ohne herumzufragen",
+    "pt": "Quem tem o quê em aberto, sem ter de perguntar"
+  },
+  "Acciones abiertas por responsable": { "en": "Open actions by owner", "fr": "Actions ouvertes par responsable", "it": "Azioni aperte per responsabile", "de": "Offene Maßnahmen nach Verantwortlichem", "pt": "Ações abertas por responsável" },
+  "Estado al día, sin pedir el parte": { "en": "Status up to date, without asking for a report", "fr": "Statut à jour, sans demander de rapport", "it": "Stato aggiornato, senza chiedere il rapporto", "de": "Aktueller Stand, ohne einen Bericht anzufordern", "pt": "Estado atualizado, sem pedir o parte" },
+  "2 abiertas": { "en": "2 open", "fr": "2 ouvertes", "it": "2 aperte", "de": "2 offen", "pt": "2 abertas" },
+  "Marcos · Producción": { "en": "Marcos · Production", "fr": "Marcos · Production", "it": "Marcos · Produzione", "de": "Marcos · Produktion", "pt": "Marcos · Produção" },
+  "Raquel · Calidad": { "en": "Raquel · Quality", "fr": "Raquel · Qualité", "it": "Raquel · Qualità", "de": "Raquel · Qualität", "pt": "Raquel · Qualidade" },
+  "1 en revisión": { "en": "1 in review", "fr": "1 en revue", "it": "1 in revisione", "de": "1 in Prüfung", "pt": "1 em revisão" },
+  "La conversación vive dentro de la acción, no en el correo": {
+    "en": "The conversation lives inside the action, not in email",
+    "fr": "La conversation vit dans l'action, pas dans le courriel",
+    "it": "La conversazione vive dentro l'azione, non nella mail",
+    "de": "Die Abstimmung lebt in der Maßnahme, nicht in der E-Mail",
+    "pt": "A conversa vive dentro da ação, não no email"
+  },
+  "Sustituir junta · cámara 2": { "en": "Replace gasket · cold room 2", "fr": "Remplacer le joint · chambre 2", "it": "Sostituire guarnizione · cella 2", "de": "Dichtung tauschen · Kühlraum 2", "pt": "Substituir junta · câmara 2" },
+  "Mantenimiento y calidad, en el mismo hilo": { "en": "Maintenance and quality, in the same thread", "fr": "Maintenance et qualité, dans le même fil", "it": "Manutenzione e qualità, nello stesso thread", "de": "Instandhaltung und Qualität im selben Verlauf", "pt": "Manutenção e qualidade, no mesmo fio de conversa" },
+  "Junta sustituida": { "en": "Gasket replaced", "fr": "Joint remplacé", "it": "Guarnizione sostituita", "de": "Dichtung getauscht", "pt": "Junta substituída" },
+  "Limpieza validada": { "en": "Cleaning approved", "fr": "Nettoyage validé", "it": "Pulizia validata", "de": "Reinigung freigegeben", "pt": "Limpeza validada" },
+  "Cierre": { "en": "Closure", "fr": "Clôture", "it": "Chiusura", "de": "Abschluss", "pt": "Encerramento" },
+  "Con registro adjunto": { "en": "With the record attached", "fr": "Avec l'enregistrement joint", "it": "Con registrazione allegata", "de": "Mit angehängter Aufzeichnung", "pt": "Com registo anexado" },
+  "Lo que los equipos cierran aquí": { "en": "What teams close here", "fr": "Ce que les équipes clôturent ici", "it": "Cosa chiudono qui le squadre", "de": "Was Teams hier abschließen", "pt": "O que as equipas encerram aqui" },
+  "El módulo no es una lista de tareas: es el sitio donde acaba todo lo que se detecta en planta, en la auditoría o en el cliente, con la prueba de que se resolvió.": {
+    "en": "The module is not a to-do list: it is where everything spotted on the floor, in the audit or at the customer ends up, with the proof that it was solved.",
+    "fr": "Le module n'est pas une liste de tâches : c'est l'endroit où aboutit tout ce qui est détecté en usine, en audit ou chez le client, avec la preuve de la résolution.",
+    "it": "Il modulo non è una lista di attività: è il posto dove finisce tutto ciò che si rileva in stabilimento, nell'audit o dal cliente, con la prova che è stato risolto.",
+    "de": "Das Modul ist keine Aufgabenliste: Es ist der Ort, an dem alles landet, was im Werk, im Audit oder beim Kunden auffällt – samt Beleg, dass es gelöst wurde.",
+    "pt": "O módulo não é uma lista de tarefas: é o sítio onde acaba tudo o que se deteta na fábrica, na auditoria ou no cliente, com a prova de que foi resolvido."
+  },
+  "Cada hallazgo de ISO 9001, IFS, BRC, ISO 22000 o APPCC se registra con su evidencia en un expediente único y se sigue hasta el cierre.": {
+    "en": "Every ISO 9001, IFS, BRC, ISO 22000 or HACCP finding is logged with its evidence in a single file and followed through to closure.",
+    "fr": "Chaque constat ISO 9001, IFS, BRC, ISO 22000 ou HACCP est enregistré avec sa preuve dans un dossier unique et suivi jusqu'à la clôture.",
+    "it": "Ogni rilievo ISO 9001, IFS, BRC, ISO 22000 o HACCP si registra con la sua evidenza in un fascicolo unico e si segue fino alla chiusura.",
+    "de": "Jeder Befund nach ISO 9001, IFS, BRC, ISO 22000 oder HACCP wird mit Nachweis in einer einzigen Akte erfasst und bis zum Abschluss verfolgt.",
+    "pt": "Cada constatação de ISO 9001, IFS, BRC, ISO 22000 ou HACCP regista-se com a sua evidência num processo único e é acompanhada até ao encerramento."
+  },
+  "No conformidades de auditoría.": { "en": "Audit non-conformities.", "fr": "Non-conformités d'audit.", "it": "Non conformità di audit.", "de": "Auditabweichungen.", "pt": "Não conformidades de auditoria." },
+  "La incidencia abierta en planta deriva en su acción correctiva sin volver a teclear nada, y el aviso llega al turno que corresponde.": {
+    "en": "An incident opened on the floor turns into its corrective action without retyping anything, and the alert reaches the right shift.",
+    "fr": "L'incident ouvert en usine donne lieu à son action corrective sans rien ressaisir, et l'alerte arrive au poste concerné.",
+    "it": "L'anomalia aperta in stabilimento genera la sua azione correttiva senza ridigitare nulla, e l'avviso arriva al turno giusto.",
+    "de": "Die im Werk geöffnete Störung wird ohne erneutes Tippen zu ihrer Korrekturmaßnahme, und die Benachrichtigung erreicht die richtige Schicht.",
+    "pt": "A ocorrência aberta na fábrica dá origem à sua ação corretiva sem escrever nada de novo, e o alerta chega ao turno correspondente."
+  },
+  "Averías y desviaciones de la línea.": { "en": "Breakdowns and line deviations.", "fr": "Pannes et écarts de ligne.", "it": "Guasti e deviazioni di linea.", "de": "Störungen und Abweichungen an der Linie.", "pt": "Avarias e desvios da linha." },
+  "Ver gestión de incidencias →": { "en": "See incident management →", "fr": "Voir la gestion des incidents →", "it": "Vedi la gestione delle anomalie →", "de": "Zum Störungsmanagement →", "pt": "Ver gestão de ocorrências →" },
+  "Lo recurrente y lo puntual se programan y se asignan a una persona o a un departamento, con el mismo seguimiento que una acción correctiva.": {
+    "en": "Recurring and one-off work is scheduled and assigned to a person or a department, tracked just like a corrective action.",
+    "fr": "Le récurrent et le ponctuel se programment et s'attribuent à une personne ou à un service, avec le même suivi qu'une action corrective.",
+    "it": "Il ricorrente e l'occasionale si programmano e si assegnano a una persona o a un reparto, con lo stesso monitoraggio di un'azione correttiva.",
+    "de": "Wiederkehrendes und Einmaliges wird geplant und einer Person oder Abteilung zugewiesen – mit derselben Nachverfolgung wie eine Korrekturmaßnahme.",
+    "pt": "O recorrente e o pontual programam-se e atribuem-se a uma pessoa ou a um departamento, com o mesmo acompanhamento de uma ação corretiva."
+  },
+  "Tareas planificadas, no sólo correctivas.": { "en": "Planned tasks, not just corrective ones.", "fr": "Tâches planifiées, pas seulement correctives.", "it": "Attività pianificate, non solo correttive.", "de": "Geplante Aufgaben, nicht nur korrektive.", "pt": "Tarefas planeadas, não só corretivas." },
+  "La mayoría de los problemas se resuelven entre varias áreas: la acción se deriva de una a otra sin que se caiga por el camino, y la conversación va con ella.": {
+    "en": "Most problems get solved across several areas: the action is handed from one to the next without falling through the cracks, and the conversation travels with it.",
+    "fr": "La plupart des problèmes se résolvent entre plusieurs services : l'action passe de l'un à l'autre sans se perdre en route, et la conversation l'accompagne.",
+    "it": "La maggior parte dei problemi si risolve tra più aree: l'azione passa dall'una all'altra senza perdersi per strada, e la conversazione la segue.",
+    "de": "Die meisten Probleme werden bereichsübergreifend gelöst: Die Maßnahme wandert von einem zum nächsten, ohne verloren zu gehen – und die Abstimmung geht mit.",
+    "pt": "A maioria dos problemas resolve-se entre várias áreas: a ação passa de uma para outra sem se perder pelo caminho, e a conversa acompanha-a."
+  },
+  "Trabajo entre departamentos.": { "en": "Work across departments.", "fr": "Travail interservices.", "it": "Lavoro tra reparti.", "de": "Abteilungsübergreifende Arbeit.", "pt": "Trabalho entre departamentos." },
+  "Un agente externo recibe su acción, la contesta y adjunta su análisis sin ser usuario del sistema: la reclamación sale con plazo y hay que responderla.": {
+    "en": "An outside party receives their action, answers it and attaches their analysis without being a user of the system: the claim goes out with a deadline and has to be answered.",
+    "fr": "Un intervenant externe reçoit son action, y répond et joint son analyse sans être utilisateur du système : la réclamation part avec une échéance et doit recevoir une réponse.",
+    "it": "Un soggetto esterno riceve la sua azione, risponde e allega la sua analisi senza essere utente del sistema: il reclamo esce con una scadenza e va risposto.",
+    "de": "Ein Externer erhält seine Maßnahme, beantwortet sie und hängt seine Analyse an, ohne Nutzer des Systems zu sein: Die Reklamation geht mit Frist hinaus und muss beantwortet werden.",
+    "pt": "Um agente externo recebe a sua ação, responde-lhe e anexa a sua análise sem ser utilizador do sistema: a reclamação sai com prazo e tem de ser respondida."
+  },
+  "Proveedores y contratistas.": { "en": "Suppliers and contractors.", "fr": "Fournisseurs et sous-traitants.", "it": "Fornitori e appaltatori.", "de": "Lieferanten und Fremdfirmen.", "pt": "Fornecedores e subcontratados." },
+  "Las acciones abiertas, las vencidas y el tiempo medio de cierre se leen como indicador, no como una lista que hay que contar una por una.": {
+    "en": "Open actions, overdue ones and the average time to close read as an indicator, not as a list you have to count one by one.",
+    "fr": "Les actions ouvertes, celles en retard et le délai moyen de clôture se lisent comme un indicateur, pas comme une liste à compter une par une.",
+    "it": "Le azioni aperte, quelle scadute e il tempo medio di chiusura si leggono come indicatore, non come una lista da contare una per una.",
+    "de": "Offene Maßnahmen, überfällige und die durchschnittliche Abschlusszeit liest man als Kennzahl, nicht als Liste, die man einzeln zählen muss.",
+    "pt": "As ações abertas, as em atraso e o tempo médio de encerramento leem-se como indicador, não como uma lista que é preciso contar uma a uma."
+  },
+  "Lo que se cierra y lo que se atasca.": { "en": "What closes and what gets stuck.", "fr": "Ce qui se clôture et ce qui bloque.", "it": "Ciò che si chiude e ciò che si blocca.", "de": "Was abgeschlossen wird und was hängen bleibt.", "pt": "O que se encerra e o que fica parado." },
+  "«Le mandas al proveedor la incidencia desde la plataforma, con el campo donde tienen que completar el análisis de causas y las medidas para evitar la repetición, y les pones un plazo. Lo tienen todo muy protocolizado y hay que contestar.»": {
+    "en": "“You send the supplier the incident from the platform, with the field where they have to fill in the root cause analysis and the measures to stop it happening again, and you set them a deadline. It is all very structured for them and they have to answer.”",
+    "fr": "« Vous envoyez l'incident au fournisseur depuis la plateforme, avec le champ où il doit compléter l'analyse des causes et les mesures pour éviter la répétition, et vous lui fixez une échéance. Tout est très cadré pour eux et il faut répondre. »",
+    "it": "«Mandi al fornitore l'anomalia dalla piattaforma, con il campo dove devono completare l'analisi delle cause e le misure per evitare la ripetizione, e gli metti una scadenza. Hanno tutto molto protocollato e devono rispondere.»",
+    "de": "„Man schickt dem Lieferanten die Störung aus der Plattform, mit dem Feld, in dem er Ursachenanalyse und Maßnahmen gegen die Wiederholung eintragen muss, und setzt ihm eine Frist. Für ihn ist alles klar geregelt und er muss antworten.“",
+    "pt": "«Envia-se ao fornecedor a ocorrência a partir da plataforma, com o campo onde tem de preencher a análise das causas e as medidas para evitar a repetição, e define-se um prazo. Está tudo muito protocolado e é preciso responder.»"
+  },
+  "¿Qué diferencia hay entre una incidencia y una acción correctiva?": {
+    "en": "What is the difference between an incident and a corrective action?",
+    "fr": "Quelle différence entre un incident et une action corrective ?",
+    "it": "Che differenza c'è tra un'anomalia e un'azione correttiva?",
+    "de": "Was ist der Unterschied zwischen einer Störung und einer Korrekturmaßnahme?",
+    "pt": "Qual é a diferença entre uma ocorrência e uma ação corretiva?"
+  },
+  "La incidencia detecta el problema; la acción correctiva lo resuelve. Cada incidencia o hallazgo de auditoría genera un plan de acción con responsable, fecha de cierre y seguimiento hasta resolverlo.": {
+    "en": "The incident spots the problem; the corrective action solves it. Every incident or audit finding generates an action plan with an owner, a closing date and follow-up until it is resolved.",
+    "fr": "L'incident détecte le problème ; l'action corrective le résout. Chaque incident ou constat d'audit génère un plan d'action avec responsable, date de clôture et suivi jusqu'à la résolution.",
+    "it": "L'anomalia rileva il problema; l'azione correttiva lo risolve. Ogni anomalia o rilievo di audit genera un piano d'azione con responsabile, data di chiusura e monitoraggio fino alla risoluzione.",
+    "de": "Die Störung erkennt das Problem; die Korrekturmaßnahme löst es. Jede Störung oder jeder Auditbefund erzeugt einen Maßnahmenplan mit Verantwortlichem, Abschlusstermin und Nachverfolgung bis zur Lösung.",
+    "pt": "A ocorrência deteta o problema; a ação corretiva resolve-o. Cada ocorrência ou constatação de auditoria gera um plano de ação com responsável, data de encerramento e acompanhamento até à resolução."
+  },
+  "¿Cómo se asigna un responsable y una fecha a cada acción?": {
+    "en": "How is an owner and a date assigned to each action?",
+    "fr": "Comment attribue-t-on un responsable et une date à chaque action ?",
+    "it": "Come si assegnano responsabile e data a ogni azione?",
+    "de": "Wie werden Verantwortlicher und Termin je Maßnahme zugewiesen?",
+    "pt": "Como se atribui um responsável e uma data a cada ação?"
+  },
+  "La acción se crea con responsable y fecha de cierre. El responsable recibe una notificación inmediata por aplicación y correo, y el sistema emite recordatorios antes del vencimiento.": {
+    "en": "The action is created with an owner and a closing date. The owner gets an immediate notification in the app and by email, and the system sends reminders before it falls due.",
+    "fr": "L'action est créée avec responsable et date de clôture. Le responsable reçoit une notification immédiate par application et courriel, et le système envoie des rappels avant l'échéance.",
+    "it": "L'azione si crea con responsabile e data di chiusura. Il responsabile riceve una notifica immediata via app e mail, e il sistema invia promemoria prima della scadenza.",
+    "de": "Die Maßnahme wird mit Verantwortlichem und Abschlusstermin angelegt. Der Verantwortliche erhält sofort eine Benachrichtigung per App und E-Mail, und das System erinnert vor Ablauf.",
+    "pt": "A ação é criada com responsável e data de encerramento. O responsável recebe uma notificação imediata por aplicação e email, e o sistema emite lembretes antes de o prazo terminar."
+  },
+  "¿Solved gestiona las no conformidades de auditoría (ISO 9001, IFS, BRC)?": {
+    "en": "Does Solved handle audit non-conformities (ISO 9001, IFS, BRC)?",
+    "fr": "Solved gère-t-il les non-conformités d'audit (ISO 9001, IFS, BRC) ?",
+    "it": "Solved gestisce le non conformità di audit (ISO 9001, IFS, BRC)?",
+    "de": "Verwaltet Solved Auditabweichungen (ISO 9001, IFS, BRC)?",
+    "pt": "O Solved gere as não conformidades de auditoria (ISO 9001, IFS, BRC)?"
+  },
+  "Sí. Registra cada no conformidad de auditoría o inspección, la asigna con responsable y plazo y mantiene la trazabilidad completa desde la detección hasta el cierre. Compatible con ISO 9001, IFS, BRC, ISO 22000 y APPCC.": {
+    "en": "Yes. It logs every audit or inspection non-conformity, assigns it with an owner and a deadline and keeps full traceability from detection to closure. Compatible with ISO 9001, IFS, BRC, ISO 22000 and HACCP.",
+    "fr": "Oui. Il enregistre chaque non-conformité d'audit ou d'inspection, l'attribue avec responsable et échéance et conserve la traçabilité complète de la détection à la clôture. Compatible ISO 9001, IFS, BRC, ISO 22000 et HACCP.",
+    "it": "Sì. Registra ogni non conformità di audit o ispezione, la assegna con responsabile e scadenza e mantiene la tracciabilità completa dal rilevamento alla chiusura. Compatibile con ISO 9001, IFS, BRC, ISO 22000 e HACCP.",
+    "de": "Ja. Es erfasst jede Audit- oder Inspektionsabweichung, weist sie mit Verantwortlichem und Frist zu und hält die vollständige Nachvollziehbarkeit von der Erkennung bis zum Abschluss. Kompatibel mit ISO 9001, IFS, BRC, ISO 22000 und HACCP.",
+    "pt": "Sim. Regista cada não conformidade de auditoria ou inspeção, atribui-a com responsável e prazo e mantém a rastreabilidade completa desde a deteção até ao encerramento. Compatível com ISO 9001, IFS, BRC, ISO 22000 e HACCP."
+  },
+  "¿Qué es el análisis de causa raíz y para qué sirve?": {
+    "en": "What is root cause analysis and what is it for?",
+    "fr": "Qu'est-ce que l'analyse de cause racine et à quoi sert-elle ?",
+    "it": "Che cos'è l'analisi della causa radice e a cosa serve?",
+    "de": "Was ist eine Ursachenanalyse und wozu dient sie?",
+    "pt": "O que é a análise da causa raiz e para que serve?"
+  },
+  "Es una metodología de mejora continua orientada al origen de la desviación y no a su síntoma. Solved vincula cada acción correctiva a su análisis, de modo que la resolución sea definitiva y quede documentada.": {
+    "en": "It is a continuous improvement method aimed at the origin of the deviation rather than its symptom. Solved links every corrective action to its analysis, so the fix is permanent and on record.",
+    "fr": "C'est une méthode d'amélioration continue orientée vers l'origine de l'écart et non vers son symptôme. Solved relie chaque action corrective à son analyse, pour que la résolution soit définitive et documentée.",
+    "it": "È una metodologia di miglioramento continuo orientata all'origine della deviazione e non al suo sintomo. Solved collega ogni azione correttiva alla sua analisi, così la risoluzione è definitiva e resta documentata.",
+    "de": "Eine Methode der kontinuierlichen Verbesserung, die auf den Ursprung der Abweichung zielt und nicht auf ihr Symptom. Solved verknüpft jede Korrekturmaßnahme mit ihrer Analyse, damit die Lösung dauerhaft und dokumentiert ist.",
+    "pt": "É uma metodologia de melhoria contínua orientada para a origem do desvio, e não para o seu sintoma. O Solved associa cada ação corretiva à sua análise, para que a resolução seja definitiva e fique documentada."
+  },
+  "¿Puedo programar tareas planificadas además de las acciones correctivas?": {
+    "en": "Can I schedule planned tasks as well as corrective actions?",
+    "fr": "Puis-je programmer des tâches planifiées en plus des actions correctives ?",
+    "it": "Posso programmare attività pianificate oltre alle azioni correttive?",
+    "de": "Kann ich neben Korrekturmaßnahmen auch geplante Aufgaben terminieren?",
+    "pt": "É possível programar tarefas planeadas além das ações corretivas?"
+  },
+  "Sí. Además del trabajo reactivo, el sistema permite programar tareas recurrentes o puntuales y asignarlas a departamentos o personas, con el mismo seguimiento que las acciones correctivas.": {
+    "en": "Yes. Beyond reactive work, the system lets you schedule recurring or one-off tasks and assign them to departments or people, tracked just like corrective actions.",
+    "fr": "Oui. Au-delà du travail réactif, le système permet de programmer des tâches récurrentes ou ponctuelles et de les attribuer à des services ou à des personnes, avec le même suivi que les actions correctives.",
+    "it": "Sì. Oltre al lavoro reattivo, il sistema permette di programmare attività ricorrenti o occasionali e assegnarle a reparti o persone, con lo stesso monitoraggio delle azioni correttive.",
+    "de": "Ja. Über die reaktive Arbeit hinaus lassen sich wiederkehrende oder einmalige Aufgaben planen und Abteilungen oder Personen zuweisen – mit derselben Nachverfolgung wie Korrekturmaßnahmen.",
+    "pt": "Sim. Além do trabalho reativo, o sistema permite programar tarefas recorrentes ou pontuais e atribuí-las a departamentos ou pessoas, com o mesmo acompanhamento das ações corretivas."
+  },
+  "Acciones y no conformidades": { "en": "Actions and non-conformities", "fr": "Actions et non-conformités", "it": "Azioni e non conformità", "de": "Maßnahmen und Abweichungen", "pt": "Ações e não conformidades" },
+  "La incidencia detecta el problema; la acción correctiva lo resuelve. En Solved, cada incidencia o hallazgo de auditoría genera un plan de acción con responsable, fecha de cierre y seguimiento hasta resolverlo.": {
+    "en": "The incident spots the problem; the corrective action solves it. In Solved, every incident or audit finding generates an action plan with an owner, a closing date and follow-up until it is resolved.",
+    "fr": "L'incident détecte le problème ; l'action corrective le résout. Dans Solved, chaque incident ou constat d'audit génère un plan d'action avec responsable, date de clôture et suivi jusqu'à la résolution.",
+    "it": "L'anomalia rileva il problema; l'azione correttiva lo risolve. In Solved, ogni anomalia o rilievo di audit genera un piano d'azione con responsabile, data di chiusura e monitoraggio fino alla risoluzione.",
+    "de": "Die Störung erkennt das Problem; die Korrekturmaßnahme löst es. In Solved erzeugt jede Störung oder jeder Auditbefund einen Maßnahmenplan mit Verantwortlichem, Abschlusstermin und Nachverfolgung bis zur Lösung.",
+    "pt": "A ocorrência deteta o problema; a ação corretiva resolve-o. No Solved, cada ocorrência ou constatação de auditoria gera um plano de ação com responsável, data de encerramento e acompanhamento até à resolução."
+  },
+  "Sí. Registra cada no conformidad de auditoría o inspección, la asigna con responsable y plazo y mantiene la trazabilidad completa desde la detección hasta el cierre. Es compatible con ISO 9001, IFS, BRC, ISO 22000 y APPCC.": {
+    "en": "Yes. It logs every audit or inspection non-conformity, assigns it with an owner and a deadline and keeps full traceability from detection to closure. It is compatible with ISO 9001, IFS, BRC, ISO 22000 and HACCP.",
+    "fr": "Oui. Il enregistre chaque non-conformité d'audit ou d'inspection, l'attribue avec responsable et échéance et conserve la traçabilité complète de la détection à la clôture. Il est compatible avec ISO 9001, IFS, BRC, ISO 22000 et HACCP.",
+    "it": "Sì. Registra ogni non conformità di audit o ispezione, la assegna con responsabile e scadenza e mantiene la tracciabilità completa dal rilevamento alla chiusura. È compatibile con ISO 9001, IFS, BRC, ISO 22000 e HACCP.",
+    "de": "Ja. Es erfasst jede Audit- oder Inspektionsabweichung, weist sie mit Verantwortlichem und Frist zu und hält die vollständige Nachvollziehbarkeit von der Erkennung bis zum Abschluss. Es ist kompatibel mit ISO 9001, IFS, BRC, ISO 22000 und HACCP.",
+    "pt": "Sim. Regista cada não conformidade de auditoria ou inspeção, atribui-a com responsável e prazo e mantém a rastreabilidade completa desde a deteção até ao encerramento. É compatível com ISO 9001, IFS, BRC, ISO 22000 e HACCP."
+  },
+  "Es una metodología lean para llegar al origen real del problema, no solo al síntoma. Solved vincula las acciones correctivas al análisis de causa raíz para que la solución sea definitiva y el problema no vuelva a repetirse.": {
+    "en": "It is a lean method for getting to the real origin of the problem, not just the symptom. Solved links corrective actions to the root cause analysis so the fix is permanent and the problem does not come back.",
+    "fr": "C'est une méthode lean pour remonter à l'origine réelle du problème, pas seulement au symptôme. Solved relie les actions correctives à l'analyse de cause racine pour que la solution soit définitive et que le problème ne se répète pas.",
+    "it": "È una metodologia lean per arrivare all'origine reale del problema, non solo al sintomo. Solved collega le azioni correttive all'analisi della causa radice perché la soluzione sia definitiva e il problema non si ripeta.",
+    "de": "Eine Lean-Methode, um zum wirklichen Ursprung des Problems zu gelangen, nicht nur zum Symptom. Solved verknüpft Korrekturmaßnahmen mit der Ursachenanalyse, damit die Lösung dauerhaft ist und das Problem nicht wiederkehrt.",
+    "pt": "É uma metodologia lean para chegar à origem real do problema, e não apenas ao sintoma. O Solved associa as ações corretivas à análise da causa raiz para que a solução seja definitiva e o problema não volte a repetir-se."
+  },
+  "Gestión de activos y mantenimiento en planta · Solved": {
+    "en": "Asset management and plant maintenance · Solved",
+    "fr": "Gestion des actifs et maintenance en usine · Solved",
+    "it": "Gestione degli asset e manutenzione in stabilimento · Solved",
+    "de": "Anlagenverwaltung und Werksinstandhaltung · Solved",
+    "pt": "Gestão de ativos e manutenção na fábrica · Solved"
+  },
+  "Cada máquina con su ficha, su QR y su historial: las incidencias, los registros y las acciones de ese equipo en un solo sitio, sin cambiar de herramienta.": {
+    "en": "Every machine with its record, its QR code and its history: that asset's incidents, records and actions in one place, without switching tools.",
+    "fr": "Chaque machine avec sa fiche, son QR et son historique : les incidents, les enregistrements et les actions de cet équipement au même endroit, sans changer d'outil.",
+    "it": "Ogni macchina con la sua scheda, il suo QR e il suo storico: anomalie, registrazioni e azioni di quell'asset in un solo posto, senza cambiare strumento.",
+    "de": "Jede Maschine mit Datensatz, QR-Code und Historie: Störungen, Aufzeichnungen und Maßnahmen dieser Anlage an einem Ort, ohne Werkzeugwechsel.",
+    "pt": "Cada máquina com a sua ficha, o seu QR e o seu histórico: as ocorrências, os registos e as ações desse equipamento num único sítio, sem mudar de ferramenta."
+  },
+  "Activos": { "en": "Assets", "fr": "Actifs", "it": "Asset", "de": "Anlagen", "pt": "Ativos" },
+  "Ten el historial completo de cada máquina en su propia ficha:": {
+    "en": "Keep every machine's full history on its own record:",
+    "fr": "Gardez l'historique complet de chaque machine sur sa propre fiche :",
+    "it": "Tieni lo storico completo di ogni macchina nella sua scheda:",
+    "de": "Halten Sie die vollständige Historie jeder Maschine in ihrem Datensatz:",
+    "pt": "Tenha o histórico completo de cada máquina na sua própria ficha:"
+  },
+  "escanea el QR del equipo y descubre todo lo que le ha pasado.": {
+    "en": "scan the asset's QR code and discover everything that has happened to it.",
+    "fr": "scannez le QR de l'équipement et découvrez tout ce qui lui est arrivé.",
+    "it": "scansiona il QR della macchina e scopri tutto quello che le è successo.",
+    "de": "Scannen Sie den QR-Code der Anlage und entdecken Sie alles, was mit ihr geschehen ist.",
+    "pt": "digitalize o QR do equipamento e descubra tudo o que lhe aconteceu."
+  },
+  "Da de alta tus máquinas, líneas e instalaciones y Solved les engancha las incidencias, los registros y las acciones que las tocan. El historial del equipo no hay que mantenerlo: lo construye el trabajo que la planta ya hace.": {
+    "en": "Register your machines, lines and facilities and Solved attaches to them the incidents, records and actions that touch them. The asset's history does not need maintaining: it is built by the work the plant already does.",
+    "fr": "Enregistrez vos machines, lignes et installations et Solved y rattache les incidents, les enregistrements et les actions qui les concernent. L'historique de l'équipement n'a pas à être entretenu : il se construit avec le travail que l'usine fait déjà.",
+    "it": "Registra le tue macchine, linee e impianti e Solved vi aggancia le anomalie, le registrazioni e le azioni che li riguardano. Lo storico della macchina non va mantenuto: lo costruisce il lavoro che lo stabilimento già fa.",
+    "de": "Legen Sie Ihre Maschinen, Linien und Anlagen an, und Solved hängt die Störungen, Aufzeichnungen und Maßnahmen daran, die sie betreffen. Die Historie muss nicht gepflegt werden: Sie entsteht aus der Arbeit, die das Werk ohnehin leistet.",
+    "pt": "Registe as suas máquinas, linhas e instalações, e o Solved associa-lhes as ocorrências, os registos e as ações que lhes dizem respeito. O histórico do equipamento não precisa de ser mantido: constrói-se com o trabalho que a fábrica já faz."
+  },
+  "ENV-002 · Envasadora vertical": { "en": "ENV-002 · Vertical packaging machine", "fr": "ENV-002 · Conditionneuse verticale", "it": "ENV-002 · Confezionatrice verticale", "de": "ENV-002 · Vertikale Verpackungsmaschine", "pt": "ENV-002 · Embaladora vertical" },
+  "Maquinaria · Envasado · Línea 3": { "en": "Machinery · Packaging · Line 3", "fr": "Machines · Conditionnement · Ligne 3", "it": "Macchinari · Confezionamento · Linea 3", "de": "Maschinen · Verpackung · Linie 3", "pt": "Maquinaria · Embalagem · Linha 3" },
+  "Actividad": { "en": "Activity", "fr": "Activité", "it": "Attività", "de": "Aktivität", "pt": "Atividade" },
+  "Detalles": { "en": "Details", "fr": "Détails", "it": "Dettagli", "de": "Details", "pt": "Detalhes" },
+  "Imágenes": { "en": "Images", "fr": "Images", "it": "Immagini", "de": "Bilder", "pt": "Imagens" },
+  "Mantenimientos": { "en": "Maintenance jobs", "fr": "Interventions de maintenance", "it": "Manutenzioni", "de": "Instandhaltungen", "pt": "Manutenções" },
+  "Acción": { "en": "Action", "fr": "Action", "it": "Azione", "de": "Maßnahme", "pt": "Ação" },
+  "Incidencia": { "en": "Incident", "fr": "Incident", "it": "Anomalia", "de": "Störung", "pt": "Ocorrência" },
+  "Control de mantenimiento": { "en": "Maintenance check", "fr": "Contrôle de maintenance", "it": "Controllo di manutenzione", "de": "Instandhaltungskontrolle", "pt": "Controlo de manutenção" },
+  "El historial de una máquina no está en ningún sitio completo": {
+    "en": "A machine's history is nowhere to be found in one piece",
+    "fr": "L'historique d'une machine n'est complet nulle part",
+    "it": "Lo storico di una macchina non è completo da nessuna parte",
+    "de": "Die Historie einer Maschine liegt nirgends vollständig vor",
+    "pt": "O histórico de uma máquina não está completo em lado nenhum"
+  },
+  "Está repartido entre la herramienta de mantenimiento, el Excel de calidad, el grupo de WhatsApp del turno y la cabeza del técnico que lleva veinte años en la casa.": {
+    "en": "It is spread across the maintenance tool, the quality spreadsheet, the shift's WhatsApp group and the head of the technician who has been here twenty years.",
+    "fr": "Il est réparti entre l'outil de maintenance, l'Excel de la qualité, le groupe WhatsApp du poste et la tête du technicien présent depuis vingt ans.",
+    "it": "È sparso tra lo strumento di manutenzione, l'Excel della qualità, il gruppo WhatsApp del turno e la testa del tecnico che è in casa da vent'anni.",
+    "de": "Sie verteilt sich auf das Instandhaltungswerkzeug, die Qualitäts-Excel, die WhatsApp-Gruppe der Schicht und den Kopf des Technikers, der seit zwanzig Jahren im Haus ist.",
+    "pt": "Está repartido entre a ferramenta de manutenção, o Excel da qualidade, o grupo de WhatsApp do turno e a cabeça do técnico que trabalha ali há vinte anos."
+  },
+  "Mantenimiento trabaja en su propia herramienta y calidad en la suya, y ninguna de las dos alimenta a la otra: la misma avería se cuenta dos veces o no se cuenta.": {
+    "en": "Maintenance works in its own tool and quality in theirs, and neither feeds the other: the same breakdown is counted twice or not at all.",
+    "fr": "La maintenance travaille dans son outil et la qualité dans le sien, et aucun n'alimente l'autre : la même panne est comptée deux fois ou pas du tout.",
+    "it": "La manutenzione lavora nel proprio strumento e la qualità nel suo, e nessuno dei due alimenta l'altro: lo stesso guasto si conta due volte o non si conta.",
+    "de": "Die Instandhaltung arbeitet in ihrem Werkzeug, die Qualität in ihrem, und keines speist das andere: Dieselbe Störung wird doppelt gezählt oder gar nicht.",
+    "pt": "A manutenção trabalha na sua própria ferramenta e a qualidade na dela, e nenhuma alimenta a outra: a mesma avaria conta-se duas vezes ou não se conta nenhuma."
+  },
+  "El inventario de equipos e instalaciones vive en una hoja de cálculo que se desborda en cuanto la planta pasa de cien máquinas.": {
+    "en": "The inventory of equipment and facilities lives in a spreadsheet that bursts as soon as the plant passes a hundred machines.",
+    "fr": "L'inventaire des équipements et installations vit dans un tableur qui déborde dès que l'usine dépasse la centaine de machines.",
+    "it": "L'inventario di macchine e impianti vive in un foglio di calcolo che va in crisi appena lo stabilimento supera le cento macchine.",
+    "de": "Das Inventar von Ausrüstung und Anlagen liegt in einer Tabelle, die überläuft, sobald das Werk über hundert Maschinen kommt.",
+    "pt": "O inventário de equipamentos e instalações vive numa folha de cálculo que transborda assim que a fábrica ultrapassa as cem máquinas."
+  },
+  "El aviso de avería entra por WhatsApp o de viva voz. Al turno siguiente nadie sabe si se hizo algo, quién lo hizo ni con qué.": {
+    "en": "The breakdown alert comes in by WhatsApp or word of mouth. By the next shift nobody knows whether anything was done, who did it or with what.",
+    "fr": "L'avis de panne arrive par WhatsApp ou de vive voix. Au poste suivant, personne ne sait si quelque chose a été fait, par qui ni avec quoi.",
+    "it": "La segnalazione di guasto arriva via WhatsApp o a voce. Al turno successivo nessuno sa se è stato fatto qualcosa, chi l'ha fatto né con cosa.",
+    "de": "Die Störmeldung kommt per WhatsApp oder mündlich. In der nächsten Schicht weiß niemand, ob etwas getan wurde, von wem und womit.",
+    "pt": "O aviso de avaria chega por WhatsApp ou verbalmente. No turno seguinte, ninguém sabe se foi feito alguma coisa, quem o fez nem com quê."
+  },
+  "El plan de preventivo está planificado en un cuadro anual: se sabe qué tocaba, no si llegó a hacerse ni qué se encontró al hacerlo.": {
+    "en": "The preventive plan sits in an annual chart: you know what was due, not whether it was done or what was found while doing it.",
+    "fr": "Le plan de préventif est posé dans un tableau annuel : on sait ce qui était prévu, pas si cela a été fait ni ce qu'on y a trouvé.",
+    "it": "Il piano di preventiva è pianificato in un quadro annuale: si sa cosa toccava, non se è stato fatto né cosa si è trovato facendolo.",
+    "de": "Der Vorbeugeplan steht in einer Jahresübersicht: Man weiß, was fällig war, nicht aber, ob es erledigt wurde oder was dabei gefunden wurde.",
+    "pt": "O plano de manutenção preventiva está planeado num quadro anual: sabe-se o que era suposto fazer, não se chegou a fazer-se nem o que se encontrou ao fazê-lo."
+  },
+  "Cuando el auditor pide el histórico de un equipo concreto, hay que fabricarlo con partes sueltos, correos y capturas del móvil de alguien.": {
+    "en": "When the auditor asks for one asset's history, you have to build it out of loose reports, emails and screenshots from somebody's phone.",
+    "fr": "Quand l'auditeur demande l'historique d'un équipement précis, il faut le fabriquer avec des rapports épars, des courriels et des captures du téléphone de quelqu'un.",
+    "it": "Quando l'auditor chiede lo storico di una macchina precisa, bisogna fabbricarlo con rapporti sparsi, mail e screenshot dal telefono di qualcuno.",
+    "de": "Wenn der Auditor die Historie einer bestimmten Anlage verlangt, muss man sie aus losen Meldungen, E-Mails und Screenshots von irgendjemandes Handy zusammenbauen.",
+    "pt": "Quando o auditor pede o histórico de um equipamento concreto, é preciso fabricá-lo com partes avulsos, emails e capturas do telemóvel de alguém."
+  },
+  "La ficha del equipo, y todo lo que cuelga de ella": {
+    "en": "The asset record, and everything hanging off it",
+    "fr": "La fiche de l'équipement, et tout ce qui s'y rattache",
+    "it": "La scheda della macchina, e tutto ciò che ne dipende",
+    "de": "Der Anlagendatensatz und alles, was daran hängt",
+    "pt": "A ficha do equipamento, e tudo o que dela depende"
+  },
+  "Un activo en Solved no es una fila de un inventario: es la clave por la que se enganchan las incidencias, los registros y las acciones de esa máquina. El historial se construye solo.": {
+    "en": "An asset in Solved is not a row in an inventory: it is the key that incidents, records and actions for that machine hang from. The history builds itself.",
+    "fr": "Un actif dans Solved n'est pas une ligne d'inventaire : c'est la clé à laquelle se rattachent les incidents, les enregistrements et les actions de cette machine. L'historique se construit tout seul.",
+    "it": "Un asset in Solved non è una riga di un inventario: è la chiave a cui si agganciano anomalie, registrazioni e azioni di quella macchina. Lo storico si costruisce da solo.",
+    "de": "Eine Anlage ist in Solved keine Zeile im Inventar: Sie ist der Schlüssel, an dem Störungen, Aufzeichnungen und Maßnahmen dieser Maschine hängen. Die Historie entsteht von selbst.",
+    "pt": "Um ativo no Solved não é uma linha de um inventário: é a chave à qual se associam as ocorrências, os registos e as ações dessa máquina. O histórico constrói-se sozinho."
+  },
+  "La ficha del activo: estado, criticidad e historial completo": {
+    "en": "The asset record: status, criticality and full history",
+    "fr": "La fiche de l'actif : état, criticité et historique complet",
+    "it": "La scheda dell'asset: stato, criticità e storico completo",
+    "de": "Der Anlagendatensatz: Zustand, Kritikalität und vollständige Historie",
+    "pt": "A ficha do ativo: estado, criticidade e histórico completo"
+  },
+  "TRA-003 · Cinta transportadora L3": { "en": "TRA-003 · Conveyor belt L3", "fr": "TRA-003 · Convoyeur L3", "it": "TRA-003 · Nastro trasportatore L3", "de": "TRA-003 · Förderband L3", "pt": "TRA-003 · Correia transportadora L3" },
+  "Maquinaria": { "en": "Machinery", "fr": "Machines", "it": "Macchinari", "de": "Maschinen", "pt": "Maquinaria" },
+  "Actividad total": { "en": "Total activity", "fr": "Activité totale", "it": "Attività totale", "de": "Gesamtaktivität", "pt": "Atividade total" },
+  "Checklists": { "en": "Checklists", "fr": "Checklists", "it": "Checklist", "de": "Checklisten", "pt": "Checklists" },
+  "Criticidad": { "en": "Criticality", "fr": "Criticité", "it": "Criticità", "de": "Kritikalität", "pt": "Criticidade" },
+  "Operativo": { "en": "Operational", "fr": "Opérationnel", "it": "Operativo", "de": "In Betrieb", "pt": "Operacional" },
+  "Fabricante": { "en": "Manufacturer", "fr": "Fabricant", "it": "Produttore", "de": "Hersteller", "pt": "Fabricante" },
+  "Modelo": { "en": "Model", "fr": "Modèle", "it": "Modello", "de": "Modell", "pt": "Modelo" },
+  "Tipo": { "en": "Type", "fr": "Type", "it": "Tipo", "de": "Typ", "pt": "Tipo" },
+  "Transporte": { "en": "Conveying", "fr": "Convoyage", "it": "Trasporto", "de": "Fördertechnik", "pt": "Transporte" },
+  "Ubicación": { "en": "Location", "fr": "Emplacement", "it": "Ubicazione", "de": "Standort", "pt": "Localização" },
+  "Proceso · Línea 3": { "en": "Process · Line 3", "fr": "Procédé · Ligne 3", "it": "Processo · Linea 3", "de": "Prozess · Linie 3", "pt": "Processo · Linha 3" },
+  "Control de mantenimiento · 1 KO": { "en": "Maintenance check · 1 KO", "fr": "Contrôle de maintenance · 1 KO", "it": "Controllo di manutenzione · 1 KO", "de": "Instandhaltungskontrolle · 1 KO", "pt": "Controlo de manutenção · 1 KO" },
+  "Checklist": { "en": "Checklist", "fr": "Checklist", "it": "Checklist", "de": "Checkliste", "pt": "Checklist" },
+  "Código QR": { "en": "QR code", "fr": "Code QR", "it": "Codice QR", "de": "QR-Code", "pt": "Código QR" },
+  "Escanear para ver este activo": { "en": "Scan to open this asset", "fr": "Scanner pour voir cet actif", "it": "Scansiona per vedere questo asset", "de": "Scannen, um diese Anlage zu öffnen", "pt": "Digitalizar para ver este ativo" },
+  "Descargar": { "en": "Download", "fr": "Télécharger", "it": "Scarica", "de": "Herunterladen", "pt": "Transferir" },
+  "Imprimir": { "en": "Print", "fr": "Imprimer", "it": "Stampa", "de": "Drucken", "pt": "Imprimir" },
+  "Acciones abiertas": { "en": "Open actions", "fr": "Actions ouvertes", "it": "Azioni aperte", "de": "Offene Maßnahmen", "pt": "Ações abertas" },
+  "Pablo · 27/06": { "en": "Pablo · 27/06", "fr": "Pablo · 27/06", "it": "Pablo · 27/06", "de": "Pablo · 27.06.", "pt": "Pablo · 27/06" },
+  "Pablo · 01/07": { "en": "Pablo · 01/07", "fr": "Pablo · 01/07", "it": "Pablo · 01/07", "de": "Pablo · 01.07.", "pt": "Pablo · 01/07" },
+  "El aviso se abre delante de la máquina, escaneando su código": {
+    "en": "The alert is opened at the machine, by scanning its code",
+    "fr": "L'avis s'ouvre devant la machine, en scannant son code",
+    "it": "La segnalazione si apre davanti alla macchina, scansionando il suo codice",
+    "de": "Die Meldung wird an der Maschine durch Scannen ihres Codes geöffnet",
+    "pt": "O alerta abre-se junto à máquina, digitalizando o seu código"
+  },
+  "El preventivo, programado como registro y firmado al hacerlo": {
+    "en": "Preventive work, scheduled as a record and signed when done",
+    "fr": "Le préventif, programmé comme enregistrement et signé à l'exécution",
+    "it": "La preventiva, programmata come registrazione e firmata al momento",
+    "de": "Die Vorbeugung, als Aufzeichnung geplant und bei Ausführung unterschrieben",
+    "pt": "A preventiva, programada como registo e assinada ao ser feita"
+  },
+  "Cinta transportadora L3 · mensual": { "en": "Conveyor belt L3 · monthly", "fr": "Convoyeur L3 · mensuel", "it": "Nastro trasportatore L3 · mensile", "de": "Förderband L3 · monatlich", "pt": "Correia transportadora L3 · mensal" },
+  "Puntos de la ronda": { "en": "Round checkpoints", "fr": "Points de la ronde", "it": "Punti del giro", "de": "Punkte des Rundgangs", "pt": "Pontos da ronda" },
+  "6 de 6": { "en": "6 of 6", "fr": "6 sur 6", "it": "6 di 6", "de": "6 von 6", "pt": "6 de 6" },
+  "Resultado": { "en": "Result", "fr": "Résultat", "it": "Esito", "de": "Ergebnis", "pt": "Resultado" },
+  "1 KO": { "en": "1 KO", "fr": "1 KO", "it": "1 KO", "de": "1 KO", "pt": "1 KO" },
+  "Abre incidencia": { "en": "Opens an incident", "fr": "Ouvre un incident", "it": "Apre un'anomalia", "de": "Öffnet eine Störung", "pt": "Abre ocorrência" },
+  "Desalineación de la banda transportadora": { "en": "Conveyor belt misalignment", "fr": "Désalignement du convoyeur", "it": "Disallineamento del nastro trasportatore", "de": "Fehlausrichtung des Förderbands", "pt": "Desalinhamento da correia transportadora" },
+  "Ruido anómalo en el rodillo motriz": { "en": "Abnormal noise in the drive roller", "fr": "Bruit anormal au niveau du rouleau moteur", "it": "Rumore anomalo nel rullo motore", "de": "Ungewöhnliches Geräusch an der Antriebsrolle", "pt": "Ruído anómalo no rolo motor" },
+  "Escanea cada máquina y visualiza todo el histórico de actividad": { "en": "Scan every machine and see its whole activity history", "fr": "Scannez chaque machine et visualisez tout son historique d'activité", "it": "Scansiona ogni macchina e visualizza tutto lo storico delle attività", "de": "Jede Maschine scannen und ihren gesamten Aktivitätsverlauf einsehen", "pt": "Digitalize cada máquina e visualize todo o histórico de atividade" },
+  "Asigna tareas a cualquier persona del equipo y visualiza la evolución en tiempo real": { "en": "Assign tasks to anyone on the team and see progress in real time", "fr": "Attribuez des tâches à n'importe quel membre de l'équipe et suivez l'évolution en temps réel", "it": "Assegna attività a chiunque nel team e visualizza l'andamento in tempo reale", "de": "Weisen Sie Aufgaben jedem Teammitglied zu und verfolgen Sie den Fortschritt in Echtzeit", "pt": "Atribua tarefas a qualquer pessoa da equipa e visualize a evolução em tempo real" },
+  "Turno de mañana": { "en": "Morning shift", "fr": "Poste du matin", "it": "Turno di mattina", "de": "Frühschicht", "pt": "Turno da manhã" }
+}

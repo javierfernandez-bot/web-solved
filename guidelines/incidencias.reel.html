@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>Reel de Incidencias — trece escenas</title>
+
+<!-- =========================================================
+     REEL DE INCIDENCIAS · 13 escenas
+     Se graba con `npm run render:incidencias`.
+
+     ESTA PÁGINA NO TIENE NI UNA ANIMACIÓN DE CSS, y es a propósito: todo lo
+     pinta `pintar(t)` a partir del milisegundo que se le pase. Si algo
+     dependiera del reloj del navegador, el render saldría distinto en cada
+     máquina y un repintado perdido dejaría un tirón que ya no se quita.
+
+     LOS VÍDEOS TAMBIÉN VAN AL RELOJ. `pintar` les fija `currentTime` y el
+     script de render espera a que terminen de buscar el fotograma antes de
+     fotografiar (`window.listo()`). Sin eso, los planos irían por su cuenta y
+     cada pasada saldría distinta.
+
+     FONDO OPACO: aquí no se compone nada encima, el vídeo es este. (El reel
+     anterior sacaba capa con alfa; con planos a pantalla completa ya no hace
+     falta.) Para depurar, `?t=12000` congela ese milisegundo.
+
+     LOS DATOS SON LOS DEL TOUR: UTD26_163_001 es la fuga de aceite de la cinta
+     L3, la misma que sale en la home, en la banda de IA y en /incidencias/.
+
+     LO QUE FALTA está marcado con `data-falta`: son los planos de persona que
+     todavía no existen. Mientras tanto se pintan como bloque de color, así que
+     el reel se puede juzgar entero sin ellos.
+     ========================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="/ds/tokens.css"/>
+
+<style>
+  html,body{margin:0;padding:0;background:#0E0F11}
+  #lienzo{
+    position:relative; width:1280px; height:720px; overflow:hidden;
+    background:#0E0F11; color:#fff;
+    font:300 16px/1.45 Geist,'SF Pro Display',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .cap{ position:absolute; inset:0; will-change:opacity,transform }
+
+  /* — Planos — */
+  .plano{ position:absolute; inset:0; overflow:hidden }
+  .plano video,.plano img{ width:100%; height:100%; object-fit:cover; display:block }
+  .plano--falta{ background:linear-gradient(135deg,#252A31,#14171B) }
+  .falta-nota{ position:absolute; left:0; right:0; bottom:14px; text-align:center;
+    font:400 11px/1 Geist,sans-serif; letter-spacing:1.4px; text-transform:uppercase; color:rgba(255,255,255,.30) }
+  .velo{ position:absolute; inset:0; background:linear-gradient(90deg,rgba(14,15,17,.72) 0%,rgba(14,15,17,.34) 46%,rgba(14,15,17,.06) 78%) }
+  .velo--centro{ background:radial-gradient(120% 90% at 50% 50%, rgba(14,15,17,.20), rgba(14,15,17,.86) 78%) }
+
+  /* — Tipografía de las cartelas — */
+  .txt{ position:absolute; inset:0; display:grid; place-content:center; text-align:center; padding:0 90px }
+  .txt h2{ margin:0; font:300 62px/1.14 Geist,sans-serif; letter-spacing:-2.2px }
+  /* Cada línea vive dentro de su propia máscara para poder subir desde detrás
+     de ella. El interlineado de 1,14 no es estético: con 1,06 la máscara
+     recortaba las tildes por arriba y las jotas por abajo. */
+  .ln{ display:block; overflow:hidden }
+  .ln > i{ display:block; font-style:normal }
+  /* La palabra que cambia lleva su propia máscara. El relleno inferior deja
+     sitio a la «p» de «proceso»; el margen negativo lo descuenta para que no
+     mueva nada de sitio. */
+  .pal{ display:inline-block; overflow:hidden; vertical-align:top;
+        padding:0 .1em .16em; margin:0 -.1em -.16em }
+  .pal > span{ display:inline-block; color:#0F68F4 }
+  .txt .sub{ margin-top:18px; font:300 21px/1.4 Geist,sans-serif; color:rgba(255,255,255,.62) }
+  .rot{ position:absolute; left:72px; bottom:64px; max-width:560px }
+  .rot h3{ margin:0; font:300 38px/1.15 Geist,sans-serif; letter-spacing:-1.2px }
+  .rot small{ display:block; font:400 11px/1 Geist,sans-serif; letter-spacing:1.7px; text-transform:uppercase; color:rgba(255,255,255,.55); margin-bottom:13px }
+
+  /* — Piezas de producto (idioma de ds/app.css) — */
+  .tar{ background:#fff; border:1px solid #E5E7EB; border-radius:16px;
+        box-shadow:0 26px 64px rgba(0,0,0,.45); padding:22px 24px; font-family:Roboto,sans-serif }
+  /* Y sólo lo de la IA sobre grafito, con el morado de la capa. */
+  .tar--ia{ background:#16181C; border-color:rgba(168,85,247,.42); color:#E7E9EC }
+  .id{ font:500 15px/1 Roboto,sans-serif; color:#15803D; background:#DCFCE7;
+       border:1px solid #BBF7D0; border-radius:6px; padding:6px 9px }
+  .tit{ font:400 22px/1.25 Roboto,sans-serif; color:#111214 }
+  .k{ font:400 12px/1 Roboto,sans-serif; letter-spacing:1.1px; text-transform:uppercase; color:#6C757E }
+  .tar--ia .k{ color:rgba(231,233,236,.55) }
+  .v{ font:400 18px/1.2 Roboto,sans-serif; color:#1B2230 }
+  .tar--ia .v{ color:#E7E9EC }
+  .ava{ width:30px; height:30px; border-radius:50%; display:grid; place-items:center;
+        font:500 12px/1 Roboto,sans-serif; color:#fff; background:#1E6BFF; flex:none }
+  .tag{ display:inline-block; font:500 13px/1 Roboto,sans-serif; border-radius:6px; padding:5px 8px }
+  .tag--media{ background:rgba(242,164,19,.18); color:#F2A413 }
+  .tag--ia{ background:rgba(168,85,247,.16); color:#C6A6FF }
+  .btn{ font:500 15px/1 Roboto,sans-serif; border-radius:8px; padding:9px 14px; display:inline-block }
+  .btn--si{ background:#7C3AED; color:#fff }
+  .btn--no{ background:transparent; color:rgba(231,233,236,.6); border:1px solid #3A4048 }
+
+  /* — Burbujas — */
+  .bur{ position:absolute; border-radius:50%; overflow:hidden; border:1px solid rgba(17,18,20,.10);
+        box-shadow:0 26px 60px rgba(17,18,20,.22) }
+  .bur video,.bur img{ width:100%; height:100%; object-fit:cover; display:block }
+  /* La etiqueta cae sobre lo que traiga el plano, que puede ser claro (una bata
+     blanca) u oscuro. Un degradado propio le garantiza el contraste; queda
+     recortado por el círculo, así que no se ve como una banda. */
+  .bur .et{ position:absolute; left:0; right:0; bottom:0; text-align:center;
+            padding:34px 0 18px;
+            background:linear-gradient(180deg, rgba(17,18,20,0), rgba(17,18,20,.62) 58%, rgba(17,18,20,.82));
+            font:500 12px/1 Geist,sans-serif; letter-spacing:1.4px; text-transform:uppercase;
+            color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.75) }
+
+  /* — Rejilla de módulos (escena 11) — */
+  .items{ position:absolute; inset:0; display:grid; place-content:center;
+          grid-template-columns:repeat(3,258px); gap:18px }
+  .item{ height:96px; border:1px solid #2E343B; border-radius:14px; background:#16191D;
+         display:grid; place-items:center; font:400 19px/1 Geist,sans-serif; color:rgba(255,255,255,.72) }
+
+  /* — Carrusel de integraciones (escena 12) — */
+  /* Los carriles se desvanecen en los dos bordes. Cortados a hachazo contra
+     el marco parecían un fallo de encuadre; con la máscara se leen como lo que
+     son, una tira que sigue más allá del plano. */
+  /* Carrusel diagonal en tres dimensiones. Antes eran tres carriles planos;
+     ahora el bloque entero se inclina en perspectiva y cada carril vive a una
+     profundidad distinta, de modo que se cruzan con fondo en vez de deslizarse
+     sobre el mismo plano. Se sale del encuadre por los lados a propósito: así
+     el carrusel no tiene principio ni final visibles. */
+  /* La caja se hace alta a propósito. Con la inclinación diagonal los extremos
+     de cada carril suben y bajan unos 60 px; con la caja justa, el tercer
+     carril se cortaba contra su propio borde inferior. Ahora sobra sitio y
+     quien recorta es el encuadre, que es lo que debe recortar. */
+  .carriles{ position:absolute; left:-190px; right:-190px; top:250px; height:480px;
+             overflow:hidden; perspective:1250px; perspective-origin:50% 42% }
+  .escena3d{ position:absolute; inset:0; transform-style:preserve-3d;
+             transform:rotateX(14deg) rotateZ(-4.2deg) }
+  .carr{ position:absolute; left:0; display:flex; gap:18px; will-change:transform }
+  /* La caja manda sobre el logo, nunca al revés. Con sólo la altura fijada,
+     los logos apaisados —SAP S/4HANA y Holded miden 243 px a 46 de alto— se
+     salían de una caja de 158 px de ancho útil y aparecían cortados. */
+  .carr span{ flex:none; width:190px; height:76px; border:1px solid #E5E7EB; border-radius:12px;
+              background:#fff; display:grid; place-items:center; padding:11px 16px;
+              overflow:hidden }
+  /* Los topes van en píxeles, no en porcentaje: dentro de la rejilla el
+     max-height:100% no llega a resolverse y diez logos altos —IBM Maximo,
+     FlexSim, Factry— se salían por arriba y por abajo de su caja. */
+  .carr img{ max-width:190px; max-height:76px; width:auto; height:auto; display:block }
+  /* Difuminado de los extremos: además de disolverse, se desenfocan. Es lo que
+     hace que el carrusel se lea como algo que pasa por delante y no como una
+     tira recortada. */
+  /* Van sujetos al encuadre —left/right a 0— y no al carril, que se sale
+     190 px por cada lado. Puestos dentro del carril, el degradado se
+     desvanecía fuera de cámara y los logos se cortaban a hachazo. */
+  .difuso{ position:absolute; top:250px; height:480px; width:330px; pointer-events:none;
+           backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px) }
+  .difuso--i{ left:0;
+    -webkit-mask-image:linear-gradient(90deg,#000 26%,transparent);
+            mask-image:linear-gradient(90deg,#000 26%,transparent) }
+  .difuso--d{ right:0;
+    -webkit-mask-image:linear-gradient(270deg,#000 26%,transparent);
+            mask-image:linear-gradient(270deg,#000 26%,transparent) }
+  .velo3d{ position:absolute; left:0; right:0; top:250px; height:480px; pointer-events:none;
+    background:linear-gradient(90deg,#0E0F11 0,rgba(14,15,17,.55) 9%,rgba(14,15,17,0) 23%,
+                               rgba(14,15,17,0) 77%,rgba(14,15,17,.55) 91%,#0E0F11 100%) }
+
+  .logo{ position:absolute; inset:0; display:grid; place-content:center; justify-items:center; gap:20px }
+  .logo img{ width:250px; height:auto }
+  .logo p{ margin:0; font:300 23px/1.3 Geist,sans-serif; color:rgba(255,255,255,.7) }
+
+  .onda{ display:flex; align-items:center; gap:3px; height:26px }
+  .onda i{ width:3px; border-radius:2px; background:#C6A6FF }
+
+  /* — MATERIAL DE MARCA —
+     Tres capas que recorren el vídeo entero y son lo que lo ata a la web:
+       · los raíles del encuadre, que en el sitio recorren la página de arriba
+         abajo y aquí hacen lo mismo con el plano;
+       · el resplandor de ds/aiband.css —morado de la capa de IA, rosa de
+         tránsito y una punta de cian, el color del movimiento—;
+       · la retícula, que da textura al negro sin dibujar nada.
+     Ninguna lleva animación de CSS: las mueve `pintar(t)`. */
+  /* REGLA DE COLOR — va por COMPONENTE, no por escena.
+     El fondo del vídeo es oscuro de principio a fin, que es lo que pide una
+     pieza comercial. Lo que sigue la regla del sistema son las piezas:
+
+       · las tarjetas de producto van CLARAS, porque la app de Solved es clara;
+       · sólo lo que hace la IA va sobre grafito con el morado de --module-ia.
+
+     Mezclarlo al revés —tarjetas oscuras para todo— hacía que el producto
+     pareciera otro y borraba la distinción de la capa de IA, que es justo lo
+     que el sistema codifica con el color. */
+
+
+  .marca{ position:absolute; inset:0; pointer-events:none; z-index:5 }
+  .rail{ position:absolute; top:0; bottom:0; width:1px; background:rgba(255,255,255,.11) }
+  .rail--i{ left:56px } .rail--d{ right:56px }
+  .glow{ position:absolute; inset:-20% -14%; z-index:0; pointer-events:none; will-change:transform;
+    background:
+      radial-gradient(38% 46% at 22% 62%, rgba(168,85,247,.26), transparent 72%),
+      radial-gradient(32% 40% at 74% 30%, rgba(211,79,157,.17), transparent 74%),
+      radial-gradient(30% 34% at 58% 82%, rgba(31,214,245,.13), transparent 76%);
+    filter:blur(34px);
+  }
+  .grid{ position:absolute; inset:0; z-index:0; pointer-events:none; opacity:.5;
+    background-image:linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size:56px 56px; }
+</style>
+</head>
+
+<body>
+<div id="lienzo">
+  <span class="glow" id="glow"></span>
+  <span class="grid" id="grid"></span>
+
+  <!-- 1 · notificación con trabajador de fondo -->
+  <div class="cap" id="s1">
+    <div class="plano"><video src="/assets/incidencias/broll/planta.mp4" muted playsinline preload="auto"></video></div>
+    <div class="velo"></div>
+    <div class="tar" id="s1n" style="position:absolute; left:100px; top:236px; width:540px; display:flex; gap:14px; align-items:center">
+      <span class="ava" style="background:#16A34A">✓</span>
+      <span><span class="k">Incidencia registrada</span><br><span class="v" style="font-size:15px">UTD26_163_001 · Fuga de aceite en cinta L3</span></span>
+    </div>
+  </div>
+
+  <!-- 2 · logo -->
+  <div class="cap" id="s2"><div class="logo"><img id="s2logo" src="/assets/logotipo-solved-claro.webp" alt=""/></div></div>
+
+  <!-- 3 · tablet + recomendación de la IA -->
+  <div class="cap" id="s3">
+    <div class="plano"><video src="/assets/incidencias/broll/linea.mp4" muted playsinline preload="auto"></video></div>
+    <div class="velo"></div>
+    <div class="tar" id="s3a" style="position:absolute; left:600px; top:126px; width:600px">
+      <div style="display:flex; align-items:center; gap:10px"><span class="id">UTD26_163_001</span><span class="tit">Fuga de aceite en cinta L3</span></div>
+      <p class="v" style="margin:12px 0 0">Mancha bajo el rodillo de arrastre. La cinta sigue en marcha.</p>
+    </div>
+    <div class="tar tar--ia" id="s3b" style="position:absolute; left:600px; top:342px; width:600px; border-color:rgba(168,85,247,.4)">
+      <span class="tag tag--ia">Asistente IA</span>
+      <p class="v" style="margin:12px 0 0">Esta incidencia es similar a la del <b style="font-weight:500">14 de abril</b>.<br>¿Quieres que creemos las mismas tareas?</p>
+      <div style="display:flex; gap:10px; margin-top:16px"><span class="btn btn--si">Sí, crearlas</span><span class="btn btn--no">Ahora no</span></div>
+    </div>
+  </div>
+
+  <!-- 4 · cartela -->
+  <div class="cap" id="s4"><div class="txt"><h2 id="s4t">Una nueva manera de gestionar tus operaciones</h2></div></div>
+
+  <!-- 5 · pantalla partida en tres -->
+  <div class="cap" id="s5"></div>
+
+  <!-- 6 · cartela con palabra que cambia -->
+  <div class="cap" id="s6"><div class="txt"><h2>La herramienta para cada<br><span class="pal"><span id="s6w">proceso</span></span></h2></div></div>
+
+  <!-- 7 · burbujas por área -->
+  <div class="cap" id="s7"></div>
+
+  <!-- 8 · cartela -->
+  <div class="cap" id="s8"><div class="txt"><h2>Visibiliza y actúa<br>en tiempo real</h2></div></div>
+
+  <!-- 9 · describir a la IA por voz -->
+  <div class="cap" id="s9">
+    <div class="plano"><video src="/assets/incidencias/broll/dictado.mp4" muted playsinline preload="auto"></video></div>
+    <div class="velo"></div>
+    <div class="tar tar--ia" id="s9c" style="position:absolute; left:600px; top:242px; width:600px">
+      <div style="display:flex; align-items:center; gap:12px"><span class="tag tag--ia">Asistente IA</span><span class="onda" id="s9onda"></span></div>
+      <p class="v" style="margin:14px 0 0; font-size:16px" id="s9txt"></p>
+    </div>
+  </div>
+
+  <!-- 10 · cartela -->
+  <div class="cap" id="s10"><div class="txt"><h2>Adáptala a tus tareas</h2></div></div>
+
+  <!-- 11 · rejilla de módulos → asistente IA -->
+  <div class="cap" id="s11"><div class="items" id="s11items"></div>
+    <div class="tar tar--ia" id="s11c" style="position:absolute; left:300px; top:236px; width:680px; opacity:0">
+      <span class="tag tag--ia">Asistente IA</span>
+      <p class="v" style="margin:14px 0 0; font-size:16px">Genérame el informe de esta incidencia</p>
+      <div style="display:flex; align-items:center; gap:12px; margin-top:16px"><span class="ava">J</span><span class="k">Javier · a pie de línea</span></div>
+    </div>
+  </div>
+
+  <!-- 12 · cartela + carrusel triple -->
+  <div class="cap" id="s12">
+    <div style="position:absolute; left:0; right:0; top:96px; text-align:center">
+      <h2 style="margin:0; font:300 50px/1.18 Geist,sans-serif; letter-spacing:-1.8px">Centraliza todas tus<br>herramientas en una</h2>
+    </div>
+    <div class="carriles">
+      <div class="escena3d">
+        <div class="carr" id="c1" style="top:70px"></div>
+        <div class="carr" id="c2" style="top:170px"></div>
+        <div class="carr" id="c3" style="top:270px"></div>
+      </div>
+    </div>
+    <span class="difuso difuso--i"></span>
+    <span class="difuso difuso--d"></span>
+    <span class="velo3d"></span>
+  </div>
+
+  <!-- 13 · cierre -->
+  <div class="cap" id="s13">
+    <div class="txt" id="s13t" style="align-content:start; padding-top:88px"><h2 style="font-size:48px">Creado para las personas<br>que impulsan la industria</h2></div>
+    <div id="s13b"></div>
+    <div class="logo" id="s13logo" style="opacity:0"><img src="/assets/logotipo-solved-claro.webp" alt=""/></div>
+  </div>
+
+  <div class="marca"><span class="rail rail--i"></span><span class="rail rail--d"></span></div>
+</div>
+
+<script>
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const cl = (x,a,b) => Math.max(a, Math.min(b,x));
+  const ease = (x) => 1 - Math.pow(1 - cl(x,0,1), 3);
+  /* Una salida más larga que la cúbica: arranca rápido y frena mucho al
+     final. Es lo que separa un texto que «entra» de uno que sólo aparece. */
+  const suave = (x) => 1 - Math.pow(1 - cl(x,0,1), 5);
+  const vent = (t,a,b) => cl((t-a)/(b-a), 0, 1);
+
+  /* Cada línea de cartela se envuelve en su máscara. Se hace aquí y no a mano
+     en el marcado para que los textos se sigan leyendo enteros en el HTML. */
+  document.querySelectorAll('.cap h2').forEach((h) => {
+    h.innerHTML = h.innerHTML.split(/<br\s*\/?>/i)
+      .map((linea) => `<span class="ln"><i>${linea}</i></span>`).join('');
+  });
+
+  /* ── Escena 5: tres columnas, un rol en cada una ───────────────────────── */
+  const ROLES = [
+    { r:'Mantenimiento', t:'Cambiar el rodamiento de la L3', c:'#F97316', v:'/assets/incidencias/broll/mantenimiento.mp4', p:'34% 50%' },
+    { r:'Administración', t:'Reclamar al proveedor de la junta', c:'#3FAFD6', v:'/assets/incidencias/broll/administracion.mp4', p:'30% 50%' },
+    { r:'Calidad',        t:'Revisar el control de la cámara 2', c:'#16A34A', v:'/assets/incidencias/broll/calidad.mp4', p:'48% 50%' },
+  ];
+  ROLES.forEach((o,i) => {
+    const col = document.createElement('div');
+    col.style.cssText = `position:absolute; top:0; bottom:0; left:${i*(1280/3)}px; width:${1280/3}px; overflow:hidden`;
+    col.innerHTML = `<div class="plano${o.v?'':' plano--falta'}" ${o.v?'':'data-falta="'+o.r+'"'}>${
+        o.v ? `<video src="${o.v}" muted playsinline preload="auto" style="object-position:${o.p||'50% 50%'}"></video>`
+            : `<span class="falta-nota">falta plano · ${o.r.toLowerCase()}</span>`}</div>
+      <div class="velo velo--centro"></div>
+      <div class="tar" data-n style="position:absolute; left:22px; right:22px; bottom:64px; padding:13px 14px">
+        <span class="k" style="color:${o.c}">${o.r}</span>
+        <p class="v" style="margin:7px 0 0; font-size:13.5px">${o.t}</p>
+      </div>`;
+    $('s5').appendChild(col);
+  });
+
+  /* ── Escena 7: burbujas por área ───────────────────────────────────────── */
+  const AREAS = [
+    { a:'Calidad',        x:150, y:170, d:260, v:'/assets/incidencias/broll/calidad.mp4' },
+    { a:'Producción',     x:470, y:280, d:300, v:'/assets/incidencias/broll/produccion.mp4' },
+    { a:'Administración', x:820, y:150, d:240, v:'/assets/incidencias/broll/administracion.mp4' },
+    { a:'Logística',      x:1010, y:400, d:220, v:'/assets/incidencias/broll/logistica.mp4' },
+  ];
+  AREAS.forEach((o) => {
+    const b = document.createElement('div');
+    b.className = 'bur'; b.dataset.b = '1';
+    b.style.cssText = `left:${o.x}px; top:${o.y}px; width:${o.d}px; height:${o.d}px`;
+    b.innerHTML = (o.v ? `<video src="${o.v}" muted playsinline preload="auto"></video>`
+                       : `<div class="plano plano--falta" data-falta="${o.a}"></div>`) +
+                  `<span class="et">${o.a}</span>`;
+    $('s7').appendChild(b);
+  });
+
+  /* ── Escena 11: los módulos ────────────────────────────────────────────── */
+  const MODULOS = ['Agentes','Incidencias','Workflows','Registros','Auditorías','Tareas','Documentos','Activos','Asistente IA'];
+  MODULOS.forEach((m) => {
+    const d = document.createElement('div'); d.className = 'item'; d.textContent = m;
+    $('s11items').appendChild(d);
+  });
+  const items = [...$('s11items').children];
+
+  /* ── Escena 12: tres carriles de logos, en direcciones alternas ────────── */
+  /* Treinta logos, diez por carril y NINGUNO repetido. Con la escena durando
+     seis segundos y los carriles a 54-70 px/s no llega a darse la vuelta, así
+     que no hace falta duplicar la tira. Van a color, como en el PDF que el
+     cliente ya publica. */
+  const LOGOS = [
+    ['sap-s4hana','odoo','ibm-maximo','fracttal','sage-x3','infor','business-central','a3erp','coswin','fiix'],
+    ['abas-erp','emaint','carl-source','delmia-apriso','abb-ability','dolibarr','ats-global','ekon','erpnext','exact'],
+    ['factorytalk','factry-io','flexsim','forcam-force','ge-digital-proficy','holded','ibm-as400','ifs-applications','ignition-mes','infraspeak'],
+  ];
+  /* Cada carril repite su tira tres veces. Antes iba una sola vez —2022 px de
+     logos— y el carril del medio arrancaba en -1600: del píxel 422 en adelante
+     no había nada y se veía el hueco. Con la tira repetida, el ciclo mide
+     exactamente una tira y el bucle cierra sin costura: haya donde haya el
+     desplazamiento, siempre queda contenido cubriendo el encuadre. */
+  [['c1',0],['c2',1],['c3',2]].forEach(([id,n]) => {
+    const carril = $(id);
+    for (let vuelta = 0; vuelta < 3; vuelta++) {
+      LOGOS[n].forEach((l) => {
+        const sp = document.createElement('span');
+        sp.innerHTML = `<img src="/assets/integraciones/${l}.webp" alt="" loading="eager">`;
+        carril.appendChild(sp);
+      });
+    }
+  });
+  /* El ciclo se mide del propio DOM en lugar de calcularlo: la distancia entre
+     una ficha y su repetición diez puestas más allá ES una tira exacta, salga
+     lo que salga del modelo de caja. A mano me daba 2080 px cuando la ficha
+     real ocupa 242, y el bucle habría dado un salto al cerrar la vuelta. */
+  const CICLO = (() => {
+    const f = $('c1').children;
+    return f[LOGOS[0].length].offsetLeft - f[0].offsetLeft;
+  })();
+
+  /* ── Escena 13: burbujas del cierre ────────────────────────────────────── */
+  const CIERRE = [
+    { x:120, y:330, d:200, v:'/assets/incidencias/broll/calidad.mp4' },
+    { x:390, y:400, d:170, v:'/assets/incidencias/broll/produccion.mp4' },
+    { x:640, y:330, d:210, v:'/assets/incidencias/broll/administracion.mp4' },
+    { x:920, y:410, d:180, v:'/assets/incidencias/broll/logistica.mp4' },
+  ];
+  CIERRE.forEach((o) => {
+    const b = document.createElement('div'); b.className = 'bur'; b.dataset.c = '1';
+    b.style.cssText = `left:${o.x}px; top:${o.y}px; width:${o.d}px; height:${o.d}px`;
+    b.innerHTML = o.v ? `<video src="${o.v}" muted playsinline preload="auto"></video>`
+                      : `<div class="plano plano--falta"></div>`;
+    $('s13b').appendChild(b);
+  });
+
+  /* La onda de la voz de la escena 9 */
+  [7,13,20,26,17,9,22,15,11,24,18,8,14,21,10,16,23,12].forEach((h) => {
+    const i = document.createElement('i'); i.style.height = h + 'px'; $('s9onda').appendChild(i);
+  });
+
+  /* ── Las trece escenas ─────────────────────────────────────────────────── */
+  const E = [
+    { id:'s1',  dur:5200 }, { id:'s2',  dur:2600 }, { id:'s3',  dur:6600 },
+    { id:'s4',  dur:3400 }, { id:'s5',  dur:6000 }, { id:'s6',  dur:5600 },
+    { id:'s7',  dur:5200 }, { id:'s8',  dur:3200 }, { id:'s9',  dur:5400 },
+    { id:'s10', dur:2800 }, { id:'s11', dur:8200 }, { id:'s12', dur:6000 },
+    { id:'s13', dur:7000 },
+  ];
+  let acc = 0; E.forEach((e) => { e.desde = acc; acc += e.dur; });
+  const DURACION = acc;
+  const CAPAS = E.map((e) => $(e.id));
+
+  const PALABRAS = ['proceso','departamento','rol','norma'];
+  const DICTADO = '«Se ha roto la envasadora de la línea 3, hay aceite en el suelo»';
+
+  /* Los vídeos van al reloj: se les fija el fotograma y el render espera. */
+  const videos = [...document.querySelectorAll('video')];
+  const seek = (v, seg) => {
+    if (!v.duration || !isFinite(v.duration)) return;
+    const t = seg % v.duration;
+    if (Math.abs(v.currentTime - t) > 0.02) v.currentTime = t;
+  };
+
+  function pintar(ms) {
+    const t = cl(ms, 0, DURACION - 1);
+    const i = Math.max(0, E.findIndex((e) => t < e.desde + e.dur));
+    const e = E[i], l = t - e.desde, fin = e.dur;
+
+    CAPAS.forEach((c, n) => { c.style.opacity = n === i ? '1' : '0'; });
+    /* Corte con fundido corto entre escenas: 260 ms a cada lado. */
+    const entra = ease(vent(l, 0, 260));
+    const sale  = 1 - ease(vent(l, fin - 260, fin));
+    CAPAS[i].style.opacity = (entra * sale).toFixed(3);
+
+    videos.forEach((v) => { if (CAPAS[i].contains(v)) seek(v, l / 1000); });
+
+    /* El material de marca va al reloj absoluto, no al de la escena: así cruza
+       los cortes sin reiniciarse y cose el vídeo entero. */
+    const T = t / 1000;
+    $('glow').style.transform = `translate3d(${(Math.sin(T*0.16)*46).toFixed(1)}px, ${(Math.cos(T*0.12)*34).toFixed(1)}px, 0)`;
+    $('grid').style.transform = `translate3d(${((-T*7)%56).toFixed(1)}px, ${((-T*4)%56).toFixed(1)}px, 0)`;
+    /* La retícula sólo se ve donde hay negro: sobre un plano estorba. */
+    /* El resplandor y la retícula son material de la capa de IA: sobre las
+       cartelas claras no pintan nada. */
+    const conPlano = !!CAPAS[i].querySelector('.plano video');
+    $('glow').style.opacity = conPlano ? '0' : '1';
+    $('grid').style.opacity = conPlano ? '0' : '.45';
+
+    /* Desplazamiento lento sobre los planos. Un plano fijo dentro de un vídeo
+       se lee como una foto; con un 4 % de recorrido deja de parecerlo y no
+       llega a marearse. */
+    CAPAS[i].querySelectorAll('.plano video, .plano img').forEach((m, k) => {
+      const p = l / fin;
+      m.style.transform = `scale(${(1.045 - 0.045 * p).toFixed(4)}) translate3d(${((k % 2 ? 1 : -1) * p * 8).toFixed(1)}px,0,0)`;
+    });
+
+    /* Revelado por líneas: cada una sube desde detrás de su máscara, con un
+       escalón entre ellas. Sin opacidad a propósito —el corte de escena ya
+       funde—: la máscara sola se lee más rotunda que un desvanecido. */
+    const revelar = (el, desde = 240, paso = 120, dur = 780) => {
+      if (!el) return;
+      el.querySelectorAll('.ln > i').forEach((linea, k) => {
+        const p = suave(vent(l, desde + k * paso, desde + k * paso + dur));
+        linea.style.transform = `translate3d(0, ${((1 - p) * 108).toFixed(2)}%, 0)`;
+      });
+    };
+
+    const pon = (el, a, b, dy = 26) => {
+      const p = ease(vent(l, a, b));
+      el.style.opacity = p.toFixed(3);
+      el.style.transform = `translate3d(0, ${((1 - p) * dy).toFixed(1)}px, 0)`;
+    };
+
+    if (i === 0) pon($('s1n'), 900, 1900);
+
+    if (i === 1) {
+      const p = ease(vent(l, 200, 1400));
+      $('s2logo').style.opacity = p.toFixed(3);
+      $('s2logo').style.transform = `scale(${(0.94 + 0.06 * p).toFixed(3)})`;
+    }
+
+    if (i === 2) { pon($('s3a'), 700, 1700); pon($('s3b'), 2600, 3700); }
+
+    if (i === 3) revelar($('s4t'));
+
+    if (i === 4) [...$('s5').querySelectorAll('[data-n]')].forEach((n, k) => pon(n, 900 + k * 620, 1800 + k * 620, 18));
+
+    if (i === 5) {
+      revelar($('s6').querySelector('h2'));
+      /* La palabra rota dentro de su máscara: la que se va sale por arriba y
+         la que entra llega desde abajo. Cambiar el texto de golpe se leía
+         como un fallo de reproducción, no como una decisión. */
+      const w = $('s6w'), ini = 1500, ancho = (fin - 400 - ini) / PALABRAS.length;
+      if (l < ini) {
+        w.textContent = PALABRAS[0];
+        w.style.transform = 'translate3d(0,0,0)';
+      } else {
+        const k = Math.min(PALABRAS.length - 1, Math.floor((l - ini) / ancho));
+        const local = l - (ini + k * ancho);
+        /* La primera no entra —ya la trajo el revelado— y la última no sale. */
+        const dentro = k === 0 ? 1 : suave(vent(local, 0, 300));
+        const fuera = k === PALABRAS.length - 1 ? 0 : suave(vent(local, ancho - 260, ancho));
+        w.textContent = PALABRAS[k];
+        w.style.transform = `translate3d(0, ${((1 - dentro) * 108 - fuera * 108).toFixed(1)}%, 0)`;
+      }
+    }
+
+    if (i === 7) revelar($('s8').querySelector('h2'));
+
+    if (i === 9) revelar($('s10').querySelector('h2'));
+
+    if (i === 6) [...$('s7').querySelectorAll('[data-b]')].forEach((b, k) => {
+      const p = ease(vent(l, 300 + k * 380, 1300 + k * 380));
+      b.style.opacity = p.toFixed(3);
+      b.style.transform = `scale(${(0.86 + 0.14 * p).toFixed(3)})`;
+    });
+
+    if (i === 8) {
+      const n = Math.round(vent(l, 900, 4200) * DICTADO.length);
+      $('s9txt').textContent = DICTADO.slice(0, n);
+      [...$('s9onda').children].forEach((b, k) => {
+        b.style.opacity = (0.35 + 0.65 * Math.abs(Math.sin((l / 190) + k * 0.7))).toFixed(2);
+      });
+    }
+
+    if (i === 10) {
+      /* Los módulos entran, y al final se queda encendido el asistente. */
+      items.forEach((it, k) => {
+        const p = ease(vent(l, 200 + k * 130, 900 + k * 130));
+        const elegido = k === items.length - 1 && l > 4200;
+        it.style.opacity = (elegido ? 1 : p * (l > 4600 ? 0.38 : 1)).toFixed(3);
+        it.style.borderColor = elegido ? '#7C3AED' : '#2E343B';
+        it.style.background = elegido ? 'rgba(124,58,237,.16)' : '#16191D';
+        it.style.color = elegido ? '#fff' : 'rgba(255,255,255,.72)';
+      });
+      pon($('s11c'), 5400, 6600);
+    }
+
+    if (i === 11) {
+      revelar($('s12').querySelector('h2'));
+      /* Tres carriles, el de en medio al revés: es lo que hace que se lea como
+         un tejido y no como tres listas. Cada uno a su profundidad y a su
+         velocidad —el de delante corre más— para que el paralaje sostenga la
+         perspectiva; si fueran a la misma velocidad, la inclinación se leería
+         como un truco plano. */
+      const v = l / 1000;
+      /* El módulo es el ciclo exacto, así que el salto cae justo donde la tira
+         se repite y no se nota. */
+      const izq = (px) => -(((px % CICLO) + CICLO) % CICLO);
+      $('c1').style.transform = `translate3d(${izq(v * 76).toFixed(1)}px,0,0px)`;
+      $('c2').style.transform = `translate3d(${(izq(-v * 58) - CICLO).toFixed(1)}px,0,-70px)`;
+      $('c3').style.transform = `translate3d(${izq(v * 44).toFixed(1)}px,0,-140px)`;
+    }
+
+    if (i === 12) {
+      revelar($('s13').querySelector('h2'));
+      [...$('s13b').querySelectorAll('[data-c]')].forEach((b, k) => {
+        const p = ease(vent(l, 600 + k * 320, 1600 + k * 320));
+        const s = ease(vent(l, 4200, 5200));
+        b.style.opacity = (p * (1 - s)).toFixed(3);
+        b.style.transform = `scale(${(0.88 + 0.12 * p).toFixed(3)})`;
+      });
+      $('s13t').style.opacity = (ease(vent(l, 200, 1200)) * (1 - ease(vent(l, 4200, 5000)))).toFixed(3);
+      $('s13logo').style.opacity = ease(vent(l, 4800, 6000)).toFixed(3);
+    }
+  }
+
+  /* El render espera a que los vídeos hayan encontrado su fotograma. */
+  window.listo = () => Promise.all(videos.map((v) => (
+    v.readyState < 2 || v.seeking
+      ? new Promise((ok) => { const f = () => ok(); v.addEventListener('seeked', f, { once:true }); setTimeout(f, 400); })
+      : Promise.resolve()
+  )));
+
+  window.pintar = pintar;
+  window.DURACION = DURACION;
+  window.ESCENAS = E.map((e, n) => ({ n:n+1, id:e.id, desde:e.desde, dur:e.dur }));
+  window.FALTAN = [...document.querySelectorAll('[data-falta]')].map((e) => e.dataset.falta).filter(Boolean);
+
+  const forzado = new URLSearchParams(location.search).get('t');
+  pintar(forzado ? Number(forzado) : 0);
+})();
+</script>
+</body>
+</html>

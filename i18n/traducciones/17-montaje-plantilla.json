@@ -1,0 +1,270 @@
+{
+  "_nota": "«El montaje de una plantilla» de /auditorias/ (ds/plantilla.css, 9 sep 2026): los tres puntos de la sección, los rótulos de la pieza y el texto de las tres pantallas de la app —biblioteca de modelos, editor e importación automática—. Las pantallas son literales de la interfaz del producto: se traducen como nombres de función, igual que en 14-ia-registros. Los nombres de los modelos son datos de demo y sí se traducen, como «Estado de la junta». Lo que la pieza ya decía con cadenas de otros ficheros —Número, Seleccionable, Archivos, Firma, Temperatura cámara 3, Estado de la junta, Calidad, Producción, Mantenimiento— no se repite aquí.",
+  "Modelos ya montados, listos para duplicar": {
+    "en": "Templates already built, ready to duplicate",
+    "fr": "Des modèles déjà montés, prêts à dupliquer",
+    "it": "Modelli già pronti, da duplicare",
+    "de": "Fertige Vorlagen, bereit zum Duplizieren",
+    "pt": "Modelos já montados, prontos a duplicar"
+  },
+  "La biblioteca guarda cada modelo con sus secciones, sus controles y sus tipos. Se duplica el que más se parece al procedimiento y se ajusta lo que cambia.": {
+    "en": "The library keeps every template with its sections, its checks and their field types. Duplicate the one closest to the procedure and adjust what differs.",
+    "fr": "La bibliothèque conserve chaque modèle avec ses sections, ses contrôles et leurs types de champ. On duplique celui qui ressemble le plus à la procédure et on ajuste ce qui change.",
+    "it": "La libreria conserva ogni modello con le sue sezioni, i suoi controlli e i tipi di campo. Si duplica quello più simile alla procedura e si adatta ciò che cambia.",
+    "de": "Die Bibliothek bewahrt jede Vorlage mit ihren Abschnitten, ihren Kontrollen und deren Feldtypen. Dupliziert wird die Vorlage, die dem Verfahren am nächsten kommt, und angepasst wird, was abweicht.",
+    "pt": "A biblioteca guarda cada modelo com as suas secções, os seus controlos e os seus tipos. Duplica-se o que mais se assemelha ao procedimento e ajusta-se o que muda."
+  },
+  "El editor no pide conocimientos técnicos": {
+    "en": "The editor asks for no technical knowledge",
+    "fr": "L'éditeur n'exige aucune connaissance technique",
+    "it": "L'editor non richiede conoscenze tecniche",
+    "de": "Der Editor verlangt keine technischen Kenntnisse",
+    "pt": "O editor não exige conhecimentos técnicos"
+  },
+  "Cada control se lleva a su sitio arrastrándolo por su asa y elige entre diecisiete tipos de respuesta: número, seleccionable, fecha, cálculo, fórmula, firma o escaneo de código.": {
+    "en": "Each check is dragged into place by its handle and takes one of seventeen answer types: number, select, date, calculation, formula, signature or code scan.",
+    "fr": "Chaque contrôle se place en le faisant glisser par sa poignée et choisit parmi dix-sept types de réponse : nombre, sélection, date, calcul, formule, signature ou lecture de code.",
+    "it": "Ogni controllo si porta al suo posto trascinandolo dalla maniglia e sceglie fra diciassette tipi di risposta: numero, selezione, data, calcolo, formula, firma o scansione di codice.",
+    "de": "Jede Kontrolle wird am Griff an ihren Platz gezogen und erhält einen von siebzehn Antworttypen: Zahl, Auswahl, Datum, Berechnung, Formel, Unterschrift oder Code-Scan.",
+    "pt": "Cada controlo é colocado no seu lugar arrastando-o pela sua pega e escolhe entre dezassete tipos de resposta: número, seleção, data, cálculo, fórmula, assinatura ou leitura de código."
+  },
+  "El parte que ya existe, convertido por la IA": {
+    "en": "The form you already have, converted by the AI",
+    "fr": "La fiche qui existe déjà, convertie par l'IA",
+    "it": "Il modulo che già esiste, convertito dall'IA",
+    "de": "Das vorhandene Formular, von der KI umgewandelt",
+    "pt": "O parte que já existe, convertido pela IA"
+  },
+  "Duplicar un modelo": {
+    "en": "Duplicate a template",
+    "fr": "Dupliquer un modèle",
+    "it": "Duplicare un modello",
+    "de": "Eine Vorlage duplizieren",
+    "pt": "Duplicar um modelo"
+  },
+  "Importar el parte que ya existe": {
+    "en": "Import the form you already have",
+    "fr": "Importer la fiche existante",
+    "it": "Importare il modulo esistente",
+    "de": "Das vorhandene Formular importieren",
+    "pt": "Importar o parte que já existe"
+  },
+  "Decirle cómo estructurarlo": {
+    "en": "Tell it how to structure it",
+    "fr": "Lui dire comment le structurer",
+    "it": "Dirle come strutturarlo",
+    "de": "Ihr sagen, wie sie es gliedern soll",
+    "pt": "Dizer-lhe como estruturá-lo"
+  },
+  "Modelos de registros": {
+    "en": "Record templates",
+    "fr": "Modèles d'enregistrement",
+    "it": "Modelli di registrazione",
+    "de": "Nachweisvorlagen",
+    "pt": "Modelos de registos"
+  },
+  "Importar desde archivo": {
+    "en": "Import from file",
+    "fr": "Importer depuis un fichier",
+    "it": "Importa da file",
+    "de": "Aus Datei importieren",
+    "pt": "Importar a partir de ficheiro"
+  },
+  "Nombre del registro": {
+    "en": "Record name",
+    "fr": "Nom de l'enregistrement",
+    "it": "Nome della registrazione",
+    "de": "Name des Nachweises",
+    "pt": "Nome do registo"
+  },
+  "Control de temperaturas": {
+    "en": "Temperature checks",
+    "fr": "Contrôle des températures",
+    "it": "Controllo delle temperature",
+    "de": "Temperaturkontrolle",
+    "pt": "Controlo de temperaturas"
+  },
+  "Alimentación": {
+    "en": "Food",
+    "fr": "Alimentaire",
+    "it": "Alimentare",
+    "de": "Lebensmittel",
+    "pt": "Alimentar"
+  },
+  "Auditoría de limpieza TPM": {
+    "en": "TPM cleaning audit",
+    "fr": "Audit de nettoyage TPM",
+    "it": "Audit di pulizia TPM",
+    "de": "TPM-Reinigungsaudit",
+    "pt": "Auditoria de limpeza TPM"
+  },
+  "Calidad, Mantenimiento": {
+    "en": "Quality, Maintenance",
+    "fr": "Qualité, Maintenance",
+    "it": "Qualità, Manutenzione",
+    "de": "Qualität, Instandhaltung",
+    "pt": "Qualidade, Manutenção"
+  },
+  "Registro de pasteurización": {
+    "en": "Pasteurisation record",
+    "fr": "Enregistrement de pasteurisation",
+    "it": "Registrazione di pastorizzazione",
+    "de": "Pasteurisierungsnachweis",
+    "pt": "Registo de pasteurização"
+  },
+  "Control de almacenes": {
+    "en": "Warehouse checks",
+    "fr": "Contrôle des entrepôts",
+    "it": "Controllo dei magazzini",
+    "de": "Lagerkontrolle",
+    "pt": "Controlo de armazéns"
+  },
+  "Apertura de grifos y duchas": {
+    "en": "Flushing taps and showers",
+    "fr": "Ouverture des robinets et des douches",
+    "it": "Apertura di rubinetti e docce",
+    "de": "Spülen von Wasserhähnen und Duschen",
+    "pt": "Abertura de torneiras e duches"
+  },
+  "Registros de mantenimientos": {
+    "en": "Maintenance records",
+    "fr": "Enregistrements de maintenance",
+    "it": "Registrazioni di manutenzione",
+    "de": "Instandhaltungsnachweise",
+    "pt": "Registos de manutenções"
+  },
+  "Trazabilidad del producto": {
+    "en": "Product traceability",
+    "fr": "Traçabilité du produit",
+    "it": "Tracciabilità del prodotto",
+    "de": "Produktrückverfolgbarkeit",
+    "pt": "Rastreabilidade do produto"
+  },
+  "Cárnicas": {
+    "en": "Meat",
+    "fr": "Viandes",
+    "it": "Carni",
+    "de": "Fleisch",
+    "pt": "Carnes"
+  },
+  "Inspección visual de instalaciones": {
+    "en": "Visual inspection of facilities",
+    "fr": "Inspection visuelle des installations",
+    "it": "Ispezione visiva degli impianti",
+    "de": "Sichtprüfung der Anlagen",
+    "pt": "Inspeção visual das instalações"
+  },
+  "Guardar": {
+    "en": "Save",
+    "fr": "Enregistrer",
+    "it": "Salva",
+    "de": "Speichern",
+    "pt": "Guardar"
+  },
+  "Sección 1 · Cámaras de frío": {
+    "en": "Section 1 · Cold rooms",
+    "fr": "Section 1 · Chambres froides",
+    "it": "Sezione 1 · Celle frigorifere",
+    "de": "Abschnitt 1 · Kühlräume",
+    "pt": "Secção 1 · Câmaras de frio"
+  },
+  "Fecha del control": {
+    "en": "Check date",
+    "fr": "Date du contrôle",
+    "it": "Data del controllo",
+    "de": "Datum der Kontrolle",
+    "pt": "Data do controlo"
+  },
+  "Fecha": {
+    "en": "Date",
+    "fr": "Date",
+    "it": "Data",
+    "de": "Datum",
+    "pt": "Data"
+  },
+  "Foto del termómetro": {
+    "en": "Photo of the thermometer",
+    "fr": "Photo du thermomètre",
+    "it": "Foto del termometro",
+    "de": "Foto des Thermometers",
+    "pt": "Fotografia do termómetro"
+  },
+  "Firma del responsable": {
+    "en": "Signature of the person in charge",
+    "fr": "Signature du responsable",
+    "it": "Firma del responsabile",
+    "de": "Unterschrift des Verantwortlichen",
+    "pt": "Assinatura do responsável"
+  },
+  "Importar Checklist Automáticamente": {
+    "en": "Import Checklist Automatically",
+    "fr": "Importer une checklist automatiquement",
+    "it": "Importa checklist automaticamente",
+    "de": "Checkliste automatisch importieren",
+    "pt": "Importar Checklist Automaticamente"
+  },
+  "Sube un archivo Excel, PDF o Word con tu checklist y lo convertiremos automáticamente en una plantilla editable.": {
+    "en": "Upload an Excel, PDF or Word file with your checklist and we will turn it automatically into an editable template.",
+    "fr": "Téléversez un fichier Excel, PDF ou Word contenant votre checklist et nous le convertirons automatiquement en modèle modifiable.",
+    "it": "Carica un file Excel, PDF o Word con la tua checklist e lo convertiremo automaticamente in un modello modificabile.",
+    "de": "Laden Sie eine Excel-, PDF- oder Word-Datei mit Ihrer Checkliste hoch und wir wandeln sie automatisch in eine bearbeitbare Vorlage um.",
+    "pt": "Carregue um ficheiro Excel, PDF ou Word com a checklist e esta será convertida automaticamente num modelo editável."
+  },
+  "Control-temperaturas.xlsx": {
+    "en": "Temperature-checks.xlsx",
+    "fr": "Controle-temperatures.xlsx",
+    "it": "Controllo-temperature.xlsx",
+    "de": "Temperaturkontrolle.xlsx",
+    "pt": "Controlo-temperaturas.xlsx"
+  },
+  "Haz clic para seleccionar un archivo": {
+    "en": "Click to select a file",
+    "fr": "Cliquez pour sélectionner un fichier",
+    "it": "Clicca per selezionare un file",
+    "de": "Zum Auswählen einer Datei klicken",
+    "pt": "Clique para selecionar um ficheiro"
+  },
+  "Formatos soportados: Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)": {
+    "en": "Supported formats: Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)",
+    "fr": "Formats pris en charge : Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)",
+    "it": "Formati supportati: Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)",
+    "de": "Unterstützte Formate: Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)",
+    "pt": "Formatos suportados: Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)"
+  },
+  "48 KB": "=",
+  "Contexto para la IA (Opcional)": {
+    "en": "Context for the AI (Optional)",
+    "fr": "Contexte pour l'IA (facultatif)",
+    "it": "Contesto per l'IA (facoltativo)",
+    "de": "Kontext für die KI (optional)",
+    "pt": "Contexto para a IA (Opcional)"
+  },
+  "Las MAYÚSCULAS son secciones y las preguntas, controles.": {
+    "en": "CAPITALS are sections and questions are checks.",
+    "fr": "Les MAJUSCULES sont des sections et les questions, des contrôles.",
+    "it": "Le MAIUSCOLE sono sezioni e le domande, controlli.",
+    "de": "GROSSBUCHSTABEN sind Abschnitte und Fragen sind Kontrollen.",
+    "pt": "As MAIÚSCULAS são secções e as perguntas, controlos."
+  },
+  "Ejemplo: agrupa controles relacionados por tema (agua, temperatura, limpieza).": {
+    "en": "Example: group related checks by topic (water, temperature, cleaning).",
+    "fr": "Exemple : regroupez les contrôles liés par thème (eau, température, nettoyage).",
+    "it": "Esempio: raggruppa i controlli correlati per tema (acqua, temperatura, pulizia).",
+    "de": "Beispiel: Verwandte Kontrollen nach Thema gruppieren (Wasser, Temperatur, Reinigung).",
+    "pt": "Exemplo: agrupe controlos relacionados por tema (água, temperatura, limpeza)."
+  },
+  "Procesar archivo": {
+    "en": "Process file",
+    "fr": "Traiter le fichier",
+    "it": "Elabora file",
+    "de": "Datei verarbeiten",
+    "pt": "Processar ficheiro"
+  },
+  "Se sube el Excel, el PDF o el Word y Solved devuelve la plantilla editable. Cómo leer el documento —qué es sección y qué es control— se le escribe en lenguaje llano.": {
+    "en": "Upload the Excel, PDF or Word file and Solved returns the editable template. How to read the document — what is a section and what is a check — is written out in plain language.",
+    "fr": "On téléverse le fichier Excel, PDF ou Word et Solved renvoie le modèle modifiable. La façon de lire le document — ce qui est une section et ce qui est un contrôle — s'écrit en langage courant.",
+    "it": "Si carica il file Excel, PDF o Word e Solved restituisce il modello modificabile. Come leggere il documento —cosa è sezione e cosa è controllo— si scrive in linguaggio comune.",
+    "de": "Die Excel-, PDF- oder Word-Datei wird hochgeladen und Solved gibt die bearbeitbare Vorlage zurück. Wie das Dokument zu lesen ist — was Abschnitt und was Kontrolle ist — schreibt man in einfacher Sprache.",
+    "pt": "Carrega-se o Excel, o PDF ou o Word e a Solved devolve o modelo editável. Como ler o documento — o que é secção e o que é controlo — escreve-se em linguagem simples."
+  }
+}

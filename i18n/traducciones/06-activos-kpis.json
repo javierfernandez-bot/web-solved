@@ -1,0 +1,1066 @@
+{
+  "La reparación queda con dueño, plazo y cierre documentado": {
+    "en": "The repair ends up with an owner, a deadline and a documented closure",
+    "fr": "La réparation a un responsable, une échéance et une clôture documentée",
+    "it": "La riparazione resta con titolare, scadenza e chiusura documentata",
+    "de": "Die Reparatur bekommt Verantwortlichen, Frist und dokumentierten Abschluss",
+    "pt": "A reparação fica com responsável, prazo e encerramento documentado"
+  },
+  "Acción correctiva de UTD26_163_001": {
+    "en": "Corrective action for UTD26_163_001",
+    "fr": "Action corrective de UTD26_163_001",
+    "it": "Azione correttiva di UTD26_163_001",
+    "de": "Korrekturmaßnahme zu UTD26_163_001",
+    "pt": "Ação corretiva de UTD26_163_001"
+  },
+  "Pablo · Mantenimiento": {
+    "en": "Pablo · Maintenance",
+    "fr": "Pablo · Maintenance",
+    "it": "Pablo · Manutenzione",
+    "de": "Pablo · Instandhaltung",
+    "pt": "Pablo · Manutenção"
+  },
+  "Cuatro pasos, y el tercero lo hace la planta sin saberlo": {
+    "en": "Four steps, and the plant does the third one without realising",
+    "fr": "Quatre étapes, et la troisième, l'usine la fait sans le savoir",
+    "it": "Quattro passi, e il terzo lo fa lo stabilimento senza saperlo",
+    "de": "Vier Schritte – und den dritten erledigt das Werk, ohne es zu merken",
+    "pt": "Quatro passos, e o terceiro é a fábrica que o faz sem dar por isso"
+  },
+  "Da de alta": {
+    "en": "Register",
+    "fr": "Créer",
+    "it": "Registra",
+    "de": "Anlegen",
+    "pt": "Registar"
+  },
+  "Se define un tipo de activo con los atributos que interesa seguir —criticidad, estado, fabricante, modelo, tipo, ubicación— y se cargan las máquinas de una vez, no una a una.": {
+    "en": "You define an asset type with the attributes worth tracking — criticality, status, manufacturer, model, type, location — and load the machines in one go, not one by one.",
+    "fr": "On définit un type d'actif avec les attributs à suivre — criticité, état, fabricant, modèle, type, emplacement — et on charge les machines en une fois, pas une à une.",
+    "it": "Si definisce un tipo di asset con gli attributi da seguire — criticità, stato, produttore, modello, tipo, ubicazione — e si caricano le macchine in una volta, non una a una.",
+    "de": "Sie legen einen Anlagentyp mit den relevanten Attributen fest – Kritikalität, Zustand, Hersteller, Modell, Typ, Standort – und laden die Maschinen auf einmal, nicht einzeln.",
+    "pt": "Define-se um tipo de ativo com os atributos que interessa acompanhar — criticidade, estado, fabricante, modelo, tipo, localização — e carregam-se as máquinas de uma vez, não uma a uma."
+  },
+  "Pega el código": {
+    "en": "Stick the code on",
+    "fr": "Collez le code",
+    "it": "Attacca il codice",
+    "de": "Code aufkleben",
+    "pt": "Cole o código"
+  },
+  "Cada activo trae su código QR. Se descarga o se imprime desde su ficha y se pega en la máquina, en el cuadro o en la puerta de la instalación.": {
+    "en": "Every asset comes with its QR code. You download or print it from its record and stick it on the machine, the control panel or the plant room door.",
+    "fr": "Chaque actif a son code QR. On le télécharge ou on l'imprime depuis sa fiche et on le colle sur la machine, sur l'armoire ou sur la porte de l'installation.",
+    "it": "Ogni asset ha il suo codice QR. Si scarica o si stampa dalla sua scheda e si attacca sulla macchina, sul quadro o sulla porta dell'impianto.",
+    "de": "Jede Anlage bringt ihren QR-Code mit. Er wird aus dem Datensatz geladen oder gedruckt und an der Maschine, am Schaltschrank oder an der Tür angebracht.",
+    "pt": "Cada ativo tem o seu código QR. Descarrega-se ou imprime-se a partir da sua ficha e cola-se na máquina, no quadro elétrico ou na porta da instalação."
+  },
+  "Trabaja igual": {
+    "en": "Work as usual",
+    "fr": "Travaillez comme avant",
+    "it": "Lavora come sempre",
+    "de": "Weiterarbeiten wie bisher",
+    "pt": "Trabalha-se como sempre"
+  },
+  "El operario abre la incidencia y el técnico rellena el registro como lo hacen hoy, indicando el equipo. Nadie mantiene un historial: se está escribiendo con cada parte.": {
+    "en": "The operator opens the incident and the technician fills in the record as they do today, naming the asset. Nobody maintains a history: it writes itself with every report.",
+    "fr": "L'opérateur ouvre l'incident et le technicien remplit l'enregistrement comme aujourd'hui, en indiquant l'équipement. Personne ne tient d'historique : il s'écrit à chaque rapport.",
+    "it": "L'operatore apre l'anomalia e il tecnico compila la registrazione come fa oggi, indicando la macchina. Nessuno mantiene uno storico: si scrive con ogni rapporto.",
+    "de": "Der Werker öffnet die Störung und der Techniker füllt die Aufzeichnung aus wie bisher – mit Angabe der Anlage. Niemand pflegt eine Historie: Sie schreibt sich mit jeder Meldung.",
+    "pt": "O operador abre a ocorrência e o técnico preenche o registo como faz hoje, indicando o equipamento. Ninguém mantém um histórico: este vai-se escrevendo com cada parte."
+  },
+  "Consulta": {
+    "en": "Look it up",
+    "fr": "Consultez",
+    "it": "Consulta",
+    "de": "Nachschlagen",
+    "pt": "Consultar"
+  },
+  "La ficha del equipo enseña su actividad completa, filtrable por incidencias, registros y acciones, y lo que tiene abierto ahora mismo.": {
+    "en": "The asset record shows its full activity, filterable by incidents, records and actions, plus what is open right now.",
+    "fr": "La fiche de l'équipement montre son activité complète, filtrable par incidents, enregistrements et actions, ainsi que ce qui est ouvert à cet instant.",
+    "it": "La scheda della macchina mostra la sua attività completa, filtrabile per anomalie, registrazioni e azioni, e ciò che ha aperto in questo momento.",
+    "de": "Der Anlagendatensatz zeigt die vollständige Aktivität – filterbar nach Störungen, Aufzeichnungen und Maßnahmen – und was gerade offen ist.",
+    "pt": "A ficha do equipamento mostra toda a sua atividade, filtrável por ocorrências, registos e ações, e o que está em aberto neste momento."
+  },
+  "Qué queda enganchado a cada equipo": {
+    "en": "What gets attached to each asset",
+    "fr": "Ce qui se rattache à chaque équipement",
+    "it": "Cosa resta agganciato a ogni macchina",
+    "de": "Was an jeder Anlage hängen bleibt",
+    "pt": "O que fica associado a cada equipamento"
+  },
+  "El módulo de activos no añade una forma nueva de trabajar: es la clave que ordena por máquina lo que los demás módulos ya generan.": {
+    "en": "The assets module does not add a new way of working: it is the key that sorts by machine what the other modules already produce.",
+    "fr": "Le module actifs n'ajoute pas une nouvelle façon de travailler : c'est la clé qui range par machine ce que les autres modules produisent déjà.",
+    "it": "Il modulo asset non aggiunge un nuovo modo di lavorare: è la chiave che ordina per macchina ciò che gli altri moduli già generano.",
+    "de": "Das Anlagenmodul bringt keine neue Arbeitsweise: Es ist der Schlüssel, der nach Maschine ordnet, was die anderen Module ohnehin erzeugen.",
+    "pt": "O módulo de ativos não acrescenta uma nova forma de trabalhar: é a chave que organiza por máquina o que os outros módulos já geram."
+  },
+  "el parte se abre desde el móvil delante de la máquina, con foto, responsable y prioridad, y queda contado en la ficha de ese equipo.": {
+    "en": "the report is opened from a phone at the machine, with a photo, an owner and a priority, and is counted on that asset's record.",
+    "fr": "le rapport s'ouvre depuis le téléphone devant la machine, avec photo, responsable et priorité, et il est comptabilisé sur la fiche de cet équipement.",
+    "it": "il rapporto si apre dal telefono davanti alla macchina, con foto, responsabile e priorità, e viene conteggiato nella scheda di quella macchina.",
+    "de": "Die Meldung wird per Smartphone an der Maschine geöffnet – mit Foto, Verantwortlichem und Priorität – und zählt im Datensatz dieser Anlage.",
+    "pt": "a parte abre-se a partir do telemóvel junto à máquina, com foto, responsável e prioridade, e fica registada na ficha desse equipamento."
+  },
+  "Averías e incidencias:": {
+    "en": "Breakdowns and incidents:",
+    "fr": "Pannes et incidents :",
+    "it": "Guasti e anomalie:",
+    "de": "Störungen und Vorfälle:",
+    "pt": "Avarias e ocorrências:"
+  },
+  "el plan se programa como registro con su frecuencia y su responsable, avisa antes de vencer y un punto en KO abre la incidencia solo.": {
+    "en": "the plan is scheduled as a record with its frequency and its owner, warns before it falls due and a KO checkpoint opens the incident on its own.",
+    "fr": "le plan se programme comme un enregistrement avec sa fréquence et son responsable, alerte avant l'échéance et un point en KO ouvre l'incident tout seul.",
+    "it": "il piano si programma come registrazione con la sua frequenza e il suo responsabile, avvisa prima della scadenza e un punto in KO apre l'anomalia da solo.",
+    "de": "Der Plan wird als Aufzeichnung mit Frequenz und Verantwortlichem geplant, meldet sich vor Ablauf, und ein KO-Punkt öffnet die Störung von selbst.",
+    "pt": "o plano programa-se como registo com a sua frequência e o seu responsável, avisa antes de vencer e um ponto em KO abre a ocorrência sozinho."
+  },
+  "Preventivo y revisiones:": {
+    "en": "Preventive work and inspections:",
+    "fr": "Préventif et révisions :",
+    "it": "Preventiva e revisioni:",
+    "de": "Vorbeugung und Prüfungen:",
+    "pt": "Preventiva e revisões:"
+  },
+  "cada avería deriva en una acción con responsable y fecha de cierre, y el equipo enseña las que tiene abiertas sin ir a reclamarlas.": {
+    "en": "every breakdown turns into an action with an owner and a closing date, and the asset shows which ones are open without anyone chasing them.",
+    "fr": "chaque panne donne lieu à une action avec responsable et date de clôture, et l'équipement montre celles qui sont ouvertes sans avoir à les réclamer.",
+    "it": "ogni guasto genera un'azione con responsabile e data di chiusura, e la macchina mostra quelle aperte senza doverle sollecitare.",
+    "de": "Jede Störung wird zur Maßnahme mit Verantwortlichem und Abschlusstermin, und die Anlage zeigt die offenen, ohne dass jemand nachhakt.",
+    "pt": "cada avaria dá origem a uma ação com responsável e data de encerramento, e o equipamento mostra as que tem em aberto sem ser preciso reclamá-las."
+  },
+  "Reparaciones con dueño:": {
+    "en": "Repairs with an owner:",
+    "fr": "Réparations avec responsable :",
+    "it": "Riparazioni con titolare:",
+    "de": "Reparaturen mit Verantwortlichem:",
+    "pt": "Reparações com responsável:"
+  },
+  "Ver acciones y no conformidades →": {
+    "en": "See actions and non-conformities →",
+    "fr": "Voir actions et non-conformités →",
+    "it": "Vedi azioni e non conformità →",
+    "de": "Zu Maßnahmen und Abweichungen →",
+    "pt": "Ver ações e não conformidades →"
+  },
+  "se imprime desde la ficha y se pega en la máquina. Quien lo escanea llega a ese equipo, no a un buscador donde teclear el código.": {
+    "en": "it is printed from the record and stuck on the machine. Whoever scans it lands on that asset, not on a search box where they have to type the code.",
+    "fr": "il s'imprime depuis la fiche et se colle sur la machine. Celui qui le scanne arrive sur cet équipement, pas sur un moteur de recherche où saisir le code.",
+    "it": "si stampa dalla scheda e si attacca sulla macchina. Chi lo scansiona arriva a quella macchina, non a un motore di ricerca dove digitare il codice.",
+    "de": "Er wird aus dem Datensatz gedruckt und an der Maschine angebracht. Wer ihn scannt, landet bei dieser Anlage – nicht in einer Suche, in die man den Code tippt.",
+    "pt": "imprime-se a partir da ficha e cola-se na máquina. Quem o digitaliza chega a esse equipamento, não a um motor de busca onde escrever o código."
+  },
+  "Un QR por activo:": {
+    "en": "One QR code per asset:",
+    "fr": "Un QR par actif :",
+    "it": "Un QR per asset:",
+    "de": "Ein QR-Code je Anlage:",
+    "pt": "Um QR por ativo:"
+  },
+  "la reincidencia deja de mirarse sólo por área. Qué máquina concentra las averías y cuál vuelve a fallar tras darse por cerrada.": {
+    "en": "repeat failures stop being looked at only by area. Which machine concentrates the breakdowns and which one fails again after being marked closed.",
+    "fr": "la récidive cesse de s'observer uniquement par service. Quelle machine concentre les pannes et laquelle retombe en panne après avoir été déclarée close.",
+    "it": "la ricaduta smette di guardarsi solo per area. Quale macchina concentra i guasti e quale torna a rompersi dopo essere stata data per chiusa.",
+    "de": "Wiederholungsfälle werden nicht mehr nur nach Bereich betrachtet. Welche Maschine die Störungen bündelt und welche nach dem Abschluss erneut ausfällt.",
+    "pt": "a reincidência deixa de se olhar só por área. Que máquina concentra as avarias e qual volta a falhar depois de dada como encerrada."
+  },
+  "Indicadores por equipo:": {
+    "en": "Indicators per asset:",
+    "fr": "Indicateurs par équipement :",
+    "it": "Indicatori per macchina:",
+    "de": "Kennzahlen je Anlage:",
+    "pt": "Indicadores por equipamento:"
+  },
+  "los partes y los registros salen hacia el sistema implantado, en los dos sentidos, sin teclear nada dos veces.": {
+    "en": "reports and records flow to the system in place, both ways, with nothing typed twice.",
+    "fr": "les rapports et les enregistrements partent vers le système en place, dans les deux sens, sans rien ressaisir.",
+    "it": "rapporti e registrazioni escono verso il sistema in uso, nei due sensi, senza digitare nulla due volte.",
+    "de": "Meldungen und Aufzeichnungen laufen in beide Richtungen ins bestehende System – nichts wird zweimal getippt.",
+    "pt": "as partes e os registos seguem para o sistema implementado, nos dois sentidos, sem escrever nada duas vezes."
+  },
+  "El GMAO y el ERP que ya tienes:": {
+    "en": "The CMMS and ERP you already have:",
+    "fr": "La GMAO et l'ERP que vous avez déjà :",
+    "it": "Il CMMS e l'ERP che hai già:",
+    "de": "Ihr vorhandenes Instandhaltungssystem und ERP:",
+    "pt": "O CMMS e o ERP que já tem:"
+  },
+  "Si ya tienes un GMAO, Solved no viene a sustituirlo": {
+    "en": "If you already have a CMMS, Solved is not here to replace it",
+    "fr": "Si vous avez déjà une GMAO, Solved ne vient pas la remplacer",
+    "it": "Se hai già un CMMS, Solved non viene a sostituirlo",
+    "de": "Wenn Sie bereits ein Instandhaltungssystem haben, ersetzt Solved es nicht",
+    "pt": "Se já tem um CMMS, o Solved não vem substituí-lo"
+  },
+  "Solved no es un GMAO y decirlo ahorra una reunión: no lleva stock de repuestos, ni costes de mantenimiento, ni horas de mano de obra, ni contadores de máquina. Lo que lleva es el detalle operativo del equipo, que es justo lo que se pierde entre herramientas.": {
+    "en": "Solved is not a CMMS, and saying so saves a meeting: it does not handle spare-part stock, maintenance costs, labour hours or machine counters. What it does handle is the asset's operational detail, which is exactly what gets lost between tools.",
+    "fr": "Solved n'est pas une GMAO, et le dire évite une réunion : il ne gère ni stock de pièces, ni coûts de maintenance, ni heures de main-d'œuvre, ni compteurs machine. Ce qu'il gère, c'est le détail opérationnel de l'équipement, précisément ce qui se perd entre les outils.",
+    "it": "Solved non è un CMMS, e dirlo fa risparmiare una riunione: non gestisce stock di ricambi, né costi di manutenzione, né ore di manodopera, né contatori macchina. Quello che gestisce è il dettaglio operativo della macchina, che è proprio ciò che si perde tra gli strumenti.",
+    "de": "Solved ist kein Instandhaltungssystem, und das zu sagen spart ein Meeting: Es führt weder Ersatzteilbestände noch Instandhaltungskosten, Arbeitsstunden oder Maschinenzähler. Es führt das operative Detail der Anlage – genau das, was zwischen den Werkzeugen verloren geht.",
+    "pt": "O Solved não é um CMMS, e dizê-lo poupa uma reunião: não gere stock de peças, nem custos de manutenção, nem horas de mão de obra, nem contadores de máquina. O que gere é o detalhe operacional do equipamento, que é precisamente o que se perde entre ferramentas."
+  },
+  "Quién dio el aviso, a qué hora y con qué foto, desde el punto en el que se detectó.": {
+    "en": "Who raised the alert, at what time and with what photo, from the spot where it was found.",
+    "fr": "Qui a donné l'alerte, à quelle heure et avec quelle photo, depuis l'endroit où elle a été détectée.",
+    "it": "Chi ha dato la segnalazione, a che ora e con quale foto, dal punto in cui è stata rilevata.",
+    "de": "Wer die Meldung gemacht hat, wann und mit welchem Foto – von dem Punkt, an dem es auffiel.",
+    "pt": "Quem deu o alerta, a que horas e com que foto, a partir do ponto onde foi detetado."
+  },
+  "Qué control lo detectó, en qué registro y con qué resultado, con el registro enlazado a la incidencia.": {
+    "en": "Which check found it, in which record and with what result, with the record linked to the incident.",
+    "fr": "Quel contrôle l'a détecté, dans quel enregistrement et avec quel résultat, l'enregistrement étant lié à l'incident.",
+    "it": "Quale controllo l'ha rilevato, in quale registrazione e con quale esito, con la registrazione collegata all'anomalia.",
+    "de": "Welche Kontrolle es fand, in welcher Aufzeichnung und mit welchem Ergebnis – die Aufzeichnung mit der Störung verknüpft.",
+    "pt": "Que controlo o detetou, em que registo e com que resultado, com o registo associado à ocorrência."
+  },
+  "Qué acción quedó abierta, con qué responsable y qué plazo, y cuándo se cerró de verdad.": {
+    "en": "Which action was left open, with which owner and deadline, and when it really closed.",
+    "fr": "Quelle action est restée ouverte, avec quel responsable et quelle échéance, et quand elle a réellement été close.",
+    "it": "Quale azione è rimasta aperta, con quale responsabile e quale scadenza, e quando si è chiusa davvero.",
+    "de": "Welche Maßnahme offen blieb, mit welchem Verantwortlichen und welcher Frist – und wann sie wirklich abgeschlossen wurde.",
+    "pt": "Que ação ficou em aberto, com que responsável e que prazo, e quando foi realmente encerrada."
+  },
+  "Qué le ha pasado antes a esa misma máquina, en una sola pantalla y sin pedirlo a nadie.": {
+    "en": "What has happened before on that same machine, on one screen and without asking anyone.",
+    "fr": "Ce qui est arrivé auparavant à cette même machine, sur un seul écran et sans le demander à personne.",
+    "it": "Cosa è successo prima a quella stessa macchina, in una sola schermata e senza chiederlo a nessuno.",
+    "de": "Was dieser Maschine zuvor passiert ist – auf einem Bildschirm und ohne jemanden zu fragen.",
+    "pt": "O que já aconteceu antes a essa mesma máquina, num único ecrã e sem o pedir a ninguém."
+  },
+  "Y el enlace con el GMAO, el ERP o el MES cuando existen: 64 sistemas con integración disponible, de ellos 17 GMAO.": {
+    "en": "And the link to the CMMS, the ERP or the MES where they exist: 64 systems with an integration available, 17 of them CMMS.",
+    "fr": "Et le lien avec la GMAO, l'ERP ou le MES lorsqu'ils existent : 64 systèmes avec intégration disponible, dont 17 GMAO.",
+    "it": "E il collegamento con CMMS, ERP o MES quando ci sono: 64 sistemi con integrazione disponibile, di cui 17 CMMS.",
+    "de": "Und die Anbindung an Instandhaltungssystem, ERP oder MES, sofern vorhanden: 64 Systeme mit verfügbarer Integration, davon 17 Instandhaltungssysteme.",
+    "pt": "E a ligação ao CMMS, ao ERP ou ao MES quando existem: 64 sistemas com integração disponível, dos quais 17 CMMS."
+  },
+  "Sobre todo para plantas donde mantenimiento y calidad se pisan: la avería la ve producción, la registra calidad y la arregla mantenimiento, cada uno en su sitio.": {
+    "en": "Above all for plants where maintenance and quality overlap: production sees the breakdown, quality logs it and maintenance fixes it, each in their own corner.",
+    "fr": "Surtout pour les usines où maintenance et qualité se chevauchent : la panne est vue par la production, enregistrée par la qualité et réparée par la maintenance, chacun de son côté.",
+    "it": "Soprattutto per stabilimenti dove manutenzione e qualità si sovrappongono: il guasto lo vede la produzione, lo registra la qualità e lo ripara la manutenzione, ognuno nel suo.",
+    "de": "Vor allem für Werke, in denen Instandhaltung und Qualität sich überschneiden: Die Produktion sieht die Störung, die Qualität erfasst sie, die Instandhaltung behebt sie – jeder für sich.",
+    "pt": "Sobretudo para fábricas onde manutenção e qualidade se sobrepõem: a avaria é vista pela produção, registada pela qualidade e reparada pela manutenção, cada um no seu lugar."
+  },
+  "Plantas con un parque de máquinas que ya no cabe en un Excel": {
+    "en": "Plants with a machine fleet that no longer fits in a spreadsheet",
+    "fr": "Des usines dont le parc machines ne tient plus dans un Excel",
+    "it": "Stabilimenti con un parco macchine che non sta più in un Excel",
+    "de": "Werke mit einem Maschinenpark, der nicht mehr in eine Excel passt",
+    "pt": "Fábricas com um parque de máquinas que já não cabe num Excel"
+  },
+  "Equipos de mantenimiento que hoy reciben los avisos por WhatsApp": {
+    "en": "Maintenance teams who get their alerts on WhatsApp today",
+    "fr": "Des équipes de maintenance qui reçoivent aujourd'hui les avis par WhatsApp",
+    "it": "Squadre di manutenzione che oggi ricevono le segnalazioni via WhatsApp",
+    "de": "Instandhaltungsteams, die ihre Meldungen heute per WhatsApp bekommen",
+    "pt": "Equipas de manutenção que hoje recebem os alertas por WhatsApp"
+  },
+  "Quien lleva el plan de preventivo en un cuadro anual de papel": {
+    "en": "Anyone running the preventive plan on a paper year chart",
+    "fr": "Ceux qui gèrent le plan de préventif sur un tableau annuel papier",
+    "it": "Chi porta il piano di preventiva su un quadro annuale di carta",
+    "de": "Wer den Vorbeugeplan auf einer Jahresübersicht aus Papier führt",
+    "pt": "Quem gere o plano de preventiva num quadro anual de papel"
+  },
+  "Calidad, cuando el auditor pide el histórico de un equipo concreto": {
+    "en": "Quality, when the auditor asks for one asset's history",
+    "fr": "La qualité, quand l'auditeur demande l'historique d'un équipement précis",
+    "it": "La qualità, quando l'auditor chiede lo storico di una macchina precisa",
+    "de": "Die Qualität, wenn der Auditor die Historie einer bestimmten Anlage verlangt",
+    "pt": "A qualidade, quando o auditor pede o histórico de um equipamento concreto"
+  },
+  "Empresas con un GMAO que no habla con el sistema de calidad": {
+    "en": "Companies with a CMMS that does not talk to the quality system",
+    "fr": "Des entreprises dont la GMAO ne communique pas avec le système qualité",
+    "it": "Aziende con un CMMS che non dialoga con il sistema qualità",
+    "de": "Unternehmen mit einem Instandhaltungssystem, das nicht mit dem Qualitätssystem spricht",
+    "pt": "Empresas com um CMMS que não comunica com o sistema de qualidade"
+  },
+  "Grupos con varias plantas y el mismo parque repetido en cada una": {
+    "en": "Groups with several plants and the same fleet repeated in each",
+    "fr": "Des groupes avec plusieurs usines et le même parc répété dans chacune",
+    "it": "Gruppi con più stabilimenti e lo stesso parco ripetuto in ciascuno",
+    "de": "Gruppen mit mehreren Werken und demselben Park in jedem",
+    "pt": "Grupos com várias fábricas e o mesmo parque repetido em cada uma"
+  },
+  "¿Es un GMAO?": {
+    "en": "Is it a CMMS?",
+    "fr": "Est-ce une GMAO ?",
+    "it": "È un CMMS?",
+    "de": "Ist das ein Instandhaltungssystem?",
+    "pt": "É um CMMS?"
+  },
+  "No, y conviene decirlo claro: Solved no lleva stock de repuestos, ni costes, ni horas de mano de obra. Lleva el detalle operativo del equipo: quién avisó, qué registro lo detectó, qué acción quedó abierta y cuándo se cerró. Si ya tienes un GMAO, Solved se integra con él; si no lo tienes, el histórico del equipo lo construye Solved con el trabajo que la planta ya hace.": {
+    "en": "No, and it is worth saying plainly: Solved does not handle spare-part stock, costs or labour hours. It handles the asset's operational detail: who raised it, which record found it, which action was left open and when it closed. If you already have a CMMS, Solved integrates with it; if you do not, Solved builds the asset history out of the work the plant already does.",
+    "fr": "Non, et autant le dire clairement : Solved ne gère ni stock de pièces, ni coûts, ni heures de main-d'œuvre. Il gère le détail opérationnel de l'équipement : qui a signalé, quel enregistrement l'a détecté, quelle action est restée ouverte et quand elle a été close. Si vous avez déjà une GMAO, Solved s'y intègre ; sinon, Solved construit l'historique de l'équipement avec le travail que l'usine fait déjà.",
+    "it": "No, ed è bene dirlo chiaro: Solved non gestisce stock di ricambi, né costi, né ore di manodopera. Gestisce il dettaglio operativo della macchina: chi ha segnalato, quale registrazione l'ha rilevato, quale azione è rimasta aperta e quando si è chiusa. Se hai già un CMMS, Solved si integra con lui; se non ce l'hai, lo storico della macchina lo costruisce Solved con il lavoro che lo stabilimento già fa.",
+    "de": "Nein, und das sollte man klar sagen: Solved führt weder Ersatzteilbestände noch Kosten oder Arbeitsstunden. Es führt das operative Detail der Anlage: wer gemeldet hat, welche Aufzeichnung es entdeckte, welche Maßnahme offen blieb und wann sie abgeschlossen wurde. Haben Sie bereits ein Instandhaltungssystem, integriert sich Solved damit; haben Sie keines, baut Solved die Anlagenhistorie aus der Arbeit auf, die das Werk ohnehin leistet.",
+    "pt": "Não, e convém dizê-lo com clareza: o Solved não gere stock de peças, nem custos, nem horas de mão de obra. Gere o detalhe operacional do equipamento: quem alertou, que registo o detetou, que ação ficou em aberto e quando foi encerrada. Se já tem um CMMS, o Solved integra-se com ele; se não tem, o histórico do equipamento é construído pelo Solved com o trabalho que a fábrica já faz."
+  },
+  "¿Cómo se dan de alta los activos?": {
+    "en": "How are assets registered?",
+    "fr": "Comment crée-t-on les actifs ?",
+    "it": "Come si registrano gli asset?",
+    "de": "Wie werden Anlagen angelegt?",
+    "pt": "Como se registam os ativos?"
+  },
+  "Por tipo de activo. Cada tipo —maquinaria, instalaciones, equipos de medición— define sus propios atributos: criticidad, estado, fabricante, modelo, tipo y ubicación son los habituales, y se configuran según lo que cada planta necesite seguir. Los activos se cargan una vez y desde entonces están disponibles en incidencias, registros y acciones.": {
+    "en": "By asset type. Each type — machinery, facilities, measuring equipment — defines its own attributes: criticality, status, manufacturer, model, type and location are the usual ones, configured according to what each plant needs to track. Assets are loaded once and from then on are available in incidents, records and actions.",
+    "fr": "Par type d'actif. Chaque type — machines, installations, équipements de mesure — définit ses propres attributs : criticité, état, fabricant, modèle, type et emplacement sont les plus courants, configurés selon ce que chaque usine doit suivre. Les actifs sont chargés une fois et sont ensuite disponibles dans les incidents, les enregistrements et les actions.",
+    "it": "Per tipo di asset. Ogni tipo — macchinari, impianti, strumenti di misura — definisce i propri attributi: criticità, stato, produttore, modello, tipo e ubicazione sono i più comuni, configurati in base a ciò che ogni stabilimento deve seguire. Gli asset si caricano una volta e da lì sono disponibili in anomalie, registrazioni e azioni.",
+    "de": "Nach Anlagentyp. Jeder Typ – Maschinen, Anlagen, Messmittel – definiert eigene Attribute: Kritikalität, Zustand, Hersteller, Modell, Typ und Standort sind die üblichen und werden danach konfiguriert, was jedes Werk verfolgen muss. Anlagen werden einmal geladen und stehen danach in Störungen, Aufzeichnungen und Maßnahmen zur Verfügung.",
+    "pt": "Por tipo de ativo. Cada tipo — maquinaria, instalações, equipamentos de medição — define os seus próprios atributos: criticidade, estado, fabricante, modelo, tipo e localização são os habituais, configurados de acordo com o que cada fábrica precisa de acompanhar. Os ativos carregam-se uma vez e a partir daí ficam disponíveis em ocorrências, registos e ações."
+  },
+  "¿Qué hace el código QR de cada activo?": {
+    "en": "What does each asset's QR code do?",
+    "fr": "À quoi sert le code QR de chaque actif ?",
+    "it": "Cosa fa il codice QR di ogni asset?",
+    "de": "Was macht der QR-Code jeder Anlage?",
+    "pt": "Para que serve o código QR de cada ativo?"
+  },
+  "Cada activo tiene su propio código. Se descarga o se imprime desde su ficha y se pega en la máquina. Al escanearlo se abre la ficha de ese equipo: lo que le ha pasado, lo que tiene abierto y el sitio desde el que se registra lo nuevo, sin buscar nada en un listado.": {
+    "en": "Every asset has its own code. You download or print it from its record and stick it on the machine. Scanning it opens that asset's record: what has happened to it, what is open and the place from which anything new is logged, with no searching through a list.",
+    "fr": "Chaque actif a son propre code. On le télécharge ou on l'imprime depuis sa fiche et on le colle sur la machine. En le scannant, on ouvre la fiche de cet équipement : ce qui lui est arrivé, ce qui est ouvert et l'endroit depuis lequel on enregistre du nouveau, sans rien chercher dans une liste.",
+    "it": "Ogni asset ha il proprio codice. Si scarica o si stampa dalla sua scheda e si attacca sulla macchina. Scansionandolo si apre la scheda di quella macchina: cosa le è successo, cosa ha aperto e il posto da cui si registra il nuovo, senza cercare nulla in un elenco.",
+    "de": "Jede Anlage hat ihren eigenen Code. Er wird aus dem Datensatz geladen oder gedruckt und an der Maschine angebracht. Beim Scannen öffnet sich der Datensatz dieser Anlage: was ihr passiert ist, was offen ist und der Ort, von dem aus Neues erfasst wird – ohne Suche in einer Liste.",
+    "pt": "Cada ativo tem o seu próprio código. Descarrega-se ou imprime-se a partir da sua ficha e cola-se na máquina. Ao digitalizá-lo, abre-se a ficha desse equipamento: o que já lhe aconteceu, o que está em aberto e o local a partir do qual se regista o que é novo, sem procurar nada numa lista."
+  },
+  "¿Sirve para el mantenimiento preventivo?": {
+    "en": "Is it useful for preventive maintenance?",
+    "fr": "Sert-il pour la maintenance préventive ?",
+    "it": "Serve per la manutenzione preventiva?",
+    "de": "Taugt es für die vorbeugende Instandhaltung?",
+    "pt": "Serve para a manutenção preventiva?"
+  },
+  "Sí, con el módulo de registros. El plan se programa como un registro con su frecuencia, su responsable y su fecha, y el sistema avisa antes del vencimiento. Un control que sale KO abre la incidencia automáticamente, enganchada al equipo y al registro del que sale.": {
+    "en": "Yes, with the records module. The plan is scheduled as a record with its frequency, its owner and its date, and the system warns before it falls due. A check that comes back KO opens the incident automatically, attached to the asset and to the record it came from.",
+    "fr": "Oui, avec le module d'enregistrements. Le plan se programme comme un enregistrement avec sa fréquence, son responsable et sa date, et le système alerte avant l'échéance. Un contrôle en KO ouvre l'incident automatiquement, rattaché à l'équipement et à l'enregistrement d'origine.",
+    "it": "Sì, con il modulo registrazioni. Il piano si programma come una registrazione con la sua frequenza, il suo responsabile e la sua data, e il sistema avvisa prima della scadenza. Un controllo che risulta KO apre l'anomalia automaticamente, agganciata alla macchina e alla registrazione da cui nasce.",
+    "de": "Ja, mit dem Aufzeichnungsmodul. Der Plan wird als Aufzeichnung mit Frequenz, Verantwortlichem und Termin geplant, und das System meldet sich vor Ablauf. Eine Kontrolle mit Ergebnis KO öffnet die Störung automatisch – verknüpft mit der Anlage und der Aufzeichnung, aus der sie stammt.",
+    "pt": "Sim, com o módulo de registos. O plano programa-se como um registo com a sua frequência, o seu responsável e a sua data, e o sistema avisa antes do prazo de validade. Um controlo que dá KO abre a ocorrência automaticamente, associada ao equipamento e ao registo de onde surge."
+  },
+  "¿Vale para instalaciones y no sólo para máquinas?": {
+    "en": "Does it work for facilities and not just machines?",
+    "fr": "Vaut-il pour les installations et pas seulement pour les machines ?",
+    "it": "Vale per gli impianti e non solo per le macchine?",
+    "de": "Gilt das auch für Anlagen und nicht nur für Maschinen?",
+    "pt": "Serve para instalações e não só para máquinas?"
+  },
+  "Sí. Un activo es cualquier cosa cuyo historial quieras seguir: una línea, un depósito, una cámara frigorífica, un equipo de medición, un vehículo o una instalación. Lo que cambia de un caso a otro es el tipo de activo y los atributos que lleva.": {
+    "en": "Yes. An asset is anything whose history you want to track: a line, a tank, a cold room, a measuring instrument, a vehicle or a facility. What changes from case to case is the asset type and the attributes it carries.",
+    "fr": "Oui. Un actif, c'est tout ce dont vous voulez suivre l'historique : une ligne, une cuve, une chambre froide, un équipement de mesure, un véhicule ou une installation. Ce qui change d'un cas à l'autre, c'est le type d'actif et les attributs qu'il porte.",
+    "it": "Sì. Un asset è qualsiasi cosa di cui vuoi seguire lo storico: una linea, un serbatoio, una cella frigorifera, uno strumento di misura, un veicolo o un impianto. Ciò che cambia da un caso all'altro è il tipo di asset e gli attributi che porta.",
+    "de": "Ja. Eine Anlage ist alles, dessen Historie Sie verfolgen wollen: eine Linie, ein Tank, ein Kühlraum, ein Messmittel, ein Fahrzeug oder eine Einrichtung. Was von Fall zu Fall wechselt, ist der Anlagentyp und die Attribute, die er trägt.",
+    "pt": "Sim. Um ativo é qualquer coisa cujo histórico se queira acompanhar: uma linha, um depósito, uma câmara frigorífica, um instrumento de medição, um veículo ou uma instalação. O que muda de caso para caso é o tipo de ativo e os atributos que tem."
+  },
+  "¿Se ven indicadores por equipo?": {
+    "en": "Are there indicators per asset?",
+    "fr": "Voit-on des indicateurs par équipement ?",
+    "it": "Si vedono indicatori per macchina?",
+    "de": "Gibt es Kennzahlen je Anlage?",
+    "pt": "Vêem-se indicadores por equipamento?"
+  },
+  "Sí. Las incidencias y las acciones de cada activo alimentan los mismos KPIs que el resto del sistema, así que la reincidencia deja de mirarse sólo por área y se puede mirar por equipo: qué máquina concentra las averías y cuál se repite después de darse por cerrada.": {
+    "en": "Yes. Each asset's incidents and actions feed the same KPIs as the rest of the system, so repeat failures stop being viewed only by area and can be viewed by asset: which machine concentrates the breakdowns and which one recurs after being marked closed.",
+    "fr": "Oui. Les incidents et les actions de chaque actif alimentent les mêmes KPI que le reste du système : la récidive cesse de s'observer uniquement par service et peut s'observer par équipement — quelle machine concentre les pannes et laquelle se répète après avoir été déclarée close.",
+    "it": "Sì. Anomalie e azioni di ogni asset alimentano gli stessi KPI del resto del sistema, così la ricaduta smette di guardarsi solo per area e si può guardare per macchina: quale concentra i guasti e quale si ripete dopo essere stata data per chiusa.",
+    "de": "Ja. Störungen und Maßnahmen jeder Anlage speisen dieselben KPIs wie der Rest des Systems – Wiederholungen lassen sich damit nicht nur nach Bereich, sondern je Anlage betrachten: welche Maschine die Störungen bündelt und welche nach dem Abschluss erneut auftritt.",
+    "pt": "Sim. As ocorrências e as ações de cada ativo alimentam os mesmos KPIs que o resto do sistema, pelo que a reincidência deixa de se olhar só por área e passa a poder ver-se por equipamento: que máquina concentra as avarias e qual reincide depois de dada como encerrada."
+  },
+  "Manos con guantes sosteniendo una tablet que fotografía una máquina de envasado en la nave de una fábrica": {
+    "en": "Gloved hands holding a tablet photographing a packaging machine in a factory hall",
+    "fr": "Des mains gantées tiennent une tablette qui photographie une machine de conditionnement dans la halle d'une usine",
+    "it": "Mani con guanti reggono un tablet che fotografa una confezionatrice nel capannone di una fabbrica",
+    "de": "Behandschuhte Hände halten ein Tablet, das eine Verpackungsmaschine in einer Fabrikhalle fotografiert",
+    "pt": "Mãos com luvas a segurar um tablet que fotografa uma máquina de embalagem no pavilhão de uma fábrica"
+  },
+  "Técnico de mantenimiento consultando el panel de control de una máquina en planta": {
+    "en": "A maintenance technician checking a machine's control panel on the plant floor",
+    "fr": "Un technicien de maintenance consulte le pupitre de commande d'une machine en usine",
+    "it": "Un tecnico di manutenzione consulta il pannello di controllo di una macchina in stabilimento",
+    "de": "Ein Instandhaltungstechniker prüft das Bedienpanel einer Maschine im Werk",
+    "pt": "Um técnico de manutenção a consultar o painel de controlo de uma máquina na fábrica"
+  },
+  "Informes y KPIs de planta industrial en tiempo real · Solved": {
+    "en": "Real-time industrial plant reports and KPIs · Solved",
+    "fr": "Rapports et KPI d'usine industrielle en temps réel · Solved",
+    "it": "Report e KPI di stabilimento industriale in tempo reale · Solved",
+    "de": "Berichte und KPIs für Industriewerke in Echtzeit · Solved",
+    "pt": "Relatórios e KPIs de fábrica industrial em tempo real · Solved"
+  },
+  "Incidencias por área, tiempo medio de cierre, registros pendientes y tasa de reincidencia, actualizados en tiempo real y sin elaboración manual del informe.": {
+    "en": "Incidents by area, average time to close, pending records and repeat rate, updated in real time and with no report to build by hand.",
+    "fr": "Incidents par service, délai moyen de clôture, enregistrements en attente et taux de récidive, mis à jour en temps réel et sans élaboration manuelle du rapport.",
+    "it": "Anomalie per area, tempo medio di chiusura, registrazioni in sospeso e tasso di ricaduta, aggiornati in tempo reale e senza elaborare il report a mano.",
+    "de": "Störungen nach Bereich, durchschnittliche Abschlusszeit, offene Aufzeichnungen und Wiederholungsquote – in Echtzeit aktualisiert, ohne den Bericht von Hand zu bauen.",
+    "pt": "Ocorrências por área, tempo médio de encerramento, registos pendentes e taxa de reincidência, atualizados em tempo real e sem elaboração manual do relatório."
+  },
+  "KPIs y dashboards": {
+    "en": "KPIs and dashboards",
+    "fr": "KPI et tableaux de bord",
+    "it": "KPI e cruscotti",
+    "de": "KPIs und Dashboards",
+    "pt": "KPIs e dashboards"
+  },
+  "Ten los KPIs de tu planta al día sin montar un solo informe:": {
+    "en": "Keep your plant's KPIs up to date without building a single report:",
+    "fr": "Gardez les KPI de votre usine à jour sans monter le moindre rapport :",
+    "it": "Tieni i KPI del tuo stabilimento aggiornati senza montare un solo report:",
+    "de": "Halten Sie die KPIs Ihres Werks aktuell, ohne einen einzigen Bericht zu bauen:",
+    "pt": "Mantenha os KPIs da sua fábrica atualizados sem montar um único relatório:"
+  },
+  "incidencias, tiempos de cierre y registros pendientes, en tiempo real.": {
+    "en": "incidents, closing times and pending records, in real time.",
+    "fr": "incidents, délais de clôture et enregistrements en attente, en temps réel.",
+    "it": "anomalie, tempi di chiusura e registrazioni in sospeso, in tempo reale.",
+    "de": "Störungen, Abschlusszeiten und offene Aufzeichnungen, in Echtzeit.",
+    "pt": "ocorrências, tempos de encerramento e registos pendentes, em tempo real."
+  },
+  "Incidencias por área, tiempo medio de cierre, registros pendientes y lo que se repite. Sin exportar nada, sin consolidar nada y sin esperar al cierre de mes.": {
+    "en": "Incidents by area, average time to close, pending records and what keeps coming back. Nothing exported, nothing consolidated and no waiting for month-end.",
+    "fr": "Incidents par service, délai moyen de clôture, enregistrements en attente et ce qui se répète. Sans rien exporter, sans rien consolider et sans attendre la clôture du mois.",
+    "it": "Anomalie per area, tempo medio di chiusura, registrazioni in sospeso e ciò che si ripete. Senza esportare nulla, senza consolidare nulla e senza aspettare la chiusura del mese.",
+    "de": "Störungen nach Bereich, durchschnittliche Abschlusszeit, offene Aufzeichnungen und das, was sich wiederholt. Ohne Export, ohne Konsolidierung und ohne auf den Monatsabschluss zu warten.",
+    "pt": "Ocorrências por área, tempo médio de encerramento, registos pendentes e o que se repete. Sem exportar nada, sem consolidar nada e sem esperar pelo fecho do mês."
+  },
+  "El mes cerrado, sin montar el informe": {
+    "en": "The month closed, without building the report",
+    "fr": "Le mois clôturé, sans monter le rapport",
+    "it": "Il mese chiuso, senza montare il report",
+    "de": "Der Monat abgeschlossen, ohne den Bericht zu bauen",
+    "pt": "O mês fechado, sem montar o relatório"
+  },
+  "Lo que hoy sale de exportar, pegar y consolidar manualmente: qué se abre cada mes y de dónde viene. El ejemplo es la actividad de seis meses de una planta; en el sistema son los datos de la tuya y están al día, no al cierre de mes.": {
+    "en": "What today takes exporting, pasting and consolidating by hand: what opens each month and where it comes from. The example shows six months of one plant's activity; in the system it is your own data, and it is up to date rather than closed off at month-end.",
+    "fr": "Ce qui exige aujourd'hui d'exporter, coller et consolider à la main : ce qui s'ouvre chaque mois et d'où cela vient. L'exemple montre six mois d'activité d'une usine ; dans le système, ce sont les données de la vôtre, à jour et non arrêtées à la clôture du mois.",
+    "it": "Ciò che oggi richiede di esportare, incollare e consolidare a mano: cosa si apre ogni mese e da dove viene. L'esempio è l'attività di sei mesi di uno stabilimento; nel sistema sono i dati del tuo, aggiornati e non fermi alla chiusura del mese.",
+    "de": "Was heute Exportieren, Einfügen und Konsolidieren von Hand kostet: was jeden Monat aufgeht und woher es kommt. Das Beispiel zeigt sechs Monate Aktivität eines Werks; im System sind es die Daten Ihres eigenen – aktuell und nicht erst zum Monatsabschluss.",
+    "pt": "O que hoje exige exportar, colar e consolidar manualmente: o que se abre cada mês e de onde vem. O exemplo é a atividade de seis meses de uma fábrica; no sistema são os dados da sua, atualizados e não fechados ao fecho do mês."
+  },
+  "Junio, por categoría": {
+    "en": "June, by category",
+    "fr": "Juin, par catégorie",
+    "it": "Giugno, per categoria",
+    "de": "Juni, nach Kategorie",
+    "pt": "Junho, por categoria"
+  },
+  "Las preguntas que vas a poder contestar al momento": {
+    "en": "The questions you will be able to answer on the spot",
+    "fr": "Les questions auxquelles vous pourrez répondre immédiatement",
+    "it": "Le domande a cui potrai rispondere sul momento",
+    "de": "Die Fragen, die Sie sofort beantworten können",
+    "pt": "As perguntas a que vai poder responder na hora"
+  },
+  "Cuatro preguntas que hoy exigen varias horas de trabajo en Excel.": {
+    "en": "Four questions that take several hours of spreadsheet work today.",
+    "fr": "Quatre questions qui exigent aujourd'hui plusieurs heures de travail sur Excel.",
+    "it": "Quattro domande che oggi richiedono diverse ore di lavoro in Excel.",
+    "de": "Vier Fragen, die heute mehrere Stunden Excel-Arbeit kosten.",
+    "pt": "Quatro perguntas que hoje exigem várias horas de trabalho em Excel."
+  },
+  "Incidencias por área": {
+    "en": "Incidents by area",
+    "fr": "Incidents par service",
+    "it": "Anomalie per area",
+    "de": "Störungen nach Bereich",
+    "pt": "Ocorrências por área"
+  },
+  "Tiempo de cierre": {
+    "en": "Time to close",
+    "fr": "Délai de clôture",
+    "it": "Tempo di chiusura",
+    "de": "Abschlusszeit",
+    "pt": "Tempo de encerramento"
+  },
+  "Registros sin rellenar": {
+    "en": "Unfilled records",
+    "fr": "Enregistrements non remplis",
+    "it": "Registrazioni non compilate",
+    "de": "Nicht ausgefüllte Aufzeichnungen",
+    "pt": "Registos por preencher"
+  },
+  "Lo que se repite": {
+    "en": "What keeps repeating",
+    "fr": "Ce qui se répète",
+    "it": "Ciò che si ripete",
+    "de": "Was sich wiederholt",
+    "pt": "O que se repete"
+  },
+  "Dónde se concentran las desviaciones": {
+    "en": "Where deviations cluster",
+    "fr": "Où se concentrent les écarts",
+    "it": "Dove si concentrano le deviazioni",
+    "de": "Wo sich Abweichungen häufen",
+    "pt": "Onde se concentram os desvios"
+  },
+  "Deja de ser una apreciación del responsable de turno y pasa a ser un dato por línea, por área y por categoría. El mapa de actividad identifica además la franja horaria de mayor concentración.": {
+    "en": "It stops being the shift supervisor's impression and becomes a figure by line, by area and by category. The activity map also pinpoints the busiest time band.",
+    "fr": "Cela cesse d'être une appréciation du chef de poste pour devenir une donnée par ligne, par service et par catégorie. La carte d'activité identifie en plus la tranche horaire la plus chargée.",
+    "it": "Smette di essere un'impressione del capoturno e diventa un dato per linea, per area e per categoria. La mappa di attività individua inoltre la fascia oraria di maggiore concentrazione.",
+    "de": "Es ist nicht länger der Eindruck des Schichtführers, sondern eine Zahl je Linie, Bereich und Kategorie. Die Aktivitätskarte zeigt zudem das Zeitfenster mit der stärksten Häufung.",
+    "pt": "Deixa de ser uma apreciação do responsável de turno e passa a ser um dado por linha, por área e por categoria. O mapa de atividade identifica ainda a faixa horária de maior concentração."
+  },
+  "Filtras por lote, responsable o categoría sin exportar nada": {
+    "en": "Filter by batch, owner or category without exporting anything",
+    "fr": "Vous filtrez par lot, responsable ou catégorie sans rien exporter",
+    "it": "Filtri per lotto, responsabile o categoria senza esportare nulla",
+    "de": "Nach Charge, Verantwortlichem oder Kategorie filtern, ohne etwas zu exportieren",
+    "pt": "Filtra-se por lote, responsável ou categoria sem exportar nada"
+  },
+  "El mapa de actividad marca la franja donde se acumula": {
+    "en": "The activity map marks the band where it piles up",
+    "fr": "La carte d'activité marque la tranche où cela s'accumule",
+    "it": "La mappa di attività segna la fascia dove si accumula",
+    "de": "Die Aktivitätskarte markiert das Zeitfenster mit der Häufung",
+    "pt": "O mapa de atividade assinala a faixa onde se acumula"
+  },
+  "De ahí sale la acción correctiva, con responsable asignado": {
+    "en": "That is where the corrective action comes from, with an owner assigned",
+    "fr": "C'est de là que sort l'action corrective, avec un responsable assigné",
+    "it": "Da lì nasce l'azione correttiva, con responsabile assegnato",
+    "de": "Daraus entsteht die Korrekturmaßnahme, mit zugewiesenem Verantwortlichen",
+    "pt": "Daí surge a ação corretiva, com responsável atribuído"
+  },
+  "Tiempo medio de cierre por responsable": {
+    "en": "Average time to close by owner",
+    "fr": "Délai moyen de clôture par responsable",
+    "it": "Tempo medio di chiusura per responsabile",
+    "de": "Durchschnittliche Abschlusszeit je Verantwortlichem",
+    "pt": "Tempo médio de encerramento por responsável"
+  },
+  "Requiere cruzar la fecha de apertura con la de cierre, un cálculo manual en una hoja de cálculo. El sistema lo resuelve de forma automática y desglosado por responsable.": {
+    "en": "It means crossing the opening date with the closing one, a manual calculation in a spreadsheet. The system does it automatically and broken down by owner.",
+    "fr": "Cela suppose de croiser la date d'ouverture avec celle de clôture, un calcul manuel dans un tableur. Le système le fait automatiquement et ventilé par responsable.",
+    "it": "Richiede di incrociare la data di apertura con quella di chiusura, un calcolo manuale in un foglio di calcolo. Il sistema lo risolve in automatico e suddiviso per responsabile.",
+    "de": "Es verlangt, Eröffnungs- und Abschlussdatum zu verschneiden – eine Handrechnung in der Tabelle. Das System erledigt das automatisch und nach Verantwortlichem aufgeschlüsselt.",
+    "pt": "Implica cruzar a data de abertura com a de encerramento, um cálculo manual numa folha de cálculo. O sistema faz isso automaticamente e discriminado por responsável."
+  },
+  "Media por área y por persona, al día": {
+    "en": "Average by area and by person, up to date",
+    "fr": "Moyenne par service et par personne, à jour",
+    "it": "Media per area e per persona, aggiornata",
+    "de": "Durchschnitt nach Bereich und Person, tagesaktuell",
+    "pt": "Média por área e por pessoa, atualizada"
+  },
+  "Las incidencias que superan el plazo previsto, en primer lugar": {
+    "en": "Incidents past their expected deadline come first",
+    "fr": "Les incidents qui dépassent le délai prévu, en premier",
+    "it": "Le anomalie che superano la scadenza prevista, per prime",
+    "de": "Störungen jenseits der vorgesehenen Frist zuerst",
+    "pt": "As ocorrências que ultrapassam o prazo previsto, em primeiro lugar"
+  },
+  "Sin necesidad de reclamarlo a cada responsable": {
+    "en": "Without chasing each owner for it",
+    "fr": "Sans avoir à le réclamer à chaque responsable",
+    "it": "Senza doverlo sollecitare a ogni responsabile",
+    "de": "Ohne bei jedem Verantwortlichen nachzuhaken",
+    "pt": "Sem necessidade de o reclamar a cada responsável"
+  },
+  "Controles pendientes de la jornada": {
+    "en": "Checks still pending today",
+    "fr": "Contrôles en attente de la journée",
+    "it": "Controlli in sospeso della giornata",
+    "de": "Heute noch offene Kontrollen",
+    "pt": "Controlos pendentes do dia"
+  },
+  "Un control no ejecutado no deja rastro en soporte papel: sólo se detecta por la ausencia del registro. El sistema lo señala en el momento, no durante la auditoría.": {
+    "en": "A check that was never done leaves no trace on paper: you only spot it by the missing record. The system flags it there and then, not during the audit.",
+    "fr": "Un contrôle non exécuté ne laisse aucune trace sur papier : on ne le détecte qu'à l'absence d'enregistrement. Le système le signale sur le moment, pas pendant l'audit.",
+    "it": "Un controllo non eseguito non lascia traccia su carta: si rileva solo dall'assenza della registrazione. Il sistema lo segnala sul momento, non durante l'audit.",
+    "de": "Eine nicht ausgeführte Kontrolle hinterlässt auf Papier keine Spur: Man erkennt sie nur an der fehlenden Aufzeichnung. Das System meldet sie sofort, nicht erst im Audit.",
+    "pt": "Um controlo não executado não deixa rasto em suporte de papel: só se deteta pela ausência do registo. O sistema assinala-o no momento, não durante a auditoria."
+  },
+  "Por turno, por línea y por responsable": {
+    "en": "By shift, by line and by owner",
+    "fr": "Par poste, par ligne et par responsable",
+    "it": "Per turno, per linea e per responsabile",
+    "de": "Nach Schicht, Linie und Verantwortlichem",
+    "pt": "Por turno, por linha e por responsável"
+  },
+  "Se detecta antes de la auditoría, no durante": {
+    "en": "Spotted before the audit, not during it",
+    "fr": "Détecté avant l'audit, pas pendant",
+    "it": "Si rileva prima dell'audit, non durante",
+    "de": "Vor dem Audit erkannt, nicht währenddessen",
+    "pt": "Deteta-se antes da auditoria, não durante"
+  },
+  "Un control que sale KO abre la incidencia solo": {
+    "en": "A check that comes back KO opens the incident on its own",
+    "fr": "Un contrôle en KO ouvre l'incident tout seul",
+    "it": "Un controllo che risulta KO apre l'anomalia da solo",
+    "de": "Eine Kontrolle mit Ergebnis KO öffnet die Störung von selbst",
+    "pt": "Um controlo que dá KO abre a ocorrência sozinho"
+  },
+  "Reincidencia de incidencias": {
+    "en": "Repeat incidents",
+    "fr": "Récidive des incidents",
+    "it": "Ricaduta delle anomalie",
+    "de": "Wiederkehrende Störungen",
+    "pt": "Reincidência de ocorrências"
+  },
+  "Es el indicador que convierte el registro en mejora continua: cuántas veces reaparece la misma incidencia tras darse por cerrada. Requiere histórico, y el histórico lo construye el propio sistema.": {
+    "en": "It is the indicator that turns record-keeping into continuous improvement: how often the same incident comes back after being marked closed. It needs history, and the system builds that history itself.",
+    "fr": "C'est l'indicateur qui transforme l'enregistrement en amélioration continue : combien de fois le même incident réapparaît après avoir été déclaré clos. Il faut un historique, et c'est le système lui-même qui le construit.",
+    "it": "È l'indicatore che trasforma la registrazione in miglioramento continuo: quante volte la stessa anomalia riappare dopo essere stata data per chiusa. Richiede uno storico, e lo storico lo costruisce il sistema stesso.",
+    "de": "Es ist die Kennzahl, die aus Erfassung kontinuierliche Verbesserung macht: wie oft dieselbe Störung nach ihrem Abschluss wieder auftaucht. Sie braucht Historie – und die baut das System selbst auf.",
+    "pt": "É o indicador que transforma o registo em melhoria contínua: quantas vezes a mesma ocorrência reaparece depois de dada como encerrada. Requer histórico, e o histórico é construído pelo próprio sistema."
+  },
+  "Reincidencia por causa y por equipo": {
+    "en": "Repeats by cause and by asset",
+    "fr": "Récidive par cause et par équipement",
+    "it": "Ricaduta per causa e per macchina",
+    "de": "Wiederholungen nach Ursache und Anlage",
+    "pt": "Reincidência por causa e por equipamento"
+  },
+  "El análisis de causa vive pegado a la no conformidad": {
+    "en": "The root cause analysis lives attached to the non-conformity",
+    "fr": "L'analyse de cause reste collée à la non-conformité",
+    "it": "L'analisi delle cause vive attaccata alla non conformità",
+    "de": "Die Ursachenanalyse hängt direkt an der Abweichung",
+    "pt": "A análise de causa vive associada à não conformidade"
+  },
+  "El histórico se acumula desde el primer día": {
+    "en": "The history builds up from day one",
+    "fr": "L'historique s'accumule dès le premier jour",
+    "it": "Lo storico si accumula dal primo giorno",
+    "de": "Die Historie wächst ab dem ersten Tag",
+    "pt": "O histórico acumula-se desde o primeiro dia"
+  },
+  "Los indicadores del turno, disponibles para todos los niveles": {
+    "en": "The shift's indicators, available at every level",
+    "fr": "Les indicateurs du poste, disponibles à tous les niveaux",
+    "it": "Gli indicatori del turno, disponibili a tutti i livelli",
+    "de": "Die Kennzahlen der Schicht – auf allen Ebenen verfügbar",
+    "pt": "Os indicadores do turno, disponíveis a todos os níveis"
+  },
+  "Dirección y línea consultan el mismo dato y en el mismo momento.": {
+    "en": "Management and the line look at the same figure at the same time.",
+    "fr": "La direction et la ligne consultent la même donnée au même moment.",
+    "it": "Direzione e linea consultano lo stesso dato nello stesso momento.",
+    "de": "Geschäftsleitung und Linie sehen dieselbe Zahl zur selben Zeit.",
+    "pt": "A direção e a linha consultam o mesmo dado e no mesmo momento."
+  },
+  "Estado actual y desviaciones detenidas": {
+    "en": "Current status and deviations held",
+    "fr": "État actuel et écarts arrêtés",
+    "it": "Stato attuale e deviazioni ferme",
+    "de": "Aktueller Stand und gestoppte Abweichungen",
+    "pt": "Estado atual e desvios contidos"
+  },
+  "Incidencias del mes": {
+    "en": "Incidents this month",
+    "fr": "Incidents du mois",
+    "it": "Anomalie del mese",
+    "de": "Störungen des Monats",
+    "pt": "Ocorrências do mês"
+  },
+  "Planta de Javier · turno de mañana": {
+    "en": "Javier plant · morning shift",
+    "fr": "Usine de Javier · poste du matin",
+    "it": "Stabilimento di Javier · turno mattina",
+    "de": "Werk Javier · Frühschicht",
+    "pt": "Fábrica de Javier · turno da manhã"
+  },
+  "3,1 días": {
+    "en": "3.1 days",
+    "fr": "3,1 jours",
+    "it": "3,1 giorni",
+    "de": "3,1 Tage",
+    "pt": "3,1 dias"
+  },
+  "Referencias: equipos que ya deciden con estos datos": {
+    "en": "References: teams already deciding on this data",
+    "fr": "Références : des équipes qui décident déjà avec ces données",
+    "it": "Referenze: squadre che già decidono con questi dati",
+    "de": "Referenzen: Teams, die bereits mit diesen Daten entscheiden",
+    "pt": "Referências: equipas que já decidem com estes dados"
+  },
+  "«Lo utilizo como cuadro de mando: ver dónde estábamos, dónde estamos ahora y qué hemos cambiado. Y ver dónde tenemos que incidir más cuando algo se ha atascado o cuando están creciendo mucho las incidencias en cierta área.»": {
+    "en": "“I use it as a dashboard: seeing where we were, where we are now and what we have changed. And seeing where we have to push harder when something is stuck or when incidents are growing fast in a particular area.”",
+    "fr": "« Je m'en sers comme tableau de bord : voir où nous étions, où nous en sommes et ce que nous avons changé. Et voir où insister davantage quand quelque chose bloque ou quand les incidents augmentent fortement dans un secteur. »",
+    "it": "«Lo uso come cruscotto: vedere dov'eravamo, dove siamo ora e cosa abbiamo cambiato. E vedere dove dobbiamo insistere di più quando qualcosa si è bloccato o quando le anomalie crescono molto in una certa area.»",
+    "de": "„Ich nutze es als Cockpit: sehen, wo wir waren, wo wir jetzt stehen und was wir geändert haben. Und sehen, wo wir stärker ansetzen müssen, wenn etwas hängt oder die Störungen in einem Bereich stark zunehmen.“",
+    "pt": "«Uso-o como painel de controlo: ver onde estávamos, onde estamos agora e o que mudámos. E ver onde temos de insistir mais quando algo encravou ou quando as ocorrências estão a crescer muito numa determinada área.»"
+  },
+  "¿Qué información muestra el dashboard de Solved?": {
+    "en": "What does the Solved dashboard show?",
+    "fr": "Quelles informations affiche le tableau de bord de Solved ?",
+    "it": "Quali informazioni mostra il cruscotto di Solved?",
+    "de": "Welche Informationen zeigt das Dashboard von Solved?",
+    "pt": "Que informação mostra o dashboard do Solved?"
+  },
+  "Indicadores de calidad, incidencias, cumplimiento y rendimiento operativo de la planta, actualizados en tiempo real.": {
+    "en": "Quality, incident, compliance and operational performance indicators for the plant, updated in real time.",
+    "fr": "Des indicateurs de qualité, d'incidents, de conformité et de performance opérationnelle de l'usine, mis à jour en temps réel.",
+    "it": "Indicatori di qualità, anomalie, conformità e performance operativa dello stabilimento, aggiornati in tempo reale.",
+    "de": "Kennzahlen zu Qualität, Störungen, Normerfüllung und operativer Leistung des Werks, in Echtzeit aktualisiert.",
+    "pt": "Indicadores de qualidade, ocorrências, conformidade e desempenho operacional da fábrica, atualizados em tempo real."
+  },
+  "¿Los datos se actualizan en tiempo real?": {
+    "en": "Is the data updated in real time?",
+    "fr": "Les données sont-elles mises à jour en temps réel ?",
+    "it": "I dati si aggiornano in tempo reale?",
+    "de": "Werden die Daten in Echtzeit aktualisiert?",
+    "pt": "Os dados atualizam-se em tempo real?"
+  },
+  "Sí. El cuadro de mando refleja la actividad de la operación en tiempo real, sin volcados manuales.": {
+    "en": "Yes. The dashboard reflects operational activity in real time, with no manual dumps.",
+    "fr": "Oui. Le tableau de bord reflète l'activité de l'exploitation en temps réel, sans transferts manuels.",
+    "it": "Sì. Il cruscotto riflette l'attività operativa in tempo reale, senza travasi manuali.",
+    "de": "Ja. Das Dashboard bildet den Betrieb in Echtzeit ab, ohne manuelle Übertragungen.",
+    "pt": "Sim. O painel de controlo reflete a atividade da operação em tempo real, sem transferências manuais."
+  },
+  "¿Puedo exportar informes?": {
+    "en": "Can I export reports?",
+    "fr": "Puis-je exporter des rapports ?",
+    "it": "Posso esportare report?",
+    "de": "Kann ich Berichte exportieren?",
+    "pt": "Posso exportar relatórios?"
+  },
+  "Sí. Los informes y las estadísticas se exportan para su distribución interna y para el análisis de dirección.": {
+    "en": "Yes. Reports and statistics can be exported for internal distribution and management analysis.",
+    "fr": "Oui. Les rapports et les statistiques s'exportent pour la diffusion interne et l'analyse de direction.",
+    "it": "Sì. Report e statistiche si esportano per la distribuzione interna e per l'analisi della direzione.",
+    "de": "Ja. Berichte und Statistiken lassen sich für die interne Verteilung und die Auswertung der Geschäftsleitung exportieren.",
+    "pt": "Sim. Os relatórios e as estatísticas exportam-se para distribuição interna e para análise da direção."
+  },
+  "¿Puedo personalizar los indicadores?": {
+    "en": "Can I customise the indicators?",
+    "fr": "Puis-je personnaliser les indicateurs ?",
+    "it": "Posso personalizzare gli indicatori?",
+    "de": "Kann ich die Kennzahlen anpassen?",
+    "pt": "Posso personalizar os indicadores?"
+  },
+  "Sí. Los KPIs y las vistas se configuran según los procesos y los objetivos de calidad, mantenimiento y producción de cada organización.": {
+    "en": "Yes. KPIs and views are configured to each organisation's quality, maintenance and production processes and targets.",
+    "fr": "Oui. Les KPI et les vues se configurent selon les processus et les objectifs de qualité, de maintenance et de production de chaque organisation.",
+    "it": "Sì. I KPI e le viste si configurano secondo i processi e gli obiettivi di qualità, manutenzione e produzione di ogni organizzazione.",
+    "de": "Ja. KPIs und Ansichten werden auf die Prozesse und Ziele von Qualität, Instandhaltung und Produktion jeder Organisation zugeschnitten.",
+    "pt": "Sim. Os KPIs e as vistas configuram-se de acordo com os processos e os objetivos de qualidade, manutenção e produção de cada organização."
+  },
+  "Actividad mensual de enero a junio de 2026, repartida entre registros, acciones e incidencias. El mes de más actividad es marzo y el de menos, mayo.": {
+    "en": "Monthly activity from January to June 2026, split between records, actions and incidents. March is the busiest month and May the quietest.",
+    "fr": "Activité mensuelle de janvier à juin 2026, répartie entre enregistrements, actions et incidents. Le mois le plus actif est mars, le moins actif mai.",
+    "it": "Attività mensile da gennaio a giugno 2026, ripartita tra registrazioni, azioni e anomalie. Il mese di maggiore attività è marzo, quello di minore maggio.",
+    "de": "Monatliche Aktivität von Januar bis Juni 2026, aufgeteilt auf Aufzeichnungen, Maßnahmen und Störungen. Der aktivste Monat ist März, der ruhigste Mai.",
+    "pt": "Atividade mensal de janeiro a junho de 2026, repartida entre registos, ações e ocorrências. O mês de maior atividade é março e o de menor, maio."
+  },
+  "Incidencias abiertas en junio por categoría: mantenimiento 5, calidad 3, producción 2 y reclamación 1.": {
+    "en": "Incidents opened in June by category: maintenance 5, quality 3, production 2 and complaints 1.",
+    "fr": "Incidents ouverts en juin par catégorie : maintenance 5, qualité 3, production 2 et réclamation 1.",
+    "it": "Anomalie aperte a giugno per categoria: manutenzione 5, qualità 3, produzione 2 e reclamo 1.",
+    "de": "Im Juni geöffnete Störungen nach Kategorie: Instandhaltung 5, Qualität 3, Produktion 2 und Reklamation 1.",
+    "pt": "Ocorrências abertas em junho por categoria: manutenção 5, qualidade 3, produção 2 e reclamação 1."
+  },
+  "Preguntas que responde el tablero": {
+    "en": "Questions the board answers",
+    "fr": "Questions auxquelles le tableau répond",
+    "it": "Domande a cui risponde il cruscotto",
+    "de": "Fragen, die das Board beantwortet",
+    "pt": "Perguntas a que o painel responde"
+  },
+  "IA aplicada a las operaciones industriales · Solved": {
+    "en": "AI applied to industrial operations · Solved",
+    "fr": "L'IA appliquée aux opérations industrielles · Solved",
+    "it": "IA applicata alle operazioni industriali · Solved",
+    "de": "KI für industrielle Abläufe · Solved",
+    "pt": "IA aplicada às operações industriais · Solved"
+  },
+  "Seis funciones de IA integradas en Solved: incidencias desde un correo, importación de checklists, generación de informes y consulta citando el registro.": {
+    "en": "Six AI features built into Solved: incidents from an email, checklist import, report generation and queries that cite the record.",
+    "fr": "Six fonctions d'IA intégrées à Solved : incidents depuis un courriel, import de checklists, génération de rapports et requêtes citant l'enregistrement.",
+    "it": "Sei funzioni di IA integrate in Solved: anomalie da una mail, importazione di checklist, generazione di report e ricerche che citano la registrazione.",
+    "de": "Sechs KI-Funktionen in Solved: Störungen aus einer E-Mail, Checklisten-Import, Berichtserstellung und Abfragen mit Quellenangabe.",
+    "pt": "Seis funcionalidades de IA integradas no Solved: ocorrências a partir de um e-mail, importação de checklists, geração de relatórios e consultas que citam o registo."
+  },
+  "Pregunta a tus datos y ten el informe hecho:": {
+    "en": "Ask your data a question and get the report done:",
+    "fr": "Interrogez vos données et obtenez le rapport tout fait :",
+    "it": "Chiedi ai tuoi dati e trova il report già fatto:",
+    "de": "Fragen Sie Ihre Daten und erhalten Sie den fertigen Bericht:",
+    "pt": "Pergunte aos seus dados e tenha o relatório pronto:"
+  },
+  "la IA crea incidencias, importa checklists y responde citando el parte.": {
+    "en": "the AI creates incidents, imports checklists and answers quoting the report.",
+    "fr": "l'IA crée des incidents, importe des checklists et répond en citant le rapport.",
+    "it": "l'IA crea anomalie, importa checklist e risponde citando il rapporto.",
+    "de": "Die KI legt Störungen an, importiert Checklisten und antwortet mit Verweis auf die Meldung.",
+    "pt": "a IA cria ocorrências, importa checklists e responde citando a parte."
+  },
+  "Ver las funciones disponibles": {
+    "en": "See the available features",
+    "fr": "Voir les fonctions disponibles",
+    "it": "Vedi le funzioni disponibili",
+    "de": "Verfügbare Funktionen ansehen",
+    "pt": "Ver as funcionalidades disponíveis"
+  },
+  "Seis funciones integradas en el producto,": {
+    "en": "Six features built into the product,",
+    "fr": "Six fonctions intégrées au produit,",
+    "it": "Sei funzioni integrate nel prodotto,",
+    "de": "Sechs im Produkt eingebaute Funktionen,",
+    "pt": "Seis funcionalidades integradas no produto,"
+  },
+  "no un chat superpuesto": {
+    "en": "not a chat bolted on top",
+    "fr": "pas un chat plaqué par-dessus",
+    "it": "non una chat sovrapposta",
+    "de": "kein aufgesetzter Chat",
+    "pt": "não um chat sobreposto"
+  },
+  "La IA no es un módulo independiente: opera dentro de los módulos en uso y sobre los datos que la planta ya registra.": {
+    "en": "The AI is not a standalone module: it works inside the modules in use and on the data the plant already records.",
+    "fr": "L'IA n'est pas un module indépendant : elle opère dans les modules utilisés et sur les données que l'usine enregistre déjà.",
+    "it": "L'IA non è un modulo indipendente: opera dentro i moduli in uso e sui dati che lo stabilimento già registra.",
+    "de": "Die KI ist kein eigenständiges Modul: Sie arbeitet in den genutzten Modulen und auf den Daten, die das Werk ohnehin erfasst.",
+    "pt": "A IA não é um módulo independente: opera dentro dos módulos em uso e sobre os dados que a fábrica já regista."
+  },
+  "genera y completa la incidencia a partir de un texto, un correo o un documento.": {
+    "en": "it generates and fills in the incident from a text, an email or a document.",
+    "fr": "elle génère et complète l'incident à partir d'un texte, d'un courriel ou d'un document.",
+    "it": "genera e completa l'anomalia a partire da un testo, una mail o un documento.",
+    "de": "Sie erzeugt und füllt die Störung aus einem Text, einer E-Mail oder einem Dokument.",
+    "pt": "gera e preenche a ocorrência a partir de um texto, um e-mail ou um documento."
+  },
+  "Crear incidencia desde texto:": {
+    "en": "Create an incident from text:",
+    "fr": "Créer un incident à partir d'un texte :",
+    "it": "Creare un'anomalia da un testo:",
+    "de": "Störung aus Text anlegen:",
+    "pt": "Criar ocorrência a partir de texto:"
+  },
+  "Ver incidencias →": {
+    "en": "See incidents →",
+    "fr": "Voir les incidents →",
+    "it": "Vedi le anomalie →",
+    "de": "Zu den Störungen →",
+    "pt": "Ver ocorrências →"
+  },
+  "importa y estructura las plantillas de checklist desde documentos de Excel, PDF o Word.": {
+    "en": "it imports and structures checklist templates from Excel, PDF or Word documents.",
+    "fr": "elle importe et structure les modèles de checklist depuis des documents Excel, PDF ou Word.",
+    "it": "importa e struttura i modelli di checklist da documenti Excel, PDF o Word.",
+    "de": "Sie importiert und strukturiert Checklisten-Vorlagen aus Excel-, PDF- oder Word-Dokumenten.",
+    "pt": "importa e estrutura os modelos de checklist a partir de documentos Excel, PDF ou Word."
+  },
+  "Importación automática de checklists:": {
+    "en": "Automatic checklist import:",
+    "fr": "Import automatique de checklists :",
+    "it": "Importazione automatica di checklist:",
+    "de": "Automatischer Checklisten-Import:",
+    "pt": "Importação automática de checklists:"
+  },
+  "informes a medida sobre los datos de la organización, con análisis de incidencias, registros y acciones, gráficos y conclusiones.": {
+    "en": "bespoke reports on the organisation's data, with analysis of incidents, records and actions, charts and conclusions.",
+    "fr": "des rapports sur mesure à partir des données de l'organisation, avec analyse des incidents, enregistrements et actions, graphiques et conclusions.",
+    "it": "report su misura sui dati dell'organizzazione, con analisi di anomalie, registrazioni e azioni, grafici e conclusioni.",
+    "de": "maßgeschneiderte Berichte über die Daten der Organisation, mit Analyse von Störungen, Aufzeichnungen und Maßnahmen, Diagrammen und Schlussfolgerungen.",
+    "pt": "relatórios personalizados sobre os dados da organização, com análise de ocorrências, registos e ações, gráficos e conclusões."
+  },
+  "Generación de informes con IA:": {
+    "en": "AI report generation:",
+    "fr": "Génération de rapports par IA :",
+    "it": "Generazione di report con IA:",
+    "de": "Berichtserstellung mit KI:",
+    "pt": "Geração de relatórios com IA:"
+  },
+  "a partir de la descripción de un KPI o un gráfico en lenguaje natural, la IA lo genera y lo incorpora al cuadro de mando.": {
+    "en": "from a plain-language description of a KPI or a chart, the AI builds it and adds it to the dashboard.",
+    "fr": "à partir de la description d'un KPI ou d'un graphique en langage naturel, l'IA le génère et l'ajoute au tableau de bord.",
+    "it": "dalla descrizione di un KPI o di un grafico in linguaggio naturale, l'IA lo genera e lo aggiunge al cruscotto.",
+    "de": "Aus der Beschreibung einer Kennzahl oder eines Diagramms in natürlicher Sprache erzeugt die KI es und fügt es dem Dashboard hinzu.",
+    "pt": "a partir da descrição de um KPI ou de um gráfico em linguagem natural, a IA gera-o e incorpora-o no painel de controlo."
+  },
+  "Generador de visualizaciones:": {
+    "en": "Visualisation generator:",
+    "fr": "Générateur de visualisations :",
+    "it": "Generatore di visualizzazioni:",
+    "de": "Visualisierungs-Generator:",
+    "pt": "Gerador de visualizações:"
+  },
+  "el informe de calidad de cada planta se emite semanalmente de forma automática, con el análisis de sus incidencias, registros y acciones.": {
+    "en": "each plant's quality report goes out automatically every week, with an analysis of its incidents, records and actions.",
+    "fr": "le rapport qualité de chaque usine est émis automatiquement chaque semaine, avec l'analyse de ses incidents, enregistrements et actions.",
+    "it": "il report di qualità di ogni stabilimento esce automaticamente ogni settimana, con l'analisi di anomalie, registrazioni e azioni.",
+    "de": "Der Qualitätsbericht jedes Werks geht wöchentlich automatisch heraus – mit der Analyse seiner Störungen, Aufzeichnungen und Maßnahmen.",
+    "pt": "o relatório de qualidade de cada fábrica é emitido semanalmente de forma automática, com a análise das suas ocorrências, registos e ações."
+  },
+  "Informes semanales por planta:": {
+    "en": "Weekly reports per plant:",
+    "fr": "Rapports hebdomadaires par usine :",
+    "it": "Report settimanali per stabilimento:",
+    "de": "Wochenberichte je Werk:",
+    "pt": "Relatórios semanais por fábrica:"
+  },
+  "consulta en lenguaje natural sobre incidencias, registros, acciones y documentos, con la cita del origen en cada respuesta.": {
+    "en": "plain-language queries about incidents, records, actions and documents, with the source cited in every answer.",
+    "fr": "des requêtes en langage naturel sur les incidents, enregistrements, actions et documents, avec la source citée dans chaque réponse.",
+    "it": "ricerche in linguaggio naturale su anomalie, registrazioni, azioni e documenti, con la citazione della fonte in ogni risposta.",
+    "de": "Abfragen in natürlicher Sprache zu Störungen, Aufzeichnungen, Maßnahmen und Dokumenten – mit Quellenangabe in jeder Antwort.",
+    "pt": "consultas em linguagem natural sobre ocorrências, registos, ações e documentos, com a citação da origem em cada resposta."
+  },
+  "Pregunta a tus datos:": {
+    "en": "Ask your data:",
+    "fr": "Interrogez vos données :",
+    "it": "Chiedi ai tuoi dati:",
+    "de": "Fragen Sie Ihre Daten:",
+    "pt": "Pergunte aos seus dados:"
+  },
+  "Ver ejemplos reales →": {
+    "en": "See real examples →",
+    "fr": "Voir des exemples réels →",
+    "it": "Vedi esempi reali →",
+    "de": "Echte Beispiele ansehen →",
+    "pt": "Ver exemplos reais →"
+  },
+  "Cada función consume créditos y el consumo es visible en la propia plataforma, de modo que el coste de cada uso queda registrado.": {
+    "en": "Each feature uses credits and the usage is visible in the platform itself, so the cost of every use is on record.",
+    "fr": "Chaque fonction consomme des crédits et la consommation est visible dans la plateforme, de sorte que le coût de chaque usage est enregistré.",
+    "it": "Ogni funzione consuma crediti e il consumo è visibile nella piattaforma stessa, così il costo di ogni utilizzo resta registrato.",
+    "de": "Jede Funktion verbraucht Guthaben, und der Verbrauch ist in der Plattform sichtbar – die Kosten jeder Nutzung sind damit dokumentiert.",
+    "pt": "Cada funcionalidade consome créditos e o consumo é visível na própria plataforma, pelo que o custo de cada utilização fica registado."
+  },
+  "La IA, en el punto de trabajo": {
+    "en": "AI, at the workstation",
+    "fr": "L'IA, au poste de travail",
+    "it": "L'IA, nel punto di lavoro",
+    "de": "KI am Arbeitsplatz",
+    "pt": "A IA, no posto de trabalho"
+  },
+  "No es un módulo independiente: opera dentro de los módulos en uso y sobre los datos que la planta ya registra.": {
+    "en": "It is not a standalone module: it works inside the modules in use and on the data the plant already records.",
+    "fr": "Ce n'est pas un module indépendant : elle opère dans les modules utilisés et sur les données que l'usine enregistre déjà.",
+    "it": "Non è un modulo indipendente: opera dentro i moduli in uso e sui dati che lo stabilimento già registra.",
+    "de": "Kein eigenständiges Modul: Sie arbeitet in den genutzten Modulen und auf den Daten, die das Werk ohnehin erfasst.",
+    "pt": "Não é um módulo independente: opera dentro dos módulos em uso e sobre os dados que a fábrica já regista."
+  },
+  "Un correo de cliente se convierte en incidencia, con la evidencia incorporada": {
+    "en": "A customer email becomes an incident, with the evidence built in",
+    "fr": "Un courriel client devient un incident, preuve intégrée",
+    "it": "Una mail del cliente diventa un'anomalia, con l'evidenza incorporata",
+    "de": "Eine Kunden-E-Mail wird zur Störung, mit eingebautem Nachweis",
+    "pt": "Um e-mail de cliente transforma-se em ocorrência, com a evidência incorporada"
+  },
+  "Reclamación del cliente · pedido 4471": {
+    "en": "Customer complaint · order 4471",
+    "fr": "Réclamation client · commande 4471",
+    "it": "Reclamo del cliente · ordine 4471",
+    "de": "Kundenreklamation · Auftrag 4471",
+    "pt": "Reclamação do cliente · encomenda 4471"
+  },
+  "Incidencia creada con su descripción, su prioridad y el correo dentro como evidencia, lista para asignar.": {
+    "en": "Incident created with its description, its priority and the email inside as evidence, ready to assign.",
+    "fr": "Incident créé avec sa description, sa priorité et le courriel à l'intérieur comme preuve, prêt à être attribué.",
+    "it": "Anomalia creata con la sua descrizione, la sua priorità e la mail dentro come evidenza, pronta da assegnare.",
+    "de": "Störung mit Beschreibung, Priorität und der E-Mail als Nachweis angelegt – bereit zur Zuweisung.",
+    "pt": "Ocorrência criada com a sua descrição, a sua prioridade e o e-mail incluído como evidência, pronta a atribuir."
+  },
+  "Consulta en lenguaje natural, con la cita del parte en la respuesta": {
+    "en": "A plain-language query, with the report cited in the answer",
+    "fr": "Une requête en langage naturel, avec le rapport cité dans la réponse",
+    "it": "Ricerca in linguaggio naturale, con la citazione del rapporto nella risposta",
+    "de": "Abfrage in natürlicher Sprache, mit Verweis auf die Meldung in der Antwort",
+    "pt": "Consulta em linguagem natural, com a citação da parte na resposta"
+  },
+  "¿Qué acciones están fuera de plazo?": {
+    "en": "Which actions are overdue?",
+    "fr": "Quelles actions sont hors délai ?",
+    "it": "Quali azioni sono fuori scadenza?",
+    "de": "Welche Maßnahmen sind überfällig?",
+    "pt": "Que ações estão fora do prazo?"
+  },
+  "Tres acciones vencidas: dos en envasado y una en recepción de materia prima.": {
+    "en": "Three overdue actions: two in packaging and one in raw material intake.",
+    "fr": "Trois actions en retard : deux au conditionnement et une à la réception des matières premières.",
+    "it": "Tre azioni scadute: due in confezionamento e una nel ricevimento materie prime.",
+    "de": "Drei überfällige Maßnahmen: zwei in der Verpackung und eine im Wareneingang.",
+    "pt": "Três ações vencidas: duas na embalagem e uma na receção de matéria-prima."
+  },
+  "Consultas de uso habitual,": {
+    "en": "Everyday queries,",
+    "fr": "Requêtes d'usage courant,",
+    "it": "Ricerche di uso comune,",
+    "de": "Alltägliche Abfragen –",
+    "pt": "Consultas de uso habitual,"
+  },
+  "las que sugiere el propio sistema": {
+    "en": "the ones the system itself suggests",
+    "fr": "celles que le système lui-même suggère",
+    "it": "quelle che suggerisce il sistema stesso",
+    "de": "die, die das System selbst vorschlägt",
+    "pt": "as que o próprio sistema sugere"
+  },
+  "No son ejemplos redactados para esta página: son las consultas que el propio sistema sugiere al abrir el chat.": {
+    "en": "These are not examples written for this page: they are the queries the system itself suggests when you open the chat.",
+    "fr": "Ce ne sont pas des exemples rédigés pour cette page : ce sont les requêtes que le système lui-même propose à l'ouverture du chat.",
+    "it": "Non sono esempi scritti per questa pagina: sono le ricerche che il sistema stesso suggerisce quando si apre la chat.",
+    "de": "Das sind keine für diese Seite geschriebenen Beispiele: Es sind die Abfragen, die das System selbst beim Öffnen des Chats vorschlägt.",
+    "pt": "Não são exemplos escritos para esta página: são as consultas que o próprio sistema sugere ao abrir o chat."
+  },
+  "¿Cuántas incidencias tuvimos este mes?": {
+    "en": "How many incidents did we have this month?",
+    "fr": "Combien d'incidents avons-nous eus ce mois-ci ?",
+    "it": "Quante anomalie abbiamo avuto questo mese?",
+    "de": "Wie viele Störungen hatten wir diesen Monat?",
+    "pt": "Quantas ocorrências tivemos este mês?"
+  },
+  "¿Qué planta tuvo más incidencias?": {
+    "en": "Which plant had the most incidents?",
+    "fr": "Quelle usine a eu le plus d'incidents ?",
+    "it": "Quale stabilimento ha avuto più anomalie?",
+    "de": "Welches Werk hatte die meisten Störungen?",
+    "pt": "Que fábrica teve mais ocorrências?"
+  },
+  "Mostrar incidencias abiertas asignadas a mí": {
+    "en": "Show open incidents assigned to me",
+    "fr": "Afficher les incidents ouverts qui me sont assignés",
+    "it": "Mostra le anomalie aperte assegnate a me",
+    "de": "Mir zugewiesene offene Störungen anzeigen",
+    "pt": "Mostrar ocorrências abertas atribuídas a mim"
+  },
+  "¿Cuántos registros están vencidos?": {
+    "en": "How many records are overdue?",
+    "fr": "Combien d'enregistrements sont en retard ?",
+    "it": "Quante registrazioni sono scadute?",
+    "de": "Wie viele Aufzeichnungen sind überfällig?",
+    "pt": "Quantos registos estão vencidos?"
+  },
+  "¿Cuál es nuestra tasa de finalización esta semana?": {
+    "en": "What is our completion rate this week?",
+    "fr": "Quel est notre taux d'achèvement cette semaine ?",
+    "it": "Qual è il nostro tasso di completamento questa settimana?",
+    "de": "Wie hoch ist unsere Erledigungsquote diese Woche?",
+    "pt": "Qual é a nossa taxa de conclusão esta semana?"
+  },
+  "¿Qué registros fallaron este mes?": {
+    "en": "Which records failed this month?",
+    "fr": "Quels enregistrements ont échoué ce mois-ci ?",
+    "it": "Quali registrazioni sono fallite questo mese?",
+    "de": "Welche Aufzeichnungen sind diesen Monat durchgefallen?",
+    "pt": "Que registos falharam este mês?"
+  },
+  "¿Cuántas acciones siguen abiertas?": {
+    "en": "How many actions are still open?",
+    "fr": "Combien d'actions restent ouvertes ?",
+    "it": "Quante azioni sono ancora aperte?",
+    "de": "Wie viele Maßnahmen sind noch offen?",
+    "pt": "Quantas ações continuam abertas?"
+  },
+  "Mostrar acciones por prioridad": {
+    "en": "Show actions by priority",
+    "fr": "Afficher les actions par priorité",
+    "it": "Mostra le azioni per priorità",
+    "de": "Maßnahmen nach Priorität anzeigen",
+    "pt": "Mostrar ações por prioridade"
+  },
+  "¿Qué documentos expiran pronto?": {
+    "en": "Which documents expire soon?",
+    "fr": "Quels documents expirent bientôt ?",
+    "it": "Quali documenti scadono presto?",
+    "de": "Welche Dokumente laufen bald ab?",
+    "pt": "Que documentos expiram em breve?"
+  }
+}

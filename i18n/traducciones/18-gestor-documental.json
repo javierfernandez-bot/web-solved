@@ -1,0 +1,643 @@
+{
+  "_nota": "Réplica de mitti.com/es/documentos en /gestor-documental/ (9 sep 2026): los tres bloques nuevos —en planta, control de versiones, IA sobre documentos y el documento dentro del flujo—, la rejilla de tipos de papel y las tres preguntas nuevas de la FAQ. Las cadenas de las piezas son texto de la interfaz del producto y se traducen como nombres de función (Versiones, Validar versión, Pendiente de validación). Los nombres de documento y el término que se teclea en el buscador se traducen JUNTOS: la búsqueda «envasadora» tiene que seguir estando dentro de los dos documentos que se quedan en la lista, o el filtro de la animación deja de tener sentido. · 9 sep 2026 (2): las cinco secciones se condensan en el rotador de capacidades, así que entran los cuatro rótulos de capacidad, sus cuerpos y los títulos de las cuatro escenas. Las cadenas de las secciones que se fueron se quedan aquí sin usar, como pasa con las de la banda que sustituyó el vídeo de /auditorias/.",
+  "El documento se busca donde se trabaja,": {
+    "en": "The document is looked up where the work happens,",
+    "fr": "Le document se cherche là où l'on travaille,",
+    "it": "Il documento si cerca dove si lavora,",
+    "de": "Das Dokument wird dort gesucht, wo gearbeitet wird,",
+    "pt": "O documento procura-se onde se trabalha,"
+  },
+  "no en el despacho.": {
+    "en": "not back in the office.",
+    "fr": "pas au bureau.",
+    "it": "non in ufficio.",
+    "de": "nicht im Büro.",
+    "pt": "não no escritório."
+  },
+  "La carpeta se abre desde el mismo móvil o la misma tablet con los que se rellena el registro, con su buscador y sus favoritos.": {
+    "en": "The folder opens on the same phone or tablet used to fill in the record, with its search box and its favourites.",
+    "fr": "Le dossier s'ouvre depuis le même téléphone ou la même tablette qui servent à remplir l'enregistrement, avec sa recherche et ses favoris.",
+    "it": "La cartella si apre dallo stesso telefono o dallo stesso tablet con cui si compila la registrazione, con la sua ricerca e i suoi preferiti.",
+    "de": "Der Ordner öffnet sich auf demselben Handy oder Tablet, mit dem der Nachweis ausgefüllt wird, mit Suche und Favoriten.",
+    "pt": "A pasta abre-se no mesmo telemóvel ou tablet com que se preenche o registo, com a sua pesquisa e os seus favoritos."
+  },
+  "Carpetas, etiquetas y favoritos": {
+    "en": "Folders, tags and favourites",
+    "fr": "Dossiers, étiquettes et favoris",
+    "it": "Cartelle, etichette e preferiti",
+    "de": "Ordner, Etiketten und Favoriten",
+    "pt": "Pastas, etiquetas e favoritos"
+  },
+  "Los documentos se organizan en carpetas y subcarpetas, llevan etiquetas y se marcan como favoritos. El listado se filtra y se ordena, y el buscador va sobre el nombre.": {
+    "en": "Documents are organised in folders and subfolders, carry tags and can be marked as favourites. The list filters and sorts, and the search box works on the name.",
+    "fr": "Les documents s'organisent en dossiers et sous-dossiers, portent des étiquettes et se marquent en favoris. La liste se filtre et se trie, et la recherche porte sur le nom.",
+    "it": "I documenti si organizzano in cartelle e sottocartelle, portano etichette e si segnano come preferiti. L'elenco si filtra e si ordina, e la ricerca va sul nome.",
+    "de": "Dokumente werden in Ordnern und Unterordnern abgelegt, tragen Etiketten und lassen sich als Favoriten markieren. Die Liste wird gefiltert und sortiert, und die Suche geht über den Namen.",
+    "pt": "Os documentos organizam-se em pastas e subpastas, têm etiquetas e podem marcar-se como favoritos. A lista filtra-se e ordena-se, e a pesquisa incide sobre o nome."
+  },
+  "Disponible sin conexión": {
+    "en": "Available offline",
+    "fr": "Disponible hors connexion",
+    "it": "Disponibile offline",
+    "de": "Offline verfügbar",
+    "pt": "Disponível offline"
+  },
+  "La cámara, el almacén y el muelle son los sitios donde peor entra la red, y son justo donde hace falta el procedimiento. El documento se abre igual y lo que cambie se sincroniza al volver la cobertura.": {
+    "en": "The cold room, the warehouse and the loading bay are where the network is worst, and they are exactly where the procedure is needed. The document opens all the same, and whatever changes syncs when coverage returns.",
+    "fr": "La chambre froide, l'entrepôt et le quai sont les endroits où le réseau passe le plus mal, et ce sont justement ceux où la procédure est nécessaire. Le document s'ouvre quand même et ce qui change se synchronise dès le retour de la couverture.",
+    "it": "La cella, il magazzino e la banchina sono i posti dove la rete arriva peggio, e sono proprio quelli dove serve la procedura. Il documento si apre lo stesso e ciò che cambia si sincronizza al ritorno della copertura.",
+    "de": "Kühlraum, Lager und Rampe sind die Orte mit dem schlechtesten Netz — und genau dort wird das Verfahren gebraucht. Das Dokument öffnet sich trotzdem, und Änderungen werden synchronisiert, sobald es wieder Empfang gibt.",
+    "pt": "A câmara frigorífica, o armazém e o cais são os locais onde a rede chega pior, e são justamente onde o procedimento é necessário. O documento abre-se na mesma e o que mudar sincroniza-se quando a cobertura voltar."
+  },
+  "El código del equipo abre su documentación": {
+    "en": "The machine's code opens its documentation",
+    "fr": "Le code de l'équipement ouvre sa documentation",
+    "it": "Il codice dell'attrezzatura apre la sua documentazione",
+    "de": "Der Code der Anlage öffnet ihre Dokumentation",
+    "pt": "O código do equipamento abre a sua documentação"
+  },
+  "Sin buscar: se lee el código de la máquina o del lote y sale el manual, la ficha técnica o el procedimiento que le corresponde.": {
+    "en": "No searching: scan the code on the machine or the batch and up comes the manual, the specification sheet or the procedure that goes with it.",
+    "fr": "Sans chercher : on lit le code de la machine ou du lot et le manuel, la fiche technique ou la procédure correspondante apparaît.",
+    "it": "Senza cercare: si legge il codice della macchina o del lotto ed esce il manuale, la scheda tecnica o la procedura che gli corrisponde.",
+    "de": "Ohne Suchen: Der Code der Maschine oder der Charge wird gescannt und das passende Handbuch, Datenblatt oder Verfahren erscheint.",
+    "pt": "Sem procurar: lê-se o código da máquina ou do lote e surge o manual, a ficha técnica ou o procedimento correspondente."
+  },
+  "envasadora": {
+    "en": "packing",
+    "fr": "conditionneuse",
+    "it": "confezionatrice",
+    "de": "Verpackung",
+    "pt": "embaladora"
+  },
+  "PR-07 Limpieza y desinfección de la envasadora": {
+    "en": "PR-07 Cleaning and disinfection of the packing machine",
+    "fr": "PR-07 Nettoyage et désinfection de la conditionneuse",
+    "it": "PR-07 Pulizia e disinfezione della confezionatrice",
+    "de": "PR-07 Reinigung und Desinfektion der Verpackungsmaschine",
+    "pt": "PR-07 Limpeza e desinfeção da embaladora"
+  },
+  "v3 · Validado": {
+    "en": "v3 · Approved",
+    "fr": "v3 · Validé",
+    "it": "v3 · Convalidato",
+    "de": "v3 · Freigegeben",
+    "pt": "v3 · Aprovado"
+  },
+  "Manual de la envasadora L3": {
+    "en": "Manual for packing machine L3",
+    "fr": "Manuel de la conditionneuse L3",
+    "it": "Manuale della confezionatrice L3",
+    "de": "Handbuch der Verpackungsmaschine L3",
+    "pt": "Manual da embaladora L3"
+  },
+  "v4 · Validado": {
+    "en": "v4 · Approved",
+    "fr": "v4 · Validé",
+    "it": "v4 · Convalidato",
+    "de": "v4 · Freigegeben",
+    "pt": "v4 · Aprovado"
+  },
+  "Certificado IFS Food": {
+    "en": "IFS Food certificate",
+    "fr": "Certificat IFS Food",
+    "it": "Certificato IFS Food",
+    "de": "IFS-Food-Zertifikat",
+    "pt": "Certificado IFS Food"
+  },
+  "v1 · Caduca el 30/11/26": {
+    "en": "v1 · Expires 30/11/26",
+    "fr": "v1 · Expire le 30/11/26",
+    "it": "v1 · Scade il 30/11/26",
+    "de": "v1 · Läuft am 30.11.26 ab",
+    "pt": "v1 · Expira a 30/11/26"
+  },
+  "v2 · Validado": {
+    "en": "v2 · Approved",
+    "fr": "v2 · Validé",
+    "it": "v2 · Convalidato",
+    "de": "v2 · Freigegeben",
+    "pt": "v2 · Aprovado"
+  },
+  "PR-12 Control de alérgenos": {
+    "en": "PR-12 Allergen control",
+    "fr": "PR-12 Maîtrise des allergènes",
+    "it": "PR-12 Controllo degli allergeni",
+    "de": "PR-12 Allergenkontrolle",
+    "pt": "PR-12 Controlo de alergénios"
+  },
+  "v1 · Pendiente de validación": {
+    "en": "v1 · Pending approval",
+    "fr": "v1 · En attente de validation",
+    "it": "v1 · In attesa di convalida",
+    "de": "v1 · Freigabe ausstehend",
+    "pt": "v1 · Aprovação pendente"
+  },
+  "Código leído · Envasadora L3": {
+    "en": "Code scanned · Packing machine L3",
+    "fr": "Code lu · Conditionneuse L3",
+    "it": "Codice letto · Confezionatrice L3",
+    "de": "Code gescannt · Verpackungsmaschine L3",
+    "pt": "Código lido · Embaladora L3"
+  },
+  "La versión nueva no es la vigente": {
+    "en": "The new version is not the current one",
+    "fr": "La nouvelle version n'est pas celle en vigueur",
+    "it": "La nuova versione non è quella vigente",
+    "de": "Die neue Fassung ist nicht die gültige",
+    "pt": "A nova versão não é a vigente"
+  },
+  "hasta que alguien la valida.": {
+    "en": "until somebody approves it.",
+    "fr": "tant que personne ne l'a validée.",
+    "it": "finché qualcuno non la convalida.",
+    "de": "bis jemand sie freigibt.",
+    "pt": "até alguém a aprovar."
+  },
+  "Cada documento lleva su número de versión, su responsable y su estado, y cada cambio deja rastro con nombre y fecha.": {
+    "en": "Every document carries its version number, its owner and its status, and every change leaves a trace with a name and a date.",
+    "fr": "Chaque document porte son numéro de version, son responsable et son statut, et chaque changement laisse une trace avec un nom et une date.",
+    "it": "Ogni documento porta il suo numero di versione, il suo responsabile e il suo stato, e ogni modifica lascia traccia con nome e data.",
+    "de": "Jedes Dokument trägt seine Versionsnummer, seinen Verantwortlichen und seinen Status, und jede Änderung hinterlässt eine Spur mit Name und Datum.",
+    "pt": "Cada documento tem o seu número de versão, o seu responsável e o seu estado, e cada alteração deixa um rasto com nome e data."
+  },
+  "Información": {
+    "en": "Information",
+    "fr": "Informations",
+    "it": "Informazioni",
+    "de": "Information",
+    "pt": "Informação"
+  },
+  "Versiones": {
+    "en": "Versions",
+    "fr": "Versions",
+    "it": "Versioni",
+    "de": "Versionen",
+    "pt": "Versões"
+  },
+  "v2": "=",
+  "PR-07_limpieza_envasadora_rev2.pdf": {
+    "en": "PR-07_cleaning_packing_machine_rev2.pdf",
+    "fr": "PR-07_nettoyage_conditionneuse_rev2.pdf",
+    "it": "PR-07_pulizia_confezionatrice_rev2.pdf",
+    "de": "PR-07_reinigung_verpackungsmaschine_rev2.pdf",
+    "pt": "PR-07_limpeza_embaladora_rev2.pdf"
+  },
+  "Subido el 12/06/26 · por Marta": {
+    "en": "Uploaded 12/06/26 · by Marta",
+    "fr": "Téléversé le 12/06/26 · par Marta",
+    "it": "Caricato il 12/06/26 · da Marta",
+    "de": "Hochgeladen am 12.06.26 · von Marta",
+    "pt": "Carregado a 12/06/26 · por Marta"
+  },
+  "Validar versión": {
+    "en": "Approve version",
+    "fr": "Valider la version",
+    "it": "Convalida versione",
+    "de": "Version freigeben",
+    "pt": "Aprovar versão"
+  },
+  "Rechazar versión": {
+    "en": "Reject version",
+    "fr": "Refuser la version",
+    "it": "Rifiuta versione",
+    "de": "Version ablehnen",
+    "pt": "Rejeitar versão"
+  },
+  "v1": "=",
+  "PR-07_limpieza_envasadora.pdf": {
+    "en": "PR-07_cleaning_packing_machine.pdf",
+    "fr": "PR-07_nettoyage_conditionneuse.pdf",
+    "it": "PR-07_pulizia_confezionatrice.pdf",
+    "de": "PR-07_reinigung_verpackungsmaschine.pdf",
+    "pt": "PR-07_limpeza_embaladora.pdf"
+  },
+  "Subido el 04/02/26 · por Ana": {
+    "en": "Uploaded 04/02/26 · by Ana",
+    "fr": "Téléversé le 04/02/26 · par Ana",
+    "it": "Caricato il 04/02/26 · da Ana",
+    "de": "Hochgeladen am 04.02.26 · von Ana",
+    "pt": "Carregado a 04/02/26 · por Ana"
+  },
+  "validó la versión 2 · 12/06/2026": {
+    "en": "approved version 2 · 12/06/2026",
+    "fr": "a validé la version 2 · 12/06/2026",
+    "it": "ha convalidato la versione 2 · 12/06/2026",
+    "de": "hat Version 2 freigegeben · 12.06.2026",
+    "pt": "aprovou a versão 2 · 12/06/2026"
+  },
+  "Validada, rechazada o pendiente": {
+    "en": "Approved, rejected or pending",
+    "fr": "Validée, refusée ou en attente",
+    "it": "Convalidata, rifiutata o in attesa",
+    "de": "Freigegeben, abgelehnt oder ausstehend",
+    "pt": "Aprovada, rejeitada ou pendente"
+  },
+  "La versión que se sube entra como pendiente y no sustituye a la vigente hasta que se valida; también puede rechazarse. Los dos estados se ven en el listado, y un filtro reúne todo lo que está pendiente de revisión.": {
+    "en": "A version that is uploaded comes in as pending and does not replace the current one until it is approved; it can also be rejected. Both statuses show in the list, and a filter gathers everything awaiting review.",
+    "fr": "La version téléversée arrive en attente et ne remplace pas celle en vigueur tant qu'elle n'est pas validée ; elle peut aussi être refusée. Les deux statuts apparaissent dans la liste, et un filtre réunit tout ce qui est en attente de révision.",
+    "it": "La versione caricata entra come in attesa e non sostituisce quella vigente finché non viene convalidata; può anche essere rifiutata. I due stati si vedono nell'elenco e un filtro raccoglie tutto ciò che è in attesa di revisione.",
+    "de": "Eine hochgeladene Fassung kommt als ausstehend herein und ersetzt die gültige erst nach der Freigabe; sie kann auch abgelehnt werden. Beide Status stehen in der Liste, und ein Filter sammelt alles, was auf Prüfung wartet.",
+    "pt": "A versão carregada entra como pendente e não substitui a vigente até ser aprovada; também pode ser rejeitada. Os dois estados veem-se na lista, e um filtro reúne tudo o que está pendente de revisão."
+  },
+  "Fecha de revisión y fecha de expiración": {
+    "en": "Review date and expiry date",
+    "fr": "Date de révision et date d'expiration",
+    "it": "Data di revisione e data di scadenza",
+    "de": "Prüfdatum und Ablaufdatum",
+    "pt": "Data de revisão e data de validade"
+  },
+  "Cada documento lleva las suyas, y el módulo trae vista de calendario en mes, semana, día y agenda, por fecha de expiración o por fecha de modificación.": {
+    "en": "Every document carries its own, and the module has a calendar view by month, week, day and agenda, sorted by expiry date or by modification date.",
+    "fr": "Chaque document porte les siennes, et le module propose une vue calendrier en mois, semaine, jour et agenda, par date d'expiration ou par date de modification.",
+    "it": "Ogni documento porta le sue, e il modulo offre una vista calendario per mese, settimana, giorno e agenda, per data di scadenza o per data di modifica.",
+    "de": "Jedes Dokument trägt seine eigenen, und das Modul bringt eine Kalenderansicht nach Monat, Woche, Tag und Agenda, nach Ablaufdatum oder nach Änderungsdatum.",
+    "pt": "Cada documento tem as suas, e o módulo traz vista de calendário em mês, semana, dia e agenda, por data de validade ou por data de modificação."
+  },
+  "Responsable, alcance y asignados": {
+    "en": "Owner, scope and assignees",
+    "fr": "Responsable, périmètre et personnes assignées",
+    "it": "Responsabile, ambito e assegnatari",
+    "de": "Verantwortlicher, Geltungsbereich und Zugewiesene",
+    "pt": "Responsável, âmbito e atribuídos"
+  },
+  "El documento tiene dueño, se limita a las plantas que le tocan y se asigna a quien debe trabajar con él. Se etiqueta, se comenta y todo movimiento queda en su actividad.": {
+    "en": "The document has an owner, is limited to the plants it applies to and is assigned to whoever has to work with it. It is tagged, commented on, and every movement stays in its activity log.",
+    "fr": "Le document a un propriétaire, se limite aux sites concernés et s'assigne à qui doit travailler avec lui. Il s'étiquette, se commente, et tout mouvement reste dans son activité.",
+    "it": "Il documento ha un proprietario, si limita agli stabilimenti a cui si applica e si assegna a chi deve lavorarci. Si etichetta, si commenta e ogni movimento resta nella sua attività.",
+    "de": "Das Dokument hat einen Eigentümer, gilt nur für die zuständigen Werke und wird der Person zugewiesen, die damit arbeitet. Es wird etikettiert, kommentiert, und jede Bewegung bleibt in seiner Aktivität.",
+    "pt": "O documento tem um dono, limita-se às fábricas a que se aplica e atribui-se a quem deve trabalhar com ele. Etiqueta-se, comenta-se e todo o movimento fica registado na sua atividade."
+  },
+  "Se le pregunta en castellano": {
+    "en": "It is asked in plain language",
+    "fr": "On lui pose la question en clair",
+    "it": "Le si chiede in lingua corrente",
+    "de": "Man fragt sie in einfacher Sprache",
+    "pt": "Pergunta-se em linguagem corrente"
+  },
+  "y responde citando el documento.": {
+    "en": "and it answers citing the document.",
+    "fr": "et elle répond en citant le document.",
+    "it": "e risponde citando il documento.",
+    "de": "und sie antwortet mit dem Dokument als Beleg.",
+    "pt": "e responde citando o documento."
+  },
+  "El operario no busca en la carpeta: pregunta lo que necesita saber y la respuesta llega con el documento del que sale, su versión y su página.": {
+    "en": "The operator does not search the folder: they ask what they need to know and the answer arrives with the document it comes from, its version and its page.",
+    "fr": "L'opérateur ne fouille pas le dossier : il demande ce qu'il a besoin de savoir et la réponse arrive avec le document dont elle provient, sa version et sa page.",
+    "it": "L'operatore non cerca nella cartella: chiede quello che deve sapere e la risposta arriva con il documento da cui esce, la sua versione e la sua pagina.",
+    "de": "Der Werker durchsucht den Ordner nicht: Er fragt, was er wissen muss, und die Antwort kommt mit dem Dokument, aus dem sie stammt, samt Version und Seite.",
+    "pt": "O operador não procura na pasta: pergunta o que precisa de saber e a resposta chega com o documento de onde sai, a sua versão e a sua página."
+  },
+  "¿Cada cuánto hay que desinfectar la envasadora L3?": {
+    "en": "How often does packing machine L3 need disinfecting?",
+    "fr": "À quelle fréquence faut-il désinfecter la conditionneuse L3 ?",
+    "it": "Ogni quanto va disinfettata la confezionatrice L3?",
+    "de": "Wie oft muss die Verpackungsmaschine L3 desinfiziert werden?",
+    "pt": "De quanto em quanto tempo é preciso desinfetar a embaladora L3?"
+  },
+  "Desinfección completa": {
+    "en": "Full disinfection",
+    "fr": "Désinfection complète",
+    "it": "Disinfezione completa",
+    "de": "Vollständige Desinfektion",
+    "pt": "Desinfeção completa"
+  },
+  ", y limpieza intermedia cada cuatro horas si se cambia de formato.": {
+    "en": ", and an intermediate clean every four hours if the format changes.",
+    "fr": ", et un nettoyage intermédiaire toutes les quatre heures en cas de changement de format.",
+    "it": ", e pulizia intermedia ogni quattro ore se si cambia formato.",
+    "de": ", und eine Zwischenreinigung alle vier Stunden bei Formatwechsel.",
+    "pt": ", e limpeza intermédia a cada quatro horas se houver mudança de formato."
+  },
+  "al final de cada turno": {
+    "en": "at the end of every shift",
+    "fr": "à la fin de chaque poste",
+    "it": "alla fine di ogni turno",
+    "de": "am Ende jeder Schicht",
+    "pt": "no final de cada turno"
+  },
+  "v3 · validado el 12/06/26 · página 4": {
+    "en": "v3 · approved on 12/06/26 · page 4",
+    "fr": "v3 · validé le 12/06/26 · page 4",
+    "it": "v3 · convalidato il 12/06/26 · pagina 4",
+    "de": "v3 · freigegeben am 12.06.26 · Seite 4",
+    "pt": "v3 · aprovado a 12/06/26 · página 4"
+  },
+  "El procedimiento, dentro del trabajo": {
+    "en": "The procedure, inside the work",
+    "fr": "La procédure, dans le travail",
+    "it": "La procedura, dentro il lavoro",
+    "de": "Das Verfahren, in der Arbeit",
+    "pt": "O procedimento, dentro do trabalho"
+  },
+  "que lo aplica.": {
+    "en": "that applies it.",
+    "fr": "qui l'applique.",
+    "it": "che la applica.",
+    "de": "die es anwendet.",
+    "pt": "que o aplica."
+  },
+  "Un documento que hay que ir a buscar a una carpeta no se lee. El mismo archivo aparece en el control que lo ejecuta, en la ficha del equipo y en la incidencia que lo cita.": {
+    "en": "A document you have to go and look for in a folder does not get read. The same file shows up in the check that carries it out, in the equipment record and in the incident that cites it.",
+    "fr": "Un document qu'il faut aller chercher dans un dossier n'est pas lu. Le même fichier apparaît dans le contrôle qui l'exécute, dans la fiche de l'équipement et dans l'incident qui le cite.",
+    "it": "Un documento che bisogna andare a cercare in una cartella non si legge. Lo stesso file compare nel controllo che lo esegue, nella scheda dell'attrezzatura e nell'anomalia che lo cita.",
+    "de": "Ein Dokument, das man erst im Ordner suchen muss, wird nicht gelesen. Dieselbe Datei erscheint in der Kontrolle, die es ausführt, im Anlagenblatt und in der Störung, die es zitiert.",
+    "pt": "Um documento que é preciso ir procurar a uma pasta não se lê. O mesmo ficheiro aparece no controlo que o executa, na ficha do equipamento e na ocorrência que o cita."
+  },
+  "La pauta, dentro del control": {
+    "en": "The instruction, inside the check",
+    "fr": "La consigne, dans le contrôle",
+    "it": "L'istruzione, dentro il controllo",
+    "de": "Die Vorgabe, in der Kontrolle",
+    "pt": "O procedimento, dentro do controlo"
+  },
+  "El registro que aplica el procedimiento lo lleva dentro: quien rellena el control ve la pauta con la que se ejecuta sin salir de la pantalla.": {
+    "en": "The record that applies the procedure carries it inside: whoever fills in the check sees the instruction it is carried out with, without leaving the screen.",
+    "fr": "L'enregistrement qui applique la procédure la contient : celui qui remplit le contrôle voit la consigne avec laquelle il s'exécute, sans quitter l'écran.",
+    "it": "La registrazione che applica la procedura la porta dentro: chi compila il controllo vede l'istruzione con cui si esegue, senza uscire dalla schermata.",
+    "de": "Der Nachweis, der das Verfahren anwendet, trägt es in sich: Wer die Kontrolle ausfüllt, sieht die Vorgabe, nach der sie ausgeführt wird, ohne den Bildschirm zu verlassen.",
+    "pt": "O registo que aplica o procedimento traz-o consigo: quem preenche o controlo vê o procedimento com que se executa sem sair do ecrã."
+  },
+  "El manual, en la ficha del equipo": {
+    "en": "The manual, in the equipment record",
+    "fr": "Le manuel, dans la fiche de l'équipement",
+    "it": "Il manuale, nella scheda dell'attrezzatura",
+    "de": "Das Handbuch, im Anlagenblatt",
+    "pt": "O manual, na ficha do equipamento"
+  },
+  "La ficha del activo trae su pestaña de documentos: manual, esquema y certificados del equipo, al lado de sus mantenimientos y de sus incidencias.": {
+    "en": "The asset record has its own documents tab: manual, diagram and certificates for the equipment, next to its maintenance work and its incidents.",
+    "fr": "La fiche de l'actif a son onglet de documents : manuel, schéma et certificats de l'équipement, à côté de ses maintenances et de ses incidents.",
+    "it": "La scheda dell'asset ha la sua scheda documenti: manuale, schema e certificati dell'attrezzatura, accanto alle sue manutenzioni e alle sue anomalie.",
+    "de": "Das Anlagenblatt hat seinen eigenen Dokumentenreiter: Handbuch, Schema und Zertifikate der Anlage, neben ihren Wartungen und ihren Störungen.",
+    "pt": "A ficha do ativo tem o seu separador de documentos: manual, esquema e certificados do equipamento, ao lado das suas manutenções e das suas ocorrências."
+  },
+  "Una sola copia, no tres": {
+    "en": "One copy, not three",
+    "fr": "Une seule copie, pas trois",
+    "it": "Una sola copia, non tre",
+    "de": "Eine Kopie, nicht drei",
+    "pt": "Uma única cópia, não três"
+  },
+  "No se duplica el archivo en cada sitio: es el mismo documento, así que al validar una versión nueva cambia en los tres a la vez. Es justo lo que no hace una carpeta compartida.": {
+    "en": "The file is not duplicated in each place: it is the same document, so approving a new version changes it in all three at once. That is exactly what a shared folder does not do.",
+    "fr": "Le fichier n'est pas dupliqué à chaque endroit : c'est le même document, donc valider une nouvelle version le change dans les trois à la fois. C'est précisément ce que ne fait pas un dossier partagé.",
+    "it": "Il file non si duplica in ogni posto: è lo stesso documento, quindi convalidare una nuova versione lo cambia in tutti e tre insieme. È esattamente ciò che una cartella condivisa non fa.",
+    "de": "Die Datei wird nicht an jeder Stelle dupliziert: Es ist dasselbe Dokument, also ändert die Freigabe einer neuen Fassung es an allen drei Stellen zugleich. Genau das leistet ein geteilter Ordner nicht.",
+    "pt": "O ficheiro não se duplica em cada sítio: é o mesmo documento, por isso ao aprovar uma versão nova muda nos três em simultâneo. É exatamente o que uma pasta partilhada não faz."
+  },
+  "v3 · validado · una sola copia": {
+    "en": "v3 · approved · one single copy",
+    "fr": "v3 · validé · une seule copie",
+    "it": "v3 · convalidato · una sola copia",
+    "de": "v3 · freigegeben · eine einzige Kopie",
+    "pt": "v3 · aprovado · uma única cópia"
+  },
+  "PR-07 · v3": "=",
+  "Todos los papeles de una planta, dentro": {
+    "en": "Every piece of paper in a plant, inside",
+    "fr": "Tous les papiers d'un site, dedans",
+    "it": "Tutte le carte di uno stabilimento, dentro",
+    "de": "Alle Papiere eines Werks, drin",
+    "pt": "Todos os documentos de uma fábrica, dentro"
+  },
+  "el PR de limpieza, el de alérgenos y la instrucción de la línea, en la versión que está vigente y no en la que alguien imprimió hace dos años.": {
+    "en": "the cleaning procedure, the allergen one and the line instruction, in the version that is current and not the one somebody printed two years ago.",
+    "fr": "la procédure de nettoyage, celle des allergènes et l'instruction de ligne, dans la version en vigueur et pas dans celle que quelqu'un a imprimée il y a deux ans.",
+    "it": "la procedura di pulizia, quella degli allergeni e l'istruzione di linea, nella versione vigente e non in quella che qualcuno ha stampato due anni fa.",
+    "de": "das Reinigungsverfahren, das für Allergene und die Linienanweisung — in der gültigen Fassung und nicht in der, die vor zwei Jahren jemand ausgedruckt hat.",
+    "pt": "o PR de limpeza, o de alergénios e a instrução da linha, na versão que está vigente e não na que alguém imprimiu há dois anos."
+  },
+  "Procedimientos e instrucciones de trabajo:": {
+    "en": "Procedures and work instructions:",
+    "fr": "Procédures et instructions de travail :",
+    "it": "Procedure e istruzioni di lavoro:",
+    "de": "Verfahren und Arbeitsanweisungen:",
+    "pt": "Procedimentos e instruções de trabalho:"
+  },
+  "IFS, BRCGS, ISO 9001 o FSSC 22000, con su fecha de expiración puesta, que es lo que convierte una auditoría en un trámite.": {
+    "en": "IFS, BRCGS, ISO 9001 or FSSC 22000, with their expiry date in place, which is what turns an audit into a formality.",
+    "fr": "IFS, BRCGS, ISO 9001 ou FSSC 22000, avec leur date d'expiration renseignée, ce qui transforme un audit en formalité.",
+    "it": "IFS, BRCGS, ISO 9001 o FSSC 22000, con la loro data di scadenza inserita, che è ciò che trasforma un audit in una formalità.",
+    "de": "IFS, BRCGS, ISO 9001 oder FSSC 22000, mit hinterlegtem Ablaufdatum — das macht aus einem Audit eine Formsache.",
+    "pt": "IFS, BRCGS, ISO 9001 ou FSSC 22000, com a sua data de validade indicada, que é o que transforma uma auditoria numa formalidade."
+  },
+  "Certificados de norma:": {
+    "en": "Standard certificates:",
+    "fr": "Certificats de norme :",
+    "it": "Certificati di norma:",
+    "de": "Normzertifikate:",
+    "pt": "Certificados de norma:"
+  },
+  "la del producto terminado y la de cada materia prima, la que el cliente pide y la que hay que enseñar en la recepción.": {
+    "en": "the one for the finished product and the one for each raw material, the one the customer asks for and the one to be shown at goods-in.",
+    "fr": "celle du produit fini et celle de chaque matière première, celle que le client demande et celle qu'il faut montrer à la réception.",
+    "it": "quella del prodotto finito e quella di ogni materia prima, quella che chiede il cliente e quella da mostrare in accettazione.",
+    "de": "das des Fertigprodukts und das jedes Rohstoffs, das der Kunde verlangt und das im Wareneingang gezeigt wird.",
+    "pt": "a do produto acabado e a de cada matéria-prima, a que o cliente pede e a que é preciso mostrar na receção."
+  },
+  "Fichas técnicas y de especificación:": {
+    "en": "Specification and technical sheets:",
+    "fr": "Fiches techniques et de spécification :",
+    "it": "Schede tecniche e di specifica:",
+    "de": "Technische Datenblätter und Spezifikationen:",
+    "pt": "Fichas técnicas e de especificação:"
+  },
+  "el manual de la envasadora, el esquema eléctrico y el certificado de la última revisión, en la ficha del activo que los usa.": {
+    "en": "the packing machine manual, the wiring diagram and the certificate of the last inspection, in the record of the asset that uses them.",
+    "fr": "le manuel de la conditionneuse, le schéma électrique et le certificat de la dernière révision, dans la fiche de l'actif qui les utilise.",
+    "it": "il manuale della confezionatrice, lo schema elettrico e il certificato dell'ultima revisione, nella scheda dell'asset che li usa.",
+    "de": "das Handbuch der Verpackungsmaschine, der Schaltplan und das Zertifikat der letzten Prüfung — im Blatt der Anlage, die sie nutzt.",
+    "pt": "o manual da embaladora, o esquema elétrico e o certificado da última revisão, na ficha do ativo que os utiliza."
+  },
+  "Manuales y esquemas de equipo:": {
+    "en": "Equipment manuals and diagrams:",
+    "fr": "Manuels et schémas d'équipement :",
+    "it": "Manuali e schemi di attrezzatura:",
+    "de": "Anlagenhandbücher und Schemata:",
+    "pt": "Manuais e esquemas de equipamento:"
+  },
+  "las de los productos de limpieza y los químicos, accesibles desde el sitio donde se manipulan y no en el archivador de la oficina.": {
+    "en": "the ones for cleaning products and chemicals, reachable from the place where they are handled and not from the filing cabinet in the office.",
+    "fr": "celles des produits de nettoyage et des produits chimiques, accessibles depuis l'endroit où on les manipule et pas depuis le classeur du bureau.",
+    "it": "quelle dei prodotti di pulizia e dei chimici, accessibili dal posto in cui si manipolano e non dallo schedario dell'ufficio.",
+    "de": "die der Reinigungs- und Chemieprodukte, erreichbar dort, wo sie gehandhabt werden, und nicht aus dem Aktenschrank im Büro.",
+    "pt": "as dos produtos de limpeza e dos químicos, acessíveis a partir do local onde se manuseiam e não do arquivo do escritório."
+  },
+  "Fichas de datos de seguridad:": {
+    "en": "Safety data sheets:",
+    "fr": "Fiches de données de sécurité :",
+    "it": "Schede di sicurezza:",
+    "de": "Sicherheitsdatenblätter:",
+    "pt": "Fichas de dados de segurança:"
+  },
+  "certificado, ficha técnica y analítica de cada proveedor homologado, con su caducidad y su responsable.": {
+    "en": "certificate, specification sheet and analysis for each approved supplier, with its expiry date and its owner.",
+    "fr": "certificat, fiche technique et analyse de chaque fournisseur homologué, avec son échéance et son responsable.",
+    "it": "certificato, scheda tecnica e analisi di ogni fornitore qualificato, con la sua scadenza e il suo responsabile.",
+    "de": "Zertifikat, Datenblatt und Analyse jedes freigegebenen Lieferanten, mit Ablaufdatum und Verantwortlichem.",
+    "pt": "certificado, ficha técnica e análise de cada fornecedor homologado, com o seu prazo de validade e o seu responsável."
+  },
+  "Expediente del proveedor:": {
+    "en": "Supplier file:",
+    "fr": "Dossier fournisseur :",
+    "it": "Fascicolo del fornitore:",
+    "de": "Lieferantenakte:",
+    "pt": "Processo do fornecedor:"
+  },
+  "¿Es un gestor documental de verdad o un almacén de archivos?": {
+    "en": "Is this a real document management system or a file store?",
+    "fr": "Est-ce un véritable système de gestion documentaire ou un simple stockage de fichiers ?",
+    "it": "È un vero sistema di gestione documentale o un archivio di file?",
+    "de": "Ist das ein echtes Dokumentenmanagement oder nur ein Dateispeicher?",
+    "pt": "É uma gestão documental a sério ou um simples armazém de ficheiros?"
+  },
+  "Un almacén guarda ficheros. Aquí cada documento tiene número de versión, responsable, alcance por planta, personas asignadas, etiquetas, fecha de revisión y de expiración, y un estado que distingue lo validado de lo pendiente. La versión que se sube no sustituye a la vigente hasta que alguien la valida —o la rechaza—, y ese gesto queda registrado con su nombre y su fecha. Eso es control documental.": {
+    "en": "A store keeps files. Here every document has a version number, an owner, a scope by plant, assigned people, tags, a review date and an expiry date, and a status that tells the approved apart from the pending. The version uploaded does not replace the current one until somebody approves it — or rejects it — and that act is recorded with their name and the date. That is document control.",
+    "fr": "Un stockage conserve des fichiers. Ici, chaque document a un numéro de version, un responsable, un périmètre par site, des personnes assignées, des étiquettes, une date de révision et une date d'expiration, et un statut qui distingue le validé de ce qui est en attente. La version téléversée ne remplace pas celle en vigueur tant que quelqu'un ne l'a pas validée — ou refusée —, et ce geste est enregistré avec son nom et sa date. C'est de la gestion documentaire.",
+    "it": "Un archivio conserva file. Qui ogni documento ha numero di versione, responsabile, ambito per stabilimento, persone assegnate, etichette, data di revisione e di scadenza, e uno stato che distingue il convalidato da ciò che è in attesa. La versione caricata non sostituisce quella vigente finché qualcuno non la convalida —o la rifiuta—, e quel gesto resta registrato con nome e data. Questo è controllo documentale.",
+    "de": "Ein Speicher bewahrt Dateien auf. Hier hat jedes Dokument eine Versionsnummer, einen Verantwortlichen, einen Geltungsbereich je Werk, zugewiesene Personen, Etiketten, ein Prüf- und ein Ablaufdatum und einen Status, der Freigegebenes von Ausstehendem trennt. Die hochgeladene Fassung ersetzt die gültige erst, wenn jemand sie freigibt — oder ablehnt —, und das wird mit Name und Datum festgehalten. Das ist Dokumentenlenkung.",
+    "pt": "Um armazém guarda ficheiros. Aqui cada documento tem número de versão, responsável, âmbito por fábrica, pessoas atribuídas, etiquetas, data de revisão e de validade, e um estado que distingue o aprovado do pendente. A versão carregada não substitui a vigente até alguém a aprovar —ou a rejeitar—, e esse gesto fica registado com o seu nome e a sua data. Isso é controlo documental."
+  },
+  "¿Se puede controlar quién ve cada documento?": {
+    "en": "Can we control who sees each document?",
+    "fr": "Peut-on contrôler qui voit chaque document ?",
+    "it": "Si può controllare chi vede ogni documento?",
+    "de": "Lässt sich steuern, wer welches Dokument sieht?",
+    "pt": "É possível controlar quem vê cada documento?"
+  },
+  "Cada documento tiene su responsable, su alcance —las plantas a las que aplica— y sus personas asignadas, así que el listado de cada equipo es el suyo y no el de toda la empresa.": {
+    "en": "Every document has its owner, its scope — the plants it applies to — and the people assigned to it, so each team's list is their own and not the whole company's.",
+    "fr": "Chaque document a son responsable, son périmètre — les sites concernés — et ses personnes assignées, de sorte que la liste de chaque équipe est la sienne et non celle de toute l'entreprise.",
+    "it": "Ogni documento ha il suo responsabile, il suo ambito —gli stabilimenti a cui si applica— e le sue persone assegnate, così l'elenco di ogni squadra è il suo e non quello di tutta l'azienda.",
+    "de": "Jedes Dokument hat seinen Verantwortlichen, seinen Geltungsbereich — die Werke, für die es gilt — und seine zugewiesenen Personen, sodass die Liste jedes Teams die eigene ist und nicht die des ganzen Unternehmens.",
+    "pt": "Cada documento tem o seu responsável, o seu âmbito —as fábricas a que se aplica— e as suas pessoas atribuídas, por isso a lista de cada equipa é a sua e não a de toda a empresa."
+  },
+  "¿La IA responde a partir de los documentos?": {
+    "en": "Does the AI answer from the documents?",
+    "fr": "L'IA répond-elle à partir des documents ?",
+    "it": "L'IA risponde a partire dai documenti?",
+    "de": "Antwortet die KI aus den Dokumenten heraus?",
+    "pt": "A IA responde com base nos documentos?"
+  },
+  "La idea es que el operario pregunte en castellano —«¿cada cuánto se desinfecta la envasadora?»— y la respuesta llegue con el documento del que sale, su versión y su página, en vez de tener que abrir la carpeta y buscar. La IA de Solved tiene además otras cinco funciones sobre los datos de planta.": {
+    "en": "The idea is that the operator asks in plain language — «how often is the packing machine disinfected?» — and the answer arrives with the document it comes from, its version and its page, instead of having to open the folder and search. Solved's AI has five further functions over plant data.",
+    "fr": "L'idée est que l'opérateur demande en langage courant — « à quelle fréquence désinfecte-t-on la conditionneuse ? » — et que la réponse arrive avec le document dont elle provient, sa version et sa page, au lieu d'avoir à ouvrir le dossier et à chercher. L'IA de Solved compte cinq autres fonctions sur les données de production.",
+    "it": "L'idea è che l'operatore chieda in lingua corrente —«ogni quanto si disinfetta la confezionatrice?»— e la risposta arrivi con il documento da cui esce, la sua versione e la sua pagina, invece di dover aprire la cartella e cercare. L'IA di Solved ha altre cinque funzioni sui dati di stabilimento.",
+    "de": "Die Idee ist, dass der Werker in einfacher Sprache fragt — «wie oft wird die Verpackungsmaschine desinfiziert?» — und die Antwort mit dem Dokument kommt, aus dem sie stammt, samt Version und Seite, statt den Ordner öffnen und suchen zu müssen. Die KI von Solved hat fünf weitere Funktionen über den Werksdaten.",
+    "pt": "A ideia é que o operador pergunte em linguagem corrente —«de quanto em quanto tempo se desinfeta a embaladora?»— e a resposta chegue com o documento de onde sai, a sua versão e a sua página, em vez de ter de abrir a pasta e procurar. A IA da Solved tem ainda outras cinco funções sobre os dados de fábrica."
+  },
+  "Sube el procedimiento, valida su versión y encuéntralo desde la línea en el mismo módulo": {
+    "en": "Upload the procedure, approve its version and find it from the line, all in the same module",
+    "fr": "Téléversez la procédure, validez sa version et retrouvez-la depuis la ligne, dans le même module",
+    "it": "Carica la procedura, convalida la sua versione e trovala dalla linea, nello stesso modulo",
+    "de": "Das Verfahren hochladen, seine Fassung freigeben und es von der Linie aus finden — alles im selben Modul",
+    "pt": "Carregue o procedimento, aprove a sua versão e encontre-o a partir da linha, no mesmo módulo"
+  },
+  "Encuentra el documento desde la línea, no desde el despacho": {
+    "en": "Find the document from the line, not from the office",
+    "fr": "Retrouvez le document depuis la ligne, pas depuis le bureau",
+    "it": "Trova il documento dalla linea, non dall'ufficio",
+    "de": "Das Dokument von der Linie aus finden, nicht vom Büro aus",
+    "pt": "Encontre o documento a partir da linha, não do escritório"
+  },
+  "La carpeta se abre desde el mismo móvil o la misma tablet con los que se rellena el registro. Los documentos se organizan en carpetas y subcarpetas, llevan etiquetas y se marcan como favoritos; el listado se filtra, se ordena y se busca por nombre.": {
+    "en": "The folder opens on the same phone or tablet used to fill in the record. Documents are organised in folders and subfolders, carry tags and can be marked as favourites; the list filters, sorts and searches by name.",
+    "fr": "Le dossier s'ouvre depuis le même téléphone ou la même tablette qui servent à remplir l'enregistrement. Les documents s'organisent en dossiers et sous-dossiers, portent des étiquettes et se marquent en favoris ; la liste se filtre, se trie et se cherche par nom.",
+    "it": "La cartella si apre dallo stesso telefono o dallo stesso tablet con cui si compila la registrazione. I documenti si organizzano in cartelle e sottocartelle, portano etichette e si segnano come preferiti; l'elenco si filtra, si ordina e si cerca per nome.",
+    "de": "Der Ordner öffnet sich auf demselben Handy oder Tablet, mit dem der Nachweis ausgefüllt wird. Dokumente liegen in Ordnern und Unterordnern, tragen Etiketten und lassen sich als Favoriten markieren; die Liste wird gefiltert, sortiert und nach Namen durchsucht.",
+    "pt": "A pasta abre-se no mesmo telemóvel ou tablet com que se preenche o registo. Os documentos organizam-se em pastas e subpastas, têm etiquetas e podem marcar-se como favoritos; a lista filtra-se, ordena-se e pesquisa-se por nome."
+  },
+  "Dentro caben los procedimientos e instrucciones, los certificados de norma, las fichas técnicas, los manuales y esquemas de equipo, las fichas de datos de seguridad y el expediente de cada proveedor. Se abre sin conexión —la cámara y el muelle son donde peor entra la red— y el código de la máquina lleva a su documentación sin buscarla.": {
+    "en": "Inside fit the procedures and work instructions, the standard certificates, the specification sheets, the equipment manuals and diagrams, the safety data sheets and each supplier's file. It opens offline — the cold room and the loading bay are where the network is worst — and the machine's code leads to its documentation without searching for it.",
+    "fr": "On y trouve les procédures et instructions, les certificats de norme, les fiches techniques, les manuels et schémas d'équipement, les fiches de données de sécurité et le dossier de chaque fournisseur. Il s'ouvre hors connexion — la chambre froide et le quai sont les endroits où le réseau passe le plus mal — et le code de la machine mène à sa documentation sans avoir à la chercher.",
+    "it": "Dentro ci stanno le procedure e le istruzioni, i certificati di norma, le schede tecniche, i manuali e gli schemi delle attrezzature, le schede di sicurezza e il fascicolo di ogni fornitore. Si apre offline —la cella e la banchina sono dove la rete arriva peggio— e il codice della macchina porta alla sua documentazione senza cercarla.",
+    "de": "Darin haben Verfahren und Anweisungen Platz, die Normzertifikate, die technischen Datenblätter, die Anlagenhandbücher und Schemata, die Sicherheitsdatenblätter und die Akte jedes Lieferanten. Es öffnet sich offline — Kühlraum und Rampe sind die Orte mit dem schlechtesten Netz — und der Code der Maschine führt ohne Suchen zu ihrer Dokumentation.",
+    "pt": "Cabem lá dentro os procedimentos e instruções, os certificados de norma, as fichas técnicas, os manuais e esquemas de equipamento, as fichas de dados de segurança e o processo de cada fornecedor. Abre-se offline —a câmara frigorífica e o cais são onde a rede chega pior— e o código da máquina leva à sua documentação sem a procurar."
+  },
+  "La versión nueva no es la vigente hasta que alguien la valida": {
+    "en": "The new version is not the current one until somebody approves it",
+    "fr": "La nouvelle version n'est pas celle en vigueur tant que personne ne l'a validée",
+    "it": "La nuova versione non è quella vigente finché qualcuno non la convalida",
+    "de": "Die neue Fassung ist nicht die gültige, bis jemand sie freigibt",
+    "pt": "A nova versão não é a vigente até alguém a aprovar"
+  },
+  "La versión que se sube entra como pendiente y no sustituye a la vigente hasta que se valida; también puede rechazarse. Los dos estados se ven en el listado, un filtro reúne todo lo que está pendiente de revisión, y cada movimiento queda en la actividad del documento con su nombre y su fecha.": {
+    "en": "A version that is uploaded comes in as pending and does not replace the current one until it is approved; it can also be rejected. Both statuses show in the list, a filter gathers everything awaiting review, and every movement stays in the document's activity log with a name and a date.",
+    "fr": "La version téléversée arrive en attente et ne remplace pas celle en vigueur tant qu'elle n'est pas validée ; elle peut aussi être refusée. Les deux statuts apparaissent dans la liste, un filtre réunit tout ce qui est en attente de révision, et chaque mouvement reste dans l'activité du document avec un nom et une date.",
+    "it": "La versione caricata entra come in attesa e non sostituisce quella vigente finché non viene convalidata; può anche essere rifiutata. I due stati si vedono nell'elenco, un filtro raccoglie tutto ciò che è in attesa di revisione e ogni movimento resta nell'attività del documento con nome e data.",
+    "de": "Eine hochgeladene Fassung kommt als ausstehend herein und ersetzt die gültige erst nach der Freigabe; sie kann auch abgelehnt werden. Beide Status stehen in der Liste, ein Filter sammelt alles, was auf Prüfung wartet, und jede Bewegung bleibt mit Name und Datum in der Aktivität des Dokuments.",
+    "pt": "A versão carregada entra como pendente e não substitui a vigente até ser aprovada; também pode ser rejeitada. Os dois estados veem-se na lista, um filtro reúne tudo o que está pendente de revisão, e cada movimento fica na atividade do documento com o seu nome e a sua data."
+  },
+  "Cada documento lleva su fecha de revisión y su fecha de expiración —con vista de calendario en mes, semana, día y agenda—, su responsable, su alcance por planta y las personas asignadas.": {
+    "en": "Every document carries its review date and its expiry date — with a calendar view by month, week, day and agenda —, its owner, its scope by plant and the people assigned to it.",
+    "fr": "Chaque document porte sa date de révision et sa date d'expiration — avec une vue calendrier en mois, semaine, jour et agenda —, son responsable, son périmètre par site et ses personnes assignées.",
+    "it": "Ogni documento porta la sua data di revisione e la sua data di scadenza —con vista calendario per mese, settimana, giorno e agenda—, il suo responsabile, il suo ambito per stabilimento e le persone assegnate.",
+    "de": "Jedes Dokument trägt sein Prüfdatum und sein Ablaufdatum — mit Kalenderansicht nach Monat, Woche, Tag und Agenda —, seinen Verantwortlichen, seinen Geltungsbereich je Werk und die zugewiesenen Personen.",
+    "pt": "Cada documento tem a sua data de revisão e a sua data de validade —com vista de calendário em mês, semana, dia e agenda—, o seu responsável, o seu âmbito por fábrica e as pessoas atribuídas."
+  },
+  "Se le pregunta en castellano y responde citando el documento": {
+    "en": "It is asked in plain language and it answers citing the document",
+    "fr": "On lui pose la question en clair et elle répond en citant le document",
+    "it": "Le si chiede in lingua corrente e risponde citando il documento",
+    "de": "Man fragt sie in einfacher Sprache und sie antwortet mit dem Dokument als Beleg",
+    "pt": "Pergunta-se em linguagem corrente e responde citando o documento"
+  },
+  "El operario no busca en la carpeta: pregunta lo que necesita saber y la respuesta llega con el documento del que sale, su versión y su página. Se acabó abrir cuatro carpetas o preguntar al de al lado.": {
+    "en": "The operator does not search the folder: they ask what they need to know and the answer arrives with the document it comes from, its version and its page. No more opening four folders or asking the person next to you.",
+    "fr": "L'opérateur ne fouille pas le dossier : il demande ce qu'il a besoin de savoir et la réponse arrive avec le document dont elle provient, sa version et sa page. Fini d'ouvrir quatre dossiers ou de demander au voisin.",
+    "it": "L'operatore non cerca nella cartella: chiede quello che deve sapere e la risposta arriva con il documento da cui esce, la sua versione e la sua pagina. Basta aprire quattro cartelle o chiedere a chi sta accanto.",
+    "de": "Der Werker durchsucht den Ordner nicht: Er fragt, was er wissen muss, und die Antwort kommt mit dem Dokument, aus dem sie stammt, samt Version und Seite. Schluss damit, vier Ordner zu öffnen oder den Kollegen zu fragen.",
+    "pt": "O operador não procura na pasta: pergunta o que precisa de saber e a resposta chega com o documento de onde sai, a sua versão e a sua página. Acabou-se abrir quatro pastas ou perguntar ao colega do lado."
+  },
+  "El mismo documento, dentro del registro, del activo y de la incidencia": {
+    "en": "The same document, inside the record, the asset and the incident",
+    "fr": "Le même document, dans l'enregistrement, dans l'actif et dans l'incident",
+    "it": "Lo stesso documento, dentro la registrazione, l'asset e l'anomalia",
+    "de": "Dasselbe Dokument — im Nachweis, in der Anlage und in der Störung",
+    "pt": "O mesmo documento, dentro do registo, do ativo e da ocorrência"
+  },
+  "Un documento que hay que ir a buscar a una carpeta no se lee. El registro que aplica el procedimiento lo lleva dentro, la ficha del equipo trae su manual y sus certificados, y la incidencia cita el que la explica.": {
+    "en": "A document you have to go and look for in a folder does not get read. The record that applies the procedure carries it inside, the equipment file brings its manual and its certificates, and the incident cites the one that explains it.",
+    "fr": "Un document qu'il faut aller chercher dans un dossier n'est pas lu. L'enregistrement qui applique la procédure la contient, la fiche de l'équipement apporte son manuel et ses certificats, et l'incident cite celui qui l'explique.",
+    "it": "Un documento che bisogna andare a cercare in una cartella non si legge. La registrazione che applica la procedura la porta dentro, la scheda dell'attrezzatura porta il suo manuale e i suoi certificati, e l'anomalia cita quello che la spiega.",
+    "de": "Ein Dokument, das man erst im Ordner suchen muss, wird nicht gelesen. Der Nachweis, der das Verfahren anwendet, trägt es in sich, das Anlagenblatt bringt sein Handbuch und seine Zertifikate, und die Störung zitiert das, was sie erklärt.",
+    "pt": "Um documento que é preciso ir procurar a uma pasta não se lê. O registo que aplica o procedimento traz-o consigo, a ficha do equipamento tem o seu manual e os seus certificados, e a ocorrência cita o que a explica."
+  },
+  "La carpeta en el móvil de planta": {
+    "en": "The folder on the plant floor phone",
+    "fr": "Le dossier sur le téléphone de l'atelier",
+    "it": "La cartella sul telefono di stabilimento",
+    "de": "Der Ordner auf dem Handy im Werk",
+    "pt": "A pasta no telemóvel de fábrica"
+  },
+  "La versión que entra pendiente y se valida": {
+    "en": "The version that comes in pending and gets approved",
+    "fr": "La version qui arrive en attente et se fait valider",
+    "it": "La versione che entra in attesa e viene convalidata",
+    "de": "Die Fassung, die ausstehend hereinkommt und freigegeben wird",
+    "pt": "A versão que entra pendente e é aprovada"
+  },
+  "La respuesta, con el documento del que sale": {
+    "en": "The answer, with the document it comes from",
+    "fr": "La réponse, avec le document dont elle provient",
+    "it": "La risposta, con il documento da cui esce",
+    "de": "Die Antwort, mit dem Dokument, aus dem sie stammt",
+    "pt": "A resposta, com o documento de onde sai"
+  },
+  "Un documento y tres destinos": {
+    "en": "One document and three destinations",
+    "fr": "Un document et trois destinations",
+    "it": "Un documento e tre destinazioni",
+    "de": "Ein Dokument und drei Ziele",
+    "pt": "Um documento e três destinos"
+  },
+  "Capacidades del gestor documental": {
+    "en": "Document manager capabilities",
+    "fr": "Capacités du gestionnaire documentaire",
+    "it": "Funzionalità del gestore documentale",
+    "de": "Funktionen des Dokumentenmanagers",
+    "pt": "Funcionalidades da gestão documental"
+  }
+}

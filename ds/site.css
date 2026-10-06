@@ -1,0 +1,742 @@
+/* =========================================================
+   Solved Design System — chrome del sitio
+   Lo que aplica a TODAS las páginas: barra de navegación, botones y el
+   encuadre. La hero de la home vive aparte, en ds/hero.css.
+
+   Nota sobre los selectores: sólo la home tiene <main>; el resto de páginas
+   cuelgan las <section> directamente del <body>, y el blog y el glosario usan
+   <article class="post">. Por eso aquí no se ancla nada a <main>.
+   ========================================================= */
+
+/* ---------- Nav ----------
+   Blanco opaco con hairline abajo, no la barra translúcida gris de la 2.0.
+   Es la única pieza que vive fuera del marco. */
+.nav{
+  background:var(--ds-surface);
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  border-bottom:1px solid var(--ds-border);
+  box-shadow:none;
+}
+.nav__in{ height:var(--nav-h); }
+.nav__logo img{ height:28px; }
+.nav__link{
+  font:var(--type-body-md); letter-spacing:var(--tracking-body);
+  color:var(--ds-text-nav); border-radius:var(--ds-radius-control);
+  transition:color var(--ds-motion), background var(--ds-motion);
+}
+.nav__link:hover{ color:var(--ds-text); background:var(--color-primary-wash); }
+.nav .btn{ font:var(--font-weight-regular) 15px/1 var(--font-sans); padding:11px 18px; }
+
+/* Selector de idioma. Lo inyecta el chrome.js de cada idioma (lo genera
+   scripts/build-i18n.mjs) leyendo los <link rel="alternate" hreflang> de la
+   propia página, así que salta a la traducción de ESTA página y no a la home
+   del idioma.
+
+   Hereda de .nav__menu, que está pensado para el menú de Productos: 400 px de
+   ancho mínimo anclados a la izquierda. Este ítem es el último de la barra, así
+   que con esa medida el desplegable se salía por el borde derecho de la
+   ventana. Aquí son cinco nombres de idioma: se ancla a la derecha y mide lo
+   que ocupa. */
+.nav__menu--lang{ left:auto; right:0; min-width:0; width:max-content; padding:6px; }
+.nav__menu--lang a{ flex-direction:row; align-items:center; gap:8px; padding:9px 14px;
+  font:var(--type-body-md); color:var(--ds-text-nav); white-space:nowrap; }
+.nav__menu--lang a[aria-current="true"]{ color:var(--color-primary); }
+.nav__item--lang .nav__link{ display:inline-flex; align-items:center; gap:6px; }
+
+/* Bloques destacados del mega-menú de Productos (IA · Integraciones) —
+   fondo de malla de gradiente, referencia instantly.ai: una superficie
+   continua que va de una esquina oscura a un acento brillante, sin bordes
+   de mancha visibles, que respira despacio y lleva un reflejo diagonal que
+   la cruza muy de vez en cuando. Nada de manchas sueltas ni de bordes que
+   se funden entre sí — aquí no hay borde que ver.
+   El texto y los iconos van en blanco sobre el fondo oscuro, igual en los
+   dos bloques. */
+.nav__mega-block--ia,
+.nav__mega-block--int{ position:relative; overflow:hidden; isolation:isolate; }
+.nav__mega-block--ia .nav__mega-block__txt b,
+.nav__mega-block--int .nav__mega-block__txt b{ color:#fff; }
+.nav__mega-block--ia .nav__mega-block__go,
+.nav__mega-block--int .nav__mega-block__go{ border-color:rgba(255,255,255,.35); color:#fff; }
+.nav__mega-block--ia .nav__mega-block__ico,
+.nav__mega-block--int .nav__mega-block__ico{ background:rgba(255,255,255,.92); }
+.nav__menu .nav__mega-block--ia:hover,
+.nav__menu .nav__mega-block--int:hover{ background:inherit; }
+
+/* La malla: un fondo con tres capas —la base y dos acentos— más grande que
+   la caja, así el recorte del bloque nunca enseña un canto recto de
+   gradiente. Anima sólo `background-position`, que es lo que da la deriva
+   lenta sin mover ninguna forma reconocible. */
+.nav__mega-block--ia .nav__mega-block__lava,
+.nav__mega-block--int .nav__mega-block__lava{ position:absolute; inset:-30% -20%; z-index:0;
+  background-repeat:no-repeat; animation:mega-mesh-drift 5s linear infinite alternate; }
+.nav__mega-block--ia .nav__mega-block__lava{
+  background-image:
+    radial-gradient(48% 56% at 85% 18%, #ffd699 0%, transparent 60%),
+    radial-gradient(48% 56% at 14% 82%, #ff42d6 0%, transparent 60%),
+    linear-gradient(125deg, #1c0a2b 0%, #d926c9 40%, #ff8a1f 100%);
+  background-size:150% 150%, 150% 150%, 130% 130%; }
+.nav__mega-block--int .nav__mega-block__lava{
+  background-image:
+    radial-gradient(48% 56% at 85% 18%, #d4fff5 0%, transparent 60%),
+    radial-gradient(48% 56% at 14% 82%, #1fd6f5 0%, transparent 60%),
+    linear-gradient(125deg, #04101f 0%, #0a6fd1 40%, #1fd6f5 100%);
+  background-size:150% 150%, 150% 150%, 130% 130%; }
+
+/* El reflejo: una franja diagonal y estrecha que barre el bloque de esquina
+   a esquina, clara como el brillo que en instantly.ai recorre el fondo —
+   aquí más marcada porque el recuadro es pequeño y una franja ancha no se
+   lee como algo que se mueve. */
+.nav__mega-block--ia::before,
+.nav__mega-block--int::before{ content:''; position:absolute; z-index:1; pointer-events:none;
+  inset:-60% -30%;
+  background:linear-gradient(115deg, transparent 44%, rgba(255,255,255,.5) 50%, transparent 56%);
+  mix-blend-mode:screen; animation:mega-mesh-sheen 2.6s linear infinite; }
+
+.nav__mega-block--ia .nav__mega-block__ico,
+.nav__mega-block--ia .nav__mega-block__txt,
+.nav__mega-block--ia .nav__mega-block__go,
+.nav__mega-block--int .nav__mega-block__ico,
+.nav__mega-block--int .nav__mega-block__txt,
+.nav__mega-block--int .nav__mega-block__go{ position:relative; z-index:2; }
+
+@keyframes mega-mesh-drift{
+  0%,100%{ background-position:0% 0%, 100% 100%, 0% 0%; }
+  50%{ background-position:55% 45%, 45% 55%, 34% 26%; }
+}
+@keyframes mega-mesh-sheen{
+  0%{ transform:translate(-70%,-25%); }
+  100%{ transform:translate(70%,25%); }
+}
+@media (prefers-reduced-motion: reduce){
+  .nav__mega-block--ia .nav__mega-block__lava, .nav__mega-block--int .nav__mega-block__lava,
+  .nav__mega-block--ia::before, .nav__mega-block--int::before{ animation:none; }
+}
+
+/* El hueco que deja el nav fijo. La altura vive en una variable porque no la
+   usa sólo la barra: la hero la resta para ocupar el 90 % de la pantalla
+   (ds/hero.css) y el desplegable de móvil la usa para colgar de ella. */
+:root{ --nav-h:68px; }
+body{ padding-top:var(--nav-h); }
+
+/* ---------- Botones ----------
+   Radio 6px: un botón nunca es una píldora. El press sólo cambia color; nada
+   escala ni se levanta. */
+.ds-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  font:var(--font-weight-regular) 15px/1 var(--font-sans);
+  letter-spacing:var(--tracking-body);
+  padding:12px 20px; border-radius:var(--ds-radius-control);
+  text-decoration:none; border:1px solid transparent; cursor:pointer;
+  transition:background var(--ds-motion), color var(--ds-motion), border-color var(--ds-motion);
+}
+.ds-btn--primary{ background:var(--color-primary); color:var(--color-on-primary); }
+.ds-btn--primary:hover{ background:var(--color-primary-deep); }
+.ds-btn--primary:active{ background:var(--color-primary-press); }
+.ds-btn--secondary{ background:var(--ds-surface); color:var(--color-primary); border-color:var(--ds-border); }
+.ds-btn--secondary:hover{ background:var(--color-primary-wash); }
+.ds-btn--secondary:active{ background:var(--color-primary-subdued); }
+
+/* =========================================================
+   COMPONENTES HEREDADOS DE LA 2.0
+   El marcado no cambia; se reasignan sus valores a los del sistema. Así una
+   página que no se ha tocado a mano hereda la estética sin reescribirla.
+   ========================================================= */
+
+/* Titulares: Geist 300 con tracking negativo. La 2.0 los tenía en 600, que es
+   lo que más delata que son dos sistemas distintos. */
+h1, h2, h3, .section-head h2, .hero h1{
+  font-family:var(--font-sans);
+  font-weight:var(--font-weight-thin);
+}
+h1, .hero h1{ letter-spacing:var(--tracking-display-xxl); }
+h2, .section-head h2{ letter-spacing:var(--tracking-display-xl); }
+h3{ letter-spacing:var(--tracking-display-md); }
+
+/* Botones: radio 6px. Un botón nunca es una píldora, y el press sólo cambia
+   color — nada escala ni se levanta. */
+.btn{
+  border-radius:var(--ds-radius-control);
+  font-family:var(--font-sans);
+  font-weight:var(--font-weight-regular);
+  box-shadow:none;
+  transition:background var(--ds-motion), color var(--ds-motion), border-color var(--ds-motion);
+}
+.btn:hover{ transform:none; box-shadow:none; }
+.btn--primary{ background:var(--color-primary); color:var(--color-on-primary); }
+.btn--primary:hover{ background:var(--color-primary-deep); }
+.btn--primary:active{ background:var(--color-primary-press); }
+.btn--secondary{ background:var(--ds-surface); color:var(--color-primary); border:1px solid var(--ds-border); }
+.btn--secondary:hover{ background:var(--color-primary-wash); }
+
+/* Tarjetas de la web: radio 12px, hairline y sombra de nivel 1. En el sistema
+   casi todo es borde, no sombra. */
+.card, .mod-card, .blog-card, .vcard, .quote, .shot, .form-card{
+  border-radius:var(--ds-radius-card);
+  border:1px solid var(--ds-border);
+  box-shadow:var(--ds-elev-1);
+}
+.card:hover, .mod-card:hover, .blog-card:hover{ transform:none; box-shadow:var(--ds-elev-1); }
+
+/* Chips y etiquetas de estado: píldora sólo aquí. */
+.tag, .chip{ border-radius:var(--ds-radius-pill); }
+
+/* Cifras: tabulares siempre. */
+.statline b, .rstat b, .metric, .kpi__n{
+  font-variant-numeric:tabular-nums; font-feature-settings:"tnum";
+  letter-spacing:var(--tracking-tabular);
+}
+
+/* =========================================================
+   ENCUADRE
+   El mismo contenedor repetido en cada fila, para que las dos líneas
+   verticales se lean CONTINUAS de arriba abajo. La clave está en dónde vive el
+   padding vertical: DENTRO de la caja que dibuja el borde. Si viviera en la
+   sección, la línea se cortaría en cada unión.
+   ========================================================= */
+
+/* Las filas dejan de poner aire: lo pone su contenedor.
+   Ojo con la especificidad: `section` a secas (0-0-1) pierde contra `.section`
+   (0-1-0), que es quien mete el padding. Hace falta que entre una clase. */
+section[class],
+article.post{ padding-top:0; padding-bottom:0; }
+
+section > .wrap,
+article.post > .wrap,
+#footer .wrap{
+  width:80%;
+  max-width:var(--container);
+  margin-inline:auto;
+  padding-inline:var(--frame-pad-inline);
+  padding-block:var(--frame-pad-block);
+  border-left:var(--frame-width) solid var(--frame);
+  border-right:var(--frame-width) solid var(--frame);
+  position:relative;
+}
+
+/* La unión entre filas va a sangre: cruza los raíles y llega a los bordes de la
+   ventana. Los raíles verticales se quedan en el contenedor. */
+section > .wrap::before,
+article.post > .wrap::before,
+#footer .wrap::before{
+  content:""; position:absolute; top:0; left:50%; margin-left:-50vw; width:100vw;
+  border-top:var(--frame-width) solid var(--frame); pointer-events:none;
+}
+
+/* — Una sección pegada a la anterior (.section--pegada) —
+   El ritmo del marco es una unión a sangre y 128px de aire a cada lado. Cuando
+   dos filas cuentan lo MISMO —la caja de IA de /incidencias/ y «Detecta», que
+   es por dónde entran las incidencias y qué se hace con ellas—, esa unión las
+   separa en dos temas. Se le quita la línea y el aire de arriba: el que las
+   separa pasa a ser el de abajo de la anterior, y las dos leen como una.
+   No toca los raíles verticales, que siguen corridos. */
+.section--pegada > .wrap{ padding-top:0; }
+.section--pegada > .wrap::before{ display:none; }
+
+/* Sobre fondo oscuro la línea es blanca translúcida. */
+section.band-dark,
+section.band-navy,
+section.footer--dark{ --frame:var(--frame-dark); }
+
+/* El degradado de sección se sale del sistema: la web es blanca con bandas
+   planas. */
+section.contact{ background:var(--ds-surface-soft); }
+
+/* La 2.0 hacía que en escritorio cada sección midiera 100vh, en flex y con el
+   contenido centrado (`FULL-VIEWPORT SECTIONS` de solved.css). Eso deja franja
+   libre arriba y abajo del contenedor — y como el raíl lo dibuja el
+   contenedor, la línea se corta antes de llegar a la fila siguiente. Son
+   incompatibles: o secciones de pantalla completa, o raíl continuo. Se queda el
+   ritmo del marco, que es el que define el sistema. */
+@media (min-width:1001px){
+  section[class]{ min-height:0; display:block; padding-top:0; padding-bottom:0; }
+}
+
+/* El pie que monta chrome.js trae su propio andamiaje: 64px en <footer> y 24px
+   en cada tira de abajo, todo fuera del contenedor. Se mueve dentro. */
+#footer .footer{ padding-top:0; }
+#footer .footer__strip,
+#footer .footer__legal{ padding-top:0; padding-bottom:0; }
+#footer .footer__strip > .wrap,
+#footer .footer__legal > .wrap{ padding-block:24px; }
+
+/* La última fila cierra el marco por abajo, también a sangre. */
+#footer .footer__legal > .wrap::after{
+  content:""; position:absolute; bottom:0; left:50%; margin-left:-50vw; width:100vw;
+  border-top:var(--frame-width) solid var(--frame); pointer-events:none;
+}
+
+@media (min-width:1583px){
+  section > .wrap,
+  article.post > .wrap,
+  #footer .wrap{ width:var(--container); }
+}
+/* Sólo en móvil se ocultan las líneas laterales; las uniones horizontales se
+   mantienen, que son las que siguen marcando el ritmo. */
+@media (max-width:768px){
+  section > .wrap,
+  article.post > .wrap,
+  #footer .wrap{ width:100%; border-left:0; border-right:0; padding-inline:16px; }
+}
+
+/* =========================================================
+   PESOS — no hay negrita
+   El sistema tiene tres: 300 (thin), 400 (regular) y 500 (medium). La 2.0
+   usaba 600, 700 y 800 en medio centenar de sitios, que es lo que más delata
+   que son dos sistemas distintos. Todos esos se han pasado a 500 en origen
+   (solved.css y los <style> de cada página); aquí se reparte lo que debe ir
+   más ligero que 500, y se tapa la negrita que pone el navegador por su
+   cuenta en <b> y <strong>.
+   ========================================================= */
+
+/* El navegador da 700 a b/strong. En el sistema el énfasis inline es 500. */
+b, strong{ font-weight:var(--font-weight-medium); }
+
+/* Titulares, todos thin. h1-h3 ya se fijan arriba; faltaban los pequeños. */
+h4, h5, h6,
+.stub h1,
+.footer__col h4{
+  font-family:var(--font-sans);
+  font-weight:var(--font-weight-thin);
+}
+
+/* Cifras grandes: son display, no énfasis. Van thin como los titulares —a ese
+   tamaño, 500 las convierte en un bloque negro. */
+.statline b, .rstat b, .metric, .kpi__n{ font-weight:var(--font-weight-thin); }
+
+/* Controles, píldoras y micro-etiquetas: regular. Un chip de estado en 500
+   pesa más que la fila que etiqueta, y el color ya hace el trabajo. */
+.tag, .chip, .ck-tag, .pill,
+.demo__tag, .demo__pill, .demo__cta, .demo__submit, .demo__lbl, .demo__live,
+.rca-tab, .pf-btn,
+.flow span, .flow i,
+.kicker, .ds-eyebrow{
+  font-weight:var(--font-weight-regular);
+}
+
+/* Enlaces de "seguir leyendo": el subrayado y el color los distinguen, no el
+   peso. */
+.vcard a, .mod-card__go, .feature-box a, .nav__menu b{
+  font-weight:var(--font-weight-regular);
+}
+
+/* =========================================================
+   TITULAR A DOS TINTAS
+   Una sola frase que empieza en tinta y sigue en gris a media frase. Sustituye
+   al par «titular + párrafo» cuando el titular ya lleva dos ideas: la fuerte y
+   su matización van seguidas, y el gris hace el trabajo que hacía el párrafo,
+   sin abrir un segundo bloque.
+
+     <h2>Todo lo que tu planta necesita, <span class="ds-dim">en una sola
+     plataforma</span></h2>
+
+   El corte va donde ya lo marca la puntuación —una coma, un punto, dos
+   puntos—, nunca a mitad de una idea: si hay que romper una oración por la
+   mitad para que quepan dos tintas, el titular no es candidato.
+   ========================================================= */
+.ds-dim{ color:var(--color-ink-mute); }
+.on-dark .ds-dim,
+[data-frame="dark"] .ds-dim,
+.slide--dark .ds-dim{ color:rgba(255,255,255,.58); }
+
+/* =========================================================
+   ETIQUETA
+   Una marca corta al lado de un eyebrow o de un titular. No es un chip de
+   estado: por eso lleva radio de 4px y no de píldora — la píldora está
+   reservada a los estados y a las opciones OK/KO, y si se usa aquí deja de
+   significar eso.
+
+   EL COLOR LO DICTA EL MÓDULO, como en las escenas. La de IA va con
+   --module-ia porque en Solved el morado ES la capa de IA, no porque el morado
+   quede bien.
+
+   LO DE IA VA SOBRE GRAFITO. SIEMPRE, no sólo el lienzo de las escenas.
+   La regla estaba escrita para el tinte —"--tint-ia sólo sobre grafito, nunca
+   sobre blanco"— y vale igual para cualquier pieza de IA: etiqueta, panel o
+   tarjeta. Sobre blanco el morado ni contrasta a tamaño pequeño (3,5:1 a 11px,
+   contra los 4,5 que pide AA) ni se lee como la capa de IA, que en el producto
+   es oscura. Sobre grafito hace las dos cosas.
+   ========================================================= */
+.ds-badge{
+  display:inline-flex; align-items:center; gap:7px;
+  padding:5px 10px;
+  border:1px solid transparent;
+  border-radius:var(--ds-radius-chip);
+  font:var(--type-micro-cap); font-size:11px; line-height:1.2;
+  letter-spacing:.9px; text-transform:uppercase;
+  font-weight:var(--font-weight-regular);
+  color:var(--ds-text-2);
+  white-space:nowrap;
+}
+.ds-badge::before{
+  content:""; width:5px; height:5px; border-radius:50%;
+  background:currentColor; flex:0 0 auto;
+}
+/* La de IA es la única etiqueta con radio de píldora y con borde de gradiente:
+   es la marca de la capa de IA y va aparte a propósito. Los tres colores salen
+   del sistema —morado --module-ia, rosa #D34F9D (el color de tránsito del
+   material del hero) y turquesa --accent-cian—, no de una paleta nueva.
+
+   El gradiente vive en el BORDE, no en el fondo: sobre un relleno de gradiente
+   el texto blanco pierde contraste en el tramo turquesa. Con el truco de las
+   dos capas —padding-box para el grafito, border-box para el gradiente— el
+   color rodea y el texto se lee. */
+.ds-badge--ia{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;                 /* para que el barrido quede bajo el texto */
+  padding:5px 12px 5px 9px;
+  border:1px solid transparent;
+  border-radius:var(--ds-radius-pill);
+  background:
+    linear-gradient(var(--color-graphite-900),var(--color-graphite-900)) padding-box,
+    linear-gradient(104deg,var(--module-ia) 0%,#D34F9D 52%,var(--accent-cian) 100%) border-box;
+  color:#fff;
+}
+/* La estrella sustituye al punto: aquí el icono es el que señala. */
+.ds-badge--ia::before{ content:none }
+.ds-badge__star{
+  width:13px; height:13px; display:block; flex:0 0 auto;
+  /* scale y rotate por separado, no dentro de transform: así el pulso y el
+     giro conviven sin pisarse el uno al otro. */
+  animation:ds-star-pulse 2.8s ease-in-out infinite,
+            ds-star-spin 14s linear infinite;
+}
+@keyframes ds-star-pulse{
+  0%,100%{ scale:1;    opacity:.9 }
+  50%    { scale:1.18; opacity:1 }
+}
+@keyframes ds-star-spin{ to{ rotate:360deg } }
+/* El barrido: un filamento de morado que cruza la etiqueta cada pocos
+   segundos. Es material de gradiente, sí, pero del tamaño de una uña — no
+   consume el presupuesto de dos apariciones grandes por página. */
+.ds-badge--ia::after{
+  content:"";
+  position:absolute; inset:0; z-index:-1;
+  background:linear-gradient(105deg,
+    transparent 18%,
+    rgba(168,85,247,.22) 34%,
+    rgba(211,79,157,.58) 50%,
+    rgba(31,214,245,.30) 66%,
+    transparent 82%);
+  translate:-130% 0;
+  /* Lineal, no con el bezier del sistema. Ese es para transiciones de 150ms;
+     aquí acelera tanto en el centro que el destello cruzaba en 0,19s y no se
+     veía. El barrido tiene que poder seguirse con el ojo. */
+  animation:ds-badge-sweep 3.6s linear infinite;
+}
+/* Cruza en 1,5s y descansa 2,1s. El reposo es la mitad del efecto: sin él la
+   etiqueta parpadea sin parar y se convierte en una luz giratoria. */
+@keyframes ds-badge-sweep{
+  0%       { translate:-130% 0 }
+  42%,100% { translate:130% 0 }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .ds-badge__star{ animation:none }
+  .ds-badge--ia::after{ animation:none; translate:-130% 0 }
+}
+
+/* La fila del eyebrow: la etiqueta va a su lado, no debajo. Dos líneas
+   pequeñas seguidas encima del titular lo empujan y le quitan el golpe.
+   Sin margen propio: .ds-hero__txt es un flex column con gap de 24px, y la
+   fila hereda ese gap igual que lo heredaba el eyebrow suelto. */
+.ds-hero__strip{
+  display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+}
+
+/* =========================================================
+   BANDA DE CIFRAS
+   Las métricas en una fila, entre dos hairlines que cruzan todo el contenedor,
+   sin tarjetas de por medio. Sustituye a `.results` / `.rstat`, que eran cinco
+   cuadrados de color: a esa escala el fondo pesaba más que la cifra.
+
+   TODAS LAS CIFRAS VAN EN TINTA (8 sep 2026). Hasta hoy la primera iba en
+   tinta y el resto en gris, para que el ojo se quedara con una; el problema es
+   que la regla no llegó a las siete bandas del sitio —`/incidencias/` ya iba
+   con `--iguales`, en tinta entera— y el mismo componente se leía de dos
+   colores según la página. Decisión del cliente: mismo color en todas.
+
+   Los rótulos siguen en gris de pie de foto: eso no es jerarquía entre cifras,
+   es la diferencia entre el número y lo que el número mide.
+   ========================================================= */
+.ds-stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:32px 24px;
+  padding-block:40px;
+  border-top:var(--frame-width) solid var(--frame);
+  border-bottom:var(--frame-width) solid var(--frame);
+}
+.ds-stat{ text-align:center; }
+.ds-stat b{
+  display:block;
+  font:var(--type-display-lg);
+  letter-spacing:var(--tracking-display-lg);
+  font-variant-numeric:tabular-nums; font-feature-settings:"tnum";
+  color:var(--ds-text);
+}
+.ds-stat span{
+  display:block;
+  margin-top:10px;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+  text-wrap:balance;
+}
+/* — Con raíl (.ds-stats--iguales) —
+   El nombre es de cuando esta variante era la que ponía las cifras en tinta;
+   desde el 8 de septiembre de 2026 lo están todas, así que lo único que aporta
+   es el RAÍL: una línea fina en la calle entre cifra y cifra, la misma que
+   dibuja el encuadre. Con cinco números al mismo peso y sin nada en medio, la
+   fila se lee como cinco cosas sueltas; el raíl las cose.
+
+   No se renombra a `--rail` para no tocar los cinco HTML que la usan
+   —`/incidencias/` y sus cuatro idiomas, que son artefactos del build—. */
+.ds-stats--iguales{ gap:32px 0; }
+.ds-stats--iguales .ds-stat{ padding-inline:20px; }
+.ds-stats--iguales .ds-stat + .ds-stat{
+  border-left:var(--frame-width) solid var(--frame);
+}
+
+@media (max-width:600px){
+  .ds-stats{ grid-template-columns:repeat(2,1fr); gap:28px 16px; padding-block:32px; }
+  .ds-stat b{ font:var(--type-display-md); letter-spacing:var(--tracking-display-md); }
+  /* En dos columnas el raíl caería también a la izquierda de la primera de cada
+     fila, que no separa nada. Se queda sólo entre las dos de la misma fila. */
+  .ds-stats--iguales{ gap:28px 0; }
+  .ds-stats--iguales .ds-stat{ padding-inline:10px; }
+  .ds-stats--iguales .ds-stat:nth-child(odd){ border-left:0; }
+}
+
+/* =========================================================
+   ENCABEZADO CORRIDO
+   Titular y párrafo en el MISMO flujo, al mismo tamaño y con distinto color.
+   No son dos bloques apilados: son un párrafo grande a dos tintas donde la
+   primera frase brilla y el resto se apaga.
+
+   Es la firma tipográfica de la home de Stripe, y es todo o nada: si se apilan
+   como bloques —aunque se les deje el mismo tamaño— el efecto desaparece. Por
+   eso los dos elementos van a `display:inline` y el punto que los separa hace
+   de bisagra.
+
+   No lleva eyebrow, ni kicker, ni botón. Y no pasa de 8 de las 12 columnas: la
+   medida de línea corta es parte del patrón, no una consecuencia.
+
+   Cuándo este y cuándo .section-head--split: aquí el párrafo CONTINÚA la frase
+   del titular; allí el párrafo aporta un detalle aparte. Si al leerlos
+   seguidos no forman una sola idea, este no es el patrón.
+   ========================================================= */
+.section-head--flow{
+  max-width:none;
+  margin-inline:0;
+  text-align:left;
+  width:66.66%;                     /* 8 de 12 */
+}
+.section-head--flow h2,
+.section-head--flow p{
+  display:inline;
+  margin:0;
+  font:var(--type-display-lg);
+  letter-spacing:var(--tracking-display-lg);
+  text-wrap:pretty;
+}
+.section-head--flow h2{ color:var(--ds-text) }
+.section-head--flow p{ color:var(--ds-text-mute) }
+
+@media (max-width:1100px){ .section-head--flow{ width:82% } }
+@media (max-width:899px){
+  .section-head--flow{ width:100% }
+  .section-head--flow h2,
+  .section-head--flow p{
+    font:var(--type-display-md);
+    letter-spacing:var(--tracking-display-md);
+  }
+}
+
+/* =========================================================
+   ENCABEZADO DE SECCIÓN ASIMÉTRICO
+   Título a la izquierda, párrafo de apoyo en columna estrecha a la derecha, y
+   una regla fina cerrando por abajo. Alternativa al `.section-head` centrado.
+
+   Cuándo cada uno, que es lo único que hay que decidir:
+     · centrado   → la sección es una afirmación corta que se lee de un golpe
+                    ("Preguntas frecuentes", "Lo que dicen los equipos")
+     · asimétrico → el párrafo aporta detalle de verdad y el titular tiene peso
+                    propio. Al partirlos, el titular respira y el detalle deja
+                    de competir por el centro.
+
+   No se usa en todas: si todas las secciones son asimétricas, la página vuelve
+   a ser monótona, sólo que hacia el otro lado.
+   ========================================================= */
+.section-head--split{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.85fr);
+  gap:24px 56px;
+  align-items:end;
+  text-align:left;
+  max-width:none;
+  margin-inline:0;
+  padding-bottom:28px;
+  border-bottom:var(--frame-width) solid var(--frame);
+}
+.section-head--split h2{ margin:0; text-wrap:balance; }
+.section-head--split p{
+  margin:0;
+  max-width:46ch;
+  font:var(--type-body-lg);
+  color:var(--ds-text-2);
+}
+/* El párrafo se alinea con la última línea del titular, no con la primera. */
+.section-head--split > *:last-child{ align-self:end; }
+
+@media (max-width:899px){
+  .section-head--split{ grid-template-columns:1fr; gap:14px; padding-bottom:22px; }
+  .section-head--split p{ font:var(--type-body-md); }
+}
+
+/* Encabezado partido + banda de cifras es la combinación natural, y al juntarse
+   dibujaban dos reglas con un hueco muerto entre ellas. Dos hairlines seguidas
+   no separan el doble: separan peor. Se quedan en una. */
+.section-head--split:has(+ .ds-stats){ margin-bottom:0; }
+.section-head--split + .ds-stats{ border-top:0; padding-top:36px; }
+
+/* Cifras + cita (o tarjeta de caso) en la misma sección (11 sep 2026,
+   /incidencias/): la banda de `.ds-stats` ya cierra con su propio hairline
+   inferior, así que lo que va debajo no necesita otra línea encima — sólo el
+   aire que antes ponía el hueco entre dos secciones. Sin esto se queda
+   pegado al raíl de las cifras. */
+.ds-stats + .pull-quote,
+.ds-stats + .case-card--banda{ margin-top:56px; }
+@media (max-width:600px){
+  .ds-stats + .pull-quote,
+  .ds-stats + .case-card--banda{ margin-top:40px; }
+}
+
+/* Nota de contacto (7 sep 2026). Las landings de producto se acortaron a la
+   propuesta de valor y las características, así que las preguntas de encaje
+   —integración, configuración sobre procedimientos propios, alcance de un
+   piloto— dejan de responderse en la página y se enuncian aquí, encima del
+   formulario. Va en cuerpo pequeño y atenuado: nombra las consultas, no las
+   resuelve. Sin interrogaciones, que la ficha de voz sólo las admite en FAQ. */
+.form-card__nota{
+  margin:calc(var(--s-4) * -1) 0 var(--s-4);
+  color:var(--color-ink-mute);
+  font:var(--type-body-md);
+  max-width:52ch;
+}
+
+/* Sub-encabezado dentro de una sección (7 sep 2026). Nace en /auditorias/, al
+   fundir la banda de IA y las celdas del módulo en una sola sección: el segundo
+   bloque necesita rótulo, pero el h2 de la sección ya está puesto arriba y dos
+   h2 en una sección no son una jerarquía. Entra con h3 y su párrafo.
+
+   Lo que lo separa del bloque de arriba es AIRE: 72px y ninguna regla
+   horizontal, porque una hairline entre la banda y este rótulo volvería a
+   partir la sección en dos y deshace la fusión que se acaba de hacer. La que sí
+   queda es la de debajo del rótulo, que trae `.section-head--split` y que no
+   separa dos secciones sino un encabezado de su contenido, igual que en todas
+   las demás.
+
+   30px, y la medida no es libre: el titular de la sección en /auditorias/ es el
+   de la banda (`.cab__t`, 32px), así que el sub-encabezado tiene que quedar por
+   debajo. A 38 —lo que medía primero— el capítulo pesaba más que la sección que
+   lo contiene, y eso se lee como dos secciones otra vez. */
+.section-head--sub{ margin-top:var(--s-9, 72px); }
+.section-head--sub h3{
+  font-size:30px;
+  letter-spacing:var(--tracking-display-lg);
+  font-weight:var(--font-weight-thin);
+  margin:0;
+}
+
+/* =========================================================
+   TIRA DE COMPATIBILIDAD MCP
+   Solved publica un servidor MCP, así que cualquier cliente que hable ese
+   protocolo —Claude, ChatGPT, Gemini y los que vengan— consulta y opera sobre
+   los datos de la planta sin integración a medida. Esta tira es la única pieza
+   del sitio que lo dice, y va en cuatro sitios: la hero de la home, la hero de
+   /ia/ y el pie de la banda de IA de /incidencias/ y /auditorias/.
+
+   POR QUÉ ICONO + NOMBRE ESCRITO, Y NO EL LOGOTIPO ENTERO DE CADA MARCA:
+   los tres wordmarks no comparten estilo —el de Claude es una serif y la marca
+   de Solved no usa serif— y una fila que mezcla marca dibujada con marca
+   tipográfica se lee desordenada al tamaño al que va esto. El nombre va en la
+   tipografía del sitio y el icono es lo único que se toma prestado. Procedencia
+   y condiciones, en assets/mcp/FUENTES.md.
+
+   NO LLEVA MATERIAL DE GRADIENTE. Va en dos heros que ya gastan el presupuesto
+   de la página con su onda, así que la tira es tinta, hairline y nada más.
+
+   El tamaño es de pie de hero, no de sección: si compite con el subtítulo, deja
+   de ser una nota de compatibilidad y se convierte en una segunda promesa.
+   ========================================================= */
+.mcp{
+  display:flex;
+  align-items:center;
+  gap:10px 14px;
+  flex-wrap:wrap;
+  padding-top:18px;
+  border-top:1px solid var(--color-hairline);
+  font:var(--type-caption);
+  color:var(--ds-text-mute);
+  text-wrap:pretty;
+}
+/* El rótulo es la etiqueta del protocolo, no un estado: tinta neutra y caja de
+   hairline, nunca el color de acento. */
+.mcp__lb{
+  flex:none;
+  display:inline-flex;
+  align-items:center;
+  padding:3px 9px;
+  border:1px solid var(--color-hairline);
+  border-radius:999px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ds-text-2);
+}
+.mcp__logos{ display:inline-flex; align-items:center; gap:16px; flex-wrap:wrap }
+.mcp__logo{ display:inline-flex; align-items:center; gap:7px; color:var(--ds-text) }
+.mcp__logo img{ width:19px; height:19px; display:block; flex:none }
+.mcp__txt{ flex:1 1 260px; min-width:0 }
+
+/* En la hero centrada la tira se centra con el resto del bloque. */
+.ds-hero--centro .mcp{ justify-content:center; text-align:center }
+
+@media (max-width:600px){
+  .mcp{ gap:10px }
+  .mcp__logos{ gap:14px }
+}
+
+/* El vídeo del bloque de contacto (7 sep 2026). Sustituye a la foto de banco
+   —una técnica con tablet que no era una planta— por cinco segundos de una
+   operaria cumplimentando un registro junto a la línea. Va en bucle, mudo y sin
+   controles: es ambiente, no una pieza que se reproduce.
+
+   La proporción y el encuadre son del componente: el clip es 16:9 y aquí se
+   recorta a 4:3 —el bloque necesita alto para acompañar a la tarjeta del
+   formulario—, con el foco a la izquierda, que es donde está la persona. Con el
+   recorte centrado se le cortaba el brazo y la tablet. */
+.contact__v{
+  display:block;
+  width:100%;
+  /* `height:auto` NO sobra: los atributos width/height del marcado entran como
+     hint de presentación y fijan 720px de alto, y con un alto explícito la
+     proporción no se aplica —el vídeo salía a 519×720 en vez de 519×389—. */
+  height:auto;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  object-position:28% 50%;
+  border-radius:var(--r-3, 12px);
+  box-shadow:var(--shadow-2);
+  background:var(--color-canvas-soft);
+  pointer-events:none;
+}
+
+/* El formulario de HubSpot llega en un iframe con su ancho medido por él, que
+   se queda corto dentro de la tarjeta. El alto lo sincroniza `chrome.js`. */
+.hs-contact-form .hs-form-iframe{
+  display:block;
+  width:100% !important;
+  border:0;
+}

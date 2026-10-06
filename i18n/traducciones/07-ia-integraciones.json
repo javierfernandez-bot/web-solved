@@ -1,0 +1,391 @@
+{
+  "64 integraciones": { "en": "64 integrations", "fr": "64 intégrations", "it": "64 integrazioni", "de": "64 Integrationen", "pt": "64 integrações" },
+  "Mostrar documentos pendientes de revisión": { "en": "Show documents awaiting review", "fr": "Afficher les documents à réviser", "it": "Mostra i documenti da rivedere", "de": "Zu prüfende Dokumente anzeigen", "pt": "Mostrar documentos pendentes de revisão" },
+  "Trazabilidad de las respuestas,": { "en": "Answers you can trace,", "fr": "Traçabilité des réponses,", "it": "Tracciabilità delle risposte,", "de": "Nachvollziehbare Antworten –", "pt": "Rastreabilidade das respostas," },
+  "registro por registro": { "en": "record by record", "fr": "enregistrement par enregistrement", "it": "registrazione per registrazione", "de": "Aufzeichnung für Aufzeichnung", "pt": "registo por registo" },
+  "Una respuesta no verificable carece de valor en planta: ante una auditoría la evidencia es el registro, no la conversación.": {
+    "en": "An answer you cannot verify is worthless on the shop floor: in an audit the evidence is the record, not the conversation.",
+    "fr": "Une réponse non vérifiable n'a aucune valeur en usine : lors d'un audit, la preuve est l'enregistrement, pas la conversation.",
+    "it": "Una risposta non verificabile non ha valore in stabilimento: davanti a un audit l'evidenza è la registrazione, non la conversazione.",
+    "de": "Eine nicht überprüfbare Antwort ist im Werk wertlos: Im Audit ist der Nachweis die Aufzeichnung, nicht das Gespräch.",
+    "pt": "Uma resposta não verificável não tem valor na fábrica: numa auditoria, a evidência é o registo, não a conversa."
+  },
+  "la respuesta procede de las incidencias, los registros y los documentos de la organización, no de fuentes externas.": {
+    "en": "the answer comes from the organisation's incidents, records and documents, not from outside sources.",
+    "fr": "la réponse provient des incidents, des enregistrements et des documents de l'organisation, pas de sources externes.",
+    "it": "la risposta viene dalle anomalie, dalle registrazioni e dai documenti dell'organizzazione, non da fonti esterne.",
+    "de": "Die Antwort stammt aus den Störungen, Aufzeichnungen und Dokumenten der Organisation, nicht aus externen Quellen.",
+    "pt": "a resposta provém das ocorrências, dos registos e dos documentos da organização, não de fontes externas."
+  },
+  "Sobre datos propios:": { "en": "On your own data:", "fr": "Sur vos propres données :", "it": "Sui dati dell'azienda:", "de": "Auf den eigenen Daten:", "pt": "Sobre dados próprios:" },
+  "cada respuesta cita el código del parte o del registro del que procede, que puede abrirse íntegro.": {
+    "en": "every answer quotes the code of the report or record it came from, which can be opened in full.",
+    "fr": "chaque réponse cite le code du rapport ou de l'enregistrement d'origine, qui peut être ouvert en entier.",
+    "it": "ogni risposta cita il codice del rapporto o della registrazione da cui proviene, che si può aprire per intero.",
+    "de": "Jede Antwort nennt den Code der Meldung oder Aufzeichnung, aus der sie stammt – und die sich vollständig öffnen lässt.",
+    "pt": "cada resposta cita o código do parte ou do registo de onde provém, que pode ser aberto na íntegra."
+  },
+  "Con referencia explícita:": { "en": "With an explicit reference:", "fr": "Avec référence explicite :", "it": "Con riferimento esplicito:", "de": "Mit ausdrücklichem Beleg:", "pt": "Com referência explícita:" },
+  "Ver los registros que cita": { "en": "See the records it cites", "fr": "Voir les enregistrements cités", "it": "Vedi le registrazioni che cita", "de": "Die zitierten Aufzeichnungen ansehen", "pt": "Ver os registos citados" },
+  "la plataforma opera con un sistema de créditos, de modo que el coste de cada uso es conocido.": {
+    "en": "the platform runs on credits, so the cost of each use is known.",
+    "fr": "la plateforme fonctionne avec un système de crédits : le coût de chaque usage est connu.",
+    "it": "la piattaforma funziona a crediti, così il costo di ogni utilizzo è noto.",
+    "de": "Die Plattform arbeitet mit Guthaben, sodass die Kosten jeder Nutzung bekannt sind.",
+    "pt": "a plataforma funciona com um sistema de créditos, pelo que o custo de cada utilização é conhecido."
+  },
+  "Con consumo medido:": { "en": "With measured usage:", "fr": "Avec consommation mesurée :", "it": "Con consumo misurato:", "de": "Mit gemessenem Verbrauch:", "pt": "Com consumo medido:" },
+  "¿Qué sabe hacer la IA de Solved?": { "en": "What can Solved's AI do?", "fr": "Que sait faire l'IA de Solved ?", "it": "Cosa sa fare l'IA di Solved?", "de": "Was kann die KI von Solved?", "pt": "O que sabe fazer a IA da Solved?" },
+  "Hoy son seis funciones: crear una incidencia desde un texto, un correo o un documento; importar y estructurar plantillas de checklist desde Excel, PDF o Word; generar informes personalizados con gráficos e insights; crear una visualización en el cuadro de mando describiéndola en lenguaje natural; emitir el informe de calidad semanal de cada planta; y consultar en lenguaje natural las incidencias, los registros, las acciones y los documentos.": {
+    "en": "Six features today: create an incident from a text, an email or a document; import and structure checklist templates from Excel, PDF or Word; generate custom reports with charts and insights; build a dashboard visualisation by describing it in plain language; issue each plant's weekly quality report; and query incidents, records, actions and documents in plain language.",
+    "fr": "Six fonctions aujourd'hui : créer un incident à partir d'un texte, d'un courriel ou d'un document ; importer et structurer des modèles de checklist depuis Excel, PDF ou Word ; générer des rapports personnalisés avec graphiques et enseignements ; créer une visualisation dans le tableau de bord en la décrivant en langage naturel ; émettre le rapport qualité hebdomadaire de chaque usine ; et interroger en langage naturel les incidents, les enregistrements, les actions et les documents.",
+    "it": "Oggi sono sei funzioni: creare un'anomalia da un testo, una mail o un documento; importare e strutturare modelli di checklist da Excel, PDF o Word; generare report personalizzati con grafici e spunti; creare una visualizzazione nel cruscotto descrivendola in linguaggio naturale; emettere il report settimanale di qualità di ogni stabilimento; e interrogare in linguaggio naturale anomalie, registrazioni, azioni e documenti.",
+    "de": "Heute sind es sechs Funktionen: eine Störung aus Text, E-Mail oder Dokument anlegen; Checklisten-Vorlagen aus Excel, PDF oder Word importieren und strukturieren; individuelle Berichte mit Diagrammen und Erkenntnissen erzeugen; eine Dashboard-Visualisierung durch Beschreibung in natürlicher Sprache erstellen; den wöchentlichen Qualitätsbericht jedes Werks ausgeben; und Störungen, Aufzeichnungen, Maßnahmen und Dokumente in natürlicher Sprache abfragen.",
+    "pt": "Atualmente são seis funções: criar uma ocorrência a partir de um texto, um e-mail ou um documento; importar e estruturar modelos de checklist a partir de Excel, PDF ou Word; gerar relatórios personalizados com gráficos e informações; criar uma visualização no painel descrevendo-a em linguagem natural; emitir o relatório de qualidade semanal de cada fábrica; e consultar em linguagem natural as ocorrências, os registos, as ações e os documentos."
+  },
+  "¿Sobre qué datos responde la IA de Solved?": { "en": "What data does Solved's AI answer from?", "fr": "Sur quelles données répond l'IA de Solved ?", "it": "Su quali dati risponde l'IA di Solved?", "de": "Auf welchen Daten antwortet die KI von Solved?", "pt": "Sobre que dados responde a IA da Solved?" },
+  "Sobre los datos propios: las incidencias, las acciones, los registros y los documentos ya cargados en Solved. No es un chat genérico: opera directamente sobre la información de la planta.": {
+    "en": "On your own data: the incidents, actions, records and documents already in Solved. It is not a generic chat — it works directly on the plant's information.",
+    "fr": "Sur vos propres données : les incidents, les actions, les enregistrements et les documents déjà chargés dans Solved. Ce n'est pas un chat générique : elle opère directement sur l'information de l'usine.",
+    "it": "Sui dati dell'azienda: anomalie, azioni, registrazioni e documenti già caricati in Solved. Non è una chat generica: opera direttamente sulle informazioni dello stabilimento.",
+    "de": "Auf den eigenen Daten: den Störungen, Maßnahmen, Aufzeichnungen und Dokumenten, die bereits in Solved liegen. Kein generischer Chat – sie arbeitet direkt auf den Informationen des Werks.",
+    "pt": "Sobre os dados próprios: as ocorrências, as ações, os registos e os documentos já carregados no Solved. Não é um chat genérico: opera diretamente sobre a informação da fábrica."
+  },
+  "¿Cómo sé de dónde sale una respuesta?": { "en": "How do I know where an answer comes from?", "fr": "Comment savoir d'où vient une réponse ?", "it": "Come faccio a sapere da dove viene una risposta?", "de": "Woher weiß ich, worauf eine Antwort beruht?", "pt": "Como sei de onde vem uma resposta?" },
+  "Cada respuesta incluye el código del parte o del registro del que procede —por ejemplo": {
+    "en": "Every answer includes the code of the report or record it comes from — for example",
+    "fr": "Chaque réponse inclut le code du rapport ou de l'enregistrement dont elle provient — par exemple",
+    "it": "Ogni risposta include il codice del rapporto o della registrazione da cui proviene — per esempio",
+    "de": "Jede Antwort enthält den Code der Meldung oder Aufzeichnung, aus der sie stammt – zum Beispiel",
+    "pt": "Cada resposta inclui o código do parte ou do registo de onde provém — por exemplo"
+  },
+  "— y puede abrirse para su consulta íntegra. Es lo que distingue una consulta sobre datos propios de un chat genérico.": {
+    "en": "— and it can be opened and read in full. That is what separates a query on your own data from a generic chat.",
+    "fr": "— et il peut être ouvert et consulté en entier. C'est ce qui distingue une requête sur ses propres données d'un chat générique.",
+    "it": "— e si può aprire per consultarlo per intero. È ciò che distingue una ricerca sui propri dati da una chat generica.",
+    "de": "– und sie lässt sich vollständig öffnen und lesen. Genau das unterscheidet eine Abfrage auf eigenen Daten von einem generischen Chat.",
+    "pt": "— e pode ser aberto para consulta na íntegra. É isso que distingue uma consulta sobre dados próprios de um chat genérico."
+  },
+  "¿Puede abrir una incidencia desde un correo o un texto libre?": {
+    "en": "Can it open an incident from an email or free text?",
+    "fr": "Peut-elle ouvrir un incident à partir d'un courriel ou d'un texte libre ?",
+    "it": "Può aprire un'anomalia da una mail o da un testo libero?",
+    "de": "Kann sie eine Störung aus einer E-Mail oder Freitext anlegen?",
+    "pt": "Pode abrir uma ocorrência a partir de um e-mail ou de texto livre?"
+  },
+  "Sí. A partir de un correo o de un texto libre genera la incidencia con su descripción, su prioridad y el correo incorporado como evidencia, lista para asignar.": {
+    "en": "Yes. From an email or free text it generates the incident with its description, its priority and the email attached as evidence, ready to assign.",
+    "fr": "Oui. À partir d'un courriel ou d'un texte libre, elle génère l'incident avec sa description, sa priorité et le courriel intégré comme preuve, prêt à être attribué.",
+    "it": "Sì. Da una mail o da un testo libero genera l'anomalia con la sua descrizione, la sua priorità e la mail incorporata come evidenza, pronta da assegnare.",
+    "de": "Ja. Aus einer E-Mail oder Freitext erzeugt sie die Störung mit Beschreibung, Priorität und der E-Mail als Nachweis – bereit zur Zuweisung.",
+    "pt": "Sim. A partir de um e-mail ou de texto livre, gera a ocorrência com a sua descrição, a sua prioridade e o e-mail incorporado como evidência, pronta a atribuir."
+  },
+  "¿Puede cruzar el histórico de una máquina con sus controles?": {
+    "en": "Can it cross a machine's history with its checks?",
+    "fr": "Peut-elle croiser l'historique d'une machine avec ses contrôles ?",
+    "it": "Può incrociare lo storico di una macchina con i suoi controlli?",
+    "de": "Kann sie die Historie einer Maschine mit ihren Kontrollen verknüpfen?",
+    "pt": "Pode cruzar o histórico de uma máquina com os seus controlos?"
+  },
+  "Sí. Cruza el histórico de un activo con los controles que salieron KO en sus registros, que es lo que suele explicar por qué una avería se repite.": {
+    "en": "Yes. It crosses an asset's history with the checks that came back KO in its records, which is usually what explains why a breakdown repeats.",
+    "fr": "Oui. Elle croise l'historique d'un actif avec les contrôles sortis KO dans ses enregistrements, ce qui explique généralement pourquoi une panne se répète.",
+    "it": "Sì. Incrocia lo storico di un asset con i controlli risultati KO nelle sue registrazioni, che è ciò che di solito spiega perché un guasto si ripete.",
+    "de": "Ja. Sie verknüpft die Historie einer Anlage mit den Kontrollen, die in ihren Aufzeichnungen KO ergaben – meist die Erklärung dafür, warum eine Störung wiederkehrt.",
+    "pt": "Sim. Cruza o histórico de um ativo com os controlos que deram KO nos seus registos, o que costuma explicar por que razão uma avaria se repete."
+  },
+  "¿Puede crear un gráfico en el dashboard?": { "en": "Can it create a chart on the dashboard?", "fr": "Peut-elle créer un graphique dans le tableau de bord ?", "it": "Può creare un grafico nel cruscotto?", "de": "Kann sie ein Diagramm im Dashboard erstellen?", "pt": "Pode criar um gráfico no painel?" },
+  "Sí. A partir de la descripción del KPI o del gráfico en lenguaje natural, la IA genera la visualización y la incorpora al cuadro de mando.": {
+    "en": "Yes. From a plain-language description of the KPI or the chart, the AI builds the visualisation and adds it to the dashboard.",
+    "fr": "Oui. À partir de la description du KPI ou du graphique en langage naturel, l'IA génère la visualisation et l'ajoute au tableau de bord.",
+    "it": "Sì. Dalla descrizione del KPI o del grafico in linguaggio naturale, l'IA genera la visualizzazione e la aggiunge al cruscotto.",
+    "de": "Ja. Aus der Beschreibung der Kennzahl oder des Diagramms in natürlicher Sprache erzeugt die KI die Visualisierung und fügt sie dem Dashboard hinzu.",
+    "pt": "Sim. A partir da descrição do KPI ou do gráfico em linguagem natural, a IA gera a visualização e incorpora-a no painel."
+  },
+  "¿Puede importar mis checklists de Excel?": { "en": "Can it import my Excel checklists?", "fr": "Peut-elle importer mes checklists Excel ?", "it": "Può importare le mie checklist da Excel?", "de": "Kann sie meine Excel-Checklisten importieren?", "pt": "Pode importar as minhas checklists do Excel?" },
+  "Sí. La importación automática de checklists lee las plantillas en Excel, PDF o Word y las estructura como registros digitales, sin reescribirlas campo por campo.": {
+    "en": "Yes. Automatic checklist import reads templates in Excel, PDF or Word and structures them as digital records, without retyping them field by field.",
+    "fr": "Oui. L'import automatique de checklists lit les modèles Excel, PDF ou Word et les structure en enregistrements numériques, sans les réécrire champ par champ.",
+    "it": "Sì. L'importazione automatica di checklist legge i modelli in Excel, PDF o Word e li struttura come registrazioni digitali, senza riscriverli campo per campo.",
+    "de": "Ja. Der automatische Checklisten-Import liest Vorlagen aus Excel, PDF oder Word und strukturiert sie als digitale Aufzeichnungen – ohne sie Feld für Feld neu zu tippen.",
+    "pt": "Sim. A importação automática de checklists lê os modelos em Excel, PDF ou Word e estrutura-os como registos digitais, sem os reescrever campo a campo."
+  },
+  "¿Qué cuesta usar la IA?": { "en": "What does using the AI cost?", "fr": "Combien coûte l'utilisation de l'IA ?", "it": "Quanto costa usare l'IA?", "de": "Was kostet die Nutzung der KI?", "pt": "Quanto custa usar a IA?" },
+  "La plataforma opera con un sistema de créditos, de modo que el coste de cada uso es conocido y no existe consumo no medido.": {
+    "en": "The platform runs on credits, so the cost of each use is known and there is no unmetered usage.",
+    "fr": "La plateforme fonctionne avec un système de crédits : le coût de chaque usage est connu et il n'y a pas de consommation non mesurée.",
+    "it": "La piattaforma funziona a crediti, così il costo di ogni utilizzo è noto e non esiste consumo non misurato.",
+    "de": "Die Plattform arbeitet mit Guthaben – die Kosten jeder Nutzung sind bekannt, und es gibt keinen ungemessenen Verbrauch.",
+    "pt": "A plataforma funciona com um sistema de créditos, pelo que o custo de cada utilização é conhecido e não existe consumo não medido."
+  },
+  "¿Hay que integrar algo para poder usarla?": { "en": "Do we need an integration to use it?", "fr": "Faut-il intégrer quelque chose pour l'utiliser ?", "it": "Bisogna integrare qualcosa per poterla usare?", "de": "Braucht es eine Integration, um sie zu nutzen?", "pt": "É preciso integrar alguma coisa para a poder usar?" },
+  "No. La IA opera sobre los datos ya cargados en Solved, por lo que funciona desde el primer día. Con el ERP, el MES o el GMAO integrados, esos datos entran en Solved y quedan también a su alcance.": {
+    "en": "No. The AI works on the data already in Solved, so it runs from day one. With the ERP, MES or CMMS integrated, that data enters Solved and comes within its reach too.",
+    "fr": "Non. L'IA opère sur les données déjà chargées dans Solved : elle fonctionne dès le premier jour. Avec l'ERP, le MES ou la GMAO intégrés, ces données entrent dans Solved et deviennent aussi accessibles.",
+    "it": "No. L'IA opera sui dati già caricati in Solved, quindi funziona dal primo giorno. Con ERP, MES o CMMS integrati, quei dati entrano in Solved e diventano anch'essi alla sua portata.",
+    "de": "Nein. Die KI arbeitet auf den Daten, die bereits in Solved liegen, und läuft daher ab dem ersten Tag. Mit angebundenem ERP, MES oder Instandhaltungssystem fließen deren Daten in Solved und stehen ihr ebenfalls zur Verfügung.",
+    "pt": "Não. A IA opera sobre os dados já carregados no Solved, pelo que funciona desde o primeiro dia. Com o ERP, o MES ou o CMMS integrados, esses dados entram no Solved e ficam também ao seu alcance."
+  },
+  "Evaluación de la IA con los datos de la propia planta": {
+    "en": "Try the AI on your own plant's data",
+    "fr": "Évaluer l'IA avec les données de votre propre usine",
+    "it": "Valutare l'IA con i dati del proprio stabilimento",
+    "de": "Die KI mit den Daten des eigenen Werks bewerten",
+    "pt": "Avaliação da IA com os dados da própria fábrica"
+  },
+  "Cada respuesta incluye el código del parte o del registro del que procede —por ejemplo UTD26_163_001— y puede abrirse para su consulta íntegra. Es lo que distingue una consulta sobre datos propios de un chat genérico.": {
+    "en": "Every answer includes the code of the report or record it comes from — UTD26_163_001, for example — and can be opened and read in full. That is what separates a query on your own data from a generic chat.",
+    "fr": "Chaque réponse inclut le code du rapport ou de l'enregistrement dont elle provient — par exemple UTD26_163_001 — et peut être ouverte et consultée en entier. C'est ce qui distingue une requête sur ses propres données d'un chat générique.",
+    "it": "Ogni risposta include il codice del rapporto o della registrazione da cui proviene — per esempio UTD26_163_001 — e si può aprire per consultarlo per intero. È ciò che distingue una ricerca sui propri dati da una chat generica.",
+    "de": "Jede Antwort enthält den Code der Meldung oder Aufzeichnung, aus der sie stammt – etwa UTD26_163_001 – und lässt sich vollständig öffnen und lesen. Genau das unterscheidet eine Abfrage auf eigenen Daten von einem generischen Chat.",
+    "pt": "Cada resposta inclui o código do parte ou do registo de onde provém — por exemplo, UTD26_163_001 — e pode ser aberto para consulta na íntegra. É isso que distingue uma consulta sobre dados próprios de um chat genérico."
+  },
+  "Integraciones con ERP, MES y GMAO industriales · Solved": {
+    "en": "Integrations with industrial ERP, MES and CMMS · Solved",
+    "fr": "Intégrations avec ERP, MES et GMAO industriels · Solved",
+    "it": "Integrazioni con ERP, MES e CMMS industriali · Solved",
+    "de": "Integrationen mit industriellen ERP-, MES- und Instandhaltungssystemen · Solved",
+    "pt": "Integrações com ERP, MES e CMMS industriais · Solved"
+  },
+  "API abierta y 64 conectores con ERP, MES y GMAO: SAP, Dynamics, Odoo, Maximo o Fracttal. Solved opera de forma autónoma; integrar es opción, no requisito.": {
+    "en": "An open API and 64 connectors to ERP, MES and CMMS: SAP, Dynamics, Odoo, Maximo or Fracttal. Solved runs on its own; integrating is an option, not a requirement.",
+    "fr": "Une API ouverte et 64 connecteurs vers ERP, MES et GMAO : SAP, Dynamics, Odoo, Maximo ou Fracttal. Solved fonctionne de façon autonome ; intégrer est une option, pas une condition.",
+    "it": "API aperta e 64 connettori con ERP, MES e CMMS: SAP, Dynamics, Odoo, Maximo o Fracttal. Solved opera in autonomia; integrare è un'opzione, non un requisito.",
+    "de": "Offene API und 64 Konnektoren zu ERP, MES und Instandhaltungssystemen: SAP, Dynamics, Odoo, Maximo oder Fracttal. Solved läuft eigenständig; die Integration ist eine Option, keine Voraussetzung.",
+    "pt": "API aberta e 64 conectores com ERP, MES e CMMS: SAP, Dynamics, Odoo, Maximo ou Fracttal. O Solved funciona de forma autónoma; integrar é opção, não requisito."
+  },
+  "Integraciones · API abierta": { "en": "Integrations · Open API", "fr": "Intégrations · API ouverte", "it": "Integrazioni · API aperta", "de": "Integrationen · Offene API", "pt": "Integrações · API aberta" },
+  "Conecta Solved con tu ERP, tu MES o tu GMAO": {
+    "en": "Connect Solved to your ERP, your MES or your CMMS",
+    "fr": "Connectez Solved à votre ERP, votre MES ou votre GMAO",
+    "it": "Collega Solved al tuo ERP, al tuo MES o al tuo CMMS",
+    "de": "Verbinden Sie Solved mit Ihrem ERP, MES oder Instandhaltungssystem",
+    "pt": "Ligue o Solved ao seu ERP, ao seu MES ou ao seu CMMS"
+  },
+  "y deja de teclear el mismo dato dos veces.": {
+    "en": "and stop typing the same data twice.",
+    "fr": "et cessez de saisir deux fois la même donnée.",
+    "it": "e smetti di digitare due volte lo stesso dato.",
+    "de": "und tippen Sie dieselben Daten nicht mehr zweimal.",
+    "pt": "e deixe de introduzir o mesmo dado duas vezes."
+  },
+  "Solved tiene una API abierta que lo conecta con tu ERP, tu MES o tu GMAO sin obligarte a tocar esos sistemas. Y si prefieres no integrar nada, funciona igual desde el primer día.": {
+    "en": "Solved has an open API that connects it to your ERP, your MES or your CMMS without forcing you to touch those systems. And if you would rather not integrate anything, it works just the same from day one.",
+    "fr": "Solved dispose d'une API ouverte qui le connecte à votre ERP, votre MES ou votre GMAO sans vous obliger à toucher à ces systèmes. Et si vous préférez ne rien intégrer, il fonctionne tout aussi bien dès le premier jour.",
+    "it": "Solved ha un'API aperta che lo collega al tuo ERP, al tuo MES o al tuo CMMS senza costringerti a toccare quei sistemi. E se preferisci non integrare nulla, funziona lo stesso dal primo giorno.",
+    "de": "Solved hat eine offene API, die es mit Ihrem ERP, MES oder Instandhaltungssystem verbindet, ohne dass Sie diese Systeme anfassen müssen. Und wenn Sie nichts integrieren möchten, funktioniert es ab dem ersten Tag genauso.",
+    "pt": "O Solved tem uma API aberta que o liga ao seu ERP, ao seu MES ou ao seu CMMS sem o obrigar a mexer nesses sistemas. E se preferir não integrar nada, funciona da mesma forma desde o primeiro dia."
+  },
+  "Ver los 64 sistemas": { "en": "See the 64 systems", "fr": "Voir les 64 systèmes", "it": "Vedi i 64 sistemi", "de": "Die 64 Systeme ansehen", "pt": "Ver os 64 sistemas" },
+  "Integrar no es el requisito,": { "en": "Integrating is not the requirement,", "fr": "Intégrer n'est pas la condition,", "it": "Integrare non è il requisito,", "de": "Integrieren ist nicht die Voraussetzung,", "pt": "Integrar não é o requisito," },
+  "es la opción": { "en": "it is the option", "fr": "c'est l'option", "it": "è l'opzione", "de": "sondern die Option", "pt": "é a opção" },
+  "Solved es un sistema autónomo: centraliza incidencias, registros y acciones de toda la planta sin depender de ningún otro software. La integración se incorpora cuando aporta valor, no como condición de arranque.": {
+    "en": "Solved is a standalone system: it brings the whole plant's incidents, records and actions together without depending on any other software. Integration comes in when it adds value, not as a condition for starting.",
+    "fr": "Solved est un système autonome : il centralise les incidents, les enregistrements et les actions de toute l'usine sans dépendre d'aucun autre logiciel. L'intégration s'ajoute quand elle apporte de la valeur, pas comme condition de démarrage.",
+    "it": "Solved è un sistema autonomo: centralizza anomalie, registrazioni e azioni di tutto lo stabilimento senza dipendere da nessun altro software. L'integrazione si aggiunge quando porta valore, non come condizione di avvio.",
+    "de": "Solved ist ein eigenständiges System: Es bündelt Störungen, Aufzeichnungen und Maßnahmen des gesamten Werks, ohne von anderer Software abzuhängen. Die Integration kommt dazu, wenn sie Nutzen bringt – nicht als Startbedingung.",
+    "pt": "O Solved é um sistema autónomo: centraliza ocorrências, registos e ações de toda a fábrica sem depender de nenhum outro software. A integração é incorporada quando traz valor, não como condição de arranque."
+  },
+  "sistemas con integración disponible": { "en": "systems with an integration available", "fr": "systèmes avec intégration disponible", "it": "sistemi con integrazione disponibile", "de": "Systeme mit verfügbarer Integration", "pt": "sistemas com integração disponível" },
+  "ERP, de SAP a Odoo": { "en": "ERPs, from SAP to Odoo", "fr": "ERP, de SAP à Odoo", "it": "ERP, da SAP a Odoo", "de": "ERP-Systeme, von SAP bis Odoo", "pt": "ERP, de SAP a Odoo" },
+  "MES de planta": { "en": "Shop-floor MES", "fr": "MES d'usine", "it": "MES di stabilimento", "de": "MES für die Fertigung", "pt": "MES de fábrica" },
+  "GMAO y CMMS de mantenimiento": { "en": "Maintenance CMMS systems", "fr": "GMAO et CMMS de maintenance", "it": "CMMS di manutenzione", "de": "Instandhaltungssysteme (CMMS)", "pt": "CMMS de manutenção" },
+  "semanas de implantación media": { "en": "weeks to roll out on average", "fr": "semaines de déploiement en moyenne", "it": "settimane di avvio in media", "de": "Wochen Einführung im Schnitt", "pt": "semanas de implementação em média" },
+  "64 sistemas ya conectados,": { "en": "64 systems already connected,", "fr": "64 systèmes déjà connectés,", "it": "64 sistemi già collegati,", "de": "64 bereits angebundene Systeme –", "pt": "64 sistemas já ligados," },
+  "y el tuyo si no está en la lista": { "en": "and yours if it is not on the list", "fr": "et le vôtre s'il n'y figure pas", "it": "e il tuo se non è nell'elenco", "de": "und Ihres, wenn es nicht dabei ist", "pt": "e o seu, se não estiver na lista" },
+  "Conectores ya desarrollados. La búsqueda admite el nombre del sistema o el filtrado por categoría.": {
+    "en": "Connectors already built. You can search by system name or filter by category.",
+    "fr": "Connecteurs déjà développés. La recherche accepte le nom du système ou le filtrage par catégorie.",
+    "it": "Connettori già sviluppati. La ricerca accetta il nome del sistema o il filtro per categoria.",
+    "de": "Bereits entwickelte Konnektoren. Die Suche akzeptiert den Systemnamen oder das Filtern nach Kategorie.",
+    "pt": "Conectores já desenvolvidos. A pesquisa aceita o nome do sistema ou a filtragem por categoria."
+  },
+  "El sistema no figura en el catálogo.": { "en": "The system is not in the catalogue.", "fr": "Le système ne figure pas au catalogue.", "it": "Il sistema non è nel catalogo.", "de": "Das System steht nicht im Katalog.", "pt": "O sistema não consta do catálogo." },
+  "y el equipo técnico confirma la vía de integración.": {
+    "en": "and the technical team will confirm the way in.",
+    "fr": "et l'équipe technique confirmera la voie d'intégration.",
+    "it": "e il team tecnico conferma la via di integrazione.",
+    "de": "und das technische Team bestätigt den Integrationsweg.",
+    "pt": "e a equipa técnica confirma a via de integração."
+  },
+  "Indíquenos de cuál se trata": { "en": "Tell us which one it is", "fr": "Indiquez-nous lequel", "it": "Diteci di quale si tratta", "de": "Sagen Sie uns, um welches es geht", "pt": "Diga-nos de qual se trata" },
+  "Los nombres y logotipos que aparecen son marcas de sus respectivos titulares y se muestran únicamente para indicar compatibilidad. Solved no está afiliado a estas empresas.": {
+    "en": "The names and logos shown are trademarks of their respective owners and appear solely to indicate compatibility. Solved is not affiliated with these companies.",
+    "fr": "Les noms et logos affichés sont des marques de leurs titulaires respectifs et ne figurent ici que pour indiquer la compatibilité. Solved n'est affilié à aucune de ces entreprises.",
+    "it": "I nomi e i loghi mostrati sono marchi dei rispettivi titolari e compaiono unicamente per indicare la compatibilità. Solved non è affiliata a queste aziende.",
+    "de": "Die gezeigten Namen und Logos sind Marken ihrer jeweiligen Inhaber und stehen hier ausschließlich als Kompatibilitätshinweis. Solved ist mit diesen Unternehmen nicht verbunden.",
+    "pt": "Os nomes e logótipos apresentados são marcas dos respetivos titulares e surgem apenas para indicar compatibilidade. O Solved não está associado a estas empresas."
+  },
+  "¿El sistema no figura en el catálogo?": { "en": "Is your system missing from the catalogue?", "fr": "Votre système ne figure pas au catalogue ?", "it": "Il tuo sistema non è nel catalogo?", "de": "Ihr System fehlt im Katalog?", "pt": "O seu sistema não consta do catálogo?" },
+  "El equipo técnico atiende la consulta desde el formulario de esta página o en": {
+    "en": "The technical team will take your question from the form on this page or at",
+    "fr": "L'équipe technique répond via le formulaire de cette page ou à",
+    "it": "Il team tecnico risponde dal modulo di questa pagina o a",
+    "de": "Das technische Team antwortet über das Formular auf dieser Seite oder unter",
+    "pt": "A equipa técnica responde à consulta através do formulário desta página ou em"
+  },
+  "Hablar con el equipo técnico": { "en": "Talk to the technical team", "fr": "Parler à l'équipe technique", "it": "Parlare con il team tecnico", "de": "Mit dem technischen Team sprechen", "pt": "Falar com a equipa técnica" },
+  "Qué se sincroniza,": { "en": "What syncs,", "fr": "Ce qui se synchronise,", "it": "Cosa si sincronizza,", "de": "Was synchronisiert wird –", "pt": "O que se sincroniza," },
+  "y en qué dirección": { "en": "and in which direction", "fr": "et dans quel sens", "it": "e in quale direzione", "de": "und in welche Richtung", "pt": "e em que direção" },
+  "La integración de Solved no persigue que el ERP, el MES y el GMAO se comuniquen entre sí: opera por encima de los tres como capa transversal.": {
+    "en": "Solved's integration is not about making the ERP, the MES and the CMMS talk to each other: it sits above all three as a cross-cutting layer.",
+    "fr": "L'intégration de Solved ne vise pas à faire communiquer l'ERP, le MES et la GMAO entre eux : elle opère au-dessus des trois comme couche transversale.",
+    "it": "L'integrazione di Solved non punta a far comunicare tra loro ERP, MES e CMMS: opera sopra i tre come livello trasversale.",
+    "de": "Die Integration von Solved zielt nicht darauf, ERP, MES und Instandhaltungssystem miteinander sprechen zu lassen: Sie liegt als Querschnittsebene über allen dreien.",
+    "pt": "A integração do Solved não pretende que o ERP, o MES e o CMMS comuniquem entre si: opera acima dos três como camada transversal."
+  },
+  "clientes, proveedores, productos, lotes y activos se propagan desde el ERP hacia Solved y dejan de mantenerse por duplicado.": {
+    "en": "customers, suppliers, products, batches and assets flow from the ERP into Solved and stop being maintained twice.",
+    "fr": "clients, fournisseurs, produits, lots et actifs se propagent de l'ERP vers Solved et cessent d'être entretenus en double.",
+    "it": "clienti, fornitori, prodotti, lotti e asset si propagano dall'ERP verso Solved e smettono di essere mantenuti in doppio.",
+    "de": "Kunden, Lieferanten, Produkte, Chargen und Anlagen fließen aus dem ERP nach Solved und werden nicht länger doppelt gepflegt.",
+    "pt": "clientes, fornecedores, produtos, lotes e ativos propagam-se do ERP para o Solved e deixam de ser mantidos em duplicado."
+  },
+  "Sincronización de maestros:": { "en": "Master data sync:", "fr": "Synchronisation des données de base :", "it": "Sincronizzazione delle anagrafiche:", "de": "Stammdaten-Synchronisierung:", "pt": "Sincronização de dados mestre:" },
+  "lo registrado y resuelto en Solved se devuelve al ERP, donde la información queda consolidada.": {
+    "en": "what is logged and resolved in Solved goes back to the ERP, where the information is consolidated.",
+    "fr": "ce qui est enregistré et résolu dans Solved revient vers l'ERP, où l'information est consolidée.",
+    "it": "ciò che si registra e si risolve in Solved torna all'ERP, dove l'informazione viene consolidata.",
+    "de": "Was in Solved erfasst und gelöst wird, geht zurück ins ERP, wo die Information zusammengeführt wird.",
+    "pt": "o que é registado e resolvido no Solved regressa ao ERP, onde a informação fica consolidada."
+  },
+  "Retorno de incidencias:": { "en": "Incidents flowing back:", "fr": "Retour des incidents :", "it": "Ritorno delle anomalie:", "de": "Rückfluss der Störungen:", "pt": "Retorno das ocorrências:" },
+  "Cómo integrar las incidencias con el ERP, el MES o el GMAO": {
+    "en": "How to integrate incidents with the ERP, the MES or the CMMS",
+    "fr": "Comment intégrer les incidents avec l'ERP, le MES ou la GMAO",
+    "it": "Come integrare le anomalie con ERP, MES o CMMS",
+    "de": "Wie sich Störungen mit ERP, MES oder Instandhaltungssystem verbinden lassen",
+    "pt": "Como integrar as ocorrências com o ERP, o MES ou o CMMS"
+  },
+  "el equipo técnico la deja operativa sobre el sistema que la organización ya tenga implantado.": {
+    "en": "the technical team gets it running on whatever system the organisation already has in place.",
+    "fr": "l'équipe technique la rend opérationnelle sur le système déjà en place dans l'organisation.",
+    "it": "il team tecnico la rende operativa sul sistema che l'organizzazione ha già in uso.",
+    "de": "Das technische Team macht sie auf dem System betriebsbereit, das die Organisation bereits einsetzt.",
+    "pt": "a equipa técnica deixa-a operacional sobre o sistema que a organização já tenha implementado."
+  },
+  "Integración inicial a cargo de Solved:": { "en": "Initial integration handled by Solved:", "fr": "Intégration initiale prise en charge par Solved :", "it": "Integrazione iniziale a carico di Solved:", "de": "Erstintegration durch Solved:", "pt": "Integração inicial a cargo do Solved:" },
+  "¿Con qué sistemas se integra Solved?": { "en": "Which systems does Solved integrate with?", "fr": "Avec quels systèmes Solved s'intègre-t-il ?", "it": "Con quali sistemi si integra Solved?", "de": "Mit welchen Systemen lässt sich Solved verbinden?", "pt": "Com que sistemas se integra o Solved?" },
+  "Con 64 sistemas del mercado: 27 ERP —SAP S/4HANA y Business One, Microsoft Dynamics 365, Navision y Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded…—, 19 MES —Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition…—, 17 GMAO/CMMS —IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin…— y Power BI. El catálogo completo está en esta misma página.": {
+    "en": "With 64 systems on the market: 27 ERPs — SAP S/4HANA and Business One, Microsoft Dynamics 365, Navision and Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, 19 MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, 17 CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — and Power BI. The full catalogue is on this same page.",
+    "fr": "Avec 64 systèmes du marché : 27 ERP — SAP S/4HANA et Business One, Microsoft Dynamics 365, Navision et Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, 19 MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, 17 GMAO/CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — et Power BI. Le catalogue complet figure sur cette même page.",
+    "it": "Con 64 sistemi del mercato: 27 ERP — SAP S/4HANA e Business One, Microsoft Dynamics 365, Navision e Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, 19 MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, 17 CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — e Power BI. Il catalogo completo è in questa stessa pagina.",
+    "de": "Mit 64 Systemen am Markt: 27 ERP – SAP S/4HANA und Business One, Microsoft Dynamics 365, Navision und Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… –, 19 MES – Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… –, 17 Instandhaltungssysteme – IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… – und Power BI. Der vollständige Katalog steht auf dieser Seite.",
+    "pt": "Com 64 sistemas do mercado: 27 ERP — SAP S/4HANA e Business One, Microsoft Dynamics 365, Navision e Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, 19 MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, 17 CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — e Power BI. O catálogo completo está nesta mesma página."
+  },
+  "¿Hace falta integrar Solved con mi ERP para empezar a usarlo?": {
+    "en": "Do I have to integrate Solved with my ERP to start using it?",
+    "fr": "Faut-il intégrer Solved à mon ERP pour commencer à l'utiliser ?",
+    "it": "Bisogna integrare Solved con il mio ERP per iniziare a usarlo?",
+    "de": "Muss ich Solved mit meinem ERP verbinden, um damit zu starten?",
+    "pt": "É preciso integrar o Solved com o meu ERP para começar a usá-lo?"
+  },
+  "No. Solved opera de forma autónoma: centraliza incidencias, registros y acciones de toda la planta sin depender de ningún otro sistema. La integración se incorpora cuando aporta valor, no como requisito de arranque.": {
+    "en": "No. Solved runs on its own: it brings the whole plant's incidents, records and actions together without depending on any other system. Integration comes in when it adds value, not as a requirement for starting.",
+    "fr": "Non. Solved fonctionne de façon autonome : il centralise les incidents, les enregistrements et les actions de toute l'usine sans dépendre d'aucun autre système. L'intégration s'ajoute quand elle apporte de la valeur, pas comme condition de démarrage.",
+    "it": "No. Solved opera in autonomia: centralizza anomalie, registrazioni e azioni di tutto lo stabilimento senza dipendere da nessun altro sistema. L'integrazione si aggiunge quando porta valore, non come requisito di avvio.",
+    "de": "Nein. Solved läuft eigenständig: Es bündelt Störungen, Aufzeichnungen und Maßnahmen des gesamten Werks, ohne von einem anderen System abzuhängen. Die Integration kommt dazu, wenn sie Nutzen bringt – nicht als Startvoraussetzung.",
+    "pt": "Não. O Solved funciona de forma autónoma: centraliza ocorrências, registos e ações de toda a fábrica sem depender de nenhum outro sistema. A integração é incorporada quando traz valor, não como requisito de arranque."
+  },
+  "¿Qué datos se sincronizan entre Solved y el ERP?": {
+    "en": "What data syncs between Solved and the ERP?",
+    "fr": "Quelles données se synchronisent entre Solved et l'ERP ?",
+    "it": "Quali dati si sincronizzano tra Solved e l'ERP?",
+    "de": "Welche Daten werden zwischen Solved und dem ERP synchronisiert?",
+    "pt": "Que dados se sincronizam entre o Solved e o ERP?"
+  },
+  "En sentido descendente, los maestros: clientes, proveedores, productos, lotes y activos se propagan del ERP a Solved y dejan de mantenerse por duplicado. En sentido ascendente, los datos de las incidencias gestionadas en Solved retornan al ERP para su consolidación.": {
+    "en": "Downwards, the master data: customers, suppliers, products, batches and assets flow from the ERP into Solved and stop being maintained twice. Upwards, the data from incidents handled in Solved goes back to the ERP to be consolidated.",
+    "fr": "En descendant, les données de base : clients, fournisseurs, produits, lots et actifs passent de l'ERP à Solved et cessent d'être entretenus en double. En remontant, les données des incidents traités dans Solved reviennent vers l'ERP pour consolidation.",
+    "it": "In discesa, le anagrafiche: clienti, fornitori, prodotti, lotti e asset passano dall'ERP a Solved e smettono di essere mantenuti in doppio. In salita, i dati delle anomalie gestite in Solved tornano all'ERP per il consolidamento.",
+    "de": "Abwärts die Stammdaten: Kunden, Lieferanten, Produkte, Chargen und Anlagen fließen aus dem ERP nach Solved und werden nicht mehr doppelt gepflegt. Aufwärts gehen die Daten der in Solved bearbeiteten Störungen zur Konsolidierung zurück ins ERP.",
+    "pt": "No sentido descendente, os dados mestre: clientes, fornecedores, produtos, lotes e ativos propagam-se do ERP para o Solved e deixam de ser mantidos em duplicado. No sentido ascendente, os dados das ocorrências geridas no Solved regressam ao ERP para consolidação."
+  },
+  "¿Quién hace la integración inicial?": { "en": "Who does the initial integration?", "fr": "Qui réalise l'intégration initiale ?", "it": "Chi fa l'integrazione iniziale?", "de": "Wer übernimmt die Erstintegration?", "pt": "Quem faz a integração inicial?" },
+  "El equipo técnico de Solved asume la integración inicial sobre el sistema que la organización ya tenga implantado.": {
+    "en": "Solved's technical team takes on the initial integration with whatever system the organisation already has in place.",
+    "fr": "L'équipe technique de Solved prend en charge l'intégration initiale sur le système déjà en place dans l'organisation.",
+    "it": "Il team tecnico di Solved si occupa dell'integrazione iniziale sul sistema che l'organizzazione ha già in uso.",
+    "de": "Das technische Team von Solved übernimmt die Erstintegration mit dem System, das die Organisation bereits einsetzt.",
+    "pt": "A equipa técnica do Solved assume a integração inicial sobre o sistema que a organização já tenha implementado."
+  },
+  "¿Y si mi sistema no está en la lista?": { "en": "What if my system is not on the list?", "fr": "Et si mon système n'est pas dans la liste ?", "it": "E se il mio sistema non è nell'elenco?", "de": "Und wenn mein System nicht auf der Liste steht?", "pt": "E se o meu sistema não estiver na lista?" },
+  "La API abierta de Solved permite conectar desarrollos internos o sistemas que no figuren en el catálogo. Puede consultarse en info@trysolved.com o desde el formulario de esta página.": {
+    "en": "Solved's open API lets you connect in-house developments or systems that are not in the catalogue. You can ask at info@trysolved.com or through the form on this page.",
+    "fr": "L'API ouverte de Solved permet de connecter des développements internes ou des systèmes absents du catalogue. Vous pouvez écrire à info@trysolved.com ou passer par le formulaire de cette page.",
+    "it": "L'API aperta di Solved consente di collegare sviluppi interni o sistemi che non figurano nel catalogo. Si può chiedere a info@trysolved.com o dal modulo di questa pagina.",
+    "de": "Die offene API von Solved erlaubt die Anbindung eigener Entwicklungen oder von Systemen, die nicht im Katalog stehen. Fragen Sie unter info@trysolved.com oder über das Formular auf dieser Seite.",
+    "pt": "A API aberta do Solved permite ligar desenvolvimentos internos ou sistemas que não constem do catálogo. Pode consultar-se em info@trysolved.com ou através do formulário desta página."
+  },
+  "¿Puedo ver los datos de Solved en Power BI?": { "en": "Can I see Solved's data in Power BI?", "fr": "Puis-je voir les données de Solved dans Power BI ?", "it": "Posso vedere i dati di Solved in Power BI?", "de": "Kann ich die Daten von Solved in Power BI sehen?", "pt": "Posso ver os dados do Solved no Power BI?" },
+  "Sí. Los datos de Solved se consultan en tiempo real desde Power BI, además de en los cuadros de mando e informes de la propia plataforma.": {
+    "en": "Yes. Solved's data can be queried in real time from Power BI, as well as in the platform's own dashboards and reports.",
+    "fr": "Oui. Les données de Solved se consultent en temps réel depuis Power BI, en plus des tableaux de bord et rapports de la plateforme elle-même.",
+    "it": "Sì. I dati di Solved si consultano in tempo reale da Power BI, oltre che nei cruscotti e nei report della piattaforma stessa.",
+    "de": "Ja. Die Daten von Solved lassen sich in Echtzeit aus Power BI abfragen – zusätzlich zu den Dashboards und Berichten der Plattform selbst.",
+    "pt": "Sim. Os dados do Solved podem ser consultados em tempo real a partir do Power BI, além dos painéis e relatórios da própria plataforma."
+  },
+  "¿Cuánto tarda la puesta en marcha?": { "en": "How long does go-live take?", "fr": "Combien de temps prend la mise en service ?", "it": "Quanto dura la messa in servizio?", "de": "Wie lange dauert die Inbetriebnahme?", "pt": "Quanto tempo demora a colocação em funcionamento?" },
+  "La implantación media es de dos a tres semanas, con acompañamiento durante todo el proceso. La integración con el ERP, el MES o el GMAO no la prolonga: es una fase posterior.": {
+    "en": "A typical rollout takes two to three weeks, with support throughout. Integrating with the ERP, the MES or the CMMS does not extend it: that is a later phase.",
+    "fr": "Le déploiement moyen dure de deux à trois semaines, avec accompagnement tout du long. L'intégration avec l'ERP, le MES ou la GMAO ne le prolonge pas : c'est une phase ultérieure.",
+    "it": "L'avvio medio è di due o tre settimane, con affiancamento lungo tutto il processo. L'integrazione con ERP, MES o CMMS non lo allunga: è una fase successiva.",
+    "de": "Eine Einführung dauert im Schnitt zwei bis drei Wochen, durchgehend begleitet. Die Anbindung an ERP, MES oder Instandhaltungssystem verlängert sie nicht: Sie ist eine spätere Phase.",
+    "pt": "A implementação média demora de duas a três semanas, com acompanhamento durante todo o processo. A integração com o ERP, o MES ou o CMMS não a prolonga: é uma fase posterior."
+  },
+  "Busca tu ERP, MES o GMAO": { "en": "Find your ERP, MES or CMMS", "fr": "Cherchez votre ERP, MES ou GMAO", "it": "Cerca il tuo ERP, MES o CMMS", "de": "Ihr ERP, MES oder Instandhaltungssystem suchen", "pt": "Procure o seu ERP, MES ou CMMS" },
+  "Buscar un sistema en el catálogo": { "en": "Search the catalogue for a system", "fr": "Rechercher un système dans le catalogue", "it": "Cerca un sistema nel catalogo", "de": "System im Katalog suchen", "pt": "Procurar um sistema no catálogo" },
+  "Filtrar por tipo de sistema": { "en": "Filter by system type", "fr": "Filtrer par type de système", "it": "Filtra per tipo di sistema", "de": "Nach Systemtyp filtern", "pt": "Filtrar por tipo de sistema" },
+  "Software de planta para industria no alimentaria · Solved": {
+    "en": "Plant software for non-food industry · Solved",
+    "fr": "Logiciel d'usine pour l'industrie non alimentaire · Solved",
+    "it": "Software di stabilimento per l'industria non alimentare · Solved",
+    "de": "Werkssoftware für die Nicht-Lebensmittelindustrie · Solved",
+    "pt": "Software de fábrica para a indústria não alimentar · Solved"
+  },
+  "Automoción, químico, plástico o iluminación: los partes de control, las incidencias y las acciones correctivas de planta en un único sistema, bajo ISO 9001.": {
+    "en": "Automotive, chemicals, plastics or lighting: the plant's control reports, incidents and corrective actions in a single system, under ISO 9001.",
+    "fr": "Automobile, chimie, plasturgie ou éclairage : les rapports de contrôle, les incidents et les actions correctives de l'usine dans un seul système, sous ISO 9001.",
+    "it": "Automotive, chimico, plastica o illuminazione: i rapporti di controllo, le anomalie e le azioni correttive dello stabilimento in un unico sistema, sotto ISO 9001.",
+    "de": "Automobil, Chemie, Kunststoff oder Beleuchtung: Kontrollmeldungen, Störungen und Korrekturmaßnahmen des Werks in einem System, nach ISO 9001.",
+    "pt": "Automóvel, química, plástico ou iluminação: os partes de controlo, as ocorrências e as ações corretivas da fábrica num único sistema, sob a norma ISO 9001."
+  },
+  "Industria general": { "en": "Manufacturing", "fr": "Industrie manufacturière", "it": "Industria manifatturiera", "de": "Fertigungsindustrie", "pt": "Indústria transformadora" },
+  "Estandariza los controles de todas tus líneas en un solo sistema,": {
+    "en": "Standardise the checks on all your lines in a single system,",
+    "fr": "Standardisez les contrôles de toutes vos lignes dans un seul système,",
+    "it": "Standardizza i controlli di tutte le tue linee in un solo sistema,",
+    "de": "Vereinheitlichen Sie die Kontrollen aller Linien in einem System,",
+    "pt": "Padronize os controlos de todas as suas linhas num único sistema,"
+  },
+  "con cada incidencia asignada y cada acción correctiva cerrada en plazo.": {
+    "en": "with every incident assigned and every corrective action closed on time.",
+    "fr": "avec chaque incident attribué et chaque action corrective clôturée dans les délais.",
+    "it": "con ogni anomalia assegnata e ogni azione correttiva chiusa nei tempi.",
+    "de": "mit jeder zugewiesenen Störung und jeder fristgerecht abgeschlossenen Korrekturmaßnahme.",
+    "pt": "com cada ocorrência atribuída e cada ação corretiva encerrada no prazo."
+  },
+  "Los mismos partes de control, incidencias y acciones correctivas que hoy llevas en hojas de cálculo, en un sistema que tu equipo de planta usa desde el móvil.": {
+    "en": "The same control reports, incidents and corrective actions you keep in spreadsheets today, in a system your plant team uses from a phone.",
+    "fr": "Les mêmes rapports de contrôle, incidents et actions correctives que vous tenez aujourd'hui sur tableur, dans un système que votre équipe d'usine utilise depuis le téléphone.",
+    "it": "Gli stessi rapporti di controllo, anomalie e azioni correttive che oggi tieni su fogli di calcolo, in un sistema che la tua squadra di stabilimento usa dal telefono.",
+    "de": "Dieselben Kontrollmeldungen, Störungen und Korrekturmaßnahmen, die Sie heute in Tabellen führen – in einem System, das Ihr Werksteam vom Smartphone nutzt.",
+    "pt": "Os mesmos partes de controlo, ocorrências e ações corretivas que hoje gere em folhas de cálculo, num sistema que a sua equipa de fábrica usa a partir do telemóvel."
+  },
+  "Procesos desconectados,": { "en": "Disconnected processes,", "fr": "Des processus déconnectés,", "it": "Processi scollegati,", "de": "Getrennte Prozesse –", "pt": "Processos desligados," },
+  "con impacto directo en la productividad": { "en": "with a direct hit on productivity", "fr": "avec un impact direct sur la productivité", "it": "con impatto diretto sulla produttività", "de": "mit direkter Wirkung auf die Produktivität", "pt": "com impacto direto na produtividade" },
+  "Muchas plantas industriales operan con procesos desconectados, registros poco fiables y comunicación informal. Esto no solo ralentiza el trabajo: pone en riesgo la calidad, la seguridad y el cumplimiento.": {
+    "en": "Many industrial plants run on disconnected processes, unreliable records and informal communication. That does not just slow the work down: it puts quality, safety and compliance at risk.",
+    "fr": "Beaucoup d'usines fonctionnent avec des processus déconnectés, des enregistrements peu fiables et une communication informelle. Cela ne fait pas que ralentir le travail : cela met en péril la qualité, la sécurité et la conformité.",
+    "it": "Molti stabilimenti industriali lavorano con processi scollegati, registrazioni poco affidabili e comunicazione informale. Questo non rallenta soltanto il lavoro: mette a rischio qualità, sicurezza e conformità.",
+    "de": "Viele Industriewerke arbeiten mit getrennten Prozessen, unzuverlässigen Aufzeichnungen und informeller Kommunikation. Das bremst nicht nur die Arbeit: Es gefährdet Qualität, Sicherheit und Normerfüllung.",
+    "pt": "Muitas fábricas industriais funcionam com processos desligados, registos pouco fiáveis e comunicação informal. Isto não se limita a atrasar o trabalho: põe em risco a qualidade, a segurança e a conformidade."
+  },
+  "Procesos documentados en papel u hojas de cálculo que se pierden, se duplican o no se revisan a tiempo.": {
+    "en": "Processes documented on paper or spreadsheets that get lost, duplicated or reviewed too late.",
+    "fr": "Des processus documentés sur papier ou tableur qui se perdent, se dupliquent ou ne sont pas révisés à temps.",
+    "it": "Processi documentati su carta o fogli di calcolo che si perdono, si duplicano o non si rivedono in tempo.",
+    "de": "Auf Papier oder in Tabellen dokumentierte Prozesse, die verloren gehen, doppelt vorliegen oder zu spät geprüft werden.",
+    "pt": "Processos documentados em papel ou folhas de cálculo que se perdem, se duplicam ou não são revistos a tempo."
+  }
+}

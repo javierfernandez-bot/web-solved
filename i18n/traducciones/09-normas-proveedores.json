@@ -1,0 +1,621 @@
+{
+  "La auditoría interna se planifica en un calendario que no se supervisa hasta la visita del auditor.": {
+    "en": "The internal audit is planned on a calendar that nobody looks at until the auditor turns up.",
+    "fr": "L'audit interne est planifié dans un calendrier que personne ne surveille jusqu'à la visite de l'auditeur.",
+    "it": "L'audit interno si pianifica in un calendario che nessuno controlla fino alla visita dell'auditor.",
+    "de": "Das interne Audit steht in einem Kalender, den bis zum Auditorbesuch niemand ansieht.",
+    "pt": "A auditoria interna é planeada num calendário que ninguém supervisiona até à visita do auditor."
+  },
+  "Cada cambio del sistema debe comunicarse planta por planta, sin garantía de que todas operen con el mismo formato.": {
+    "en": "Every change to the system has to be announced plant by plant, with no guarantee that they are all working from the same form.",
+    "fr": "Chaque modification du système doit être communiquée usine par usine, sans garantie que toutes travaillent avec le même format.",
+    "it": "Ogni modifica del sistema va comunicata stabilimento per stabilimento, senza garanzia che tutti lavorino con lo stesso formato.",
+    "de": "Jede Systemänderung muss Werk für Werk mitgeteilt werden – ohne Gewähr, dass alle mit demselben Formular arbeiten.",
+    "pt": "Cada alteração do sistema tem de ser comunicada fábrica a fábrica, sem garantia de que todas trabalhem com o mesmo formato."
+  },
+  "Cada requisito que exige registro, con su evidencia detrás": {
+    "en": "Every requirement that demands a record, with its evidence behind it",
+    "fr": "Chaque exigence qui impose un enregistrement, avec sa preuve derrière",
+    "it": "Ogni requisito che richiede registrazione, con la sua evidenza dietro",
+    "de": "Jede Anforderung, die eine Aufzeichnung verlangt – mit dem Nachweis dahinter",
+    "pt": "Cada requisito que exige registo, com a sua evidência por trás"
+  },
+  "Solved no interpreta la norma. Garantiza que todo aquello que la norma obliga a registrar quede registrado en el momento de su ejecución, con su responsable, y sea recuperable después.": {
+    "en": "Solved does not interpret the standard. It makes sure that everything the standard requires to be recorded is recorded as it happens, with its owner, and can be retrieved later.",
+    "fr": "Solved n'interprète pas la norme. Il garantit que tout ce que la norme oblige à enregistrer le soit au moment de son exécution, avec son responsable, et reste récupérable ensuite.",
+    "it": "Solved non interpreta la norma. Garantisce che tutto ciò che la norma obbliga a registrare venga registrato al momento dell'esecuzione, con il suo responsabile, e sia recuperabile dopo.",
+    "de": "Solved legt die Norm nicht aus. Es stellt sicher, dass alles, was die Norm zu erfassen verlangt, im Moment der Ausführung mit Verantwortlichem erfasst wird und später auffindbar bleibt.",
+    "pt": "A Solved não interpreta a norma. Garante que tudo o que a norma obriga a registar fica registado no momento da execução, com o seu responsável, e pode ser recuperado depois."
+  },
+  "Información documentada con versión única: la plantilla vigente es la que muestra el dispositivo del operario, sin copias paralelas.": {
+    "en": "Documented information in a single version: the current template is the one on the operator's device, with no parallel copies.",
+    "fr": "Une information documentée à version unique : le modèle en vigueur est celui qu'affiche l'appareil de l'opérateur, sans copies parallèles.",
+    "it": "Informazioni documentate a versione unica: il modello vigente è quello che mostra il dispositivo dell'operatore, senza copie parallele.",
+    "de": "Dokumentierte Information in einer einzigen Fassung: Die gültige Vorlage ist die auf dem Gerät des Werkers – ohne Parallelkopien.",
+    "pt": "Informação documentada com versão única: o modelo em vigor é o que o dispositivo do operador mostra, sem cópias paralelas."
+  },
+  "Prerrequisitos y plan de peligros ejecutados como controles programados, con su histórico de cumplimiento.": {
+    "en": "Prerequisites and the hazard plan carried out as scheduled checks, with their compliance history.",
+    "fr": "Prérequis et plan de dangers exécutés comme contrôles programmés, avec leur historique de conformité.",
+    "it": "Prerequisiti e piano dei pericoli eseguiti come controlli programmati, con il loro storico di conformità.",
+    "de": "Basisvoraussetzungen und Gefahrenplan als geplante Kontrollen ausgeführt, mit ihrer Erfüllungshistorie.",
+    "pt": "Pré-requisitos e plano de perigos executados como controlos programados, com o seu histórico de cumprimento."
+  },
+  "No conformidades con corrección, causa raíz, acción y verificación de la eficacia en un mismo hilo.": {
+    "en": "Non-conformities with correction, root cause, action and effectiveness check in one thread.",
+    "fr": "Des non-conformités avec correction, cause racine, action et vérification de l'efficacité dans un même fil.",
+    "it": "Non conformità con correzione, causa radice, azione e verifica dell'efficacia in un unico thread.",
+    "de": "Abweichungen mit Korrektur, Ursache, Maßnahme und Wirksamkeitsprüfung in einem Strang.",
+    "pt": "Não conformidades com correção, causa raiz, ação e verificação da eficácia no mesmo fio."
+  },
+  "Seguimiento y medición mediante KPIs de actualización automática: cumplimiento de registros, desviaciones y reincidencia.": {
+    "en": "Monitoring and measurement through KPIs that update themselves: record completion, deviations and repeat rate.",
+    "fr": "Suivi et mesure via des KPI à mise à jour automatique : complétion des enregistrements, écarts et récidive.",
+    "it": "Monitoraggio e misurazione con KPI ad aggiornamento automatico: completamento delle registrazioni, deviazioni e ricadute.",
+    "de": "Überwachung und Messung über selbstaktualisierende Kennzahlen: Erfüllung der Aufzeichnungen, Abweichungen und Wiederholungen.",
+    "pt": "Acompanhamento e medição através de KPI de atualização automática: cumprimento de registos, desvios e reincidência."
+  },
+  "Auditoría interna con checklist propio, hallazgos convertidos en acciones y cierre trazado.": {
+    "en": "Internal audit with your own checklist, findings turned into actions and a traced closure.",
+    "fr": "Audit interne avec checklist propre, constats convertis en actions et clôture tracée.",
+    "it": "Audit interno con checklist propria, rilievi convertiti in azioni e chiusura tracciata.",
+    "de": "Internes Audit mit eigener Checkliste, Befunde als Maßnahmen und nachvollziehbarem Abschluss.",
+    "pt": "Auditoria interna com checklist próprio, constatações convertidas em ações e encerramento rastreável."
+  },
+  "Es aplicable tanto al mantenimiento de una certificación vigente como a la implantación del sistema para una primera certificación.": {
+    "en": "It applies both to keeping an existing certification alive and to setting the system up for a first certification.",
+    "fr": "Cela vaut aussi bien pour maintenir une certification en cours que pour mettre en place le système en vue d'une première certification.",
+    "it": "Si applica sia al mantenimento di una certificazione in essere sia all'implementazione del sistema per una prima certificazione.",
+    "de": "Es gilt sowohl für die Aufrechterhaltung einer bestehenden Zertifizierung als auch für den Aufbau des Systems für eine Erstzertifizierung.",
+    "pt": "Aplica-se tanto à manutenção de uma certificação em vigor como à implementação do sistema para uma primeira certificação."
+  },
+  "Plantas certificadas en ISO 22000 o FSSC 22000": { "en": "Plants certified to ISO 22000 or FSSC 22000", "fr": "Des usines certifiées ISO 22000 ou FSSC 22000", "it": "Stabilimenti certificati ISO 22000 o FSSC 22000", "de": "Nach ISO 22000 oder FSSC 22000 zertifizierte Werke", "pt": "Fábricas certificadas em ISO 22000 ou FSSC 22000" },
+  "Empresas en proceso de certificación": { "en": "Companies going through certification", "fr": "Des entreprises en cours de certification", "it": "Aziende in corso di certificazione", "de": "Unternehmen im Zertifizierungsprozess", "pt": "Empresas em processo de certificação" },
+  "Responsables de inocuidad alimentaria y equipos HACCP": { "en": "Food safety managers and HACCP teams", "fr": "Des responsables sécurité des aliments et équipes HACCP", "it": "Responsabili di sicurezza alimentare e team HACCP", "de": "Verantwortliche für Lebensmittelsicherheit und HACCP-Teams", "pt": "Responsáveis pela segurança alimentar e equipas HACCP" },
+  "Grupos con varias plantas y un mismo sistema de gestión": { "en": "Groups with several plants on one management system", "fr": "Des groupes multi-usines avec un même système de management", "it": "Gruppi con più stabilimenti e un unico sistema di gestione", "de": "Gruppen mit mehreren Werken und einem Managementsystem", "pt": "Grupos com várias fábricas e um único sistema de gestão" },
+  "Sistemas que hoy se sostienen en Excel y carpetas de red": { "en": "Systems held together today by spreadsheets and network folders", "fr": "Des systèmes qui tiennent aujourd'hui sur Excel et des dossiers réseau", "it": "Sistemi che oggi si reggono su Excel e cartelle di rete", "de": "Systeme, die heute auf Excel und Netzordnern beruhen", "pt": "Sistemas que hoje assentam em Excel e pastas de rede" },
+  "Proveedores a los que su cliente exige el certificado": { "en": "Suppliers whose customer demands the certificate", "fr": "Des fournisseurs à qui leur client exige le certificat", "it": "Fornitori a cui il cliente richiede il certificato", "de": "Lieferanten, von denen der Kunde das Zertifikat verlangt", "pt": "Fornecedores a quem o cliente exige o certificado" },
+  "¿Solved certifica mi planta en ISO 22000?": { "en": "Does Solved certify my plant to ISO 22000?", "fr": "Solved certifie-t-il mon usine ISO 22000 ?", "it": "Solved certifica il mio stabilimento ISO 22000?", "de": "Zertifiziert Solved mein Werk nach ISO 22000?", "pt": "A Solved certifica a minha fábrica em ISO 22000?" },
+  "No. La certificación la emite una entidad acreditada. Solved sostiene la operación diaria del sistema para que la evidencia esté generada antes de la auditoría.": {
+    "en": "No. Certification is issued by an accredited body. Solved carries the system's day-to-day running so the evidence exists before the audit.",
+    "fr": "Non. La certification est délivrée par un organisme accrédité. Solved soutient le fonctionnement quotidien du système pour que la preuve soit produite avant l'audit.",
+    "it": "No. La certificazione la rilascia un ente accreditato. Solved sostiene l'operatività quotidiana del sistema perché l'evidenza sia già generata prima dell'audit.",
+    "de": "Nein. Die Zertifizierung erteilt eine akkreditierte Stelle. Solved trägt den Alltagsbetrieb des Systems, damit der Nachweis vor dem Audit vorliegt.",
+    "pt": "Não. A certificação é emitida por uma entidade acreditada. A Solved sustenta a operação diária do sistema para que a evidência esteja gerada antes da auditoria."
+  },
+  "¿Sirve también para FSSC 22000?": { "en": "Does it work for FSSC 22000 too?", "fr": "Vaut-il aussi pour FSSC 22000 ?", "it": "Vale anche per FSSC 22000?", "de": "Gilt das auch für FSSC 22000?", "pt": "Serve também para FSSC 22000?" },
+  "Sí. FSSC 22000 es ISO 22000 más los prerrequisitos de la serie ISO/TS 22002 y requisitos adicionales. Todos ellos se ejecutan como controles programados que dejan su registro.": {
+    "en": "Yes. FSSC 22000 is ISO 22000 plus the ISO/TS 22002 series prerequisites and some extra requirements. All of them run as scheduled checks that leave a record.",
+    "fr": "Oui. FSSC 22000, c'est ISO 22000 plus les prérequis de la série ISO/TS 22002 et des exigences additionnelles. Tous s'exécutent comme des contrôles programmés qui laissent leur enregistrement.",
+    "it": "Sì. FSSC 22000 è ISO 22000 più i prerequisiti della serie ISO/TS 22002 e requisiti aggiuntivi. Tutti si eseguono come controlli programmati che lasciano la loro registrazione.",
+    "de": "Ja. FSSC 22000 ist ISO 22000 plus die Basisvoraussetzungen der Reihe ISO/TS 22002 und Zusatzanforderungen. Alle laufen als geplante Kontrollen, die eine Aufzeichnung hinterlassen.",
+    "pt": "Sim. A FSSC 22000 é a ISO 22000 mais os pré-requisitos da série ISO/TS 22002 e requisitos adicionais. Todos eles são executados como controlos programados que deixam o seu registo."
+  },
+  "¿Cómo ayuda en la auditoría interna?": { "en": "How does it help with the internal audit?", "fr": "En quoi aide-t-il pour l'audit interne ?", "it": "Come aiuta nell'audit interno?", "de": "Wie hilft es beim internen Audit?", "pt": "Como ajuda na auditoria interna?" },
+  "Con checklist propio por cláusula, hallazgos convertidos en acciones con responsable y plazo, y cierre trazado hasta la verificación de la eficacia.": {
+    "en": "With your own checklist per clause, findings turned into actions with an owner and a deadline, and a closure traced through to the effectiveness check.",
+    "fr": "Avec une checklist propre par clause, des constats convertis en actions avec responsable et échéance, et une clôture tracée jusqu'à la vérification de l'efficacité.",
+    "it": "Con checklist propria per clausola, rilievi convertiti in azioni con responsabile e scadenza, e chiusura tracciata fino alla verifica dell'efficacia.",
+    "de": "Mit eigener Checkliste je Kapitel, Befunden als Maßnahmen mit Verantwortlichem und Frist und einem bis zur Wirksamkeitsprüfung nachvollziehbaren Abschluss.",
+    "pt": "Com checklist próprio por cláusula, constatações convertidas em ações com responsável e prazo, e encerramento rastreável até à verificação da eficácia."
+  },
+  "¿Hay que rehacer la documentación del sistema?": { "en": "Do we have to redo the system's documents?", "fr": "Faut-il refaire la documentation du système ?", "it": "Bisogna rifare la documentazione del sistema?", "de": "Muss die Systemdokumentation neu gemacht werden?", "pt": "É preciso refazer a documentação do sistema?" },
+  "No. Se cargan los formatos ya aprobados. Lo que cambia es el punto de cumplimentación y que la versión vigente pasa a ser única.": {
+    "en": "No. The forms you have already approved are loaded as they are. What changes is where they get filled in, and that there is now only one current version.",
+    "fr": "Non. On charge les formats déjà approuvés. Ce qui change, c'est l'endroit où on les remplit et le fait que la version en vigueur devienne unique.",
+    "it": "No. Si caricano i formati già approvati. Ciò che cambia è il punto di compilazione e il fatto che la versione vigente diventa unica.",
+    "de": "Nein. Die bereits freigegebenen Formulare werden so übernommen. Was sich ändert, ist der Ort des Ausfüllens – und dass es nur noch eine gültige Version gibt.",
+    "pt": "Não. Carregam-se os formatos já aprovados. O que muda é o ponto de preenchimento e o facto de passar a existir apenas uma versão em vigor."
+  },
+  "¿Vale si todavía no estamos certificados?": { "en": "Is it useful if we are not certified yet?", "fr": "Est-ce utile si nous ne sommes pas encore certifiés ?", "it": "Vale se non siamo ancora certificati?", "de": "Lohnt es sich, wenn wir noch nicht zertifiziert sind?", "pt": "Serve se ainda não estamos certificados?" },
+  "Sí, y suele salir más barato: es más fácil montar el sistema registrando desde el principio que reconstruir un año de evidencia el mes antes de la auditoría de certificación.": {
+    "en": "Yes, and it usually works out cheaper: it is easier to build the system recording from the start than to reconstruct a year of evidence the month before the certification audit.",
+    "fr": "Oui, et cela revient généralement moins cher : il est plus facile de monter le système en enregistrant dès le départ que de reconstituer un an de preuves le mois précédant l'audit de certification.",
+    "it": "Sì, e di solito costa meno: è più facile costruire il sistema registrando fin dall'inizio che ricostruire un anno di evidenze il mese prima dell'audit di certificazione.",
+    "de": "Ja, und meist ist es günstiger: Das System von Anfang an mit Aufzeichnungen aufzubauen ist leichter, als einen Monat vor dem Zertifizierungsaudit ein Jahr Nachweise zu rekonstruieren.",
+    "pt": "Sim, e costuma sair mais barato: é mais fácil montar o sistema registando desde o início do que reconstruir um ano de evidência no mês anterior à auditoria de certificação."
+  },
+  "Dos técnicas de inocuidad alimentaria revisan un control en tanques de proceso con una tablet": {
+    "en": "Two food safety technicians review a check at the process tanks with a tablet",
+    "fr": "Deux techniciennes en sécurité des aliments examinent un contrôle près des cuves de process avec une tablette",
+    "it": "Due tecniche di sicurezza alimentare rivedono un controllo ai serbatoi di processo con un tablet",
+    "de": "Zwei Fachkräfte für Lebensmittelsicherheit prüfen eine Kontrolle an den Prozesstanks mit einem Tablet",
+    "pt": "Duas técnicas de segurança alimentar revêm um controlo nos tanques de processo com um tablet"
+  },
+  "Software ISO 22000": { "en": "ISO 22000 software", "fr": "Logiciel ISO 22000", "it": "Software ISO 22000", "de": "ISO-22000-Software", "pt": "Software ISO 22000" },
+  "Software para IFS, BRCGS, ISO 9001 y FSSC 22000 · Solved": {
+    "en": "Software for IFS, BRCGS, ISO 9001 and FSSC 22000 · Solved",
+    "fr": "Logiciel pour IFS, BRCGS, ISO 9001 et FSSC 22000 · Solved",
+    "it": "Software per IFS, BRCGS, ISO 9001 e FSSC 22000 · Solved",
+    "de": "Software für IFS, BRCGS, ISO 9001 und FSSC 22000 · Solved",
+    "pt": "Software para IFS, BRCGS, ISO 9001 e FSSC 22000 · Solved"
+  },
+  "Un único sistema para IFS, BRCGS, GFSI, ISO 9001 y FSSC 22000: registros de control, trazabilidad de lote y auditoría interna con la evidencia ya generada.": {
+    "en": "One system for IFS, BRCGS, GFSI, ISO 9001 and FSSC 22000: control records, batch traceability and internal audit with the evidence already produced.",
+    "fr": "Un seul système pour IFS, BRCGS, GFSI, ISO 9001 et FSSC 22000 : enregistrements de contrôle, traçabilité de lot et audit interne avec la preuve déjà produite.",
+    "it": "Un unico sistema per IFS, BRCGS, GFSI, ISO 9001 e FSSC 22000: registrazioni di controllo, tracciabilità di lotto e audit interno con l'evidenza già generata.",
+    "de": "Ein System für IFS, BRCGS, GFSI, ISO 9001 und FSSC 22000: Kontrollaufzeichnungen, Chargenrückverfolgbarkeit und internes Audit mit bereits erzeugtem Nachweis.",
+    "pt": "Um único sistema para IFS, BRCGS, GFSI, ISO 9001 e FSSC 22000: registos de controlo, rastreabilidade de lote e auditoria interna com a evidência já gerada."
+  },
+  "Certificaciones": { "en": "Certifications", "fr": "Certifications", "it": "Certificazioni", "de": "Zertifizierungen", "pt": "Certificações" },
+  "Prepara IFS, BRCGS, ISO 9001 y FSSC 22000 con un solo sistema": {
+    "en": "Prepare IFS, BRCGS, ISO 9001 and FSSC 22000 with one system",
+    "fr": "Préparez IFS, BRCGS, ISO 9001 et FSSC 22000 avec un seul système",
+    "it": "Prepara IFS, BRCGS, ISO 9001 e FSSC 22000 con un solo sistema",
+    "de": "Bereiten Sie IFS, BRCGS, ISO 9001 und FSSC 22000 mit einem System vor",
+    "pt": "Prepare IFS, BRCGS, ISO 9001 e FSSC 22000 com um único sistema"
+  },
+  "y genera la evidencia una sola vez, no una por norma.": {
+    "en": "and produce the evidence once, not once per standard.",
+    "fr": "et produisez la preuve une seule fois, pas une par norme.",
+    "it": "e genera l'evidenza una sola volta, non una per norma.",
+    "de": "und erzeugen Sie den Nachweis einmal, nicht je Norm neu.",
+    "pt": "e gere a evidência uma única vez, não uma por norma."
+  },
+  "IFS, BRCGS, ISO 9001 y FSSC 22000 comparten la mayor parte de sus requisitos documentales: registros con fecha y responsable, trazabilidad de lote, no conformidades cerradas y auditoría interna. En Solved esa base se genera una vez y da servicio a cualquiera de las cuatro.": {
+    "en": "IFS, BRCGS, ISO 9001 and FSSC 22000 share most of their documentary requirements: records with a date and an owner, batch traceability, closed non-conformities and an internal audit. In Solved that base is produced once and serves any of the four.",
+    "fr": "IFS, BRCGS, ISO 9001 et FSSC 22000 partagent l'essentiel de leurs exigences documentaires : enregistrements datés et attribués, traçabilité de lot, non-conformités closes et audit interne. Dans Solved, cette base se produit une fois et sert les quatre.",
+    "it": "IFS, BRCGS, ISO 9001 e FSSC 22000 condividono gran parte dei requisiti documentali: registrazioni con data e responsabile, tracciabilità di lotto, non conformità chiuse e audit interno. In Solved quella base si genera una volta e serve tutte e quattro.",
+    "de": "IFS, BRCGS, ISO 9001 und FSSC 22000 teilen den Großteil ihrer Dokumentationsanforderungen: Aufzeichnungen mit Datum und Verantwortlichem, Chargenrückverfolgbarkeit, geschlossene Abweichungen und internes Audit. In Solved entsteht diese Basis einmal und bedient alle vier.",
+    "pt": "IFS, BRCGS, ISO 9001 e FSSC 22000 partilham a maior parte dos seus requisitos documentais: registos com data e responsável, rastreabilidade de lote, não conformidades encerradas e auditoria interna. Na Solved essa base gera-se uma vez e serve qualquer uma das quatro."
+  },
+  "Un sistema por norma multiplica el mismo trabajo documental": {
+    "en": "One system per standard multiplies the same paperwork",
+    "fr": "Un système par norme multiplie le même travail documentaire",
+    "it": "Un sistema per norma moltiplica lo stesso lavoro documentale",
+    "de": "Ein System je Norm vervielfacht dieselbe Dokumentationsarbeit",
+    "pt": "Um sistema por norma multiplica o mesmo trabalho documental"
+  },
+  "Cada certificación incorpora su propio archivo, su plantilla y su formato, que acaban coexistiendo con los de las demás. Los datos son los mismos; lo que se multiplica es el trabajo de recopilación.": {
+    "en": "Each certification brings its own file, its template and its format, which end up sitting alongside everyone else's. The data is the same; what multiplies is the work of gathering it.",
+    "fr": "Chaque certification apporte son propre dossier, son modèle et son format, qui finissent par coexister avec ceux des autres. Les données sont les mêmes ; ce qui se multiplie, c'est le travail de collecte.",
+    "it": "Ogni certificazione porta il proprio archivio, il proprio modello e il proprio formato, che finiscono per convivere con quelli delle altre. I dati sono gli stessi; ciò che si moltiplica è il lavoro di raccolta.",
+    "de": "Jede Zertifizierung bringt ihre eigene Ablage, Vorlage und ihr Format mit, die am Ende neben denen der anderen bestehen. Die Daten sind dieselben; was sich vervielfacht, ist die Sammelarbeit.",
+    "pt": "Cada certificação traz o seu próprio arquivo, o seu modelo e o seu formato, que acabam por coexistir com os das restantes. Os dados são os mesmos; o que se multiplica é o trabalho de recolha."
+  },
+  "Cada norma mantiene su archivo y su hoja de cálculo, y los mismos registros se duplican dos o tres veces.": {
+    "en": "Each standard keeps its own file and spreadsheet, and the same records are duplicated two or three times.",
+    "fr": "Chaque norme garde son dossier et son tableur, et les mêmes enregistrements sont dupliqués deux ou trois fois.",
+    "it": "Ogni norma mantiene il suo archivio e il suo foglio di calcolo, e le stesse registrazioni si duplicano due o tre volte.",
+    "de": "Jede Norm führt ihre eigene Ablage und Tabelle, und dieselben Aufzeichnungen liegen zwei- oder dreifach vor.",
+    "pt": "Cada norma mantém o seu arquivo e a sua folha de cálculo, e os mesmos registos duplicam-se duas ou três vezes."
+  },
+  "Cada nueva certificación se implanta desde cero, sin reutilizar el histórico de registros de la planta.": {
+    "en": "Each new certification is set up from scratch, without reusing the plant's record history.",
+    "fr": "Chaque nouvelle certification se met en place depuis zéro, sans réutiliser l'historique des enregistrements de l'usine.",
+    "it": "Ogni nuova certificazione si implanta da zero, senza riutilizzare lo storico delle registrazioni dello stabilimento.",
+    "de": "Jede neue Zertifizierung wird bei null aufgebaut, ohne die Aufzeichnungshistorie des Werks zu nutzen.",
+    "pt": "Cada nova certificação implementa-se do zero, sem reutilizar o histórico de registos da fábrica."
+  },
+  "La trazabilidad de lote que solicita el auditor de IFS es la que solicita el de ISO 9001 bajo otra denominación.": {
+    "en": "The batch traceability the IFS auditor asks for is the one the ISO 9001 auditor asks for under a different name.",
+    "fr": "La traçabilité de lot demandée par l'auditeur IFS est celle que demande l'auditeur ISO 9001 sous un autre nom.",
+    "it": "La tracciabilità di lotto che chiede l'auditor IFS è quella che chiede quello ISO 9001 con un altro nome.",
+    "de": "Die Chargenrückverfolgbarkeit, die der IFS-Auditor verlangt, ist dieselbe, die der ISO-9001-Auditor unter anderem Namen verlangt.",
+    "pt": "A rastreabilidade de lote que o auditor de IFS pede é a mesma que o de ISO 9001 pede com outro nome."
+  },
+  "Los hallazgos de la auditoría interna quedan en un acta que no se recupera hasta el ejercicio siguiente.": {
+    "en": "The internal audit findings sit in minutes that nobody opens again until the following year.",
+    "fr": "Les constats de l'audit interne restent dans un compte rendu que l'on ne rouvre pas avant l'exercice suivant.",
+    "it": "I rilievi dell'audit interno restano in un verbale che non si riapre fino all'esercizio successivo.",
+    "de": "Die Befunde des internen Audits stehen in einem Protokoll, das erst im Folgejahr wieder geöffnet wird.",
+    "pt": "As constatações da auditoria interna ficam numa ata que só se volta a abrir no exercício seguinte."
+  },
+  "No existe control del vencimiento de los certificados de proveedor hasta que uno de ellos caduca.": {
+    "en": "There is no control over supplier certificate expiry until one of them lapses.",
+    "fr": "Il n'existe aucun suivi des échéances des certificats fournisseurs jusqu'à ce que l'un d'eux expire.",
+    "it": "Non esiste controllo sulle scadenze dei certificati dei fornitori finché uno di essi non scade.",
+    "de": "Es gibt keine Fristenkontrolle bei Lieferantenzertifikaten, bis eines davon abläuft.",
+    "pt": "Não existe controlo do prazo de validade dos certificados de fornecedor até que um deles caduque."
+  },
+  "Los requisitos comunes, cubiertos una sola vez": { "en": "The shared requirements, covered once", "fr": "Les exigences communes, couvertes une seule fois", "it": "I requisiti comuni, coperti una sola volta", "de": "Die gemeinsamen Anforderungen, einmal abgedeckt", "pt": "Os requisitos comuns, cobertos uma única vez" },
+  "Solved no incorpora los requisitos de cada norma preconfigurados: sostiene los cuatro elementos que todas exigen, de modo que la evidencia esté generada antes de que el auditor la solicite.": {
+    "en": "Solved does not ship each standard's requirements preconfigured: it carries the four things they all demand, so the evidence exists before the auditor asks for it.",
+    "fr": "Solved n'intègre pas les exigences de chaque norme préconfigurées : il soutient les quatre éléments que toutes exigent, pour que la preuve soit produite avant que l'auditeur ne la demande.",
+    "it": "Solved non incorpora i requisiti di ogni norma preconfigurati: sostiene i quattro elementi che tutte richiedono, così l'evidenza è generata prima che l'auditor la chieda.",
+    "de": "Solved liefert die Anforderungen jeder Norm nicht vorkonfiguriert mit: Es trägt die vier Elemente, die alle verlangen, damit der Nachweis vorliegt, bevor der Auditor danach fragt.",
+    "pt": "A Solved não traz os requisitos de cada norma pré-configurados: sustenta os quatro elementos que todas exigem, para que a evidência esteja gerada antes de o auditor a pedir."
+  },
+  "Registros con fecha, hora, responsable y evidencia: la base documental común a todas las normas.": {
+    "en": "Records with date, time, owner and evidence: the documentary base common to every standard.",
+    "fr": "Des enregistrements avec date, heure, responsable et preuve : la base documentaire commune à toutes les normes.",
+    "it": "Registrazioni con data, ora, responsabile ed evidenza: la base documentale comune a tutte le norme.",
+    "de": "Aufzeichnungen mit Datum, Uhrzeit, Verantwortlichem und Nachweis: die allen Normen gemeinsame Dokumentationsbasis.",
+    "pt": "Registos com data, hora, responsável e evidência: a base documental comum a todas as normas."
+  },
+  "Trazabilidad de lote ascendente y descendente, para responder a la muestra que seleccione el auditor.": {
+    "en": "Batch traceability upstream and downstream, ready for whatever sample the auditor picks.",
+    "fr": "Traçabilité de lot amont et aval, pour répondre à l'échantillon que choisit l'auditeur.",
+    "it": "Tracciabilità di lotto a monte e a valle, per rispondere al campione che sceglie l'auditor.",
+    "de": "Chargenrückverfolgbarkeit vorwärts und rückwärts – bereit für jede Stichprobe des Auditors.",
+    "pt": "Rastreabilidade de lote a montante e a jusante, pronta para responder à amostra que o auditor escolher."
+  },
+  "Auditoría interna planificada, con checklist propio y hallazgos convertidos en acciones con plazo.": {
+    "en": "A planned internal audit, with your own checklist and findings turned into actions with deadlines.",
+    "fr": "Un audit interne planifié, avec checklist propre et constats convertis en actions avec échéance.",
+    "it": "Audit interno pianificato, con checklist propria e rilievi convertiti in azioni con scadenza.",
+    "de": "Geplantes internes Audit, mit eigener Checkliste und Befunden als Maßnahmen mit Frist.",
+    "pt": "Auditoria interna planeada, com checklist próprio e constatações convertidas em ações com prazo."
+  },
+  "Información documentada con versión única: la plantilla vigente es la que muestra el dispositivo de planta.": {
+    "en": "Documented information in a single version: the current template is the one on the shop-floor device.",
+    "fr": "Une information documentée à version unique : le modèle en vigueur est celui qu'affiche l'appareil de l'usine.",
+    "it": "Informazioni documentate a versione unica: il modello vigente è quello che mostra il dispositivo di stabilimento.",
+    "de": "Dokumentierte Information in einer Fassung: Die gültige Vorlage ist die auf dem Gerät im Werk.",
+    "pt": "Informação documentada com versão única: o modelo em vigor é o que o dispositivo de fábrica mostra."
+  },
+  "Proveedores con su documentación actualizada y su control de vencimientos, requisito habitual de apertura.": {
+    "en": "Suppliers with up-to-date documents and expiry tracking, a common opening requirement.",
+    "fr": "Des fournisseurs avec une documentation à jour et un suivi des échéances, exigence d'ouverture courante.",
+    "it": "Fornitori con documentazione aggiornata e controllo delle scadenze, requisito d'apertura consueto.",
+    "de": "Lieferanten mit aktueller Dokumentation und Fristenkontrolle – eine übliche Eingangsanforderung.",
+    "pt": "Fornecedores com a documentação atualizada e o seu controlo de prazos de validade, requisito habitual de abertura."
+  },
+  "Norma por norma": { "en": "Standard by standard", "fr": "Norme par norme", "it": "Norma per norma", "de": "Norm für Norm", "pt": "Norma a norma" },
+  "Requisitos de cada norma y detalle ampliado. La aportación de Solved es la misma en todas: la evidencia, ya generada.": {
+    "en": "Each standard's requirements, spelled out. What Solved contributes is the same in all of them: the evidence, already produced.",
+    "fr": "Les exigences de chaque norme, en détail. L'apport de Solved est le même partout : la preuve, déjà produite.",
+    "it": "I requisiti di ogni norma, in dettaglio. L'apporto di Solved è lo stesso in tutte: l'evidenza, già generata.",
+    "de": "Die Anforderungen jeder Norm im Detail. Der Beitrag von Solved ist überall derselbe: der bereits erzeugte Nachweis.",
+    "pt": "Requisitos de cada norma e detalhe alargado. O contributo da Solved é o mesmo em todas: a evidência, já gerada."
+  },
+  "Registros de control, trazabilidad y gestión de incidencias disponibles para auditoría, con histórico filtrable por lote y fecha.": {
+    "en": "Control records, traceability and incident management ready for audit, with a history filterable by batch and date.",
+    "fr": "Enregistrements de contrôle, traçabilité et gestion des incidents disponibles pour l'audit, avec un historique filtrable par lot et par date.",
+    "it": "Registrazioni di controllo, tracciabilità e gestione delle anomalie disponibili per l'audit, con storico filtrabile per lotto e data.",
+    "de": "Kontrollaufzeichnungen, Rückverfolgbarkeit und Störungsmanagement auditbereit, mit nach Charge und Datum filterbarer Historie.",
+    "pt": "Registos de controlo, rastreabilidade e gestão de ocorrências disponíveis para auditoria, com histórico filtrável por lote e data."
+  },
+  "IFS Food:": { "en": "IFS Food:", "fr": "IFS Food :", "it": "IFS Food:", "de": "IFS Food:", "pt": "IFS Food:" },
+  "Leer la guía de IFS Food →": { "en": "Read the IFS Food guide →", "fr": "Lire le guide IFS Food →", "it": "Leggi la guida IFS Food →", "de": "Zum IFS-Food-Leitfaden →", "pt": "Ler o guia de IFS Food →" },
+  "El mismo esquema para la norma anteriormente denominada BRC: evidencia de ejecución, acciones cerradas y documentación vigente.": {
+    "en": "The same scheme for the standard formerly called BRC: evidence of execution, closed actions and current documents.",
+    "fr": "Le même schéma pour la norme anciennement appelée BRC : preuve d'exécution, actions closes et documentation en vigueur.",
+    "it": "Lo stesso schema per la norma prima chiamata BRC: evidenza di esecuzione, azioni chiuse e documentazione vigente.",
+    "de": "Dasselbe Schema für die früher BRC genannte Norm: Ausführungsnachweis, geschlossene Maßnahmen und gültige Dokumentation.",
+    "pt": "O mesmo esquema para a norma anteriormente designada BRC: evidência de execução, ações encerradas e documentação em vigor."
+  },
+  "BRCGS:": { "en": "BRCGS:", "fr": "BRCGS :", "it": "BRCGS:", "de": "BRCGS:", "pt": "BRCGS:" },
+  "Leer la guía de BRCGS →": { "en": "Read the BRCGS guide →", "fr": "Lire le guide BRCGS →", "it": "Leggi la guida BRCGS →", "de": "Zum BRCGS-Leitfaden →", "pt": "Ler o guia de BRCGS →" },
+  "Sistema de gestión de la inocuidad con sus prerrequisitos, su verificación y su auditoría interna, con página propia.": {
+    "en": "A food safety management system with its prerequisites, its verification and its internal audit, on a page of its own.",
+    "fr": "Un système de management de la sécurité des aliments avec ses prérequis, sa vérification et son audit interne, sur une page dédiée.",
+    "it": "Sistema di gestione della sicurezza alimentare con i suoi prerequisiti, la sua verifica e il suo audit interno, con pagina propria.",
+    "de": "Ein Managementsystem für Lebensmittelsicherheit mit Basisvoraussetzungen, Verifizierung und internem Audit – auf einer eigenen Seite.",
+    "pt": "Sistema de gestão da segurança alimentar com os seus pré-requisitos, a sua verificação e a sua auditoria interna, com página própria."
+  },
+  "ISO 22000 y FSSC 22000:": { "en": "ISO 22000 and FSSC 22000:", "fr": "ISO 22000 et FSSC 22000 :", "it": "ISO 22000 e FSSC 22000:", "de": "ISO 22000 und FSSC 22000:", "pt": "ISO 22000 e FSSC 22000:" },
+  "Calidad, no inocuidad: control de procesos, trazabilidad y acciones correctivas. La checklist de auditoría, paso a paso.": {
+    "en": "Quality, not food safety: process control, traceability and corrective actions. The audit checklist, step by step.",
+    "fr": "Qualité, pas sécurité des aliments : maîtrise des procédés, traçabilité et actions correctives. La checklist d'audit, pas à pas.",
+    "it": "Qualità, non sicurezza alimentare: controllo di processo, tracciabilità e azioni correttive. La checklist di audit, passo dopo passo.",
+    "de": "Qualität, nicht Lebensmittelsicherheit: Prozesslenkung, Rückverfolgbarkeit und Korrekturmaßnahmen. Die Audit-Checkliste, Schritt für Schritt.",
+    "pt": "Qualidade, não segurança alimentar: controlo de processos, rastreabilidade e ações corretivas. A checklist de auditoria, passo a passo."
+  },
+  "ISO 9001:": { "en": "ISO 9001:", "fr": "ISO 9001 :", "it": "ISO 9001:", "de": "ISO 9001:", "pt": "ISO 9001:" },
+  "Ver la checklist de ISO 9001 →": { "en": "See the ISO 9001 checklist →", "fr": "Voir la checklist ISO 9001 →", "it": "Vedi la checklist ISO 9001 →", "de": "Zur ISO-9001-Checkliste →", "pt": "Ver a checklist de ISO 9001 →" },
+  "GFSI no certifica: reconoce esquemas. Un certificado reconocido por GFSI es, en la práctica, IFS, BRCGS o FSSC 22000.": {
+    "en": "GFSI does not certify: it recognises schemes. A GFSI-recognised certificate is, in practice, IFS, BRCGS or FSSC 22000.",
+    "fr": "GFSI ne certifie pas : il reconnaît des référentiels. Un certificat reconnu par GFSI est, en pratique, IFS, BRCGS ou FSSC 22000.",
+    "it": "GFSI non certifica: riconosce schemi. Un certificato riconosciuto da GFSI è, in pratica, IFS, BRCGS o FSSC 22000.",
+    "de": "GFSI zertifiziert nicht: Es erkennt Standards an. Ein GFSI-anerkanntes Zertifikat ist in der Praxis IFS, BRCGS oder FSSC 22000.",
+    "pt": "A GFSI não certifica: reconhece esquemas. Um certificado reconhecido pela GFSI é, na prática, IFS, BRCGS ou FSSC 22000."
+  },
+  "GFSI:": { "en": "GFSI:", "fr": "GFSI :", "it": "GFSI:", "de": "GFSI:", "pt": "GFSI:" },
+  "Ver la comparativa de normas →": { "en": "See the standards comparison →", "fr": "Voir la comparaison des normes →", "it": "Vedi il confronto tra norme →", "de": "Zum Normenvergleich →", "pt": "Ver a comparação de normas →" },
+  "Medioambiente y seguridad laboral, con la misma mecánica: control programado, registro con responsable, hallazgo y acción.": {
+    "en": "Environment and occupational safety, with the same mechanics: scheduled check, record with an owner, finding and action.",
+    "fr": "Environnement et santé-sécurité au travail, avec la même mécanique : contrôle programmé, enregistrement avec responsable, constat et action.",
+    "it": "Ambiente e sicurezza sul lavoro, con la stessa meccanica: controllo programmato, registrazione con responsabile, rilievo e azione.",
+    "de": "Umwelt und Arbeitssicherheit, nach derselben Mechanik: geplante Kontrolle, Aufzeichnung mit Verantwortlichem, Befund und Maßnahme.",
+    "pt": "Ambiente e segurança no trabalho, com a mesma mecânica: controlo programado, registo com responsável, constatação e ação."
+  },
+  "ISO 14001 y 45001:": { "en": "ISO 14001 and 45001:", "fr": "ISO 14001 et 45001 :", "it": "ISO 14001 e 45001:", "de": "ISO 14001 und 45001:", "pt": "ISO 14001 e 45001:" },
+  "Sobre todo para plantas con más de una certificación encima, que es donde el trabajo duplicado se nota. Con una sola, el ahorro está en no montar la siguiente desde cero.": {
+    "en": "Above all for plants carrying more than one certification, where the duplicated work shows. With just one, the saving is in not building the next from scratch.",
+    "fr": "Surtout pour les usines avec plus d'une certification, là où le travail en double se voit. Avec une seule, l'économie consiste à ne pas monter la suivante depuis zéro.",
+    "it": "Soprattutto per stabilimenti con più di una certificazione addosso, dove il lavoro duplicato si nota. Con una sola, il risparmio sta nel non costruire la successiva da zero.",
+    "de": "Vor allem für Werke mit mehr als einer Zertifizierung – dort fällt die doppelte Arbeit auf. Mit nur einer liegt der Gewinn darin, die nächste nicht bei null aufbauen zu müssen.",
+    "pt": "Sobretudo para fábricas com mais de uma certificação em simultâneo, que é onde o trabalho duplicado mais se nota. Com apenas uma, a poupança está em não montar a seguinte do zero."
+  },
+  "Plantas con dos o más certificaciones a la vez": { "en": "Plants holding two or more certifications at once", "fr": "Des usines avec deux certifications ou plus en même temps", "it": "Stabilimenti con due o più certificazioni insieme", "de": "Werke mit zwei oder mehr Zertifizierungen gleichzeitig", "pt": "Fábricas com duas ou mais certificações em simultâneo" },
+  "Empresas que preparan su primera certificación": { "en": "Companies preparing their first certification", "fr": "Des entreprises qui préparent leur première certification", "it": "Aziende che preparano la loro prima certificazione", "de": "Unternehmen vor ihrer ersten Zertifizierung", "pt": "Empresas a preparar a sua primeira certificação" },
+  "Responsables de calidad y de sistemas de gestión": { "en": "Quality and management system managers", "fr": "Des responsables qualité et systèmes de management", "it": "Responsabili qualità e sistemi di gestione", "de": "Verantwortliche für Qualität und Managementsysteme", "pt": "Responsáveis pela qualidade e por sistemas de gestão" },
+  "Grupos que quieren el mismo sistema en todas sus plantas": { "en": "Groups that want the same system in every plant", "fr": "Des groupes qui veulent le même système dans toutes leurs usines", "it": "Gruppi che vogliono lo stesso sistema in tutti gli stabilimenti", "de": "Gruppen, die dasselbe System in allen Werken wollen", "pt": "Grupos que querem o mesmo sistema em todas as suas fábricas" },
+  "Quien hoy lleva una carpeta por norma": { "en": "Anyone keeping one folder per standard today", "fr": "Ceux qui tiennent aujourd'hui un dossier par norme", "it": "Chi oggi tiene una cartella per norma", "de": "Wer heute je Norm einen Ordner führt", "pt": "Quem hoje tem uma pasta por norma" },
+  "Proveedores a los que su cliente exige certificado": { "en": "Suppliers whose customer demands a certificate", "fr": "Des fournisseurs à qui leur client exige un certificat", "it": "Fornitori a cui il cliente richiede un certificato", "de": "Lieferanten, von denen der Kunde ein Zertifikat verlangt", "pt": "Fornecedores a quem o cliente exige certificado" },
+  "¿Sirve para más de una norma a la vez?": { "en": "Does it work for more than one standard at once?", "fr": "Vaut-il pour plus d'une norme à la fois ?", "it": "Vale per più di una norma alla volta?", "de": "Taugt es für mehrere Normen gleichzeitig?", "pt": "Serve para mais de uma norma ao mesmo tempo?" },
+  "Sí, y es el motivo de esta página. El registro de un control, la trazabilidad de un lote o una acción correctiva no varían según la entidad auditora: se hacen una vez y responden a la norma que toque.": {
+    "en": "Yes, and that is the point of this page. Logging a check, tracing a batch or a corrective action do not change with the certification body: they are done once and answer whichever standard applies.",
+    "fr": "Oui, et c'est la raison de cette page. L'enregistrement d'un contrôle, la traçabilité d'un lot ou une action corrective ne varient pas selon l'organisme auditeur : ils se font une fois et répondent à la norme concernée.",
+    "it": "Sì, ed è il motivo di questa pagina. La registrazione di un controllo, la tracciabilità di un lotto o un'azione correttiva non cambiano secondo l'ente auditore: si fanno una volta e rispondono alla norma che tocca.",
+    "de": "Ja, und genau darum geht es auf dieser Seite. Eine Kontrolle zu erfassen, eine Charge zurückzuverfolgen oder eine Korrekturmaßnahme zu führen ändert sich nicht je Zertifizierer: Es geschieht einmal und bedient die jeweils geltende Norm.",
+    "pt": "Sim, e é esse o motivo desta página. O registo de um controlo, a rastreabilidade de um lote ou uma ação corretiva não variam consoante a entidade auditora: fazem-se uma vez e respondem à norma que for necessária."
+  },
+  "¿Solved certifica mi planta?": { "en": "Does Solved certify my plant?", "fr": "Solved certifie-t-il mon usine ?", "it": "Solved certifica il mio stabilimento?", "de": "Zertifiziert Solved mein Werk?", "pt": "A Solved certifica a minha fábrica?" },
+  "No. Certificar es cosa de una entidad acreditada. Lo que hace Solved es sostener el día a día del sistema para que, cuando llegue la auditoría, la evidencia esté hecha y no haya que fabricarla.": {
+    "en": "No. Certifying is a job for an accredited body. What Solved does is carry the system day to day so that, when the audit arrives, the evidence is there and does not have to be manufactured.",
+    "fr": "Non. Certifier relève d'un organisme accrédité. Ce que fait Solved, c'est soutenir le quotidien du système pour que, à l'arrivée de l'audit, la preuve soit faite et n'ait pas à être fabriquée.",
+    "it": "No. Certificare spetta a un ente accreditato. Quello che fa Solved è sostenere il quotidiano del sistema perché, quando arriva l'audit, l'evidenza sia già fatta e non vada fabbricata.",
+    "de": "Nein. Zertifizieren ist Sache einer akkreditierten Stelle. Solved trägt den Alltag des Systems, damit beim Audit der Nachweis vorliegt und nicht erst hergestellt werden muss.",
+    "pt": "Não. Certificar é tarefa de uma entidade acreditada. O que a Solved faz é sustentar o dia a dia do sistema para que, quando chegar a auditoria, a evidência já esteja feita e não seja preciso fabricá-la."
+  },
+  "¿Y si nos auditan de dos normas el mismo año?": { "en": "What if we are audited against two standards in the same year?", "fr": "Et si nous sommes audités sur deux normes la même année ?", "it": "E se ci auditano su due norme lo stesso anno?", "de": "Und wenn wir im selben Jahr nach zwei Normen auditiert werden?", "pt": "E se formos auditados a duas normas no mesmo ano?" },
+  "El mismo registro vale para las dos. Lo que cambia es el checklist de la auditoría interna y qué evidencia se filtra, no el trabajo de planta.": {
+    "en": "The same record serves both. What changes is the internal audit checklist and which evidence you filter, not the work on the floor.",
+    "fr": "Le même enregistrement vaut pour les deux. Ce qui change, c'est la checklist de l'audit interne et la preuve que l'on filtre, pas le travail en usine.",
+    "it": "La stessa registrazione vale per entrambe. Ciò che cambia è la checklist dell'audit interno e quale evidenza si filtra, non il lavoro di stabilimento.",
+    "de": "Dieselbe Aufzeichnung gilt für beide. Was sich ändert, ist die Checkliste des internen Audits und welcher Nachweis gefiltert wird – nicht die Arbeit im Werk.",
+    "pt": "O mesmo registo serve para as duas. O que muda é o checklist da auditoria interna e que evidência se filtra, não o trabalho de fábrica."
+  },
+  "¿Trae los requisitos de cada norma cargados?": { "en": "Does it come with each standard's requirements loaded?", "fr": "Les exigences de chaque norme sont-elles préchargées ?", "it": "Porta i requisiti di ogni norma già caricati?", "de": "Sind die Anforderungen jeder Norm vorinstalliert?", "pt": "Já vem com os requisitos de cada norma carregados?" },
+  "No, y conviene precisarlo: Solved no interpreta la norma ni sustituye al consultor. Lo que aporta es que aquello que el sistema documenta se ejecute y quede demostrado.": {
+    "en": "No, and it is worth being precise: Solved does not interpret the standard or replace the consultant. What it adds is that whatever the system documents actually gets done and can be proven.",
+    "fr": "Non, et il faut le préciser : Solved n'interprète pas la norme et ne remplace pas le consultant. Ce qu'il apporte, c'est que ce que le système documente soit réalisé et démontré.",
+    "it": "No, ed è bene precisarlo: Solved non interpreta la norma né sostituisce il consulente. Quello che aggiunge è che ciò che il sistema documenta venga eseguito e resti dimostrato.",
+    "de": "Nein, und das sollte man präzisieren: Solved legt die Norm nicht aus und ersetzt den Berater nicht. Sein Beitrag ist, dass das, was das System dokumentiert, auch getan und belegt wird.",
+    "pt": "Não, e convém precisá-lo: a Solved não interpreta a norma nem substitui o consultor. O que traz é que aquilo que o sistema documenta seja executado e fique demonstrado."
+  },
+  "¿Vale para ISO 14001 o ISO 45001?": { "en": "Does it work for ISO 14001 or ISO 45001?", "fr": "Vaut-il pour ISO 14001 ou ISO 45001 ?", "it": "Vale per ISO 14001 o ISO 45001?", "de": "Gilt das auch für ISO 14001 oder ISO 45001?", "pt": "Serve para ISO 14001 ou ISO 45001?" },
+  "Sí, con la misma mecánica: control programado, registro con responsable, hallazgo y acción hasta el cierre. Cambia qué se controla, no cómo se registra.": {
+    "en": "Yes, with the same mechanics: scheduled check, record with an owner, finding and action through to closure. What changes is what you check, not how you record it.",
+    "fr": "Oui, avec la même mécanique : contrôle programmé, enregistrement avec responsable, constat et action jusqu'à la clôture. Ce qui change, c'est ce qu'on contrôle, pas la façon de l'enregistrer.",
+    "it": "Sì, con la stessa meccanica: controllo programmato, registrazione con responsabile, rilievo e azione fino alla chiusura. Cambia cosa si controlla, non come si registra.",
+    "de": "Ja, nach derselben Mechanik: geplante Kontrolle, Aufzeichnung mit Verantwortlichem, Befund und Maßnahme bis zum Abschluss. Was sich ändert, ist der Prüfgegenstand, nicht die Erfassung.",
+    "pt": "Sim, com a mesma mecânica: controlo programado, registo com responsável, constatação e ação até ao encerramento. Muda o que se controla, não como se regista."
+  },
+  "¿Hay que rehacer los formatos que ya tenemos aprobados?": {
+    "en": "Do we have to redo the forms we already have approved?",
+    "fr": "Faut-il refaire les formats que nous avons déjà approuvés ?",
+    "it": "Bisogna rifare i formati che abbiamo già approvato?",
+    "de": "Müssen wir die bereits freigegebenen Formulare neu machen?",
+    "pt": "É preciso refazer os formatos que já temos aprovados?"
+  },
+  "No. Se cargan tal cual. Lo que cambia es dónde se rellenan y que la versión vigente pasa a ser una sola.": {
+    "en": "No. They are loaded as they are. What changes is where they get filled in, and that there is now a single current version.",
+    "fr": "Non. Ils sont chargés tels quels. Ce qui change, c'est l'endroit où on les remplit et le fait qu'il n'y ait plus qu'une version en vigueur.",
+    "it": "No. Si caricano così come sono. Ciò che cambia è dove si compilano e il fatto che la versione vigente diventa una sola.",
+    "de": "Nein. Sie werden unverändert übernommen. Was sich ändert, ist der Ort des Ausfüllens – und dass es nur noch eine gültige Version gibt.",
+    "pt": "Não. Carregam-se tal como estão. O que muda é onde se preenchem e o facto de passar a existir apenas uma versão em vigor."
+  },
+  "Responsable de planta revisa los registros de una auditoría de certificación en la tablet": {
+    "en": "A plant manager reviews the records for a certification audit on a tablet",
+    "fr": "Un responsable d'usine examine les enregistrements d'un audit de certification sur la tablette",
+    "it": "Un responsabile di stabilimento rivede le registrazioni di un audit di certificazione sul tablet",
+    "de": "Ein Werksverantwortlicher prüft die Aufzeichnungen für ein Zertifizierungsaudit auf dem Tablet",
+    "pt": "Um responsável de fábrica revê os registos de uma auditoria de certificação no tablet"
+  },
+  "Software de homologación de proveedores en calidad · Solved": {
+    "en": "Supplier approval software for quality teams · Solved",
+    "fr": "Logiciel d'homologation des fournisseurs pour la qualité · Solved",
+    "it": "Software di qualifica fornitori per la qualità · Solved",
+    "de": "Software zur Lieferantenfreigabe für die Qualität · Solved",
+    "pt": "Software de qualificação de fornecedores para a qualidade · Solved"
+  },
+  "Homologación de proveedores desde calidad: certificados con vencimiento, fichas técnicas, analíticas e incidencias de recepción en un mismo expediente.": {
+    "en": "Supplier approval run by quality: certificates with expiry dates, spec sheets, lab reports and goods-in incidents in one file.",
+    "fr": "Homologation des fournisseurs pilotée par la qualité : certificats avec échéance, fiches techniques, analyses et incidents de réception dans un même dossier.",
+    "it": "Qualifica fornitori dalla qualità: certificati con scadenza, schede tecniche, analisi e anomalie di ricevimento in un unico fascicolo.",
+    "de": "Lieferantenfreigabe aus der Qualität heraus: Zertifikate mit Ablaufdatum, Datenblätter, Analysen und Wareneingangsstörungen in einer Akte.",
+    "pt": "Qualificação de fornecedores a partir da qualidade: certificados com prazo de validade, fichas técnicas, análises e ocorrências de receção no mesmo processo."
+  },
+  "Homologación de proveedores": { "en": "Supplier approval", "fr": "Homologation des fournisseurs", "it": "Qualifica fornitori", "de": "Lieferantenfreigabe", "pt": "Qualificação de fornecedores" },
+  "Homologa y evalúa a tus proveedores desde calidad:": {
+    "en": "Approve and rate your suppliers from quality:",
+    "fr": "Homologuez et évaluez vos fournisseurs depuis la qualité :",
+    "it": "Qualifica e valuta i tuoi fornitori dalla qualità:",
+    "de": "Lieferanten aus der Qualität heraus freigeben und bewerten:",
+    "pt": "Qualifique e avalie os seus fornecedores a partir da qualidade:"
+  },
+  "certificados al día, recepciones enlazadas y reclamaciones con plazo.": {
+    "en": "certificates up to date, deliveries linked and claims with a deadline.",
+    "fr": "certificats à jour, réceptions liées et réclamations avec échéance.",
+    "it": "certificati aggiornati, ricevimenti collegati e reclami con scadenza.",
+    "de": "aktuelle Zertifikate, verknüpfte Wareneingänge und Reklamationen mit Frist.",
+    "pt": "certificados em dia, receções ligadas e reclamações com prazo."
+  },
+  "La mayoría de las plataformas de homologación proceden del área de compras o de la coordinación de actividades empresariales. En Solved el proceso lo resuelve el gestor documental: certificado, ficha técnica y analítica se conservan junto al histórico de incidencias de recepción de ese proveedor.": {
+    "en": "Most approval platforms come out of purchasing or contractor coordination. In Solved the process is handled by the document manager: certificate, spec sheet and lab report are kept alongside that supplier's history of goods-in incidents.",
+    "fr": "La plupart des plateformes d'homologation viennent des achats ou de la coordination des activités d'entreprises. Dans Solved, le processus est traité par la gestion documentaire : certificat, fiche technique et analyse sont conservés avec l'historique des incidents de réception de ce fournisseur.",
+    "it": "La maggior parte delle piattaforme di qualifica nasce dagli acquisti o dal coordinamento delle attività aziendali. In Solved il processo lo risolve la gestione documentale: certificato, scheda tecnica e analisi si conservano insieme allo storico delle anomalie di ricevimento di quel fornitore.",
+    "de": "Die meisten Freigabeplattformen stammen aus dem Einkauf oder der Fremdfirmenkoordination. In Solved erledigt das Dokumentenmanagement den Prozess: Zertifikat, Datenblatt und Analyse liegen neben der Historie der Wareneingangsstörungen dieses Lieferanten.",
+    "pt": "A maioria das plataformas de qualificação vem da área de compras ou da coordenação de atividades empresariais. Na Solved o processo é resolvido pela gestão documental: certificado, ficha técnica e análise conservam-se junto do histórico de ocorrências de receção desse fornecedor."
+  },
+  "El expediente del proveedor está completo, repartido en cuatro soportes": {
+    "en": "The supplier file is complete — spread across four places",
+    "fr": "Le dossier du fournisseur est complet, réparti sur quatre supports",
+    "it": "Il fascicolo del fornitore è completo, sparso su quattro supporti",
+    "de": "Die Lieferantenakte ist vollständig – verteilt auf vier Ablagen",
+    "pt": "O processo do fornecedor está completo, repartido por quatro suportes"
+  },
+  "La documentación llega por correo, se archiva en una carpeta, se anota en una hoja de cálculo y se completa con conocimiento no documentado. La solicitud del certificado vigente de un proveedor concreto obliga a reconstruir el expediente.": {
+    "en": "The documents arrive by email, get filed in a folder, are noted in a spreadsheet and are completed with undocumented knowledge. Asking for one supplier's current certificate means rebuilding the file.",
+    "fr": "La documentation arrive par courriel, est classée dans un dossier, notée dans un tableur et complétée par des connaissances non documentées. Demander le certificat en vigueur d'un fournisseur précis oblige à reconstituer le dossier.",
+    "it": "La documentazione arriva via mail, si archivia in una cartella, si annota in un foglio di calcolo e si completa con conoscenza non documentata. Chiedere il certificato vigente di un fornitore preciso obbliga a ricostruire il fascicolo.",
+    "de": "Die Unterlagen kommen per E-Mail, landen in einem Ordner, werden in einer Tabelle notiert und mit undokumentiertem Wissen ergänzt. Nach dem gültigen Zertifikat eines bestimmten Lieferanten zu fragen heißt, die Akte neu zusammenzusuchen.",
+    "pt": "A documentação chega por correio eletrónico, arquiva-se numa pasta, anota-se numa folha de cálculo e completa-se com conhecimento não documentado. Pedir o certificado em vigor de um fornecedor concreto obriga a reconstruir o processo."
+  },
+  "Los certificados IFS o BRCGS vencen sin aviso y la caducidad se detecta en la propia auditoría.": {
+    "en": "IFS or BRCGS certificates expire without warning and the lapse comes to light in the audit itself.",
+    "fr": "Les certificats IFS ou BRCGS expirent sans préavis et la péremption se découvre pendant l'audit lui-même.",
+    "it": "I certificati IFS o BRCGS scadono senza avviso e la scadenza si rileva durante l'audit stesso.",
+    "de": "IFS- oder BRCGS-Zertifikate laufen ohne Vorwarnung ab, und der Ablauf fällt erst im Audit auf.",
+    "pt": "Os certificados IFS ou BRCGS caducam sem aviso e a caducidade só se deteta na própria auditoria."
+  },
+  "Las fichas técnicas y las declaraciones de alérgenos permanecen en el buzón de correo, fuera del expediente.": {
+    "en": "Spec sheets and allergen declarations stay in the inbox, outside the file.",
+    "fr": "Les fiches techniques et les déclarations d'allergènes restent dans la boîte mail, hors du dossier.",
+    "it": "Le schede tecniche e le dichiarazioni sugli allergeni restano nella casella di posta, fuori dal fascicolo.",
+    "de": "Datenblätter und Allergenerklärungen bleiben im Postfach, außerhalb der Akte.",
+    "pt": "As fichas técnicas e as declarações de alergénios permanecem na caixa de correio eletrónico, fora do processo."
+  },
+  "La evaluación anual se realiza sin el histórico de incidencias de recepción del periodo.": {
+    "en": "The annual review is done without the period's history of goods-in incidents.",
+    "fr": "L'évaluation annuelle se fait sans l'historique des incidents de réception de la période.",
+    "it": "La valutazione annuale si fa senza lo storico delle anomalie di ricevimento del periodo.",
+    "de": "Die Jahresbewertung erfolgt ohne die Historie der Wareneingangsstörungen des Zeitraums.",
+    "pt": "A avaliação anual é feita sem o histórico de ocorrências de receção do período."
+  },
+  "Cada compra reabre la misma verificación: si el proveedor está homologado y para qué referencia.": {
+    "en": "Every purchase reopens the same check: whether the supplier is approved, and for which item.",
+    "fr": "Chaque achat rouvre la même vérification : si le fournisseur est homologué, et pour quelle référence.",
+    "it": "Ogni acquisto riapre la stessa verifica: se il fornitore è qualificato e per quale referenza.",
+    "de": "Jeder Einkauf löst dieselbe Prüfung erneut aus: ob der Lieferant freigegeben ist – und für welchen Artikel.",
+    "pt": "Cada compra reabre a mesma verificação: se o fornecedor está qualificado e para que referência."
+  },
+  "El coste administrativo de reclamar supera el de asumir la merma, de modo que la reclamación no se cursa.": {
+    "en": "The admin cost of claiming exceeds the cost of absorbing the loss, so the claim never gets filed.",
+    "fr": "Le coût administratif de la réclamation dépasse celui de la perte assumée, si bien que la réclamation n'est pas déposée.",
+    "it": "Il costo amministrativo di reclamare supera quello di assorbire la perdita, così il reclamo non viene inoltrato.",
+    "de": "Der Verwaltungsaufwand der Reklamation übersteigt den Verlust – also wird sie gar nicht erst eingereicht.",
+    "pt": "O custo administrativo de reclamar supera o de assumir a quebra, pelo que a reclamação não chega a ser feita."
+  },
+  "Un expediente por proveedor, alimentado por el control de recepción": {
+    "en": "One file per supplier, fed by the goods-in check",
+    "fr": "Un dossier par fournisseur, alimenté par le contrôle de réception",
+    "it": "Un fascicolo per fornitore, alimentato dal controllo di ricevimento",
+    "de": "Eine Akte je Lieferant, gespeist aus der Wareneingangskontrolle",
+    "pt": "Um processo por fornecedor, alimentado pelo controlo de receção"
+  },
+  "No existe un módulo de homologación independiente: son el gestor documental, las plantillas de registro y las incidencias ya en uso en planta, referidos al proveedor. La homologación deja de ser un archivo de revisión anual y pasa a ser un expediente actualizado de forma continua.": {
+    "en": "There is no separate approval module: it is the document manager, the record templates and the incidents already in use on the floor, pointed at the supplier. Approval stops being a file reviewed once a year and becomes a continuously updated dossier.",
+    "fr": "Il n'existe pas de module d'homologation distinct : ce sont la gestion documentaire, les modèles d'enregistrement et les incidents déjà utilisés en usine, appliqués au fournisseur. L'homologation cesse d'être un dossier revu une fois par an pour devenir un dossier mis à jour en continu.",
+    "it": "Non esiste un modulo di qualifica separato: sono la gestione documentale, i modelli di registrazione e le anomalie già in uso in stabilimento, riferiti al fornitore. La qualifica smette di essere un archivio di revisione annuale e diventa un fascicolo aggiornato di continuo.",
+    "de": "Es gibt kein eigenes Freigabemodul: Es sind das Dokumentenmanagement, die Aufzeichnungsvorlagen und die im Werk genutzten Störungen – bezogen auf den Lieferanten. Die Freigabe ist dann keine jährlich geprüfte Ablage mehr, sondern eine laufend aktualisierte Akte.",
+    "pt": "Não existe um módulo de qualificação independente: são a gestão documental, os modelos de registo e as ocorrências já em uso na fábrica, aplicados ao fornecedor. A qualificação deixa de ser um arquivo revisto anualmente e passa a ser um processo atualizado continuamente."
+  },
+  "Documentación con fecha de vencimiento: certificados, fichas técnicas, analíticas y pólizas emiten aviso antes de caducar.": {
+    "en": "Documents with an expiry date: certificates, spec sheets, lab reports and insurance policies all warn before they lapse.",
+    "fr": "Une documentation avec date d'échéance : certificats, fiches techniques, analyses et polices alertent avant expiration.",
+    "it": "Documentazione con data di scadenza: certificati, schede tecniche, analisi e polizze avvisano prima di scadere.",
+    "de": "Dokumente mit Ablaufdatum: Zertifikate, Datenblätter, Analysen und Policen melden sich vor dem Verfall.",
+    "pt": "Documentação com prazo de validade: certificados, fichas técnicas, análises e apólices emitem alerta antes de caducar."
+  },
+  "Cuestionario de homologación como plantilla propia, con los criterios y el umbral aplicables a cada categoría.": {
+    "en": "An approval questionnaire as your own template, with the criteria and the threshold that apply to each category.",
+    "fr": "Un questionnaire d'homologation sous forme de modèle propre, avec les critères et le seuil applicables à chaque catégorie.",
+    "it": "Questionario di qualifica come modello proprio, con i criteri e la soglia applicabili a ogni categoria.",
+    "de": "Ein Freigabefragebogen als eigene Vorlage, mit den Kriterien und Schwellen je Kategorie.",
+    "pt": "Questionário de qualificação como modelo próprio, com os critérios e o limiar aplicáveis a cada categoria."
+  },
+  "Control de recepción vinculado al proveedor: cada entrada aceptada o rechazada se incorpora a su histórico.": {
+    "en": "Goods-in checks tied to the supplier: every delivery accepted or rejected joins their history.",
+    "fr": "Contrôle de réception lié au fournisseur : chaque entrée acceptée ou refusée s'ajoute à son historique.",
+    "it": "Controllo di ricevimento collegato al fornitore: ogni entrata accettata o respinta entra nel suo storico.",
+    "de": "Wareneingangskontrolle am Lieferanten: Jede angenommene oder abgelehnte Lieferung geht in seine Historie ein.",
+    "pt": "Controlo de receção ligado ao fornecedor: cada entrada aceite ou rejeitada entra no seu histórico."
+  },
+  "Reclamación al proveedor emitida desde la propia incidencia, con evidencia fotográfica y seguimiento hasta el cierre.": {
+    "en": "The supplier claim issued from the incident itself, with photo evidence and follow-up through to closure.",
+    "fr": "Réclamation au fournisseur émise depuis l'incident lui-même, avec preuve photo et suivi jusqu'à la clôture.",
+    "it": "Reclamo al fornitore emesso dall'anomalia stessa, con evidenza fotografica e monitoraggio fino alla chiusura.",
+    "de": "Die Lieferantenreklamation direkt aus der Störung heraus, mit Fotonachweis und Nachverfolgung bis zum Abschluss.",
+    "pt": "Reclamação ao fornecedor emitida a partir da própria ocorrência, com evidência fotográfica e acompanhamento até ao encerramento."
+  },
+  "Evaluación periódica sobre datos: incidencias, rechazos y respuesta del proveedor a cada reclamación.": {
+    "en": "Periodic evaluation on data: incidents, rejections and how the supplier answered each claim.",
+    "fr": "Évaluation périodique sur données : incidents, refus et réponse du fournisseur à chaque réclamation.",
+    "it": "Valutazione periodica sui dati: anomalie, respingimenti e risposta del fornitore a ogni reclamo.",
+    "de": "Regelmäßige Bewertung auf Datenbasis: Störungen, Ablehnungen und die Antwort des Lieferanten auf jede Reklamation.",
+    "pt": "Avaliação periódica com base em dados: ocorrências, rejeições e resposta do fornecedor a cada reclamação."
+  },
+  "Auditoría de proveedor con el mismo checklist digital empleado en planta.": {
+    "en": "Supplier audits with the same digital checklist used on the plant floor.",
+    "fr": "Audit fournisseur avec la même checklist numérique utilisée en usine.",
+    "it": "Audit del fornitore con la stessa checklist digitale usata in stabilimento.",
+    "de": "Lieferantenaudit mit derselben digitalen Checkliste wie im Werk.",
+    "pt": "Auditoria de fornecedor com o mesmo checklist digital utilizado na fábrica."
+  },
+  "Para verificar la documentación de contratistas que acceden al centro, el sistema adecuado es una plataforma de CAE. El alcance de esta página es el inverso: homologar al proveedor de materia prima, envase o servicio bajo criterio de calidad e inocuidad.": {
+    "en": "To check the paperwork of contractors coming on site, the right tool is a contractor compliance platform. This page is about the opposite: approving the supplier of raw material, packaging or services on quality and food safety criteria.",
+    "fr": "Pour vérifier la documentation des sous-traitants qui accèdent au site, l'outil adapté est une plateforme de coordination de sous-traitance. Le périmètre de cette page est l'inverse : homologuer le fournisseur de matière première, d'emballage ou de service selon des critères de qualité et de sécurité des aliments.",
+    "it": "Per verificare la documentazione degli appaltatori che accedono al sito, lo strumento adatto è una piattaforma di coordinamento appalti. Il perimetro di questa pagina è l'opposto: qualificare il fornitore di materia prima, imballaggio o servizio secondo criteri di qualità e sicurezza alimentare.",
+    "de": "Um die Unterlagen von Fremdfirmen zu prüfen, die das Werk betreten, ist eine Fremdfirmenplattform das richtige Werkzeug. Diese Seite behandelt das Gegenteil: die Freigabe des Lieferanten von Rohstoff, Verpackung oder Dienstleistung nach Qualitäts- und Lebensmittelsicherheitskriterien.",
+    "pt": "Para verificar a documentação de subcontratados que acedem ao centro, o sistema adequado é uma plataforma de coordenação de atividades empresariais. O âmbito desta página é o inverso: qualificar o fornecedor de matéria-prima, embalagem ou serviço segundo critérios de qualidade e segurança alimentar."
+  },
+  "Responsables de calidad que homologan proveedores": { "en": "Quality managers who approve suppliers", "fr": "Des responsables qualité qui homologuent des fournisseurs", "it": "Responsabili qualità che qualificano fornitori", "de": "Qualitätsverantwortliche, die Lieferanten freigeben", "pt": "Responsáveis pela qualidade que qualificam fornecedores" },
+  "Plantas con muchas materias primas y envases": { "en": "Plants with many raw materials and packaging items", "fr": "Des usines avec de nombreuses matières premières et emballages", "it": "Stabilimenti con molte materie prime e imballaggi", "de": "Werke mit vielen Rohstoffen und Verpackungen", "pt": "Fábricas com muitas matérias-primas e embalagens" },
+  "Empresas auditadas en IFS, BRCGS o FSSC 22000": { "en": "Companies audited to IFS, BRCGS or FSSC 22000", "fr": "Des entreprises auditées IFS, BRCGS ou FSSC 22000", "it": "Aziende auditate IFS, BRCGS o FSSC 22000", "de": "Nach IFS, BRCGS oder FSSC 22000 auditierte Unternehmen", "pt": "Empresas auditadas em IFS, BRCGS ou FSSC 22000" },
+  "Compras y calidad trabajando sobre el mismo expediente": { "en": "Purchasing and quality working on the same file", "fr": "Achats et qualité travaillant sur le même dossier", "it": "Acquisti e qualità che lavorano sullo stesso fascicolo", "de": "Einkauf und Qualität, die an derselben Akte arbeiten", "pt": "Compras e qualidade a trabalhar sobre o mesmo processo" },
+  "Grupos con proveedores compartidos entre plantas": { "en": "Groups with suppliers shared across plants", "fr": "Des groupes avec des fournisseurs partagés entre usines", "it": "Gruppi con fornitori condivisi tra stabilimenti", "de": "Gruppen mit werksübergreifend genutzten Lieferanten", "pt": "Grupos com fornecedores partilhados entre fábricas" },
+  "Quien hoy lo lleva en carpetas y una hoja de Excel": { "en": "Anyone keeping it in folders and a spreadsheet today", "fr": "Ceux qui gèrent cela aujourd'hui dans des dossiers et un Excel", "it": "Chi oggi lo gestisce con cartelle e un foglio Excel", "de": "Wer das heute in Ordnern und einer Excel führt", "pt": "Quem hoje o gere em pastas e numa folha de Excel" },
+  "¿Es un módulo aparte de Solved?": { "en": "Is it a separate Solved module?", "fr": "Est-ce un module distinct de Solved ?", "it": "È un modulo a parte di Solved?", "de": "Ist das ein eigenes Solved-Modul?", "pt": "É um módulo à parte da Solved?" },
+  "No. Es el gestor documental, con las plantillas de registro y las incidencias ya en uso en planta, aplicado a proveedores. Se configura sobre la instalación existente; no requiere desarrollo a medida.": {
+    "en": "No. It is the document manager, with the record templates and incidents already in use on the floor, applied to suppliers. It is configured on your existing install; no bespoke development needed.",
+    "fr": "Non. C'est la gestion documentaire, avec les modèles d'enregistrement et les incidents déjà utilisés en usine, appliquée aux fournisseurs. Elle se configure sur l'installation existante ; aucun développement sur mesure n'est requis.",
+    "it": "No. È la gestione documentale, con i modelli di registrazione e le anomalie già in uso in stabilimento, applicata ai fornitori. Si configura sull'installazione esistente; non richiede sviluppo su misura.",
+    "de": "Nein. Es ist das Dokumentenmanagement mit den bereits im Werk genutzten Aufzeichnungsvorlagen und Störungen – angewandt auf Lieferanten. Es wird auf der bestehenden Installation konfiguriert; keine Individualentwicklung nötig.",
+    "pt": "Não. É a gestão documental, com os modelos de registo e as ocorrências já em uso na fábrica, aplicada a fornecedores. Configura-se sobre a instalação existente; não requer desenvolvimento à medida."
+  },
+  "¿En qué se diferencia de una plataforma de CAE?": {
+    "en": "How is it different from a contractor compliance platform?",
+    "fr": "En quoi diffère-t-il d'une plateforme de coordination de sous-traitance ?",
+    "it": "In cosa si differenzia da una piattaforma di coordinamento appalti?",
+    "de": "Worin unterscheidet es sich von einer Fremdfirmenplattform?",
+    "pt": "Em que se diferencia de uma plataforma de coordenação de atividades empresariais?"
+  },
+  "Una plataforma de coordinación de actividades empresariales verifica la documentación de los contratistas que acceden al centro: prevención de riesgos, seguros, altas. El alcance de esta página es la homologación del proveedor de materia prima, envase, repuesto o servicio de mantenimiento, y el criterio es de calidad e inocuidad alimentaria.": {
+    "en": "A contractor coordination platform checks the paperwork of contractors coming on site: safety, insurance, registrations. This page is about approving the supplier of raw material, packaging, spare parts or maintenance services, on quality and food safety criteria.",
+    "fr": "Une plateforme de coordination des activités d'entreprises vérifie la documentation des sous-traitants qui accèdent au site : prévention des risques, assurances, déclarations. Le périmètre de cette page est l'homologation du fournisseur de matière première, d'emballage, de pièce ou de service de maintenance, selon des critères de qualité et de sécurité des aliments.",
+    "it": "Una piattaforma di coordinamento delle attività aziendali verifica la documentazione degli appaltatori che accedono al sito: prevenzione dei rischi, assicurazioni, iscrizioni. Il perimetro di questa pagina è la qualifica del fornitore di materia prima, imballaggio, ricambio o servizio di manutenzione, con criteri di qualità e sicurezza alimentare.",
+    "de": "Eine Fremdfirmenplattform prüft die Unterlagen von Auftragnehmern, die das Werk betreten: Arbeitsschutz, Versicherungen, Anmeldungen. Diese Seite behandelt die Freigabe des Lieferanten von Rohstoff, Verpackung, Ersatzteil oder Instandhaltungsdienstleistung nach Qualitäts- und Lebensmittelsicherheitskriterien.",
+    "pt": "Uma plataforma de coordenação de atividades empresariais verifica a documentação dos subcontratados que acedem ao centro: prevenção de riscos, seguros, registos. O âmbito desta página é a qualificação do fornecedor de matéria-prima, embalagem, peça de substituição ou serviço de manutenção, segundo critérios de qualidade e segurança alimentar."
+  },
+  "¿Quién mantiene la documentación al día?": { "en": "Who keeps the documents up to date?", "fr": "Qui maintient la documentation à jour ?", "it": "Chi mantiene aggiornata la documentazione?", "de": "Wer hält die Unterlagen aktuell?", "pt": "Quem mantém a documentação em dia?" },
+  "Solved notifica cada vencimiento con antelación al responsable asignado, y el documento se incorpora desde el móvil o el PC en el momento de su recepción. La notificación no depende de un seguimiento manual.": {
+    "en": "Solved notifies the assigned owner ahead of every expiry, and the document is added from a phone or PC the moment it arrives. The alert does not depend on anyone tracking it by hand.",
+    "fr": "Solved notifie chaque échéance à l'avance au responsable assigné, et le document s'ajoute depuis le téléphone ou le PC dès sa réception. La notification ne dépend d'aucun suivi manuel.",
+    "it": "Solved notifica ogni scadenza in anticipo al responsabile assegnato, e il documento si carica da telefono o PC al momento della ricezione. La notifica non dipende da un monitoraggio manuale.",
+    "de": "Solved benachrichtigt den zugewiesenen Verantwortlichen vor jedem Ablauf, und das Dokument wird per Smartphone oder PC direkt bei Erhalt eingestellt. Die Benachrichtigung hängt an keiner manuellen Nachverfolgung.",
+    "pt": "A Solved notifica cada prazo de validade com antecedência ao responsável atribuído, e o documento é adicionado a partir do telemóvel ou do PC no momento da sua receção. A notificação não depende de um acompanhamento manual."
+  },
+  "¿Se puede evaluar al proveedor con las incidencias de recepción?": {
+    "en": "Can suppliers be rated on goods-in incidents?",
+    "fr": "Peut-on évaluer le fournisseur avec les incidents de réception ?",
+    "it": "Si può valutare il fornitore con le anomalie di ricevimento?",
+    "de": "Kann man Lieferanten anhand der Wareneingangsstörungen bewerten?",
+    "pt": "É possível avaliar o fornecedor com as ocorrências de receção?"
+  },
+  "Sí. Cada rechazo o incidencia queda vinculado a su proveedor, de modo que la evaluación periódica se realiza sobre el histórico y no sobre estimaciones.": {
+    "en": "Yes. Every rejection or incident is tied to its supplier, so the periodic review runs on the actual history rather than on estimates.",
+    "fr": "Oui. Chaque refus ou incident est rattaché à son fournisseur : l'évaluation périodique se fonde sur l'historique et non sur des estimations.",
+    "it": "Sì. Ogni respingimento o anomalia resta collegato al suo fornitore, così la valutazione periodica si fa sullo storico e non su stime.",
+    "de": "Ja. Jede Ablehnung oder Störung ist ihrem Lieferanten zugeordnet, sodass die regelmäßige Bewertung auf der Historie beruht und nicht auf Schätzungen.",
+    "pt": "Sim. Cada rejeição ou ocorrência fica associada ao seu fornecedor, pelo que a avaliação periódica se realiza sobre o histórico e não sobre estimativas."
+  },
+  "¿Sirve si ya llevamos los proveedores en el ERP?": {
+    "en": "Is it useful if we already keep suppliers in the ERP?",
+    "fr": "Est-ce utile si nous gérons déjà les fournisseurs dans l'ERP ?",
+    "it": "Serve se i fornitori li teniamo già nell'ERP?",
+    "de": "Nützt es, wenn wir Lieferanten schon im ERP führen?",
+    "pt": "Serve se já gerimos os fornecedores no ERP?"
+  },
+  "Sí. El ERP guarda el maestro de proveedores y las compras; lo que no guarda es la evidencia de calidad ni las incidencias de recepción. Solved cubre esa parte y la deja lista para la auditoría.": {
+    "en": "Yes. The ERP holds the supplier master data and the purchases; what it does not hold is the quality evidence or the goods-in incidents. Solved covers that part and leaves it ready for the audit.",
+    "fr": "Oui. L'ERP conserve le référentiel fournisseurs et les achats ; ce qu'il ne conserve pas, c'est la preuve qualité ni les incidents de réception. Solved couvre cette partie et la laisse prête pour l'audit.",
+    "it": "Sì. L'ERP conserva l'anagrafica fornitori e gli acquisti; quello che non conserva è l'evidenza di qualità né le anomalie di ricevimento. Solved copre quella parte e la lascia pronta per l'audit.",
+    "de": "Ja. Das ERP führt Lieferantenstammdaten und Einkäufe; was es nicht führt, sind der Qualitätsnachweis und die Wareneingangsstörungen. Solved deckt diesen Teil ab und hält ihn auditbereit.",
+    "pt": "Sim. O ERP guarda os dados mestre dos fornecedores e as compras; o que não guarda é a evidência de qualidade nem as ocorrências de receção. A Solved cobre essa parte e deixa-a pronta para a auditoria."
+  },
+  "¿Vale para auditar al proveedor en su planta?": {
+    "en": "Can it be used to audit the supplier at their own plant?",
+    "fr": "Vaut-il pour auditer le fournisseur dans son usine ?",
+    "it": "Vale per auditare il fornitore nel suo stabilimento?",
+    "de": "Taugt es, um den Lieferanten in seinem Werk zu auditieren?",
+    "pt": "Serve para auditar o fornecedor na sua fábrica?"
+  },
+  "Sí. La auditoría de proveedor usa el mismo checklist digital que las auditorías internas: se rellena en su instalación desde el móvil y sale con hallazgos y acciones asignadas.": {
+    "en": "Yes. The supplier audit uses the same digital checklist as internal audits: it is filled in at their site from a phone and comes out with findings and actions assigned.",
+    "fr": "Oui. L'audit fournisseur utilise la même checklist numérique que les audits internes : elle se remplit dans son installation depuis le téléphone et ressort avec des constats et des actions assignées.",
+    "it": "Sì. L'audit del fornitore usa la stessa checklist digitale degli audit interni: si compila nel suo stabilimento dal telefono ed esce con rilievi e azioni assegnate.",
+    "de": "Ja. Das Lieferantenaudit nutzt dieselbe digitale Checkliste wie interne Audits: Sie wird vor Ort per Smartphone ausgefüllt und liefert Befunde mit zugewiesenen Maßnahmen.",
+    "pt": "Sim. A auditoria de fornecedor usa o mesmo checklist digital das auditorias internas: preenche-se nas suas instalações a partir do telemóvel e sai com constatações e ações atribuídas."
+  },
+  "Operario de almacén registra una recepción de mercancía con la tablet y el escáner": {
+    "en": "A warehouse operator logs a goods receipt with a tablet and a scanner",
+    "fr": "Un opérateur d'entrepôt enregistre une réception de marchandise avec la tablette et le scanner",
+    "it": "Un operatore di magazzino registra un ricevimento merci con tablet e scanner",
+    "de": "Ein Lagerarbeiter erfasst einen Wareneingang mit Tablet und Scanner",
+    "pt": "Um operador de armazém regista uma receção de mercadoria com o tablet e o leitor de código de barras"
+  }
+}

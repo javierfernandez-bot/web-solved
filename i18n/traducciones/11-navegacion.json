@@ -1,0 +1,209 @@
+{
+  "_nota": "Nav, pie y aviso de cookies. NO salen del HTML: los inyecta chrome.js, así que i18n-extract los saca del propio JS (lib/i18n-chrome.mjs). La dirección postal y el párrafo de la subvención EMPYME se quedan en español a propósito: son el texto literal de una publicidad de ayuda pública valenciana.",
+  "Productos": {
+    "en": "Products",
+    "fr": "Produits",
+    "it": "Prodotti",
+    "de": "Produkte",
+    "pt": "Produtos"
+  },
+  "Registra, asigna y resuelve con cierre documentado": {
+    "en": "Log, assign and resolve with documented closure",
+    "fr": "Enregistrez, affectez et résolvez avec une clôture documentée",
+    "it": "Registra, assegna e risolvi con chiusura documentata",
+    "de": "Erfassen, zuweisen und mit dokumentiertem Abschluss lösen",
+    "pt": "Registe, atribua e resolva com encerramento documentado"
+  },
+  "Controles, checklists y auditorías digitales": {
+    "en": "Digital checks, checklists and audits",
+    "fr": "Contrôles, checklists et audits numériques",
+    "it": "Controlli, checklist e audit digitali",
+    "de": "Digitale Kontrollen, Checklisten und Audits",
+    "pt": "Controlos, checklists e auditorias digitais"
+  },
+  "Versión vigente, caducidades y validación": {
+    "en": "Current version, expiry dates and validation",
+    "fr": "Version en vigueur, dates d'expiration et validation",
+    "it": "Versione vigente, scadenze e validazione",
+    "de": "Gültige Version, Ablaufdaten und Freigabe",
+    "pt": "Versão em vigor, prazos de validade e validação"
+  },
+  "Tareas, acciones y no conformidades": {
+    "en": "Tasks, actions and non-conformities",
+    "fr": "Tâches, actions et non-conformités",
+    "it": "Attività, azioni e non conformità",
+    "de": "Aufgaben, Maßnahmen und Abweichungen",
+    "pt": "Tarefas, ações e não conformidades"
+  },
+  "Acciones correctivas y seguimiento hasta el cierre": {
+    "en": "Corrective actions and follow-up through to closure",
+    "fr": "Actions correctives et suivi jusqu'à la clôture",
+    "it": "Azioni correttive e monitoraggio fino alla chiusura",
+    "de": "Korrekturmaßnahmen und Nachverfolgung bis zum Abschluss",
+    "pt": "Ações corretivas e acompanhamento até ao encerramento"
+  },
+  "Cada máquina con su ficha, su QR y su historial": {
+    "en": "Every machine with its record, its QR code and its history",
+    "fr": "Chaque machine avec sa fiche, son QR et son historique",
+    "it": "Ogni macchina con la sua scheda, il suo QR e il suo storico",
+    "de": "Jede Maschine mit Datenblatt, QR-Code und Historie",
+    "pt": "Cada máquina com a sua ficha, o seu QR e o seu histórico"
+  },
+  "Visión 360º en tiempo real e informes automáticos": {
+    "en": "Real-time 360º view and automatic reports",
+    "fr": "Vision à 360º en temps réel et rapports automatiques",
+    "it": "Visione a 360º in tempo reale e report automatici",
+    "de": "360º-Sicht in Echtzeit und automatische Berichte",
+    "pt": "Visão a 360º em tempo real e relatórios automáticos"
+  },
+  "Pregunta a tus datos y contesta citando el parte": {
+    "en": "Ask your data and get an answer that cites the report",
+    "fr": "Interrogez vos données : la réponse cite le rapport",
+    "it": "Interroga i tuoi dati: la risposta cita il rapporto",
+    "de": "Fragen Sie Ihre Daten – die Antwort nennt die Meldung",
+    "pt": "Consulte os seus dados e obtenha uma resposta que cita o parte"
+  },
+  "Industrias": {
+    "en": "Industries",
+    "fr": "Industries",
+    "it": "Settori",
+    "de": "Branchen",
+    "pt": "Indústrias"
+  },
+  "Fabricación y procesos": {
+    "en": "Manufacturing and processes",
+    "fr": "Fabrication et procédés",
+    "it": "Produzione e processi",
+    "de": "Fertigung und Prozesse",
+    "pt": "Fabrico e processos"
+  },
+  "Seguridad y calidad alimentaria": {
+    "en": "Food safety and quality",
+    "fr": "Sécurité et qualité alimentaires",
+    "it": "Sicurezza e qualità alimentare",
+    "de": "Lebensmittelsicherheit und -qualität",
+    "pt": "Segurança e qualidade alimentar"
+  },
+  "Recursos": {
+    "en": "Resources",
+    "fr": "Ressources",
+    "it": "Risorse",
+    "de": "Ressourcen",
+    "pt": "Recursos"
+  },
+  "Cómo trabajan con Solved, contado por ellos": {
+    "en": "How they work with Solved, in their own words",
+    "fr": "Comment ils travaillent avec Solved, raconté par eux",
+    "it": "Come lavorano con Solved, raccontato da loro",
+    "de": "Wie sie mit Solved arbeiten – von ihnen erzählt",
+    "pt": "Como trabalham com Solved, contado por eles"
+  },
+  "Blog": "=",
+  "Artículos y guías de calidad e industria": {
+    "en": "Articles and guides on quality and industry",
+    "fr": "Articles et guides sur la qualité et l'industrie",
+    "it": "Articoli e guide su qualità e industria",
+    "de": "Artikel und Leitfäden zu Qualität und Industrie",
+    "pt": "Artigos e guias sobre qualidade e indústria"
+  },
+  "Glosario": {
+    "en": "Glossary",
+    "fr": "Glossaire",
+    "it": "Glossario",
+    "de": "Glossar",
+    "pt": "Glossário"
+  },
+  "Términos industriales explicados": {
+    "en": "Industry terms explained",
+    "fr": "Les termes de l'industrie expliqués",
+    "it": "I termini dell'industria spiegati",
+    "de": "Fachbegriffe der Industrie erklärt",
+    "pt": "Termos industriais explicados"
+  },
+  "Abrir menú": {
+    "en": "Open menu",
+    "fr": "Ouvrir le menu",
+    "it": "Apri il menu",
+    "de": "Menü öffnen",
+    "pt": "Abrir menu"
+  },
+  "Edificio Angels, Sc Puerto, 13, Poblados Marítimos, 46024 Valencia": "=",
+  "Ubicación de Solved — Edificio Angels, Valencia": {
+    "en": "Solved location — Edificio Angels, Valencia",
+    "fr": "Emplacement de Solved — Edificio Angels, Valence",
+    "it": "Sede di Solved — Edificio Angels, Valencia",
+    "de": "Standort von Solved — Edificio Angels, Valencia",
+    "pt": "Localização de Solved — Edificio Angels, Valencia"
+  },
+  "Registros/Checklist": {
+    "en": "Records/Checklists",
+    "fr": "Enregistrements/Checklists",
+    "it": "Registrazioni/Checklist",
+    "de": "Aufzeichnungen/Checklisten",
+    "pt": "Registos/Checklists"
+  },
+  "Gestión de activos": {
+    "en": "Asset management",
+    "fr": "Gestion des actifs",
+    "it": "Gestione degli asset",
+    "de": "Anlagenverwaltung",
+    "pt": "Gestão de ativos"
+  },
+  "Enlaces útiles": {
+    "en": "Useful links",
+    "fr": "Liens utiles",
+    "it": "Link utili",
+    "de": "Nützliche Links",
+    "pt": "Links úteis"
+  },
+  "Política de privacidad": {
+    "en": "Privacy policy",
+    "fr": "Politique de confidentialité",
+    "it": "Informativa sulla privacy",
+    "de": "Datenschutzerklärung",
+    "pt": "Política de privacidade"
+  },
+  "Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea": {
+    "en": "Funded by the Generalitat Valenciana, IVF (Institut Valencià de Finances) and the European Union",
+    "fr": "Financé par la Generalitat Valenciana, IVF (Institut Valencià de Finances) et l'Union européenne",
+    "it": "Finanziato dalla Generalitat Valenciana, IVF (Institut Valencià de Finances) e dall'Unione Europea",
+    "de": "Gefördert von der Generalitat Valenciana, IVF (Institut Valencià de Finances) und der Europäischen Union",
+    "pt": "Financiado pela Generalitat Valenciana, IVF (Institut Valencià de Finances) e pela União Europeia"
+  },
+  "VOLTSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: \"Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)\", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.": "=",
+  "Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra": {
+    "en": "We use our own and third-party cookies to improve your experience and analyse how the site is used. You can accept or reject them. More information in our",
+    "fr": "Nous utilisons des cookies internes et tiers pour améliorer votre expérience et analyser l'utilisation du site. Vous pouvez les accepter ou les refuser. Plus d'informations dans notre",
+    "it": "Utilizziamo cookie propri e di terze parti per migliorare la tua esperienza e analizzare l'uso del sito. Puoi accettarli o rifiutarli. Maggiori informazioni nella nostra",
+    "de": "Wir verwenden eigene Cookies und Cookies von Dritten, um Ihre Erfahrung zu verbessern und die Nutzung der Website zu analysieren. Sie können sie annehmen oder ablehnen. Weitere Informationen in unserer",
+    "pt": "Utilizamos cookies próprios e de terceiros para melhorar a experiência e analisar a utilização do site. Podem ser aceites ou rejeitados. Mais informações na nossa"
+  },
+  "Rechazar": {
+    "en": "Reject",
+    "fr": "Refuser",
+    "it": "Rifiuta",
+    "de": "Ablehnen",
+    "pt": "Rejeitar"
+  },
+  "Aceptar": {
+    "en": "Accept",
+    "fr": "Accepter",
+    "it": "Accetta",
+    "de": "Akzeptieren",
+    "pt": "Aceitar"
+  },
+  "Cerrar menú": {
+    "en": "Close menu",
+    "fr": "Fermer le menu",
+    "it": "Chiudi il menu",
+    "de": "Menü schließen",
+    "pt": "Fechar menu"
+  },
+  "Aviso de cookies": {
+    "en": "Cookie notice",
+    "fr": "Avis relatif aux cookies",
+    "it": "Avviso sui cookie",
+    "de": "Cookie-Hinweis",
+    "pt": "Aviso de cookies"
+  }
+}

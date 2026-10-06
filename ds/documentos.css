@@ -1,0 +1,1106 @@
+/* =========================================================
+   LAS PIEZAS DEL GESTOR DOCUMENTAL — cuatro animaciones activas, un reloj
+   ---------------------------------------------------------
+   Se escriben para la réplica de `mitti.com/es/documentos` en versión Solved
+   (9 de septiembre de 2026): mismo orden de página, mismo tipo de argumento, y
+   en cada sección una pieza que ENSEÑA lo que el párrafo dice. Mitti resuelve
+   esas piezas con capturas fijas; aquí se animan, que es lo que se pidió.
+
+   | Pieza            | Capacidad                        | Qué cuenta                |
+   |------------------|----------------------------------|---------------------------|
+   | `.docver`        | La versión que se valida         | v2, validada, y su rastro |
+   | `.docpush`       | El aviso, antes de caducar       | la push que lleva al documento |
+   | `.docmovil`      | Desde la línea, no del despacho  | la carpeta en el móvil    |
+   | `.docengancha`   | El mismo documento en tres sitios| el documento enganchado   |
+
+   **Las cuatro nacieron como el medio de cuatro secciones y a las pocas horas
+   pasaron a ser los cuatro paneles de UN rotador de capacidades** (segunda poda
+   del cliente, 9 sep 2026). Lo que cambia con eso está al final de esta hoja, en
+   la variante de panel; el contenido de las piezas no se tocó.
+
+   **`.docia` (pregunta y respuesta con cita) se retiró de `/gestor-documental/`
+   el 28 de septiembre de 2026, a petición del cliente: la función no existe.**
+   La regla del marcado era la excepción de por qué esa pieza sí llevaba `.docia`
+   sobre grafito —«lo de IA va sobre grafito»—; sin uso en ninguna página, la
+   declaración se queda documentada aquí abajo y sin cargarla nadie. Está en git
+   si se recupera.
+
+   NINGUNA LLEVA TINTE DE MÓDULO, Y NO ES UN OLVIDO
+   **El sistema no tiene color para Documentos.** Los seis valores de
+   `.scene[data-module]` son incidencias, acciones, checklists, activos, kpis e
+   ia, y teñir con el color de otro módulo es lo que prohíbe la regla del tinte;
+   darle uno nuevo es una decisión de marca que no está tomada. Por eso esta
+   página no monta escenas, y por eso estas piezas van sobre **papel**, con
+   hairline y sombra, y el único color que entra es el de la propia
+   aplicación —su azul— y los dos estados que el módulo sí tiene: validado y
+   pendiente.
+
+   EL RELOJ ES UNO POR PIEZA, y dentro de cada una todo cuelga de él con
+   retardos negativos: dos relojes que arrancan a la vez se separan en cuanto
+   uno se pausa. Todas obedecen a `--play` y todas se quedan resueltas y quietas
+   con `prefers-reduced-motion` — la foto final, que es la que cuenta.
+
+   LO QUE SE ENSEÑA ES LO QUE HAY, con una excepción marcada en el marcado de la
+   página: la lectura de un código para abrir la documentación del equipo
+   (`.docmovil`). Está porque el cliente pidió incluir también lo que Mitti
+   enseña y aquí no está comprobado, para decidir al revisar. Todo lo demás
+   —versiones, validar y rechazar una versión, responsable, alcance, asignados,
+   etiquetas, fecha de expiración y de revisión, actividad— está comprobado en
+   `demo.trysolved.com/documents` el 9 de septiembre de 2026.
+
+   `.docpush` SE COMPROBÓ DISTINTO: no hay sesión de navegador contra la demo,
+   así que el aviso de caducidad se verificó leyendo el código fuente de Solved
+   (`dms-expiry-notifications`) el 28 de septiembre de 2026, no viéndolo en
+   pantalla. Lo que el código confirma es correo al responsable antes de la
+   fecha de expiración —la antelación es configurable por empresa, 30 días por
+   defecto, y la ajusta el equipo de Solved, no el cliente desde sus ajustes—
+   y una notificación dentro de la propia aplicación, y otra vez, a diario, si
+   el documento ya ha caducado.
+
+   ⚠ LA NOTIFICACIÓN PUSH DEL TELÉFONO NO ESTÁ CONFIRMADA. El código habla de
+   un aviso «dentro de la aplicación» (in-app), que no es necesariamente el
+   mismo mecanismo que una notificación push del sistema operativo sobre el
+   teléfono —la diferencia es real: una vive dentro de Solved abierto, la otra
+   llega con la pantalla bloqueada—. El gesto de esta pieza (llega la push,
+   se toca, se abre el documento) es el que pidió el cliente; antes de
+   publicar hay que confirmar en la aplicación si ese aviso sale como push de
+   verdad o sólo como notificación interna, que es el nivel de comprobación
+   que lleva el resto de la página.
+
+   EL ACCESO SIN CONEXIÓN SE RETIRÓ el 28 de septiembre de 2026, investigado en
+   el código de Solved: no es un offline intencional del gestor documental, es
+   un efecto colateral de la caché de sesión y de la URL firmada de Storage que
+   el navegador cachea por HTTP normal —sólo «funciona» si el documento ya se
+   abrió antes de perder la red, y se pierde al recargar—. Los registros sí
+   tienen offline de verdad (cola en IndexedDB que sincroniza sola); documentos,
+   no. Se fue la píldora `.docmovil__pill--red` («Disponible sin conexión») del
+   panel de `/gestor-documental/`; la clase se queda abajo, documentada y sin
+   usar.
+
+   Requiere `ds/tokens.css`. `.docmovil` requiere además `ds/device.css` y
+   `ds/app.css`, que es de donde salen el marco del teléfono y la pantalla.
+   ========================================================= */
+
+.docmovil,
+.docver,
+.docia,
+.docpush,
+.docengancha{
+  /* Tokens del producto. Mismos nombres y mismos valores que `ds/app.css`, para
+     que una pieza y una pantalla de app pintadas en la misma página no se
+     separen nunca. Van aquí y no allí porque estas piezas no son pantallas de
+     app: son diagramas con piezas de app dentro. */
+  --app-blue:var(--blue,#1E6BFF);
+  --app-blue-deep:var(--blue-700,#1450C7);
+  --app-blue-wash:var(--blue-50,#EAF1FF);
+  --app-canvas:var(--ink-50,#F4F6FB);
+  --app-line:var(--ink-100,#E6EAF2);
+  --app-line-2:var(--ink-200,#C7CFDD);
+  --app-mute:var(--ink-400,#8B95A7);
+  --app-text-2:var(--ink-600,#4A5468);
+  --app-text:var(--ink-800,#1B2230);
+  --app-ok:var(--ok,#2F9E44);
+  --app-warn:var(--warn,#F59F00);
+
+  --ciclo:18s;
+  position:relative;
+  font-family:Roboto,'Helvetica Neue',Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+  color:var(--app-text);
+}
+
+/* El encuadre común de las piezas de papel: mismo radio de ventana y misma
+   proporción que la escena de producto, para que la página no tenga cajas de
+   formas distintas. */
+.docver,
+.docengancha,
+.docpush,
+.docmovil{
+  width:100%;
+  aspect-ratio:6/5;
+  min-height:360px;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--radius-lg,16px);
+  background:var(--app-canvas);
+  overflow:hidden;
+  isolation:isolate;
+}
+
+/* ---------------------------------------------------------
+   PIEZA 1 · `.docver` — LA VERSIÓN NUEVA, VALIDADA
+   La ficha del documento tal y como la sirve la aplicación: cabecera con el
+   tipo, el número de versión, el peso y el estado; las tres pestañas
+   —Información · Versiones · Actividad—; y la lista de versiones con sus dos
+   botones, «Validar versión» y «Rechazar versión».
+
+   El ciclo cuenta lo único que importa de un gestor documental: que la versión
+   nueva NO es la vigente hasta que alguien la valida, y que ese gesto deja
+   rastro. Sube la v2 · se valida · la cabecera cambia · la actividad lo escribe.
+   --------------------------------------------------------- */
+.docver__panel{
+  position:absolute; inset:26px 24px;
+  background:#fff;
+  border:1px solid var(--app-line);
+  border-radius:12px;
+  box-shadow:rgba(12,32,64,.10) 0 14px 40px,rgba(12,32,64,.05) 0 2px 6px;
+  display:flex; flex-direction:column;
+  overflow:hidden;
+}
+.docver__hd{
+  display:flex; align-items:center; gap:10px;
+  padding:12px 14px;
+  border-bottom:1px solid var(--app-line);
+}
+.docver__pdf{
+  flex:none; width:30px; height:30px; border-radius:6px;
+  display:grid; place-items:center;
+  background:#FDECEC; color:#C0392B;
+  font-size:8.5px; font-weight:500; letter-spacing:.04em;
+}
+.docver__t{ font-size:12.5px; font-weight:500; min-width:0 }
+.docver__chips{ display:flex; align-items:center; gap:6px; margin-top:3px }
+.docver__chip{
+  padding:1px 6px; border-radius:4px;
+  background:var(--app-canvas); color:var(--app-text-2);
+  font-size:9px; font-weight:500;
+}
+/* El número de versión de la cabecera cambia con el ciclo: es el mismo truco de
+   los dos dígitos cruzados que usa el editor de plantillas, y por lo mismo —un
+   número no se interpola, salta—. */
+.docver__vnum{ position:relative; display:inline-grid }
+.docver__vnum b{
+  grid-area:1/1; font-weight:500;
+  animation:docver-v1 var(--ciclo) steps(1,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.docver__vnum b:last-child{ animation-name:docver-v2 }
+@keyframes docver-v1{ 0%,30%{opacity:1} 30.1%,100%{opacity:0} }
+@keyframes docver-v2{ 0%,30%{opacity:0} 30.1%,100%{opacity:1} }
+
+/* El estado, con su punto. Es el único color del papel, y son los dos únicos
+   estados que el módulo tiene: pendiente de validación y validado. */
+.docver__est{
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:9.5px; font-weight:500;
+}
+.docver__est::before{
+  content:""; width:6px; height:6px; border-radius:50%;
+  background:currentColor;
+}
+.docver__est--cab{
+  animation:docver-cabestado var(--ciclo) steps(1,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* Ámbar mientras la v2 espera; verde en cuanto se valida. Y al empezar el ciclo
+   —cuando sólo existe la v1— ya está en verde: el documento estaba vigente. */
+@keyframes docver-cabestado{
+  0%,29%     { color:var(--app-ok) }
+  32%,54%    { color:var(--app-warn) }
+  58%,100%   { color:var(--app-ok) }
+}
+.docver__estxt{ position:relative; display:inline-grid }
+.docver__estxt span{
+  grid-area:1/1; white-space:nowrap;
+  animation:docver-validado var(--ciclo) steps(1,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.docver__estxt span:last-child{ animation-name:docver-pendiente }
+@keyframes docver-validado { 0%,30%{opacity:1} 30.1%,55%{opacity:0} 55.1%,100%{opacity:1} }
+@keyframes docver-pendiente{ 0%,30%{opacity:0} 30.1%,55%{opacity:1} 55.1%,100%{opacity:0} }
+
+.docver__tabs{
+  display:flex; gap:4px;
+  padding:8px 12px 0;
+  border-bottom:1px solid var(--app-line);
+}
+.docver__tab{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px 8px;
+  font-size:10.5px; color:var(--app-text-2);
+  border-bottom:2px solid transparent;
+}
+.docver__tab--on{ color:var(--app-blue-deep); border-bottom-color:var(--app-blue) }
+/* La pestaña de actividad se enciende al final, cuando hay algo que contar. */
+.docver__tab--act{
+  animation:docver-tabact var(--ciclo) steps(1,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-tabact{
+  0%,64%     { color:var(--app-text-2); border-bottom-color:transparent }
+  68%,100%   { color:var(--app-blue-deep); border-bottom-color:var(--app-blue) }
+}
+.docver__cuerpo{ flex:1 1 auto; padding:12px; display:flex; flex-direction:column; gap:9px; min-height:0 }
+
+/* — Una versión de la lista — */
+.docver__v{
+  border:1px solid var(--app-line);
+  border-left:3px solid var(--app-line-2);
+  border-radius:8px;
+  padding:9px 11px;
+  background:#fff;
+  display:grid; gap:6px;
+}
+.docver__vhd{ display:flex; align-items:center; gap:8px }
+.docver__vn{ font-size:11px; font-weight:500 }
+.docver__vf{ font-size:10px; color:var(--app-text); word-break:break-all }
+.docver__vm{ font-size:9px; color:var(--app-mute) }
+.docver__vbtns{ display:flex; gap:7px; margin-top:2px }
+.docver__btn{
+  display:inline-flex; align-items:center; gap:5px;
+  padding:5px 9px; border-radius:6px;
+  font-size:9.5px; font-weight:500;
+  border:1px solid transparent;
+}
+.docver__btn--ok{ background:#EAF6EC; color:#1E6A32; border-color:#BFE3C8 }
+.docver__btn--no{ background:#FDECEC; color:#B02020; border-color:#F3C9C9 }
+
+/* LA v2, EN CINCO TIEMPOS (porcentajes de --ciclo):
+     16–24  hace sitio: la tarjeta abre su alto y empuja a la v1 hacia abajo,
+            en vez de aparecer sobre un hueco que ya estaba reservado;
+     19–30  sube: un hilo azul, el de la carga, recorre el borde inferior;
+     30     entra pendiente (ámbar) y la cabecera la acompaña;
+     48–55  alguien pulsa «Validar versión»: el botón se hunde, se llena de
+            verde y suelta un anillo;
+     55     validada: el filete pasa a verde y los botones se van con su alto. */
+.docver__v--nueva{
+  position:relative; overflow:hidden;
+  animation:docver-entra var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-entra{
+  0%,16%   { opacity:0; transform:translateY(-12px) scale(.97); max-height:0;
+             margin-bottom:-9px; padding-top:0; padding-bottom:0;
+             border-left-color:var(--app-line-2) }
+  24%,29%  { opacity:1; transform:none; max-height:130px;
+             margin-bottom:0; padding-top:9px; padding-bottom:9px;
+             border-left-color:var(--app-line-2) }
+  32%,53%  { opacity:1; transform:none; max-height:130px;
+             margin-bottom:0; padding-top:9px; padding-bottom:9px;
+             border-left-color:var(--app-warn) }
+  58%,100% { opacity:1; transform:none; max-height:130px;
+             margin-bottom:0; padding-top:9px; padding-bottom:9px;
+             border-left-color:var(--app-ok) }
+}
+/* El hilo de la carga: dice «esto está subiendo» sin escribir una palabra. */
+.docver__v--nueva::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+  background:var(--app-blue);
+  transform-origin:0 50%; transform:scaleX(0); opacity:0;
+  animation:docver-sube var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-sube{
+  0%,19%   { opacity:1; transform:scaleX(0) }
+  30%      { opacity:1; transform:scaleX(1) }
+  33%,100% { opacity:0; transform:scaleX(1) }
+}
+.docver__v--nueva .docver__vbtns{
+  animation:docver-btns var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* Al validar, los botones no se desvanecen: se van con su alto, que es lo que
+   hace la aplicación —desaparecen de la ficha—. */
+@keyframes docver-btns{
+  0%,32%     { opacity:0; max-height:0; margin-top:0 }
+  36%,55%    { opacity:1; max-height:34px; margin-top:2px }
+  59%,100%   { opacity:0; max-height:0; margin-top:0 }
+}
+.docver__btn{ position:relative }
+.docver__btn--ok{
+  animation:docver-press var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-press{
+  0%,49%   { transform:none; background:#EAF6EC; color:#1E6A32; border-color:#BFE3C8;
+             box-shadow:0 0 0 0 rgba(47,158,68,0) }
+  51%      { transform:scale(.92); background:var(--app-ok); color:#fff; border-color:var(--app-ok);
+             box-shadow:0 0 0 0 rgba(47,158,68,.45) }
+  56%,100% { transform:none; background:var(--app-ok); color:#fff; border-color:var(--app-ok);
+             box-shadow:0 0 0 8px rgba(47,158,68,0) }
+}
+/* El puntero que llega a pulsarlo: una flecha de 12 px que entra desde abajo a
+   la derecha, se hunde con el botón y se va. */
+.docver__btn--ok::after{
+  content:""; position:absolute; right:-3px; bottom:-11px; width:12px; height:14px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 14'%3E%3Cpath d='M1 1l0 10 2.6-2.4 1.9 4.2 1.8-.8-1.9-4.1 3.6-.1z' fill='%231B2230' stroke='%23fff' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/contain;
+  opacity:0;
+  animation:docver-puntero var(--ciclo) cubic-bezier(.3,.7,.3,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-puntero{
+  0%,40%   { opacity:0; transform:translate(22px,18px) }
+  47%      { opacity:1; transform:translate(0,0) }
+  51%      { opacity:1; transform:translate(-1px,-1px) scale(.88) }
+  54%      { opacity:1; transform:translate(0,0) }
+  58%,100% { opacity:0; transform:translate(10px,8px) }
+}
+.docver__v--nueva .docver__est{
+  animation:docver-vestado var(--ciclo) steps(1,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-vestado{ 0%,55%{color:var(--app-warn)} 55.1%,100%{color:var(--app-ok)} }
+.docver__v--nueva .docver__estxt span{ animation-name:docver-vpend }
+.docver__v--nueva .docver__estxt span:last-child{ animation-name:docver-vval }
+@keyframes docver-vpend{ 0%,55%{opacity:1} 55.1%,100%{opacity:0} }
+@keyframes docver-vval { 0%,55%{opacity:0} 55.1%,100%{opacity:1} }
+
+/* La v1 se queda debajo, validada y sin botones: el histórico no se borra. */
+.docver__v--vieja{
+  border-left-color:var(--app-ok); opacity:.9;
+  animation:docver-vieja var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* Al validarse la v2, la v1 deja de ser la vigente: su filete se apaga y la
+   tarjeta se retira un punto. Sigue ahí —el histórico no se borra—. */
+@keyframes docver-vieja{
+  0%,54%   { border-left-color:var(--app-ok); opacity:.9 }
+  60%,100% { border-left-color:var(--app-line-2); opacity:.6 }
+}
+
+/* La línea de actividad, que se escribe sola al final del ciclo. Es literal:
+   la pestaña Actividad de la aplicación dice quién hizo qué y cuándo. */
+.docver__act{
+  margin-top:auto;
+  display:flex; align-items:flex-start; gap:8px;
+  padding-top:10px; border-top:1px solid var(--app-line);
+  opacity:0;
+  animation:docver-act var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-act{
+  0%,66%     { opacity:0; transform:translateY(6px) }
+  71%,94%    { opacity:1; transform:none }
+  98%,100%   { opacity:0; transform:none }
+}
+.docver__punto{
+  flex:none; width:16px; height:16px; border-radius:50%;
+  display:grid; place-items:center; margin-top:1px;
+  background:#EAF6EC; color:#1E6A32;
+}
+.docver__punto svg{ width:10px; height:10px }
+.docver__punto{
+  animation:docver-punto var(--ciclo) cubic-bezier(.34,1.6,.5,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docver-punto{
+  0%,67%   { transform:scale(0) }
+  73%,100% { transform:scale(1) }
+}
+.docver__actxt{ font-size:10px; color:var(--app-text-2); line-height:1.4 }
+.docver__actxt b{ font-weight:500; color:var(--app-text) }
+
+/* ---------------------------------------------------------
+   PIEZA 2 · `.docpush` — EL AVISO, ANTES DE CADUCAR
+   Rehecha el 28 de septiembre de 2026: la primera versión (`.docaviso`, dos
+   tarjetas de papel) no convenció al cliente. Esta cuenta el mismo hecho como
+   GESTO, no como ficha: el operario está en OTRA pantalla de la plataforma
+   —Incidencias—, le llega una notificación push, la toca, y aterriza en la
+   pantalla del documento. Mismo teléfono que `.docmovil`, mismo documento
+   (Certificado IFS Food, caduca el 30/11/26) y misma pareja de incidencias
+   que el resto del sitio (`UTD26_163_001`, `UTD26_166_001`).
+
+   El chasis del aparato es el que YA declaró `.docmovil`, no se repite: pide
+   `ds/device.css` (marco) y `ds/app.css` (tipografía Roboto de las pantallas).
+   --------------------------------------------------------- */
+.docpush{
+  display:grid; place-items:center; background:var(--app-canvas);
+}
+.docpush--panel .device-box{ width:min(42%,176px) }
+.docpush__pant{
+  position:relative; width:100%; height:100%; overflow:hidden; background:#fff;
+}
+
+/* LAS DOS PANTALLAS, superpuestas: A (Incidencias) se ve al principio y al
+   final del ciclo, B (el documento) sólo en el tramo central — es la misma
+   idea de «vuelve al reposo» que usan las demás piezas al cerrar el bucle. */
+.docpush__vista{
+  position:absolute; inset:0;
+  padding:11px 10px;
+  display:flex; flex-direction:column;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.docpush__vista--a{
+  background:#fff;
+  animation:docpush-a var(--ciclo) ease-in-out infinite;
+}
+@keyframes docpush-a{
+  0%,60%   { opacity:1; transform:none }
+  68%,100% { opacity:0; transform:scale(.96) }
+}
+.docpush__vista--b{
+  background:#fff;
+  animation:docpush-b var(--ciclo) ease-in-out infinite;
+}
+@keyframes docpush-b{
+  0%,63%   { opacity:0; transform:scale(1.04) }
+  71%,100% { opacity:1; transform:none }
+}
+.docpush__top{
+  display:flex; align-items:center; gap:6px;
+  font-size:10px; font-weight:500; color:var(--app-text);
+  padding-bottom:8px; margin-bottom:2px; border-bottom:1px solid var(--app-line);
+}
+.docpush__top--doc svg{ width:12px; height:12px; flex:none; color:var(--app-mute) }
+
+/* Pantalla A — dos filas de incidencia, el mismo patrón que una fila de
+   `.docmovil__doc`: icono, nombre, código. */
+.docpush__fila{ display:flex; align-items:flex-start; gap:8px; padding:9px 0 }
+.docpush__fila + .docpush__fila{ border-top:1px solid var(--app-line) }
+.docpush__filaico{ width:14px; height:14px; flex:none; margin-top:1px; color:#B02020 }
+.docpush__nom{ font-size:9.5px; font-weight:500; line-height:1.3; color:var(--app-text) }
+.docpush__sub{ font-size:8.5px; color:var(--app-mute); margin-top:2px }
+
+/* Pantalla B — la ficha del documento: la misma cabecera de tipo + nombre que
+   `.docver__panel`, sus tres pestañas, y la fecha de expiración a la vista,
+   que es lo que trajo aquí. */
+.docpush__doccard{
+  display:flex; align-items:center; gap:9px;
+  padding:9px 10px; margin-top:2px;
+  border:1px solid var(--app-line); border-radius:9px; background:var(--app-canvas);
+}
+.docpush__doccard svg{ width:17px; height:17px; flex:none; color:#C0392B }
+.docpush__doctabs{
+  display:flex; gap:11px;
+  margin-top:10px; padding-bottom:7px; border-bottom:1px solid var(--app-line);
+}
+.docpush__doctab{ font-size:9px; color:var(--app-text-2) }
+.docpush__doctab--on{ color:var(--app-blue-deep); font-weight:500 }
+.docpush__docexp{
+  display:flex; align-items:center; gap:6px;
+  margin-top:11px; padding:8px 9px;
+  border-radius:8px; background:#FDECEC; color:#B02020;
+  font-size:9.5px; font-weight:500;
+  animation:docpush-exp var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.docpush__docexp svg{ width:13px; height:13px; flex:none }
+/* El anillo que dice «esto es lo que te ha traído aquí», en cuanto la
+   pantalla se asienta. */
+@keyframes docpush-exp{
+  0%,74%   { box-shadow:0 0 0 0 rgba(176,32,32,0) }
+  78%      { box-shadow:0 0 0 0 rgba(176,32,32,.35) }
+  88%,100% { box-shadow:0 0 0 7px rgba(176,32,32,0) }
+}
+
+/* LA NOTIFICACIÓN PUSH, en cuatro tiempos (porcentajes de --ciclo):
+     28–34  cae desde el borde superior, con rebote de llegada;
+     34–54  se lee, quieta;
+     54–58  el toque: se hunde un punto, como `.docver__btn--ok` al pulsarse;
+     58–63  sube y se va — y ahí es cuando la pantalla B ya está entrando. */
+.docpush__push{
+  position:absolute; left:6px; right:6px; top:8px; z-index:4;
+  display:flex; align-items:flex-start; gap:8px;
+  background:rgba(255,255,255,.98);
+  border:1px solid var(--app-line); border-radius:11px;
+  box-shadow:0 14px 30px rgba(12,32,64,.22);
+  padding:9px 10px;
+  animation:docpush-push var(--ciclo) cubic-bezier(.34,1.15,.4,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docpush-push{
+  0%,28%   { opacity:0; transform:translateY(-140%) }
+  34%,52%  { opacity:1; transform:translateY(0) scale(1) }
+  56%      { opacity:1; transform:translateY(0) scale(.95) }
+  60%,100% { opacity:0; transform:translateY(-140%) scale(1) }
+}
+.docpush__pushico{
+  flex:none; width:25px; height:25px; border-radius:7px;
+  display:grid; place-items:center;
+  background:var(--app-blue-wash); color:var(--app-blue-deep);
+}
+.docpush__pushico svg{ width:13px; height:13px }
+.docpush__pushtxt{ min-width:0 }
+.docpush__pushtit{ font-size:8.5px; color:var(--app-mute) }
+.docpush__pushq{ font-size:10px; font-weight:500; color:var(--app-text); margin-top:2px; line-height:1.3 }
+
+/* ---------------------------------------------------------
+   PIEZA 3 · `.docmovil` — LA CARPETA EN LA PLANTA
+   El teléfono con la carpeta dentro. Lo que se mueve es lo que hace el operario:
+   busca, y el listado se queda en el documento que necesita.
+
+   Va con el marco de `ds/device.css` y la pantalla con los tokens de
+   `ds/app.css`: el aparato no se dibuja aquí, que ya está resuelto.
+   --------------------------------------------------------- */
+.docmovil{ display:grid; place-items:center; background:var(--app-canvas) }
+/* El teléfono cabe entero dentro de la caja: 190px de ancho son ~410 de alto,
+   que es lo que deja la proporción 6/5 con su aire. Más ancho y el aparato se
+   sale por abajo, que en un teléfono no se lee como «continúa» sino como que la
+   pieza está mal medida. */
+.docmovil .device-box{ width:min(46%,190px) }
+.docmovil__pant{
+  position:absolute; inset:0;
+  background:#fff;
+  display:flex; flex-direction:column;
+  font-size:10px;
+}
+.docmovil__top{
+  flex:none; height:44px; padding:13px 11px 0;
+  display:flex; align-items:center; gap:8px;
+  background:var(--app-blue); color:#fff;
+  font-size:11px; font-weight:500;
+}
+.docmovil__buscar{
+  margin:9px 10px 6px; padding:6px 9px;
+  border:1px solid var(--app-line); border-radius:7px;
+  background:var(--app-canvas);
+  font-size:9.5px; color:var(--app-mute);
+  display:flex; align-items:center; gap:6px;
+}
+.docmovil__buscar svg{ width:11px; height:11px; flex:none }
+/* Lo que se teclea se descubre con la misma cortina que el catálogo de
+   plantillas: su 100 % es el ancho del texto, así que se traduce sin medir. */
+.docmovil__q{ position:relative; display:inline-block; width:max-content; color:var(--app-text) }
+.docmovil__q::after{
+  content:""; position:absolute; top:-2px; bottom:-2px; right:0; left:0;
+  background:var(--app-canvas);
+  animation:docmovil-teclea var(--ciclo) steps(11,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-teclea{
+  0%,17%     { left:0 }
+  28%,78%    { left:100% }
+  84%,100%   { left:0 }
+}
+/* El listado llega al empezar —sube y se asienta— y no aparece ya hecho. */
+.docmovil__lista{
+  padding:2px 10px 10px; display:grid; gap:6px; overflow:hidden;
+  animation:docmovil-lista var(--ciclo) cubic-bezier(.3,.8,.3,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-lista{
+  0%       { opacity:0; transform:translateY(12px) }
+  6%,100%  { opacity:1; transform:none }
+}
+.docmovil__doc{
+  display:flex; align-items:center; gap:8px;
+  padding:7px 8px;
+  border:1px solid var(--app-line); border-radius:7px;
+  background:#fff;
+}
+.docmovil__ico{ flex:none; width:16px; height:16px; color:var(--app-mute) }
+.docmovil__nom{ font-size:9.5px; line-height:1.25; min-width:0 }
+.docmovil__sub{ font-size:8.5px; color:var(--app-mute); margin-top:2px }
+/* Los que no coinciden con la búsqueda se van cuando el texto está escrito, y
+   vuelven al final del ciclo. El que se queda sube: eso es filtrar. */
+.docmovil__doc--fuera{
+  animation:docmovil-fuera var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-fuera{
+  0%,28%     { opacity:1; max-height:44px; margin-bottom:0 }
+  36%,76%    { opacity:0; max-height:0; margin-bottom:-6px }
+  86%,100%   { opacity:1; max-height:44px; margin-bottom:0 }
+}
+.docmovil__doc--queda{
+  animation:docmovil-queda var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-queda{
+  0%,32%     { border-color:var(--app-line); box-shadow:rgba(30,107,255,0) 0 0 0 0 }
+  38%,50%    { border-color:var(--app-blue); box-shadow:rgba(30,107,255,.12) 0 0 0 3px }
+  54%        { border-color:var(--app-blue); box-shadow:rgba(30,107,255,.28) 0 0 0 7px }
+  60%,76%    { border-color:var(--app-blue); box-shadow:rgba(30,107,255,.12) 0 0 0 3px }
+  84%,100%   { border-color:var(--app-line); box-shadow:rgba(30,107,255,0) 0 0 0 0 }
+}
+/* El haz del lector de códigos: baja por la pantalla justo antes de que la
+   píldora diga «código leído». Va en el pseudo de la pantalla, sin marcado. */
+.docmovil__pant::after{
+  content:""; position:absolute; left:0; right:0; top:0; height:34%;
+  background:linear-gradient(to bottom,rgba(30,107,255,0),rgba(30,107,255,.14) 80%,rgba(30,107,255,.6));
+  border-bottom:1.5px solid var(--app-blue);
+  opacity:0; transform:translateY(-100%); pointer-events:none;
+  animation:docmovil-haz var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-haz{
+  0%,40%   { opacity:0; transform:translateY(-100%) }
+  42%      { opacity:1; transform:translateY(-100%) }
+  50%      { opacity:1; transform:translateY(295%) }
+  51%,100% { opacity:0; transform:translateY(295%) }
+}
+
+/* Las píldoras que flotan sobre el teléfono. La del código aparece con el
+   gesto. `--red` era la de «Disponible sin conexión», retirada de la página el
+   28 de septiembre de 2026 (ver la cabecera de la hoja); se queda sin usar. */
+.docmovil__pill{
+  position:absolute; z-index:3;
+  display:inline-flex; align-items:center; gap:7px;
+  padding:8px 12px; border-radius:999px;
+  background:#111214; color:#fff;
+  font:var(--font-weight-regular,400) 12px/1 var(--font-sans);
+  box-shadow:rgba(12,32,64,.28) 0 10px 26px;
+  white-space:nowrap;
+}
+.docmovil__pill svg{ width:14px; height:14px }
+.docmovil__pill--red{
+  top:11%; left:4%;
+  animation:docmovil-off var(--ciclo) cubic-bezier(.34,.9,.4,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-off{
+  0%       { opacity:0; transform:translateY(-8px) scale(.96) }
+  5%,100%  { opacity:1; transform:none }
+}
+.docmovil__pill--codigo{
+  bottom:13%; right:4%;
+  background:#fff; color:var(--app-text);
+  border:1px solid var(--color-hairline);
+  animation:docmovil-codigo var(--ciclo) cubic-bezier(.34,.9,.4,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docmovil-codigo{
+  0%,46%     { opacity:0; transform:translateY(10px) scale(.94) }
+  51%        { opacity:1; transform:translateY(-2px) scale(1.04) }
+  54%,76%    { opacity:1; transform:none }
+  84%,100%   { opacity:0; transform:translateY(8px) scale(.96) }
+}
+
+/* ---------------------------------------------------------
+   PIEZA 4 · `.docia` — LA RESPUESTA, CON SU CITA
+   Sobre grafito, como todo lo de IA. Una barra de prompt que se escribe sola y,
+   debajo, la respuesta con la ficha del documento del que sale: la cita es la
+   pieza, no un adorno. Sin ella esto sería un chat.
+   --------------------------------------------------------- */
+.docia{
+  width:100%;
+  border-radius:var(--radius-lg,16px);
+  background:#111214;
+  border:1px solid #2A2E34;
+  padding:clamp(18px,2.2vw,26px);
+  display:grid; gap:14px;
+  color:#E7E9EC;
+  overflow:hidden;
+}
+.docia__bar{
+  display:flex; align-items:center; gap:12px;
+  padding:13px 14px;
+  background:#1B2026;
+  border:1px solid #33383F;
+  border-radius:12px;
+}
+.docia__spark{
+  flex:0 0 auto; width:26px; height:26px; border-radius:8px;
+  display:grid; place-items:center;
+  background:rgba(168,85,247,.16); color:#C88BFA;
+}
+.docia__spark svg{ width:15px; height:15px }
+.docia__q{
+  flex:1 1 auto; min-width:0;
+  font:var(--font-weight-thin,300) 17px/1.35 var(--font-sans);
+  color:#E7E9EC;
+}
+.docia__teclea{ position:relative; display:inline-block; width:max-content; max-width:100% }
+.docia__teclea::after{
+  content:""; position:absolute; top:-2px; bottom:-2px; right:0; left:0;
+  background:#1B2026;
+  border-left:1.5px solid #C88BFA;
+  animation:docia-teclea var(--ciclo) steps(48,end) infinite,
+            docia-caret 1s steps(1,end) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docia-teclea{
+  0%,4%      { left:0 }
+  26%,88%    { left:100% }
+  88.1%,100% { left:0 }
+}
+@keyframes docia-caret{ 0%{border-color:#C88BFA} 50%{border-color:transparent} }
+
+.docia__resp{
+  display:grid; gap:11px;
+  padding:14px;
+  background:#171A1F;
+  border:1px solid #2A2E34;
+  border-radius:12px;
+  opacity:0;
+  animation:docia-resp var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docia-resp{
+  0%,31%     { opacity:0; transform:translateY(8px) }
+  36%,90%    { opacity:1; transform:none }
+  95%,100%   { opacity:0; transform:translateY(8px) }
+}
+/* La respuesta llega en dos tiempos, como en la aplicación: primero la frase
+   —sale desenfocada y se asienta, que es lo que se ve al escribirse—, y después
+   la cita con su anillo. Antes de que llegue nada, la chispa «piensa». */
+.docia__spark{
+  animation:docia-piensa var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docia-piensa{
+  0%,25%   { box-shadow:0 0 0 0 rgba(200,139,250,0) }
+  28%      { box-shadow:0 0 0 0 rgba(200,139,250,.5) }
+  33%      { box-shadow:0 0 0 7px rgba(200,139,250,0) }
+  35%      { box-shadow:0 0 0 0 rgba(200,139,250,.4) }
+  40%,100% { box-shadow:0 0 0 7px rgba(200,139,250,0) }
+}
+.docia__linea{
+  font:var(--font-weight-thin,300) 14px/1.5 var(--font-sans); color:#C9CED6;
+  animation:docia-linea var(--ciclo) cubic-bezier(.3,.8,.3,1) infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docia-linea{
+  0%,33%   { opacity:0; transform:translateY(6px); filter:blur(4px) }
+  42%,100% { opacity:1; transform:none; filter:blur(0) }
+}
+.docia__linea b{ font-weight:var(--font-weight-regular,400); color:#E7E9EC }
+/* La cita: la ficha del documento del que sale la respuesta, con su versión y
+   su página. Va en papel sobre el grafito por la misma razón que en la banda de
+   IA —lo que entra viene de fuera de la IA—. */
+.docia__cita{
+  display:flex; align-items:center; gap:10px;
+  padding:10px 12px;
+  background:#F5F6F8; border:1px solid #D9DCE1; border-radius:9px;
+  color:#2A2F36;
+  animation:docia-cita var(--ciclo) cubic-bezier(.34,1.3,.5,1) infinite,
+            docia-anillo var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes docia-cita{
+  0%,43%   { opacity:0; transform:translateY(10px) scale(.97) }
+  50%,100% { opacity:1; transform:none }
+}
+@keyframes docia-anillo{
+  0%,49%   { box-shadow:0 0 0 0 rgba(200,139,250,.55) }
+  58%,100% { box-shadow:0 0 0 9px rgba(200,139,250,0) }
+}
+.docia__cita svg{ width:18px; height:18px; flex:none; color:#C0392B }
+.docia__citxt{ font:var(--font-weight-regular,400) 12px/1.3 var(--font-sans); min-width:0 }
+.docia__citxt span{ display:block; font-size:10.5px; color:#6B727C; margin-top:2px }
+
+/* ---------------------------------------------------------
+   PIEZA 5 · `.docengancha` — EL DOCUMENTO, DONDE SE TRABAJA
+   Tres destinos y un solo documento: el control del registro que lo aplica, la
+   ficha del activo y la incidencia. La copia no se duplica —eso es justo lo que
+   esta página dice que no pasa—: **el mismo documento aparece dentro de los
+   tres**, y por eso la ficha central se queda quieta y lo que viaja es una
+   línea que se enciende.
+   --------------------------------------------------------- */
+/* Menos alta que las otras dos: no es una pantalla, son cuatro fichas, y con la
+   proporción 6/5 se quedaba medio lienzo vacío debajo. */
+.docengancha{
+  aspect-ratio:5/4;
+  display:grid; grid-template-columns:1fr; align-content:center;
+  gap:18px; padding:26px 24px;
+}
+.docengancha__ficha{
+  justify-self:center;
+  display:flex; align-items:center; gap:11px;
+  padding:12px 14px;
+  background:#fff; border:1px solid var(--color-hairline); border-radius:10px;
+  box-shadow:rgba(12,32,64,.10) 0 10px 28px;
+  max-width:300px;
+}
+.docengancha__ficha{
+  position:relative;
+  animation:docengancha-ficha var(--ciclo) ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* Cuando entra una versión nueva, la ficha es la que se enciende, y con ella
+   —a la vez, no una detrás de otra— los tres documentos de los destinos. Eso
+   es «una sola copia» dicho sin una palabra. */
+@keyframes docengancha-ficha{
+  0%,58%   { box-shadow:rgba(12,32,64,.10) 0 10px 28px, 0 0 0 0 rgba(30,107,255,0); border-color:var(--color-hairline) }
+  62%      { box-shadow:rgba(12,32,64,.10) 0 10px 28px, 0 0 0 0 rgba(30,107,255,.4); border-color:var(--app-blue) }
+  72%,100% { box-shadow:rgba(12,32,64,.10) 0 10px 28px, 0 0 0 9px rgba(30,107,255,0); border-color:var(--color-hairline) }
+}
+.docengancha__ficha svg{ width:20px; height:20px; flex:none; color:#C0392B }
+.docengancha__nom{ font-size:11.5px; font-weight:500; line-height:1.25 }
+.docengancha__ver{ font-size:9.5px; color:var(--app-mute); margin-top:2px }
+.docengancha__destinos{ position:relative; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px }
+
+/* LAS TRES LÍNEAS: del documento al bus y del bus a cada destino. Se dibujan
+   en orden —tronco, barra, ramales— antes de que el documento aterrice, para
+   que se lea que sale de la ficha y no que aparece en tres cajas. Son
+   pseudoelementos: no añaden marcado ni texto que traducir. */
+.docengancha__ficha::after,
+.docengancha__destinos::before,
+.docengancha__dest::before{
+  content:""; position:absolute; background:var(--app-line-2);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.docengancha__ficha::after{
+  left:50%; top:100%; width:1.5px; height:9px; margin-left:-.75px;
+  transform-origin:50% 0;
+  animation:docengancha-tronco var(--ciclo) ease-out infinite;
+}
+.docengancha__destinos::before{
+  left:calc((100% - 20px) / 6); right:calc((100% - 20px) / 6); top:-9.75px; height:1.5px;
+  transform-origin:50% 50%;
+  animation:docengancha-barra var(--ciclo) ease-out infinite;
+}
+.docengancha__dest::before{
+  left:50%; top:-9px; width:1.5px; height:9px; margin-left:-.75px;
+  transform-origin:50% 0;
+  animation:docengancha-ramal var(--ciclo) ease-out infinite;
+}
+.docengancha__dest:nth-child(2)::before{ animation-delay:.12s }
+.docengancha__dest:nth-child(3)::before{ animation-delay:.24s }
+@keyframes docengancha-tronco{ 0%,3%{transform:scaleY(0)} 8%,100%{transform:scaleY(1)} }
+@keyframes docengancha-barra { 0%,8%{transform:scaleX(0)} 15%,100%{transform:scaleX(1)} }
+@keyframes docengancha-ramal { 0%,14%{transform:scaleY(0)} 19%,100%{transform:scaleY(1)} }
+.docengancha__dest{
+  border:1px solid var(--app-line); border-radius:9px;
+  background:#fff;
+  padding:10px;
+  /* El alto mínimo es el del destino con el documento dentro: sin él, las tres
+     cajas crecen y encogen cuando entra la fila y la pieza da un salto. */
+  min-height:132px;
+  display:grid; gap:8px;
+  align-content:start;
+}
+.docengancha__dt{
+  display:flex; align-items:center; gap:6px;
+  font-size:9.5px; font-weight:500; color:var(--app-text-2);
+}
+.docengancha__dt svg{ width:12px; height:12px; color:var(--app-mute) }
+.docengancha__fila{
+  height:7px; border-radius:3px; background:var(--app-line);
+}
+.docengancha__fila:nth-of-type(3){ width:72% }
+/* La fila del documento dentro de cada destino: entra una detrás de otra, y se
+   quedan las tres. Lo que se enciende con ella es el filete del destino. */
+.docengancha__doc{
+  display:flex; align-items:center; gap:6px;
+  padding:6px 7px;
+  border:1px dashed var(--app-line-2); border-radius:6px;
+  font-size:9px; color:var(--app-text-2);
+  opacity:0;
+  animation:docengancha-doc var(--ciclo) cubic-bezier(.34,.9,.4,1) infinite,
+            docengancha-sync var(--ciclo) ease-out infinite;
+  animation-delay:calc(var(--i) * .5s - var(--ciclo)), 0s;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* El pulso de la versión nueva, igual para los tres: sin retardo por destino. */
+@keyframes docengancha-sync{
+  0%,60%   { background:transparent; box-shadow:0 0 0 0 rgba(30,107,255,0) }
+  64%      { background:var(--app-blue-wash); box-shadow:0 0 0 0 rgba(30,107,255,.4) }
+  72%      { background:var(--app-blue-wash); box-shadow:0 0 0 7px rgba(30,107,255,0) }
+  82%,100% { background:transparent; box-shadow:0 0 0 0 rgba(30,107,255,0) }
+}
+.docengancha__doc svg{ width:11px; height:11px; flex:none; color:#C0392B }
+@keyframes docengancha-doc{
+  0%,20%     { opacity:0; transform:translateY(-10px) scale(.96) }
+  27%,90%    { opacity:1; transform:none; border-style:solid; border-color:var(--app-line) }
+  95%,100%   { opacity:0; transform:translateY(-8px) }
+}
+
+/* ---------------------------------------------------------
+   MOVIMIENTO REDUCIDO — las cinco se quedan resueltas
+   Lo contrario de lo que suele hacerse: no se congela el primer fotograma, se
+   congela el último. Es el que cuenta la historia entera —la versión validada,
+   el aviso ya enviado dos veces, el documento encontrado, la respuesta con su
+   cita, los tres destinos con el documento dentro—.
+   --------------------------------------------------------- */
+@media (prefers-reduced-motion:reduce){
+  .docmovil *, .docver *, .docia *, .docpush *, .docengancha *,
+  .docmovil *::before, .docver *::before, .docia *::before, .docpush *::before, .docengancha *::before,
+  .docmovil *::after, .docver *::after, .docia *::after, .docpush *::after, .docengancha *::after{ animation:none !important }
+  .docver__v--nueva .docver__vbtns{ display:none }
+  .docver__vnum b:first-child,
+  .docver__estxt span:last-child{ opacity:0 }
+  .docver__act,
+  .docia__resp,
+  .docia__linea,
+  .docia__cita,
+  .docengancha__doc,
+  .docmovil__pill--codigo{ opacity:1; transform:none }
+  .docmovil__doc--fuera{ display:none }
+  .docmovil__q::after{ left:100% }
+  .docia__teclea::after{ left:100%; border-left-width:0 }
+  /* `.docpush` congelada en la pantalla B: la push ya se tocó y el documento,
+     con su aviso de caducidad, ya está en pantalla — la historia entera. */
+  .docpush__vista--a{ opacity:0 }
+  .docpush__vista--b{ opacity:1; transform:none }
+  .docpush__push{ opacity:0 }
+  .docpush__docexp{ box-shadow:none }
+}
+
+/* Mismo estado resuelto, para cuando la capacidad del rotador ya terminó su
+   vuelta única (ver la nota junto a .scene[data-terminado] en ds/scene.css). */
+.scene[data-terminado] .docmovil *,
+.scene[data-terminado] .docver *,
+.scene[data-terminado] .docia *,
+.scene[data-terminado] .docpush *,
+.scene[data-terminado] .docengancha *,
+.scene[data-terminado] .docmovil *::before,
+.scene[data-terminado] .docver *::before,
+.scene[data-terminado] .docia *::before,
+.scene[data-terminado] .docpush *::before,
+.scene[data-terminado] .docengancha *::before,
+.scene[data-terminado] .docmovil *::after,
+.scene[data-terminado] .docver *::after,
+.scene[data-terminado] .docia *::after,
+.scene[data-terminado] .docpush *::after,
+.scene[data-terminado] .docengancha *::after{ animation:none !important }
+.scene[data-terminado] .docver__v--nueva .docver__vbtns{ display:none }
+.scene[data-terminado] .docver__vnum b:first-child,
+.scene[data-terminado] .docver__estxt span:last-child{ opacity:0 }
+.scene[data-terminado] .docver__act,
+.scene[data-terminado] .docia__resp,
+.scene[data-terminado] .docia__linea,
+.scene[data-terminado] .docia__cita,
+.scene[data-terminado] .docengancha__doc,
+.scene[data-terminado] .docmovil__pill--codigo{ opacity:1; transform:none }
+.scene[data-terminado] .docmovil__doc--fuera{ display:none }
+.scene[data-terminado] .docmovil__q::after{ left:100% }
+.scene[data-terminado] .docia__teclea::after{ left:100%; border-left-width:0 }
+.scene[data-terminado] .docpush__vista--a{ opacity:0 }
+.scene[data-terminado] .docpush__vista--b{ opacity:1; transform:none }
+.scene[data-terminado] .docpush__push{ opacity:0 }
+.scene[data-terminado] .docpush__docexp{ box-shadow:none }
+
+/* =========================================================
+   EL REPARTO DE LAS SECCIONES — texto y pieza, 5fr/7fr
+   ---------------------------------------------------------
+   El mismo de `.rotador` (patrón 12 de `ds/sections.css`) y el mismo de
+   `.montaje-fila` (`ds/plantilla.css`): dos rejillas de texto y pantalla con
+   proporciones distintas en la misma web se leen como dos maquetaciones. Está
+   escrito tres veces porque las tres hojas se cargan en páginas distintas y
+   ninguna es la general; **el día que se toque una cuarta vez, esto se sube a
+   `ds/site.css` y se borran las tres.**
+
+   `--doc-invertida` cambia el orden sin cambiar el marcado: en Mitti las
+   secciones alternan lado, y alternar es lo que evita que seis bloques seguidos
+   se lean como una lista.
+   ========================================================= */
+.docfila{
+  display:grid;
+  grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+  gap:48px;
+  align-items:center;
+}
+/* `--media` es la fila con la pieza a la IZQUIERDA: la pieza va primera en el
+   marcado y la columna ancha es la primera, así que no hay que reordenar nada.
+   Se alterna sección a sección porque seis bloques con la imagen del mismo lado
+   se leen como una lista, no como seis argumentos. */
+.docfila--media{ grid-template-columns:minmax(0,7fr) minmax(0,5fr) }
+@media (max-width:900px){
+  .docfila,
+  .docfila--media{ grid-template-columns:1fr; gap:32px }
+}
+.docpunto{ display:flex; gap:12px }
+.docpunto + .docpunto{ margin-top:22px }
+/* El icono en TINTA, no en color de módulo: Documentos no tiene color, y ésa es
+   la regla que sostiene toda esta página. */
+.docpunto > svg{ width:19px; height:19px; flex:none; margin-top:3px; color:var(--color-ink) }
+.docpunto h3{ font:var(--type-body-lg); font-weight:var(--font-weight-medium); margin:0 0 4px }
+.docpunto p{ font:var(--type-body-md); color:var(--ds-text-2); margin:0 }
+
+/* =========================================================
+   LA VARIANTE DE PANEL — las cuatro dentro del rotador
+   ---------------------------------------------------------
+   Las cuatro piezas pasan a ser los cuatro paneles del rotador de capacidades
+   (patrón 12 de `ds/sections.css`), que es donde el cliente ha condensado la
+   página: una sección con cuatro capacidades, cada una sobre la pantalla que la
+   resuelve. Dentro del rotador el marco, el radio y la proporción los pone la
+   escena, así que la pieza se los quita: con los dos salían dos bordes
+   concéntricos. Es la misma variante que `.montaje--panel`.
+
+   LA ESCENA VA SIN `data-module`, Y ES LA DECISIÓN DE ESTA PÁGINA
+   El rotador exige que sus paneles sean `.scene` —su script los busca así—, y el
+   sistema no tiene tinte para Documentos. Teñir con el color de otro módulo es
+   lo que prohíbe la regla; **una escena sin módulo no la rompe: deja el lienzo
+   sin teñir, que es exactamente lo que le corresponde a un módulo sin color.**
+   Lo único que hay que reasignar es el halo del borde, que sin módulo cae en la
+   primaria del sistema —azul, o sea Incidencias— y aquí va en tinta.
+
+   EL RELOJ BAJA A 12 SEGUNDOS dentro del rotador. Los ciclos están escritos en
+   porcentajes de `--ciclo`, así que cambiarlo los escala enteros sin tocar un
+   fotograma. Doce por cuatro son 48 s de vuelta completa, del orden de los 42 de
+   `/auditorias/`. **El `data-dur` de cada `.rotador__item` tiene que valer lo
+   mismo que este número**: si se cambia uno, se cambian los cinco.
+   ========================================================= */
+.rotador__vista > .scene:not([data-module]){ --scene-glow:var(--color-ink) }
+
+.docmovil--panel,
+.docver--panel,
+.docia--panel,
+.docpush--panel,
+.docengancha--panel{
+  --ciclo:12s;
+  position:absolute; inset:0;
+  width:auto; aspect-ratio:auto; min-height:0;
+  border:0; border-radius:0;
+}
+.docmovil--panel,
+.docver--panel,
+.docpush--panel,
+.docengancha--panel{ background:none }
+/* La de IA conserva su grafito: es el fondo de la pieza, no su marco, y sin él
+   dejaría de ser la capa de IA. Lo que pierde es el radio, que ya lo pone la
+   escena al recortar. */
+.docia--panel,
+.rotador__vista .docia{
+  position:absolute; inset:0; width:auto;
+  border:0; border-radius:0; padding:clamp(16px,2vw,24px);
+  /* El panel llena la escena y el contenido se centra: sin esto la caja de IA
+     se quedaba en su alto natural con un tercio de la escena en blanco. */
+  margin-top:0 !important;
+  align-content:center;
+}
+/* El teléfono, un punto más pequeño dentro del panel: la escena del rotador es
+   4:3 y más corta que la caja propia de la pieza. */
+.docmovil--panel .device-box{ width:min(42%,176px) }

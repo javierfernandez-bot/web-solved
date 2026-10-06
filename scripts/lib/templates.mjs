@@ -98,6 +98,12 @@ ${graph}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"/>
 <link rel="stylesheet" href="${rootPrefix}${DS}${V}"/>
 <link rel="stylesheet" href="${rootPrefix}solved.css${V}"/>
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="${rootPrefix}ds/tokens.css${V}"/>
+<link rel="stylesheet" href="${rootPrefix}ds/site.css${V}"/>
+<!-- Sólo las variables de tinte (ds/tint.css), para el banner de producto del blog -->
+<link rel="stylesheet" href="${rootPrefix}ds/tint.css${V}"/>
 </head>`;
 }
 

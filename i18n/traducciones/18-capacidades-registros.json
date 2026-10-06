@@ -1,0 +1,416 @@
+{
+  "_nota": "Las cuatro capacidades del módulo de registros de /auditorias/ (9 sep 2026): el rotador que sustituye a los tres puntos del montaje de la plantilla y a la rejilla de seis celdas. Tres de los cuatro paneles son pantallas de la aplicación comprobadas el 9 de septiembre —el editor de plantillas, la vista Calendario de Registros y la pestaña Historial con el panel de Informes Excel—, así que los rótulos de dentro se traducen como NOMBRES DE FUNCIÓN, no como copy: «Constructor de fórmulas», «Regla de visibilidad», «Informes Excel», los tipos de control y los estados de un registro cerrado tienen que decirse igual aquí y en cualquier otra pantalla del sitio. Los operadores del constructor —«Mayor o igual que», «Menor o igual que»— son los literales de la aplicación. «TEMPERATURA» es una entrada local, o sea el nombre que la planta le pone al hueco donde se teclea el dato: se deja en mayúsculas y se traduce, porque lo lee un operario. Los días de la semana van abreviados a tres letras como en el calendario del producto.",
+  "Monta la plantilla, programa el registro y descarga el histórico en el mismo módulo": {
+    "en": "Build the template, schedule the record and download the history in one module",
+    "fr": "Montez le modèle, planifiez l'enregistrement et téléchargez l'historique dans le même module",
+    "it": "Costruisci il modello, pianifica la registrazione e scarica lo storico nello stesso modulo",
+    "de": "Vorlage bauen, Aufzeichnung planen und Historie herunterladen — alles im selben Modul",
+    "pt": "Monte o modelo, agende o registo e descarregue o histórico no mesmo módulo"
+  },
+  "Duplica un modelo, edítalo o importa el parte que ya tienes": {
+    "en": "Duplicate a template, edit it or import the report you already have",
+    "fr": "Dupliquez un modèle, modifiez-le ou importez le rapport que vous avez déjà",
+    "it": "Duplica un modello, modificalo o importa il rapporto che già hai",
+    "de": "Ein Modell duplizieren, bearbeiten oder die vorhandene Meldung importieren",
+    "pt": "Duplique um modelo, edite-o ou importe o parte que já tem"
+  },
+  "Elige entre multitud de controles, con fórmulas y reglas": {
+    "en": "Choose from a wide range of checks, with formulas and rules",
+    "fr": "Choisissez parmi une multitude de contrôles, avec formules et règles",
+    "it": "Scegli tra moltissimi controlli, con formule e regole",
+    "de": "Aus vielen Kontrollen wählen, mit Formeln und Regeln",
+    "pt": "Escolha entre uma grande variedade de controlos, com fórmulas e regras"
+  },
+  "Una fórmula decide si el valor medido está dentro de rango y lo resuelve en OK o KO sin que nadie lo interprete; una regla de visibilidad enseña el control sólo cuando toca.": {
+    "en": "A formula decides whether the measured value is within range and resolves it as OK or KO with nobody interpreting it; a visibility rule shows the check only when it applies.",
+    "fr": "Une formule décide si la valeur mesurée est dans la plage et la résout en OK ou KO sans que personne ne l'interprète ; une règle de visibilité n'affiche le contrôle que lorsqu'il s'applique.",
+    "it": "Una formula decide se il valore misurato rientra nell'intervallo e lo risolve in OK o KO senza che nessuno lo interpreti; una regola di visibilità mostra il controllo solo quando serve.",
+    "de": "Eine Formel entscheidet, ob der Messwert im Bereich liegt, und löst ihn ohne Auslegung in OK oder KO auf; eine Sichtbarkeitsregel zeigt die Kontrolle nur, wenn sie ansteht.",
+    "pt": "Uma fórmula decide se o valor medido está dentro do intervalo e resolve-o em OK ou KO sem que ninguém o interprete; uma regra de visibilidade mostra o controlo apenas quando é necessário."
+  },
+  "Programa los registros para tu equipo": {
+    "en": "Schedule the records for your team",
+    "fr": "Planifiez les enregistrements pour votre équipe",
+    "it": "Pianifica le registrazioni per la tua squadra",
+    "de": "Aufzeichnungen für Ihr Team planen",
+    "pt": "Agende os registos para a sua equipa"
+  },
+  "Cada modelo se planifica con su frecuencia, su fecha y su responsable, y el calendario del módulo enseña a la vez lo que queda por hacer y lo que se cerró. El aviso sale antes de que el control venza, no cuando ya ha vencido.": {
+    "en": "Every template is scheduled with its frequency, its date and its owner, and the module calendar shows at once what is still to do and what has been closed. The alert goes out before the check falls due, not once it already has.",
+    "fr": "Chaque modèle est planifié avec sa fréquence, sa date et son responsable, et le calendrier du module montre à la fois ce qui reste à faire et ce qui a été clôturé. L'alerte part avant l'échéance du contrôle, pas une fois passée.",
+    "it": "Ogni modello si pianifica con la sua frequenza, la sua data e il suo responsabile, e il calendario del modulo mostra insieme ciò che resta da fare e ciò che è stato chiuso. L'avviso parte prima che il controllo scada, non dopo.",
+    "de": "Jede Vorlage wird mit Frequenz, Datum und Verantwortlichem geplant, und der Kalender des Moduls zeigt zugleich, was offen ist und was abgeschlossen wurde. Die Benachrichtigung geht heraus, bevor die Kontrolle fällig wird, nicht danach.",
+    "pt": "Cada modelo é planeado com a sua frequência, a sua data e o seu responsável, e o calendário do módulo mostra ao mesmo tempo o que falta fazer e o que foi encerrado. O alerta é enviado antes de o controlo vencer, não depois de já ter vencido."
+  },
+  "Todo el histórico disponible, listo para descargar": {
+    "en": "The whole history available, ready to download",
+    "fr": "Tout l'historique disponible, prêt à télécharger",
+    "it": "Tutto lo storico disponibile, pronto da scaricare",
+    "de": "Die gesamte Historie verfügbar, bereit zum Herunterladen",
+    "pt": "Todo o histórico disponível, pronto a descarregar"
+  },
+  "Cada registro cerrado guarda su fecha de ejecución, su estado y sus evidencias, y el histórico se filtra por línea, turno o producto. De ahí sale el informe de registros en Excel, y cada registro firmado, en PDF.": {
+    "en": "Every closed record keeps its execution date, its status and its evidence, and the history is filtered by production line, shift or product. That is where the records report in Excel comes from, and every signed record, as a PDF.",
+    "fr": "Chaque enregistrement clôturé conserve sa date d'exécution, son statut et ses preuves, et l'historique se filtre par ligne de production, poste ou produit. C'est de là que sort le rapport d'enregistrements en Excel, et chaque enregistrement signé, en PDF.",
+    "it": "Ogni registrazione chiusa conserva la data di esecuzione, lo stato e le evidenze, e lo storico si filtra per linea di produzione, turno o prodotto. Da lì esce il report delle registrazioni in Excel, e ogni registrazione firmata, in PDF.",
+    "de": "Jede abgeschlossene Aufzeichnung bewahrt ihr Ausführungsdatum, ihren Status und ihre Nachweise, und die Historie lässt sich nach Fertigungslinie, Schicht oder Produkt filtern. Daraus entsteht der Aufzeichnungsbericht in Excel, und jede unterschriebene Aufzeichnung als PDF.",
+    "pt": "Cada registo encerrado guarda a sua data de execução, o seu estado e as suas evidências, e o histórico filtra-se por linha de produção, turno ou produto. É daí que sai o relatório de registos em Excel, e cada registo assinado, em PDF."
+  },
+  "Los tres caminos para tener la plantilla montada": {
+    "en": "The three routes to a finished template",
+    "fr": "Les trois chemins pour obtenir le modèle monté",
+    "it": "I tre percorsi per avere il modello pronto",
+    "de": "Die drei Wege zur fertigen Vorlage",
+    "pt": "Os três caminhos para ter o modelo montado"
+  },
+  "El tipo del control y la fórmula que lo resuelve en OK o KO": {
+    "en": "The type of the check and the formula that resolves it as OK or KO",
+    "fr": "Le type du contrôle et la formule qui le résout en OK ou KO",
+    "it": "Il tipo del controllo e la formula che lo risolve in OK o KO",
+    "de": "Der Typ der Kontrolle und die Formel, die sie in OK oder KO auflöst",
+    "pt": "O tipo do controlo e a fórmula que o resolve em OK ou KO"
+  },
+  "7 · Temperatura de la cámara 1": {
+    "en": "7 · Cold room 1 temperature",
+    "fr": "7 · Température de la chambre 1",
+    "it": "7 · Temperatura della cella 1",
+    "de": "7 · Temperatur Kühlraum 1",
+    "pt": "7 · Temperatura da câmara 1"
+  },
+  "Sección 2 · Cámaras de frío": {
+    "en": "Section 2 · Cold rooms",
+    "fr": "Section 2 · Chambres froides",
+    "it": "Sezione 2 · Celle frigorifere",
+    "de": "Abschnitt 2 · Kühlräume",
+    "pt": "Secção 2 · Câmaras frigoríficas"
+  },
+  "Texto": {
+    "en": "Text",
+    "fr": "Texte",
+    "it": "Testo",
+    "de": "Text",
+    "pt": "Texto"
+  },
+  "Usuario": {
+    "en": "User",
+    "fr": "Utilisateur",
+    "it": "Utente",
+    "de": "Benutzer",
+    "pt": "Utilizador"
+  },
+  "Cálculo": {
+    "en": "Calculation",
+    "fr": "Calcul",
+    "it": "Calcolo",
+    "de": "Berechnung",
+    "pt": "Cálculo"
+  },
+  "Fórmula": {
+    "en": "Formula",
+    "fr": "Formule",
+    "it": "Formula",
+    "de": "Formel",
+    "pt": "Fórmula"
+  },
+  "Constructor de fórmulas": {
+    "en": "Formula builder",
+    "fr": "Constructeur de formules",
+    "it": "Costruttore di formule",
+    "de": "Formel-Editor",
+    "pt": "Construtor de fórmulas"
+  },
+  "TEMPERATURA": {
+    "en": "TEMPERATURE",
+    "fr": "TEMPÉRATURE",
+    "it": "TEMPERATURA",
+    "de": "TEMPERATUR",
+    "pt": "TEMPERATURA"
+  },
+  "Mayor o igual que": {
+    "en": "Greater than or equal to",
+    "fr": "Supérieur ou égal à",
+    "it": "Maggiore o uguale a",
+    "de": "Größer oder gleich",
+    "pt": "Maior ou igual a"
+  },
+  "Menor o igual que": {
+    "en": "Less than or equal to",
+    "fr": "Inférieur ou égal à",
+    "it": "Minore o uguale a",
+    "de": "Kleiner oder gleich",
+    "pt": "Menor ou igual a"
+  },
+  "Ejemplo": {
+    "en": "Example",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "de": "Beispiel",
+    "pt": "Exemplo"
+  },
+  "Falso (KO)": {
+    "en": "False (KO)",
+    "fr": "Faux (KO)",
+    "it": "Falso (KO)",
+    "de": "Falsch (KO)",
+    "pt": "Falso (KO)"
+  },
+  "Regla de visibilidad": {
+    "en": "Visibility rule",
+    "fr": "Règle de visibilité",
+    "it": "Regola di visibilità",
+    "de": "Sichtbarkeitsregel",
+    "pt": "Regra de visibilidade"
+  },
+  "El control se enseña sólo si «Cámara en servicio» es Sí.": {
+    "en": "The check is shown only if “Cold room in service” is Yes.",
+    "fr": "Le contrôle ne s'affiche que si « Chambre en service » est Oui.",
+    "it": "Il controllo si mostra solo se «Cella in servizio» è Sì.",
+    "de": "Die Kontrolle wird nur angezeigt, wenn „Kühlraum in Betrieb“ Ja ist.",
+    "pt": "O controlo só é apresentado se «Câmara em serviço» for Sim."
+  },
+  "El calendario del módulo, con lo planificado y lo cerrado": {
+    "en": "The module calendar, with what is scheduled and what is closed",
+    "fr": "Le calendrier du module, avec le planifié et le clôturé",
+    "it": "Il calendario del modulo, con il pianificato e il chiuso",
+    "de": "Der Kalender des Moduls, mit Geplantem und Abgeschlossenem",
+    "pt": "O calendário do módulo, com o planeado e o encerrado"
+  },
+  "Junio 2026": {
+    "en": "June 2026",
+    "fr": "Juin 2026",
+    "it": "Giugno 2026",
+    "de": "Juni 2026",
+    "pt": "Junho de 2026"
+  },
+  "Mes": {
+    "en": "Month",
+    "fr": "Mois",
+    "it": "Mese",
+    "de": "Monat",
+    "pt": "Mês"
+  },
+  "Semana": {
+    "en": "Week",
+    "fr": "Semaine",
+    "it": "Settimana",
+    "de": "Woche",
+    "pt": "Semana"
+  },
+  "Día": {
+    "en": "Day",
+    "fr": "Jour",
+    "it": "Giorno",
+    "de": "Tag",
+    "pt": "Dia"
+  },
+  "Agenda": {
+    "en": "Agenda",
+    "fr": "Agenda",
+    "it": "Agenda",
+    "de": "Agenda",
+    "pt": "Agenda"
+  },
+  "Registros cerrados 14": {
+    "en": "Records closed 14",
+    "fr": "Enregistrements clôturés 14",
+    "it": "Registrazioni chiuse 14",
+    "de": "Abgeschlossene Aufzeichnungen 14",
+    "pt": "Registos encerrados 14"
+  },
+  "Registros planificados 16": {
+    "en": "Records scheduled 16",
+    "fr": "Enregistrements planifiés 16",
+    "it": "Registrazioni pianificate 16",
+    "de": "Geplante Aufzeichnungen 16",
+    "pt": "Registos planeados 16"
+  },
+  "Lun": {
+    "en": "Mon",
+    "fr": "Lun",
+    "it": "Lun",
+    "de": "Mo",
+    "pt": "Seg"
+  },
+  "Mar": {
+    "en": "Tue",
+    "fr": "Mar",
+    "it": "Mar",
+    "de": "Di",
+    "pt": "Ter"
+  },
+  "Mié": {
+    "en": "Wed",
+    "fr": "Mer",
+    "it": "Mer",
+    "de": "Mi",
+    "pt": "Qua"
+  },
+  "Jue": {
+    "en": "Thu",
+    "fr": "Jeu",
+    "it": "Gio",
+    "de": "Do",
+    "pt": "Qui"
+  },
+  "Vie": {
+    "en": "Fri",
+    "fr": "Ven",
+    "it": "Ven",
+    "de": "Fr",
+    "pt": "Sex"
+  },
+  "Sáb": {
+    "en": "Sat",
+    "fr": "Sam",
+    "it": "Sab",
+    "de": "Sa",
+    "pt": "Sáb"
+  },
+  "Dom": {
+    "en": "Sun",
+    "fr": "Dim",
+    "it": "Dom",
+    "de": "So",
+    "pt": "Dom"
+  },
+  "Temperaturas · mañana": {
+    "en": "Temperatures · morning",
+    "fr": "Températures · matin",
+    "it": "Temperature · mattina",
+    "de": "Temperaturen · Früh",
+    "pt": "Temperaturas · manhã"
+  },
+  "Limpieza TPM": {
+    "en": "TPM cleaning",
+    "fr": "Nettoyage TPM",
+    "it": "Pulizia TPM",
+    "de": "TPM-Reinigung",
+    "pt": "Limpeza TPM"
+  },
+  "Pasteurización": {
+    "en": "Pasteurisation",
+    "fr": "Pasteurisation",
+    "it": "Pastorizzazione",
+    "de": "Pasteurisierung",
+    "pt": "Pasteurização"
+  },
+  "Control almacenes": {
+    "en": "Warehouse check",
+    "fr": "Contrôle entrepôts",
+    "it": "Controllo magazzini",
+    "de": "Lagerkontrolle",
+    "pt": "Controlo de armazéns"
+  },
+  "El histórico de registros cerrados y su informe en Excel": {
+    "en": "The history of closed records and its Excel report",
+    "fr": "L'historique des enregistrements clôturés et son rapport Excel",
+    "it": "Lo storico delle registrazioni chiuse e il suo report in Excel",
+    "de": "Die Historie abgeschlossener Aufzeichnungen und ihr Excel-Bericht",
+    "pt": "O histórico de registos encerrados e o seu relatório em Excel"
+  },
+  "Pendientes 12": {
+    "en": "Pending 12",
+    "fr": "En attente 12",
+    "it": "In sospeso 12",
+    "de": "Offen 12",
+    "pt": "Pendentes 12"
+  },
+  "Planificados 16": {
+    "en": "Scheduled 16",
+    "fr": "Planifiés 16",
+    "it": "Pianificate 16",
+    "de": "Geplant 16",
+    "pt": "Planeados 16"
+  },
+  "Historial 183": {
+    "en": "History 183",
+    "fr": "Historique 183",
+    "it": "Storico 183",
+    "de": "Historie 183",
+    "pt": "Histórico 183"
+  },
+  "26 de junio de 2026": {
+    "en": "26 June 2026",
+    "fr": "26 juin 2026",
+    "it": "26 giugno 2026",
+    "de": "26. Juni 2026",
+    "pt": "26 de junho de 2026"
+  },
+  "Cerrado KO": {
+    "en": "Closed KO",
+    "fr": "Clôturé KO",
+    "it": "Chiusa KO",
+    "de": "Abgeschlossen KO",
+    "pt": "Encerrado KO"
+  },
+  "Ejecutado el: 26/06/26 06:41": {
+    "en": "Executed on: 26/06/26 06:41",
+    "fr": "Exécuté le : 26/06/26 06:41",
+    "it": "Eseguita il: 26/06/26 06:41",
+    "de": "Ausgeführt am: 26.06.26 06:41",
+    "pt": "Executado a: 26/06/26 06:41"
+  },
+  "Ejecutado el: 26/06/26 06:12": {
+    "en": "Executed on: 26/06/26 06:12",
+    "fr": "Exécuté le : 26/06/26 06:12",
+    "it": "Eseguita il: 26/06/26 06:12",
+    "de": "Ausgeführt am: 26.06.26 06:12",
+    "pt": "Executado a: 26/06/26 06:12"
+  },
+  "25 de junio de 2026": {
+    "en": "25 June 2026",
+    "fr": "25 juin 2026",
+    "it": "25 giugno 2026",
+    "de": "25. Juni 2026",
+    "pt": "25 de junho de 2026"
+  },
+  "Cerrado Incompleto": {
+    "en": "Closed Incomplete",
+    "fr": "Clôturé incomplet",
+    "it": "Chiusa incompleta",
+    "de": "Abgeschlossen unvollständig",
+    "pt": "Encerrado Incompleto"
+  },
+  "Ejecutado el: 25/06/26 14:03": {
+    "en": "Executed on: 25/06/26 14:03",
+    "fr": "Exécuté le : 25/06/26 14:03",
+    "it": "Eseguita il: 25/06/26 14:03",
+    "de": "Ausgeführt am: 25.06.26 14:03",
+    "pt": "Executado a: 25/06/26 14:03"
+  },
+  "Ejecutado el: 25/06/26 06:20": {
+    "en": "Executed on: 25/06/26 06:20",
+    "fr": "Exécuté le : 25/06/26 06:20",
+    "it": "Eseguita il: 25/06/26 06:20",
+    "de": "Ausgeführt am: 25.06.26 06:20",
+    "pt": "Executado a: 25/06/26 06:20"
+  },
+  "Informes Excel": {
+    "en": "Excel reports",
+    "fr": "Rapports Excel",
+    "it": "Report Excel",
+    "de": "Excel-Berichte",
+    "pt": "Relatórios Excel"
+  },
+  "Genera y descarga informes en formato Excel con los datos de tu organización.": {
+    "en": "Generate and download reports in Excel format with your organisation's data.",
+    "fr": "Générez et téléchargez des rapports au format Excel avec les données de votre organisation.",
+    "it": "Genera e scarica report in formato Excel con i dati della tua organizzazione.",
+    "de": "Berichte im Excel-Format mit den Daten Ihrer Organisation erzeugen und herunterladen.",
+    "pt": "Gere e descarregue relatórios em formato Excel com os dados da sua organização."
+  },
+  "Checklists completados": {
+    "en": "Completed checklists",
+    "fr": "Checklists complétées",
+    "it": "Checklist completate",
+    "de": "Abgeschlossene Checklisten",
+    "pt": "Checklists concluídas"
+  },
+  "Capacidades del módulo de registros": {
+    "en": "Capabilities of the records module",
+    "fr": "Fonctionnalités du module d'enregistrements",
+    "it": "Funzionalità del modulo registrazioni",
+    "de": "Funktionen des Aufzeichnungsmoduls",
+    "pt": "Funcionalidades do módulo de registos"
+  }
+}

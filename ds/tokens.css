@@ -1,0 +1,172 @@
+/* =========================================================
+   Solved Design System — fundamentos
+   Importado del proyecto "Gradient Design System" de Claude Design
+   (8676c3f5-773b-4cd9-880c-b2c07f0fb8ba).
+
+   Convive con solved.css: sus tokens usan otros nombres (--r-2, --s-3…), así
+   que no se pisan. Lo que sí cambia globalmente es la tipografía y la tinta,
+   que es justamente el cambio de estética que se busca.
+   ========================================================= */
+
+:root{
+/* El sitio es de un solo tema (claro); sin esto, Chrome en Android puede
+   aplicarle su oscurecimiento automático a lo que no lo declara, y lo que
+   se ve no es un tema oscuro cuidado sino los azules y violetas del hero
+   apagados hacia un gris sucio — la paleta entera está pensada sobre
+   papel blanco y no sobrevive a esa heurística. */
+color-scheme:light;
+/* — Paleta base — */
+--color-primary:#0F68F4;          /* Solved Blue */
+--color-primary-deep:#0B54C8;
+--color-primary-press:#08409B;
+--color-primary-soft:#5A96FF;
+--color-primary-subdued:#DCE8FE;
+--color-primary-wash:#E8F1FE;
+--color-graphite-900:#111214;     /* negro del logo */
+--color-graphite-800:#1B2026;
+--color-ink:#111214;
+--color-ink-secondary:#3B434C;
+--color-ink-mute:#6C757E;
+--color-ink-mute-2:#79828B;
+--color-on-primary:#ffffff;
+--color-canvas:#ffffff;
+--color-canvas-soft:#F4F7FA;
+--color-canvas-steel:#EAEFF5;
+--color-hairline:#DDE3EA;
+--color-hairline-input:#B4BFCA;
+
+/* Estados de máquina — el único color no azul del sistema */
+--color-status-ok:#16A34A;
+--color-status-warn:#F2A413;
+--color-status-fault:#E5484D;
+--color-status-idle:#8A929B;
+
+/* Color de módulo (codifica identidad, nunca decora) */
+--module-incidencias:#0F68F4;
+--module-acciones:#F97316;
+--module-registros:#7C3AED;
+--module-activos:#3B434C;
+--module-ia:#A855F7;
+/* KPIs nació como "azul frío", el mismo #0F68F4 aclarado. A tamaño de icono
+   colaba; llevado a lienzo (ds/tint.css) era indistinguible de Incidencias en
+   una rejilla de seis. Se le da temperatura propia — sigue siendo azul, no es
+   el cian de movimiento. Actualizado a "Open Sky", de la paleta de marca de
+   OpenSearch (opensearch.org/brand), a petición del cliente. */
+--module-kpis:#00A3E0;
+--accent-cian:#1FD6F5;            /* sólo movimiento */
+
+/* — Alias semánticos — */
+--ds-text:var(--color-ink);
+--ds-text-2:var(--color-ink-secondary);
+--ds-text-mute:var(--color-ink-mute);
+--ds-text-nav:var(--color-ink-mute-2);
+--ds-surface:var(--color-canvas);
+--ds-surface-soft:var(--color-canvas-soft);
+--ds-surface-steel:var(--color-canvas-steel);
+--ds-surface-dark:var(--color-graphite-900);
+--ds-border:var(--color-hairline);
+
+/* — Tipografía — */
+--font-sans:Geist,'SF Pro Display',system-ui,-apple-system,'Segoe UI',sans-serif;
+--font-weight-thin:300;
+--font-weight-regular:400;
+--font-weight-medium:500;
+
+--type-display-xxl:var(--font-weight-thin) 56px/1.03 var(--font-sans);
+--type-display-xl:var(--font-weight-thin) 48px/1.15 var(--font-sans);
+--type-display-lg:var(--font-weight-thin) 32px/1.1 var(--font-sans);
+--type-display-md:var(--font-weight-thin) 26px/1.12 var(--font-sans);
+--type-heading-md:var(--font-weight-thin) 20px/1.4 var(--font-sans);
+--type-body-lg:var(--font-weight-thin) 16px/1.4 var(--font-sans);
+--type-body-md:var(--font-weight-thin) 15px/1.4 var(--font-sans);
+--type-caption:var(--font-weight-regular) 13px/1.4 var(--font-sans);
+--type-micro-cap:var(--font-weight-regular) 10px/1.15 var(--font-sans);
+
+--tracking-display-xxl:-1.4px;
+--tracking-display-xl:-0.96px;
+--tracking-display-lg:-0.64px;
+--tracking-display-md:-0.26px;
+--tracking-body:0;
+--tracking-tabular:-0.42px;
+--tracking-caption:-0.39px;
+--tracking-micro-cap:0.1px;
+
+/* — Forma — un botón nunca es una píldora — */
+--ds-radius-chip:4px;
+--ds-radius-control:6px;          /* inputs y botones */
+--ds-radius-panel:8px;            /* paneles y tarjetas de módulo */
+--ds-radius-card:12px;            /* tarjetas de la web */
+--ds-radius-pill:9999px;          /* sólo chips de estado y opciones OK/KO */
+
+/* — Elevación — muy contenida — */
+--ds-elev-1:rgba(12,32,64,0.08) 0 1px 3px;
+--ds-elev-2:rgba(12,32,64,0.08) 0 8px 24px, rgba(12,32,64,0.04) 0 2px 6px;
+
+/* — Movimiento — 140-160ms, nada rebota — */
+--ds-motion:150ms cubic-bezier(.4,0,.2,1);
+
+/* — Encuadre — */
+--container:1266px;
+--frame-dark:rgba(255,255,255,0.12);
+--frame-light:#E2E8F0;
+--frame:var(--frame-light);
+--frame-width:1px;
+--frame-pad-inline:32px;
+--frame-pad-block:96px;
+}
+
+@media (min-width:1024px){ :root{ --frame-pad-block:128px } }
+
+/* EL RITMO NO ES EL MISMO EN UN TELÉFONO (3 sep 2026)
+   96px de aire arriba y abajo de cada fila es el ritmo de una pantalla ancha.
+   En un teléfono de 390px son casi dos tercios del ancho de la pantalla en
+   blanco entre sección y sección: la página se lee a trompicones y se hace
+   larguísima —la home medía 11.800px—. Baja por tramos, y con ella baja todo
+   lo que cuelga del token: las filas, el pie y el encuadre. */
+@media (max-width:899px){ :root{ --frame-pad-block:72px } }
+@media (max-width:600px){ :root{ --frame-pad-block:52px } }
+
+/* =========================================================
+   ENCUADRE
+   Dos líneas verticales continuas que marcan el contenedor a lo largo de toda
+   la página. No es un recuadro por sección: es el mismo contenedor repetido,
+   por eso el padding vertical vive DENTRO de la caja que dibuja el borde.
+   ========================================================= */
+.frame{
+  width:80%; max-width:var(--container); margin-inline:auto; margin-block:0;
+  padding-inline:var(--frame-pad-inline); padding-block:var(--frame-pad-block);
+  border-left:var(--frame-width) solid var(--frame);
+  border-right:var(--frame-width) solid var(--frame);
+  position:relative;
+}
+/* La unión entre secciones va a sangre: cruza los raíles hasta el borde de la ventana. */
+.frame::before{content:"";position:absolute;top:0;left:50%;margin-left:-50vw;width:100vw;
+  border-top:var(--frame-width) solid var(--frame);pointer-events:none}
+.frame--last::after{content:"";position:absolute;bottom:0;left:50%;margin-left:-50vw;width:100vw;
+  border-top:var(--frame-width) solid var(--frame);pointer-events:none}
+.frame--seam::before{display:none}
+.ds-divider{width:100%;height:0;border-top:var(--frame-width) solid var(--frame)}
+
+.on-dark,[data-frame="dark"]{--frame:var(--frame-dark)}
+.on-light,[data-frame="light"]{--frame:var(--frame-light)}
+
+@media (min-width:1583px){ .frame{width:var(--container)} }
+@media (max-width:768px){
+  .frame{width:100%;border-left:0;border-right:0;padding-inline:16px;margin-inline:0}
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+html{overflow-x:clip}
+body{
+  font-family:var(--font-sans);
+  font-weight:var(--font-weight-thin);
+  color:var(--ds-text);
+  /* Lienzo blanco: en el sistema la web es blanca, con una banda #F4F7FA y una
+     acero #EAEFF5 por página. El gris de fondo de la 2.0 no existe aquí. */
+  background:var(--ds-surface);
+  -webkit-font-smoothing:antialiased;
+}
+/* Cifras tabulares en todo número: es una constante del producto. */
+.ds-tnum{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";letter-spacing:var(--tracking-tabular)}

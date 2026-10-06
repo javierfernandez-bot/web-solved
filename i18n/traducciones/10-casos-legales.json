@@ -1,0 +1,718 @@
+{
+  "Casos de cliente en industria: tres implantaciones · Solved": {
+    "en": "Industrial customer stories: three rollouts · Solved",
+    "fr": "Cas clients dans l'industrie : trois déploiements · Solved",
+    "it": "Casi cliente nell'industria: tre avvii · Solved",
+    "de": "Kundenfälle aus der Industrie: drei Einführungen · Solved",
+    "pt": "Casos de clientes na indústria: três implementações · Solved"
+  },
+  "Tres implantaciones de Solved explicadas por sus responsables de calidad: industria cárnica, panificadora de cinco plantas y grupo de iluminación, en vídeo.": {
+    "en": "Three Solved rollouts explained by their quality managers: a meat processor, a five-site bakery and a lighting group, on video.",
+    "fr": "Trois déploiements de Solved racontés par leurs responsables qualité : industrie de la viande, boulangerie à cinq sites et groupe d'éclairage, en vidéo.",
+    "it": "Tre avvii di Solved raccontati dai responsabili qualità: industria carnea, panificio con cinque stabilimenti e gruppo di illuminazione, in video.",
+    "de": "Drei Solved-Einführungen, erzählt von ihren Qualitätsverantwortlichen: Fleischverarbeiter, Großbäckerei mit fünf Werken und Beleuchtungsgruppe – als Video.",
+    "pt": "Três implementações da Solved explicadas pelos respetivos responsáveis da qualidade: indústria de carnes, padaria industrial com cinco fábricas e grupo de iluminação, em vídeo."
+  },
+  "Tres conversaciones grabadas con quien usa Solved cada día: la responsable de calidad de una industria cárnica, el coordinador técnico de una panificadora de cinco plantas y el director de calidad de un grupo de iluminación.": {
+    "en": "Three recorded conversations with people who use Solved every day: the quality manager of a meat processor, the technical coordinator of a five-site bakery and the quality director of a lighting group.",
+    "fr": "Trois conversations enregistrées avec ceux qui utilisent Solved chaque jour : la responsable qualité d'une industrie de la viande, le coordinateur technique d'une boulangerie à cinq sites et le directeur qualité d'un groupe d'éclairage.",
+    "it": "Tre conversazioni registrate con chi usa Solved ogni giorno: la responsabile qualità di un'industria carnea, il coordinatore tecnico di un panificio con cinque stabilimenti e il direttore qualità di un gruppo di illuminazione.",
+    "de": "Drei aufgezeichnete Gespräche mit Menschen, die Solved täglich nutzen: die Qualitätsleiterin eines Fleischverarbeiters, der technische Koordinator einer Bäckerei mit fünf Werken und der Qualitätsleiter einer Beleuchtungsgruppe.",
+    "pt": "Três conversas gravadas com quem utiliza a Solved todos os dias: a responsável da qualidade de uma indústria de carnes, o coordenador técnico de uma padaria industrial com cinco fábricas e o diretor de qualidade de um grupo de iluminação."
+  },
+  "Casos de éxito": { "en": "Case studies", "fr": "Études de cas", "it": "Casi di successo", "de": "Fallstudien", "pt": "Casos de sucesso" },
+  "Descubre cómo tres plantas industriales digitalizaron sus operaciones.": {
+    "en": "See how three industrial plants digitised their operations.",
+    "fr": "Découvrez comment trois usines ont numérisé leurs opérations.",
+    "it": "Scopri come tre stabilimenti industriali hanno digitalizzato l'operatività.",
+    "de": "Sehen Sie, wie drei Industriewerke ihren Betrieb digitalisiert haben.",
+    "pt": "Veja como três fábricas industriais digitalizaram as suas operações."
+  },
+  "Tres casos en vídeo, contados por sus responsables.": {
+    "en": "Three video case studies, told by the people in charge.",
+    "fr": "Trois cas en vidéo, racontés par leurs responsables.",
+    "it": "Tre casi in video, raccontati dai loro responsabili.",
+    "de": "Drei Fallstudien als Video, erzählt von den Verantwortlichen.",
+    "pt": "Três casos em vídeo, contados pelos seus responsáveis."
+  },
+  "Tres implantaciones documentadas en empresas industriales, explicadas por los responsables de calidad de cada planta.": {
+    "en": "Three documented rollouts in industrial companies, explained by each plant's quality manager.",
+    "fr": "Trois déploiements documentés dans des entreprises industrielles, expliqués par les responsables qualité de chaque usine.",
+    "it": "Tre avvii documentati in aziende industriali, spiegati dai responsabili qualità di ogni stabilimento.",
+    "de": "Drei dokumentierte Einführungen in Industrieunternehmen, erläutert von den Qualitätsverantwortlichen jedes Werks.",
+    "pt": "Três implementações documentadas em empresas industriais, explicadas pelos responsáveis da qualidade de cada fábrica."
+  },
+  "Ana Domínguez · Responsable de calidad": { "en": "Ana Domínguez · Quality manager", "fr": "Ana Domínguez · Responsable qualité", "it": "Ana Domínguez · Responsabile qualità", "de": "Ana Domínguez · Qualitätsleiterin", "pt": "Ana Domínguez · Responsável da qualidade" },
+  "Dos horas diarias.": { "en": "Two hours a day.", "fr": "Deux heures par jour.", "it": "Due ore al giorno.", "de": "Zwei Stunden am Tag.", "pt": "Duas horas por dia." },
+  "Es el tiempo que Ana y su compañero dedicaban al registro manual de incidencias. En el vídeo explica por qué canales llegaban y cómo se gestionan ahora.": {
+    "en": "That is how long Ana and a colleague spent logging incidents by hand. In the video she explains which channels they arrived through and how they are handled now.",
+    "fr": "C'est le temps qu'Ana et son collègue consacraient à la saisie manuelle des incidents. Dans la vidéo, elle explique par quels canaux ils arrivaient et comment ils sont gérés aujourd'hui.",
+    "it": "È il tempo che Ana e il suo collega dedicavano alla registrazione manuale delle anomalie. Nel video spiega da quali canali arrivavano e come si gestiscono ora.",
+    "de": "So lange brauchten Ana und ein Kollege für das manuelle Erfassen von Störungen. Im Video erklärt sie, über welche Kanäle sie hereinkamen und wie sie heute bearbeitet werden.",
+    "pt": "É o tempo que a Ana e o colega dedicavam ao registo manual de ocorrências. No vídeo explica por que canais chegavam e como se gerem agora."
+  },
+  "Ver el caso": { "en": "See the case study", "fr": "Voir le cas", "it": "Vedi il caso", "de": "Zur Fallstudie", "pt": "Ver o caso" },
+  "Samuel Pardo · Coordinador del dpto. técnico": { "en": "Samuel Pardo · Technical department coordinator", "fr": "Samuel Pardo · Coordinateur du service technique", "it": "Samuel Pardo · Coordinatore del reparto tecnico", "de": "Samuel Pardo · Koordinator der technischen Abteilung", "pt": "Samuel Pardo · Coordenador do dep. técnico" },
+  "De dos plantas a cinco.": { "en": "From two plants to five.", "fr": "De deux usines à cinq.", "it": "Da due stabilimenti a cinque.", "de": "Von zwei Werken auf fünf.", "pt": "De duas fábricas para cinco." },
+  "Y de 200 personas a más de 500, con el registro todavía en papel. Samuel explica qué dejó de funcionar al escalar la operación.": {
+    "en": "And from 200 people to more than 500, still logging on paper. Samuel explains what stopped working as the operation scaled.",
+    "fr": "Et de 200 personnes à plus de 500, avec la saisie encore sur papier. Samuel explique ce qui a cessé de fonctionner en montant en échelle.",
+    "it": "E da 200 persone a più di 500, con la registrazione ancora su carta. Samuel spiega cosa ha smesso di funzionare crescendo.",
+    "de": "Und von 200 auf über 500 Beschäftigte – die Erfassung noch auf Papier. Samuel erklärt, was beim Wachstum nicht mehr funktionierte.",
+    "pt": "E de 200 pessoas para mais de 500, com o registo ainda em papel. Samuel explica o que deixou de funcionar ao escalar a operação."
+  },
+  "Álvaro Sobrino · Director de calidad": { "en": "Álvaro Sobrino · Quality director", "fr": "Álvaro Sobrino · Directeur qualité", "it": "Álvaro Sobrino · Direttore qualità", "de": "Álvaro Sobrino · Qualitätsleiter", "pt": "Álvaro Sobrino · Diretor de qualidade" },
+  "Más de mil inspecciones al año.": { "en": "More than a thousand inspections a year.", "fr": "Plus de mille inspections par an.", "it": "Più di mille ispezioni all'anno.", "de": "Über tausend Prüfungen im Jahr.", "pt": "Mais de mil inspeções por ano." },
+  "Sólo de material de entrada. Álvaro explica el paso del papel a la hoja de cálculo y de ahí al registro desde móvil o tablet.": {
+    "en": "On incoming material alone. Álvaro explains the move from paper to spreadsheet and from there to logging on a phone or tablet.",
+    "fr": "Rien que sur le matériel entrant. Álvaro explique le passage du papier au tableur, puis à la saisie sur téléphone ou tablette.",
+    "it": "Solo di materiale in ingresso. Álvaro spiega il passaggio dalla carta al foglio di calcolo e da lì alla registrazione da telefono o tablet.",
+    "de": "Allein beim Wareneingang. Álvaro erklärt den Weg vom Papier zur Tabelle und von dort zur Erfassung per Smartphone oder Tablet.",
+    "pt": "Só de material de entrada. Álvaro explica a passagem do papel para a folha de cálculo e daí para o registo a partir do telemóvel ou do tablet."
+  },
+  "Lo que cambió en cada planta": { "en": "What changed in each plant", "fr": "Ce qui a changé dans chaque usine", "it": "Cosa è cambiato in ogni stabilimento", "de": "Was sich in jedem Werk geändert hat", "pt": "O que mudou em cada fábrica" },
+  "Los tres casos parten del mismo punto: papel, hoja de cálculo o mensajería, con calidad, producción y mantenimiento avisándose entre ellos. La diferencia está en el sistema que utiliza hoy el personal de línea.": {
+    "en": "All three start from the same place: paper, spreadsheets or messaging, with quality, production and maintenance alerting each other. The difference is the system the line staff use today.",
+    "fr": "Les trois cas partent du même point : papier, tableur ou messagerie, avec qualité, production et maintenance qui se préviennent entre elles. La différence tient au système qu'utilise aujourd'hui le personnel de ligne.",
+    "it": "I tre casi partono dallo stesso punto: carta, foglio di calcolo o messaggistica, con qualità, produzione e manutenzione che si avvisano a vicenda. La differenza sta nel sistema che oggi usa il personale di linea.",
+    "de": "Alle drei starten am selben Punkt: Papier, Tabelle oder Messenger, während Qualität, Produktion und Instandhaltung sich gegenseitig informieren. Der Unterschied liegt im System, das das Linienpersonal heute nutzt.",
+    "pt": "Os três casos partem do mesmo ponto: papel, folha de cálculo ou mensagens instantâneas, com a qualidade, a produção e a manutenção a avisarem-se mutuamente. A diferença está no sistema que hoje utiliza o pessoal de linha."
+  },
+  "Carnavi sustituyó el registro manual de incidencias": {
+    "en": "Carnavi replaced manual incident logging",
+    "fr": "Carnavi a remplacé la saisie manuelle des incidents",
+    "it": "Carnavi ha sostituito la registrazione manuale delle anomalie",
+    "de": "Carnavi hat das manuelle Erfassen von Störungen abgelöst",
+    "pt": "A Carnavi substituiu o registo manual de ocorrências"
+  },
+  "2 h/día, antes": { "en": "2 h/day, before", "fr": "2 h/jour, avant", "it": "2 h/giorno, prima", "de": "2 Std./Tag, vorher", "pt": "2 h/dia, antes" },
+  "Antes: dos horas al día": { "en": "Before: two hours a day", "fr": "Avant : deux heures par jour", "it": "Prima: due ore al giorno", "de": "Vorher: zwei Stunden am Tag", "pt": "Antes: duas horas por dia" },
+  "WhatsApp, correo y el pasillo": { "en": "WhatsApp, email and the corridor", "fr": "WhatsApp, courriel et le couloir", "it": "WhatsApp, mail e il corridoio", "de": "WhatsApp, E-Mail und der Flur", "pt": "WhatsApp, e-mail e o corredor" },
+  "El parte se abre en la línea": { "en": "The report is opened at the line", "fr": "Le rapport s'ouvre sur la ligne", "it": "Il rapporto si apre in linea", "de": "Die Meldung entsteht an der Linie", "pt": "O parte abre-se na linha" },
+  "Con": { "en": "With", "fr": "Avec", "it": "Con", "de": "Mit", "pt": "Com" },
+  "Foto, responsable y plazo": { "en": "Photo, owner and deadline", "fr": "Photo, responsable et échéance", "it": "Foto, responsabile e scadenza", "de": "Foto, Verantwortlicher und Frist", "pt": "Foto, responsável e prazo" },
+  "Prilux: del papel a la hoja de cálculo y de ahí a Solved": {
+    "en": "Prilux: from paper to spreadsheet and from there to Solved",
+    "fr": "Prilux : du papier au tableur, puis à Solved",
+    "it": "Prilux: dalla carta al foglio di calcolo e da lì a Solved",
+    "de": "Prilux: vom Papier über die Tabelle zu Solved",
+    "pt": "Prilux: do papel para a folha de cálculo e daí para a Solved"
+  },
+  "Inspecciones de entrada": { "en": "Incoming inspections", "fr": "Inspections à réception", "it": "Ispezioni in ingresso", "de": "Eingangsprüfungen", "pt": "Inspeções de entrada" },
+  "Cuatro unidades de negocio, una herramienta": { "en": "Four business units, one tool", "fr": "Quatre unités d'affaires, un seul outil", "it": "Quattro unità di business, uno strumento", "de": "Vier Geschäftsbereiche, ein Werkzeug", "pt": "Quatro unidades de negócio, uma ferramenta" },
+  "Al año": { "en": "Per year", "fr": "Par an", "it": "All'anno", "de": "Pro Jahr", "pt": "Por ano" },
+  "Quién la usa": { "en": "Who uses it", "fr": "Qui l'utilise", "it": "Chi lo usa", "de": "Wer es nutzt", "pt": "Quem a utiliza" },
+  "De planta a dirección": { "en": "From the shop floor to management", "fr": "De l'usine à la direction", "it": "Dallo stabilimento alla direzione", "de": "Vom Werk bis zur Geschäftsleitung", "pt": "Da fábrica à direção" },
+  "Ana Domínguez, responsable de calidad de Carnavi, durante la entrevista": {
+    "en": "Ana Domínguez, quality manager at Carnavi, during the interview",
+    "fr": "Ana Domínguez, responsable qualité de Carnavi, pendant l'entretien",
+    "it": "Ana Domínguez, responsabile qualità di Carnavi, durante l'intervista",
+    "de": "Ana Domínguez, Qualitätsleiterin bei Carnavi, während des Interviews",
+    "pt": "Ana Domínguez, responsável da qualidade da Carnavi, durante a entrevista"
+  },
+  "Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, durante la entrevista": {
+    "en": "Samuel Pardo, technical department coordinator at Panificadora Alcalá, during the interview",
+    "fr": "Samuel Pardo, coordinateur du service technique de Panificadora Alcalá, pendant l'entretien",
+    "it": "Samuel Pardo, coordinatore del reparto tecnico di Panificadora Alcalá, durante l'intervista",
+    "de": "Samuel Pardo, Koordinator der technischen Abteilung von Panificadora Alcalá, während des Interviews",
+    "pt": "Samuel Pardo, coordenador do departamento técnico da Panificadora Alcalá, durante a entrevista"
+  },
+  "Álvaro Sobrino, director de calidad de producto de Prilux, durante la entrevista": {
+    "en": "Álvaro Sobrino, product quality director at Prilux, during the interview",
+    "fr": "Álvaro Sobrino, directeur qualité produit de Prilux, pendant l'entretien",
+    "it": "Álvaro Sobrino, direttore qualità di prodotto di Prilux, durante l'intervista",
+    "de": "Álvaro Sobrino, Leiter Produktqualität bei Prilux, während des Interviews",
+    "pt": "Álvaro Sobrino, diretor de qualidade de produto da Prilux, durante a entrevista"
+  },
+  "Casos de éxito de Solved": { "en": "Solved case studies", "fr": "Études de cas Solved", "it": "Casi di successo di Solved", "de": "Fallstudien von Solved", "pt": "Casos de sucesso da Solved" },
+  "Caso Carnavi: incidencias en industria cárnica · Solved": {
+    "en": "Carnavi case study: incidents in meat processing · Solved",
+    "fr": "Cas Carnavi : incidents dans l'industrie de la viande · Solved",
+    "it": "Caso Carnavi: anomalie nell'industria carnea · Solved",
+    "de": "Fallstudie Carnavi: Störungen in der Fleischverarbeitung · Solved",
+    "pt": "Caso Carnavi: ocorrências na indústria de carnes · Solved"
+  },
+  "Ana Domínguez, responsable de calidad de Carnavi, explica en dos minutos cómo se gestionaban las incidencias antes de Solved y qué cambió tras la implantación.": {
+    "en": "Ana Domínguez, quality manager at Carnavi, explains in two minutes how incidents were handled before Solved and what changed after the rollout.",
+    "fr": "Ana Domínguez, responsable qualité de Carnavi, explique en deux minutes comment les incidents étaient gérés avant Solved et ce qui a changé après le déploiement.",
+    "it": "Ana Domínguez, responsabile qualità di Carnavi, spiega in due minuti come si gestivano le anomalie prima di Solved e cosa è cambiato dopo l'avvio.",
+    "de": "Ana Domínguez, Qualitätsleiterin bei Carnavi, erklärt in zwei Minuten, wie Störungen vor Solved bearbeitet wurden und was sich nach der Einführung änderte.",
+    "pt": "Ana Domínguez, responsável da qualidade da Carnavi, explica em dois minutos como se geriam as ocorrências antes da Solved e o que mudou após a implementação."
+  },
+  "Ana Domínguez, responsable de calidad de Carnavi, explica en dos minutos cómo se gestionaban las incidencias antes de Solved y qué cambió.": {
+    "en": "Ana Domínguez, quality manager at Carnavi, explains in two minutes how incidents were handled before Solved and what changed.",
+    "fr": "Ana Domínguez, responsable qualité de Carnavi, explique en deux minutes comment les incidents étaient gérés avant Solved et ce qui a changé.",
+    "it": "Ana Domínguez, responsabile qualità di Carnavi, spiega in due minuti come si gestivano le anomalie prima di Solved e cosa è cambiato.",
+    "de": "Ana Domínguez, Qualitätsleiterin bei Carnavi, erklärt in zwei Minuten, wie Störungen vor Solved bearbeitet wurden und was sich änderte.",
+    "pt": "Ana Domínguez, responsável da qualidade da Carnavi, explica em dois minutos como se geriam as ocorrências antes da Solved e o que mudou."
+  },
+  "Caso de éxito · Industria cárnica": { "en": "Case study · Meat processing", "fr": "Étude de cas · Industrie de la viande", "it": "Caso di successo · Industria carnea", "de": "Fallstudie · Fleischverarbeitung", "pt": "Caso de sucesso · Indústria de carnes" },
+  "Dos horas diarias": { "en": "Two hours a day", "fr": "Deux heures par jour", "it": "Due ore al giorno", "de": "Zwei Stunden am Tag", "pt": "Duas horas por dia" },
+  "dedicadas al registro manual de incidencias.": { "en": "spent logging incidents by hand.", "fr": "consacrées à la saisie manuelle des incidents.", "it": "dedicate alla registrazione manuale delle anomalie.", "de": "für das manuelle Erfassen von Störungen.", "pt": "dedicadas ao registo manual de ocorrências." },
+  "Ana Domínguez lleva la calidad de Carnavi, una industria cárnica de más de cuarenta años. En dos minutos explica por qué canales llegaban las incidencias —mensajería, correo y aviso verbal—, qué ocurrió cuando la dirección cuantificó su coste y cómo se gestionan ahora.": {
+    "en": "Ana Domínguez runs quality at Carnavi, a meat processor with more than forty years behind it. In two minutes she explains which channels incidents came through — messaging, email and word of mouth — what happened when management put a number on the cost, and how they are handled now.",
+    "fr": "Ana Domínguez dirige la qualité de Carnavi, une entreprise de viande de plus de quarante ans. En deux minutes, elle explique par quels canaux arrivaient les incidents — messagerie, courriel et avis verbal —, ce qui s'est passé quand la direction en a chiffré le coût, et comment ils sont gérés aujourd'hui.",
+    "it": "Ana Domínguez guida la qualità di Carnavi, un'industria carnea con oltre quarant'anni di storia. In due minuti spiega da quali canali arrivavano le anomalie — messaggistica, mail e avviso verbale —, cosa è successo quando la direzione ne ha quantificato il costo e come si gestiscono ora.",
+    "de": "Ana Domínguez leitet die Qualität bei Carnavi, einem Fleischverarbeiter mit über vierzig Jahren Geschichte. In zwei Minuten erklärt sie, über welche Kanäle Störungen kamen – Messenger, E-Mail und Zuruf –, was geschah, als die Geschäftsleitung die Kosten bezifferte, und wie sie heute bearbeitet werden.",
+    "pt": "Ana Domínguez lidera a qualidade da Carnavi, uma indústria de carnes com mais de quarenta anos. Em dois minutos explica por que canais chegavam as ocorrências —mensagens instantâneas, e-mail e aviso verbal—, o que aconteceu quando a direção quantificou o seu custo e como se gerem agora."
+  },
+  "Acceso al vídeo con el correo profesional": { "en": "Watch the video with your work email", "fr": "Accès à la vidéo avec l'adresse professionnelle", "it": "Accesso al video con la mail di lavoro", "de": "Video mit der Arbeits-E-Mail ansehen", "pt": "Aceda ao vídeo com o e-mail profissional" },
+  "Sin descarga ni registro previo: el vídeo queda disponible en esta misma página y permanece accesible en visitas posteriores.": {
+    "en": "No download and no prior sign-up: the video stays available on this page and remains accessible on later visits.",
+    "fr": "Sans téléchargement ni inscription préalable : la vidéo reste disponible sur cette page et accessible lors des visites suivantes.",
+    "it": "Senza download né registrazione preventiva: il video resta disponibile in questa pagina e accessibile nelle visite successive.",
+    "de": "Ohne Download und ohne vorherige Registrierung: Das Video bleibt auf dieser Seite verfügbar und auch bei späteren Besuchen zugänglich.",
+    "pt": "Sem transferência nem registo prévio: o vídeo fica disponível nesta mesma página e continua acessível em visitas posteriores."
+  },
+  "Sólo se remiten novedades de Solved, con baja disponible en cualquier momento. Los datos se tratan conforme a la": {
+    "en": "We only send Solved news, and you can unsubscribe at any time. Data is processed in accordance with the",
+    "fr": "Nous n'envoyons que les nouveautés de Solved, avec désinscription possible à tout moment. Les données sont traitées conformément à la",
+    "it": "Inviamo solo novità di Solved, con disiscrizione disponibile in qualsiasi momento. I dati sono trattati conformemente all'",
+    "de": "Wir senden nur Neuigkeiten zu Solved, jederzeit abbestellbar. Die Daten werden gemäß der",
+    "pt": "Só são enviadas novidades da Solved, podendo cancelar a subscrição a qualquer momento. Os dados são tratados em conformidade com a"
+  },
+  "política de privacidad": { "en": "privacy policy", "fr": "politique de confidentialité", "it": "informativa sulla privacy", "de": "Datenschutzerklärung verarbeitet", "pt": "política de privacidade" },
+  "Si el formulario no se muestra, es posible que un bloqueador esté impidiendo su carga. El vídeo puede solicitarse en info@trysolved.com.": {
+    "en": "If the form does not appear, a blocker may be stopping it from loading. You can request the video at info@trysolved.com.",
+    "fr": "Si le formulaire ne s'affiche pas, un bloqueur empêche peut-être son chargement. La vidéo peut être demandée à info@trysolved.com.",
+    "it": "Se il modulo non compare, è possibile che un blocker ne impedisca il caricamento. Il video si può richiedere a info@trysolved.com.",
+    "de": "Erscheint das Formular nicht, blockiert es womöglich ein Blocker. Das Video kann unter info@trysolved.com angefragt werden.",
+    "pt": "Se o formulário não aparecer, é possível que um bloqueador esteja a impedir o seu carregamento. O vídeo pode ser solicitado em info@trysolved.com."
+  },
+  "Acceso concedido. El vídeo está disponible en la parte superior.": {
+    "en": "Access granted. The video is available at the top of the page.",
+    "fr": "Accès accordé. La vidéo est disponible en haut de la page.",
+    "it": "Accesso concesso. Il video è disponibile in alto.",
+    "de": "Zugang gewährt. Das Video steht oben auf der Seite bereit.",
+    "pt": "Acesso concedido. O vídeo está disponível na parte superior."
+  },
+  "Contenido relacionado": { "en": "Related content", "fr": "Contenu associé", "it": "Contenuti correlati", "de": "Verwandte Inhalte", "pt": "Conteúdo relacionado" },
+  "— Panificadora Alcalá: del registro en papel a cinco plantas sobre un único sistema.": {
+    "en": "— Panificadora Alcalá: from paper records to five plants on a single system.",
+    "fr": "— Panificadora Alcalá : de l'enregistrement papier à cinq usines sur un seul système.",
+    "it": "— Panificadora Alcalá: dalla registrazione su carta a cinque stabilimenti su un unico sistema.",
+    "de": "— Panificadora Alcalá: von Papieraufzeichnungen zu fünf Werken auf einem System.",
+    "pt": "— Panificadora Alcalá: do registo em papel a cinco fábricas sobre um único sistema."
+  },
+  "Otro caso": { "en": "Another case study", "fr": "Un autre cas", "it": "Un altro caso", "de": "Eine weitere Fallstudie", "pt": "Outro caso" },
+  "— Prilux: más de mil inspecciones de material de entrada al año.": {
+    "en": "— Prilux: more than a thousand incoming material inspections a year.",
+    "fr": "— Prilux : plus de mille inspections de matériel entrant par an.",
+    "it": "— Prilux: più di mille ispezioni di materiale in ingresso all'anno.",
+    "de": "— Prilux: über tausend Wareneingangsprüfungen im Jahr.",
+    "pt": "— Prilux: mais de mil inspeções de material de entrada por ano."
+  },
+  "— registro en la línea, con evidencia y responsable.": {
+    "en": "— logged at the line, with evidence and an owner.",
+    "fr": "— saisie sur la ligne, avec preuve et responsable.",
+    "it": "— registrazione in linea, con evidenza e responsabile.",
+    "de": "— an der Linie erfasst, mit Nachweis und Verantwortlichem.",
+    "pt": "— registo na linha, com evidência e responsável."
+  },
+  "— reclamación al proveedor con análisis de causa y plazo.": {
+    "en": "— a supplier claim with a root cause analysis and a deadline.",
+    "fr": "— réclamation au fournisseur avec analyse de cause et échéance.",
+    "it": "— reclamo al fornitore con analisi delle cause e scadenza.",
+    "de": "— Lieferantenreklamation mit Ursachenanalyse und Frist.",
+    "pt": "— reclamação ao fornecedor com análise de causa e prazo."
+  },
+  "— aplicación de Solved en plantas con certificación de seguridad alimentaria.": {
+    "en": "— Solved applied in plants with food safety certification.",
+    "fr": "— application de Solved dans des usines certifiées en sécurité des aliments.",
+    "it": "— applicazione di Solved in stabilimenti con certificazione di sicurezza alimentare.",
+    "de": "— Solved in Werken mit Zertifizierung zur Lebensmittelsicherheit.",
+    "pt": "— aplicação da Solved em fábricas com certificação de segurança alimentar."
+  },
+  "Ver el vídeo de Carnavi — hay que dejar el correo primero": {
+    "en": "Watch the Carnavi video — leave your email first",
+    "fr": "Voir la vidéo de Carnavi — laissez d'abord votre e-mail",
+    "it": "Guarda il video di Carnavi — prima lascia la mail",
+    "de": "Das Carnavi-Video ansehen – zuerst die E-Mail hinterlassen",
+    "pt": "Ver o vídeo da Carnavi — é preciso deixar o e-mail primeiro"
+  },
+  "Caso de éxito Carnavi: dos horas al día registrando incidencias a mano": {
+    "en": "Carnavi case study: two hours a day logging incidents by hand",
+    "fr": "Étude de cas Carnavi : deux heures par jour à saisir les incidents à la main",
+    "it": "Caso di successo Carnavi: due ore al giorno a registrare anomalie a mano",
+    "de": "Fallstudie Carnavi: zwei Stunden täglich Störungen von Hand erfassen",
+    "pt": "Caso de sucesso Carnavi: duas horas por dia a registar ocorrências à mão"
+  },
+  "Ana Domínguez, responsable de calidad de Carnavi, cuenta cómo llegaban las incidencias antes de Solved —por WhatsApp, por correo o por el pasillo—, cuánto tiempo se iba en registrarlas y qué cambió al hacerlo desde el móvil.": {
+    "en": "Ana Domínguez, quality manager at Carnavi, describes how incidents used to arrive before Solved — by WhatsApp, by email or in the corridor — how much time went into logging them and what changed once it was done from a phone.",
+    "fr": "Ana Domínguez, responsable qualité de Carnavi, raconte comment arrivaient les incidents avant Solved — par WhatsApp, par courriel ou dans le couloir —, le temps que prenait leur saisie et ce qui a changé en le faisant depuis le téléphone.",
+    "it": "Ana Domínguez, responsabile qualità di Carnavi, racconta come arrivavano le anomalie prima di Solved — via WhatsApp, via mail o nel corridoio —, quanto tempo se ne andava a registrarle e cosa è cambiato facendolo dal telefono.",
+    "de": "Ana Domínguez, Qualitätsleiterin bei Carnavi, erzählt, wie Störungen vor Solved ankamen – per WhatsApp, per E-Mail oder auf dem Flur –, wie viel Zeit ihr Erfassen kostete und was sich änderte, als es per Smartphone geschah.",
+    "pt": "Ana Domínguez, responsável da qualidade da Carnavi, conta como chegavam as ocorrências antes da Solved —por WhatsApp, por e-mail ou pelo corredor—, quanto tempo se gastava a registá-las e o que mudou ao passar a fazê-lo pelo telemóvel."
+  },
+  "Caso Panificadora Alcalá: de dos plantas a cinco · Solved": {
+    "en": "Panificadora Alcalá case study: from two plants to five · Solved",
+    "fr": "Cas Panificadora Alcalá : de deux usines à cinq · Solved",
+    "it": "Caso Panificadora Alcalá: da due stabilimenti a cinque · Solved",
+    "de": "Fallstudie Panificadora Alcalá: von zwei Werken auf fünf · Solved",
+    "pt": "Caso Panificadora Alcalá: de duas fábricas para cinco · Solved"
+  },
+  "Samuel Pardo, coordinador técnico de Panificadora Alcalá, explica qué dejó de funcionar al pasar de dos plantas a cinco y de 200 a más de 500 personas.": {
+    "en": "Samuel Pardo, technical coordinator at Panificadora Alcalá, explains what stopped working when they went from two plants to five and from 200 people to more than 500.",
+    "fr": "Samuel Pardo, coordinateur technique de Panificadora Alcalá, explique ce qui a cessé de fonctionner en passant de deux usines à cinq et de 200 à plus de 500 personnes.",
+    "it": "Samuel Pardo, coordinatore tecnico di Panificadora Alcalá, spiega cosa ha smesso di funzionare passando da due stabilimenti a cinque e da 200 a più di 500 persone.",
+    "de": "Samuel Pardo, technischer Koordinator bei Panificadora Alcalá, erklärt, was beim Wechsel von zwei auf fünf Werke und von 200 auf über 500 Beschäftigte nicht mehr funktionierte.",
+    "pt": "Samuel Pardo, coordenador técnico da Panificadora Alcalá, explica o que deixou de funcionar ao passar de duas fábricas para cinco e de 200 para mais de 500 pessoas."
+  },
+  "Samuel Pardo, coordinador técnico de Panificadora Alcalá, explica en dos minutos y medio qué dejó de funcionar al pasar de dos plantas a cinco.": {
+    "en": "Samuel Pardo, technical coordinator at Panificadora Alcalá, explains in two and a half minutes what stopped working when they went from two plants to five.",
+    "fr": "Samuel Pardo, coordinateur technique de Panificadora Alcalá, explique en deux minutes et demie ce qui a cessé de fonctionner en passant de deux usines à cinq.",
+    "it": "Samuel Pardo, coordinatore tecnico di Panificadora Alcalá, spiega in due minuti e mezzo cosa ha smesso di funzionare passando da due stabilimenti a cinque.",
+    "de": "Samuel Pardo, technischer Koordinator bei Panificadora Alcalá, erklärt in zweieinhalb Minuten, was beim Wechsel von zwei auf fünf Werke nicht mehr funktionierte.",
+    "pt": "Samuel Pardo, coordenador técnico da Panificadora Alcalá, explica em dois minutos e meio o que deixou de funcionar ao passar de duas fábricas para cinco."
+  },
+  "Caso de éxito · Panificación industrial": { "en": "Case study · Industrial bakery", "fr": "Étude de cas · Boulangerie industrielle", "it": "Caso di successo · Panificazione industriale", "de": "Fallstudie · Industrielle Backwaren", "pt": "Caso de sucesso · Panificação industrial" },
+  "De dos plantas a cinco,": { "en": "From two plants to five,", "fr": "De deux usines à cinq,", "it": "Da due stabilimenti a cinque,", "de": "Von zwei Werken auf fünf –", "pt": "De duas fábricas para cinco," },
+  "con el registro todavía en papel.": { "en": "with the records still on paper.", "fr": "avec la saisie encore sur papier.", "it": "con la registrazione ancora su carta.", "de": "mit den Aufzeichnungen noch auf Papier.", "pt": "com o registo ainda em papel." },
+  "Samuel Pardo coordina el departamento técnico de Panificadora Alcalá, que en ocho años ha pasado de 200 personas a más de 500. En dos minutos y medio explica qué dejó de funcionar en primer lugar al crecer, por qué el puesto de ordenador no cubría la fábrica y qué requisitos buscaba en un sistema.": {
+    "en": "Samuel Pardo coordinates the technical department at Panificadora Alcalá, which has gone from 200 people to more than 500 in eight years. In two and a half minutes he explains what broke first as they grew, why a desktop workstation did not cover the factory and what he was looking for in a system.",
+    "fr": "Samuel Pardo coordonne le service technique de Panificadora Alcalá, passée en huit ans de 200 à plus de 500 personnes. En deux minutes et demie, il explique ce qui a cédé en premier avec la croissance, pourquoi le poste informatique ne couvrait pas l'usine et les exigences qu'il cherchait dans un système.",
+    "it": "Samuel Pardo coordina il reparto tecnico di Panificadora Alcalá, passata in otto anni da 200 persone a più di 500. In due minuti e mezzo spiega cosa ha ceduto per primo crescendo, perché la postazione PC non copriva la fabbrica e quali requisiti cercava in un sistema.",
+    "de": "Samuel Pardo koordiniert die technische Abteilung von Panificadora Alcalá, die in acht Jahren von 200 auf über 500 Beschäftigte gewachsen ist. In zweieinhalb Minuten erklärt er, was beim Wachstum zuerst brach, warum ein PC-Arbeitsplatz die Fabrik nicht abdeckte und welche Anforderungen er an ein System stellte.",
+    "pt": "Samuel Pardo coordena o departamento técnico da Panificadora Alcalá, que em oito anos passou de 200 pessoas para mais de 500. Em dois minutos e meio explica o que deixou de funcionar primeiro ao crescer, por que motivo o posto de computador não cobria a fábrica e que requisitos procurava num sistema."
+  },
+  "— Carnavi: dos horas diarias dedicadas al registro manual de incidencias.": {
+    "en": "— Carnavi: two hours a day spent logging incidents by hand.",
+    "fr": "— Carnavi : deux heures par jour consacrées à la saisie manuelle des incidents.",
+    "it": "— Carnavi: due ore al giorno dedicate alla registrazione manuale delle anomalie.",
+    "de": "— Carnavi: zwei Stunden täglich für das manuelle Erfassen von Störungen.",
+    "pt": "— Carnavi: duas horas por dia dedicadas ao registo manual de ocorrências."
+  },
+  "— la transición del papel al registro digital con respuestas acotadas.": {
+    "en": "— the move from paper to digital records with bounded answers.",
+    "fr": "— la transition du papier à l'enregistrement numérique avec réponses fermées.",
+    "it": "— la transizione dalla carta alla registrazione digitale con risposte chiuse.",
+    "de": "— der Wechsel vom Papier zur digitalen Aufzeichnung mit festen Antworten.",
+    "pt": "— a transição do papel para o registo digital com respostas delimitadas."
+  },
+  "— los indicadores disponibles en tiempo real, sin solicitar un informe.": {
+    "en": "— indicators available in real time, without asking for a report.",
+    "fr": "— des indicateurs disponibles en temps réel, sans demander de rapport.",
+    "it": "— indicatori disponibili in tempo reale, senza chiedere un report.",
+    "de": "— Kennzahlen in Echtzeit, ohne einen Bericht anzufordern.",
+    "pt": "— os indicadores disponíveis em tempo real, sem pedir um relatório."
+  },
+  "Ver el vídeo de Panificadora Alcalá — hay que dejar el correo primero": {
+    "en": "Watch the Panificadora Alcalá video — leave your email first",
+    "fr": "Voir la vidéo de Panificadora Alcalá — laissez d'abord votre e-mail",
+    "it": "Guarda il video di Panificadora Alcalá — prima lascia la mail",
+    "de": "Das Video von Panificadora Alcalá ansehen – zuerst die E-Mail hinterlassen",
+    "pt": "Ver o vídeo da Panificadora Alcalá — é preciso deixar o e-mail primeiro"
+  },
+  "Caso de éxito Panificadora Alcalá: de papel y boli a cinco plantas": {
+    "en": "Panificadora Alcalá case study: from pen and paper to five plants",
+    "fr": "Étude de cas Panificadora Alcalá : du papier-crayon à cinq usines",
+    "it": "Caso di successo Panificadora Alcalá: da carta e penna a cinque stabilimenti",
+    "de": "Fallstudie Panificadora Alcalá: von Zettel und Stift zu fünf Werken",
+    "pt": "Caso de sucesso Panificadora Alcalá: de papel e caneta a cinco fábricas"
+  },
+  "Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, cuenta qué se rompía cuando la empresa pasó de dos plantas a cinco y de 200 a más de 500 personas, y cómo unificaron tres herramientas en una.": {
+    "en": "Samuel Pardo, technical department coordinator at Panificadora Alcalá, describes what broke when the company went from two plants to five and from 200 people to more than 500, and how they merged three tools into one.",
+    "fr": "Samuel Pardo, coordinateur du service technique de Panificadora Alcalá, raconte ce qui cassait quand l'entreprise est passée de deux usines à cinq et de 200 à plus de 500 personnes, et comment ils ont unifié trois outils en un seul.",
+    "it": "Samuel Pardo, coordinatore del reparto tecnico di Panificadora Alcalá, racconta cosa si rompeva quando l'azienda è passata da due stabilimenti a cinque e da 200 a più di 500 persone, e come hanno unificato tre strumenti in uno.",
+    "de": "Samuel Pardo, Koordinator der technischen Abteilung von Panificadora Alcalá, erzählt, was brach, als das Unternehmen von zwei auf fünf Werke und von 200 auf über 500 Beschäftigte wuchs – und wie sie drei Werkzeuge zu einem zusammenführten.",
+    "pt": "Samuel Pardo, coordenador do departamento técnico da Panificadora Alcalá, conta o que falhava quando a empresa passou de duas fábricas para cinco e de 200 para mais de 500 pessoas, e como unificaram três ferramentas numa só."
+  },
+  "Caso Prilux: mil inspecciones de entrada al año · Solved": {
+    "en": "Prilux case study: a thousand incoming inspections a year · Solved",
+    "fr": "Cas Prilux : mille inspections à réception par an · Solved",
+    "it": "Caso Prilux: mille ispezioni in ingresso all'anno · Solved",
+    "de": "Fallstudie Prilux: tausend Eingangsprüfungen im Jahr · Solved",
+    "pt": "Caso Prilux: mil inspeções de entrada por ano · Solved"
+  },
+  "Álvaro Sobrino, director de calidad de Prilux, explica el paso del papel a la hoja de cálculo y de ahí a Solved en una planta con cuatro unidades de negocio.": {
+    "en": "Álvaro Sobrino, quality director at Prilux, explains the move from paper to spreadsheet and from there to Solved, in a plant with four business units.",
+    "fr": "Álvaro Sobrino, directeur qualité de Prilux, explique le passage du papier au tableur puis à Solved, dans une usine à quatre unités d'affaires.",
+    "it": "Álvaro Sobrino, direttore qualità di Prilux, spiega il passaggio dalla carta al foglio di calcolo e da lì a Solved, in uno stabilimento con quattro unità di business.",
+    "de": "Álvaro Sobrino, Qualitätsleiter bei Prilux, erklärt den Weg vom Papier über die Tabelle zu Solved – in einem Werk mit vier Geschäftsbereichen.",
+    "pt": "Álvaro Sobrino, diretor de qualidade da Prilux, explica a passagem do papel para a folha de cálculo e daí para a Solved, numa fábrica com quatro unidades de negócio."
+  },
+  "Caso de éxito · Iluminación": { "en": "Case study · Lighting", "fr": "Étude de cas · Éclairage", "it": "Caso di successo · Illuminazione", "de": "Fallstudie · Beleuchtung", "pt": "Caso de sucesso · Iluminação" },
+  "Más de mil inspecciones al año,": { "en": "More than a thousand inspections a year,", "fr": "Plus de mille inspections par an,", "it": "Più di mille ispezioni all'anno,", "de": "Über tausend Prüfungen im Jahr –", "pt": "Mais de mil inspeções por ano," },
+  "registradas inicialmente en papel.": { "en": "logged on paper to begin with.", "fr": "enregistrées au départ sur papier.", "it": "registrate all'inizio su carta.", "de": "anfangs auf Papier erfasst.", "pt": "registadas inicialmente em papel." },
+  "Álvaro Sobrino lleva la calidad de producto de Prilux, un grupo de iluminación con fábrica propia y cuatro unidades de negocio muy distintas entre sí. En dos minutos explica la transición del papel a la hoja de cálculo y de ahí a Solved en 2024, por qué el criterio principal de selección fue la adopción por toda la organización —del operario de fábrica a dirección— y los resultados de los primeros meses.": {
+    "en": "Álvaro Sobrino runs product quality at Prilux, a lighting group with its own factory and four very different business units. In two minutes he explains the move from paper to spreadsheet and from there to Solved in 2024, why the main selection criterion was adoption across the whole organisation — from the shop-floor operator to management — and the results of the first months.",
+    "fr": "Álvaro Sobrino dirige la qualité produit de Prilux, un groupe d'éclairage avec usine propre et quatre unités d'affaires très différentes. En deux minutes, il explique la transition du papier au tableur puis à Solved en 2024, pourquoi le critère principal de sélection a été l'adoption par toute l'organisation — de l'opérateur d'usine à la direction — et les résultats des premiers mois.",
+    "it": "Álvaro Sobrino guida la qualità di prodotto di Prilux, un gruppo di illuminazione con fabbrica propria e quattro unità di business molto diverse tra loro. In due minuti spiega la transizione dalla carta al foglio di calcolo e da lì a Solved nel 2024, perché il criterio principale di scelta è stata l'adozione da parte di tutta l'organizzazione — dall'operatore di fabbrica alla direzione — e i risultati dei primi mesi.",
+    "de": "Álvaro Sobrino leitet die Produktqualität bei Prilux, einer Beleuchtungsgruppe mit eigener Fabrik und vier sehr unterschiedlichen Geschäftsbereichen. In zwei Minuten erklärt er den Wechsel vom Papier zur Tabelle und 2024 weiter zu Solved, warum das Hauptkriterium die Akzeptanz in der ganzen Organisation war – vom Werker bis zur Geschäftsleitung – und wie die ersten Monate liefen.",
+    "pt": "Álvaro Sobrino lidera a qualidade de produto da Prilux, um grupo de iluminação com fábrica própria e quatro unidades de negócio muito distintas entre si. Em dois minutos explica a transição do papel para a folha de cálculo e daí para a Solved em 2024, por que motivo o principal critério de seleção foi a adoção por toda a organização —do operador de fábrica à direção— e os resultados dos primeiros meses."
+  },
+  "— controles e inspecciones de material de entrada en soporte digital.": {
+    "en": "— checks and incoming material inspections in digital form.",
+    "fr": "— contrôles et inspections de matériel entrant en format numérique.",
+    "it": "— controlli e ispezioni di materiale in ingresso in forma digitale.",
+    "de": "— Kontrollen und Wareneingangsprüfungen in digitaler Form.",
+    "pt": "— controlos e inspeções de material de entrada em suporte digital."
+  },
+  "— apertura del parte desde el móvil, con evidencia y responsable.": {
+    "en": "— the report opened from a phone, with evidence and an owner.",
+    "fr": "— ouverture du rapport depuis le téléphone, avec preuve et responsable.",
+    "it": "— apertura del rapporto dal telefono, con evidenza e responsabile.",
+    "de": "— die Meldung per Smartphone geöffnet, mit Nachweis und Verantwortlichem.",
+    "pt": "— abertura do parte a partir do telemóvel, com evidência e responsável."
+  },
+  "— aplicación de Solved en fabricación, metal, packaging y plantas con varias líneas de negocio.": {
+    "en": "— Solved applied in manufacturing, metal, packaging and plants with several business lines.",
+    "fr": "— application de Solved en fabrication, métal, emballage et usines à plusieurs lignes d'activité.",
+    "it": "— applicazione di Solved in manifattura, metallo, packaging e stabilimenti con più linee di business.",
+    "de": "— Solved in Fertigung, Metall, Verpackung und Werken mit mehreren Geschäftslinien.",
+    "pt": "— aplicação da Solved em fabrico, metal, embalagem e fábricas com várias linhas de negócio."
+  },
+  "Ver el vídeo de Prilux — hay que dejar el correo primero": {
+    "en": "Watch the Prilux video — leave your email first",
+    "fr": "Voir la vidéo de Prilux — laissez d'abord votre e-mail",
+    "it": "Guarda il video di Prilux — prima lascia la mail",
+    "de": "Das Prilux-Video ansehen – zuerst die E-Mail hinterlassen",
+    "pt": "Ver o vídeo da Prilux — é preciso deixar o e-mail primeiro"
+  },
+  "Caso de éxito Prilux: del papel al Excel y del Excel a Solved": {
+    "en": "Prilux case study: from paper to Excel and from Excel to Solved",
+    "fr": "Étude de cas Prilux : du papier à Excel et d'Excel à Solved",
+    "it": "Caso di successo Prilux: dalla carta a Excel e da Excel a Solved",
+    "de": "Fallstudie Prilux: vom Papier zu Excel und von Excel zu Solved",
+    "pt": "Caso de sucesso Prilux: do papel para o Excel e do Excel para a Solved"
+  },
+  "Álvaro Sobrino, director de calidad de producto de Prilux, cuenta cómo llevaban los controles e inspecciones antes —primero en papel, después en tablas de Excel—, por qué en 2024 se lanzaron a implantar Solved y qué han visto en los primeros meses con toda la planta usándolo desde el móvil y la tablet.": {
+    "en": "Álvaro Sobrino, product quality director at Prilux, describes how they used to run checks and inspections — first on paper, then in Excel tables —, why they went ahead with Solved in 2024 and what they have seen in the first months with the whole plant using it from phone and tablet.",
+    "fr": "Álvaro Sobrino, directeur qualité produit de Prilux, raconte comment ils menaient les contrôles et inspections avant — d'abord sur papier, puis dans des tableaux Excel —, pourquoi ils se sont lancés dans Solved en 2024 et ce qu'ils ont constaté les premiers mois avec toute l'usine qui l'utilise depuis le téléphone et la tablette.",
+    "it": "Álvaro Sobrino, direttore qualità di prodotto di Prilux, racconta come gestivano controlli e ispezioni prima — prima su carta, poi in tabelle Excel —, perché nel 2024 hanno deciso di adottare Solved e cosa hanno visto nei primi mesi con tutto lo stabilimento che lo usa da telefono e tablet.",
+    "de": "Álvaro Sobrino, Leiter Produktqualität bei Prilux, erzählt, wie sie Kontrollen und Prüfungen früher führten – erst auf Papier, dann in Excel-Tabellen –, warum sie 2024 Solved einführten und was sie in den ersten Monaten sahen, als das ganze Werk es per Smartphone und Tablet nutzte.",
+    "pt": "Álvaro Sobrino, diretor de qualidade de produto da Prilux, conta como faziam os controlos e as inspeções antes —primeiro em papel, depois em tabelas de Excel—, por que motivo em 2024 avançaram para implementar a Solved e o que têm visto nos primeiros meses com toda a fábrica a utilizá-la a partir do telemóvel e do tablet."
+  },
+  "Solved · Política de Privacidad": { "en": "Solved · Privacy Policy", "fr": "Solved · Politique de confidentialité", "it": "Solved · Informativa sulla privacy", "de": "Solved · Datenschutzerklärung", "pt": "Solved · Política de Privacidade" },
+  "Política de Privacidad": { "en": "Privacy Policy", "fr": "Politique de confidentialité", "it": "Informativa sulla privacy", "de": "Datenschutzerklärung", "pt": "Política de Privacidade" },
+  "Última actualización: noviembre de 2025": { "en": "Last updated: November 2025", "fr": "Dernière mise à jour : novembre 2025", "it": "Ultimo aggiornamento: novembre 2025", "de": "Zuletzt aktualisiert: November 2025", "pt": "Última atualização: novembro de 2025" },
+  "En Solved, valoramos y protegemos la privacidad de nuestros usuarios. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos los datos personales cuando accede a nuestro sitio web": {
+    "en": "At Solved we value and protect our users' privacy. This Privacy Policy explains how we collect, use and protect personal data when you visit our website",
+    "fr": "Chez Solved, nous respectons et protégeons la vie privée de nos utilisateurs. La présente politique de confidentialité explique comment nous collectons, utilisons et protégeons les données personnelles lorsque vous accédez à notre site web",
+    "it": "In Solved teniamo alla privacy dei nostri utenti e la proteggiamo. La presente informativa spiega come raccogliamo, utilizziamo e proteggiamo i dati personali quando accedi al nostro sito web",
+    "de": "Bei Solved achten und schützen wir die Privatsphäre unserer Nutzer. Diese Datenschutzerklärung erläutert, wie wir personenbezogene Daten erheben, verwenden und schützen, wenn Sie unsere Website",
+    "pt": "Na Solved, valorizamos e protegemos a privacidade dos nossos utilizadores. Esta Política de Privacidade explica como recolhemos, utilizamos e protegemos os dados pessoais quando acede ao nosso sítio web"
+  },
+  "y utiliza nuestros servicios.": { "en": "and use our services.", "fr": "et utilisez nos services.", "it": "e utilizzi i nostri servizi.", "de": "besuchen und unsere Dienste nutzen.", "pt": "e utiliza os nossos serviços." },
+  "Al utilizar nuestro sitio web o nuestros servicios, usted acepta esta Política de Privacidad.": {
+    "en": "By using our website or our services, you accept this Privacy Policy.",
+    "fr": "En utilisant notre site web ou nos services, vous acceptez la présente politique de confidentialité.",
+    "it": "Utilizzando il nostro sito web o i nostri servizi, accetti la presente informativa sulla privacy.",
+    "de": "Mit der Nutzung unserer Website oder unserer Dienste akzeptieren Sie diese Datenschutzerklärung.",
+    "pt": "Ao utilizar o nosso sítio web ou os nossos serviços, aceita esta Política de Privacidade."
+  },
+  "1. Responsable del tratamiento": { "en": "1. Data controller", "fr": "1. Responsable du traitement", "it": "1. Titolare del trattamento", "de": "1. Verantwortlicher", "pt": "1. Responsável pelo tratamento" },
+  "Responsable: Voltstone Technology Services, S.L. (en adelante, “Solved”)": {
+    "en": "Controller: Voltstone Technology Services, S.L. (hereinafter, “Solved”)",
+    "fr": "Responsable : Voltstone Technology Services, S.L. (ci-après, « Solved »)",
+    "it": "Titolare: Voltstone Technology Services, S.L. (di seguito, «Solved»)",
+    "de": "Verantwortlicher: Voltstone Technology Services, S.L. (nachfolgend „Solved“)",
+    "pt": "Responsável: Voltstone Technology Services, S.L. (doravante, «Solved»)"
+  },
+  "CIF: B05424866": { "en": "Tax ID: B05424866", "fr": "Numéro fiscal : B05424866", "it": "Partita IVA: B05424866", "de": "Steuernummer: B05424866", "pt": "NIF: B05424866" },
+  "Domicilio: Calle Utiel 58, bajo, 46901 Torrent (Valencia), España": {
+    "en": "Address: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spain",
+    "fr": "Adresse : Calle Utiel 58, bajo, 46901 Torrent (Valence), Espagne",
+    "it": "Sede: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spagna",
+    "de": "Anschrift: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spanien",
+    "pt": "Morada: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Espanha"
+  },
+  "Correo electrónico:": { "en": "Email:", "fr": "Adresse électronique :", "it": "Email:", "de": "E-Mail:", "pt": "E-mail:" },
+  "Delegado de Protección de Datos (DPO): No se ha designado DPO.": {
+    "en": "Data Protection Officer (DPO): no DPO has been appointed.",
+    "fr": "Délégué à la protection des données (DPO) : aucun DPO n'a été désigné.",
+    "it": "Responsabile della protezione dei dati (DPO): non è stato nominato un DPO.",
+    "de": "Datenschutzbeauftragter (DSB): Es wurde kein DSB benannt.",
+    "pt": "Encarregado de Proteção de Dados (EPD): Não foi nomeado um EPD."
+  },
+  "2. Información que recopilamos": { "en": "2. Information we collect", "fr": "2. Informations que nous collectons", "it": "2. Informazioni che raccogliamo", "de": "2. Welche Daten wir erheben", "pt": "2. Informação que recolhemos" },
+  "Datos de contacto: nombre, apellidos, empresa, cargo, teléfono y correo electrónico.": {
+    "en": "Contact details: first name, surname, company, role, phone and email.",
+    "fr": "Données de contact : nom, prénom, entreprise, fonction, téléphone et adresse électronique.",
+    "it": "Dati di contatto: nome, cognome, azienda, ruolo, telefono ed email.",
+    "de": "Kontaktdaten: Vorname, Nachname, Unternehmen, Position, Telefon und E-Mail.",
+    "pt": "Dados de contacto: nome, apelido, empresa, cargo, telefone e e-mail."
+  },
+  "Datos de navegación: dirección IP, tipo de navegador, sistema operativo, páginas visitadas y tiempo de navegación.": {
+    "en": "Browsing data: IP address, browser type, operating system, pages visited and time spent.",
+    "fr": "Données de navigation : adresse IP, type de navigateur, système d'exploitation, pages visitées et durée de navigation.",
+    "it": "Dati di navigazione: indirizzo IP, tipo di browser, sistema operativo, pagine visitate e tempo di navigazione.",
+    "de": "Nutzungsdaten: IP-Adresse, Browsertyp, Betriebssystem, besuchte Seiten und Verweildauer.",
+    "pt": "Dados de navegação: endereço IP, tipo de navegador, sistema operativo, páginas visitadas e tempo de navegação."
+  },
+  "Datos proporcionados a través de formularios: información que usted nos facilita voluntariamente al solicitar una demo, contacto o suscripción.": {
+    "en": "Data supplied through forms: information you voluntarily give us when requesting a demo, contact or subscription.",
+    "fr": "Données fournies via les formulaires : informations que vous nous communiquez volontairement en demandant une démo, un contact ou un abonnement.",
+    "it": "Dati forniti tramite moduli: informazioni che ci comunichi volontariamente richiedendo una demo, un contatto o un'iscrizione.",
+    "de": "Über Formulare übermittelte Daten: Angaben, die Sie uns freiwillig machen, wenn Sie eine Demo, Kontakt oder ein Abonnement anfragen.",
+    "pt": "Dados fornecidos através de formulários: informação que nos disponibiliza voluntariamente ao solicitar uma demonstração, contacto ou subscrição."
+  },
+  "Cookies: utilizamos cookies propias y de terceros para mejorar la experiencia de navegación y obtener estadísticas de uso. Puede consultar más información en nuestra": {
+    "en": "Cookies: we use our own and third-party cookies to improve the browsing experience and gather usage statistics. You can find more information in our",
+    "fr": "Cookies : nous utilisons des cookies propres et tiers pour améliorer l'expérience de navigation et obtenir des statistiques d'usage. Plus d'informations dans notre",
+    "it": "Cookie: utilizziamo cookie propri e di terze parti per migliorare l'esperienza di navigazione e ottenere statistiche d'uso. Maggiori informazioni nella nostra",
+    "de": "Cookies: Wir verwenden eigene Cookies und solche Dritter, um das Surferlebnis zu verbessern und Nutzungsstatistiken zu erhalten. Weitere Informationen in unserer",
+    "pt": "Cookies: utilizamos cookies próprios e de terceiros para melhorar a experiência de navegação e obter estatísticas de utilização. Pode consultar mais informação na nossa"
+  },
+  "Política de Cookies": { "en": "Cookie Policy", "fr": "Politique de cookies", "it": "Informativa sui cookie", "de": "Cookie-Richtlinie", "pt": "Política de Cookies" },
+  "3. Finalidad y base legal del tratamiento": { "en": "3. Purpose and legal basis for processing", "fr": "3. Finalité et base légale du traitement", "it": "3. Finalità e base giuridica del trattamento", "de": "3. Zweck und Rechtsgrundlage der Verarbeitung", "pt": "3. Finalidade e base jurídica do tratamento" },
+  "Finalidad": { "en": "Purpose", "fr": "Finalité", "it": "Finalità", "de": "Zweck", "pt": "Finalidade" },
+  "Base legal": { "en": "Legal basis", "fr": "Base légale", "it": "Base giuridica", "de": "Rechtsgrundlage", "pt": "Base jurídica" },
+  "Atender consultas, solicitudes o demostraciones de producto": {
+    "en": "Answering enquiries, requests or product demonstrations",
+    "fr": "Répondre aux demandes, requêtes ou démonstrations de produit",
+    "it": "Rispondere a richieste, domande o dimostrazioni di prodotto",
+    "de": "Anfragen, Wünsche oder Produktvorführungen bearbeiten",
+    "pt": "Responder a questões, pedidos ou demonstrações de produto"
+  },
+  "Ejecución de medidas precontractuales o contractuales": {
+    "en": "Performance of pre-contractual or contractual measures",
+    "fr": "Exécution de mesures précontractuelles ou contractuelles",
+    "it": "Esecuzione di misure precontrattuali o contrattuali",
+    "de": "Durchführung vorvertraglicher oder vertraglicher Maßnahmen",
+    "pt": "Execução de medidas pré-contratuais ou contratuais"
+  },
+  "Prestar los servicios de Solved y mantener la relación comercial": {
+    "en": "Providing Solved's services and maintaining the business relationship",
+    "fr": "Fournir les services de Solved et entretenir la relation commerciale",
+    "it": "Fornire i servizi di Solved e mantenere il rapporto commerciale",
+    "de": "Die Dienste von Solved erbringen und die Geschäftsbeziehung pflegen",
+    "pt": "Prestar os serviços da Solved e manter a relação comercial"
+  },
+  "Ejecución de un contrato": { "en": "Performance of a contract", "fr": "Exécution d'un contrat", "it": "Esecuzione di un contratto", "de": "Erfüllung eines Vertrags", "pt": "Execução de um contrato" },
+  "Envío de comunicaciones comerciales o información sobre Solved": {
+    "en": "Sending commercial communications or information about Solved",
+    "fr": "Envoi de communications commerciales ou d'informations sur Solved",
+    "it": "Invio di comunicazioni commerciali o informazioni su Solved",
+    "de": "Versand von Werbemitteilungen oder Informationen über Solved",
+    "pt": "Envio de comunicações comerciais ou informação sobre a Solved"
+  },
+  "Consentimiento del interesado": { "en": "Consent of the data subject", "fr": "Consentement de la personne concernée", "it": "Consenso dell'interessato", "de": "Einwilligung der betroffenen Person", "pt": "Consentimento do titular dos dados" },
+  "Análisis y mejora del sitio web y de la experiencia de usuario": {
+    "en": "Analysing and improving the website and the user experience",
+    "fr": "Analyse et amélioration du site web et de l'expérience utilisateur",
+    "it": "Analisi e miglioramento del sito web e dell'esperienza utente",
+    "de": "Analyse und Verbesserung der Website und der Nutzererfahrung",
+    "pt": "Análise e melhoria do sítio web e da experiência do utilizador"
+  },
+  "Interés legítimo de Solved": { "en": "Solved's legitimate interest", "fr": "Intérêt légitime de Solved", "it": "Interesse legittimo di Solved", "de": "Berechtigtes Interesse von Solved", "pt": "Interesse legítimo da Solved" },
+  "Cumplimiento de obligaciones legales o requerimientos de autoridades": {
+    "en": "Complying with legal obligations or requests from authorities",
+    "fr": "Respect des obligations légales ou des demandes des autorités",
+    "it": "Adempimento di obblighi di legge o richieste delle autorità",
+    "de": "Erfüllung gesetzlicher Pflichten oder behördlicher Anforderungen",
+    "pt": "Cumprimento de obrigações legais ou de pedidos de autoridades"
+  },
+  "Obligación legal": { "en": "Legal obligation", "fr": "Obligation légale", "it": "Obbligo di legge", "de": "Rechtliche Verpflichtung", "pt": "Obrigação legal" },
+  "4. Conservación de los datos": { "en": "4. Data retention", "fr": "4. Conservation des données", "it": "4. Conservazione dei dati", "de": "4. Speicherdauer", "pt": "4. Conservação dos dados" },
+  "Los datos personales se conservarán:": { "en": "Personal data will be kept:", "fr": "Les données personnelles seront conservées :", "it": "I dati personali saranno conservati:", "de": "Personenbezogene Daten werden gespeichert:", "pt": "Os dados pessoais serão conservados:" },
+  "Mientras se mantenga la relación comercial o contractual.": {
+    "en": "For as long as the commercial or contractual relationship lasts.",
+    "fr": "Tant que dure la relation commerciale ou contractuelle.",
+    "it": "Finché dura il rapporto commerciale o contrattuale.",
+    "de": "solange die Geschäfts- oder Vertragsbeziehung besteht.",
+    "pt": "Enquanto se mantiver a relação comercial ou contratual."
+  },
+  "Mientras el usuario no solicite su supresión.": {
+    "en": "For as long as the user does not request their deletion.",
+    "fr": "Tant que l'utilisateur n'en demande pas la suppression.",
+    "it": "Finché l'utente non ne chiede la cancellazione.",
+    "de": "solange der Nutzer ihre Löschung nicht verlangt.",
+    "pt": "Enquanto o utilizador não solicitar a sua eliminação."
+  },
+  "Y posteriormente, durante los plazos necesarios para cumplir obligaciones legales o atender posibles reclamaciones.": {
+    "en": "And afterwards, for as long as needed to meet legal obligations or handle any claims.",
+    "fr": "Et ensuite, pendant les délais nécessaires pour respecter les obligations légales ou traiter d'éventuelles réclamations.",
+    "it": "E successivamente, per i termini necessari ad adempiere obblighi di legge o gestire eventuali reclami.",
+    "de": "und anschließend für die Fristen, die zur Erfüllung gesetzlicher Pflichten oder zur Bearbeitung möglicher Ansprüche erforderlich sind.",
+    "pt": "E posteriormente, durante os prazos necessários para cumprir obrigações legais ou responder a eventuais reclamações."
+  },
+  "5. Comunicación de datos a terceros": { "en": "5. Sharing data with third parties", "fr": "5. Communication des données à des tiers", "it": "5. Comunicazione dei dati a terzi", "de": "5. Weitergabe von Daten an Dritte", "pt": "5. Comunicação de dados a terceiros" },
+  "Podemos compartir datos personales únicamente en los siguientes casos:": {
+    "en": "We may share personal data only in the following cases:",
+    "fr": "Nous pouvons partager des données personnelles uniquement dans les cas suivants :",
+    "it": "Possiamo condividere dati personali soltanto nei casi seguenti:",
+    "de": "Wir geben personenbezogene Daten nur in den folgenden Fällen weiter:",
+    "pt": "Só podemos partilhar dados pessoais nos seguintes casos:"
+  },
+  "Proveedores de servicios: terceros que prestan servicios técnicos, de alojamiento, marketing o soporte, con los que Solved mantiene contratos de encargo de tratamiento conforme al art. 28 RGPD.": {
+    "en": "Service providers: third parties supplying technical, hosting, marketing or support services, with whom Solved holds data processing agreements under Article 28 GDPR.",
+    "fr": "Prestataires de services : tiers fournissant des services techniques, d'hébergement, de marketing ou de support, avec lesquels Solved a conclu des contrats de sous-traitance conformément à l'article 28 du RGPD.",
+    "it": "Fornitori di servizi: terzi che prestano servizi tecnici, di hosting, marketing o supporto, con i quali Solved ha contratti di responsabile del trattamento ai sensi dell'art. 28 GDPR.",
+    "de": "Dienstleister: Dritte, die technische, Hosting-, Marketing- oder Supportleistungen erbringen und mit denen Solved Auftragsverarbeitungsverträge nach Art. 28 DSGVO geschlossen hat.",
+    "pt": "Prestadores de serviços: terceiros que prestam serviços técnicos, de alojamento, marketing ou suporte, com os quais a Solved mantém contratos de subcontratação nos termos do art. 28.º do RGPD."
+  },
+  "Obligaciones legales: cuando sea necesario para cumplir con una ley, procedimiento judicial o solicitud de una autoridad competente.": {
+    "en": "Legal obligations: where necessary to comply with a law, judicial proceeding or request from a competent authority.",
+    "fr": "Obligations légales : lorsque cela est nécessaire pour respecter une loi, une procédure judiciaire ou la demande d'une autorité compétente.",
+    "it": "Obblighi di legge: quando necessario per rispettare una legge, un procedimento giudiziario o la richiesta di un'autorità competente.",
+    "de": "Gesetzliche Pflichten: soweit dies zur Erfüllung eines Gesetzes, eines Gerichtsverfahrens oder einer Anforderung einer zuständigen Behörde erforderlich ist.",
+    "pt": "Obrigações legais: quando necessário para cumprir uma lei, um processo judicial ou um pedido de uma autoridade competente."
+  },
+  "Operaciones corporativas: en caso de fusión, adquisición o transmisión de activos, siempre garantizando la confidencialidad.": {
+    "en": "Corporate transactions: in the event of a merger, acquisition or transfer of assets, always safeguarding confidentiality.",
+    "fr": "Opérations sur le capital : en cas de fusion, acquisition ou cession d'actifs, en garantissant toujours la confidentialité.",
+    "it": "Operazioni societarie: in caso di fusione, acquisizione o cessione di asset, garantendo sempre la riservatezza.",
+    "de": "Unternehmenstransaktionen: bei Fusion, Übernahme oder Vermögensübertragung, stets unter Wahrung der Vertraulichkeit.",
+    "pt": "Operações societárias: em caso de fusão, aquisição ou transmissão de ativos, garantindo sempre a confidencialidade."
+  },
+  "No se realizan transferencias internacionales de datos fuera del Espacio Económico Europeo sin las garantías adecuadas.": {
+    "en": "No international data transfers outside the European Economic Area take place without appropriate safeguards.",
+    "fr": "Aucun transfert international de données hors de l'Espace économique européen n'est effectué sans les garanties appropriées.",
+    "it": "Non vengono effettuati trasferimenti internazionali di dati fuori dallo Spazio Economico Europeo senza garanzie adeguate.",
+    "de": "Internationale Datenübermittlungen außerhalb des Europäischen Wirtschaftsraums erfolgen nicht ohne geeignete Garantien.",
+    "pt": "Não são realizadas transferências internacionais de dados para fora do Espaço Económico Europeu sem as garantias adequadas."
+  },
+  "6. Derechos de los usuarios": { "en": "6. Your rights", "fr": "6. Droits des utilisateurs", "it": "6. Diritti degli utenti", "de": "6. Rechte der Nutzer", "pt": "6. Direitos dos utilizadores" },
+  "Usted puede ejercer en cualquier momento los siguientes derechos:": {
+    "en": "You may exercise the following rights at any time:",
+    "fr": "Vous pouvez exercer à tout moment les droits suivants :",
+    "it": "Puoi esercitare in qualsiasi momento i seguenti diritti:",
+    "de": "Sie können jederzeit die folgenden Rechte ausüben:",
+    "pt": "Pode exercer a qualquer momento os seguintes direitos:"
+  },
+  "Acceso a sus datos personales.": { "en": "Access to your personal data.", "fr": "Accès à vos données personnelles.", "it": "Accesso ai tuoi dati personali.", "de": "Auskunft über Ihre personenbezogenen Daten.", "pt": "Acesso aos seus dados pessoais." },
+  "Rectificación de datos inexactos o incompletos.": { "en": "Rectification of inaccurate or incomplete data.", "fr": "Rectification des données inexactes ou incomplètes.", "it": "Rettifica di dati inesatti o incompleti.", "de": "Berichtigung unrichtiger oder unvollständiger Daten.", "pt": "Retificação de dados inexatos ou incompletos." },
+  "Supresión (“derecho al olvido”).": { "en": "Erasure (“right to be forgotten”).", "fr": "Effacement (« droit à l'oubli »).", "it": "Cancellazione («diritto all'oblio»).", "de": "Löschung („Recht auf Vergessenwerden“).", "pt": "Eliminação («direito ao esquecimento»)." },
+  "Limitación del tratamiento.": { "en": "Restriction of processing.", "fr": "Limitation du traitement.", "it": "Limitazione del trattamento.", "de": "Einschränkung der Verarbeitung.", "pt": "Limitação do tratamento." },
+  "Portabilidad de sus datos.": { "en": "Portability of your data.", "fr": "Portabilité de vos données.", "it": "Portabilità dei tuoi dati.", "de": "Übertragbarkeit Ihrer Daten.", "pt": "Portabilidade dos seus dados." },
+  "Oposición al tratamiento o revocación del consentimiento.": {
+    "en": "Objection to processing or withdrawal of consent.",
+    "fr": "Opposition au traitement ou retrait du consentement.",
+    "it": "Opposizione al trattamento o revoca del consenso.",
+    "de": "Widerspruch gegen die Verarbeitung oder Widerruf der Einwilligung.",
+    "pt": "Oposição ao tratamento ou revogação do consentimento."
+  },
+  "Para ejercerlos, puede escribir a": { "en": "To exercise them, write to", "fr": "Pour les exercer, vous pouvez écrire à", "it": "Per esercitarli, puoi scrivere a", "de": "Zur Ausübung schreiben Sie an", "pt": "Para os exercer, pode escrever para" },
+  ", indicando el derecho que desea ejercer e incluyendo un documento acreditativo de su identidad.": {
+    "en": ", stating the right you wish to exercise and enclosing a document proving your identity.",
+    "fr": ", en indiquant le droit que vous souhaitez exercer et en joignant un justificatif d'identité.",
+    "it": ", indicando il diritto che desideri esercitare e allegando un documento che attesti la tua identità.",
+    "de": " und nennen Sie das Recht, das Sie ausüben möchten, unter Beifügung eines Identitätsnachweises.",
+    "pt": ", indicando o direito que deseja exercer e anexando um documento comprovativo da sua identidade."
+  },
+  "También tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) si considera que sus derechos no han sido respetados:": {
+    "en": "You also have the right to lodge a complaint with the Spanish Data Protection Agency (AEPD) if you believe your rights have not been respected:",
+    "fr": "Vous avez également le droit d'introduire une réclamation auprès de l'Agence espagnole de protection des données (AEPD) si vous estimez que vos droits n'ont pas été respectés :",
+    "it": "Hai inoltre il diritto di presentare reclamo all'Agenzia spagnola per la protezione dei dati (AEPD) se ritieni che i tuoi diritti non siano stati rispettati:",
+    "de": "Sie haben zudem das Recht, bei der spanischen Datenschutzbehörde (AEPD) Beschwerde einzulegen, wenn Sie der Ansicht sind, dass Ihre Rechte nicht gewahrt wurden:",
+    "pt": "Tem também o direito de apresentar uma reclamação junto da Agência Espanhola de Proteção de Dados (AEPD) se considerar que os seus direitos não foram respeitados:"
+  },
+  "7. Seguridad de la información": { "en": "7. Information security", "fr": "7. Sécurité de l'information", "it": "7. Sicurezza delle informazioni", "de": "7. Informationssicherheit", "pt": "7. Segurança da informação" },
+  "Solved aplica medidas técnicas y organizativas adecuadas para proteger la información personal frente a pérdida, uso indebido, acceso no autorizado, alteración o destrucción. No obstante, ningún sistema es completamente seguro, por lo que no se puede garantizar la seguridad absoluta de la información.": {
+    "en": "Solved applies appropriate technical and organisational measures to protect personal information against loss, misuse, unauthorised access, alteration or destruction. That said, no system is completely secure, so absolute security of the information cannot be guaranteed.",
+    "fr": "Solved applique des mesures techniques et organisationnelles appropriées pour protéger les informations personnelles contre la perte, l'usage abusif, l'accès non autorisé, l'altération ou la destruction. Toutefois, aucun système n'est totalement sûr : la sécurité absolue de l'information ne peut être garantie.",
+    "it": "Solved applica misure tecniche e organizzative adeguate per proteggere le informazioni personali da perdita, uso improprio, accesso non autorizzato, alterazione o distruzione. Tuttavia nessun sistema è completamente sicuro, quindi non si può garantire la sicurezza assoluta delle informazioni.",
+    "de": "Solved trifft geeignete technische und organisatorische Maßnahmen, um personenbezogene Informationen vor Verlust, Missbrauch, unbefugtem Zugriff, Veränderung oder Zerstörung zu schützen. Kein System ist jedoch vollständig sicher, sodass absolute Sicherheit der Informationen nicht garantiert werden kann.",
+    "pt": "A Solved aplica medidas técnicas e organizativas adequadas para proteger a informação pessoal contra perda, uso indevido, acesso não autorizado, alteração ou destruição. Ainda assim, nenhum sistema é totalmente seguro, pelo que não é possível garantir a segurança absoluta da informação."
+  },
+  "8. Enlaces a terceros": { "en": "8. Third-party links", "fr": "8. Liens vers des tiers", "it": "8. Link a terzi", "de": "8. Links zu Dritten", "pt": "8. Ligações a terceiros" },
+  "Nuestro sitio web puede incluir enlaces a sitios o servicios de terceros. Solved no se hace responsable de las prácticas de privacidad ni del contenido de dichos sitios. Le recomendamos revisar sus políticas antes de proporcionar cualquier información personal.": {
+    "en": "Our website may include links to third-party sites or services. Solved is not responsible for the privacy practices or the content of those sites. We recommend reviewing their policies before providing any personal information.",
+    "fr": "Notre site web peut contenir des liens vers des sites ou services tiers. Solved n'est pas responsable des pratiques de confidentialité ni du contenu de ces sites. Nous vous recommandons d'examiner leurs politiques avant de fournir toute information personnelle.",
+    "it": "Il nostro sito web può includere link a siti o servizi di terzi. Solved non è responsabile delle pratiche di privacy né dei contenuti di tali siti. Ti consigliamo di leggere le loro informative prima di fornire qualsiasi dato personale.",
+    "de": "Unsere Website kann Links zu Websites oder Diensten Dritter enthalten. Solved ist weder für deren Datenschutzpraktiken noch für deren Inhalte verantwortlich. Wir empfehlen, deren Richtlinien zu prüfen, bevor Sie personenbezogene Daten angeben.",
+    "pt": "O nosso sítio web pode incluir ligações a sítios ou serviços de terceiros. A Solved não se responsabiliza pelas práticas de privacidade nem pelo conteúdo desses sítios. Recomendamos que consulte as respetivas políticas antes de fornecer qualquer informação pessoal."
+  },
+  "9. Cambios en esta política": { "en": "9. Changes to this policy", "fr": "9. Modifications de la présente politique", "it": "9. Modifiche alla presente informativa", "de": "9. Änderungen dieser Erklärung", "pt": "9. Alterações a esta política" },
+  "Solved podrá modificar esta Política de Privacidad cuando lo considere necesario, publicando la nueva versión en esta misma página. Le notificaremos los cambios significativos mediante aviso en el sitio web o por correo electrónico.": {
+    "en": "Solved may amend this Privacy Policy whenever it considers it necessary, publishing the new version on this same page. We will notify you of significant changes through a notice on the website or by email.",
+    "fr": "Solved pourra modifier la présente politique de confidentialité lorsqu'il l'estimera nécessaire, en publiant la nouvelle version sur cette même page. Nous vous informerons des changements importants par un avis sur le site web ou par courriel.",
+    "it": "Solved potrà modificare la presente informativa quando lo riterrà necessario, pubblicando la nuova versione in questa stessa pagina. Ti comunicheremo le modifiche significative tramite avviso sul sito web o via email.",
+    "de": "Solved kann diese Datenschutzerklärung ändern, wenn es dies für erforderlich hält, und veröffentlicht die neue Fassung auf dieser Seite. Über wesentliche Änderungen informieren wir Sie durch einen Hinweis auf der Website oder per E-Mail.",
+    "pt": "A Solved poderá alterar esta Política de Privacidade sempre que o considere necessário, publicando a nova versão nesta mesma página. As alterações significativas serão notificadas através de um aviso no sítio web ou por e-mail."
+  },
+  "Fecha de la última actualización: noviembre de 2025": {
+    "en": "Date last updated: November 2025",
+    "fr": "Date de la dernière mise à jour : novembre 2025",
+    "it": "Data dell'ultimo aggiornamento: novembre 2025",
+    "de": "Datum der letzten Aktualisierung: November 2025",
+    "pt": "Data da última atualização: novembro de 2025"
+  },
+  "Solved · Política de Cookies": { "en": "Solved · Cookie Policy", "fr": "Solved · Politique de cookies", "it": "Solved · Informativa sui cookie", "de": "Solved · Cookie-Richtlinie", "pt": "Solved · Política de Cookies" },
+  "Última actualización: 08 de agosto de 2023": { "en": "Last updated: 8 August 2023", "fr": "Dernière mise à jour : 8 août 2023", "it": "Ultimo aggiornamento: 8 agosto 2023", "de": "Zuletzt aktualisiert: 8. August 2023", "pt": "Última atualização: 8 de agosto de 2023" },
+  "Esta Política de Cookies explica qué son las cookies y cómo las utilizamos. Debes leer esta política para entender qué son las cookies, cómo las utilizamos, los tipos de cookies que utilizamos, es decir, la información que recopilamos mediante las cookies, cómo se utiliza esa información y cómo controlar las preferencias de cookies. Para obtener más información sobre cómo utilizamos, almacenamos y mantenemos seguros tus datos personales, consulta nuestra Política de Privacidad.": {
+    "en": "This Cookie Policy explains what cookies are and how we use them. You should read this policy to understand what cookies are, how we use them, the types of cookies we use — that is, the information we collect through cookies —, how that information is used and how to control your cookie preferences. For more on how we use, store and keep your personal data secure, see our Privacy Policy.",
+    "fr": "La présente politique de cookies explique ce que sont les cookies et comment nous les utilisons. Vous devez la lire pour comprendre ce que sont les cookies, comment nous les utilisons, les types de cookies que nous utilisons — c'est-à-dire les informations que nous collectons par ce biais —, comment ces informations sont utilisées et comment gérer vos préférences. Pour en savoir plus sur la façon dont nous utilisons, stockons et sécurisons vos données personnelles, consultez notre politique de confidentialité.",
+    "it": "La presente informativa sui cookie spiega cosa sono i cookie e come li utilizziamo. Ti invitiamo a leggerla per capire cosa sono i cookie, come li utilizziamo, i tipi di cookie che impieghiamo — cioè le informazioni che raccogliamo tramite i cookie —, come vengono usate tali informazioni e come gestire le preferenze. Per saperne di più su come utilizziamo, conserviamo e proteggiamo i tuoi dati personali, consulta la nostra informativa sulla privacy.",
+    "de": "Diese Cookie-Richtlinie erklärt, was Cookies sind und wie wir sie einsetzen. Lesen Sie sie, um zu verstehen, was Cookies sind, wie wir sie nutzen, welche Arten wir verwenden – also welche Informationen wir über Cookies erheben –, wie diese Informationen genutzt werden und wie Sie Ihre Cookie-Einstellungen steuern. Mehr dazu, wie wir Ihre personenbezogenen Daten nutzen, speichern und schützen, finden Sie in unserer Datenschutzerklärung.",
+    "pt": "Esta Política de Cookies explica o que são os cookies e como os utilizamos. Deve ler esta política para perceber o que são os cookies, como os utilizamos, os tipos de cookies que utilizamos — ou seja, a informação que recolhemos através dos cookies —, como essa informação é utilizada e como controlar as preferências de cookies. Para saber mais sobre como utilizamos, armazenamos e mantemos seguros os seus dados pessoais, consulte a nossa Política de Privacidade."
+  },
+  "Tu consentimiento se aplica a los siguientes dominios: trysolved.es, trysolved.com": {
+    "en": "Your consent applies to the following domains: trysolved.es, trysolved.com",
+    "fr": "Votre consentement s'applique aux domaines suivants : trysolved.es, trysolved.com",
+    "it": "Il tuo consenso si applica ai seguenti domini: trysolved.es, trysolved.com",
+    "de": "Ihre Einwilligung gilt für die folgenden Domains: trysolved.es, trysolved.com",
+    "pt": "O seu consentimento aplica-se aos seguintes domínios: trysolved.es, trysolved.com"
+  },
+  "¿Qué son las cookies?": { "en": "What are cookies?", "fr": "Que sont les cookies ?", "it": "Che cosa sono i cookie?", "de": "Was sind Cookies?", "pt": "O que são os cookies?" },
+  "Las cookies son pequeños archivos de texto que se utilizan para almacenar pequeñas piezas de información. Se almacenan en tu dispositivo cuando el sitio web se carga en tu navegador. Estas cookies nos ayudan a que el sitio web funcione correctamente, lo hagan más seguro, proporcionen una mejor experiencia de usuario, y comprendan cómo funciona el sitio web y para analizar qué funciona y dónde necesita mejoras.": {
+    "en": "Cookies are small text files used to store small pieces of information. They are saved on your device when the website loads in your browser. These cookies help us make the website work properly, keep it more secure, provide a better user experience, understand how the site performs and analyse what works and where it needs improving.",
+    "fr": "Les cookies sont de petits fichiers texte servant à stocker de petites informations. Ils sont enregistrés sur votre appareil lorsque le site web se charge dans votre navigateur. Ces cookies nous aident à faire fonctionner correctement le site, à le rendre plus sûr, à offrir une meilleure expérience utilisateur, à comprendre son fonctionnement et à analyser ce qui marche et ce qui doit être amélioré.",
+    "it": "I cookie sono piccoli file di testo usati per memorizzare piccole informazioni. Vengono salvati sul tuo dispositivo quando il sito web si carica nel browser. Questi cookie ci aiutano a far funzionare correttamente il sito, a renderlo più sicuro, a offrire un'esperienza migliore, a capire come funziona il sito e ad analizzare cosa funziona e dove va migliorato.",
+    "de": "Cookies sind kleine Textdateien, die kleine Informationen speichern. Sie werden auf Ihrem Gerät abgelegt, wenn die Website in Ihrem Browser geladen wird. Diese Cookies helfen uns, die Website korrekt zu betreiben, sie sicherer zu machen, ein besseres Nutzungserlebnis zu bieten, ihre Funktionsweise zu verstehen und zu analysieren, was funktioniert und wo Verbesserungsbedarf besteht.",
+    "pt": "Os cookies são pequenos ficheiros de texto utilizados para armazenar pequenas informações. São guardados no seu dispositivo quando o sítio web é carregado no seu navegador. Estes cookies ajudam-nos a que o sítio web funcione corretamente, o tornem mais seguro, proporcionem uma melhor experiência de utilizador, e permitam compreender como funciona o sítio web e analisar o que funciona e onde é necessário melhorar."
+  },
+  "¿Cómo utilizamos las cookies?": { "en": "How do we use cookies?", "fr": "Comment utilisons-nous les cookies ?", "it": "Come utilizziamo i cookie?", "de": "Wie setzen wir Cookies ein?", "pt": "Como utilizamos os cookies?" },
+  "Como con la mayoría de los servicios en línea, nuestro sitio web utiliza cookies de primeras y terceras partes para varios propósitos. Las cookies de primeras partes son en su mayoría necesarias para que el sitio web funcione de la manera correcta, y no recopilan ninguno de tus datos de identificación personal.": {
+    "en": "As with most online services, our website uses first- and third-party cookies for several purposes. First-party cookies are mostly necessary for the website to work properly, and they do not collect any personally identifiable data about you.",
+    "fr": "Comme la plupart des services en ligne, notre site web utilise des cookies de première et de tierce partie à plusieurs fins. Les cookies de première partie sont pour l'essentiel nécessaires au bon fonctionnement du site et ne collectent aucune donnée permettant de vous identifier.",
+    "it": "Come la maggior parte dei servizi online, il nostro sito web utilizza cookie di prima e di terza parte per diversi scopi. I cookie di prima parte sono per lo più necessari al corretto funzionamento del sito e non raccolgono dati che ti identifichino personalmente.",
+    "de": "Wie die meisten Onlinedienste verwendet unsere Website Erst- und Drittanbieter-Cookies zu verschiedenen Zwecken. Erstanbieter-Cookies sind überwiegend für den korrekten Betrieb der Website erforderlich und erheben keine personenbezogenen Identifikationsdaten von Ihnen.",
+    "pt": "Tal como na maioria dos serviços online, o nosso sítio web utiliza cookies próprios e de terceiros para vários fins. Os cookies próprios são, na sua maioria, necessários para que o sítio web funcione corretamente, e não recolhem quaisquer dados que o identifiquem pessoalmente."
+  },
+  "¿Qué tipos de cookies utilizamos?": { "en": "What types of cookies do we use?", "fr": "Quels types de cookies utilisons-nous ?", "it": "Quali tipi di cookie utilizziamo?", "de": "Welche Arten von Cookies verwenden wir?", "pt": "Que tipos de cookies utilizamos?" },
+  "Esenciales: Algunas cookies son esenciales para que puedas experimentar la funcionalidad completa de nuestro sitio. Nos permiten mantener las sesiones de usuario y prevenir amenazas de seguridad. No recopilan ni almacenan ninguna información personal.": {
+    "en": "Essential: some cookies are essential for you to experience the full functionality of our site. They let us keep user sessions alive and prevent security threats. They neither collect nor store any personal information.",
+    "fr": "Essentiels : certains cookies sont indispensables pour profiter de toutes les fonctionnalités du site. Ils nous permettent de maintenir les sessions utilisateur et de prévenir les menaces de sécurité. Ils ne collectent ni ne stockent aucune information personnelle.",
+    "it": "Essenziali: alcuni cookie sono essenziali per usufruire di tutte le funzionalità del sito. Ci permettono di mantenere le sessioni utente e di prevenire minacce alla sicurezza. Non raccolgono né conservano alcuna informazione personale.",
+    "de": "Notwendig: Einige Cookies sind unerlässlich, damit Sie den vollen Funktionsumfang unserer Website nutzen können. Sie erlauben uns, Nutzersitzungen aufrechtzuerhalten und Sicherheitsbedrohungen abzuwehren. Sie erheben und speichern keinerlei personenbezogene Informationen.",
+    "pt": "Essenciais: alguns cookies são essenciais para poder usufruir de toda a funcionalidade do nosso sítio. Permitem-nos manter as sessões de utilizador e prevenir ameaças de segurança. Não recolhem nem armazenam qualquer informação pessoal."
+  },
+  "Estadísticas: Estas cookies almacenan información como el número de visitantes al sitio web, el número de visitantes únicos, qué páginas del sitio web se han visitado, la fuente de la visita, etc. Estos datos nos ayudan a entender y analizar cuán bien funciona el sitio web y dónde necesita mejoras.": {
+    "en": "Statistics: these cookies store information such as the number of visitors to the website, the number of unique visitors, which pages have been visited, where the visit came from, and so on. This data helps us understand and analyse how well the website performs and where it needs improving.",
+    "fr": "Statistiques : ces cookies enregistrent des informations telles que le nombre de visiteurs du site, le nombre de visiteurs uniques, les pages visitées, la source de la visite, etc. Ces données nous aident à comprendre et analyser les performances du site et les points à améliorer.",
+    "it": "Statistiche: questi cookie memorizzano informazioni come il numero di visitatori del sito, il numero di visitatori unici, quali pagine sono state visitate, la provenienza della visita, ecc. Questi dati ci aiutano a capire e analizzare quanto bene funziona il sito e dove va migliorato.",
+    "de": "Statistik: Diese Cookies speichern Informationen wie die Zahl der Besucher der Website, die Zahl eindeutiger Besucher, welche Seiten aufgerufen wurden, die Quelle des Besuchs usw. Diese Daten helfen uns zu verstehen und zu analysieren, wie gut die Website funktioniert und wo Verbesserungsbedarf besteht.",
+    "pt": "Estatística: estes cookies armazenam informação como o número de visitantes do sítio web, o número de visitantes únicos, que páginas do sítio web foram visitadas, a origem da visita, etc. Estes dados ajudam-nos a compreender e analisar o desempenho do sítio web e onde é necessário melhorar."
+  },
+  "¿Cómo puedo controlar las preferencias de cookies?": {
+    "en": "How can I control my cookie preferences?",
+    "fr": "Comment gérer mes préférences de cookies ?",
+    "it": "Come posso gestire le preferenze sui cookie?",
+    "de": "Wie kann ich meine Cookie-Einstellungen steuern?",
+    "pt": "Como posso controlar as preferências de cookies?"
+  },
+  "Puedes administrar tus preferencias de cookies haciendo clic en el botón “Configuración” y habilitando o deshabilitando las categorías de cookies en la ventana emergente según tus preferencias.": {
+    "en": "You can manage your cookie preferences by clicking the “Settings” button and enabling or disabling the cookie categories in the pop-up as you prefer.",
+    "fr": "Vous pouvez gérer vos préférences de cookies en cliquant sur le bouton « Configuration » et en activant ou désactivant les catégories de cookies dans la fenêtre contextuelle selon vos préférences.",
+    "it": "Puoi gestire le tue preferenze sui cookie cliccando sul pulsante «Impostazioni» e abilitando o disabilitando le categorie di cookie nella finestra a comparsa secondo le tue preferenze.",
+    "de": "Sie können Ihre Cookie-Einstellungen über die Schaltfläche „Einstellungen“ verwalten und die Cookie-Kategorien im Fenster nach Ihren Wünschen aktivieren oder deaktivieren.",
+    "pt": "Pode gerir as suas preferências de cookies clicando no botão «Definições» e ativando ou desativando as categorias de cookies na janela pop-up de acordo com as suas preferências."
+  },
+  "Además de esto, los diferentes navegadores proporcionan diferentes métodos para bloquear y eliminar las cookies utilizadas por los sitios web. Puedes cambiar la configuración de tu navegador para bloquear/eliminar las cookies. Para obtener más información sobre cómo administrar y eliminar cookies, visita wikipedia.org,": {
+    "en": "Besides this, different browsers offer different ways to block and delete the cookies used by websites. You can change your browser settings to block or delete cookies. For more on managing and deleting cookies, visit wikipedia.org,",
+    "fr": "Par ailleurs, les différents navigateurs proposent différentes méthodes pour bloquer et supprimer les cookies utilisés par les sites web. Vous pouvez modifier les paramètres de votre navigateur pour bloquer ou supprimer les cookies. Pour en savoir plus sur la gestion et la suppression des cookies, consultez wikipedia.org,",
+    "it": "Inoltre, i diversi browser offrono metodi diversi per bloccare ed eliminare i cookie usati dai siti web. Puoi modificare le impostazioni del browser per bloccare o eliminare i cookie. Per saperne di più su come gestire ed eliminare i cookie, visita wikipedia.org,",
+    "de": "Darüber hinaus bieten verschiedene Browser unterschiedliche Wege, die von Websites verwendeten Cookies zu blockieren und zu löschen. Sie können die Einstellungen Ihres Browsers ändern, um Cookies zu blockieren oder zu löschen. Mehr zum Verwalten und Löschen von Cookies finden Sie auf wikipedia.org,",
+    "pt": "Além disso, os diferentes navegadores oferecem métodos diferentes para bloquear e eliminar os cookies utilizados pelos sítios web. Pode alterar as definições do seu navegador para bloquear/eliminar os cookies. Para saber mais sobre como gerir e eliminar cookies, visite wikipedia.org,"
+  },
+  "Contáctanos": { "en": "Contact us", "fr": "Contactez-nous", "it": "Contattaci", "de": "Kontaktieren Sie uns", "pt": "Contacte-nos" },
+  "Si tienes alguna pregunta sobre esta Política de Cookies, por favor contáctanos a info@trysolved.com.": {
+    "en": "If you have any questions about this Cookie Policy, please contact us at info@trysolved.com.",
+    "fr": "Si vous avez des questions sur cette politique de cookies, contactez-nous à info@trysolved.com.",
+    "it": "Se hai domande su questa informativa sui cookie, contattaci a info@trysolved.com.",
+    "de": "Bei Fragen zu dieser Cookie-Richtlinie erreichen Sie uns unter info@trysolved.com.",
+    "pt": "Se tiver alguma questão sobre esta Política de Cookies, contacte-nos através de info@trysolved.com."
+  },
+  "Página no encontrada (404) · Solved": { "en": "Page not found (404) · Solved", "fr": "Page introuvable (404) · Solved", "it": "Pagina non trovata (404) · Solved", "de": "Seite nicht gefunden (404) · Solved", "pt": "Página não encontrada (404) · Solved" },
+  "No encontramos esta página": { "en": "We could not find this page", "fr": "Nous n'avons pas trouvé cette page", "it": "Non abbiamo trovato questa pagina", "de": "Diese Seite haben wir nicht gefunden", "pt": "Não encontrámos esta página" },
+  "La dirección puede haber cambiado o no existir. Desde el inicio se accede al catálogo de módulos.": {
+    "en": "The address may have changed or may not exist. The home page leads to the module catalogue.",
+    "fr": "L'adresse a peut-être changé ou n'existe pas. La page d'accueil donne accès au catalogue des modules.",
+    "it": "L'indirizzo potrebbe essere cambiato o non esistere. Dalla home si accede al catalogo dei moduli.",
+    "de": "Die Adresse hat sich möglicherweise geändert oder existiert nicht. Über die Startseite gelangen Sie zum Modulkatalog.",
+    "pt": "O endereço pode ter mudado ou não existir. A partir do início acede-se ao catálogo de módulos."
+  },
+  "Volver al inicio": { "en": "Back to home", "fr": "Retour à l'accueil", "it": "Torna alla home", "de": "Zurück zur Startseite", "pt": "Voltar ao início" }
+}

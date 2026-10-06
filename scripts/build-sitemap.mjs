@@ -17,7 +17,7 @@
 // =========================================================
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { renderSitemap, staticEntries, gitLastmod } from './lib/sitemap.mjs';
+import { conIdiomas, renderSitemap, staticEntries, gitLastmod } from './lib/sitemap.mjs';
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -31,53 +31,39 @@ async function postLastmod(file) {
 
 const entries = await staticEntries(today);
 
-// Índice del blog: español + inglés (mismo slug bajo /en/blog/, si existe).
-// Las páginas puente de artículos fusionados viven en blog/<slug>/index.html,
-// igual que un post real, así que el escaneo por disco no las distingue solo:
-// se excluyen los slugs que seo/redirects.json mapea bajo "blog/…".
-const redirectsMap = JSON.parse(await fs.readFile('seo/redirects.json', 'utf8'));
-const EXCLUIDAS = new Set([
-  'assets', 'page', 'webinar-patatas-aguilar',
-  ...Object.keys(redirectsMap)
-    .filter(k => k.startsWith('blog/'))
-    .map(k => k.slice('blog/'.length)),
-]);
+// Índice del blog
+entries.push({
+  loc: '/blog/',
+  lastmod: await gitLastmod('blog/index.html', today),
+  changefreq: 'weekly',
+  priority: '0.7',
+});
+
+// Posts: cada subcarpeta de /blog/ con index.html. Se excluyen blog/assets/
+// (imágenes) y blog/page/ (paginación del índice: /blog/page/2/…), que nunca
+// ha estado en el sitemap y se deja igual para no cambiar lo que ya rastrea
+// Google. Los posts se alcanzan igual desde el índice y desde el sitemap.
+const EXCLUIDAS = new Set(['assets', 'page']);
+const dirs = (await fs.readdir('blog', { withFileTypes: true }))
+  .filter(e => e.isDirectory() && !EXCLUIDAS.has(e.name))
+  .map(e => e.name)
+  .sort();
 
 let posts = 0;
-for (const blogDir of ['blog', 'en/blog']) {
-  const urlPrefix = blogDir === 'blog' ? '/blog/' : '/en/blog/';
-  try { await fs.access(path.join(blogDir, 'index.html')); } catch { continue; }
-
+for (const slug of dirs) {
+  const file = path.join('blog', slug, 'index.html');
+  try { await fs.access(file); } catch { continue; }
   entries.push({
-    loc: urlPrefix,
-    lastmod: await gitLastmod(path.join(blogDir, 'index.html'), today),
-    changefreq: 'weekly',
-    priority: '0.7',
+    loc: `/blog/${slug}/`,
+    lastmod: await postLastmod(file),
+    changefreq: 'monthly',
+    priority: '0.6',
   });
-
-  // Posts: cada subcarpeta con index.html. Se excluyen blog/assets/ (imágenes)
-  // y blog/page/ (paginación del índice: /blog/page/2/…), que nunca ha estado
-  // en el sitemap y se deja igual para no cambiar lo que ya rastrea Google.
-  // Los posts se alcanzan igual desde el índice y desde el sitemap. También
-  // se excluyen las páginas estáticas de /blog no generadas desde WordPress
-  // (landings puntuales, noindex) — ver BLOG_STATIC_PAGES en build-blog.mjs.
-  const dirs = (await fs.readdir(blogDir, { withFileTypes: true }))
-    .filter(e => e.isDirectory() && !EXCLUIDAS.has(e.name))
-    .map(e => e.name)
-    .sort();
-
-  for (const slug of dirs) {
-    const file = path.join(blogDir, slug, 'index.html');
-    try { await fs.access(file); } catch { continue; }
-    entries.push({
-      loc: `${urlPrefix}${slug}/`,
-      lastmod: await postLastmod(file),
-      changefreq: 'monthly',
-      priority: '0.6',
-    });
-    posts++;
-  }
+  posts++;
 }
 
-await fs.writeFile('sitemap.xml', renderSitemap(entries), 'utf8');
-console.log(`sitemap.xml: ${entries.length} URLs (${entries.length - posts} estáticas/índices + ${posts} posts, es+en)`);
+const todas = conIdiomas(entries);
+await fs.writeFile('sitemap.xml', renderSitemap(todas), 'utf8');
+console.log(`sitemap.xml: ${todas.length} URLs · ${entries.length} en español ` +
+  `(${entries.length - posts - 1} estáticas + índice del blog + ${posts} posts) ` +
+  `+ ${todas.length - entries.length} traducidas`);

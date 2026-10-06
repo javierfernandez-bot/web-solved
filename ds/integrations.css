@@ -1,0 +1,221 @@
+/* =========================================================
+   Solved Design System — CATÁLOGO DE INTEGRACIONES
+   La rejilla de sistemas con los que Solved se conecta, su buscador y sus
+   filtros. Vive en /integraciones/.
+
+   DE DÓNDE SALE EL CONTENIDO
+   De `assets/docs/solved-integraciones-erp-mes-gmao.pdf`, que es el material
+   que el cliente ya publica: 63 sistemas —27 ERP, 18 MES, 17 GMAO y Power
+   BI— con sus logos. Los logos de esta rejilla son los de ese PDF, extraídos
+   con su alfa a `assets/integraciones/`. Si el PDF cambia, esto cambia con
+   él: no se añaden sistemas "que seguro que también valen".
+
+   **30 sep 2026: se retira FlexSim de MES.** Es software de simulación de
+   planta —modelado, no ejecución de producción—, no un MES real; no encaja
+   con lo que la página promete y no está en ningún otro catálogo de MES del
+   mercado. El PDF original traía 64, de ahí quedan 63.
+
+   **30 sep 2026: categoría nueva `dia`, "Día a día".** Tres plataformas que
+   NO salen del PDF —Gmail, Outlook, Microsoft Teams—, pedidas por el cliente
+   para que el catálogo no se lea como "sólo sirve si tienes un ERP". Cada una
+   cuelga de una capacidad ya publicada en otra página, no de una integración
+   inventada: los avisos llegan por correo a Outlook o Gmail (home, «Avisos
+   por correo, en Outlook o en Gmail») y un mensaje de Teams puede abrir una
+   incidencia (`/incidencias/`, banda de canales). El logo de Teams es nuevo:
+   el icono real de la marca (el mismo trazado `currentColor` que ya usa
+   `/incidencias/` para el canal) sobre el morado de marca de Microsoft Teams
+   (#5059C9), no un dibujo inventado.
+
+   **Excel, PDF y Word NO entran aquí, aunque se probaron una vuelta.** Son
+   formatos de fichero, no sistemas con los que Solved "se integre" en el
+   sentido de esta página —nadie dice que Solved "se integra con PDF"—; la
+   capacidad real detrás (importación automática de checklists) ya está
+   contada en `/ia/`, que es su sitio. Los tres logos que se generaron para
+   ellos (mismo dibujo en SVG que ya usa la zona de soltar de `/ia/` y de
+   `guidelines/ia.registros.reel.html`, llevado a `.webp`) se han retirado de
+   `assets/integraciones/`.
+
+   POR QUÉ TARJETA CON BORDE Y NO CINTA
+   La cinta de clientes (`.ds-logos`) es una prueba social: pasa, no se lee. Un
+   catálogo es lo contrario — se viene a buscar un nombre concreto—, así que
+   cada sistema es una parada, con su logo, su nombre escrito y su tipo. Sin el
+   nombre en texto la rejilla no se puede buscar ni con Ctrl+F ni por voz, y hay
+   dieciséis wordmarks que sólo reconoce quien ya los usa.
+
+   Requiere ds/tokens.css. El filtrado lo mueve ds/integrations.js, y sin JS la
+   rejilla se ve entera: el script filtra, no construye.
+   ========================================================= */
+
+/* ---------- Barra de herramientas ----------
+   Buscador a la izquierda, tipos a la derecha. En el mismo renglón mientras
+   quepan: son dos formas de hacer lo mismo y separarlas en dos filas sugiere
+   que hay que usar las dos. */
+.int-tools{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:16px 24px;
+  margin-top:32px;
+}
+
+.int-search{ position:relative; flex:1 1 260px; max-width:340px; }
+.int-search svg{
+  position:absolute; left:12px; top:50%; translate:0 -50%;
+  width:16px; height:16px; color:var(--ds-text-mute); pointer-events:none;
+}
+.int-search input{
+  width:100%;
+  padding:11px 14px 11px 36px;
+  font:var(--type-body-md); letter-spacing:var(--tracking-body);
+  color:var(--ds-text);
+  background:var(--ds-surface);
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-control);
+  transition:border-color var(--ds-motion);
+  -webkit-appearance:none; appearance:none;
+}
+.int-search input::placeholder{ color:var(--ds-text-mute); }
+.int-search input:hover{ border-color:var(--color-hairline-input); }
+.int-search input:focus{ outline:none; border-color:var(--color-primary); }
+/* La cruz nativa de <input type="search"> en WebKit no se puede teñir y aparece
+   en gris oscuro sobre el hairline. Se quita: el botón "Todos" ya deshace el
+   filtro, y borrar el texto es una tecla. */
+.int-search input::-webkit-search-decoration,
+.int-search input::-webkit-search-cancel-button{ -webkit-appearance:none; }
+
+/* Chips de tipo: son controles, así que radio 6px. La píldora está reservada a
+   los estados y a las opciones OK/KO — si se usa aquí deja de significar eso. */
+.int-cats{ display:flex; flex-wrap:wrap; gap:8px; }
+.int-cat{
+  display:inline-flex; align-items:center; gap:7px;
+  padding:9px 14px;
+  font:var(--type-body-md); letter-spacing:var(--tracking-body);
+  color:var(--ds-text-2);
+  background:var(--ds-surface);
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-control);
+  cursor:pointer;
+  transition:border-color var(--ds-motion), color var(--ds-motion), background var(--ds-motion);
+}
+.int-cat:hover{ border-color:var(--color-hairline-input); color:var(--ds-text); }
+.int-cat:focus-visible{ outline:2px solid var(--color-primary); outline-offset:2px; }
+.int-cat[aria-pressed="true"]{
+  background:var(--color-primary);
+  border-color:var(--color-primary);
+  color:var(--color-on-primary);
+}
+
+/* El recuento en vivo: es la respuesta a lo que se acaba de escribir, así que
+   va pegado a la rejilla y no a la barra. */
+.int-count{
+  margin:22px 0 0;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+
+/* ---------- Rejilla ---------- */
+.int-grid{
+  list-style:none;
+  margin:14px 0 0;
+  padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+  gap:12px;
+}
+.int-item{
+  display:flex; flex-direction:column; align-items:center; gap:12px;
+  padding:22px 16px 18px;
+  text-align:center;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-card);
+  background:var(--ds-surface);
+}
+.int-item[hidden]{ display:none; }
+
+/* Los logos vienen del PDF con proporciones muy distintas (de 89×118 a 291×55).
+   El alto es FIJO y el ancho lo pone la proporción: así todas las filas miden
+   lo mismo aunque el logo que toque sea apaisado o cuadrado. Los atributos
+   width/height del <img> siguen puestos —evitan el salto de maquetación
+   mientras carga— y aquí los neutraliza esta regla. */
+.int-item__logo{
+  display:block;
+  height:38px; width:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+/* El nombre se queda con el hueco que sobre: así el tipo cae siempre al ras de
+   abajo, aunque el vecino de al lado ocupe dos líneas. */
+.int-item__name{
+  flex:1;
+  font:var(--type-body-md); letter-spacing:var(--tracking-body);
+  color:var(--ds-text);
+  text-wrap:balance;
+}
+.int-item__tag{
+  font:var(--type-micro-cap); font-size:10px;
+  letter-spacing:var(--tracking-micro-cap); text-transform:uppercase;
+  color:var(--ds-text-mute);
+}
+
+.int-empty{
+  margin:24px 0 0;
+  font:var(--type-body-lg); letter-spacing:var(--tracking-body);
+  color:var(--ds-text-2);
+}
+.int-empty a{ color:var(--color-primary); }
+
+/* Aviso de marcas: pequeño, gris y al pie de la rejilla. No es letra pequeña
+   defensiva, es lo que hay que decir cuando se enseñan 66 marcas ajenas. */
+.int-legal{
+  margin:22px 0 0;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+  max-width:78ch;
+}
+
+@media (max-width:600px){
+  .int-grid{ grid-template-columns:repeat(auto-fill,minmax(148px,1fr)); gap:10px; }
+  .int-item{ padding:18px 12px 14px; gap:10px; }
+  .int-item__logo{ height:30px; }
+  .int-search{ max-width:none; }
+}
+
+/* ---------- Banda de cierre del catálogo ----------
+   "¿No encuentras tu software?" del PDF, con su contacto. Panel plano sobre
+   acero: la página ya gasta su presupuesto de material en la hero. */
+.int-cta{
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:20px 40px;
+  margin-top:40px;
+  padding:28px 32px;
+  background:var(--ds-surface-soft);
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-card);
+}
+.int-cta h3{
+  margin:0 0 6px;
+  font:var(--type-display-md); letter-spacing:var(--tracking-display-md);
+  color:var(--ds-text);
+}
+.int-cta p{
+  margin:0;
+  font:var(--type-body-lg); letter-spacing:var(--tracking-body);
+  color:var(--ds-text-2);
+  max-width:56ch;
+}
+/* Sólo el enlace del texto. Si esto se escribe como `.int-cta a`, ese selector
+   (0-1-1) gana a `.ds-btn--primary` (0-1-0) y el botón se queda con el texto
+   azul sobre fondo azul: invisible. */
+.int-cta p a{ color:var(--color-primary); }
+.int-cta__go{ flex:0 0 auto; }
+
+@media (max-width:600px){
+  .int-cta{ padding:22px 20px; }
+  .int-cta__go{ width:100%; }
+  .int-cta .ds-btn{ width:100%; }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .int-cat,.int-search input{ transition:none; }
+}

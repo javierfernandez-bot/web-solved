@@ -1,0 +1,246 @@
+/* =========================================================
+   Hero del design system + primer scroll
+   Réplica de templates/marketing-page (ruta "inicio") del proyecto
+   "Gradient Design System".
+   ========================================================= */
+
+/* ---------- Hero ---------- */
+.ds-hero{
+  position:relative; overflow:hidden; isolation:isolate;
+  background:var(--ds-surface);
+}
+/* El shader ocupa toda la hero por detrás del texto. Sin desenfoque: el lavado
+   hacia la izquierda ya lo hace el propio shader, que es donde vive el texto.
+
+   Se probó a ponerlo delante y a plena saturación hasta el borde inferior
+   (agosto 2026). Se descartó: el lavado no es decoración, es lo que sostiene la
+   legibilidad. Con la cinta encima, en las siete páginas se perdían primero el
+   subtítulo en gris y los botones —el titular en negro aún atravesaba el color,
+   el gris no—. Si vuelve a intentarse, hace falta mix-blend-mode:multiply o
+   sacar el texto del paso de la cinta. */
+.ds-hero__weave{
+  position:absolute; inset:0; width:100%; height:100%;
+  z-index:0; display:block; pointer-events:none;
+}
+.ds-hero__frame{
+  position:relative; z-index:2;
+  /* ALTO DE LA HERO: EL 90 % DE LA PANTALLA (3 sep 2026)
+     Antes era `64vh - 136px + 150px`, o sea 64vh escasos: en un portátil la
+     hero terminaba a media pantalla y la primera fila entraba a medias, que es
+     lo que hacía que la página abriera pequeña.
+
+     La cuenta es la barra incluida: el nav va fijo y por encima, así que hero
+     + barra suman el 90 % del alto y el 10 % que queda deja asomar lo de
+     abajo. Por eso se resta --nav-h en vez de pedir 90vh a secas, que con la
+     barra sumaría 90vh + 68px y se comería la pantalla entera.
+
+     svh y no vh: en el móvil `vh` cuenta la pantalla SIN las barras del
+     navegador, así que una hero de 90vh se sale por debajo mientras la barra
+     de direcciones está a la vista. `svh` es esa misma pantalla con las barras
+     puestas, que es como se ve al entrar. La línea con vh queda de reserva
+     para navegadores sin svh. */
+  min-height:calc(90vh - var(--nav-h));
+  min-height:calc(90svh - var(--nav-h));
+  padding-block:40px;
+  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+  gap:24px;
+}
+.ds-hero__txt{
+  /* ANCHO DE LA COLUMNA DE TEXTO (7 sep 2026): 76 % y 900px, antes 66 % y 640.
+     A 640 con el cuerpo de 56px caben unos 23 caracteres por línea, así que los
+     titulares interiores —que son de tres oraciones y ciento y pico caracteres—
+     salían en seis renglones cortos y la hero se leía apilada, nada que ver con
+     la de la home. A 900 caben unos 32 y bajan a cuatro.
+
+     Queda por debajo del 78 % de `--wide` a propósito: la home lleva el cuerpo
+     más pequeño (44 contra 56) y aguanta la línea más larga. Las dos columnas
+     acaban midiendo casi lo mismo en pantalla, que es lo que hace que las heros
+     se parezcan.
+
+     No afecta a los casos de éxito: su hero no usa .ds-hero__txt sino .gate--hero,
+     que reparte texto y formulario en dos columnas propias. */
+  width:76%; max-width:900px;
+  display:flex; flex-direction:column; align-items:flex-start; gap:24px;
+}
+.ds-eyebrow{
+  font:var(--type-micro-cap); font-size:12px; line-height:1.2;
+  letter-spacing:1.1px; text-transform:uppercase; color:var(--ds-text-mute);
+}
+.ds-hero h1{
+  margin:0;
+  /* Escala de Stripe, medida en su web el 7 sep 2026: su hero de página
+     interior va a 56px/1.21 con tracking -0.02em. Aquí va un 20 % por debajo
+     —45px, decisión del 9 sep 2026— y el interlineado sigue siendo el suyo:
+     1.21 es una proporción, así que baja con el cuerpo sin tocarla. El
+     tracking va en em y no en px para que no se despegue al bajar el cuerpo
+     en pantallas pequeñas, que es lo que pasaba con el -1.3px fijo. */
+  font:var(--font-weight-thin) clamp(27px,3.36vw,45px)/1.21 var(--font-sans);
+  /* 38ch y no 30: con la columna a 900px el tope en caracteres cortaba antes que
+     ella y la columna nunca llegaba a mandar. La medida la fija el ancho de la
+     columna, igual que en `--wide`; el ch queda de tope para pantallas anchas.
+     El ch va con el cuerpo, así que al bajar el titular a 45px hubo que subir
+     el tope en la misma proporción (30 ÷ 0,8): con 30ch la columna se habría
+     quedado en 742px y el titular habría salido más estrecho y con más
+     líneas, que es un cambio de composición y no de tamaño. */
+  letter-spacing:-0.02em; max-width:38ch; text-wrap:balance; color:var(--ds-text);
+}
+.ds-hero__sub{
+  margin:0; font:var(--font-weight-thin) 16px/1.5 var(--font-sans);
+  color:var(--ds-text-2); max-width:44ch; text-wrap:pretty;
+}
+.ds-hero__cta{ display:flex; gap:12px; flex-wrap:wrap; }
+
+@media (max-width:900px){
+  .ds-hero__txt{ width:100%; }
+  .ds-hero h1{ max-width:none; }
+  /* LA CREATIVIDAD DE LA HERO SE QUITA EN MÓVIL (14 sep 2026, tercera vuelta).
+     Se probó primero como banda encima del texto (rechazado ese mismo día:
+     «no lo quiero encima del texto, quiero que sea como en PC») y luego se
+     retocó `ds/hero-wave.js` para que cada forma tuviera más presencia sin
+     mover nada en escritorio. El cliente vio el resultado y pidió quitarla
+     directamente: con el titular al 100 % de ancho no hay franja limpia en
+     la que el material viva sin competir con el texto. Se oculta el canvas,
+     no se desmonta: `ds/hero-wave.js` sigue montándose y pintando igual que
+     en escritorio, sólo que aquí no se ve. Queda el fondo liso —papel o
+     grafito, según `--ds-surface`— y el texto solo. Si algún día se decide
+     recuperar el material en móvil, es quitar esta regla; el ajuste de
+     grosor del commit anterior se queda intacto para cuando eso pase. */
+  .ds-hero__weave{ display:none; }
+}
+/* En teléfono los dos botones no caben en una línea y quedaban partidos y de
+   anchos distintos, uno debajo de otro. Se dan por vencidos antes: cada uno
+   ocupa la línea entera, que además es la única forma de que el área de toque
+   llegue a lo que pide un dedo. */
+@media (max-width:600px){
+  .ds-hero__cta{ width:100%; flex-direction:column; align-items:stretch; }
+  .ds-hero__cta .ds-btn{ width:100%; padding-block:14px; }
+}
+
+/* ---------- Franja de clientes ----------
+   Va dentro del marco y sin unión superior: continúa la hero, no abre sección. */
+.ds-logos-frame{ padding-block:0; }
+.ds-logos{
+  height:80px; overflow:hidden; position:relative;
+  border-top:var(--frame-width) solid var(--frame);
+  border-bottom:var(--frame-width) solid var(--frame);
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 60px,#000 calc(100% - 60px),transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0,#000 60px,#000 calc(100% - 60px),transparent 100%);
+}
+.ds-logos__track{
+  display:flex; width:max-content; height:80px; align-items:center;
+  /* La duración va con el largo de la cinta, no al revés: la animación recorre
+     un -50 % del track, así que si se añaden logos y no se sube el tiempo, la
+     cinta acelera. 84s son los 52s originales escalados de 18 a 29 logos. */
+  animation:ds-drift 84s linear infinite;
+  will-change:transform;
+}
+.ds-logos__track img{
+  height:38px; width:auto; max-width:160px; object-fit:contain;
+  margin:0 34px; display:block;
+}
+@keyframes ds-drift{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@media (prefers-reduced-motion:reduce){ .ds-logos__track{ animation:none } }
+
+/* ---------- Hero de titular largo ----------
+   La hero base está calculada para un titular de una línea o dos. Con uno de
+   cuatro, con el ancho de 66% y el cuerpo de la base, salían siete líneas y la
+   columna de texto se comía la hero entera.
+
+   Es un modificador y no un cambio de la base a propósito: las páginas
+   interiores tienen titulares cortos y ahí el tamaño grande es lo que las
+   sostiene. Se ensancha hasta donde el shader sigue lavado —más allá el texto
+   entra en la cinta brillante y se pierde— y el cuerpo baja lo justo para
+   caber en cuatro líneas. */
+/* MEDIDAS DE LA HOME DE STRIPE (medidas en stripe.com el 7 sep 2026, con la
+   ventana a 1854px): titular de 44px, interlineado 50.6px (1.15), tracking
+   -0.88px (-0.02em), peso 300, y la columna de texto a 961px sobre un marco de
+   1232 — el 78 %.
+
+   Lo que hace grande a esa hero no es el cuerpo, que es MENOR que el de las
+   páginas interiores (35 contra 45, como en Stripe 44 contra 56): es la
+   amplitud. Líneas largas, columna ancha e interlineado suelto. Copiar sólo el
+   tamaño y dejar la columna estrecha da lo contrario de lo que se ve en
+   Stripe. Los cuerpos van un 20 % por debajo de los suyos desde el 9 sep 2026;
+   la proporción entre home e interior se mantiene. */
+.ds-hero--wide .ds-hero__txt{ width:78%; max-width:980px; }
+.ds-hero--wide h1{
+  font-size:clamp(24px,2.64vw,35px);
+  line-height:1.15;
+  letter-spacing:-0.02em;
+  /* 45ch y no 36: a 35px el tope en ch cortaba la línea en 829px y la columna
+     (78 %, 936px medidos) nunca llegaba a mandar. La medida la fija el ancho de
+     la columna, como en Stripe; el ch queda de tope de seguridad para pantallas
+     anchas. Sube en la misma proporción en la que bajó el cuerpo (36 ÷ 0,8)
+     para que el titular ocupe los mismos píxeles de ancho que antes. */
+  max-width:45ch;
+}
+@media (max-width:900px){
+  .ds-hero--wide .ds-hero__txt{ width:100%; }
+  .ds-hero--wide h1{ font-size:clamp(22px,3.68vw,27px); max-width:none; }
+}
+
+/* ---------- Hero centrada ----------
+   Texto al medio y la creatividad debajo, que es como está montada `/ia/`: el
+   eje del titular y el de lo que viene debajo son el mismo, y la página baja
+   recta en vez de en zigzag.
+
+   Estaba escrita dentro de `[data-tema="ia"]`, o sea disponible sólo en la
+   única página oscura del sitio. Sube aquí como modificador porque lo que hace
+   no tiene nada de IA: es una forma de hero.
+
+   EL VELO NO ES DECORACIÓN. La hero de la izquierda funcionaba porque el
+   shader lava justo por ahí; en el centro el texto se mete en el haz brillante
+   y el gris de `.ds-dim` desaparece. El velo va detrás del texto y delante del
+   canvas —el texto nunca va directo sobre el material—, y su color sale de
+   variables para que la página oscura pueda darle la vuelta sin duplicar la
+   regla. */
+.ds-hero{
+  --hero-velo-centro:rgba(255,255,255,.82);
+  --hero-velo-medio:rgba(255,255,255,.44);
+  --hero-velo-borde:rgba(255,255,255,0);
+}
+.ds-hero--centro::after{
+  content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:radial-gradient(58% 62% at 50% 52%,
+    var(--hero-velo-centro) 0%, var(--hero-velo-medio) 55%, var(--hero-velo-borde) 100%);
+}
+.ds-hero--centro .ds-hero__frame{ align-items:center; }
+.ds-hero--centro .ds-hero__txt{
+  width:100%; max-width:760px;
+  align-items:center; text-align:center;
+}
+.ds-hero--centro h1{ max-width:28ch; }
+.ds-hero--centro .ds-hero__sub{ max-width:56ch; }
+.ds-hero--centro .ds-hero__cta{ justify-content:center; }
+
+/* La home lleva titular largo: conserva su ancho, sólo cambia de eje. */
+.ds-hero--wide.ds-hero--centro .ds-hero__txt{ max-width:900px; }
+.ds-hero--wide.ds-hero--centro h1{ max-width:38ch; }
+
+@media (max-width:900px){
+  .ds-hero--centro .ds-hero__txt{ max-width:none; }
+  .ds-hero--centro h1{ max-width:none; }
+}
+
+/* ---------- Hero con la creatividad debajo ----------
+   La hero mide el 90 % de la pantalla porque en casi todas las páginas ELLA es
+   el argumento. Cuando lo que argumenta va justo debajo —el vídeo de `/ia/`, la
+   composición de planta de `/gestion-de-activos/`—, ese 90 % deja la pieza
+   entera fuera de la primera pantalla y la distribución se pierde: se ve un
+   titular centrado y nada más.
+
+   Las dos clases van juntas y por eso viven aquí seguidas: `--compacta` le
+   quita alto a la hero y `.frame--bajo-hero` le quita el aire al marco que
+   viene detrás, así que la pieza sale pegada al texto y en el mismo eje.
+
+   Los números son los que ya usaba `/ia/` dentro de `[data-tema="ia"]`
+   (ds/ia-dark.css), medidos allí: 52/36 de aire y 18 de hueco. Aquella regla se
+   queda donde está —es la que le da a la página oscura su propio apretado y su
+   velo— y `.frame--ia-video` sigue haciendo de `--bajo-hero` para su vídeo; el
+   día que se toque esa hoja, las dos se pueden unificar en estas. */
+.ds-hero--compacta .ds-hero__frame{
+  min-height:0;
+  padding-block:52px 36px;
+  gap:18px;
+}
+.frame--bajo-hero{ padding-block:0; }

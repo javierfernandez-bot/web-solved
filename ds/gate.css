@@ -1,0 +1,312 @@
+/* =========================================================
+   Solved Design System — GATE DE VÍDEO
+   Un vídeo cerrado, su formulario al lado, y el vídeo abierto en el mismo sitio
+   donde estaba cerrado. Va en las dos landings de caso —/casos-de-exito/carnavi/
+   y /casos-de-exito/panificadora-alcala/— y cada una tiene EL SUYO: un vídeo,
+   un formulario, una landing. Aquí abajo, .vcase es la tarjeta con la que el
+   índice manda a cada una.
+
+   UN GATE POR PÁGINA, Y NO DOS EN LA MISMA
+   El formulario de HubSpot avisa de que se ha enviado con un postMessage que no
+   dice de qué formulario viene. Con un solo gate por página no hay ambigüedad
+   posible; con dos, el primero en escuchar abriría los dos vídeos. Si algún día
+   hacen falta dos en una página, esto hay que resolverlo antes.
+
+   LA REGLA DEL COMPONENTE
+   Lo que se enseña cerrado tiene que ser VERDAD. El póster es un fotograma real
+   del vídeo —con su rótulo de nombre y cargo, que ya viene grabado—, la
+   duración es la de verdad y la descripción cuenta lo que se oye, no lo que
+   convendría. Un candado sobre un fotograma inventado, o una duración a ojo, es
+   lo que convierte una landing en un anzuelo.
+
+   NO ES UN MURO DE PAGO, Y NO SE PUEDE VENDER COMO TAL
+   Esto es un sitio estático: el `src` del vídeo es una URL pública y quien mire
+   el marcado la encuentra. El gate filtra al visitante normal, no al que quiere
+   saltárselo, y por eso el vídeo no lleva nada que no se pueda enseñar. Lo que
+   sí hace bien: el vídeo NO se descarga hasta que se abre —el `src` vive en
+   `data-src`—, así que la página pesa lo que pesa el póster.
+
+   LA LANDING ES UNA PANTALLA
+   Hero con el gate dentro y, debajo, sólo los enlaces a otras páginas. Nada de
+   secciones intermedias: cada una es una salida más entre el visitante y el
+   formulario, que es lo único que esta página tiene que conseguir.
+
+   ABIERTO UNA VEZ, ABIERTO SIEMPRE
+   Al abrirse se guarda una marca en localStorage, una por caso. Volver a pedir
+   el correo a quien ya lo dejó no da un lead nuevo, sólo da sensación de peaje.
+
+   Requiere ds/tokens.css. Script: ds/gate.js.
+   ========================================================= */
+
+.gate{
+  display:flex;
+  flex-direction:column;
+  gap:var(--s-5, 28px);
+}
+
+/* EL GATE VA DENTRO DE LA HERO, y ese es todo el diseño de la landing: título,
+   descripción y foto del vídeo a la izquierda, petición a la derecha, y debajo
+   de la hero sólo los enlaces a otras páginas. Una pantalla y ya.
+
+   A la izquierda porque el shader lava hacia ese lado y es donde el texto se
+   lee —la regla está escrita en ds/hero.css—; la caja blanca del formulario
+   aguanta el color saturado de la derecha, que un párrafo en gris no aguanta.
+
+   Abierto, el formulario desaparece y el vídeo se queda con las dos columnas
+   — ver el bloque de estado de más abajo. */
+.gate--hero{
+  display:grid;
+  grid-template-columns:minmax(0, 1.05fr) minmax(0, .95fr);
+  gap:var(--s-5, 28px);
+  align-items:center;
+  width:100%;
+}
+.gate__intro{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:20px;
+  max-width:640px;
+}
+
+/* ---------- El marco ---------- */
+
+/* `minmax(0,1fr)` y no `1fr` por lo mismo que en .photo-band: una pista
+   automática se dimensiona por el contenido y el vídeo la estira. */
+.gate__frame,
+.vcase__frame{
+  position:relative;
+  display:grid;
+  grid-template-rows:minmax(0, 1fr);
+  aspect-ratio:16/9;
+  border-radius:var(--ds-radius-card, 12px);
+  overflow:hidden;
+  background:var(--ds-surface-steel);
+  border:1px solid var(--ds-border);
+  box-shadow:var(--ds-elev-1);
+}
+
+/* Cerrado se ve el <img> y abierto el <video>, nunca los dos. Se conservan los
+   dos elementos en el marcado a propósito: el <img> lleva `alt` y se pinta sin
+   JS, y el <video> no es una imagen hasta que hay algo que reproducir. */
+.gate__poster,
+.gate__video,
+.vcase__poster{
+  grid-area:1/1;
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
+.gate__video{ display:none; background:#000 }
+
+/* El botón cubre el póster entero: cerrado lleva al formulario, y es lo único
+   que hace. Se pinta porque hace algo — misma regla que .scene__expand. */
+.gate__open{
+  grid-area:1/1;
+  appearance:none;
+  border:0;
+  padding:0;
+  background:transparent;
+  cursor:pointer;
+  display:grid;
+  place-items:center;
+  color:#fff;
+}
+.gate__open::before,
+.vcase__frame::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(12,16,24,.34);
+  transition:background var(--ds-motion);
+}
+.gate__open:hover::before,
+.vcase:hover .vcase__frame::after{ background:rgba(12,16,24,.46) }
+.gate__open:focus-visible{ outline:2px solid var(--color-primary); outline-offset:-4px }
+
+.gate__lockicon,
+.vcase__lockicon{
+  position:relative;
+  width:56px; height:56px;
+  border-radius:var(--ds-radius-pill);
+  background:rgba(255,255,255,.94);
+  color:var(--color-primary);
+  display:grid;
+  place-items:center;
+  box-shadow:var(--ds-elev-2);
+  transition:transform var(--ds-motion);
+}
+.gate__lockicon svg,
+.vcase__lockicon svg{ width:22px; height:22px }
+.gate__open:hover .gate__lockicon{ transform:scale(1.06) }
+
+/* En el gate el candado va dentro de un botón que ya centra su contenido; en la
+   tarjeta del índice no hay botón, así que se centra él. OJO: sin `position` se
+   colaba como ítem de rejilla, se abría una fila implícita debajo del póster y
+   el candado acababa en una banda gris al pie del marco. Pasó al montarlo. */
+.vcase__lockicon{
+  position:absolute;
+  top:50%; left:50%;
+  z-index:1;
+  transform:translate(-50%, -50%);
+}
+.vcase:hover .vcase__lockicon{ transform:translate(-50%, -50%) scale(1.06) }
+
+/* La duración, arriba a la derecha. Va sobre un velo propio y no sobre la foto
+   pelada: el fotograma lleva subtítulos grabados y el blanco sobre blanco se
+   pierde. */
+.gate__dur,
+.vcase__dur{
+  position:absolute;
+  top:10px; right:10px;
+  z-index:1;
+  padding:4px 9px;
+  border-radius:var(--ds-radius-chip);
+  background:rgba(12,16,24,.72);
+  color:#fff;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  font-variant-numeric:tabular-nums;
+}
+
+/* ---------- La petición ---------- */
+
+.gate__ask{
+  padding:var(--s-6, 32px);
+  background:var(--ds-surface);
+  border:1px solid var(--ds-border);
+  border-radius:var(--ds-radius-card, 12px);
+  box-shadow:var(--ds-elev-2);
+}
+.gate__askttl{
+  margin:0 0 8px;
+  font:var(--type-display-md);
+  letter-spacing:var(--tracking-display-md);
+  color:var(--ds-text);
+}
+.gate__askp{
+  margin:0 0 var(--s-4, 20px);
+  font:var(--type-body-lg);
+  color:var(--ds-text-mute);
+  text-wrap:pretty;
+}
+
+/* El formulario de HubSpot trae su propio CSS y aquí sólo se acota: pelearse
+   con sus clases desde fuera se rompe en cada release suya. */
+.gate__note{
+  margin:var(--s-4, 20px) 0 0;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+.gate__note a{ color:inherit }
+
+/* Aviso de rescate: sólo lo enciende ds/gate.js si el formulario no ha llegado
+   a pintarse (un bloqueador de anuncios se come el embebido de HubSpot y el
+   visitante se queda mirando una caja vacía). */
+.gate__rescue{ display:none; margin:var(--s-4,20px) 0 0; font:var(--type-body-md); color:var(--ds-text-mute) }
+.gate[data-form="fallido"] .gate__rescue{ display:block }
+
+/* ---------- Abierto ---------- */
+
+.gate[data-open] .gate__open,
+.gate[data-open] .gate__dur,
+.gate[data-open] .gate__poster,
+.gate[data-open] .gate__ask{ display:none }
+.gate[data-open] .gate__video{ display:block; object-fit:contain }
+/* Sin formulario al lado, el vídeo se centra — pero NO se estira hasta el
+   riel. A 1200px de ancho un 16:9 mide 675 de alto y se come la pantalla
+   entera, y esto es una cabeza hablando, no una película. */
+.gate[data-open]{ grid-template-columns:1fr }
+.gate[data-open] .gate__intro{ max-width:none; align-items:stretch }
+/* Alineado a la izquierda, con el titular y la descripción, y NO centrado: el
+   texto de al lado sigue siendo de bandera izquierda y un vídeo centrado
+   debajo deja la composición coja. */
+.gate[data-open] .gate__frame{ max-width:min(100%, 860px); width:100% }
+
+/* El acuse de recibo ocupa el sitio del formulario, y no se limita a
+   desaparecer: si no queda rastro, quien acaba de escribir su correo no sabe si
+   ha llegado. */
+.gate__done{
+  display:none;
+  margin:0;
+  text-align:center;
+  font:var(--type-body-lg);
+  color:var(--ds-text-mute);
+}
+.gate[data-open] .gate__done{ display:block }
+
+/* =========================================================
+   .vcase — la tarjeta del índice
+   Lleva al vídeo de un caso, no lo abre: el vídeo vive en su landing, con su
+   formulario. Por eso el candado también aparece aquí — prometer «ver el
+   vídeo» y aterrizar en un formulario sorpresa es lo que hace que la siguiente
+   página no se lea.
+   ========================================================= */
+
+/* Dos filas de dos desde que hay cuatro casos (29 sep 2026). Con tres columnas
+   el cuarto se quedaba solo en una segunda fila a un tercio de anchura, que es
+   un hueco y no un ritmo — el mismo motivo que llevó de dos a tres el 17 de
+   agosto. Si algún día hay un quinto, esto habrá que decidirlo otra vez. */
+.vcase-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:var(--s-5, 28px);
+}
+
+.vcase{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  text-decoration:none;
+  color:inherit;
+}
+.vcase__who{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.vcase__logo{
+  height:26px;
+  width:auto;
+  display:block;
+  flex:0 0 auto;
+}
+.vcase__role{
+  margin:0;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+.vcase__hook{
+  margin:0;
+  font:var(--type-heading-md);
+  color:var(--ds-text);
+  text-wrap:pretty;
+}
+/* La segunda frase, apagada: la primera pica y la segunda sitúa. Es el párrafo
+   a dos tintas de los tríos de ds/sections.css, no un color nuevo. */
+.vcase__hook span{ color:var(--ds-text-mute) }
+.vcase__go{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font:var(--type-body-md);
+  font-weight:var(--font-weight-regular);
+  color:var(--color-primary);
+}
+.vcase__go svg{ width:15px; height:15px }
+.vcase:hover .vcase__go{ text-decoration:underline }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:900px){
+  .gate--hero{ grid-template-columns:1fr }
+  .gate__intro{ max-width:none }
+  .vcase-grid{ grid-template-columns:1fr }
+}
+@media (max-width:560px){
+  .gate__ask{ padding:var(--s-5, 24px) }
+  .gate__lockicon,
+  .vcase__lockicon{ width:48px; height:48px }
+}

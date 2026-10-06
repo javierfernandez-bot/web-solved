@@ -1,0 +1,456 @@
+/* =========================================================
+   Solved Design System — DASHBOARD: del dato al tablero + ejemplos por área
+   ---------------------------------------------------------
+   Dos piezas de /dashboard/ que sustituyen a «El mes cerrado»:
+
+   · `.dbchat`  Un chat con la IA de Solved pide un dato, la respuesta trae el
+                indicador y un botón «Añadir al tablero»; al pulsarlo, el
+                indicador ocupa el hueco libre de un tablero. Bucle de 16 s.
+   · `.dbx`     Cuatro tableros de ejemplo (planta, calidad, mantenimiento,
+                producción) dentro del conmutador de paneles (patrón 7 de
+                ds/sections.css). Datos ilustrativos, rotulados como tales.
+
+   EL RELOJ ES UNO SOLO
+   Todo lo del chat cuelga de `--t` con porcentajes sobre el mismo ciclo. Dos
+   relojes que empiezan a la vez se separan en cuanto uno se pausa.
+
+     0 →  5 %   la pregunta entra
+    10 → 18 %   la IA escribe
+    20 → 28 %   la respuesta y su indicador
+    34 → 49 %   el cursor llega al botón y pulsa
+    49 → 60 %   el indicador ocupa el hueco del tablero
+    94 → 100 %  se vacía todo para empezar otra vez
+
+   SIN MOVIMIENTO SE VE EL ÚLTIMO FOTOGRAMA
+   El estado por defecto es el final —conversación completa, hueco ocupado—; las
+   animaciones sólo existen bajo `prefers-reduced-motion: no-preference`.
+
+   COLOR
+   Lo de IA va sobre grafito, como en `.aiband`. El tablero va sobre papel. La
+   tinta de cada dato es la de su módulo (ds/tokens.css): incidencias, acciones,
+   registros. El cian de KPIs no pinta series.
+   ========================================================= */
+
+.dbchat,
+.dbx{
+  --inc:var(--module-incidencias);
+  --acc:var(--module-acciones);
+  --reg:var(--module-registros);
+}
+
+/* ---------- Indicador (widget) — lo comparten el chat y el tablero ---------- */
+.dbw{
+  --tinta:var(--inc);
+  display:flex; flex-direction:column; gap:12px;
+  padding:16px 18px 18px;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-panel);
+  background:var(--color-canvas);
+}
+.dbw__t{
+  margin:0;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+.dbw__rows{ display:flex; flex-direction:column; gap:9px; }
+.dbw__row{
+  display:grid; grid-template-columns:minmax(64px,88px) minmax(0,1fr) 22px;
+  gap:10px; align-items:center;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-2);
+}
+.dbw__n{ text-align:right; color:var(--ds-text); font-variant-numeric:tabular-nums; }
+.dbw__pista{
+  height:8px; border-radius:999px; overflow:hidden;
+  background:var(--color-canvas-soft);
+}
+.dbw__bar{
+  display:block; height:100%; width:calc(var(--p) * 1%);
+  border-radius:999px; transform-origin:left center;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.38), rgba(255,255,255,0) 62%),
+    var(--tinta);
+}
+[data-module="incidencias"]{ --tinta:var(--module-incidencias) }
+[data-module="acciones"]   { --tinta:var(--module-acciones) }
+[data-module="registros"]  { --tinta:var(--module-registros) }
+
+/* ---------- 1 · El chat ---------- */
+.dbchat{
+  --t:16s;
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column; gap:18px;
+  padding:22px 26px 28px;
+  border-radius:var(--ds-radius-card);
+  background:var(--color-graphite-900);
+  border:1px solid var(--frame-dark);
+  color:#fff;
+}
+/* Las dos escenas comparten celda: la transición las cruza sin mover la caja.
+   Sin animación quedan una debajo de otra y se ve todo. */
+.dbchat__stage{ display:grid; gap:36px; }
+.dbchat__chat,
+.dbchat__tab{ grid-area:auto; }
+.dbchat__chat{ display:flex; flex-direction:column; gap:16px; min-height:380px; }
+.dbchat__wipe{
+  position:absolute; inset:0; pointer-events:none; opacity:0;
+  background:linear-gradient(100deg, transparent 30%, rgba(168,85,247,.22) 46%, rgba(31,214,245,.16) 54%, transparent 70%);
+}
+.dbchat__cab{
+  display:flex; align-items:center; gap:9px;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:rgba(255,255,255,.62);
+}
+.dbchat__cab svg{ width:16px; height:16px; flex:none; }
+
+.dbchat__user{
+  align-self:flex-end; max-width:86%;
+  padding:11px 15px;
+  border-radius:12px 12px 3px 12px;
+  background:var(--color-graphite-800);
+  border:1px solid var(--frame-dark);
+  font:var(--type-body-md); letter-spacing:var(--tracking-body);
+  color:#fff;
+}
+
+/* Turno de la IA: el tecleo y la respuesta comparten celda para no mover nada */
+.dbchat__ia{ display:grid; }
+.dbchat__ia > *{ grid-area:1/1; }
+.dbchat__typing{
+  align-self:start; justify-self:start;
+  display:inline-flex; gap:5px; padding:10px 0;
+  opacity:0;
+}
+.dbchat__typing i{
+  width:6px; height:6px; border-radius:50%;
+  background:rgba(255,255,255,.55);
+}
+.dbchat__resp{ display:flex; flex-direction:column; gap:14px; }
+.dbchat__txt{
+  margin:0;
+  font:var(--type-body-md); letter-spacing:var(--tracking-body);
+  color:rgba(255,255,255,.86);
+}
+.dbchat__txt b{ font-weight:var(--font-weight-medium); color:#fff; }
+
+/* El indicador dentro del chat: la misma pieza, en versión grafito */
+.dbchat__resp .dbw{
+  background:var(--color-graphite-800);
+  border-color:var(--frame-dark);
+}
+.dbchat__resp .dbw__t{ color:rgba(255,255,255,.6); }
+.dbchat__resp .dbw__row{ color:rgba(255,255,255,.72); }
+.dbchat__resp .dbw__n{ color:#fff; }
+.dbchat__resp .dbw__pista{ background:rgba(255,255,255,.1); }
+
+.dbchat__act{ position:relative; align-self:flex-start; }
+.dbchat__btn{
+  appearance:none; cursor:default;
+  display:inline-grid; align-items:center;
+  padding:0; border:0;
+  border-radius:var(--ds-radius-control);
+  background:var(--color-primary);
+  color:var(--color-on-primary);
+  font:var(--type-body-md); font-weight:var(--font-weight-medium);
+  letter-spacing:var(--tracking-body);
+  overflow:hidden;
+}
+.dbchat__lab{
+  grid-area:1/1;
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 16px;
+}
+.dbchat__lab svg{ width:14px; height:14px; flex:none; }
+.dbchat__lab--a{ visibility:hidden; }         /* «Añadir» sólo existe animado */
+.dbchat__btn{ background:var(--color-status-ok); }
+.dbchat__cursor{
+  position:absolute; left:0; top:0; z-index:2;
+  width:20px; height:20px; pointer-events:none;
+  opacity:0;
+  filter:drop-shadow(0 1px 2px rgba(0,0,0,.5));
+}
+
+/* El tablero, en la misma caja de IA */
+.dbchat__tab{
+  position:relative;
+  display:flex; flex-direction:column; gap:14px;
+}
+.dbchat__tabcab{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  font:var(--type-body-md); font-weight:var(--font-weight-medium);
+  letter-spacing:var(--tracking-body); color:#fff;
+}
+.dbchat__tabcab small{
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  font-weight:var(--font-weight-regular); color:rgba(255,255,255,.55);
+}
+.dbchat__kpis{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.dbk{
+  padding:14px 16px;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-panel);
+  background:var(--color-canvas);
+  display:flex; flex-direction:column; gap:4px;
+}
+.dbchat .dbk{ background:var(--color-graphite-800); border-color:var(--frame-dark); }
+.dbchat .dbk__l,.dbchat .dbk__d{ color:rgba(255,255,255,.6); }
+.dbchat .dbk__v{ color:#fff; }
+.dbchat .dbk__d--ok{ color:#4ADE80; }
+.dbk__l{ font:var(--type-caption); letter-spacing:var(--tracking-caption); color:var(--ds-text-mute); }
+.dbk__v{
+  font:var(--font-weight-thin) 28px/1.1 var(--font-sans);
+  letter-spacing:var(--tracking-display-md);
+  color:var(--ds-text); font-variant-numeric:tabular-nums;
+}
+.dbk__d{ font:var(--type-caption); letter-spacing:var(--tracking-caption); color:var(--ds-text-mute); }
+.dbk__d--ok{ color:#12803B; }
+.dbk__d--ko{ color:#C23A3F; }
+
+/* El hueco: discontinuo y vacío hasta que llega el indicador */
+.dbchat__hueco{
+  position:relative; flex:1; min-height:156px;
+  border:1.5px dashed rgba(255,255,255,.3);
+  border-radius:var(--ds-radius-panel);
+}
+.dbchat__vacio{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:rgba(255,255,255,.6);
+  opacity:0;
+}
+.dbchat__vacio span{ display:inline-flex; align-items:center; gap:8px; }
+.dbchat__vacio svg{ width:14px; height:14px; }
+.dbchat__hueco .dbw{
+  position:absolute; inset:-1.5px;
+  background:var(--color-graphite-800);
+  border-color:var(--color-primary-soft);
+}
+.dbchat__hueco .dbw__t{ color:rgba(255,255,255,.6); }
+.dbchat__hueco .dbw__row{ color:rgba(255,255,255,.72); }
+.dbchat__hueco .dbw__n{ color:#fff; }
+.dbchat__hueco .dbw__pista{ background:rgba(255,255,255,.1); }
+.dbchat__hueco::after{
+  content:""; position:absolute; inset:-1.5px;
+  border-radius:var(--ds-radius-panel);
+  pointer-events:none; opacity:0;
+}
+.dbchat__ok{
+  position:absolute; right:14px; bottom:14px; z-index:2;
+  display:inline-flex; align-items:center; gap:7px;
+  padding:7px 12px;
+  border-radius:var(--ds-radius-pill);
+  background:#fff; color:var(--color-ink);
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  box-shadow:var(--ds-elev-2);
+  opacity:0;
+}
+.dbchat__ok svg{ width:12px; height:12px; color:#16A34A; }
+
+.dbchat__nota{
+  grid-column:1 / -1; margin:0;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .dbchat__stage{ gap:0; }
+  .dbchat__chat,.dbchat__tab{ grid-area:1/1; }
+  .dbchat__chat{ animation:dbc-scn-a var(--t) infinite both; }
+  .dbchat__tab { animation:dbc-scn-b var(--t) infinite both; }
+  .dbchat__wipe{ animation:dbc-wipe var(--t) infinite both; }
+  .dbchat__user   { animation:dbc-user   var(--t) infinite both; }
+  .dbchat__typing { animation:dbc-typing var(--t) infinite both; }
+  .dbchat__typing i{ animation:dbc-dot 1s ease-in-out infinite; }
+  .dbchat__typing i:nth-child(2){ animation-delay:.15s; }
+  .dbchat__typing i:nth-child(3){ animation-delay:.3s; }
+  .dbchat__txt    { animation:dbc-txt    var(--t) infinite both; }
+  .dbchat__resp .dbw{ animation:dbc-card var(--t) infinite both; }
+  .dbchat__act    { animation:dbc-card   var(--t) infinite both; }
+  .dbchat__btn    { animation:dbc-btn    var(--t) infinite both; }
+  .dbchat__lab--a { visibility:visible; animation:dbc-laba var(--t) infinite both; }
+  .dbchat__lab--b { animation:dbc-labb var(--t) infinite both; }
+  .dbchat__cursor { animation:dbc-cursor var(--t) infinite both; }
+  .dbchat__vacio  { animation:dbc-vacio  var(--t) infinite both; }
+  .dbchat__hueco .dbw{ animation:dbc-slot var(--t) infinite both; }
+  .dbchat__hueco .dbw__bar{ animation:dbc-bar var(--t) infinite both; }
+  .dbchat__hueco::after{ animation:dbc-ring var(--t) infinite both; }
+  .dbchat__ok     { animation:dbc-ok     var(--t) infinite both; }
+  .dbchat__resp .dbw__bar{ animation:none; }
+}
+
+@keyframes dbc-user{
+  0%,2%{ opacity:0; transform:translateY(8px) }
+  5%,94%{ opacity:1; transform:none }
+  98%,100%{ opacity:0; transform:none }
+}
+@keyframes dbc-typing{
+  0%,9%{ opacity:0 } 10%,17%{ opacity:1 } 18%,100%{ opacity:0 }
+}
+@keyframes dbc-dot{
+  0%,100%{ transform:translateY(0); opacity:.5 } 50%{ transform:translateY(-3px); opacity:1 }
+}
+@keyframes dbc-txt{
+  0%,19%{ opacity:0; transform:translateY(8px) }
+  23%,94%{ opacity:1; transform:none }
+  98%,100%{ opacity:0; transform:none }
+}
+@keyframes dbc-card{
+  0%,23%{ opacity:0; transform:translateY(8px) }
+  28%,94%{ opacity:1; transform:none }
+  98%,100%{ opacity:0; transform:none }
+}
+@keyframes dbc-btn{
+  0%,46%{ background:var(--color-primary); transform:none }
+  47.5%{ background:var(--color-primary); transform:scale(.95) }
+  49%{ background:var(--color-status-ok); transform:none }
+  94%,100%{ background:var(--color-status-ok); transform:none }
+}
+@keyframes dbc-laba{ 0%,46%{ opacity:1 } 48%,98%{ opacity:0 } 100%{ opacity:1 } }
+@keyframes dbc-labb{ 0%,46%{ opacity:0 } 48%,98%{ opacity:1 } 100%{ opacity:0 } }
+@keyframes dbc-cursor{
+  0%,33%{ opacity:0; transform:translate(150px,96px) }
+  35%{ opacity:1; transform:translate(150px,96px) }
+  45%{ opacity:1; transform:translate(44px,16px) }
+  47.5%{ opacity:1; transform:translate(44px,16px) scale(.82) }
+  49%{ opacity:1; transform:translate(44px,16px) }
+  54%,100%{ opacity:0; transform:translate(70px,40px) }
+}
+@keyframes dbc-vacio{
+  0%,52%{ opacity:0 } 56%,66%{ opacity:1 } 69%,100%{ opacity:0 }
+}
+@keyframes dbc-slot{
+  0%,65%{ opacity:0; transform:scale(.94) }
+  70%{ opacity:1; transform:scale(1.015) }
+  73%,92%{ opacity:1; transform:none }
+  98%,100%{ opacity:0; transform:none }
+}
+@keyframes dbc-bar{
+  0%,68%{ transform:scaleX(0) } 78%,100%{ transform:scaleX(1) }
+}
+@keyframes dbc-ring{
+  0%,65%{ opacity:0; box-shadow:0 0 0 0 rgba(90,150,255,.55) }
+  66%{ opacity:1; box-shadow:0 0 0 0 rgba(90,150,255,.55) }
+  78%,100%{ opacity:0; box-shadow:0 0 0 16px rgba(90,150,255,0) }
+}
+@keyframes dbc-ok{
+  0%,70%{ opacity:0; transform:translateY(6px) }
+  74%,88%{ opacity:1; transform:none }
+  92%,100%{ opacity:0; transform:none }
+}
+
+@keyframes dbc-scn-a{
+  0%,49%{ opacity:1; transform:none }
+  56%,94%{ opacity:0; transform:translateX(-56px) scale(.98) }
+  100%{ opacity:1; transform:none }
+}
+@keyframes dbc-scn-b{
+  0%,49%{ opacity:0; transform:translateX(56px) scale(.98) }
+  57%,92%{ opacity:1; transform:none }
+  98%,100%{ opacity:0; transform:translateX(56px) scale(.98) }
+}
+@keyframes dbc-wipe{
+  0%,48%{ opacity:0; transform:translateX(-100%) }
+  50%{ opacity:1 }
+  58%{ opacity:1; transform:translateX(100%) }
+  59%,100%{ opacity:0; transform:translateX(100%) }
+}
+
+/* Sin animación: la conversación entera y el hueco ocupado (estado por defecto).
+   El «Añadido» se ve como etiqueta; «Añadir» y el cursor no existen. */
+.dbchat__ok{ opacity:1; }
+
+@media (max-width:640px){
+  .dbchat{ padding:18px 16px 22px; }
+  .dbchat__chat{ min-height:0; }
+}
+
+/* ---------- 2 · Los tableros de ejemplo ---------- */
+.dbx{
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-card);
+  background:var(--color-canvas-soft);
+  box-shadow:var(--ds-elev-2);
+  padding:18px 18px 20px;
+  display:flex; flex-direction:column; gap:14px;
+  min-width:0;
+}
+.dbx__cab{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  font:var(--type-body-md); font-weight:var(--font-weight-medium);
+  letter-spacing:var(--tracking-body); color:var(--ds-text);
+}
+.dbx__chip{
+  font:var(--type-caption); font-weight:var(--font-weight-regular);
+  letter-spacing:var(--tracking-caption); color:var(--ds-text-mute);
+  padding:4px 10px; border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-pill); background:var(--color-canvas);
+  white-space:nowrap;
+}
+.dbx__kpis{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+.dbx__charts{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px; }
+.dbx .dbw{ padding:14px 16px 16px; }
+
+/* Columnas apiladas: la misma barra, de pie */
+.dbx__cols{
+  display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:10px;
+  height:112px; align-items:stretch;
+  border-bottom:1px solid var(--color-hairline);
+}
+.dbx__col{ display:flex; align-items:flex-end; }
+.dbx__pila{
+  width:100%; height:calc(var(--v) * 1%);
+  display:flex; flex-direction:column;
+  border-radius:6px 6px 2px 2px; overflow:hidden;
+  transform-origin:bottom center;
+}
+.dbx__seg{
+  flex:var(--s);
+  background:
+    linear-gradient(102deg, rgba(255,255,255,.40), rgba(255,255,255,0) 48%),
+    linear-gradient(to top, rgba(9,20,33,.24), rgba(9,20,33,0) 36%, rgba(255,255,255,.30) 100%),
+    var(--tinta);
+}
+.dbx__ejes{
+  display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:10px; margin-top:-4px;
+}
+.dbx__ejes span{
+  font:var(--type-micro-cap); letter-spacing:var(--tracking-micro-cap);
+  text-transform:uppercase; color:var(--ds-text-mute); text-align:center;
+}
+.dbx__ley{
+  display:flex; flex-wrap:wrap; gap:4px 14px; margin:0; padding:0; list-style:none;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption); color:var(--ds-text-mute);
+}
+.dbx__ley li{ display:inline-flex; align-items:center; gap:6px; }
+.dbx__ley li::before{
+  content:""; width:9px; height:9px; border-radius:3px; background:var(--tinta);
+}
+
+/* Línea: un solo trazo, sin relleno */
+.dbx__linea{ width:100%; height:112px; display:block; overflow:visible; }
+.dbx__linea polyline{
+  fill:none; stroke:var(--tinta); stroke-width:2.2;
+  stroke-linecap:round; stroke-linejoin:round;
+}
+.dbx__linea line{ stroke:var(--color-hairline); stroke-width:1; }
+.dbx__linea circle{ fill:var(--color-canvas); stroke:var(--tinta); stroke-width:2; }
+
+@media (prefers-reduced-motion:no-preference){
+  .switch__panel:not([hidden]) .dbx .dbw__bar{ animation:dbx-h .7s cubic-bezier(.2,.7,.3,1) .1s both; }
+  .switch__panel:not([hidden]) .dbx .dbx__pila{ animation:dbx-v .7s cubic-bezier(.2,.7,.3,1) .1s both; }
+  .switch__panel:not([hidden]) .dbx .dbx__linea polyline{
+    stroke-dasharray:1; stroke-dashoffset:0;
+    animation:dbx-l .9s ease-out .1s both;
+  }
+}
+@keyframes dbx-h{ from{ transform:scaleX(0) } to{ transform:none } }
+@keyframes dbx-v{ from{ transform:scaleY(0) } to{ transform:none } }
+@keyframes dbx-l{ from{ stroke-dashoffset:1 } to{ stroke-dashoffset:0 } }
+
+@media (max-width:1100px){
+  .dbx__kpis{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:640px){
+  .dbx__charts{ grid-template-columns:1fr; }
+}

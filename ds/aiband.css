@@ -1,0 +1,1060 @@
+/* =========================================================
+   Solved Design System — BANDA DE IA
+   La capa de IA contada a escala de página: una barra de prompt sobre grafito,
+   la pregunta que se teclea sola y las piezas de la respuesta entrando
+   alrededor. Cuatro turnos en bucle, uno por cada cosa que la IA sabe hacer.
+
+   POR QUÉ ES HTML Y NO UN VÍDEO
+   Es la misma decisión que las pantallas de ds/app.css: el cliente ajusta el
+   texto sobre lo que ve, la pieza no envejece con cada release, no pesa ni un
+   byte de MP4 —el repo ya va por 42 MB de vídeo— y el texto es texto de verdad,
+   nítido a cualquier tamaño y en cualquier pantalla. Si algún día hace falta el
+   MP4 para LinkedIn o para una demo comercial, se graba de aquí; al revés no se
+   puede.
+
+   LO DE IA VA SOBRE GRAFITO
+   Toda la banda vive sobre #111214 y el morado --module-ia es luz, no relleno.
+   Sobre blanco esta pieza no existe: no contrasta y no se lee como la capa de
+   IA, que en el producto es oscura. Es la misma regla del tinte, ampliada a una
+   banda entera.
+
+   PRESUPUESTO DE MATERIAL
+   El resplandor de --aiband__glow es material de gradiente, de los que el
+   sistema permite dos por página. En la página donde entre esta banda, la otra
+   aparición es la onda del hero, y ya no cabe una tercera.
+
+   LOS DATOS SON LOS DEL TOUR
+   UTD26_163_001 es la fuga de aceite de la cinta L3, la misma que sale en la
+   home y en /incidencias/. Pablo cierra las de la L3, Javier firma los
+   registros, y las cifras de junio son las del tablero. Coherencia de datos
+   entre piezas: si aquí un código significara otra cosa, el sistema mentiría.
+
+   SIN JS SE VE EL PRIMER TURNO, ENTERO Y QUIETO
+   El marcado lleva los cuatro turnos completos; el CSS enseña sólo el primero y
+   es ds/aiband.js quien pone .is-live y toma el mando. Sin script, y con
+   prefers-reduced-motion, se queda esa foto fija, que ya cuenta la historia.
+
+   Requiere ds/tokens.css. El bloque entero va aria-hidden: es una demo de
+   producto, como .app, y el titular de la sección es lo que lee un lector de
+   pantalla.
+   ========================================================= */
+
+.aiband{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:var(--color-graphite-900,#111214);
+  color:#E7E9EC;
+  /* La banda es oscura: los raíles del encuadre que la crucen van claros. */
+  --frame:var(--frame-dark);
+}
+
+/* — El resplandor —
+   Tres paradas y ninguna nítida: morado de la capa de IA, el rosa de tránsito
+   de la etiqueta y una punta de cian, que en el sistema es el color del
+   movimiento. Van al 30/16/14 % y desenfocadas porque lo que tiene que leerse
+   es la barra, no el fondo. */
+.aiband__glow{
+  position:absolute; inset:-25% -12%; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(38% 46% at 20% 62%, rgba(168,85,247,.24), transparent 72%),
+    radial-gradient(40% 48% at 76% 40%, rgba(211,79,157,.13), transparent 72%),
+    radial-gradient(44% 52% at 56% 88%, rgba(31,214,245,.11), transparent 74%);
+  filter:blur(16px);
+  animation:aiband-drift 26s ease-in-out infinite alternate;
+}
+@keyframes aiband-drift{
+  from{ transform:translate3d(-2%,-1%,0) scale(1) }
+  to  { transform:translate3d(3%,2%,0) scale(1.08) }
+}
+
+/* Una retícula muy tenue por debajo del resplandor: da suelo al grafito y
+   evita que la banda se vea como un degradado suelto. Se apaga hacia los
+   bordes con la máscara, que si no parece papel milimetrado. */
+.aiband__grid{
+  position:absolute; inset:0; z-index:0; pointer-events:none; opacity:.5;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(70% 60% at 50% 50%, #000 30%, transparent 100%);
+          mask-image:radial-gradient(70% 60% at 50% 50%, #000 30%, transparent 100%);
+}
+
+.aiband__inner{
+  position:relative; z-index:1;
+  min-height:560px;
+  display:grid; place-items:center;
+}
+
+/* La barra y sus piezas comparten centro: las piezas se colocan con --x/--y
+   respecto a él, así que el escenario tiene que ser el sistema de referencia. */
+.aiband__stage{
+  position:relative;
+  width:min(660px,100%);
+}
+
+/* =========================================================
+   TURNOS
+   Los cuatro están en el marcado. Sólo se ve el que lleva .is-on, y sin script
+   se ve el primero: por eso la regla mira a :first-child y no a una clase que
+   tendría que poner alguien.
+   ========================================================= */
+.aiband__turn{ display:none }
+.aiband__turn:first-child,
+.aiband.is-live .aiband__turn.is-on{ display:block }
+.aiband.is-live .aiband__turn:not(.is-on){ display:none }
+
+/* La entrada y la salida del turno. La salida es más corta que la entrada:
+   irse tiene que costar menos que llegar, o el bucle se hace lento. */
+.aiband.is-live .aiband__turn.is-on{ animation:aiband-turn-in 420ms cubic-bezier(.4,0,.2,1) both }
+.aiband.is-live .aiband__turn.is-out{ animation:aiband-turn-out 260ms cubic-bezier(.4,0,.2,1) both }
+@keyframes aiband-turn-in{ from{opacity:0; translate:0 10px} to{opacity:1; translate:0 0} }
+@keyframes aiband-turn-out{ from{opacity:1} to{opacity:0; translate:0 -8px} }
+
+/* =========================================================
+   LA BARRA DE PROMPT
+   Misma gramática que .app__prompt de la pantalla de IA —panel #1B2026, borde
+   #33383F, el icono en morado—, subida a tamaño de página. No es una captura:
+   es el mismo objeto contado a otra escala, que es lo que permite el sistema.
+   ========================================================= */
+.aiband__bar{
+  position:relative; z-index:2;
+  display:flex; align-items:center; gap:12px;
+  padding:14px 14px 14px 16px;
+  background:#1B2026;
+  border:1px solid #33383F;
+  border-radius:12px;
+  box-shadow:0 24px 60px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.30);
+}
+
+.aiband__spark{
+  flex:0 0 auto;
+  width:28px; height:28px; border-radius:8px;
+  display:grid; place-items:center;
+  background:rgba(168,85,247,.16);
+  color:#C88BFA;
+}
+.aiband__spark svg{ width:16px; height:16px; display:block }
+
+.aiband__text{
+  flex:1; min-width:0;
+  font:var(--font-weight-thin) 19px/1.35 var(--font-sans);
+  letter-spacing:-.2px;
+  color:#E7E9EC;
+  /* Dos líneas de alto fijo: si la caja creciera con el texto, la barra daría
+     un salto a mitad de tecleo y arrastraría a las piezas de alrededor. */
+  min-height:2.7em;
+  display:flex; align-items:center;
+}
+.aiband__q{ white-space:pre-wrap }
+
+.aiband__caret{
+  display:inline-block; width:2px; height:1.05em; vertical-align:-2px;
+  margin-left:2px; background:#C88BFA;
+  animation:aiband-caret 1.1s steps(1) infinite;
+}
+@keyframes aiband-caret{ 0%,49%{opacity:1} 50%,100%{opacity:0} }
+/* Mientras se teclea el cursor no parpadea: parpadear y escribir a la vez lo
+   convierte en ruido. Vuelve al parpadeo cuando la frase está entera. */
+.aiband__turn.is-typing .aiband__caret{ animation:none; opacity:1 }
+.aiband__turn.is-sent  .aiband__caret{ display:none }
+
+.aiband__send{
+  flex:0 0 auto;
+  width:34px; height:34px; border-radius:9px;
+  display:grid; place-items:center;
+  background:rgba(168,85,247,.16); color:#C88BFA;
+  transition:background var(--ds-motion), color var(--ds-motion);
+}
+.aiband__send svg{ width:17px; height:17px; display:block }
+/* El envío es el único momento en que el morado se llena: es la señal de que
+   la pregunta ha salido, y dura lo que dura la búsqueda. */
+.aiband__turn.is-sent .aiband__send{ background:var(--module-ia,#A855F7); color:#fff }
+.aiband__turn[data-tipo="propuesta"].is-sent .aiband__send{
+  background:rgba(168,85,247,.16); color:#C88BFA;
+}
+
+/* =========================================================
+   LA RESPUESTA
+   Primero la línea de estado —lo que la IA está mirando— y después el texto con
+   las referencias. Las referencias en azul son lo que separa "un chat" de "un
+   chat sobre tus datos": cada código se puede abrir.
+   ========================================================= */
+/* Estado y respuesta comparten celda de rejilla, superpuestos. Si se apilaran,
+   la llegada de la respuesta empujaría la banda hacia abajo justo en el
+   fotograma en que hay que leerla. */
+.aiband__reply{
+  position:relative; z-index:2;
+  margin-top:16px; padding-left:4px;
+  min-height:104px;
+  display:grid;
+}
+.aiband__status,
+.aiband__answer{ grid-area:1/1; align-self:start }
+
+.aiband__status{
+  display:flex; align-items:center; gap:8px;
+  font:var(--type-caption); letter-spacing:var(--tracking-caption);
+  color:#7C838C;
+  opacity:0; transition:opacity 200ms linear;
+}
+.aiband__turn.is-searching .aiband__status{ opacity:1 }
+.aiband__dots{ display:inline-flex; gap:3px }
+.aiband__dots i{
+  width:3px; height:3px; border-radius:50%; background:#C88BFA;
+  animation:aiband-dot 1.05s ease-in-out infinite;
+}
+.aiband__dots i:nth-child(2){ animation-delay:.14s }
+.aiband__dots i:nth-child(3){ animation-delay:.28s }
+@keyframes aiband-dot{ 0%,100%{opacity:.25} 50%{opacity:1} }
+
+.aiband__answer{
+  display:flex; gap:11px; align-items:flex-start;
+  opacity:0; translate:0 6px;
+  transition:opacity 260ms cubic-bezier(.4,0,.2,1), translate 260ms cubic-bezier(.4,0,.2,1);
+}
+.aiband__turn.is-answer .aiband__status{ opacity:0 }
+.aiband__turn.is-answer .aiband__answer{ opacity:1; translate:0 0 }
+
+/* — El estado seguro —
+   Sin script no hay .is-live, y entonces el primer turno se enseña resuelto:
+   pregunta escrita, respuesta puesta y piezas colocadas. Es la misma foto que
+   ve quien pide movimiento reducido. */
+.aiband:not(.is-live) .aiband__answer{ opacity:1; translate:0 0 }
+.aiband:not(.is-live) .aiband__art{ opacity:1; scale:1 }
+.aiband:not(.is-live) .aiband__status{ display:none }
+.aiband:not(.is-live) .aiband__caret{ display:none }
+
+.aiband__aiico{
+  flex:0 0 auto;
+  width:26px; height:26px; border-radius:7px;
+  display:grid; place-items:center;
+  background:rgba(168,85,247,.16); color:#C88BFA;
+}
+.aiband__aiico svg{ width:15px; height:15px; display:block }
+
+.aiband__answer p{
+  margin:0;
+  font:var(--font-weight-thin) 15px/1.5 var(--font-sans);
+  color:#B9BEC6;
+  max-width:52ch;
+}
+.aiband__ref{ color:#7FB4FF; font-weight:var(--font-weight-medium) }
+.aiband__em{ color:#E7E9EC }
+
+/* =========================================================
+   LAS PIEZAS QUE ENTRAN
+   Objetos reales de la aplicación —una incidencia, un control KO, una acción
+   con su responsable, un informe—, no iconos decorativos. Cada uno se coloca
+   con --x/--y en el marcado, porque su sitio depende de lo que hay en la barra
+   en ese turno y eso no lo puede saber la hoja.
+
+   No son la respuesta: son de dónde sale. Por eso entran DESPUÉS del texto y
+   con menos peso visual que él.
+   ========================================================= */
+.aiband__art{
+  position:absolute; left:50%; top:50%;
+  z-index:1;
+  translate:calc(-50% + var(--x,0px)) calc(-50% + var(--y,0px));
+  rotate:var(--r,0deg);
+  opacity:0; scale:.94;
+  transition:opacity 320ms cubic-bezier(.4,0,.2,1), scale 320ms cubic-bezier(.4,0,.2,1);
+  transition-delay:var(--d,0ms);
+  pointer-events:none;
+}
+.aiband__turn.is-answer .aiband__art{ opacity:1; scale:1 }
+/* La flotación es de 6px y de 7 s: a más recorrido la banda parece un carrusel
+   de globos, y estas piezas son documentos, no adornos. */
+.aiband__turn.is-answer .aiband__art{ animation:aiband-float 7s ease-in-out infinite alternate }
+.aiband__art:nth-of-type(2n){ animation-delay:-2.4s }
+.aiband__art:nth-of-type(3n){ animation-delay:-4.1s }
+@keyframes aiband-float{
+  from{ translate:calc(-50% + var(--x,0px)) calc(-50% + var(--y,0px)) }
+  to  { translate:calc(-50% + var(--x,0px)) calc(-50% + var(--y,0px) - 6px) }
+}
+
+/* La tarjeta: el mismo panel que la barra, un escalón más pequeño y sin sombra
+   de la barra, que si no compiten. */
+.aiband__card{
+  width:var(--w,246px);
+  background:#1B2026;
+  border:1px solid #33383F;
+  border-radius:10px;
+  padding:10px 11px;
+  box-shadow:0 12px 32px rgba(0,0,0,.40);
+}
+.aiband__code{
+  font:var(--font-weight-medium) 11px/1.2 var(--font-sans);
+  letter-spacing:var(--tracking-tabular);
+  font-variant-numeric:tabular-nums;
+  color:#7FB4FF;
+}
+.aiband__desc{
+  margin-top:3px;
+  font:var(--font-weight-thin) 12px/1.35 var(--font-sans);
+  color:#E7E9EC;
+}
+.aiband__meta{
+  margin-top:6px;
+  display:flex; align-items:center; gap:6px;
+  font:var(--font-weight-regular) 10.5px/1.2 var(--font-sans);
+  color:#7C838C;
+}
+.aiband__row{
+  display:flex; align-items:center; gap:8px;
+  padding:5px 0;
+  font:var(--font-weight-thin) 11.5px/1.3 var(--font-sans);
+  color:#B9BEC6;
+}
+.aiband__row + .aiband__row{ border-top:1px solid #262A30 }
+.aiband__row span:first-child{ flex:1; min-width:0 }
+.aiband__thumb{
+  width:26px; height:26px; border-radius:6px; object-fit:cover;
+  flex:0 0 auto;
+}
+.aiband__head{ display:flex; align-items:center; gap:8px }
+
+/* La píldora de estado. Los colores son los del producto: KO y OK no son
+   decisión de esta hoja, son los estados de máquina del sistema. En grafito se
+   pintan como lavado de color, no como relleno: un relleno saturado a 10px
+   sobre oscuro vibra. */
+.aiband__tag{
+  display:inline-block;
+  padding:1px 7px; border-radius:var(--ds-radius-pill);
+  font:var(--font-weight-regular) 10px/1.5 var(--font-sans);
+  letter-spacing:var(--tracking-micro-cap);
+}
+.aiband__tag--ko   { background:rgba(229,72,77,.16);  color:#F2898C }
+.aiband__tag--ok   { background:rgba(22,163,74,.16);  color:#63C98C }
+.aiband__tag--media{ background:rgba(242,164,19,.16); color:#F0BA62 }
+.aiband__tag--alta { background:rgba(229,72,77,.16);  color:#F2898C }
+.aiband__tag--curso{ background:rgba(15,104,244,.18); color:#7FB4FF }
+
+/* El responsable: la misma inicial en círculo que la tabla de Acciones. */
+.aiband__user{ display:inline-flex; align-items:center; gap:6px }
+.aiband__ava{
+  width:18px; height:18px; border-radius:50%;
+  display:grid; place-items:center;
+  font:var(--font-weight-medium) 9px/1 var(--font-sans);
+  color:#fff;
+}
+
+/* — Avatares con foto —
+   La inicial en un círculo es lo que pinta la aplicación, y aquí se cambia por
+   una cara a propósito: a tamaño de vídeo una letra sola no dice "persona", y
+   lo que la tarjeta afirma es que la tarea TIENE dueño. Las fotos son de banco
+   —recortes de las de planta que ya están en assets/— y por eso no llevan
+   nombre real ni pie: son avatares de demo, no el retrato de nadie. */
+img.aiband__ava{ object-fit:cover; background:#2A2E34 }
+
+/* — El texto de sugerencia de la barra vacía —
+   Es el placeholder de verdad del producto. Sale cuando el turno no es una
+   pregunta escrita sino una propuesta de la IA: la barra está en reposo y quien
+   habla es el sistema. */
+.aiband__ph{ color:#7C838C }
+
+/* =========================================================
+   LA PROPUESTA
+   El turno en que no pregunta la persona: propone Solved. Ocupa la misma celda
+   que el estado y la respuesta —los tres se relevan en el mismo sitio— y por eso
+   la banda no se mueve al pasar de uno a otro.
+
+   Va con dos botones porque una propuesta sin forma de decir que no es una
+   orden. El «Ahora no» no es decorativo: es la mitad del argumento de que la IA
+   sugiere y decide la persona.
+   ========================================================= */
+.aiband__suggest{
+  grid-area:1/1; align-self:start;
+  display:flex; gap:11px; align-items:flex-start;
+  opacity:0; translate:0 6px;
+  transition:opacity 260ms cubic-bezier(.4,0,.2,1), translate 260ms cubic-bezier(.4,0,.2,1);
+}
+.aiband__turn.is-on:not(.is-answer) .aiband__suggest{ opacity:1; translate:0 0 }
+.aiband:not(.is-live) .aiband__suggest{ opacity:1; translate:0 0 }
+/* En el estado seguro, un turno de propuesta enseña la propuesta, no su
+   resultado: los dos comparten celda y sin esto se pintarían uno encima del
+   otro. Hoy el primer turno es una pregunta y esto no llega a activarse, pero
+   el día que se reordenen los turnos sí. */
+.aiband:not(.is-live) .aiband__turn[data-tipo="propuesta"] .aiband__answer{ opacity:0 }
+.aiband__sq{
+  margin:0;
+  font:var(--font-weight-thin) 15px/1.5 var(--font-sans);
+  color:#E7E9EC; max-width:46ch;
+}
+.aiband__acts{ display:flex; gap:8px; margin-top:11px }
+.aiband__act{
+  padding:7px 13px;
+  border:1px solid #33383F; border-radius:var(--ds-radius-control);
+  background:transparent; color:#B9BEC6;
+  font:var(--font-weight-regular) 13px/1.2 var(--font-sans);
+  transition:background var(--ds-motion), color var(--ds-motion), border-color var(--ds-motion);
+}
+.aiband__act--si{ background:rgba(168,85,247,.16); color:#C88BFA; border-color:rgba(168,85,247,.34) }
+/* Al aceptar, el botón se llena: es el mismo gesto que el envío de la barra. */
+.aiband__turn.is-sent .aiband__act--si{ background:var(--module-ia,#A855F7); color:#fff; border-color:transparent }
+
+/* =========================================================
+   EL GRÁFICO
+   Barras por mes, partidas en los módulos que las alimentan —incidencias,
+   acciones y registros—, que es como está el tablero del producto: un gráfico
+   monocolor diría que el dato sale de un sitio, y sale de tres.
+
+   Los tres colores son los de módulo, subidos un escalón. Los de la paleta están
+   pensados sobre blanco; a 6px de ancho sobre grafito, el morado #7C3AED y el
+   azul #0F68F4 se comen el fondo y las barras dejan de distinguirse.
+   ========================================================= */
+.aiband__chart{
+  --ia-inc:#4C8DF6; --ia-acc:#FB923C; --ia-reg:#A78BFA;
+  display:flex; align-items:flex-end; gap:7px;
+  height:64px; margin:9px 0 2px;
+}
+.aiband__col{ flex:1; display:flex; flex-direction:column; justify-content:flex-end; gap:2px; height:100% }
+/* Los meses cerrados pesan menos que el que está en curso: el último es el que
+   se está mirando, y sin esa diferencia el gráfico no tiene presente. */
+.aiband__col:not(:last-child){ opacity:.62 }
+.aiband__bseg{ border-radius:2px; min-height:2px }
+.aiband__bseg--inc{ background:var(--ia-inc) }
+.aiband__bseg--acc{ background:var(--ia-acc) }
+.aiband__bseg--reg{ background:var(--ia-reg) }
+.aiband__xaxis{
+  display:flex; gap:7px;
+  font:var(--font-weight-regular) 9.5px/1.2 var(--font-sans);
+  letter-spacing:var(--tracking-micro-cap); color:#6C737C;
+}
+.aiband__xaxis span{ flex:1; text-align:center }
+/* La leyenda del gráfico: tres puntos y tres palabras, porque el color de
+   módulo sólo significa algo si en algún sitio pone qué módulo es. */
+.aiband__clegend{
+  display:flex; flex-wrap:wrap; gap:9px; margin-top:8px;
+  font:var(--font-weight-regular) 10px/1.2 var(--font-sans); color:#7C838C;
+}
+.aiband__clegend i{ width:6px; height:6px; border-radius:2px; display:inline-block; margin-right:4px }
+
+/* — La lista de tareas generadas —
+   Casilla, tarea y dueño. Es la fila de la tabla de Acciones del producto,
+   recortada a lo que cabe en una ficha. */
+.aiband__task{
+  display:flex; align-items:center; gap:8px;
+  padding:6px 0;
+  font:var(--font-weight-thin) 11.5px/1.3 var(--font-sans); color:#B9BEC6;
+}
+.aiband__task + .aiband__task{ border-top:1px solid #262A30 }
+/* El texto es lo que crece; la casilla y la cifra se quedan en su tamaño. Van
+   con dos clases (0-2-0) porque `.aiband__task > span` puntúa más que una clase
+   suelta y, si no, la casilla se estiraría de lado a lado de la ficha. */
+.aiband__task > span{ flex:1; min-width:0 }
+.aiband__task > .aiband__box,
+.aiband__task > .aiband__em{ flex:0 0 auto }
+.aiband__box{
+  width:12px; height:12px;
+  border:1px solid #4A5058; border-radius:3px;
+}
+
+/* =========================================================
+   LA CARTELA — sólo en el vídeo
+   La pantalla del final: el logotipo, la marca de IA y una frase. Existe por lo
+   mismo que el logotipo de la esquina —el vídeo viaja solo y tiene que decir de
+   quién es y de qué va—, y no existe en la versión web: allí eso lo dicen la
+   barra de navegación y el titular de la sección, y repetirlo sería ruido.
+
+   NO ROMPE EL BUCLE
+   Se pone DESPUÉS del último turno, pero se va del todo antes de que el vídeo
+   vuelva a empezar: los últimos fotogramas son otra vez la barra vacía, que es
+   el primero. Si la cartela se quedara puesta hasta el final, la vuelta daría un
+   salto de una pantalla llena a una barra vacía.
+
+   La frase no es un eslogan nuevo: es la que ya está escrita en el diálogo de IA
+   de la home. Un vídeo no es sitio para estrenar mensaje.
+   ========================================================= */
+.aiband__end{
+  position:absolute; inset:0; z-index:3;
+  display:grid; place-content:center; justify-items:center;
+  text-align:center;
+  opacity:0; pointer-events:none;
+}
+.aiband__endmark{
+  display:flex; align-items:center; gap:16px;
+  margin-bottom:26px;
+}
+.aiband__endmark img{ height:38px; width:auto; display:block }
+/* El mismo separador y el mismo orden que la barra superior de la app cuando
+   está en la capa de IA: «Solved | AI». No es un lockup inventado. */
+.aiband__endbar{ width:1px; height:26px; background:#3A4048 }
+.aiband__endai{
+  display:flex; align-items:center; gap:9px;
+  font:var(--font-weight-thin) 30px/1 var(--font-sans);
+  letter-spacing:-.4px; color:#E7E9EC;
+}
+.aiband__endai svg{ width:24px; height:24px; display:block }
+.aiband__endt{
+  margin:0;
+  font:var(--font-weight-thin) 30px/1.25 var(--font-sans);
+  letter-spacing:var(--tracking-display-md);
+  color:#E7E9EC; max-width:34ch;
+}
+.aiband__endt span{ color:#8A929B }
+.aiband__endu{
+  margin:22px 0 0;
+  font:var(--font-weight-regular) 15px/1.2 var(--font-sans);
+  letter-spacing:.4px; color:#7C838C;
+}
+
+/* — La marca, en el vídeo —
+   La banda web vive dentro de una página que ya lleva el logotipo en la barra de
+   navegación; el vídeo viaja solo —una landing, LinkedIn, un correo— y ahí sí
+   tiene que decir de quién es. Va en la esquina y en versión clara: el logotipo
+   de tinta negra desaparece sobre grafito. */
+.aiband__brand{
+  position:absolute; z-index:2;
+  top:34px; left:44px;
+  height:24px; width:auto; display:block;
+}
+
+/* El chip suelto, para lo que no es una ficha entera. */
+.aiband__chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px;
+  background:#1B2026; border:1px solid #33383F; border-radius:var(--ds-radius-pill);
+  font:var(--font-weight-thin) 11.5px/1.2 var(--font-sans);
+  color:#B9BEC6;
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
+  white-space:nowrap;
+}
+.aiband__chip svg{ width:13px; height:13px; color:#C88BFA; flex:0 0 auto }
+
+/* El pie: las cuatro cosas que la IA sabe hacer, y el turno encendido marcado.
+   Es la leyenda del bucle — sin ella la banda parece un chat de demostración y
+   no un índice de capacidades. */
+.aiband__legend{
+  position:relative; z-index:1;
+  margin:88px auto 0;
+  display:flex; flex-wrap:wrap; justify-content:center; gap:8px;
+  max-width:100%;
+}
+.aiband__leg{
+  padding:6px 12px;
+  border:1px solid rgba(255,255,255,.10); border-radius:var(--ds-radius-pill);
+  font:var(--font-weight-thin) 12.5px/1.3 var(--font-sans);
+  color:#7C838C;
+  transition:color var(--ds-motion), border-color var(--ds-motion), background var(--ds-motion);
+}
+.aiband__leg.is-on{
+  color:#E7E9EC;
+  border-color:rgba(168,85,247,.45);
+  background:rgba(168,85,247,.12);
+}
+
+/* =========================================================
+   ESCALONES
+   Por debajo de 1000px las piezas de alrededor no caben sin pisar la barra, y
+   apretarlas las haría ilegibles. Se van: la barra y la respuesta cuentan la
+   historia solas, que es la razón por la que están en el centro.
+   ========================================================= */
+/* El corte va en 1200 y no en 1024: la pieza más lejana llega a 585px del
+   centro, y por debajo de eso la recorta el borde de la ventana. */
+@media (max-width:1199px){
+  .aiband__art{ display:none }
+  .aiband__inner{ min-height:auto; padding-block:24px }
+  .aiband__legend{ margin-top:48px }
+}
+@media (max-width:600px){
+  .aiband__text{ font-size:16px }
+  .aiband__answer p{ font-size:14px }
+  .aiband__legend{ margin-top:32px }
+  .aiband__leg{ font-size:11.5px }
+}
+
+/* =========================================================
+   MOVIMIENTO REDUCIDO
+   Se queda el primer turno con su respuesta puesta y sus piezas colocadas: la
+   misma foto que ve quien no tiene JS. Nada se mueve, y no falta nada.
+   ========================================================= */
+@media (prefers-reduced-motion:reduce){
+  .aiband__glow{ animation:none }
+  .aiband__caret{ animation:none; opacity:1 }
+  .aiband__dots i{ animation:none; opacity:.6 }
+  .aiband__turn,
+  .aiband__art,
+  .aiband.is-live .aiband__turn.is-on{ animation:none !important }
+  .aiband__answer{ opacity:1; translate:0 0 }
+  .aiband__status{ display:none }
+  .aiband__art{ opacity:1; scale:1 }
+  .aiband__caret{ display:none }
+}
+
+/* =========================================================
+   EL VÍDEO DE LA BANDA — patrón `.iavideo`
+   La misma pieza, ya grabada, para insertarla en una landing. Va a sangre
+   sobre el mismo grafito, así que el MP4 y la página no tienen costura: el
+   fondo del vídeo y el de la sección son el mismo color.
+
+   La proporción va escrita (1400/540, la del render): reserva el hueco antes
+   de que el fichero llegue y evita que la página salte cuando entra.
+   ========================================================= */
+.iavideo{
+  position:relative;
+  background:var(--color-graphite-900,#111214);
+  overflow:hidden;
+}
+.iavideo__v{
+  display:block;
+  width:100%; height:auto;
+  aspect-ratio:1400/540;
+  object-fit:cover;
+  /* El vídeo es de interfaz: ni controles, ni sonido, ni pantalla completa. */
+  pointer-events:none;
+}
+/* Por debajo de 900px el texto de dentro del vídeo baja de 12px reales y deja
+   de leerse. Ahí se recorta a la barra —el centro— en vez de encogerlo todo. */
+@media (max-width:899px){
+  .iavideo__v{ aspect-ratio:16/10; object-fit:cover }
+}
+
+/* — El vídeo dentro del encuadre, no a sangre —
+   Venía de ds/ia-dark.css, donde estaba por accidente: es una variante del
+   componente y no del tema oscuro de /ia/. Desde el 7 de septiembre de 2026 la
+   usa también /auditorias/, que es una página de papel y no carga aquella hoja.
+   El vídeo ocupa la misma columna que el texto de arriba y la rejilla de abajo,
+   que es lo que hace que se lea como parte de la página y no como un anuncio
+   incrustado. */
+.iavideo--grid{
+  padding-block:0;
+  background:transparent;
+}
+.iavideo--grid .iavideo__v{
+  border-radius:var(--ds-radius-card);
+  border:1px solid #2A2E34;
+}
+
+/* =========================================================
+   VARIANTE .aiband--canales — de dónde vienen y en qué se convierten
+   ---------------------------------------------------------
+   En /incidencias/ la banda no cuenta un chat: cuenta lo que de verdad pasa
+   antes de Solved. La incidencia llega por WhatsApp, por correo, por una
+   llamada al jefe de turno o en un parte a mano, y cada una llega con la forma
+   que le da su canal —o sea, sin ninguna—. La IA las unifica y salen con los
+   campos que tienen que tener.
+
+   Es el dolor tal cual sale en las llamadas de venta: «de incidencias no
+   tenemos nada de registro: correo electrónico, WhatsApp, llamada».
+
+   POR QUÉ CONVERGENCIA Y NO OTRA REJILLA
+   El sistema ya tiene este gesto en dos sitios —el haz de /integraciones/ y el
+   puente de la tarjeta de Integraciones—: dos planos y un enlace explícito
+   entre ellos. Aquí es lo mismo llevado a cuatro entradas y una salida.
+
+   NO USA ds/aiband.js. El script sólo gobierna los turnos de la barra de
+   prompt y sale si encuentra menos de dos; esta variante es CSS puro, así que
+   funciona igual con o sin él.
+
+   Ciclo de 9 s, y como todo lo de ds/app.css obedece a --play.
+   ========================================================= */
+.aiband--canales .canales{
+  display:grid;
+  grid-template-columns:minmax(0,4fr) 150px minmax(0,5fr);
+  align-items:center;
+  gap:0;
+  position:relative;
+  margin-top:38px;
+}
+
+/* — La calle —
+   La columna del medio es un elemento con nombre, y no una capa por encima de
+   todo, porque ahí es donde pasa la generación: los hilos, el núcleo y su
+   pulso. Metidos aquí dentro no pueden montarse sobre las tarjetas ni sobre la
+   ficha —el reparto de la rejilla lo impide—, que es la regla de la pieza: lo
+   que la IA hace se ve ENTRE los dos planos, no encima de ellos.
+   Se estira a lo alto (`align-self`) porque `.canales` centra sus items y los
+   hilos tienen que salir a la altura de cada tarjeta. */
+.canales__paso{
+  position:relative;
+  align-self:stretch;
+  display:grid; place-items:center;
+}
+
+/* — Las entradas —
+   Cada canal es una .aiband__card de verdad, no un chip: la del WhatsApp lleva
+   su burbuja y su hora, la del correo su remitente y dos líneas de vista
+   previa, la de la llamada una onda de audio, y el parte a mano unos renglones
+   escritos a mano que no dicen nada, que es justo el problema. */
+.canales__ent{ display:grid; gap:9px; position:relative; z-index:1 }
+.canal{
+  animation:canal-va 9s ease-in-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.canal:nth-child(1){ animation-delay:0s }
+.canal:nth-child(2){ animation-delay:.28s }
+.canal:nth-child(3){ animation-delay:.56s }
+.canal:nth-child(4){ animation-delay:.84s }
+/* LA SALIDA NO SE VA HACIA EL NÚCLEO, SE APAGA EN SU SITIO (8 sep 2026).
+   Salía con `translate3d(46px)` y esos 46 px la metían dentro de la calle: la
+   tarjeta se cruzaba con los hilos justo cuando los hilos entran, que es lo
+   contrario de lo que la pieza tiene que enseñar. El viaje al núcleo lo cuenta
+   el hilo —para eso está—; la tarjeta sólo se apaga. */
+@keyframes canal-va{
+  0%      { opacity:0; transform:translate3d(-14px,0,0) }
+  7%,38%  { opacity:1; transform:none }
+  52%,100%{ opacity:0; transform:scale(.94) }
+}
+.canal__de{
+  display:flex; align-items:center; gap:7px;
+  font:var(--type-micro-cap); letter-spacing:1.1px; text-transform:uppercase;
+  color:rgba(231,233,236,.55);
+  margin-bottom:7px;
+}
+.canal__de svg{ width:12px; height:12px; flex:none }
+.canal__de b{ margin-left:auto; font-weight:var(--font-weight-regular); letter-spacing:.2px; text-transform:none }
+
+/* La burbuja del WhatsApp, con su pico y su doble check.
+   Va en bloque: siendo inline, al partirse en dos renglones el fondo verde se
+   partía con ella y dejaba un trozo suelto debajo —y el doble check, que es un
+   `display:block` dentro, abría todavía otra caja—. Con la columna estrecha de
+   `.aiband--caja` se parte siempre, así que el fondo tiene que ser una caja. */
+.canal__burbuja{
+  display:inline-block;
+  position:relative;
+  background:#1F3A2E; border:1px solid #2C5142;
+  border-radius:10px 10px 10px 2px;
+  padding:8px 10px;
+  font:var(--type-body-md); color:#E7E9EC;
+}
+.canal__check{ display:block; margin-top:4px; text-align:right; color:#5AC8FA; font-size:11px }
+/* Teams no es WhatsApp: ni verde ni doble check. La burbuja recibida se pinta
+   con el índigo de la marca lavado sobre grafito —relleno saturado a este
+   tamaño vibra, la misma regla que las píldoras de estado— y con el pico a la
+   izquierda, que es de donde viene el mensaje. */
+.canal__burbuja--teams{
+  background:#23264A; border-color:#3A3F73;
+  border-radius:10px 10px 10px 2px;
+}
+
+/* Dos renglones de vista previa: el correo se reconoce por la forma, no hace
+   falta escribir un cuerpo entero. */
+.canal__lineas{ display:grid; gap:5px; margin-top:7px }
+.canal__lineas i{ height:5px; border-radius:3px; background:rgba(231,233,236,.14) }
+.canal__lineas i:nth-child(1){ width:96% }
+.canal__lineas i:nth-child(2){ width:64% }
+
+/* Onda de la llamada. Barras de altura fija: no simula un audio real, sólo
+   dice "esto fue una llamada". */
+.canal__onda{ display:flex; align-items:center; gap:2px; height:22px; margin-top:6px }
+.canal__onda i{ width:2px; border-radius:2px; background:rgba(231,233,236,.35) }
+.canal__onda i:nth-child(3n){ background:rgba(231,233,236,.6) }
+
+/* El parte a mano: renglones irregulares, ilegibles a propósito. */
+.canal__manuscrito{ display:grid; gap:6px; margin-top:7px }
+.canal__manuscrito i{
+  height:6px; border-radius:3px;
+  background:repeating-linear-gradient(90deg, rgba(231,233,236,.26) 0 14px, transparent 14px 19px);
+}
+.canal__manuscrito i:nth-child(2){ width:78% }
+.canal__manuscrito i:nth-child(3){ width:54% }
+
+/* — El núcleo — */
+.canales__nucleo{
+  position:relative; z-index:2;
+  width:56px; height:56px;
+  display:grid; place-items:center;
+  border-radius:50%;
+  background:radial-gradient(circle at 50% 40%, rgba(168,85,247,.42), rgba(17,18,20,.9) 70%);
+  border:1px solid rgba(168,85,247,.45);
+}
+.canales__nucleo svg{ width:22px; height:22px }
+/* Un pulso por tanda, en el momento en que las entradas llegan. */
+.canales__anillo{
+  position:absolute; inset:-6px;
+  border-radius:50%;
+  border:1px solid rgba(168,85,247,.5);
+  animation:nucleo-pulso 9s ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes nucleo-pulso{
+  0%,44%   { opacity:0; transform:scale(.85) }
+  50%      { opacity:.9; transform:scale(1) }
+  62%,100% { opacity:0; transform:scale(1.5) }
+}
+
+/* — Los hilos —
+   Absolutos DENTRO de la calle, no dentro de la convergencia: el trazado nace
+   en el borde de las tarjetas (x=0) y muere en el del núcleo (x=33), así que no
+   pasa por debajo de nada. El quinto es la salida, del núcleo a la ficha. */
+.canales__hilos{
+  position:absolute; inset:0; width:100%; height:100%;
+  pointer-events:none; z-index:0; overflow:visible;
+}
+.canales__hilos path{
+  fill:none; stroke:rgba(168,85,247,.55); stroke-width:1;
+  stroke-dasharray:2 5; stroke-linecap:round;
+  opacity:0;
+  animation:hilo 9s linear infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.canales__hilos path:nth-child(2){ animation-delay:.28s }
+.canales__hilos path:nth-child(3){ animation-delay:.56s }
+.canales__hilos path:nth-child(4){ animation-delay:.84s }
+@keyframes hilo{ 0%,34%{ opacity:0 } 40%,54%{ opacity:1 } 60%,100%{ opacity:0 } }
+/* La salida va con la ficha, no con las entradas: primero llega, luego sale. */
+.canales__hilos .canales__hilo--sal{ animation-name:hilo-sal; animation-delay:0s }
+@keyframes hilo-sal{ 0%,48%{ opacity:0 } 56%,92%{ opacity:1 } 100%{ opacity:0 } }
+
+/* — La salida: la incidencia ya con forma — */
+.canales__ficha{
+  display:grid; gap:10px; justify-items:start;
+  position:relative; z-index:1;
+  animation:ficha-entra 9s ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes ficha-entra{
+  0%,52%   { opacity:0; transform:translate3d(-10px,0,0) }
+  60%,100% { opacity:1; transform:none }
+}
+.ficha__alto{ display:flex; align-items:center; gap:9px; flex-wrap:wrap }
+.ficha__id{
+  font:500 11px/1 var(--font-sans); letter-spacing:.3px;
+  color:#C6A6FF; background:rgba(168,85,247,.14);
+  border:1px solid rgba(168,85,247,.3);
+  border-radius:6px; padding:5px 8px;
+}
+.ficha__tit{ font:var(--type-body-lg); color:#fff; letter-spacing:-.2px }
+.ficha__campos{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px 14px }
+.ficha__c{ display:grid; gap:3px; min-width:0 }
+.ficha__k{
+  font:var(--type-micro-cap); letter-spacing:1.1px; text-transform:uppercase;
+  color:rgba(231,233,236,.5);
+}
+.ficha__v{ font:var(--type-body-md); color:#E7E9EC; white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+/* Los campos se rellenan uno detrás de otro: es lo que hace ver que los ha
+   puesto algo, no que la ficha viniera hecha. */
+.ficha__c{ animation:campo 9s ease-out infinite; animation-play-state:var(--play,running); animation-iteration-count:var(--iter,infinite); animation-fill-mode:forwards; }
+.ficha__c:nth-child(1){ animation-delay:0s }
+.ficha__c:nth-child(2){ animation-delay:.12s }
+.ficha__c:nth-child(3){ animation-delay:.24s }
+.ficha__c:nth-child(4){ animation-delay:.36s }
+@keyframes campo{ 0%,58%{ opacity:0 } 66%,100%{ opacity:1 } }
+
+@media (prefers-reduced-motion:reduce){
+  .canal,.canales__anillo,.canales__hilos path,.canales__ficha,.ficha__c{ animation:none }
+  .canales__hilos path{ opacity:.5 }
+}
+@media (max-width:900px){
+  .aiband--canales .canales{ grid-template-columns:1fr; gap:22px }
+  .canales__paso{ align-self:center }
+  .canales__hilos{ display:none }
+  .canal{ animation:none; opacity:1 }
+  .canales__ficha{ animation:none; opacity:1; transform:none }
+  .ficha__c{ animation:none; opacity:1 }
+}
+
+/* =========================================================
+   VARIANTE .aiband--caja — la banda, metida en el encuadre
+   ---------------------------------------------------------
+   En /incidencias/ la convergencia no manda la página: la manda el tour del
+   producto, que va más abajo. Así que aquí la banda no va a sangre ni ocupa
+   pantalla entera, sino como un recuadro DENTRO de los raíles —la misma columna
+   que el resto de la página— y con el alto atado a media pantalla.
+
+   Es el mismo recurso que el vídeo de /ia/ (`.iavideo--grid`): lo que era una
+   sección a sangre pasa a ser una pieza con borde y esquina dentro del marco. La
+   diferencia es que allí el fondo de la página ya era grafito y aquí es papel,
+   así que el recuadro sí se lee como una caja.
+
+   CÓMO CABE EN MEDIA PANTALLA SIN ENCOGER LA LETRA
+   El contenido no se aprieta: se reparte. Encabezado a la izquierda y
+   convergencia a la derecha, los dos centrados en el eje. Apilados ocupaban
+   845px —176 del encabezado, 375 de la convergencia y 256 de aire—; repartidos,
+   el alto es el del bloque más alto y baja a ~430px.
+
+   PRESUPUESTO DE ALTO: MEDIA PANTALLA
+   La caja mide 447px, que es la mitad justa de una ventana de 900. El alto no va
+   escrito ni atado a `50vh`: sale de la composición. Y a propósito — la banda
+   lleva `overflow:hidden` por el resplandor, así que un `max-height` que llegara
+   a cumplirse cortaría la ficha por la mitad en cuanto alguien trabajase con el
+   navegador a media altura, y una ventana baja no es una ventana rota.
+   Si algún día entra una quinta pieza y la caja se pasa del presupuesto, se quita
+   algo; no se recorta ni se encoge la letra.
+   ========================================================= */
+.aiband--caja{
+  border:1px solid #2A2E34;
+  border-radius:var(--ds-radius-card);
+}
+
+.aiband--caja .aiband__inner{
+  min-height:0;
+  display:grid;
+  grid-template-columns:minmax(320px,4fr) minmax(0,6fr);
+  align-items:center;
+  gap:clamp(28px,3vw,48px);
+  padding:clamp(22px,2vw,28px);
+  place-items:stretch;
+}
+
+/* — El encabezado —
+   `.cab` sólo existía en la guía (`/guidelines/ia.banda.html`), así que en la
+   página venía sin estilar: el titular caía en el h2 genérico y el párrafo
+   heredaba una tinta de papel (#4A5468) que sobre grafito da 2:1 y no se lee.
+   Aquí va escrito, y a la izquierda: en una columna no hay motivo para centrar. */
+.aiband--caja .cab{
+  display:grid; justify-items:start; gap:14px;
+  text-align:left;
+  align-content:center;
+}
+.aiband--caja .cab__t{
+  font:var(--type-display-lg); letter-spacing:var(--tracking-display-lg);
+  color:#fff; margin:0;
+}
+.aiband--caja .cab__t span{ color:#8A929B }
+.aiband--caja .cab__p{
+  font:var(--type-body-lg);
+  color:rgba(231,233,236,.62);
+  margin:0; max-width:44ch;
+}
+
+/* — La convergencia —
+   Pierde el aire de arriba (lo pone la rejilla de la caja) y aprieta el núcleo:
+   con la mitad del ancho, 92px de calle entre las entradas y la salida se comían
+   las tarjetas. La proporción entre los dos planos no cambia. */
+.aiband--caja .canales{
+  margin-top:0;
+  grid-template-columns:minmax(0,5fr) 128px minmax(0,6fr);
+}
+.aiband--caja .canales__ent{ gap:8px }
+.aiband--caja .canal{ padding:9px 10px }
+.aiband--caja .canales__nucleo{ width:48px; height:48px }
+.aiband--caja .canales__nucleo svg{ width:19px; height:19px }
+
+/* — Escalón —
+   Por debajo de 1280px las dos columnas empiezan a robarse ancho —la izquierda
+   se queda en el mínimo y la convergencia estrecha las tarjetas, que crecen a lo
+   alto y deshacen lo que se había ganado—. A partir de ahí el reparto se
+   deshace: encabezado arriba, convergencia abajo, ancho entero para las dos. */
+@media (max-width:1279px){
+  .aiband--caja .aiband__inner{ grid-template-columns:1fr; gap:28px }
+  .aiband--caja .canales{ grid-template-columns:minmax(0,4fr) 150px minmax(0,5fr) }
+  .aiband--caja .canales__nucleo{ width:56px; height:56px }
+  .aiband--caja .canales__nucleo svg{ width:22px; height:22px }
+}
+@media (max-width:900px){
+  .aiband--caja .canales{ grid-template-columns:1fr }
+}
+
+/* El enlace al módulo, al pie de la caja (7 sep 2026). Llega con la sección de
+   capacidades: la banda es la pieza que enseña la IA, así que es donde tiene
+   sentido el enlace a /ia/ que antes vivía en la rejilla de seis cuadros. Tinta
+   clara y no la primaria del sistema: sobre grafito, el azul de marca da 3:1. */
+.aiband--caja .cab__link{
+  font:var(--type-body-md);
+  color:rgba(231,233,236,.86);
+  text-decoration:none;
+  border-bottom:1px solid rgba(231,233,236,.28);
+  padding-bottom:2px;
+}
+.aiband--caja .cab__link:hover{ color:#fff; border-bottom-color:rgba(255,255,255,.6) }
+
+/* — La variante de documentos (7 sep 2026, /auditorias/) —
+   La misma convergencia, con dos entradas en vez de cuatro: el control que la
+   planta ya tiene escrito en una hoja de cálculo o en un documento de texto. Lo
+   que sale no es una ficha, es la plantilla de registro con sus controles y sus
+   tipos, que es la función «importación automática de checklists» de /ia/.
+
+   Se apoya entera en lo que ya existe —`.canal`, `.canales__ficha`,
+   `.aiband__row`— y sólo añade dos cosas que no tenían forma: la retícula que
+   hace reconocible una hoja de cálculo y una etiqueta neutra para el tipo de
+   control, que hasta ahora sólo existía en OK, KO, media y curso. */
+/* — EL DOCUMENTO —
+   Las entradas de esta variante no son tarjetas: son los ficheros que la planta
+   ya tiene, así que tienen forma de hoja —papel claro, esquina doblada y el
+   logotipo del formato—. Papel sobre grafito y no otra tarjeta oscura, a
+   propósito: lo que entra viene de fuera de Solved, y esa distinción es la que
+   cuenta la pieza. La regla de que «todo lo de IA va sobre grafito» sigue en
+   pie; el documento no es la IA, es lo que la IA se come.
+
+   La inclinación mínima —un grado largo, alterna— es lo que los lee como dos
+   papeles encima de la mesa y no como dos cajas apiladas. Más grado y sería un
+   adorno; con éste, apenas se ve y se nota. */
+.doc{
+  position:relative;
+  background:#F5F6F8;
+  border:1px solid #D9DCE1;
+  border-radius:8px;
+  /* La esquina cortada va en el propio papel: con el triángulo pegado encima y
+     la esquina redondeada debajo asomaba el fondo por detrás y parecía un
+     defecto de pintado. Recortando la hoja, el pliegue es la hoja. */
+  clip-path:polygon(0 0, calc(100% - 17px) 0, 100% 17px, 100% 100%, 0 100%);
+  padding:12px 13px 13px;
+  display:grid;
+  grid-template-columns:26px minmax(0,1fr);
+  gap:8px 10px;
+  align-items:center;
+  box-shadow:0 14px 30px rgba(0,0,0,.34);
+}
+.doc:nth-child(1){ transform:rotate(-1.1deg) }
+.doc:nth-child(2){ transform:rotate(.9deg) }
+
+/* La esquina doblada: el triángulo del pliegue, en el papel y con su sombra.
+   Es lo que convierte un rectángulo en una hoja de un vistazo. */
+/* El pliegue va DENTRO de la hoja, pegado al corte: la esquina recortada deja
+   ver el grafito y este triángulo es el reverso del papel doblado. Puesto en la
+   mitad de fuera se lo comía el propio recorte, que es lo que pasó primero. */
+.doc__pico{
+  position:absolute; top:0; right:0;
+  width:17px; height:17px;
+  background:#D6DAE1;
+  clip-path:polygon(0 0, 100% 100%, 0 100%);
+}
+.doc__logo{ display:block; width:26px; height:26px }
+.doc__logo svg{ width:100%; height:100% }
+.doc__nom{
+  font:var(--font-weight-regular) 12px/1.25 var(--font-sans);
+  color:#2A2F36;
+  min-width:0;
+}
+.doc__nom b{ font-weight:var(--font-weight-thin); color:#6B727C }
+
+/* La vista previa ocupa las dos columnas: la retícula dice hoja de cálculo y
+   los renglones dicen documento de texto. No hay que escribir celdas ni
+   párrafos para que se reconozca la forma. */
+.doc__celdas{ grid-column:1 / -1; display:grid; grid-template-columns:repeat(4,1fr); gap:3px }
+.doc__celdas i{ height:6px; border-radius:2px; background:#DDE0E5 }
+.doc__celdas i:nth-child(4n+1){ background:#C3C8D0 }
+.doc__lineas{ grid-column:1 / -1; display:grid; gap:4px }
+.doc__lineas i{ height:5px; border-radius:3px; background:#DDE0E5 }
+.doc__lineas i:nth-child(2){ width:82% }
+.doc__lineas i:nth-child(3){ width:56% }
+
+/* El tipo de un control no es un estado —no es OK ni KO—, así que va en tinta
+   neutra: si se pintara de color, diría algo que no dice. */
+.aiband__tag--tipo{ background:rgba(231,233,236,.10); color:#B9BEC6 }
+
+/* LOS DOCUMENTOS NO DESFILAN: SE QUEDAN.
+   En /incidencias/ las entradas entran y salen en bucle porque son avisos que
+   van llegando por canales distintos —esa es la idea—. Aquí son dos ficheros
+   que alguien sube una vez, así que verlos aparecer y desaparecer contaba algo
+   que no pasa. Y con dos tarjetas en vez de cuatro el bucle además se veía
+   roto: la mitad del tiempo había una sola en pantalla y parecía un fallo de
+   carga. Lo que se mueve es el haz y la plantilla que sale de él. */
+.aiband--docs .canal{ animation:none; opacity:1; transform:none }
+
+/* — La tira de compatibilidad MCP dentro de la banda —
+   La tira vive en ds/site.css y está escrita para fondo claro. Dentro de la
+   banda el fondo es grafito, así que aquí se reasignan las tres cosas que
+   dependen del fondo —hairline, tinta y el icono monocromo de ChatGPT, que es
+   negro sobre transparente y sobre grafito no se ve— y nada más. Es la misma
+   reasignación que hace ds/ia-dark.css para la página /ia/. */
+.aiband .mcp{
+  border-top-color:rgba(231,233,236,.16);
+  color:rgba(231,233,236,.66);
+  margin-top:22px;
+}
+.aiband .mcp__lb{ border-color:rgba(231,233,236,.28); color:rgba(231,233,236,.86) }
+.aiband .mcp__logo{ color:#E7E9EC }
+.aiband .mcp__logo--mono img{ filter:invert(1) }
+

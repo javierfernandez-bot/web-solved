@@ -1,0 +1,67 @@
+{
+  "_nota": "Sección de capacidades de /incidencias/ (rotador, patrón 12) — 7 sep 2026. Sustituye a la rejilla «Lo que vas a poder hacer el primer día»; los textos que sobreviven de aquella siguen en 03-incidencias-a.json.",
+
+  "Registra la incidencia, asígnala y demuestra su cierre en el mismo circuito": {
+    "en": "Log the incident, assign it and prove it was closed, all in one circuit",
+    "fr": "Enregistrez l'incident, affectez-le et prouvez sa clôture dans un même circuit",
+    "it": "Registra l'anomalia, assegnala e dimostra la sua chiusura nello stesso circuito",
+    "de": "Erfassen Sie die Störung, weisen Sie sie zu und weisen Sie den Abschluss nach – in einem Ablauf",
+    "pt": "Registe a ocorrência, atribua-a e comprove o seu encerramento no mesmo circuito"
+  },
+  "Cuatro capacidades del módulo, cada una sobre la pantalla que la resuelve.": {
+    "en": "Four capabilities of the module, each on the screen that delivers it.",
+    "fr": "Quatre fonctions du module, chacune sur l'écran qui la traite.",
+    "it": "Quattro funzioni del modulo, ognuna sullo schermo che la risolve.",
+    "de": "Vier Funktionen des Moduls, jede auf der Maske, die sie löst.",
+    "pt": "Quatro capacidades do módulo, cada uma no ecrã que a resolve."
+  },
+  "Registro en el punto de detección": {
+    "en": "Logged at the point of detection",
+    "fr": "Saisie au point de détection",
+    "it": "Registrazione nel punto di rilevamento",
+    "de": "Erfassung am Ort der Feststellung",
+    "pt": "Registo no ponto de deteção"
+  },
+  "Cada incidencia se abre desde el propio punto de trabajo, con su categoría, su responsable y su fecha, y conserva autor, evidencia fotográfica, actuación y fecha de cierre junto a los partes de control del mismo turno. El activo o el lote se identifican leyendo su código de barras con el móvil, sin teclear la referencia.": {
+    "en": "Every incident is opened right at the workstation, with its category, owner and date, and keeps author, photo evidence, action taken and closing date alongside the control records from the same shift. The asset or the batch is identified by reading its barcode with a phone, with no reference to type in.",
+    "fr": "Chaque incident est ouvert depuis le poste de travail, avec sa catégorie, son responsable et sa date, et conserve l'auteur, la preuve photo, l'action menée et la date de clôture, aux côtés des enregistrements de contrôle du même poste. L'actif ou le lot sont identifiés en lisant leur code-barres avec le téléphone, sans saisir la référence.",
+    "it": "Ogni anomalia si apre direttamente dal punto di lavoro, con categoria, responsabile e data, e conserva autore, evidenza fotografica, intervento e data di chiusura insieme alle registrazioni di controllo dello stesso turno. L'asset o il lotto si identificano leggendo il loro codice a barre con il telefono, senza digitare il riferimento.",
+    "de": "Jede Störung wird direkt am Arbeitsplatz angelegt – mit Kategorie, Verantwortlichem und Datum – und behält Autor, Fotonachweis, Maßnahme und Abschlussdatum zusammen mit den Kontrollnachweisen derselben Schicht. Anlage oder Charge werden durch Lesen ihres Barcodes mit dem Telefon identifiziert, ohne die Referenz einzutippen.",
+    "pt": "Cada ocorrência é aberta no próprio posto de trabalho, com a sua categoria, o seu responsável e a sua data, e conserva autor, evidência fotográfica, ação tomada e data de encerramento junto dos registos de controlo do mesmo turno. O ativo ou o lote são identificados lendo o seu código de barras com o telemóvel, sem introduzir a referência."
+  },
+  "Asignación y cierre con responsable y plazo": {
+    "en": "Assignment and closure with an owner and a deadline",
+    "fr": "Affectation et clôture avec responsable et échéance",
+    "it": "Assegnazione e chiusura con responsabile e scadenza",
+    "de": "Zuweisung und Abschluss mit Verantwortlichem und Frist",
+    "pt": "Atribuição e encerramento com responsável e prazo"
+  },
+  "La notificación se emite sin que nadie tenga que distribuir el trabajo entre turnos. De cada incidencia sale una acción con responsable y fecha de cierre, y el vencimiento queda visible sin necesidad de reclamarlo.": {
+    "en": "The notification goes out without anyone having to hand work around between shifts. Each incident produces an action with an owner and a closing date, and the due date stays visible without having to chase it.",
+    "fr": "La notification part sans que personne ait à répartir le travail entre les postes. Chaque incident donne lieu à une action avec responsable et date de clôture, et l'échéance reste visible sans avoir à la réclamer.",
+    "it": "La notifica parte senza che nessuno debba distribuire il lavoro tra i turni. Da ogni anomalia nasce un'azione con responsabile e data di chiusura, e la scadenza resta visibile senza doverla sollecitare.",
+    "de": "Die Benachrichtigung geht heraus, ohne dass jemand die Arbeit zwischen den Schichten verteilen muss. Aus jeder Störung entsteht eine Maßnahme mit Verantwortlichem und Abschlussdatum, und die Frist bleibt sichtbar, ohne dass man ihr hinterhertelefoniert.",
+    "pt": "A notificação é emitida sem que ninguém tenha de distribuir o trabalho entre turnos. De cada ocorrência resulta uma ação com responsável e data de encerramento, e o prazo permanece visível sem necessidade de o reclamar."
+  },
+  "Análisis de reincidencia": {
+    "en": "Recurrence analysis",
+    "fr": "Analyse de récurrence",
+    "it": "Analisi della ricorrenza",
+    "de": "Wiederholungsanalyse",
+    "pt": "Análise de reincidência"
+  },
+  "Averías, activos y sincronización": {
+    "en": "Breakdowns, assets and synchronisation",
+    "fr": "Pannes, équipements et synchronisation",
+    "it": "Guasti, macchine e sincronizzazione",
+    "de": "Störungen, Anlagen und Synchronisation",
+    "pt": "Avarias, ativos e sincronização"
+  },
+  "Capacidades del módulo de incidencias": {
+    "en": "Capabilities of the incident module",
+    "fr": "Fonctions du module Incidents",
+    "it": "Funzioni del modulo Anomalie",
+    "de": "Funktionen des Störungsmoduls",
+    "pt": "Capacidades do módulo de ocorrências"
+  }
+}

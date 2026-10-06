@@ -1,0 +1,200 @@
+{
+  "_nota": "Las dos pantallas nuevas de las capacidades de /auditorias/ (9 de septiembre de 2026): el registro rellenándose con un control de cada tipo, y la planificación del modelo que acaba en el calendario. Los rótulos de la aplicación —«todo OK», «todo N/A», «Publicar», «Borrador», «Fecha de inicio», «Guardar planificación», «Completado»— se traducen como nombres de función, no como copy, y tienen que decirse igual aquí y en cualquier otra pantalla que los use. La frase de la zona de soltar es literal del producto. El nombre del fichero (IMG-4021.jpg), el peso (1,2 MB), la temperatura (3,4 °C) y el sello de la firma no se traducen más que en su separador decimal, que en inglés es el punto. Los dos alt de foto describen la escena, no nombran a nadie: la regla de assets/planta/FUENTES.md. Añadido el mismo día el menú de descarga de un registro cerrado: los cinco rótulos son literales del `more_vert` de /checklist/preview/<id>, así que se traducen como nombres de función. El nombre del fichero lleva dentro el nombre del registro, que sí se traduce —es el mismo modelo que ya sale en el histórico—; el identificador 26_158 y la extensión no.",
+  "Un control de cada tipo, y la fórmula que lo resuelve en OK o KO": {
+    "en": "One check of each type, and the formula that settles it as OK or KO",
+    "fr": "Un contrôle de chaque type, et la formule qui le tranche en OK ou KO",
+    "it": "Un controllo per ogni tipo, e la formula che lo risolve in OK o KO",
+    "de": "Je eine Kontrolle pro Typ, und die Formel, die sie mit OK oder KO entscheidet",
+    "pt": "Um controlo de cada tipo, e a fórmula que o resolve em OK ou KO"
+  },
+  "todo OK": {
+    "en": "all OK",
+    "fr": "tout OK",
+    "it": "tutto OK",
+    "de": "alles OK",
+    "pt": "tudo OK"
+  },
+  "todo N/A": {
+    "en": "all N/A",
+    "fr": "tout N/A",
+    "it": "tutto N/D",
+    "de": "alles N/V",
+    "pt": "tudo N/A"
+  },
+  "Temperatura de la cámara 1": {
+    "en": "Cold room 1 temperature",
+    "fr": "Température de la chambre froide 1",
+    "it": "Temperatura della cella 1",
+    "de": "Temperatur Kühlraum 1",
+    "pt": "Temperatura da câmara 1"
+  },
+  "3,4 °C": {
+    "en": "3.4 °C",
+    "fr": "3,4 °C",
+    "it": "3,4 °C",
+    "de": "3,4 °C",
+    "pt": "3,4 °C"
+  },
+  "La fórmula la resuelve: entre 0 y 4 °C": {
+    "en": "The formula settles it: between 0 and 4 °C",
+    "fr": "La formule la tranche : entre 0 et 4 °C",
+    "it": "La formula la risolve: tra 0 e 4 °C",
+    "de": "Die Formel entscheidet sie: zwischen 0 und 4 °C",
+    "pt": "A fórmula resolve-a: entre 0 e 4 °C"
+  },
+  "Completado": {
+    "en": "Completed",
+    "fr": "Terminé",
+    "it": "Completato",
+    "de": "Abgeschlossen",
+    "pt": "Concluído"
+  },
+  "Estado de la junta de la puerta": {
+    "en": "Door seal condition",
+    "fr": "État du joint de porte",
+    "it": "Stato della guarnizione della porta",
+    "de": "Zustand der Türdichtung",
+    "pt": "Estado do vedante da porta"
+  },
+  "Observaciones": {
+    "en": "Notes",
+    "fr": "Observations",
+    "it": "Osservazioni",
+    "de": "Anmerkungen",
+    "pt": "Observações"
+  },
+  "Junta con hielo en el lateral izquierdo.": {
+    "en": "Ice on the seal, left-hand side.",
+    "fr": "Givre sur le joint, côté gauche.",
+    "it": "Ghiaccio sulla guarnizione, lato sinistro.",
+    "de": "Eis an der Dichtung, linke Seite.",
+    "pt": "Vedante com gelo no lado esquerdo."
+  },
+  "Arrastra archivos o haz click aquí para subirlos": {
+    "en": "Drag files here or click to upload them",
+    "fr": "Glissez des fichiers ou cliquez ici pour les téléverser",
+    "it": "Trascina i file o fai clic qui per caricarli",
+    "de": "Dateien hierher ziehen oder zum Hochladen klicken",
+    "pt": "Arraste ficheiros ou clique aqui para os carregar"
+  },
+  "IMG-4021.jpg": "=",
+  "1,2 MB": {
+    "en": "1.2 MB",
+    "fr": "1,2 Mo",
+    "it": "1,2 MB",
+    "de": "1,2 MB",
+    "pt": "1,2 MB"
+  },
+  "Ana · 22/06/26, 09:14": {
+    "en": "Ana · 22/06/26, 09:14",
+    "fr": "Ana · 22/06/26, 09:14",
+    "it": "Ana · 22/06/26, 09:14",
+    "de": "Ana · 22.06.26, 09:14",
+    "pt": "Ana · 22/06/26, 09:14"
+  },
+  "La planificación del modelo, y el calendario que la recoge": {
+    "en": "The template's schedule, and the calendar that picks it up",
+    "fr": "La planification du modèle, et le calendrier qui la reprend",
+    "it": "La pianificazione del modello, e il calendario che la recepisce",
+    "de": "Die Planung der Vorlage, und der Kalender, der sie übernimmt",
+    "pt": "O planeamento do modelo, e o calendário que o recolhe"
+  },
+  "Borrador": {
+    "en": "Draft",
+    "fr": "Brouillon",
+    "it": "Bozza",
+    "de": "Entwurf",
+    "pt": "Rascunho"
+  },
+  "Publicar": {
+    "en": "Publish",
+    "fr": "Publier",
+    "it": "Pubblica",
+    "de": "Veröffentlichen",
+    "pt": "Publicar"
+  },
+  "— Programar generación automática de registros": {
+    "en": "— Schedule automatic record generation",
+    "fr": "— Planifier la génération automatique des enregistrements",
+    "it": "— Pianifica la generazione automatica delle registrazioni",
+    "de": "— Automatische Erzeugung von Aufzeichnungen planen",
+    "pt": "— Programar geração automática de registos"
+  },
+  "Fecha de inicio": {
+    "en": "Start date",
+    "fr": "Date de début",
+    "it": "Data di inizio",
+    "de": "Startdatum",
+    "pt": "Data de início"
+  },
+  "Guardar planificación": {
+    "en": "Save schedule",
+    "fr": "Enregistrer la planification",
+    "it": "Salva pianificazione",
+    "de": "Planung speichern",
+    "pt": "Guardar planeamento"
+  },
+  "Operario con tablet revisa material recibido en el almacén de una planta industrial": {
+    "en": "Operator with a tablet checking incoming goods in the warehouse of an industrial plant",
+    "fr": "Opérateur avec une tablette contrôlant la marchandise reçue dans l'entrepôt d'une usine",
+    "it": "Operatore con tablet che verifica il materiale ricevuto nel magazzino di uno stabilimento",
+    "de": "Werker mit Tablet prüft Wareneingang im Lager eines Industriewerks",
+    "pt": "Operador com tablet verifica o material recebido no armazém de uma fábrica industrial"
+  },
+  "Encargado de turno con tablet recorre el pasillo de almacén de una planta industrial": {
+    "en": "Shift supervisor with a tablet walking a warehouse aisle in an industrial plant",
+    "fr": "Chef de poste avec une tablette parcourant une allée d'entrepôt dans une usine",
+    "it": "Capoturno con tablet percorre un corridoio del magazzino di uno stabilimento",
+    "de": "Schichtleiter mit Tablet geht durch einen Lagergang in einem Industriewerk",
+    "pt": "Chefe de turno com tablet percorre o corredor do armazém de uma fábrica industrial"
+  },
+  "Cada registro cerrado, descargado en PDF, y el histórico en Excel": {
+    "en": "Every closed record downloaded as a PDF, and the history in Excel",
+    "fr": "Chaque enregistrement clôturé téléchargé en PDF, et l'historique en Excel",
+    "it": "Ogni registrazione chiusa scaricata in PDF, e lo storico in Excel",
+    "de": "Jede abgeschlossene Aufzeichnung als PDF, und die Historie in Excel",
+    "pt": "Cada registo encerrado, descarregado em PDF, e o histórico em Excel"
+  },
+  "Descargar PDF": {
+    "en": "Download PDF",
+    "fr": "Télécharger le PDF",
+    "it": "Scarica PDF",
+    "de": "PDF herunterladen",
+    "pt": "Descarregar PDF"
+  },
+  "Descargar PDF comprimido": {
+    "en": "Download compressed PDF",
+    "fr": "Télécharger le PDF compressé",
+    "it": "Scarica PDF compresso",
+    "de": "Komprimiertes PDF herunterladen",
+    "pt": "Descarregar PDF comprimido"
+  },
+  "Descargar solo resultados KO": {
+    "en": "Download KO results only",
+    "fr": "Télécharger uniquement les résultats KO",
+    "it": "Scarica solo i risultati KO",
+    "de": "Nur KO-Ergebnisse herunterladen",
+    "pt": "Descarregar apenas os resultados KO"
+  },
+  "Seleccionar secciones...": {
+    "en": "Select sections...",
+    "fr": "Sélectionner des sections...",
+    "it": "Seleziona sezioni...",
+    "de": "Abschnitte auswählen...",
+    "pt": "Selecionar secções..."
+  },
+  "Enviar resumen por correo": {
+    "en": "Email a summary",
+    "fr": "Envoyer le résumé par e-mail",
+    "it": "Invia il riepilogo per email",
+    "de": "Zusammenfassung per E-Mail senden",
+    "pt": "Enviar resumo por e-mail"
+  },
+  "26_158 Control de mantenimiento.pdf": {
+    "en": "26_158 Maintenance check.pdf",
+    "fr": "26_158 Contrôle de maintenance.pdf",
+    "it": "26_158 Controllo di manutenzione.pdf",
+    "de": "26_158 Instandhaltungskontrolle.pdf",
+    "pt": "26_158 Controlo de manutenção.pdf"
+  }
+}

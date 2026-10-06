@@ -1,0 +1,2375 @@
+{
+ "El software de gestión de operaciones industriales": {
+  "en": "The industrial operations management software",
+  "fr": "Le logiciel de gestion des opérations industrielles",
+  "it": "Il software di gestione delle operazioni industriali",
+  "de": "Die Software für das Management industrieller Betriebsabläufe",
+  "pt": "O software de gestão de operações industriais"
+ },
+ "que se adapta a tus procedimientos y conecta con tu ERP, MES o GMAO.": {
+  "en": "that adapts to your procedures and connects with your ERP, MES or CMMS.",
+  "fr": "qui s'adapte à vos procédures et se connecte à votre ERP, MES ou GMAO.",
+  "it": "che si adatta alle tue procedure e si collega al tuo ERP, MES o CMMS.",
+  "de": "die sich an Ihre Verfahren anpasst und sich mit Ihrem ERP-, MES- oder CMMS-System verbindet.",
+  "pt": "que se adapta aos seus procedimentos e liga-se ao seu ERP, MES ou GMAO."
+ },
+ "¿Cuántas veces ha fallado la selladora L7 este semestre?": {
+  "en": "How many times has the L7 sealer failed this half-year?",
+  "fr": "Combien de fois la thermosoudeuse L7 est-elle tombée en panne ce semestre ?",
+  "it": "Quante volte si è guastata la termosaldatrice L7 in questo semestre?",
+  "de": "Wie oft ist die Siegelmaschine L7 in diesem Halbjahr ausgefallen?",
+  "pt": "Quantas vezes falhou a seladora L7 este semestre?"
+ },
+ "en la selladora térmica L7 desde enero, y nueve son la misma fuga de aceite —": {
+  "en": "on the L7 thermal sealer since January, and nine are the same oil leak —",
+  "fr": "sur la thermosoudeuse L7 depuis janvier, et neuf correspondent à la même fuite d'huile —",
+  "it": "sulla termosaldatrice L7 da gennaio, e nove sono la stessa perdita d'olio —",
+  "de": "an der Thermosiegelmaschine L7 seit Januar, und neun davon sind das gleiche Ölleck —",
+  "pt": "na seladora térmica L7 desde janeiro, e nove são a mesma fuga de óleo —"
+ },
+ "Incidencias de la selladora L7 · enero a junio": {
+  "en": "L7 sealer incidents · January to June",
+  "fr": "Incidents de la thermosoudeuse L7 · janvier à juin",
+  "it": "Anomalie della termosaldatrice L7 · gennaio-giugno",
+  "de": "Störungen der Siegelmaschine L7 · Januar bis Juni",
+  "pt": "Ocorrências da seladora L7 · janeiro a junho"
+ },
+ "Fuga de aceite en la selladora térmica L7": {
+  "en": "Oil leak on the L7 thermal sealer",
+  "fr": "Fuite d'huile sur la thermosoudeuse L7",
+  "it": "Perdita d'olio nella termosaldatrice L7",
+  "de": "Ölleck an der Thermosiegelmaschine L7",
+  "pt": "Fuga de óleo na seladora térmica L7"
+ },
+ "· Marcos": {
+  "en": "· Marcos",
+  "fr": "· Marcos",
+  "it": "· Marcos",
+  "de": "· Marcos",
+  "pt": "· Marcos"
+ },
+ "Sustituir la junta de la selladora L7": {
+  "en": "Replace the L7 sealer gasket",
+  "fr": "Remplacer le joint de la thermosoudeuse L7",
+  "it": "Sostituire la guarnizione della termosaldatrice L7",
+  "de": "Dichtung der Siegelmaschine L7 ersetzen",
+  "pt": "Substituir a junta da seladora L7"
+ },
+ "Marcos": {
+  "en": "Marcos",
+  "fr": "Marcos",
+  "it": "Marcos",
+  "de": "Marcos",
+  "pt": "Marcos"
+ },
+ "Cambiar el rodamiento de la selladora": {
+  "en": "Replace the sealer's bearing",
+  "fr": "Remplacer le roulement de la thermosoudeuse",
+  "it": "Sostituire il cuscinetto della termosaldatrice",
+  "de": "Lager der Siegelmaschine austauschen",
+  "pt": "Substituir o rolamento da seladora"
+ },
+ "«Poder reportar una incidencia junto con la imagen ayuda mucho: antes acabábamos teniendo descripciones únicamente por texto.»": {
+  "en": "“Being able to report an incident together with the image helps a lot: before, we ended up with descriptions that were only text.”",
+  "fr": "« Pouvoir signaler un incident avec la photo aide beaucoup : avant, nous finissions par n'avoir que des descriptions textuelles. »",
+  "it": "«Poter segnalare un'anomalia insieme all'immagine aiuta molto: prima finivamo per avere descrizioni solo testuali.»",
+  "de": "„Eine Störung zusammen mit dem Bild melden zu können, hilft sehr: Vorher hatten wir am Ende nur Beschreibungen in reinem Text.“",
+  "pt": "«Poder reportar uma ocorrência juntamente com a imagem ajuda muito: antes acabávamos por ter descrições apenas em texto.»"
+ },
+ "«El objetivo es tener muy claros los KPI, los indicadores de los que queremos hacer seguimiento, y con ello hemos reducido bastante las preguntas que necesitamos.»": {
+  "en": "“The goal is to be very clear about the KPIs, the indicators we want to track, and with that we've significantly reduced the questions we need to ask.”",
+  "fr": "« L'objectif est d'avoir une vision très claire des KPI, des indicateurs que nous voulons suivre, et grâce à cela nous avons considérablement réduit les questions dont nous avons besoin. »",
+  "it": "«L'obiettivo è avere molto chiari i KPI, gli indicatori che vogliamo monitorare, e con questo abbiamo ridotto notevolmente le domande di cui abbiamo bisogno.»",
+  "de": "„Das Ziel ist, bei den KPIs, den Kennzahlen, die wir verfolgen wollen, völlige Klarheit zu haben, und damit haben wir die Fragen, die wir benötigen, erheblich reduziert.“",
+  "pt": "«O objetivo é ter muito claros os KPI, os indicadores que queremos acompanhar, e com isso reduzimos bastante as perguntas de que precisamos.»"
+ },
+ "«Queríamos mantener la compatibilidad con nuestras bases de datos anteriores, así que desde el primer momento trasladamos los campos específicos que necesitábamos, y en la siguiente reunión ya teníamos una versión para probar.»": {
+  "en": "“We wanted to maintain compatibility with our previous databases, so from the very first moment we carried over the specific fields we needed, and by the next meeting we already had a version to test.”",
+  "fr": "« Nous voulions maintenir la compatibilité avec nos bases de données précédentes, donc dès le premier instant nous avons transposé les champs spécifiques dont nous avions besoin, et à la réunion suivante nous avions déjà une version à tester. »",
+  "it": "«Volevamo mantenere la compatibilità con i nostri database precedenti, quindi fin dal primo momento abbiamo trasferito i campi specifici di cui avevamo bisogno, e all'incontro successivo avevamo già una versione da testare.»",
+  "de": "„Wir wollten die Kompatibilität mit unseren früheren Datenbanken beibehalten. Deshalb haben wir von Anfang an die spezifischen Felder übertragen, die wir brauchten, und beim nächsten Treffen hatten wir bereits eine Version zum Testen.“",
+  "pt": "«Queríamos manter a compatibilidade com as nossas bases de dados anteriores, por isso, desde o primeiro momento, transferimos os campos específicos de que precisávamos, e na reunião seguinte já tínhamos uma versão para testar.»"
+ },
+ "Con la confianza de más de 100 empresas industriales": {
+  "en": "Trusted by more than 100 industrial companies",
+  "fr": "La confiance de plus de 100 entreprises industrielles",
+  "it": "La fiducia di oltre 100 aziende industriali",
+  "de": "Das Vertrauen von mehr als 100 Industrieunternehmen",
+  "pt": "A confiança de mais de 100 empresas industriais"
+ },
+ "De la industria cárnica a la panificación y la iluminación, los equipos de calidad y mantenimiento registran, resuelven y demuestran resultados con Solved.": {
+  "en": "From the meat industry to bakery and lighting, quality and maintenance teams record, resolve and demonstrate results with Solved.",
+  "fr": "De l'industrie de la viande à la boulangerie et à l'éclairage, les équipes qualité et maintenance enregistrent, résolvent et démontrent leurs résultats avec Solved.",
+  "it": "Dall'industria della carne alla panificazione e all'illuminazione, i team di qualità e manutenzione registrano, risolvono e dimostrano i risultati con Solved.",
+  "de": "Von der Fleischindustrie über die Bäckerei bis hin zur Beleuchtungsbranche: Qualitäts- und Instandhaltungsteams erfassen, lösen und belegen Ergebnisse mit Solved.",
+  "pt": "Da indústria de carnes à panificação e à iluminação, as equipas de qualidade e manutenção registam, resolvem e demonstram resultados com a Solved."
+ },
+ "Ver todos los casos de éxito": {
+  "en": "View all success stories",
+  "fr": "Voir tous les cas de réussite",
+  "it": "Vedi tutti i casi di successo",
+  "de": "Alle Erfolgsgeschichten ansehen",
+  "pt": "Ver todos os casos de sucesso"
+ },
+ "2 horas": {
+  "en": "2 hours",
+  "fr": "2 heures",
+  "it": "2 ore",
+  "de": "2 Stunden",
+  "pt": "2 horas"
+ },
+ "ahorradas al día en registro manual": {
+  "en": "saved per day on manual record-keeping",
+  "fr": "économisées par jour sur la saisie manuelle",
+  "it": "risparmiate al giorno nella registrazione manuale",
+  "de": "täglich eingespart bei der manuellen Erfassung",
+  "pt": "poupadas por dia em registo manual"
+ },
+ "+40 años": {
+  "en": "+40 years",
+  "fr": "+40 ans",
+  "it": "+40 anni",
+  "de": "+40 Jahre",
+  "pt": "+40 anos"
+ },
+ "de la planta, hoy con Solved": {
+  "en": "of plant operation, now with Solved",
+  "fr": "de l'usine, aujourd'hui avec Solved",
+  "it": "dello stabilimento, oggi con Solved",
+  "de": "des Werks, heute mit Solved",
+  "pt": "da fábrica, hoje com a Solved"
+ },
+ "De 2 a 5": {
+  "en": "From 2 to 5",
+  "fr": "De 2 à 5",
+  "it": "Da 2 a 5",
+  "de": "Von 2 auf 5",
+  "pt": "De 2 para 5"
+ },
+ "plantas con el mismo sistema": {
+  "en": "plants on the same system",
+  "fr": "usines avec le même système",
+  "it": "stabilimenti con lo stesso sistema",
+  "de": "Werke mit demselben System",
+  "pt": "fábricas com o mesmo sistema"
+ },
+ "personas, desde las 200 iniciales": {
+  "en": "people, up from the initial 200",
+  "fr": "personnes, contre 200 au départ",
+  "it": "persone, rispetto alle 200 iniziali",
+  "de": "Mitarbeitende, gegenüber den anfänglichen 200",
+  "pt": "pessoas, face às 200 iniciais"
+ },
+ "«El mayor impacto ha sido poder utilizarlo en teléfonos móviles: es la forma con la que nos comunicamos también dentro de fábrica.»": {
+  "en": "“The biggest impact has been being able to use it on mobile phones: it's also how we communicate within the plant.”",
+  "fr": "« L'impact le plus important a été de pouvoir l'utiliser sur des téléphones portables : c'est aussi la façon dont nous communiquons au sein de l'usine. »",
+  "it": "«L'impatto maggiore è stato poterlo usare sugli smartphone: è anche il modo in cui comunichiamo all'interno dello stabilimento.»",
+  "de": "„Die größte Wirkung war, es auf Mobiltelefonen nutzen zu können: So kommunizieren wir auch innerhalb des Werks.“",
+  "pt": "«O maior impacto foi poder utilizá-lo em telemóveis: é também a forma como comunicamos dentro da fábrica.»"
+ },
+ "inspecciones de material al año": {
+  "en": "material inspections per year",
+  "fr": "inspections de matériel par an",
+  "it": "ispezioni di materiale all'anno",
+  "de": "Materialinspektionen pro Jahr",
+  "pt": "inspeções de material por ano"
+ },
+ "unidades de negocio, un solo sistema": {
+  "en": "business units, one single system",
+  "fr": "unités commerciales, un seul système",
+  "it": "unità di business, un solo sistema",
+  "de": "Geschäftseinheiten, ein einziges System",
+  "pt": "unidades de negócio, um único sistema"
+ },
+ "Anterior": {
+  "en": "Previous",
+  "fr": "Précédent",
+  "it": "Precedente",
+  "de": "Zurück",
+  "pt": "Anterior"
+ },
+ "Siguiente": {
+  "en": "Next",
+  "fr": "Suivant",
+  "it": "Successivo",
+  "de": "Weiter",
+  "pt": "Seguinte"
+ },
+ "Estado de la embotelladora L6": {
+  "en": "L6 bottling machine status",
+  "fr": "État de l'embouteilleuse L6",
+  "it": "Stato dell'imbottigliatrice L6",
+  "de": "Status der Abfüllanlage L6",
+  "pt": "Estado da engarrafadora L6"
+ },
+ "Tapón mal cerrado en la embotelladora": {
+  "en": "Cap not properly closed on the bottling machine",
+  "fr": "Bouchon mal fermé sur l'embouteilleuse",
+  "it": "Tappo chiuso male sull'imbottigliatrice",
+  "de": "Verschluss an der Abfüllanlage nicht richtig geschlossen",
+  "pt": "Tampa mal fechada na engarrafadora"
+ },
+ "Embotelladora L6": {
+  "en": "L6 bottling machine",
+  "fr": "Embouteilleuse L6",
+  "it": "Imbottigliatrice L6",
+  "de": "Abfüllanlage L6",
+  "pt": "Engarrafadora L6"
+ },
+ "Acción asignada a Rubén · cierre 28/06": {
+  "en": "Action assigned to Rubén · due 28/06",
+  "fr": "Action assignée à Rubén · clôture le 28/06",
+  "it": "Azione assegnata a Rubén · chiusura 28/06",
+  "de": "Maßnahme zugewiesen an Rubén · Abschluss 28.06",
+  "pt": "Ação atribuída a Rubén · encerramento 28/06"
+ },
+ "Buenos días, Teresa": {
+  "en": "Good morning, Teresa",
+  "fr": "Bonjour, Teresa",
+  "it": "Buongiorno, Teresa",
+  "de": "Guten Morgen, Teresa",
+  "pt": "Bom dia, Teresa"
+ },
+ "UTD26_211_001 · Luminaria fundida en la zona de envasado": {
+  "en": "UTD26_211_001 · Burnt-out light fixture in the packaging area",
+  "fr": "UTD26_211_001 · Luminaire grillé dans la zone de conditionnement",
+  "it": "UTD26_211_001 · Lampada fulminata nella zona di imballaggio",
+  "de": "UTD26_211_001 · Defekte Leuchte im Verpackungsbereich",
+  "pt": "UTD26_211_001 · Luminária fundida na zona de embalamento"
+ },
+ "UTD26_212_001 · Líquido extraño en máquina de envasado": {
+  "en": "UTD26_212_001 · Foreign liquid on the packaging machine",
+  "fr": "UTD26_212_001 · Liquide étranger sur la machine de conditionnement",
+  "it": "UTD26_212_001 · Liquido estraneo sulla macchina di imballaggio",
+  "de": "UTD26_212_001 · Fremdflüssigkeit an der Verpackungsmaschine",
+  "pt": "UTD26_212_001 · Líquido estranho na máquina de embalamento"
+ },
+ "Ajustar el cierre del tapón en la embotelladora": {
+  "en": "Adjust the cap closure on the bottling machine",
+  "fr": "Régler la fermeture du bouchon sur l'embouteilleuse",
+  "it": "Regolare la chiusura del tappo sull'imbottigliatrice",
+  "de": "Verschluss des Deckels an der Abfüllanlage einstellen",
+  "pt": "Ajustar o fecho da tampa na engarrafadora"
+ },
+ "Rubén Castillo": {
+  "en": "Rubén Castillo",
+  "fr": "Rubén Castillo",
+  "it": "Rubén Castillo",
+  "de": "Rubén Castillo",
+  "pt": "Rubén Castillo"
+ },
+ "Incidencia: UTD26_174_001": {
+  "en": "Incident: UTD26_174_001",
+  "fr": "Incident : UTD26_174_001",
+  "it": "Anomalia: UTD26_174_001",
+  "de": "Störung: UTD26_174_001",
+  "pt": "Ocorrência: UTD26_174_001"
+ },
+ "El tapón sale mal cerrado en el cabezal 3, no es el sensor. He parado la L6.": {
+  "en": "The cap comes out poorly closed on head 3, it's not the sensor. I've stopped the L6.",
+  "fr": "Le bouchon sort mal fermé sur la tête 3, ce n'est pas le capteur. J'ai arrêté la L6.",
+  "it": "Il tappo esce chiuso male sulla testata 3, non è il sensore. Ho fermato la L6.",
+  "de": "Der Verschluss kommt am Kopf 3 schlecht geschlossen heraus, es liegt nicht am Sensor. Ich habe die L6 gestoppt.",
+  "pt": "A tampa sai mal fechada na cabeça 3, não é o sensor. Parei a L6."
+ },
+ "Ningún lote afectado: el control de la embotelladora salió OK a las 06:00.": {
+  "en": "No batch affected: the bottling machine check came out OK at 06:00.",
+  "fr": "Aucun lot affecté : le contrôle de l'embouteilleuse est sorti OK à 06h00.",
+  "it": "Nessun lotto interessato: il controllo dell'imbottigliatrice è risultato OK alle 06:00.",
+  "de": "Keine Charge betroffen: Die Kontrolle der Abfüllanlage ergab um 06:00 Uhr OK.",
+  "pt": "Nenhum lote afetado: o controlo da engarrafadora saiu OK às 06:00."
+ },
+ "Cabezal reajustado y tapones verificados. Dejo la foto del ajuste.": {
+  "en": "Head readjusted and caps verified. Attaching the adjustment photo.",
+  "fr": "Tête réajustée et bouchons vérifiés. Je joins la photo du réglage.",
+  "it": "Testata riregolata e tappi verificati. Lascio la foto della regolazione.",
+  "de": "Kopf nachjustiert und Verschlüsse geprüft. Ich hänge das Foto der Einstellung an.",
+  "pt": "Cabeça reajustada e tampas verificadas. Deixo a foto do ajuste."
+ },
+ "ajuste-cabezal.jpg": {
+  "en": "ajuste-cabezal.jpg",
+  "fr": "ajuste-cabezal.jpg",
+  "it": "ajuste-cabezal.jpg",
+  "de": "ajuste-cabezal.jpg",
+  "pt": "ajuste-cabezal.jpg"
+ },
+ "Teresa": {
+  "en": "Teresa",
+  "fr": "Teresa",
+  "it": "Teresa",
+  "de": "Teresa",
+  "pt": "Teresa"
+ },
+ "Adjunta también el parte del ajuste del cabezal.": {
+  "en": "Also attach the report of the head adjustment.",
+  "fr": "Joignez aussi le rapport du réglage de la tête.",
+  "it": "Allega anche il rapporto della regolazione della testata.",
+  "de": "Fügen Sie auch die Meldung zur Kopfeinstellung bei.",
+  "pt": "Anexe também o parte do ajuste da cabeça."
+ },
+ "Incidencia: UTD26_174_001 · Tapón mal cerrado en la embotelladora": {
+  "en": "Incident: UTD26_174_001 · Cap not properly closed on the bottling machine",
+  "fr": "Incident : UTD26_174_001 · Bouchon mal fermé sur l'embouteilleuse",
+  "it": "Anomalia: UTD26_174_001 · Tappo chiuso male sull'imbottigliatrice",
+  "de": "Störung: UTD26_174_001 · Verschluss an der Abfüllanlage nicht richtig geschlossen",
+  "pt": "Ocorrência: UTD26_174_001 · Tampa mal fechada na engarrafadora"
+ },
+ "Cabezal de cierre del tapón desalineado": {
+  "en": "Cap-closing head misaligned",
+  "fr": "Tête de fermeture du bouchon désalignée",
+  "it": "Testata di chiusura del tappo disallineata",
+  "de": "Verschlusskopf des Deckels falsch ausgerichtet",
+  "pt": "Cabeça de fecho da tampa desalinhada"
+ },
+ "El cabezal de cierre no entra en la ronda de mantenimiento": {
+  "en": "The closing head is not included in the maintenance round",
+  "fr": "La tête de fermeture n'est pas incluse dans la tournée de maintenance",
+  "it": "La testata di chiusura non è inclusa nel giro di manutenzione",
+  "de": "Der Verschlusskopf ist nicht in der Instandhaltungsrunde enthalten",
+  "pt": "A cabeça de fecho não entra na ronda de manutenção"
+ },
+ "Muelle del cabezal fuera de vida útil": {
+  "en": "Head spring past its service life",
+  "fr": "Ressort de la tête hors durée de vie utile",
+  "it": "Molla della testata fuori vita utile",
+  "de": "Feder des Kopfs über der Nutzungsdauer hinaus",
+  "pt": "Mola da cabeça fora da vida útil"
+ },
+ "El par de apriete del tapón no deja registro": {
+  "en": "The cap's tightening torque leaves no record",
+  "fr": "Le couple de serrage du bouchon ne laisse pas d'enregistrement",
+  "it": "La coppia di serraggio del tappo non lascia registrazione",
+  "de": "Das Anzugsdrehmoment des Verschlusses hinterlässt keine Aufzeichnung",
+  "pt": "O torque de aperto da tampa não deixa registo"
+ },
+ "Revisión · Control del cabezal de cierre": {
+  "en": "Review · Closing head check",
+  "fr": "Révision · Contrôle de la tête de fermeture",
+  "it": "Revisione · Controllo della testata di chiusura",
+  "de": "Überprüfung · Kontrolle des Verschlusskopfs",
+  "pt": "Revisão · Controlo da cabeça de fecho"
+ },
+ "«Las incidencias eran un absoluto caos: nos llegaban por WhatsApp, por correo, o ibas por el pasillo y te asaltaban con una incidencia.»": {
+  "en": "“Incidents were absolute chaos: they reached us via WhatsApp, by email, or you'd be walking down the hallway and someone would ambush you with an incident.”",
+  "fr": "« Les incidents étaient un chaos absolu : ils nous arrivaient par WhatsApp, par e-mail, ou bien vous traversiez le couloir et on vous assaillait avec un incident. »",
+  "it": "«Le anomalie erano un caos totale: ci arrivavano via WhatsApp, per e-mail, oppure camminavi nel corridoio e ti assalivano con un'anomalia.»",
+  "de": "„Störungen waren ein absolutes Chaos: Sie erreichten uns per WhatsApp, per E-Mail, oder man ging den Flur entlang und wurde mit einer Störung überfallen.“",
+  "pt": "«As ocorrências eram um caos absoluto: chegavam-nos por WhatsApp, por correio eletrónico, ou então ia-se pelo corredor e alguém surgia com uma ocorrência.»"
+ },
+ "«Nuestras mayores ineficiencias son todo lo que tenemos manualizado, es decir, papel y boli: primero es pérdida de tiempo y segundo puede llevar a equívocos.»": {
+  "en": "“Our biggest inefficiencies are everything we still do manually, that is, paper and pen: first, it's a waste of time, and second, it can lead to mistakes.”",
+  "fr": "« Nos plus grandes inefficacités concernent tout ce que nous faisons encore manuellement, c'est-à-dire papier et stylo : d'abord, c'est une perte de temps, et ensuite, cela peut entraîner des erreurs. »",
+  "it": "«Le nostre maggiori inefficienze riguardano tutto ciò che gestiamo manualmente, cioè carta e penna: in primo luogo è una perdita di tempo e in secondo luogo può portare a errori.»",
+  "de": "„Unsere größten Ineffizienzen betreffen alles, was wir noch manuell erledigen, also Papier und Stift: Erstens ist das Zeitverschwendung, und zweitens kann es zu Fehlern führen.“",
+  "pt": "«As nossas maiores ineficiências são tudo o que temos manualizado, ou seja, papel e caneta: primeiro, é perda de tempo, e segundo, pode levar a equívocos.»"
+ },
+ "Etiqueta ilegible en la etiquetadora L3": {
+  "en": "Illegible label on the L3 labeler",
+  "fr": "Étiquette illisible sur l'étiqueteuse L3",
+  "it": "Etichetta illeggibile sull'etichettatrice L3",
+  "de": "Unleserliches Etikett am Etikettierer L3",
+  "pt": "Etiqueta ilegível na rotuladora L3"
+ },
+ "Organiza las tareas de tu equipo": {
+  "en": "Organize your team's tasks",
+  "fr": "Organisez les tâches de votre équipe",
+  "it": "Organizza le attività del tuo team",
+  "de": "Organisieren Sie die Aufgaben Ihres Teams",
+  "pt": "Organize as tarefas da sua equipa"
+ },
+ "y visualiza en tiempo real su estado.": {
+  "en": "and view their status in real time.",
+  "fr": "et visualisez leur statut en temps réel.",
+  "it": "e visualizza il loro stato in tempo reale.",
+  "de": "und verfolgen Sie deren Status in Echtzeit.",
+  "pt": "e visualize o seu estado em tempo real."
+ },
+ "Asigna la tarea, repártela por equipo y haz el seguimiento en tiempo real": {
+  "en": "Assign the task, distribute it across the team and track it in real time",
+  "fr": "Assignez la tâche, répartissez-la par équipe et suivez-la en temps réel",
+  "it": "Assegna l'attività, distribuiscila tra il team e monitorala in tempo reale",
+  "de": "Weisen Sie die Aufgabe zu, verteilen Sie sie im Team und verfolgen Sie sie in Echtzeit",
+  "pt": "Atribua a tarefa, distribua-a pela equipa e acompanhe-a em tempo real"
+ },
+ "Asigna la tarea con responsable, plazo y aviso automático": {
+  "en": "Assign the task with an owner, due date and automatic alert",
+  "fr": "Assignez la tâche avec un responsable, une échéance et une alerte automatique",
+  "it": "Assegna l'attività con responsabile, scadenza e avviso automatico",
+  "de": "Weisen Sie die Aufgabe mit Verantwortlichem, Frist und automatischer Benachrichtigung zu",
+  "pt": "Atribua a tarefa com responsável, prazo e alerta automático"
+ },
+ "Filtra el trabajo por departamento o por responsable": {
+  "en": "Filter work by department or by owner",
+  "fr": "Filtrez le travail par service ou par responsable",
+  "it": "Filtra il lavoro per reparto o per responsabile",
+  "de": "Filtern Sie die Arbeit nach Abteilung oder Verantwortlichem",
+  "pt": "Filtre o trabalho por departamento ou por responsável"
+ },
+ "Cada equipo ve lo que tiene abierto y lo que vence, filtrado por departamento o por persona, sin reclamarlo de un departamento a otro ni pedir el parte.": {
+  "en": "Each team sees what it has open and what's due, filtered by department or by person, without chasing it between departments or asking for the report.",
+  "fr": "Chaque équipe voit ce qu'elle a en cours et ce qui arrive à échéance, filtré par service ou par personne, sans avoir à le réclamer d'un service à l'autre ni à demander le rapport.",
+  "it": "Ogni team vede ciò che ha in corso e ciò che scade, filtrato per reparto o per persona, senza doverlo rivendicare da un reparto all'altro né chiedere il rapporto.",
+  "de": "Jedes Team sieht, was offen ist und was fällig wird, gefiltert nach Abteilung oder Person, ohne es von einer Abteilung zur anderen einfordern oder die Meldung anfragen zu müssen.",
+  "pt": "Cada equipa vê o que tem em aberto e o que está a vencer, filtrado por departamento ou por pessoa, sem ter de o reclamar de um departamento para outro nem pedir o parte."
+ },
+ "Comparte tareas con proveedores y clientes": {
+  "en": "Share tasks with suppliers and customers",
+  "fr": "Partagez des tâches avec les fournisseurs et les clients",
+  "it": "Condividi attività con fornitori e clienti",
+  "de": "Teilen Sie Aufgaben mit Lieferanten und Kunden",
+  "pt": "Partilhe tarefas com fornecedores e clientes"
+ },
+ "Revisa las tareas en la vista de calendario o Kanban": {
+  "en": "Review tasks in calendar or Kanban view",
+  "fr": "Consultez les tâches dans la vue calendrier ou Kanban",
+  "it": "Rivedi le attività nella vista calendario o Kanban",
+  "de": "Überprüfen Sie Aufgaben in der Kalender- oder Kanban-Ansicht",
+  "pt": "Reveja as tarefas na vista de calendário ou Kanban"
+ },
+ "La misma acción se ve en tabla, en calendario o en un tablero Kanban con sus columnas por estado, la vista que mejor se ajuste a cómo trabaja cada equipo.": {
+  "en": "The same action can be viewed as a table, on a calendar or on a Kanban board with its status columns — whichever view best fits how each team works.",
+  "fr": "La même action peut être consultée en tableau, en calendrier ou sur un tableau Kanban avec ses colonnes par statut, selon la vue qui convient le mieux à la façon de travailler de chaque équipe.",
+  "it": "La stessa azione si può vedere in tabella, in calendario o in una bacheca Kanban con le sue colonne per stato, la vista che meglio si adatta al modo di lavorare di ogni team.",
+  "de": "Dieselbe Maßnahme lässt sich als Tabelle, im Kalender oder auf einem Kanban-Board mit Statusspalten anzeigen – je nachdem, welche Ansicht am besten zur Arbeitsweise des jeweiligen Teams passt.",
+  "pt": "A mesma ação pode ser vista em tabela, em calendário ou num quadro Kanban com as suas colunas por estado, a vista que melhor se ajusta à forma como cada equipa trabalha."
+ },
+ "La acción nueva, con responsable y fecha de cierre": {
+  "en": "The new action, with an owner and closing date",
+  "fr": "La nouvelle action, avec un responsable et une date de clôture",
+  "it": "La nuova azione, con responsabile e data di chiusura",
+  "de": "Die neue Maßnahme, mit Verantwortlichem und Abschlussdatum",
+  "pt": "A nova ação, com responsável e data de encerramento"
+ },
+ "Recalibrar el formador de pallets de PAL-004": {
+  "en": "Recalibrate the pallet former PAL-004",
+  "fr": "Recalibrer le formeur de palettes PAL-004",
+  "it": "Ricalibrare il formatore di pallet PAL-004",
+  "de": "Palettenformer PAL-004 neu kalibrieren",
+  "pt": "Recalibrar o formador de paletes PAL-004"
+ },
+ "Diego Salas": {
+  "en": "Diego Salas",
+  "fr": "Diego Salas",
+  "it": "Diego Salas",
+  "de": "Diego Salas",
+  "pt": "Diego Salas"
+ },
+ "Laura Méndez": {
+  "en": "Laura Méndez",
+  "fr": "Laura Méndez",
+  "it": "Laura Méndez",
+  "de": "Laura Méndez",
+  "pt": "Laura Méndez"
+ },
+ "Elena Rosales": {
+  "en": "Elena Rosales",
+  "fr": "Elena Rosales",
+  "it": "Elena Rosales",
+  "de": "Elena Rosales",
+  "pt": "Elena Rosales"
+ },
+ "Carlos Duarte": {
+  "en": "Carlos Duarte",
+  "fr": "Carlos Duarte",
+  "it": "Carlos Duarte",
+  "de": "Carlos Duarte",
+  "pt": "Carlos Duarte"
+ },
+ "· Diego": {
+  "en": "· Diego",
+  "fr": "· Diego",
+  "it": "· Diego",
+  "de": "· Diego",
+  "pt": "· Diego"
+ },
+ "Diego": {
+  "en": "Diego",
+  "fr": "Diego",
+  "it": "Diego",
+  "de": "Diego",
+  "pt": "Diego"
+ },
+ "Laura": {
+  "en": "Laura",
+  "fr": "Laura",
+  "it": "Laura",
+  "de": "Laura",
+  "pt": "Laura"
+ },
+ "Elena": {
+  "en": "Elena",
+  "fr": "Elena",
+  "it": "Elena",
+  "de": "Elena",
+  "pt": "Elena"
+ },
+ "Ajustar el brazo elevador de la paletizadora": {
+  "en": "Adjust the palletizer's lifting arm",
+  "fr": "Régler le bras élévateur de la palettiseuse",
+  "it": "Regolare il braccio elevatore della palettizzatrice",
+  "de": "Hubarm des Palettierers einstellen",
+  "pt": "Ajustar o braço elevador da paletizadora"
+ },
+ "Envases Roca": {
+  "en": "Envases Roca",
+  "fr": "Envases Roca",
+  "it": "Envases Roca",
+  "de": "Envases Roca",
+  "pt": "Envases Roca"
+ },
+ "Distribuciones Prado": {
+  "en": "Distribuciones Prado",
+  "fr": "Distribuciones Prado",
+  "it": "Distribuciones Prado",
+  "de": "Distribuciones Prado",
+  "pt": "Distribuciones Prado"
+ },
+ "Compartido": {
+  "en": "Shared",
+  "fr": "Partagé",
+  "it": "Condiviso",
+  "de": "Geteilt",
+  "pt": "Partilhado"
+ },
+ "El Kanban de acciones, con columnas por estado: Abierto, En Revisión y Cerrado": {
+  "en": "The actions Kanban, with status columns: Open, In Review and Closed",
+  "fr": "Le Kanban des actions, avec des colonnes par statut : Ouvert, En révision et Clôturé",
+  "it": "Il Kanban delle azioni, con colonne per stato: Aperto, In revisione e Chiuso",
+  "de": "Das Maßnahmen-Kanban mit Statusspalten: Offen, In Prüfung und Abgeschlossen",
+  "pt": "O Kanban de ações, com colunas por estado: Aberto, Em Revisão e Encerrado"
+ },
+ "Junio de 2026": {
+  "en": "June 2026",
+  "fr": "Juin 2026",
+  "it": "Giugno 2026",
+  "de": "Juni 2026",
+  "pt": "Junho de 2026"
+ },
+ "Total": {
+  "en": "Total",
+  "fr": "Total",
+  "it": "Totale",
+  "de": "Gesamt",
+  "pt": "Total"
+ },
+ "Fecha límite ▾": {
+  "en": "Due date ▾",
+  "fr": "Date limite ▾",
+  "it": "Scadenza ▾",
+  "de": "Fälligkeitsdatum ▾",
+  "pt": "Data limite ▾"
+ },
+ "Reponer la señalética de seguridad": {
+  "en": "Replace the safety signage",
+  "fr": "Remplacer la signalétique de sécurité",
+  "it": "Ripristinare la segnaletica di sicurezza",
+  "de": "Sicherheitsbeschilderung erneuern",
+  "pt": "Repor a sinalética de segurança"
+ },
+ "Calibrar la báscula de recepción": {
+  "en": "Calibrate the receiving scale",
+  "fr": "Étalonner la bascule de réception",
+  "it": "Calibrare la bilancia di ricezione",
+  "de": "Waage im Wareneingang kalibrieren",
+  "pt": "Calibrar a balança de receção"
+ },
+ "Limpiar el filtro del compresor": {
+  "en": "Clean the compressor filter",
+  "fr": "Nettoyer le filtre du compresseur",
+  "it": "Pulire il filtro del compressore",
+  "de": "Kompressorfilter reinigen",
+  "pt": "Limpar o filtro do compressor"
+ },
+ "Ajustar el sensor de temperatura": {
+  "en": "Adjust the temperature sensor",
+  "fr": "Régler le capteur de température",
+  "it": "Regolare il sensore di temperatura",
+  "de": "Temperatursensor einstellen",
+  "pt": "Ajustar o sensor de temperatura"
+ },
+ "Reparar la puerta de la cámara": {
+  "en": "Repair the cold room door",
+  "fr": "Réparer la porte de la chambre froide",
+  "it": "Riparare la porta della cella frigorifera",
+  "de": "Tür der Kühlkammer reparieren",
+  "pt": "Reparar a porta da câmara"
+ },
+ "Palet dañado en recepción": {
+  "en": "Damaged pallet at receiving",
+  "fr": "Palette endommagée à la réception",
+  "it": "Pallet danneggiato in accettazione",
+  "de": "Beschädigte Palette im Wareneingang",
+  "pt": "Palete danificada na receção"
+ },
+ "Etiquetado sin lote visible": {
+  "en": "Labeling without visible batch",
+  "fr": "Étiquetage sans lot visible",
+  "it": "Etichettatura senza lotto visibile",
+  "de": "Etikettierung ohne sichtbare Charge",
+  "pt": "Rotulagem sem lote visível"
+ },
+ "Sustituir el detector de metales": {
+  "en": "Replace the metal detector",
+  "fr": "Remplacer le détecteur de métaux",
+  "it": "Sostituire il rilevatore di metalli",
+  "de": "Metalldetektor austauschen",
+  "pt": "Substituir o detetor de metais"
+ },
+ "Revisar el sellado de la envasadora": {
+  "en": "Check the sealing on the packaging machine",
+  "fr": "Vérifier le scellage de la machine d'emballage",
+  "it": "Controllare la sigillatura della macchina confezionatrice",
+  "de": "Siegelung der Verpackungsmaschine prüfen",
+  "pt": "Verificar a selagem da máquina de embalagem"
+ },
+ "Reetiquetar el lote 2406": {
+  "en": "Relabel batch 2406",
+  "fr": "Réétiqueter le lot 2406",
+  "it": "Rietichettare il lotto 2406",
+  "de": "Charge 2406 neu etikettieren",
+  "pt": "Reetiquetar o lote 2406"
+ },
+ "Reciclar la formación de higiene": {
+  "en": "Refresh the hygiene training",
+  "fr": "Recycler la formation à l'hygiène",
+  "it": "Rinnovare la formazione sull'igiene",
+  "de": "Hygieneschulung auffrischen",
+  "pt": "Renovar a formação de higiene"
+ },
+ "Reponer los EPIs del almacén": {
+  "en": "Restock PPE in the warehouse",
+  "fr": "Réapprovisionner les EPI de l'entrepôt",
+  "it": "Rifornire i DPI del magazzino",
+  "de": "PSA im Lager auffüllen",
+  "pt": "Reabastecer os EPI do armazém"
+ },
+ "Revisar el plan de mantenimiento": {
+  "en": "Review the maintenance plan",
+  "fr": "Revoir le plan de maintenance",
+  "it": "Rivedere il piano di manutenzione",
+  "de": "Instandhaltungsplan überprüfen",
+  "pt": "Rever o plano de manutenção"
+ },
+ "«Tenerlo separado en tareas muy concretas permite un seguimiento más concreto que en una incidencia más genérica: es la mejor forma de estar seguro de que se han terminado todas.»": {
+  "en": "“Keeping it separated into very specific tasks allows for more concrete tracking than with a more generic incident: it's the best way to make sure they've all been completed.”",
+  "fr": "« Le séparer en tâches très précises permet un suivi plus concret qu'avec un incident plus générique : c'est la meilleure façon de s'assurer qu'elles ont toutes été terminées. »",
+  "it": "«Tenerlo separato in compiti molto specifici permette un monitoraggio più concreto rispetto a un'anomalia più generica: è il modo migliore per essere sicuri che siano state completate tutte.»",
+  "de": "„Es in sehr konkrete Aufgaben aufzuteilen ermöglicht eine konkretere Nachverfolgung als bei einer allgemeineren Störung: Das ist der beste Weg, um sicherzustellen, dass alle abgeschlossen wurden.“",
+  "pt": "«Separá-lo em tarefas muito concretas permite um acompanhamento mais concreto do que numa ocorrência mais genérica: é a melhor forma de garantir que todas foram concluídas.»"
+ },
+ "Capacidades del módulo de acciones": {
+  "en": "Corrective actions module capabilities",
+  "fr": "Fonctionnalités du module d'actions",
+  "it": "Funzionalità del modulo azioni",
+  "de": "Funktionen des Maßnahmenmoduls",
+  "pt": "Funcionalidades do módulo de ações"
+ },
+ "Organiza tus activos por áreas y etiquetas": {
+  "en": "Organize your assets by areas and tags",
+  "fr": "Organisez vos actifs par zones et étiquettes",
+  "it": "Organizza i tuoi asset per aree ed etichette",
+  "de": "Organisieren Sie Ihre Anlagen nach Bereichen und Tags",
+  "pt": "Organize os seus ativos por áreas e etiquetas"
+ },
+ "Instalaciones": {
+  "en": "Facilities",
+  "fr": "Installations",
+  "it": "Impianti",
+  "de": "Einrichtungen",
+  "pt": "Instalações"
+ },
+ "Equipos de medición": {
+  "en": "Measuring equipment",
+  "fr": "Équipements de mesure",
+  "it": "Strumenti di misura",
+  "de": "Messgeräte",
+  "pt": "Equipamentos de medição"
+ },
+ "Buscar activos": {
+  "en": "Search assets",
+  "fr": "Rechercher des actifs",
+  "it": "Cerca asset",
+  "de": "Anlagen suchen",
+  "pt": "Procurar ativos"
+ },
+ "HOR-002 · Horno de cocción": {
+  "en": "HOR-002 · Baking oven",
+  "fr": "HOR-002 · Four de cuisson",
+  "it": "HOR-002 · Forno di cottura",
+  "de": "HOR-002 · Backofen",
+  "pt": "HOR-002 · Forno de cozedura"
+ },
+ "Proceso · Línea 1": {
+  "en": "Process · Line 1",
+  "fr": "Processus · Ligne 1",
+  "it": "Processo · Linea 1",
+  "de": "Prozess · Linie 1",
+  "pt": "Processo · Linha 1"
+ },
+ "MEZ-001 · Mezcladora industrial": {
+  "en": "MEZ-001 · Industrial mixer",
+  "fr": "MEZ-001 · Mélangeur industriel",
+  "it": "MEZ-001 · Mescolatore industriale",
+  "de": "MEZ-001 · Industriemischer",
+  "pt": "MEZ-001 · Misturadora industrial"
+ },
+ "Proceso · Línea 2": {
+  "en": "Process · Line 2",
+  "fr": "Processus · Ligne 2",
+  "it": "Processo · Linea 2",
+  "de": "Prozess · Linie 2",
+  "pt": "Processo · Linha 2"
+ },
+ "Envasado · Línea 3": {
+  "en": "Packaging · Line 3",
+  "fr": "Emballage · Ligne 3",
+  "it": "Confezionamento · Linea 3",
+  "de": "Verpackung · Linie 3",
+  "pt": "Embalagem · Linha 3"
+ },
+ "Código leído · TRA-003": {
+  "en": "Code scanned · TRA-003",
+  "fr": "Code lu · TRA-003",
+  "it": "Codice letto · TRA-003",
+  "de": "Code gelesen · TRA-003",
+  "pt": "Código lido · TRA-003"
+ },
+ "Incidencias relacionadas": {
+  "en": "Related incidents",
+  "fr": "Incidents liés",
+  "it": "Anomalie correlate",
+  "de": "Zugehörige Störungen",
+  "pt": "Ocorrências relacionadas"
+ },
+ "Planifica tus registros y avisos para cada máquina": {
+  "en": "Plan your records and alerts for each machine",
+  "fr": "Planifiez vos enregistrements et alertes pour chaque machine",
+  "it": "Pianifica le tue registrazioni e avvisi per ogni macchina",
+  "de": "Planen Sie Ihre Aufzeichnungen und Benachrichtigungen für jede Maschine",
+  "pt": "Planeie os seus registos e alertas para cada máquina"
+ },
+ "Control de mantenimiento · Cinta transportadora L3": {
+  "en": "Maintenance check · Conveyor belt L3",
+  "fr": "Contrôle de maintenance · Convoyeur L3",
+  "it": "Controllo di manutenzione · Nastro trasportatore L3",
+  "de": "Instandhaltungskontrolle · Förderband L3",
+  "pt": "Controlo de manutenção · Tapete transportador L3"
+ },
+ "24/06/2026 · 08:15 · Mari Mar": {
+  "en": "24/06/2026 · 08:15 · Mari Mar",
+  "fr": "24/06/2026 · 08:15 · Mari Mar",
+  "it": "24/06/2026 · 08:15 · Mari Mar",
+  "de": "24.06.2026 · 08:15 · Mari Mar",
+  "pt": "24/06/2026 · 08:15 · Mari Mar"
+ },
+ "Tensión de la cinta": {
+  "en": "Belt tension",
+  "fr": "Tension de la courroie",
+  "it": "Tensione del nastro",
+  "de": "Bandspannung",
+  "pt": "Tensão da correia"
+ },
+ "Nivel de lubricante": {
+  "en": "Lubricant level",
+  "fr": "Niveau de lubrifiant",
+  "it": "Livello di lubrificante",
+  "de": "Schmierstoffstand",
+  "pt": "Nível de lubrificante"
+ },
+ "Rodamientos sin ruido": {
+  "en": "Bearings noise-free",
+  "fr": "Roulements sans bruit",
+  "it": "Cuscinetti senza rumore",
+  "de": "Lager geräuschfrei",
+  "pt": "Rolamentos sem ruído"
+ },
+ "Alineación de rodillos": {
+  "en": "Roller alignment",
+  "fr": "Alignement des rouleaux",
+  "it": "Allineamento dei rulli",
+  "de": "Rollenausrichtung",
+  "pt": "Alinhamento dos rolos"
+ },
+ "Firmado por Mari Mar · 24/06/2026 08:15": {
+  "en": "Signed by Mari Mar · 24/06/2026 08:15",
+  "fr": "Signé par Mari Mar · 24/06/2026 08:15",
+  "it": "Firmato da Mari Mar · 24/06/2026 08:15",
+  "de": "Unterschrieben von Mari Mar · 24.06.2026 08:15",
+  "pt": "Assinado por Mari Mar · 24/06/2026 08:15"
+ },
+ "Iván Cortés": {
+  "en": "Iván Cortés",
+  "fr": "Iván Cortés",
+  "it": "Iván Cortés",
+  "de": "Iván Cortés",
+  "pt": "Iván Cortés"
+ },
+ "Andrés Puig": {
+  "en": "Andrés Puig",
+  "fr": "Andrés Puig",
+  "it": "Andrés Puig",
+  "de": "Andrés Puig",
+  "pt": "Andrés Puig"
+ },
+ "Marina Vidal": {
+  "en": "Marina Vidal",
+  "fr": "Marina Vidal",
+  "it": "Marina Vidal",
+  "de": "Marina Vidal",
+  "pt": "Marina Vidal"
+ },
+ "No, y conviene decirlo claro: Solved no lleva stock de repuestos, ni costes, ni horas de mano de obra. Lleva el detalle operativo del equipo: quién avisó, qué registro lo detectó, qué acción quedó abierta y cuándo se cerró. Si ya tienes un GMAO, Solved se integra con él; si no lo tienes, el histórico del equipo lo construye Solved con el trabajo que la planta ya hace. Detalle en": {
+  "en": "No, and it's worth being clear about it: Solved doesn't track spare parts stock, costs, or labor hours. It tracks the operational detail of the equipment: who reported it, which record detected it, what action was left open, and when it was closed. If you already have a CMMS, Solved integrates with it; if you don't, Solved builds the equipment's history from the work the plant is already doing. Details in",
+  "fr": "Non, et il convient de le dire clairement : Solved ne gère pas le stock de pièces détachées, ni les coûts, ni les heures de main-d'œuvre. Il gère le détail opérationnel de l'équipement : qui a signalé, quel enregistrement l'a détecté, quelle action est restée ouverte et quand elle a été clôturée. Si vous avez déjà une GMAO, Solved s'y intègre ; si vous n'en avez pas, Solved construit l'historique de l'équipement avec le travail que l'usine effectue déjà. Détails dans",
+  "it": "No, ed è bene dirlo chiaramente: Solved non gestisce lo stock di ricambi, né i costi, né le ore di manodopera. Gestisce il dettaglio operativo dell'asset: chi ha segnalato, quale registrazione l'ha rilevato, quale azione è rimasta aperta e quando è stata chiusa. Se hai già un CMMS, Solved si integra con esso; se non lo hai, Solved costruisce lo storico dell'asset con il lavoro che lo stabilimento già svolge. Dettagli in",
+  "de": "Nein, und das sollte man klar sagen: Solved verwaltet keinen Ersatzteilbestand, keine Kosten und keine Arbeitsstunden. Es erfasst die betrieblichen Details der Anlage: wer es gemeldet hat, welche Aufzeichnung es erkannt hat, welche Maßnahme offen blieb und wann sie abgeschlossen wurde. Wenn Sie bereits ein CMMS haben, lässt sich Solved damit integrieren; wenn nicht, baut Solved die Historie der Anlage mit der Arbeit auf, die im Werk bereits erledigt wird. Details unter",
+  "pt": "Não, e convém dizê-lo claramente: o Solved não controla stock de peças sobresselentes, nem custos, nem horas de mão de obra. Regista o detalhe operacional do ativo: quem avisou, que registo o detetou, que ação ficou aberta e quando foi encerrada. Se já tiver um GMAO, o Solved integra-se com ele; se não tiver, o histórico do ativo é construído pelo Solved com o trabalho que a fábrica já realiza. Detalhe em"
+ },
+ "GMAO y mantenimiento": {
+  "en": "CMMS and maintenance",
+  "fr": "GMAO et maintenance",
+  "it": "CMMS e manutenzione",
+  "de": "CMMS und Instandhaltung",
+  "pt": "GMAO e manutenção"
+ },
+ "Configura tus tableros conversando con la IA": {
+  "en": "Configure your dashboards by chatting with the AI",
+  "fr": "Configurez vos tableaux de bord en dialoguant avec l'IA",
+  "it": "Configura le tue dashboard conversando con l'IA",
+  "de": "Konfigurieren Sie Ihre Dashboards im Gespräch mit der KI",
+  "pt": "Configure os seus painéis conversando com a IA"
+ },
+ "Pide en el chat la información que buscas y déjala fijada en tu tablero, siempre al alcance y al día con cada registro.": {
+  "en": "Ask the chat for the information you're looking for and pin it to your dashboard, always within reach and up to date with every record.",
+  "fr": "Demandez dans le chat l'information que vous recherchez et épinglez-la sur votre tableau de bord, toujours à portée de main et à jour avec chaque enregistrement.",
+  "it": "Richiedi nella chat l'informazione che stai cercando e fissala sulla tua dashboard, sempre a portata di mano e aggiornata con ogni registrazione.",
+  "de": "Fragen Sie im Chat nach den gesuchten Informationen und heften Sie sie an Ihr Dashboard – jederzeit griffbereit und mit jeder Aufzeichnung aktuell.",
+  "pt": "Peça no chat a informação que procura e fixe-a no seu painel, sempre à mão e atualizada com cada registo."
+ },
+ "IA de Solved": {
+  "en": "Solved's AI",
+  "fr": "IA de Solved",
+  "it": "IA di Solved",
+  "de": "KI von Solved",
+  "pt": "IA da Solved"
+ },
+ "¿Cuántas incidencias de calidad hay abiertas por línea esta semana?": {
+  "en": "How many quality incidents are open by line this week?",
+  "fr": "Combien d'incidents qualité sont ouverts par ligne cette semaine ?",
+  "it": "Quante anomalie di qualità sono aperte per linea questa settimana?",
+  "de": "Wie viele Qualitätsstörungen sind diese Woche pro Linie offen?",
+  "pt": "Quantas ocorrências de qualidade estão abertas por linha esta semana?"
+ },
+ "La línea 2 concentra 6.": {
+  "en": "Line 2 accounts for 6.",
+  "fr": "La ligne 2 en concentre 6.",
+  "it": "La linea 2 ne concentra 6.",
+  "de": "Linie 2 vereint 6 davon.",
+  "pt": "A linha 2 concentra 6."
+ },
+ "14 abiertas.": {
+  "en": "14 open.",
+  "fr": "14 ouverts.",
+  "it": "14 aperte.",
+  "de": "14 offen.",
+  "pt": "14 abertas."
+ },
+ "Incidencias de calidad abiertas por línea": {
+  "en": "Open quality incidents by line",
+  "fr": "Incidents qualité ouverts par ligne",
+  "it": "Anomalie di qualità aperte per linea",
+  "de": "Offene Qualitätsstörungen pro Linie",
+  "pt": "Ocorrências de qualidade abertas por linha"
+ },
+ "Línea 1": {
+  "en": "Line 1",
+  "fr": "Ligne 1",
+  "it": "Linea 1",
+  "de": "Linie 1",
+  "pt": "Linha 1"
+ },
+ "Línea 2": {
+  "en": "Line 2",
+  "fr": "Ligne 2",
+  "it": "Linea 2",
+  "de": "Linie 2",
+  "pt": "Linha 2"
+ },
+ "Línea 3": {
+  "en": "Line 3",
+  "fr": "Ligne 3",
+  "it": "Linea 3",
+  "de": "Linie 3",
+  "pt": "Linha 3"
+ },
+ "Línea 4": {
+  "en": "Line 4",
+  "fr": "Ligne 4",
+  "it": "Linea 4",
+  "de": "Linie 4",
+  "pt": "Linha 4"
+ },
+ "Añadir al tablero": {
+  "en": "Add to dashboard",
+  "fr": "Ajouter au tableau de bord",
+  "it": "Aggiungi alla dashboard",
+  "de": "Zum Dashboard hinzufügen",
+  "pt": "Adicionar ao painel"
+ },
+ "Añadido al tablero": {
+  "en": "Added to dashboard",
+  "fr": "Ajouté au tableau de bord",
+  "it": "Aggiunto alla dashboard",
+  "de": "Zum Dashboard hinzugefügt",
+  "pt": "Adicionado ao painel"
+ },
+ "Tablero de calidad": {
+  "en": "Quality dashboard",
+  "fr": "Tableau de bord qualité",
+  "it": "Dashboard qualità",
+  "de": "Qualitäts-Dashboard",
+  "pt": "Painel de qualidade"
+ },
+ "Tiempo real": {
+  "en": "Real time",
+  "fr": "Temps réel",
+  "it": "Tempo reale",
+  "de": "Echtzeit",
+  "pt": "Tempo real"
+ },
+ "No conformidades abiertas": {
+  "en": "Open non-conformities",
+  "fr": "Non-conformités ouvertes",
+  "it": "Non conformità aperte",
+  "de": "Offene Abweichungen",
+  "pt": "Não conformidades abertas"
+ },
+ "▼ 3 sobre el mes anterior": {
+  "en": "▼ 3 vs. previous month",
+  "fr": "▼ 3 par rapport au mois précédent",
+  "it": "▼ 3 rispetto al mese precedente",
+  "de": "▼ 3 gegenüber dem Vormonat",
+  "pt": "▼ 3 em relação ao mês anterior"
+ },
+ "Cumplimiento de registros": {
+  "en": "Record compliance",
+  "fr": "Conformité des enregistrements",
+  "it": "Conformità delle registrazioni",
+  "de": "Erfüllung der Aufzeichnungen",
+  "pt": "Cumprimento de registos"
+ },
+ "▲ 2 puntos": {
+  "en": "▲ 2 points",
+  "fr": "▲ 2 points",
+  "it": "▲ 2 punti",
+  "de": "▲ 2 Punkte",
+  "pt": "▲ 2 pontos"
+ },
+ "Hueco libre": {
+  "en": "Empty slot",
+  "fr": "Emplacement libre",
+  "it": "Spazio libero",
+  "de": "Freier Platz",
+  "pt": "Espaço livre"
+ },
+ "Diseña tus cuadros de mandos a medida.": {
+  "en": "Design your custom dashboards.",
+  "fr": "Concevez vos tableaux de bord sur mesure.",
+  "it": "Progetta le tue dashboard su misura.",
+  "de": "Gestalten Sie Ihre Dashboards nach Maß.",
+  "pt": "Conceba os seus painéis personalizados."
+ },
+ "Prepara tus tableros para ver en tiempo real cada proceso o departamento.": {
+  "en": "Set up your dashboards to see every process or department in real time.",
+  "fr": "Préparez vos tableaux de bord pour visualiser en temps réel chaque processus ou département.",
+  "it": "Prepara le tue dashboard per vedere in tempo reale ogni processo o reparto.",
+  "de": "Richten Sie Ihre Dashboards ein, um jeden Prozess oder jede Abteilung in Echtzeit zu sehen.",
+  "pt": "Prepare os seus painéis para ver em tempo real cada processo ou departamento."
+ },
+ "Planta": {
+  "en": "Plant",
+  "fr": "Usine",
+  "it": "Stabilimento",
+  "de": "Werk",
+  "pt": "Fábrica"
+ },
+ "Visión de conjunto de la planta": {
+  "en": "Plant overview",
+  "fr": "Vue d'ensemble de l'usine",
+  "it": "Panoramica dello stabilimento",
+  "de": "Werküberblick",
+  "pt": "Visão geral da fábrica"
+ },
+ "Lo que el responsable revisa a primera hora: qué se ha abierto, qué está vencido y qué controles faltan por rellenar.": {
+  "en": "What the manager reviews first thing: what's been opened, what's overdue, and which checks are still missing.",
+  "fr": "Ce que le responsable vérifie en premier : ce qui a été ouvert, ce qui est en retard et quels contrôles restent à remplir.",
+  "it": "Ciò che il responsabile controlla per primo: cosa è stato aperto, cosa è scaduto e quali controlli restano da compilare.",
+  "de": "Was der Verantwortliche als Erstes prüft: was eröffnet wurde, was überfällig ist und welche Kontrollen noch ausgefüllt werden müssen.",
+  "pt": "O que o responsável revê em primeiro lugar: o que foi aberto, o que está vencido e que controlos faltam preencher."
+ },
+ "Filtro por planta, línea, turno y responsable.": {
+  "en": "Filter by plant, line, shift and owner.",
+  "fr": "Filtre par usine, ligne, poste et responsable.",
+  "it": "Filtro per stabilimento, linea, turno e responsabile.",
+  "de": "Filter nach Werk, Linie, Schicht und Verantwortlichem.",
+  "pt": "Filtro por fábrica, linha, turno e responsável."
+ },
+ "Cada tarjeta enlaza con las incidencias que la componen.": {
+  "en": "Each card links to the incidents that make it up.",
+  "fr": "Chaque carte renvoie aux incidents qui la composent.",
+  "it": "Ogni scheda si collega alle anomalie che la compongono.",
+  "de": "Jede Karte verlinkt zu den zugrunde liegenden Störungen.",
+  "pt": "Cada cartão liga às ocorrências que o compõem."
+ },
+ "Al día con cada registro, sin exportar.": {
+  "en": "Up to date with every record, no exporting required.",
+  "fr": "À jour avec chaque enregistrement, sans export.",
+  "it": "Aggiornato con ogni registrazione, senza esportare.",
+  "de": "Immer aktuell mit jeder Aufzeichnung, ohne Export.",
+  "pt": "Atualizado com cada registo, sem exportar."
+ },
+ "Tablero de planta": {
+  "en": "Plant dashboard",
+  "fr": "Tableau de bord de l'usine",
+  "it": "Dashboard dello stabilimento",
+  "de": "Werk-Dashboard",
+  "pt": "Painel da fábrica"
+ },
+ "Últimos 30 días": {
+  "en": "Last 30 days",
+  "fr": "30 derniers jours",
+  "it": "Ultimi 30 giorni",
+  "de": "Letzte 30 Tage",
+  "pt": "Últimos 30 dias"
+ },
+ "▼ 12 % sobre el mes anterior": {
+  "en": "▼ 12% vs. previous month",
+  "fr": "▼ 12 % par rapport au mois précédent",
+  "it": "▼ 12% rispetto al mese precedente",
+  "de": "▼ 12 % gegenüber dem Vormonat",
+  "pt": "▼ 12% em relação ao mês anterior"
+ },
+ "Registros pendientes hoy": {
+  "en": "Records pending today",
+  "fr": "Enregistrements en attente aujourd'hui",
+  "it": "Registrazioni in sospeso oggi",
+  "de": "Heute ausstehende Aufzeichnungen",
+  "pt": "Registos pendentes hoje"
+ },
+ "3 en el turno de tarde": {
+  "en": "3 in the afternoon shift",
+  "fr": "3 sur le poste de l'après-midi",
+  "it": "3 nel turno pomeridiano",
+  "de": "3 in der Nachmittagsschicht",
+  "pt": "3 no turno da tarde"
+ },
+ "Acciones vencidas": {
+  "en": "Overdue corrective actions",
+  "fr": "Actions correctives en retard",
+  "it": "Azioni correttive scadute",
+  "de": "Überfällige Korrekturmaßnahmen",
+  "pt": "Ações corretivas vencidas"
+ },
+ "▲ 1 esta semana": {
+  "en": "▲ 1 this week",
+  "fr": "▲ 1 cette semaine",
+  "it": "▲ 1 questa settimana",
+  "de": "▲ 1 diese Woche",
+  "pt": "▲ 1 esta semana"
+ },
+ "Cierre medio": {
+  "en": "Average closure time",
+  "fr": "Clôture moyenne",
+  "it": "Chiusura media",
+  "de": "Durchschnittlicher Abschluss",
+  "pt": "Encerramento médio"
+ },
+ "2,4 d": {
+  "en": "2.4 d",
+  "fr": "2,4 j",
+  "it": "2,4 g",
+  "de": "2,4 T",
+  "pt": "2,4 d"
+ },
+ "▼ 0,6 d sobre el mes anterior": {
+  "en": "▼ 0.6 d vs. previous month",
+  "fr": "▼ 0,6 j par rapport au mois précédent",
+  "it": "▼ 0,6 g rispetto al mese precedente",
+  "de": "▼ 0,6 T gegenüber dem Vormonat",
+  "pt": "▼ 0,6 d em relação ao mês anterior"
+ },
+ "Envasado": {
+  "en": "Packaging",
+  "fr": "Emballage",
+  "it": "Confezionamento",
+  "de": "Verpackung",
+  "pt": "Embalagem"
+ },
+ "Elaboración": {
+  "en": "Processing",
+  "fr": "Production",
+  "it": "Produzione",
+  "de": "Produktion",
+  "pt": "Produção"
+ },
+ "Expedición": {
+  "en": "Shipping",
+  "fr": "Expédition",
+  "it": "Spedizione",
+  "de": "Versand",
+  "pt": "Expedição"
+ },
+ "Actividad de los últimos 6 meses": {
+  "en": "Activity over the last 6 months",
+  "fr": "Activité des 6 derniers mois",
+  "it": "Attività degli ultimi 6 mesi",
+  "de": "Aktivität der letzten 6 Monate",
+  "pt": "Atividade dos últimos 6 meses"
+ },
+ "Cumplimiento y no conformidades": {
+  "en": "Compliance and non-conformities",
+  "fr": "Conformité et non-conformités",
+  "it": "Conformità e non conformità",
+  "de": "Einhaltung und Abweichungen",
+  "pt": "Cumprimento e não conformidades"
+ },
+ "Qué controles han salido KO, de dónde vienen las no conformidades y si la misma causa se repite tras cerrarse.": {
+  "en": "Which checks failed (KO), where the non-conformities come from, and whether the same cause recurs after closure.",
+  "fr": "Quels contrôles ont échoué (KO), d'où viennent les non-conformités et si la même cause se répète après clôture.",
+  "it": "Quali controlli sono risultati KO, da dove provengono le non conformità e se la stessa causa si ripete dopo la chiusura.",
+  "de": "Welche Kontrollen als KO eingestuft wurden, woher die Abweichungen stammen und ob sich dieselbe Ursache nach dem Abschluss wiederholt.",
+  "pt": "Que controlos resultaram em KO, de onde vêm as não conformidades e se a mesma causa se repete após o encerramento."
+ },
+ "Controles KO por turno, línea y punto de control.": {
+  "en": "KO checks by shift, line and control point.",
+  "fr": "Contrôles KO par poste, ligne et point de contrôle.",
+  "it": "Controlli KO per turno, linea e punto di controllo.",
+  "de": "KO-Kontrollen nach Schicht, Linie und Kontrollpunkt.",
+  "pt": "Controlos KO por turno, linha e ponto de controlo."
+ },
+ "No conformidades por causa, con su plazo de cierre.": {
+  "en": "Non-conformities by cause, with their closure due date.",
+  "fr": "Non-conformités par cause, avec leur échéance de clôture.",
+  "it": "Non conformità per causa, con la relativa scadenza di chiusura.",
+  "de": "Abweichungen nach Ursache, mit ihrer Abschlussfrist.",
+  "pt": "Não conformidades por causa, com o respetivo prazo de encerramento."
+ },
+ "Reincidencia calculada sobre el histórico.": {
+  "en": "Recurrence calculated from the history.",
+  "fr": "Récurrence calculée sur l'historique.",
+  "it": "Ricorrenza calcolata sullo storico.",
+  "de": "Wiederholungsrate, berechnet auf Basis der Historie.",
+  "pt": "Reincidência calculada com base no histórico."
+ },
+ "Controles KO hoy": {
+  "en": "KO checks today",
+  "fr": "Contrôles KO aujourd'hui",
+  "it": "Controlli KO oggi",
+  "de": "KO-Kontrollen heute",
+  "pt": "Controlos KO hoje"
+ },
+ "1 sin acción asignada": {
+  "en": "1 with no action assigned",
+  "fr": "1 sans action assignée",
+  "it": "1 senza azione assegnata",
+  "de": "1 ohne zugewiesene Maßnahme",
+  "pt": "1 sem ação atribuída"
+ },
+ "Reincidencia": {
+  "en": "Recurrence",
+  "fr": "Récurrence",
+  "it": "Ricorrenza",
+  "de": "Wiederholungsrate",
+  "pt": "Reincidência"
+ },
+ "▼ 1 punto": {
+  "en": "▼ 1 point",
+  "fr": "▼ 1 point",
+  "it": "▼ 1 punto",
+  "de": "▼ 1 Punkt",
+  "pt": "▼ 1 ponto"
+ },
+ "No conformidades por causa": {
+  "en": "Non-conformities by cause",
+  "fr": "Non-conformités par cause",
+  "it": "Non conformità per causa",
+  "de": "Abweichungen nach Ursache",
+  "pt": "Não conformidades por causa"
+ },
+ "Proceso": {
+  "en": "Process",
+  "fr": "Processus",
+  "it": "Processo",
+  "de": "Prozess",
+  "pt": "Processo"
+ },
+ "Etiquetado": {
+  "en": "Labeling",
+  "fr": "Étiquetage",
+  "it": "Etichettatura",
+  "de": "Kennzeichnung",
+  "pt": "Rotulagem"
+ },
+ "Limpieza": {
+  "en": "Cleaning",
+  "fr": "Nettoyage",
+  "it": "Pulizia",
+  "de": "Reinigung",
+  "pt": "Limpeza"
+ },
+ "Reincidencia · últimas 6 semanas": {
+  "en": "Recurrence · last 6 weeks",
+  "fr": "Récidive · 6 dernières semaines",
+  "it": "Ricorrenza · ultime 6 settimane",
+  "de": "Wiederholung · letzte 6 Wochen",
+  "pt": "Recorrência · últimas 6 semanas"
+ },
+ "S1": {
+  "en": "S1",
+  "fr": "S1",
+  "it": "S1",
+  "de": "S1",
+  "pt": "S1"
+ },
+ "S2": {
+  "en": "S2",
+  "fr": "S2",
+  "it": "S2",
+  "de": "S2",
+  "pt": "S2"
+ },
+ "S3": {
+  "en": "S3",
+  "fr": "S3",
+  "it": "S3",
+  "de": "S3",
+  "pt": "S3"
+ },
+ "S4": {
+  "en": "S4",
+  "fr": "S4",
+  "it": "S4",
+  "de": "S4",
+  "pt": "S4"
+ },
+ "S5": {
+  "en": "S5",
+  "fr": "S5",
+  "it": "S5",
+  "de": "S5",
+  "pt": "S5"
+ },
+ "S6": {
+  "en": "S6",
+  "fr": "S6",
+  "it": "S6",
+  "de": "S6",
+  "pt": "S6"
+ },
+ "Averías, preventivos y activos": {
+  "en": "Breakdowns, preventive maintenance and assets",
+  "fr": "Pannes, maintenance préventive et actifs",
+  "it": "Guasti, manutenzione preventiva e asset",
+  "de": "Störungen, vorbeugende Instandhaltung und Anlagen",
+  "pt": "Avarias, manutenção preventiva e ativos"
+ },
+ "El estado de los avisos y de los planes preventivos, y qué activos concentran las paradas.": {
+  "en": "The status of alerts and preventive maintenance plans, and which assets account for most downtime.",
+  "fr": "L'état des alertes et des plans préventifs, et quels actifs concentrent les arrêts.",
+  "it": "Lo stato degli avvisi e dei piani preventivi, e quali asset concentrano i fermi.",
+  "de": "Der Status der Benachrichtigungen und der vorbeugenden Pläne sowie die Anlagen, auf die sich die Stillstände konzentrieren.",
+  "pt": "O estado dos alertas e dos planos preventivos, e quais ativos concentram as paragens."
+ },
+ "Avisos por activo, prioridad y responsable.": {
+  "en": "Alerts by asset, priority and owner.",
+  "fr": "Alertes par actif, priorité et responsable.",
+  "it": "Avvisi per asset, priorità e responsabile.",
+  "de": "Benachrichtigungen nach Anlage, Priorität und Verantwortlichem.",
+  "pt": "Alertas por ativo, prioridade e responsável."
+ },
+ "Preventivos cumplidos frente a planificados.": {
+  "en": "Preventive maintenance completed versus planned.",
+  "fr": "Maintenance préventive réalisée par rapport à planifiée.",
+  "it": "Manutenzioni preventive eseguite rispetto a pianificate.",
+  "de": "Durchgeführte vorbeugende Instandhaltung im Vergleich zur geplanten.",
+  "pt": "Manutenções preventivas concluídas face às planeadas."
+ },
+ "Tiempo medio de reparación por tipo de avería.": {
+  "en": "Average repair time by breakdown type.",
+  "fr": "Temps moyen de réparation par type de panne.",
+  "it": "Tempo medio di riparazione per tipo di guasto.",
+  "de": "Durchschnittliche Reparaturzeit nach Störungsart.",
+  "pt": "Tempo médio de reparação por tipo de avaria."
+ },
+ "Tablero de mantenimiento": {
+  "en": "Maintenance dashboard",
+  "fr": "Tableau de bord maintenance",
+  "it": "Cruscotto di manutenzione",
+  "de": "Instandhaltungs-Dashboard",
+  "pt": "Painel de manutenção"
+ },
+ "Avisos abiertos": {
+  "en": "Open alerts",
+  "fr": "Alertes ouvertes",
+  "it": "Avvisi aperti",
+  "de": "Offene Benachrichtigungen",
+  "pt": "Alertas abertos"
+ },
+ "5 de prioridad alta": {
+  "en": "5 high priority",
+  "fr": "5 de priorité haute",
+  "it": "5 ad alta priorità",
+  "de": "5 mit hoher Priorität",
+  "pt": "5 de prioridade alta"
+ },
+ "Tiempo medio de reparación": {
+  "en": "Average repair time",
+  "fr": "Temps moyen de réparation",
+  "it": "Tempo medio di riparazione",
+  "de": "Durchschnittliche Reparaturzeit",
+  "pt": "Tempo médio de reparação"
+ },
+ "3,1 h": {
+  "en": "3.1 h",
+  "fr": "3,1 h",
+  "it": "3,1 h",
+  "de": "3,1 h",
+  "pt": "3,1 h"
+ },
+ "▼ 0,8 h sobre el mes anterior": {
+  "en": "▼ 0.8 h vs. previous month",
+  "fr": "▼ 0,8 h par rapport au mois précédent",
+  "it": "▼ 0,8 h rispetto al mese precedente",
+  "de": "▼ 0,8 h gegenüber dem Vormonat",
+  "pt": "▼ 0,8 h em relação ao mês anterior"
+ },
+ "Preventivos cumplidos": {
+  "en": "Preventive maintenance completed",
+  "fr": "Maintenance préventive réalisée",
+  "it": "Manutenzioni preventive eseguite",
+  "de": "Durchgeführte vorbeugende Instandhaltung",
+  "pt": "Manutenções preventivas concluídas"
+ },
+ "▲ 4 puntos": {
+  "en": "▲ 4 points",
+  "fr": "▲ 4 points",
+  "it": "▲ 4 punti",
+  "de": "▲ 4 Punkte",
+  "pt": "▲ 4 pontos"
+ },
+ "Activos parados": {
+  "en": "Stopped assets",
+  "fr": "Actifs arrêtés",
+  "it": "Asset fermi",
+  "de": "Stillstehende Anlagen",
+  "pt": "Ativos parados"
+ },
+ "Envasadora 2 · Horno 1": {
+  "en": "Packer 2 · Oven 1",
+  "fr": "Conditionneuse 2 · Four 1",
+  "it": "Confezionatrice 2 · Forno 1",
+  "de": "Verpackungsmaschine 2 · Ofen 1",
+  "pt": "Envasadora 2 · Forno 1"
+ },
+ "Avisos por activo": {
+  "en": "Alerts by asset",
+  "fr": "Alertes par actif",
+  "it": "Avvisi per asset",
+  "de": "Benachrichtigungen nach Anlage",
+  "pt": "Alertas por ativo"
+ },
+ "Envasadora 2": {
+  "en": "Packer 2",
+  "fr": "Conditionneuse 2",
+  "it": "Confezionatrice 2",
+  "de": "Verpackungsmaschine 2",
+  "pt": "Envasadora 2"
+ },
+ "Horno 1": {
+  "en": "Oven 1",
+  "fr": "Four 1",
+  "it": "Forno 1",
+  "de": "Ofen 1",
+  "pt": "Forno 1"
+ },
+ "Cinta 4": {
+  "en": "Conveyor 4",
+  "fr": "Convoyeur 4",
+  "it": "Nastro 4",
+  "de": "Förderband 4",
+  "pt": "Tapete 4"
+ },
+ "Compresor": {
+  "en": "Compressor",
+  "fr": "Compresseur",
+  "it": "Compressore",
+  "de": "Kompressor",
+  "pt": "Compressor"
+ },
+ "Correctivo y preventivo por mes": {
+  "en": "Corrective and preventive maintenance by month",
+  "fr": "Maintenance corrective et préventive par mois",
+  "it": "Manutenzione correttiva e preventiva per mese",
+  "de": "Korrektiv- und Präventivinstandhaltung nach Monat",
+  "pt": "Manutenção corretiva e preventiva por mês"
+ },
+ "Correctivo": {
+  "en": "Corrective",
+  "fr": "Correctif",
+  "it": "Correttivo",
+  "de": "Korrektiv",
+  "pt": "Corretivo"
+ },
+ "Preventivo": {
+  "en": "Preventive",
+  "fr": "Préventif",
+  "it": "Preventivo",
+  "de": "Präventiv",
+  "pt": "Preventivo"
+ },
+ "Lo que ocurre en línea, turno a turno": {
+  "en": "What happens on the line, shift by shift",
+  "fr": "Ce qui se passe sur la ligne, poste par poste",
+  "it": "Cosa accade in linea, turno dopo turno",
+  "de": "Was auf der Linie passiert, Schicht für Schicht",
+  "pt": "O que acontece na linha, turno a turno"
+ },
+ "Paradas, desvíos de proceso y registros de línea, para ver en qué turno y por qué causa se pierde producción.": {
+  "en": "Stoppages, process deviations and line records, to see in which shift and for what reason production is lost.",
+  "fr": "Arrêts, écarts de processus et enregistrements de ligne, pour voir à quel poste et pour quelle cause la production est perdue.",
+  "it": "Fermi, deviazioni di processo e registrazioni di linea, per vedere in quale turno e per quale causa si perde produzione.",
+  "de": "Stillstände, Prozessabweichungen und Linienaufzeichnungen, um zu sehen, in welcher Schicht und aus welchem Grund Produktion verloren geht.",
+  "pt": "Paragens, desvios de processo e registos de linha, para ver em que turno e por que causa se perde produção."
+ },
+ "Paradas por causa y duración.": {
+  "en": "Stoppages by cause and duration.",
+  "fr": "Arrêts par cause et durée.",
+  "it": "Fermi per causa e durata.",
+  "de": "Stillstände nach Ursache und Dauer.",
+  "pt": "Paragens por causa e duração."
+ },
+ "Desvíos de proceso por lote y por producto.": {
+  "en": "Process deviations by batch and by product.",
+  "fr": "Écarts de processus par lot et par produit.",
+  "it": "Deviazioni di processo per lotto e per prodotto.",
+  "de": "Prozessabweichungen nach Charge und nach Produkt.",
+  "pt": "Desvios de processo por lote e por produto."
+ },
+ "Registros de línea completos por turno.": {
+  "en": "Complete line records by shift.",
+  "fr": "Enregistrements de ligne complets par poste.",
+  "it": "Registrazioni di linea complete per turno.",
+  "de": "Vollständige Linienaufzeichnungen nach Schicht.",
+  "pt": "Registos de linha completos por turno."
+ },
+ "Tablero de producción": {
+  "en": "Production dashboard",
+  "fr": "Tableau de bord production",
+  "it": "Cruscotto di produzione",
+  "de": "Produktions-Dashboard",
+  "pt": "Painel de produção"
+ },
+ "Lotes registrados hoy": {
+  "en": "Batches recorded today",
+  "fr": "Lots enregistrés aujourd'hui",
+  "it": "Lotti registrati oggi",
+  "de": "Heute erfasste Chargen",
+  "pt": "Lotes registados hoje"
+ },
+ "2 en curso": {
+  "en": "2 in progress",
+  "fr": "2 en cours",
+  "it": "2 in corso",
+  "de": "2 laufend",
+  "pt": "2 em curso"
+ },
+ "Paradas registradas": {
+  "en": "Stoppages recorded",
+  "fr": "Arrêts enregistrés",
+  "it": "Fermi registrati",
+  "de": "Erfasste Stillstände",
+  "pt": "Paragens registadas"
+ },
+ "42 min en total": {
+  "en": "42 min in total",
+  "fr": "42 min au total",
+  "it": "42 min in totale",
+  "de": "42 Min. insgesamt",
+  "pt": "42 min no total"
+ },
+ "Desvíos de proceso": {
+  "en": "Process deviations",
+  "fr": "Écarts de processus",
+  "it": "Deviazioni di processo",
+  "de": "Prozessabweichungen",
+  "pt": "Desvios de processo"
+ },
+ "▼ 2 sobre la semana anterior": {
+  "en": "▼ 2 vs. previous week",
+  "fr": "▼ 2 par rapport à la semaine précédente",
+  "it": "▼ 2 rispetto alla settimana precedente",
+  "de": "▼ 2 gegenüber der Vorwoche",
+  "pt": "▼ 2 em relação à semana anterior"
+ },
+ "Registros de línea completos": {
+  "en": "Complete line records",
+  "fr": "Enregistrements de ligne complets",
+  "it": "Registrazioni di linea complete",
+  "de": "Vollständige Linienaufzeichnungen",
+  "pt": "Registos de linha completos"
+ },
+ "▲ 3 puntos": {
+  "en": "▲ 3 points",
+  "fr": "▲ 3 points",
+  "it": "▲ 3 punti",
+  "de": "▲ 3 Punkte",
+  "pt": "▲ 3 pontos"
+ },
+ "Paradas por causa": {
+  "en": "Stoppages by cause",
+  "fr": "Arrêts par cause",
+  "it": "Fermi per causa",
+  "de": "Stillstände nach Ursache",
+  "pt": "Paragens por causa"
+ },
+ "Cambio de formato": {
+  "en": "Changeover",
+  "fr": "Changement de format",
+  "it": "Cambio formato",
+  "de": "Formatwechsel",
+  "pt": "Mudança de formato"
+ },
+ "Avería": {
+  "en": "Breakdown",
+  "fr": "Panne",
+  "it": "Guasto",
+  "de": "Störung",
+  "pt": "Avaria"
+ },
+ "Falta de material": {
+  "en": "Material shortage",
+  "fr": "Manque de matière",
+  "it": "Mancanza di materiale",
+  "de": "Materialmangel",
+  "pt": "Falta de material"
+ },
+ "Registros completos por turno · %": {
+  "en": "Complete records by shift · %",
+  "fr": "Enregistrements complets par poste · %",
+  "it": "Registrazioni complete per turno · %",
+  "de": "Vollständige Aufzeichnungen nach Schicht · %",
+  "pt": "Registos completos por turno · %"
+ },
+ "Noche": {
+  "en": "Night",
+  "fr": "Nuit",
+  "it": "Notte",
+  "de": "Nacht",
+  "pt": "Noite"
+ },
+ "«Lo utilizo como cuadro de mando: ver dónde estábamos, dónde estamos ahora y qué hemos cambiado. Y ver dónde tenemos que incidir más cuando algo se ha atascado.»": {
+  "en": "“I use it as a dashboard: to see where we were, where we are now and what we've changed. And to see where we need to focus more when something has gotten stuck.”",
+  "fr": "« Je l'utilise comme un tableau de bord : voir où nous étions, où nous en sommes maintenant et ce que nous avons changé. Et voir où nous devons insister davantage quand quelque chose s'est bloqué. »",
+  "it": "«Lo uso come cruscotto: per vedere dove eravamo, dove siamo ora e cosa abbiamo cambiato. E per vedere dove dobbiamo intervenire di più quando qualcosa si è bloccato.»",
+  "de": "„Ich nutze es als Cockpit: um zu sehen, wo wir waren, wo wir jetzt stehen und was wir verändert haben. Und um zu sehen, wo wir stärker ansetzen müssen, wenn etwas ins Stocken geraten ist.“",
+  "pt": "«Utilizo-o como um painel de controlo: para ver onde estávamos, onde estamos agora e o que mudámos. E para ver onde temos de intervir mais quando algo ficou bloqueado.»"
+ },
+ "Animación: un usuario pregunta cuántas incidencias de calidad hay abiertas por línea, la IA responde con un gráfico y, al pulsar «Añadir al tablero», el gráfico ocupa el hueco libre de un tablero.": {
+  "en": "Animation: a user asks how many quality incidents are open per line, the AI responds with a chart and, on clicking “Add to dashboard,” the chart fills the free space on a dashboard.",
+  "fr": "Animation : un utilisateur demande combien d'incidents qualité sont ouverts par ligne, l'IA répond avec un graphique et, en cliquant sur « Ajouter au tableau de bord », le graphique occupe l'espace libre d'un tableau de bord.",
+  "it": "Animazione: un utente chiede quante anomalie di qualità sono aperte per linea, l'IA risponde con un grafico e, cliccando su «Aggiungi al cruscotto», il grafico occupa lo spazio libero di un cruscotto.",
+  "de": "Animation: Ein Nutzer fragt, wie viele Qualitätsstörungen pro Linie offen sind, die KI antwortet mit einem Diagramm, und beim Klicken auf „Zum Dashboard hinzufügen“ belegt das Diagramm den freien Platz in einem Dashboard.",
+  "pt": "Animação: um utilizador pergunta quantas ocorrências de qualidade estão abertas por linha, a IA responde com um gráfico e, ao clicar em «Adicionar ao painel», o gráfico ocupa o espaço livre de um painel."
+ },
+ "Tableros de ejemplo por área": {
+  "en": "Example dashboards by area",
+  "fr": "Exemples de tableaux de bord par zone",
+  "it": "Esempi di cruscotti per area",
+  "de": "Beispiel-Dashboards nach Bereich",
+  "pt": "Painéis de exemplo por área"
+ },
+ "Incidencias abiertas por área: envasado 9, elaboración 6, almacén 4 y expedición 4.": {
+  "en": "Incidents open by area: packaging 9, production 6, warehouse 4 and shipping 4.",
+  "fr": "Incidents ouverts par zone : conditionnement 9, production 6, entrepôt 4 et expédition 4.",
+  "it": "Anomalie aperte per area: confezionamento 9, produzione 6, magazzino 4 e spedizione 4.",
+  "de": "Offene Störungen nach Bereich: Verpackung 9, Produktion 6, Lager 4 und Versand 4.",
+  "pt": "Ocorrências abertas por área: embalagem 9, produção 6, armazém 4 e expedição 4."
+ },
+ "Actividad de los últimos seis meses, repartida entre registros, acciones e incidencias.": {
+  "en": "Activity over the last six months, split between records, actions and incidents.",
+  "fr": "Activité des six derniers mois, répartie entre enregistrements, actions et incidents.",
+  "it": "Attività degli ultimi sei mesi, suddivisa tra registrazioni, azioni e anomalie.",
+  "de": "Aktivität der letzten sechs Monate, aufgeteilt auf Aufzeichnungen, Maßnahmen und Störungen.",
+  "pt": "Atividade dos últimos seis meses, repartida entre registos, ações e ocorrências."
+ },
+ "No conformidades abiertas por causa: proveedor 4, proceso 3, etiquetado 2 y limpieza 2.": {
+  "en": "Non-conformities open by cause: supplier 4, process 3, labeling 2 and cleaning 2.",
+  "fr": "Non-conformités ouvertes par cause : fournisseur 4, processus 3, étiquetage 2 et nettoyage 2.",
+  "it": "Non conformità aperte per causa: fornitore 4, processo 3, etichettatura 2 e pulizia 2.",
+  "de": "Offene Abweichungen nach Ursache: Lieferant 4, Prozess 3, Kennzeichnung 2 und Reinigung 2.",
+  "pt": "Não conformidades abertas por causa: fornecedor 4, processo 3, rotulagem 2 e limpeza 2."
+ },
+ "Reincidencia de las últimas seis semanas: baja de forma sostenida.": {
+  "en": "Recurrence over the last six weeks: steadily declining.",
+  "fr": "Récidive des six dernières semaines : en baisse constante.",
+  "it": "Ricorrenza delle ultime sei settimane: in calo costante.",
+  "de": "Wiederholung der letzten sechs Wochen: stetig rückläufig.",
+  "pt": "Recorrência das últimas seis semanas: em queda sustentada."
+ },
+ "Avisos abiertos por activo: envasadora 2, cinco; horno 1, tres; cinta 4, dos; compresor, dos.": {
+  "en": "Open alerts by asset: packer 2, five; oven 1, three; conveyor 4, two; compressor, two.",
+  "fr": "Alertes ouvertes par actif : conditionneuse 2, cinq ; four 1, trois ; convoyeur 4, deux ; compresseur, deux.",
+  "it": "Avvisi aperti per asset: confezionatrice 2, cinque; forno 1, tre; nastro 4, due; compressore, due.",
+  "de": "Offene Benachrichtigungen nach Anlage: Verpackungsmaschine 2, fünf; Ofen 1, drei; Förderband 4, zwei; Kompressor, zwei.",
+  "pt": "Alertas abertos por ativo: envasadora 2, cinco; forno 1, três; tapete 4, dois; compressor, dois."
+ },
+ "Avisos por mes, entre correctivos y preventivos.": {
+  "en": "Alerts by month, corrective and preventive.",
+  "fr": "Alertes par mois, entre correctifs et préventifs.",
+  "it": "Avvisi per mese, tra correttivi e preventivi.",
+  "de": "Benachrichtigungen pro Monat, korrektiv und präventiv.",
+  "pt": "Alertas por mês, entre corretivos e preventivos."
+ },
+ "Paradas por causa: cambio de formato 9, avería 6, falta de material 4 y limpieza 3.": {
+  "en": "Stoppages by cause: changeover 9, breakdown 6, material shortage 4 and cleaning 3.",
+  "fr": "Arrêts par cause : changement de format 9, panne 6, manque de matière 4 et nettoyage 3.",
+  "it": "Fermi per causa: cambio formato 9, guasto 6, mancanza di materiale 4 e pulizia 3.",
+  "de": "Stillstände nach Ursache: Formatwechsel 9, Störung 6, Materialmangel 4 und Reinigung 3.",
+  "pt": "Paragens por causa: mudança de formato 9, avaria 6, falta de material 4 e limpeza 3."
+ },
+ "Registros de línea completos por turno: mañana 98 por ciento, tarde 94 y noche 89.": {
+  "en": "Complete line records by shift: morning 98 percent, afternoon 94 and night 89.",
+  "fr": "Enregistrements de ligne complets par poste : matin 98 pour cent, après-midi 94 et nuit 89.",
+  "it": "Registrazioni di linea complete per turno: mattina 98 per cento, pomeriggio 94 e notte 89.",
+  "de": "Vollständige Linienaufzeichnungen nach Schicht: Morgen 98 Prozent, Nachmittag 94 und Nacht 89.",
+  "pt": "Registos de linha completos por turno: manhã 98 por cento, tarde 94 e noite 89."
+ },
+ "Funciones de IA integradas en Solved: crea incidencias desde un correo, importa checklists, genera informes y responde preguntas citando el registro de origen.": {
+  "en": "AI features built into Solved: create incidents from an email, import checklists, generate reports and answer questions citing the source record.",
+  "fr": "Fonctionnalités d'IA intégrées à Solved : créer des incidents à partir d'un e-mail, importer des checklists, générer des rapports et répondre aux questions en citant l'enregistrement source.",
+  "it": "Funzionalità di IA integrate in Solved: crea anomalie da un'e-mail, importa checklist, genera report e risponde alle domande citando la registrazione di origine.",
+  "de": "In Solved integrierte KI-Funktionen: Erstellt Störungen aus einer E-Mail, importiert Checklisten, erstellt Berichte und beantwortet Fragen unter Angabe der Quellaufzeichnung.",
+  "pt": "Funcionalidades de IA integradas no Solved: cria ocorrências a partir de um e-mail, importa checklists, gera relatórios e responde a perguntas citando o registo de origem."
+ },
+ "Multiplica la capacidad de": {
+  "en": "Multiply the capacity of",
+  "fr": "Multipliez la capacité de",
+  "it": "Moltiplica la capacità",
+  "de": "Vervielfachen Sie die Kapazität",
+  "pt": "Multiplique a capacidade"
+ },
+ "tus equipos industriales con funciones de IA.": {
+  "en": "your industrial teams with AI features.",
+  "fr": "vos équipes industrielles avec des fonctionnalités d'IA.",
+  "it": "dei tuoi team industriali con funzionalità di IA.",
+  "de": "Ihrer Industrieteams mit KI-Funktionen.",
+  "pt": "das suas equipas industriais com funcionalidades de IA."
+ },
+ "Funciones integradas en el producto,": {
+  "en": "Features built into the product,",
+  "fr": "Fonctionnalités intégrées au produit,",
+  "it": "Funzionalità integrate nel prodotto,",
+  "de": "In das Produkt integrierte Funktionen,",
+  "pt": "Funcionalidades integradas no produto,"
+ },
+ "Crear incidencia desde texto": {
+  "en": "Create incident from text",
+  "fr": "Créer un incident à partir d'un texte",
+  "it": "Crea anomalia da testo",
+  "de": "Störung aus Text erstellen",
+  "pt": "Criar ocorrência a partir de texto"
+ },
+ "Importación automática de checklists": {
+  "en": "Automatic checklist import",
+  "fr": "Importation automatique de checklists",
+  "it": "Importazione automatica di checklist",
+  "de": "Automatischer Checklisten-Import",
+  "pt": "Importação automática de checklists"
+ },
+ "Generación de informes con IA": {
+  "en": "AI-generated reports",
+  "fr": "Génération de rapports avec l'IA",
+  "it": "Generazione di report con IA",
+  "de": "Berichtserstellung mit KI",
+  "pt": "Geração de relatórios com IA"
+ },
+ "Pregunta a tus datos": {
+  "en": "Ask your data",
+  "fr": "Interrogez vos données",
+  "it": "Chiedi ai tuoi dati",
+  "de": "Fragen Sie Ihre Daten",
+  "pt": "Pergunte aos seus dados"
+ },
+ "Nueva incidencia": {
+  "en": "New incident",
+  "fr": "Nouvel incident",
+  "it": "Nuova anomalia",
+  "de": "Neue Störung",
+  "pt": "Nova ocorrência"
+ },
+ "Incidencia en el pedido Nº67/2026": {
+  "en": "Incident in order No.67/2026",
+  "fr": "Incident sur la commande N°67/2026",
+  "it": "Anomalia nell'ordine N.67/2026",
+  "de": "Störung bei Bestellung Nr.67/2026",
+  "pt": "Ocorrência na encomenda N.º67/2026"
+ },
+ "Solved AI · Analizando el correo…": {
+  "en": "Solved AI · Analyzing the email…",
+  "fr": "Solved AI · Analyse de l'e-mail en cours…",
+  "it": "Solved AI · Analisi dell'e-mail in corso…",
+  "de": "Solved AI · E-Mail wird analysiert…",
+  "pt": "Solved AI · A analisar o e-mail…"
+ },
+ "Centro:": {
+  "en": "Plant:",
+  "fr": "Usine :",
+  "it": "Stabilimento:",
+  "de": "Werk:",
+  "pt": "Fábrica:"
+ },
+ "Planta Alzira": {
+  "en": "Alzira Plant",
+  "fr": "Usine d'Alzira",
+  "it": "Stabilimento di Alzira",
+  "de": "Werk Alzira",
+  "pt": "Fábrica de Alzira"
+ },
+ "Categoría:": {
+  "en": "Category:",
+  "fr": "Catégorie :",
+  "it": "Categoria:",
+  "de": "Kategorie:",
+  "pt": "Categoria:"
+ },
+ "Reclamaciones": {
+  "en": "Complaints",
+  "fr": "Réclamations",
+  "it": "Reclami",
+  "de": "Beschwerden",
+  "pt": "Reclamações"
+ },
+ "Tipo:": {
+  "en": "Type:",
+  "fr": "Type :",
+  "it": "Tipo:",
+  "de": "Typ:",
+  "pt": "Tipo:"
+ },
+ "Compresores": {
+  "en": "Compressors",
+  "fr": "Compresseurs",
+  "it": "Compressori",
+  "de": "Kompressoren",
+  "pt": "Compressores"
+ },
+ "Descripción *": {
+  "en": "Description *",
+  "fr": "Description *",
+  "it": "Descrizione *",
+  "de": "Beschreibung *",
+  "pt": "Descrição *"
+ },
+ "Vibración y ruido detectados en el compresor entregado con el pedido Nº67/2026.": {
+  "en": "Vibration and noise detected in the compressor delivered with order No.67/2026.",
+  "fr": "Vibrations et bruit détectés sur le compresseur livré avec la commande N°67/2026.",
+  "it": "Vibrazioni e rumore rilevati nel compressore consegnato con l'ordine N.67/2026.",
+  "de": "Vibration und Geräusche am Kompressor festgestellt, der mit Bestellung Nr.67/2026 geliefert wurde.",
+  "pt": "Vibração e ruído detetados no compressor entregue com a encomenda N.º67/2026."
+ },
+ "Foto(s)": {
+  "en": "Photo(s)",
+  "fr": "Photo(s)",
+  "it": "Foto",
+  "de": "Foto(s)",
+  "pt": "Foto(s)"
+ },
+ "foto-compresor.jpg": {
+  "en": "foto-compresor.jpg",
+  "fr": "foto-compresor.jpg",
+  "it": "foto-compresor.jpg",
+  "de": "foto-compresor.jpg",
+  "pt": "foto-compresor.jpg"
+ },
+ "Nº de pedido": {
+  "en": "Order no.",
+  "fr": "N° de commande",
+  "it": "N. ordine",
+  "de": "Bestellnr.",
+  "pt": "N.º de encomenda"
+ },
+ "Priority": {
+  "en": "Priority",
+  "fr": "Priority",
+  "it": "Priority",
+  "de": "Priority",
+  "pt": "Priority"
+ },
+ "Completado por Solved AI": {
+  "en": "Completed by Solved AI",
+  "fr": "Terminé par Solved AI",
+  "it": "Completato da Solved AI",
+  "de": "Abgeschlossen von Solved AI",
+  "pt": "Concluído por Solved AI"
+ },
+ "Suelta aquí el procedimiento": {
+  "en": "Drop the procedure here",
+  "fr": "Déposez la procédure ici",
+  "it": "Rilascia qui la procedura",
+  "de": "Verfahren hier ablegen",
+  "pt": "Solte aqui o procedimento"
+ },
+ "Excel, PDF o Word": {
+  "en": "Excel, PDF or Word",
+  "fr": "Excel, PDF ou Word",
+  "it": "Excel, PDF o Word",
+  "de": "Excel, PDF oder Word",
+  "pt": "Excel, PDF ou Word"
+ },
+ "manual-compresor.pdf": {
+  "en": "manual-compresor.pdf",
+  "fr": "manual-compresor.pdf",
+  "it": "manual-compresor.pdf",
+  "de": "manual-compresor.pdf",
+  "pt": "manual-compresor.pdf"
+ },
+ "Solved AI · Creando la plantilla…": {
+  "en": "Solved AI · Creating the template…",
+  "fr": "Solved AI · Création du modèle…",
+  "it": "Solved AI · Creazione del modello…",
+  "de": "Solved AI · Vorlage wird erstellt…",
+  "pt": "Solved AI · A criar o modelo…"
+ },
+ "Plantilla creada": {
+  "en": "Template created",
+  "fr": "Modèle créé",
+  "it": "Modello creato",
+  "de": "Vorlage erstellt",
+  "pt": "Modelo criado"
+ },
+ "Control de compresor de aire": {
+  "en": "Air compressor check",
+  "fr": "Contrôle du compresseur d'air",
+  "it": "Controllo del compressore d'aria",
+  "de": "Kontrolle des Luftkompressors",
+  "pt": "Controlo do compressor de ar"
+ },
+ "OK: 50%": {
+  "en": "OK: 50%",
+  "fr": "OK : 50 %",
+  "it": "OK: 50%",
+  "de": "OK: 50 %",
+  "pt": "OK: 50%"
+ },
+ "KO: 50%": {
+  "en": "KO: 50%",
+  "fr": "KO : 50 %",
+  "it": "KO: 50%",
+  "de": "KO: 50 %",
+  "pt": "KO: 50%"
+ },
+ "Responsable ·": {
+  "en": "Owner ·",
+  "fr": "Responsable ·",
+  "it": "Responsabile ·",
+  "de": "Verantwortlicher ·",
+  "pt": "Responsável ·"
+ },
+ "Nivel de aceite": {
+  "en": "Oil level",
+  "fr": "Niveau d'huile",
+  "it": "Livello dell'olio",
+  "de": "Ölstand",
+  "pt": "Nível de óleo"
+ },
+ "Fugas visibles": {
+  "en": "Visible leaks",
+  "fr": "Fuites visibles",
+  "it": "Perdite visibili",
+  "de": "Sichtbare Lecks",
+  "pt": "Fugas visíveis"
+ },
+ "Firmado por Marta": {
+  "en": "Signed by Marta",
+  "fr": "Signé par Marta",
+  "it": "Firmato da Marta",
+  "de": "Unterschrieben von Marta",
+  "pt": "Assinado por Marta"
+ },
+ "Genera un informe del compresor de aire este semestre": {
+  "en": "Generate a report on the air compressor for this half-year",
+  "fr": "Génère un rapport sur le compresseur d'air pour ce semestre",
+  "it": "Genera un report sul compressore d'aria per questo semestre",
+  "de": "Erstellen Sie einen Bericht zum Luftkompressor für dieses Halbjahr",
+  "pt": "Gera um relatório do compressor de ar para este semestre"
+ },
+ "en el compresor de aire desde enero, siete por la misma vibración del cabezal —": {
+  "en": "on the air compressor since January, seven of them due to the same head vibration —",
+  "fr": "sur le compresseur d'air depuis janvier, dont sept pour la même vibration de la tête —",
+  "it": "sul compressore d'aria da gennaio, sette per la stessa vibrazione della testata —",
+  "de": "am Luftkompressor seit Januar, sieben davon wegen derselben Kopfvibration —",
+  "pt": "no compressor de ar desde janeiro, sete pela mesma vibração do cabeçote —"
+ },
+ "—: conviene programar una revisión preventiva del cabezal en julio.": {
+  "en": "—: a preventive maintenance check on the head should be scheduled for July.",
+  "fr": "—: il convient de programmer une maintenance préventive de la tête en juillet.",
+  "it": "—: è opportuno programmare una manutenzione preventiva della testata a luglio.",
+  "de": "—: Im Juli sollte eine vorbeugende Wartung des Kopfes eingeplant werden.",
+  "pt": "—: convém programar uma manutenção preventiva do cabeçote em julho."
+ },
+ "9 incidencias": {
+  "en": "9 incidents",
+  "fr": "9 incidents",
+  "it": "9 anomalie",
+  "de": "9 Störungen",
+  "pt": "9 ocorrências"
+ },
+ "Incidencias del compresor de aire · enero a junio": {
+  "en": "Air compressor incidents · January to June",
+  "fr": "Incidents du compresseur d'air · janvier à juin",
+  "it": "Anomalie del compressore d'aria · gennaio-giugno",
+  "de": "Störungen des Luftkompressors · Januar bis Juni",
+  "pt": "Ocorrências do compressor de ar · janeiro a junho"
+ },
+ "Vibración del cabezal · 78%": {
+  "en": "Head vibration · 78%",
+  "fr": "Vibration de la tête · 78 %",
+  "it": "Vibrazione della testata · 78%",
+  "de": "Kopfvibration · 78 %",
+  "pt": "Vibração do cabeçote · 78%"
+ },
+ "Fuga de aceite · 14%": {
+  "en": "Oil leak · 14%",
+  "fr": "Fuite d'huile · 14 %",
+  "it": "Perdita d'olio · 14%",
+  "de": "Ölleck · 14 %",
+  "pt": "Fuga de óleo · 14%"
+ },
+ "Otras causas · 8%": {
+  "en": "Other causes · 8%",
+  "fr": "Autres causes · 8 %",
+  "it": "Altre cause · 8%",
+  "de": "Andere Ursachen · 8 %",
+  "pt": "Outras causas · 8%"
+ },
+ "Coste estimado": {
+  "en": "Estimated cost",
+  "fr": "Coût estimé",
+  "it": "Costo stimato",
+  "de": "Geschätzte Kosten",
+  "pt": "Custo estimado"
+ },
+ "4,2 h": {
+  "en": "4.2 h",
+  "fr": "4,2 h",
+  "it": "4,2 h",
+  "de": "4,2 h",
+  "pt": "4,2 h"
+ },
+ "Tiempo medio de resolución": {
+  "en": "Average resolution time",
+  "fr": "Temps moyen de résolution",
+  "it": "Tempo medio di risoluzione",
+  "de": "Durchschnittliche Lösungszeit",
+  "pt": "Tempo médio de resolução"
+ },
+ "Disponibilidad": {
+  "en": "Availability",
+  "fr": "Disponibilité",
+  "it": "Disponibilità",
+  "de": "Verfügbarkeit",
+  "pt": "Disponibilidade"
+ },
+ "Compartir": {
+  "en": "Share",
+  "fr": "Partager",
+  "it": "Condividi",
+  "de": "Teilen",
+  "pt": "Partilhar"
+ },
+ "¿Qué controles fallaron en el compresor de aire este mes?": {
+  "en": "Which checks failed on the air compressor this month?",
+  "fr": "Quels contrôles ont échoué sur le compresseur d'air ce mois-ci ?",
+  "it": "Quali controlli sono falliti sul compressore d'aria questo mese?",
+  "de": "Welche Kontrollen sind diesen Monat am Luftkompressor fehlgeschlagen?",
+  "pt": "Que controlos falharam no compressor de ar este mês?"
+ },
+ "El control de vibración del cabezal salió": {
+  "en": "The head vibration check came back",
+  "fr": "Le contrôle de vibration de la tête est sorti",
+  "it": "Il controllo della vibrazione della testata è risultato",
+  "de": "Die Kontrolle der Kopfvibration ergab",
+  "pt": "O controlo de vibração do cabeçote ficou"
+ },
+ "este mes, dentro de": {
+  "en": "this month, out of",
+  "fr": "ce mois-ci, sur",
+  "it": "questo mese, su",
+  "de": "diesen Monat, von",
+  "pt": "este mês, de"
+ },
+ "2 veces en KO": {
+  "en": "KO 2 times",
+  "fr": "KO 2 fois",
+  "it": "KO 2 volte",
+  "de": "2-mal KO",
+  "pt": "KO 2 vezes"
+ },
+ "Puedes abrir el registro completo desde aquí, con la foto y la firma del operario.": {
+  "en": "You can open the full record from here, with the photo and the operator's signature.",
+  "fr": "Vous pouvez ouvrir l'enregistrement complet depuis ici, avec la photo et la signature de l'opérateur.",
+  "it": "Puoi aprire la registrazione completa da qui, con la foto e la firma dell'operatore.",
+  "de": "Sie können die vollständige Aufzeichnung von hier aus öffnen, mit dem Foto und der Unterschrift des Werkers.",
+  "pt": "Pode abrir o registo completo a partir daqui, com a foto e a assinatura do operador."
+ },
+ "Funciones de IA": {
+  "en": "AI features",
+  "fr": "Fonctions d'IA",
+  "it": "Funzioni IA",
+  "de": "KI-Funktionen",
+  "pt": "Funcionalidades de IA"
+ },
+ "Cada respuesta incluye el código del parte o del registro del que procede —por ejemplo UTD26_175_001— y puede abrirse para su consulta íntegra. Es lo que distingue una consulta sobre datos propios de un chat genérico.": {
+  "en": "Each answer includes the code of the report or record it comes from —for example UTD26_175_001— and can be opened for full reference. This is what distinguishes a query on your own data from a generic chat.",
+  "fr": "Chaque réponse inclut le code du rapport ou de l'enregistrement dont elle provient —par exemple UTD26_175_001— et peut être ouverte pour consultation intégrale. C'est ce qui distingue une requête sur ses propres données d'un chat générique.",
+  "it": "Ogni risposta include il codice del rapporto o della registrazione da cui proviene —per esempio UTD26_175_001— e può essere aperta per la consultazione integrale. È ciò che distingue una query sui dati propri da una chat generica.",
+  "de": "Jede Antwort enthält den Code der Meldung oder Aufzeichnung, aus der sie stammt —zum Beispiel UTD26_175_001— und kann zur vollständigen Einsicht geöffnet werden. Das unterscheidet eine Abfrage der eigenen Daten von einem generischen Chat.",
+  "pt": "Cada resposta inclui o código do parte ou do registo de onde provém —por exemplo UTD26_175_001— e pode ser aberta para consulta integral. É isto que distingue uma consulta sobre dados próprios de um chat genérico."
+ },
+ "Conecta Solved con tus herramientas actuales": {
+  "en": "Connect Solved with your current tools",
+  "fr": "Connectez Solved à vos outils actuels",
+  "it": "Collega Solved ai tuoi strumenti attuali",
+  "de": "Verbinden Sie Solved mit Ihren aktuellen Tools",
+  "pt": "Ligue o Solved às suas ferramentas atuais"
+ },
+ "para crear flujos de trabajo más ágiles.": {
+  "en": "to create more agile workflows.",
+  "fr": "pour créer des flux de travail plus agiles.",
+  "it": "per creare flussi di lavoro più agili.",
+  "de": "um agilere Workflows zu schaffen.",
+  "pt": "para criar fluxos de trabalho mais ágeis."
+ },
+ "Obtén una foto completa de tu operativa relacionando los datos de Solved con las demás plataformas como ERP, MES o GMAO.": {
+  "en": "Get a complete picture of your operations by connecting Solved's data with other platforms such as ERP, MES or CMMS.",
+  "fr": "Obtenez une vision complète de votre activité en reliant les données de Solved aux autres plateformes comme l'ERP, le MES ou la GMAO.",
+  "it": "Ottieni una visione completa della tua operatività collegando i dati di Solved con le altre piattaforme come ERP, MES o CMMS.",
+  "de": "Erhalten Sie ein vollständiges Bild Ihres Betriebs, indem Sie die Daten von Solved mit anderen Plattformen wie ERP, MES oder CMMS verknüpfen.",
+  "pt": "Obtenha uma visão completa da sua operação relacionando os dados do Solved com outras plataformas como ERP, MES ou GMAO."
+ },
+ "La plataforma creada para ser el núcleo operativo": {
+  "en": "The platform built to be the operational core",
+  "fr": "La plateforme conçue pour être le cœur opérationnel",
+  "it": "La piattaforma creata per essere il nucleo operativo",
+  "de": "Die Plattform, die als operativer Kern konzipiert wurde",
+  "pt": "A plataforma criada para ser o núcleo operacional"
+ },
+ "Tanto trabajando aislado como combinado con otras aplicaciones, Solved registra, planifica y visibiliza toda la operativa manual.": {
+  "en": "Whether working on its own or combined with other applications, Solved records, plans and provides visibility over all manual operations.",
+  "fr": "Qu'elle fonctionne seule ou combinée à d'autres applications, Solved enregistre, planifie et rend visible toute l'activité manuelle.",
+  "it": "Sia utilizzata da sola che combinata con altre applicazioni, Solved registra, pianifica e rende visibile tutta l'operatività manuale.",
+  "de": "Ob eigenständig oder kombiniert mit anderen Anwendungen – Solved erfasst, plant und macht den gesamten manuellen Betrieb sichtbar.",
+  "pt": "Seja a funcionar isoladamente ou combinada com outras aplicações, o Solved regista, planeia e torna visível toda a operação manual."
+ },
+ "Descubre todas las herramientas con las que Solved se integra": {
+  "en": "Discover all the tools Solved integrates with",
+  "fr": "Découvrez tous les outils avec lesquels Solved s'intègre",
+  "it": "Scopri tutti gli strumenti con cui si integra Solved",
+  "de": "Entdecken Sie alle Tools, mit denen sich Solved integrieren lässt",
+  "pt": "Descubra todas as ferramentas com que o Solved se integra"
+ },
+ "¿No está la tuya? Solved permite realizar integraciones personalizadas desde la plataforma. Pregunta a nuestro equipo de IT.": {
+  "en": "Not seeing yours? Solved allows custom integrations from the platform. Ask our IT team.",
+  "fr": "Le vôtre n'y figure pas ? Solved permet de réaliser des intégrations personnalisées depuis la plateforme. Demandez à notre équipe IT.",
+  "it": "Non trovi il tuo? Solved consente di realizzare integrazioni personalizzate dalla piattaforma. Chiedi al nostro team IT.",
+  "de": "Ihr Tool ist nicht dabei? Solved ermöglicht individuelle Integrationen direkt über die Plattform. Fragen Sie unser IT-Team.",
+  "pt": "A sua não está aqui? O Solved permite realizar integrações personalizadas a partir da plataforma. Pergunte à nossa equipa de TI."
+ },
+ "Consulta al experto": {
+  "en": "Ask the expert",
+  "fr": "Demandez à l'expert",
+  "it": "Chiedi all'esperto",
+  "de": "Fragen Sie den Experten",
+  "pt": "Consulte o especialista"
+ },
+ "Día a día": {
+  "en": "Day to day",
+  "fr": "Au quotidien",
+  "it": "Giorno per giorno",
+  "de": "Alltag",
+  "pt": "Dia a dia"
+ },
+ "Microsoft Teams": {
+  "en": "Microsoft Teams",
+  "fr": "Microsoft Teams",
+  "it": "Microsoft Teams",
+  "de": "Microsoft Teams",
+  "pt": "Microsoft Teams"
+ },
+ "Busca tu ERP, MES, GMAO o herramienta habitual": {
+  "en": "Search for your ERP, MES, CMMS or usual tool",
+  "fr": "Recherchez votre ERP, MES, GMAO ou outil habituel",
+  "it": "Cerca il tuo ERP, MES, CMMS o strumento abituale",
+  "de": "Suchen Sie Ihr ERP, MES, CMMS oder gewohntes Tool",
+  "pt": "Procure o seu ERP, MES, GMAO ou ferramenta habitual"
+ },
+ "Ahorra tiempo digitalizando las tareas manuales de tu fábrica": {
+  "en": "Save time by digitizing your plant's manual tasks",
+  "fr": "Gagnez du temps en digitalisant les tâches manuelles de votre usine",
+  "it": "Risparmia tempo digitalizzando le attività manuali del tuo stabilimento",
+  "de": "Sparen Sie Zeit, indem Sie die manuellen Aufgaben Ihres Werks digitalisieren",
+  "pt": "Poupe tempo digitalizando as tarefas manuais da sua fábrica"
+ },
+ "La plataforma diseñada para cada rol de la industria. Intuitiva, flexible y rápida.": {
+  "en": "The platform designed for every role in the industry. Intuitive, flexible and fast.",
+  "fr": "La plateforme conçue pour chaque rôle de l'industrie. Intuitive, flexible et rapide.",
+  "it": "La piattaforma pensata per ogni ruolo dell'industria. Intuitiva, flessibile e rapida.",
+  "de": "Die Plattform, entwickelt für jede Rolle in der Industrie. Intuitiv, flexibel und schnell.",
+  "pt": "A plataforma concebida para cada função da indústria. Intuitiva, flexível e rápida."
+ },
+ "Conecta a tu equipo de primera línea": {
+  "en": "Connect your frontline team",
+  "fr": "Connectez vos équipes de première ligne",
+  "it": "Collega il tuo team in prima linea",
+  "de": "Verbinden Sie Ihr Frontline-Team",
+  "pt": "Ligue a sua equipa da linha da frente"
+ },
+ "con el resto de la fábrica": {
+  "en": "with the rest of the plant",
+  "fr": "au reste de l'usine",
+  "it": "con il resto dello stabilimento",
+  "de": "mit dem Rest des Werks",
+  "pt": "com o resto da fábrica"
+ },
+ "Convierte a los trabajadores de tu fábrica en equipos de alto rendimiento, optimizados gracias a la visibilidad y organización que ofrece Solved.": {
+  "en": "Turn your plant workers into high-performing teams, optimized thanks to the visibility and organization Solved provides.",
+  "fr": "Transformez les travailleurs de votre usine en équipes performantes, optimisées grâce à la visibilité et à l'organisation offertes par Solved.",
+  "it": "Trasforma i lavoratori del tuo stabilimento in team ad alte prestazioni, ottimizzati grazie alla visibilità e all'organizzazione offerte da Solved.",
+  "de": "Verwandeln Sie die Mitarbeiter Ihres Werks in leistungsstarke Teams, optimiert durch die Transparenz und Organisation, die Solved bietet.",
+  "pt": "Transforme os trabalhadores da sua fábrica em equipas de alto desempenho, otimizadas graças à visibilidade e organização que o Solved oferece."
+ },
+ "Control Almacenes · Nuria Campos": {
+  "en": "Warehouses Check · Nuria Campos",
+  "fr": "Contrôle Entrepôts · Nuria Campos",
+  "it": "Controllo Magazzini · Nuria Campos",
+  "de": "Kontrolle Lager · Nuria Campos",
+  "pt": "Controlo Armazéns · Nuria Campos"
+ },
+ "Control Almacenes · 6 de 6": {
+  "en": "Warehouses Check · 6 of 6",
+  "fr": "Contrôle Entrepôts · 6 sur 6",
+  "it": "Controllo Magazzini · 6 di 6",
+  "de": "Kontrolle Lager · 6 von 6",
+  "pt": "Controlo Armazéns · 6 de 6"
+ },
+ "Nuria Campos · 26/06/2026": {
+  "en": "Nuria Campos · 26/06/2026",
+  "fr": "Nuria Campos · 26/06/2026",
+  "it": "Nuria Campos · 26/06/2026",
+  "de": "Nuria Campos · 26/06/2026",
+  "pt": "Nuria Campos · 26/06/2026"
+ },
+ "Firmado · 08:42": {
+  "en": "Signed · 08:42",
+  "fr": "Signé · 08:42",
+  "it": "Firmato · 08:42",
+  "de": "Unterschrieben · 08:42",
+  "pt": "Assinado · 08:42"
+ },
+ "Incidencia creada": {
+  "en": "Incident created",
+  "fr": "Incident créé",
+  "it": "Anomalia creata",
+  "de": "Störung erstellt",
+  "pt": "Ocorrência criada"
+ },
+ "Temperatura de cocción fuera de rango": {
+  "en": "Cooking temperature out of range",
+  "fr": "Température de cuisson hors plage",
+  "it": "Temperatura di cottura fuori intervallo",
+  "de": "Kochtemperatur außerhalb des Bereichs",
+  "pt": "Temperatura de cozedura fora do intervalo"
+ },
+ "HOR-002 · Nuria Campos": {
+  "en": "HOR-002 · Nuria Campos",
+  "fr": "HOR-002 · Nuria Campos",
+  "it": "HOR-002 · Nuria Campos",
+  "de": "HOR-002 · Nuria Campos",
+  "pt": "HOR-002 · Nuria Campos"
+ },
+ "Te han asignado una tarea": {
+  "en": "You have been assigned a task",
+  "fr": "Une tâche vous a été assignée",
+  "it": "Ti è stata assegnata un'attività",
+  "de": "Ihnen wurde eine Aufgabe zugewiesen",
+  "pt": "Foi-lhe atribuída uma tarefa"
+ },
+ "Purgar y sellar el conducto del extractor de humos": {
+  "en": "Purge and seal the fume extractor duct",
+  "fr": "Purger et sceller le conduit de l'extracteur de fumées",
+  "it": "Spurgare e sigillare il condotto dell'estrattore di fumi",
+  "de": "Den Abluftkanal des Rauchabzugs entlüften und abdichten",
+  "pt": "Purgar e vedar a conduta do extrator de fumos"
+ },
+ "Luis · Mantenimiento": {
+  "en": "Luis · Maintenance",
+  "fr": "Luis · Maintenance",
+  "it": "Luis · Manutenzione",
+  "de": "Luis · Instandhaltung",
+  "pt": "Luis · Manutenção"
+ },
+ "Tablero actualizado": {
+  "en": "Board updated",
+  "fr": "Tableau mis à jour",
+  "it": "Bacheca aggiornata",
+  "de": "Board aktualisiert",
+  "pt": "Painel atualizado"
+ },
+ "Controla tu sistema de calidad, mantenimiento y otros procesos manuales de fábrica desde una sola plataforma.": {
+  "en": "Control your quality, maintenance and other manual plant processes from a single platform.",
+  "fr": "Contrôlez votre système qualité, la maintenance et les autres processus manuels de l'usine depuis une seule plateforme.",
+  "it": "Controlla il tuo sistema di qualità, manutenzione e altri processi manuali dello stabilimento da un'unica piattaforma.",
+  "de": "Steuern Sie Ihr Qualitätssystem, die Instandhaltung und andere manuelle Werksprozesse von einer einzigen Plattform aus.",
+  "pt": "Controle o seu sistema de qualidade, manutenção e outros processos manuais da fábrica a partir de uma única plataforma."
+ },
+ "Permite a tus equipos colaborar evitando las islas de información y eliminando el 90 % de tareas administrativas para IFS, BRC o ISO 22000.": {
+  "en": "Let your teams collaborate while avoiding information silos and eliminating 90% of administrative tasks for IFS, BRC or ISO 22000.",
+  "fr": "Permettez à vos équipes de collaborer en évitant les silos d'information et en éliminant 90 % des tâches administratives pour IFS, BRC ou ISO 22000.",
+  "it": "Consenti ai tuoi team di collaborare evitando i silos informativi ed eliminando il 90% delle attività amministrative per IFS, BRC o ISO 22000.",
+  "de": "Ermöglichen Sie Ihren Teams die Zusammenarbeit, vermeiden Sie Informationssilos und eliminieren Sie 90 % der Verwaltungsaufgaben für IFS, BRC oder ISO 22000.",
+  "pt": "Permita que as suas equipas colaborem evitando silos de informação e eliminando 90% das tarefas administrativas para IFS, BRC ou ISO 22000."
+ },
+ "Mezcla fuera de especificación": {
+  "en": "Mix out of specification",
+  "fr": "Mélange hors spécification",
+  "it": "Miscela fuori specifica",
+  "de": "Mischung außerhalb der Spezifikation",
+  "pt": "Mistura fora de especificação"
+ },
+ "Mezcladora L2 · Rocío Blanco": {
+  "en": "Mixer L2 · Rocío Blanco",
+  "fr": "Mélangeur L2 · Rocío Blanco",
+  "it": "Mescolatore L2 · Rocío Blanco",
+  "de": "Mischer L2 · Rocío Blanco",
+  "pt": "Misturadora L2 · Rocío Blanco"
+ },
+ "Ana · Mantenimiento": {
+  "en": "Ana · Maintenance",
+  "fr": "Ana · Maintenance",
+  "it": "Ana · Manutenzione",
+  "de": "Ana · Instandhaltung",
+  "pt": "Ana · Manutenção"
+ },
+ "Control Almacenes · 12 de 12": {
+  "en": "Warehouses Check · 12 of 12",
+  "fr": "Contrôle Entrepôts · 12 sur 12",
+  "it": "Controllo Magazzini · 12 di 12",
+  "de": "Kontrolle Lager · 12 von 12",
+  "pt": "Controlo Armazéns · 12 de 12"
+ },
+ "Rocío Blanco · 26/06/2026": {
+  "en": "Rocío Blanco · 26/06/2026",
+  "fr": "Rocío Blanco · 26/06/2026",
+  "it": "Rocío Blanco · 26/06/2026",
+  "de": "Rocío Blanco · 26/06/2026",
+  "pt": "Rocío Blanco · 26/06/2026"
+ },
+ "«Antes, si hacía falta un registro nuevo, había que pedirlo aparte. Ahora lo centralizamos nosotros mismos, sin depender de nadie.»": {
+  "en": "“Before, if we needed a new record, we had to request it separately. Now we centralize it ourselves, without depending on anyone.”",
+  "fr": "« Avant, s'il fallait un nouvel enregistrement, il fallait le demander à part. Maintenant, nous le centralisons nous-mêmes, sans dépendre de personne. »",
+  "it": "«Prima, se serviva una nuova registrazione, bisognava richiederla separatamente. Ora la centralizziamo noi stessi, senza dipendere da nessuno.»",
+  "de": "„Früher musste man, wenn eine neue Aufzeichnung nötig war, sie separat anfordern. Jetzt zentralisieren wir das selbst, ohne von jemandem abhängig zu sein.“",
+  "pt": "«Antes, se fosse necessário um novo registo, era preciso pedi-lo em separado. Agora centralizamo-lo nós próprios, sem depender de ninguém.»"
+ },
+ "Director de Calidad y Medioambiente · Patatas Aguilar": {
+  "en": "Quality and Environment Director · Patatas Aguilar",
+  "fr": "Directeur Qualité et Environnement · Patatas Aguilar",
+  "it": "Direttore Qualità e Ambiente · Patatas Aguilar",
+  "de": "Leiter Qualität und Umwelt · Patatas Aguilar",
+  "pt": "Diretor de Qualidade e Ambiente · Patatas Aguilar"
+ },
+ "Jose Vicente Doria": {
+  "en": "Jose Vicente Doria",
+  "fr": "Jose Vicente Doria",
+  "it": "Jose Vicente Doria",
+  "de": "Jose Vicente Doria",
+  "pt": "Jose Vicente Doria"
+ },
+ "Aplicaciones de Solved en planta alimentaria, con su alcance respectivo.": {
+  "en": "Solved applications in a food plant, with their respective scope.",
+  "fr": "Applications de Solved dans une usine agroalimentaire, avec leur portée respective.",
+  "it": "Applicazioni di Solved in uno stabilimento alimentare, con il relativo ambito.",
+  "de": "Solved-Anwendungen in einem Lebensmittelwerk, mit ihrem jeweiligen Umfang.",
+  "pt": "Aplicações do Solved numa fábrica alimentar, com o respetivo âmbito."
+ },
+ "cada lote queda enlazado a sus controles, sus incidencias y sus acciones, de la materia prima al producto terminado.": {
+  "en": "each batch is linked to its checks, its incidents and its actions, from raw material to finished product.",
+  "fr": "chaque lot est relié à ses contrôles, ses incidents et ses actions, de la matière première au produit fini.",
+  "it": "ogni lotto è collegato ai suoi controlli, alle sue anomalie e alle sue azioni, dalla materia prima al prodotto finito.",
+  "de": "jede Charge ist mit ihren Kontrollen, Störungen und Maßnahmen verknüpft, vom Rohstoff bis zum Fertigprodukt.",
+  "pt": "cada lote fica ligado aos seus controlos, às suas ocorrências e às suas ações, da matéria-prima ao produto acabado."
+ },
+ "Trazabilidad de lote:": {
+  "en": "Batch traceability:",
+  "fr": "Traçabilité du lot :",
+  "it": "Tracciabilità del lotto:",
+  "de": "Chargenrückverfolgbarkeit:",
+  "pt": "Rastreabilidade do lote:"
+ },
+ "calendario, checklist y evidencia sobre los registros ya generados en planta, sin preparación previa a la visita.": {
+  "en": "calendar, checklist and evidence on the records already generated at the plant, with no preparation needed before the visit.",
+  "fr": "calendrier, checklist et preuves sur les enregistrements déjà générés sur le site, sans préparation préalable à la visite.",
+  "it": "calendario, checklist ed evidenze sulle registrazioni già generate in stabilimento, senza preparazione preventiva alla visita.",
+  "de": "Kalender, Checkliste und Nachweise zu den bereits im Werk erstellten Aufzeichnungen, ohne vorherige Vorbereitung auf den Besuch.",
+  "pt": "calendário, checklist e evidência sobre os registos já gerados na fábrica, sem preparação prévia à visita."
+ },
+ "Auditorías internas:": {
+  "en": "Internal audits:",
+  "fr": "Audits internes :",
+  "it": "Audit interni:",
+  "de": "Interne Audits:",
+  "pt": "Auditorias internas:"
+ },
+ "Tareas": {
+  "en": "Tasks",
+  "fr": "Tâches",
+  "it": "Attività",
+  "de": "Aufgaben",
+  "pt": "Tarefas"
+ },
+ "Casos de uso": {
+  "en": "Use cases",
+  "fr": "Cas d'usage",
+  "it": "Casi d'uso",
+  "de": "Anwendungsfälle",
+  "pt": "Casos de uso"
+ },
+ "Calidad y certificaciones": {
+  "en": "Quality and certifications",
+  "fr": "Qualité et certifications",
+  "it": "Qualità e certificazioni",
+  "de": "Qualität und Zertifizierungen",
+  "pt": "Qualidade e certificações"
+ },
+ "Caso de éxito": {
+  "en": "Success story",
+  "fr": "Étude de cas",
+  "it": "Caso di successo",
+  "de": "Erfolgsgeschichte",
+  "pt": "Caso de sucesso"
+ },
+ "Dos horas diarias dedicadas al registro manual de incidencias": {
+  "en": "Two hours a day spent on manual incident logging",
+  "fr": "Deux heures par jour consacrées à l'enregistrement manuel des incidents",
+  "it": "Due ore al giorno dedicate alla registrazione manuale delle anomalie",
+  "de": "Zwei Stunden täglich für die manuelle Erfassung von Störungen",
+  "pt": "Duas horas diárias dedicadas ao registo manual de ocorrências"
+ },
+ "De dos plantas a cinco, con el registro todavía en papel": {
+  "en": "From two plants to five, with records still on paper",
+  "fr": "De deux usines à cinq, avec un enregistrement encore sur papier",
+  "it": "Da due stabilimenti a cinque, con la registrazione ancora su carta",
+  "de": "Von zwei auf fünf Werke, mit Aufzeichnungen noch auf Papier",
+  "pt": "De duas fábricas para cinco, com o registo ainda em papel"
+ }
+}

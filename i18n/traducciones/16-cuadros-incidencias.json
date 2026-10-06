@@ -1,0 +1,640 @@
+{
+  "_nota": "Los tres cuadros de la sección «Detecta» de /incidencias/, rehechos el 9 de septiembre de 2026 contra la aplicación: el alta de una incidencia en tres pasos, la acción que se crea y se asigna con el desplegable del equipo, y el análisis de Ishikawa que se convierte en espina de pescado con el aviso del registro programado encima. Las seis emes del Ishikawa son las de la norma y cada lengua tiene la suya hecha (People/Mensch, Milieu/Umgebung): no se traducen palabra a palabra, y tienen que decirse igual en el panel y en la espina, que enseñan el mismo análisis. «Mañana» NO entra como atajo de fecha: esa cadena ya existe en el catálogo con el sentido de turno de mañana, y la clave del catálogo es el español. El aviso dice «dentro de 10 días» y no una fecha, a propósito: es lo que se lee en una notificación y no envejece. El día y la hora del campo de cierre —28/06/2026 y 13:00— no entran en el catálogo: el extractor deja fuera lo que no tiene letras, y una fecha y una hora se escriben igual en las cinco lenguas. El cuarto cubo, el del chat de la incidencia (9 sep 2026), va también aquí. Desde la corrección de esa misma tarde el cubo mide cuatro columnas y el cajón va SOLO, sin la ficha al lado, así que se cayeron del catálogo «1 · Descripción», «Clasificación» y la descripción larga de la incidencia. Lo que queda: «Chat de la incidencia» y el marcador «Mensaje» son literales de la aplicación; los tres mensajes son copy y se traducen como habla de planta, no como prosa de web.",
+  "Diseña diferentes plantillas a tu medida para cada tipo de incidencia": {
+    "en": "Design a different template, tailored to you, for every type of incident",
+    "fr": "Concevez un modèle sur mesure pour chaque type d'incident",
+    "it": "Progetta modelli su misura per ogni tipo di anomalia",
+    "de": "Gestalten Sie für jede Störungsart eine eigene, passgenaue Vorlage",
+    "pt": "Crie modelos diferentes à sua medida para cada tipo de ocorrência"
+  },
+  "Plantillas de incidencia": {
+    "en": "Incident templates",
+    "fr": "Modèles d'incident",
+    "it": "Modelli di anomalia",
+    "de": "Störungsvorlagen",
+    "pt": "Modelos de ocorrência"
+  },
+  "Avería de máquina": {
+    "en": "Machine breakdown",
+    "fr": "Panne machine",
+    "it": "Guasto macchina",
+    "de": "Maschinenausfall",
+    "pt": "Avaria de máquina"
+  },
+  "Reclamación de cliente": {
+    "en": "Customer complaint",
+    "fr": "Réclamation client",
+    "it": "Reclamo cliente",
+    "de": "Kundenreklamation",
+    "pt": "Reclamação de cliente"
+  },
+  "Calidad de producto": {
+    "en": "Product quality",
+    "fr": "Qualité produit",
+    "it": "Qualità di prodotto",
+    "de": "Produktqualität",
+    "pt": "Qualidade de produto"
+  },
+  "Activo o línea": {
+    "en": "Asset or line",
+    "fr": "Actif ou ligne",
+    "it": "Asset o linea",
+    "de": "Anlage oder Linie",
+    "pt": "Ativo ou linha"
+  },
+  "¿Ha parado la línea?": {
+    "en": "Did the line stop?",
+    "fr": "La ligne s'est-elle arrêtée ?",
+    "it": "La linea si è fermata?",
+    "de": "Stand die Linie still?",
+    "pt": "A linha parou?"
+  },
+  "Sí / No": {
+    "en": "Yes / No",
+    "fr": "Oui / Non",
+    "it": "Sì / No",
+    "de": "Ja / Nein",
+    "pt": "Sim / Não"
+  },
+  "Tiempo de parada": {
+    "en": "Downtime",
+    "fr": "Temps d'arrêt",
+    "it": "Tempo di fermo",
+    "de": "Stillstandszeit",
+    "pt": "Tempo de paragem"
+  },
+  "Número · min": {
+    "en": "Number · min",
+    "fr": "Nombre · min",
+    "it": "Numero · min",
+    "de": "Zahl · Min",
+    "pt": "Número · min"
+  },
+  "Fotografía de la avería": {
+    "en": "Photo of the breakdown",
+    "fr": "Photo de la panne",
+    "it": "Foto del guasto",
+    "de": "Foto des Ausfalls",
+    "pt": "Fotografia da avaria"
+  },
+  "Responsable de la reparación": {
+    "en": "Repair owner",
+    "fr": "Responsable de la réparation",
+    "it": "Responsabile della riparazione",
+    "de": "Verantwortlicher für die Reparatur",
+    "pt": "Responsável pela reparação"
+  },
+  "Persona": {
+    "en": "Person",
+    "fr": "Personne",
+    "it": "Persona",
+    "de": "Person",
+    "pt": "Pessoa"
+  },
+  "Firma del jefe de turno": {
+    "en": "Shift supervisor's signature",
+    "fr": "Signature du chef de poste",
+    "it": "Firma del capoturno",
+    "de": "Unterschrift des Schichtleiters",
+    "pt": "Assinatura do chefe de turno"
+  },
+  "Cliente": {
+    "en": "Customer",
+    "fr": "Client",
+    "it": "Cliente",
+    "de": "Kunde",
+    "pt": "Cliente"
+  },
+  "Pedido y lote": {
+    "en": "Order and batch",
+    "fr": "Commande et lot",
+    "it": "Ordine e lotto",
+    "de": "Auftrag und Charge",
+    "pt": "Encomenda e lote"
+  },
+  "Código de barras": {
+    "en": "Barcode",
+    "fr": "Code-barres",
+    "it": "Codice a barre",
+    "de": "Barcode",
+    "pt": "Código de barras"
+  },
+  "Motivo de la reclamación": {
+    "en": "Reason for the complaint",
+    "fr": "Motif de la réclamation",
+    "it": "Motivo del reclamo",
+    "de": "Grund der Reklamation",
+    "pt": "Motivo da reclamação"
+  },
+  "Unidades afectadas": {
+    "en": "Units affected",
+    "fr": "Unités concernées",
+    "it": "Unità interessate",
+    "de": "Betroffene Einheiten",
+    "pt": "Unidades afetadas"
+  },
+  "Correo del cliente": {
+    "en": "Customer's email",
+    "fr": "Courriel du client",
+    "it": "Mail del cliente",
+    "de": "E-Mail des Kunden",
+    "pt": "E-mail do cliente"
+  },
+  "Producto y formato": {
+    "en": "Product and format",
+    "fr": "Produit et format",
+    "it": "Prodotto e formato",
+    "de": "Produkt und Format",
+    "pt": "Produto e formato"
+  },
+  "Control que ha salido KO": {
+    "en": "Check that came back KO",
+    "fr": "Contrôle sorti KO",
+    "it": "Controllo risultato KO",
+    "de": "Kontrolle mit Ergebnis KO",
+    "pt": "Controlo com resultado KO"
+  },
+  "Valor medido": {
+    "en": "Measured value",
+    "fr": "Valeur mesurée",
+    "it": "Valore misurato",
+    "de": "Gemessener Wert",
+    "pt": "Valor medido"
+  },
+  "Lote retenido": {
+    "en": "Batch on hold",
+    "fr": "Lot bloqué",
+    "it": "Lotto bloccato",
+    "de": "Charge gesperrt",
+    "pt": "Lote retido"
+  },
+  "Evidencia del defecto": {
+    "en": "Evidence of the defect",
+    "fr": "Preuve du défaut",
+    "it": "Evidenza del difetto",
+    "de": "Nachweis des Fehlers",
+    "pt": "Evidência do defeito"
+  },
+  "Firma de calidad": {
+    "en": "Quality sign-off",
+    "fr": "Signature qualité",
+    "it": "Firma di qualità",
+    "de": "Unterschrift der Qualitätssicherung",
+    "pt": "Assinatura da qualidade"
+  },
+  "Asigna tareas a cualquier persona del equipo para solucionar la incidencia": {
+    "en": "Assign tasks to anyone on the team to get the incident solved",
+    "fr": "Attribuez les tâches à n'importe qui dans l'équipe pour résoudre l'incident",
+    "it": "Assegna i compiti a chiunque nel team per risolvere l'anomalia",
+    "de": "Weisen Sie Aufgaben jedem im Team zu, um die Störung zu lösen",
+    "pt": "Atribua tarefas a qualquer pessoa da equipa para resolver a ocorrência"
+  },
+  "Ver las acciones de Solved →": {
+    "en": "See Solved's actions →",
+    "fr": "Voir les actions de Solved →",
+    "it": "Vedi le azioni di Solved →",
+    "de": "Zu den Maßnahmen von Solved →",
+    "pt": "Ver as ações da Solved →"
+  },
+  "Asignar": {
+    "en": "Assign",
+    "fr": "Attribuer",
+    "it": "Assegna",
+    "de": "Zuweisen",
+    "pt": "Atribuir"
+  },
+  "Buscar en el equipo": {
+    "en": "Search the team",
+    "fr": "Rechercher dans l'équipe",
+    "it": "Cerca nel team",
+    "de": "Im Team suchen",
+    "pt": "Procurar na equipa"
+  },
+  "Producción · turno de tarde": {
+    "en": "Production · afternoon shift",
+    "fr": "Production · poste d'après-midi",
+    "it": "Produzione · turno pomeridiano",
+    "de": "Produktion · Spätschicht",
+    "pt": "Produção · turno da tarde"
+  },
+  "Almacén": {
+    "en": "Warehouse",
+    "fr": "Entrepôt",
+    "it": "Magazzino",
+    "de": "Lager",
+    "pt": "Armazém"
+  },
+  "Analiza la causa raíz y programa registros para asegurarte de que no se repite": {
+    "en": "Analyse the root cause and schedule the records that keep it from happening again",
+    "fr": "Analysez la cause racine et programmez les enregistrements qui l'empêchent de se reproduire",
+    "it": "Analizza la causa radice e programma le registrazioni che evitano che si ripeta",
+    "de": "Analysieren Sie die Grundursache und planen Sie die Aufzeichnungen, die eine Wiederholung verhindern",
+    "pt": "Analise a causa raiz e programe registos para garantir que não se repete"
+  },
+  "Reincidencia · cinta transportadora L3": {
+    "en": "Recurrence · conveyor L3",
+    "fr": "Récurrence · convoyeur L3",
+    "it": "Ricorrenza · nastro trasportatore L3",
+    "de": "Wiederholung · Förderband L3",
+    "pt": "Reincidência · tapete transportador L3"
+  },
+  "5 incidencias en 6 meses, agrupadas por causa": {
+    "en": "5 incidents in 6 months, grouped by cause",
+    "fr": "5 incidents en 6 mois, regroupés par cause",
+    "it": "5 anomalie in 6 mesi, raggruppate per causa",
+    "de": "5 Störungen in 6 Monaten, nach Ursache gruppiert",
+    "pt": "5 ocorrências em 6 meses, agrupadas por causa"
+  },
+  "Junta de la cinta en mal estado": {
+    "en": "Worn conveyor gasket",
+    "fr": "Joint du convoyeur en mauvais état",
+    "it": "Guarnizione del nastro in cattivo stato",
+    "de": "Dichtung des Förderbands in schlechtem Zustand",
+    "pt": "Junta do tapete em mau estado"
+  },
+  "Rodamiento fuera de vida útil": {
+    "en": "Bearing past its service life",
+    "fr": "Roulement en fin de vie",
+    "it": "Cuscinetto oltre la vita utile",
+    "de": "Lager über die Lebensdauer hinaus",
+    "pt": "Rolamento fora da vida útil"
+  },
+  "Limpieza fuera de pauta": {
+    "en": "Cleaning off procedure",
+    "fr": "Nettoyage hors procédure",
+    "it": "Pulizia fuori procedura",
+    "de": "Reinigung außerhalb des Verfahrens",
+    "pt": "Limpeza fora do procedimento"
+  },
+  "Registro programado": {
+    "en": "Scheduled record",
+    "fr": "Enregistrement programmé",
+    "it": "Registrazione programmata",
+    "de": "Geplante Aufzeichnung",
+    "pt": "Registo programado"
+  },
+  "Sale de la causa que más se repite": {
+    "en": "It comes from the most repeated cause",
+    "fr": "Il découle de la cause la plus fréquente",
+    "it": "Nasce dalla causa che si ripete di più",
+    "de": "Ergibt sich aus der häufigsten Ursache",
+    "pt": "Nasce da causa que mais se repete"
+  },
+  "Control de la junta · cinta L3": {
+    "en": "Gasket check · conveyor L3",
+    "fr": "Contrôle du joint · convoyeur L3",
+    "it": "Controllo della guarnizione · nastro L3",
+    "de": "Kontrolle der Dichtung · Förderband L3",
+    "pt": "Controlo da junta · tapete L3"
+  },
+  "Semanal": {
+    "en": "Weekly",
+    "fr": "Hebdomadaire",
+    "it": "Settimanale",
+    "de": "Wöchentlich",
+    "pt": "Semanal"
+  },
+  "Lunes 06:00": {
+    "en": "Monday 06:00",
+    "fr": "Lundi 06:00",
+    "it": "Lunedì 06:00",
+    "de": "Montag 06:00",
+    "pt": "Segunda-feira 06:00"
+  },
+  "Programado": {
+    "en": "Scheduled",
+    "fr": "Programmé",
+    "it": "Programmato",
+    "de": "Geplant",
+    "pt": "Programado"
+  },
+  "Buenos días, Javier": {
+    "en": "Good morning, Javier",
+    "fr": "Bonjour, Javier",
+    "it": "Buongiorno, Javier",
+    "de": "Guten Morgen, Javier",
+    "pt": "Bom dia, Javier"
+  },
+  "Viernes, 26 de junio de 2026": {
+    "en": "Friday, 26 June 2026",
+    "fr": "Vendredi 26 juin 2026",
+    "it": "Venerdì 26 giugno 2026",
+    "de": "Freitag, 26. Juni 2026",
+    "pt": "Sexta-feira, 26 de junho de 2026"
+  },
+  "Crear incidencia": {
+    "en": "New incident",
+    "fr": "Créer un incident",
+    "it": "Crea anomalia",
+    "de": "Störung anlegen",
+    "pt": "Criar ocorrência"
+  },
+  "Crear acción": {
+    "en": "New action",
+    "fr": "Créer une action",
+    "it": "Crea azione",
+    "de": "Maßnahme anlegen",
+    "pt": "Criar ação"
+  },
+  "Realizar registro": {
+    "en": "Fill in a record",
+    "fr": "Remplir un enregistrement",
+    "it": "Compila una registrazione",
+    "de": "Aufzeichnung ausfüllen",
+    "pt": "Preencher registo"
+  },
+  "Incidencias Abiertas": {
+    "en": "Open incidents",
+    "fr": "Incidents ouverts",
+    "it": "Anomalie aperte",
+    "de": "Offene Störungen",
+    "pt": "Ocorrências Abertas"
+  },
+  "UTD26_162_001 · Luminaria fundida en la zona de envasado": {
+    "en": "UTD26_162_001 · Blown light fitting in the packing area",
+    "fr": "UTD26_162_001 · Luminaire grillé dans la zone de conditionnement",
+    "it": "UTD26_162_001 · Lampada bruciata nella zona di confezionamento",
+    "de": "UTD26_162_001 · Durchgebrannte Leuchte im Verpackungsbereich",
+    "pt": "UTD26_162_001 · Luminária fundida na zona de embalagem"
+  },
+  "UTD26_161_003 · Retención de lote por peso fuera de rango": {
+    "en": "UTD26_161_003 · Batch held for out-of-range weight",
+    "fr": "UTD26_161_003 · Lot bloqué pour poids hors tolérance",
+    "it": "UTD26_161_003 · Lotto bloccato per peso fuori intervallo",
+    "de": "UTD26_161_003 · Charge gesperrt wegen Gewicht außerhalb der Toleranz",
+    "pt": "UTD26_161_003 · Retenção de lote por peso fora do intervalo"
+  },
+  "En revisión": {
+    "en": "In review",
+    "fr": "En révision",
+    "it": "In revisione",
+    "de": "In Prüfung",
+    "pt": "Em revisão"
+  },
+  "UTD26_160_001 · Líquido extraño en máquina de envasado": {
+    "en": "UTD26_160_001 · Foreign liquid in the packing machine",
+    "fr": "UTD26_160_001 · Liquide étranger dans la conditionneuse",
+    "it": "UTD26_160_001 · Liquido estraneo nella confezionatrice",
+    "de": "UTD26_160_001 · Fremdflüssigkeit in der Verpackungsmaschine",
+    "pt": "UTD26_160_001 · Líquido estranho na máquina de embalagem"
+  },
+  "Planta de Alzira": {
+    "en": "Alzira plant",
+    "fr": "Usine d'Alzira",
+    "it": "Stabilimento di Alzira",
+    "de": "Werk Alzira",
+    "pt": "Fábrica de Alzira"
+  },
+  "Planta de Riba-roja": {
+    "en": "Riba-roja plant",
+    "fr": "Usine de Riba-roja",
+    "it": "Stabilimento di Riba-roja",
+    "de": "Werk Riba-roja",
+    "pt": "Fábrica de Riba-roja"
+  },
+  "10 campos": {
+    "en": "10 fields",
+    "fr": "10 champs",
+    "it": "10 campi",
+    "de": "10 Felder",
+    "pt": "10 campos"
+  },
+  "Mantenimiento · Planta de Alzira": {
+    "en": "Maintenance · Alzira plant",
+    "fr": "Maintenance · Usine d'Alzira",
+    "it": "Manutenzione · Stabilimento di Alzira",
+    "de": "Instandhaltung · Werk Alzira",
+    "pt": "Manutenção · Fábrica de Alzira"
+  },
+  "¿Cuál es la prioridad?": {
+    "en": "What is the priority?",
+    "fr": "Quelle est la priorité ?",
+    "it": "Qual è la priorità?",
+    "de": "Welche Priorität hat sie?",
+    "pt": "Qual é a prioridade?"
+  },
+  "A Definir": {
+    "en": "To be set",
+    "fr": "À définir",
+    "it": "Da definire",
+    "de": "Offen",
+    "pt": "Por Definir"
+  },
+  "Baja": {
+    "en": "Low",
+    "fr": "Basse",
+    "it": "Bassa",
+    "de": "Niedrig",
+    "pt": "Baixa"
+  },
+  "¿Cuál es la fecha prevista de cierre?": {
+    "en": "What is the expected closing date?",
+    "fr": "Quelle est la date de clôture prévue ?",
+    "it": "Qual è la data di chiusura prevista?",
+    "de": "Wann soll sie abgeschlossen sein?",
+    "pt": "Qual é a data prevista de encerramento?"
+  },
+  "Hoy": {
+    "en": "Today",
+    "fr": "Aujourd'hui",
+    "it": "Oggi",
+    "de": "Heute",
+    "pt": "Hoje"
+  },
+  "A finales de esta semana": {
+    "en": "End of this week",
+    "fr": "Fin de cette semaine",
+    "it": "Fine di questa settimana",
+    "de": "Ende dieser Woche",
+    "pt": "No final desta semana"
+  },
+  "La semana que viene": {
+    "en": "Next week",
+    "fr": "La semaine prochaine",
+    "it": "La prossima settimana",
+    "de": "Nächste Woche",
+    "pt": "Na próxima semana"
+  },
+  "El mes que viene": {
+    "en": "Next month",
+    "fr": "Le mois prochain",
+    "it": "Il prossimo mese",
+    "de": "Nächsten Monat",
+    "pt": "No próximo mês"
+  },
+  "Nueva acción": {
+    "en": "New action",
+    "fr": "Nouvelle action",
+    "it": "Nuova azione",
+    "de": "Neue Maßnahme",
+    "pt": "Nova ação"
+  },
+  "Seleccionar el responsable": {
+    "en": "Choose the owner",
+    "fr": "Sélectionner le responsable",
+    "it": "Seleziona il responsabile",
+    "de": "Verantwortlichen wählen",
+    "pt": "Selecionar o responsável"
+  },
+  "Análisis de Ishikawa": {
+    "en": "Ishikawa analysis",
+    "fr": "Analyse d'Ishikawa",
+    "it": "Analisi di Ishikawa",
+    "de": "Ishikawa-Analyse",
+    "pt": "Análise de Ishikawa"
+  },
+  "Incidencia: UTD26_163_001 · Fuga de aceite en cinta transportadora L3": {
+    "en": "Incident: UTD26_163_001 · Oil leak on conveyor belt L3",
+    "fr": "Incident : UTD26_163_001 · Fuite d'huile sur le convoyeur L3",
+    "it": "Anomalia: UTD26_163_001 · Perdita d'olio sul nastro trasportatore L3",
+    "de": "Störung: UTD26_163_001 · Ölleck am Förderband L3",
+    "pt": "Ocorrência: UTD26_163_001 · Fuga de óleo no tapete transportador L3"
+  },
+  "Mano de obra": {
+    "en": "People",
+    "fr": "Main-d'œuvre",
+    "it": "Manodopera",
+    "de": "Mensch",
+    "pt": "Mão de obra"
+  },
+  "Escribir causa": {
+    "en": "Write a cause",
+    "fr": "Saisir une cause",
+    "it": "Scrivi una causa",
+    "de": "Ursache eintragen",
+    "pt": "Escrever causa"
+  },
+  "Método": {
+    "en": "Method",
+    "fr": "Méthode",
+    "it": "Metodo",
+    "de": "Methode",
+    "pt": "Método"
+  },
+  "La junta no entra en la ronda de mantenimiento": {
+    "en": "The seal is not part of the maintenance round",
+    "fr": "Le joint ne figure pas dans la ronde de maintenance",
+    "it": "La guarnizione non rientra nel giro di manutenzione",
+    "de": "Die Dichtung gehört nicht zum Instandhaltungsrundgang",
+    "pt": "A junta não entra na ronda de manutenção"
+  },
+  "Material": {
+    "en": "Material",
+    "fr": "Matière",
+    "it": "Materiale",
+    "de": "Material",
+    "pt": "Material"
+  },
+  "Medición": {
+    "en": "Measurement",
+    "fr": "Mesure",
+    "it": "Misurazione",
+    "de": "Messung",
+    "pt": "Medição"
+  },
+  "El engrase de la cinta no deja registro": {
+    "en": "Belt greasing leaves no record",
+    "fr": "Le graissage du convoyeur ne laisse aucun enregistrement",
+    "it": "L'ingrassaggio del nastro non lascia registrazione",
+    "de": "Das Schmieren des Bandes hinterlässt keine Aufzeichnung",
+    "pt": "A lubrificação do tapete não deixa registo"
+  },
+  "Entorno": {
+    "en": "Environment",
+    "fr": "Milieu",
+    "it": "Ambiente",
+    "de": "Umgebung",
+    "pt": "Ambiente"
+  },
+  "Zona de envasado a 34 °C en el turno de tarde": {
+    "en": "Packing area at 34 °C on the afternoon shift",
+    "fr": "Zone de conditionnement à 34 °C au poste d'après-midi",
+    "it": "Zona di confezionamento a 34 °C nel turno pomeridiano",
+    "de": "Verpackungsbereich bei 34 °C in der Spätschicht",
+    "pt": "Zona de embalagem a 34 °C no turno da tarde"
+  },
+  "Limpieza fuera de pauta en el turno de noche": {
+    "en": "Night-shift cleaning done outside the procedure",
+    "fr": "Nettoyage du poste de nuit hors procédure",
+    "it": "Pulizia del turno di notte fuori procedura",
+    "de": "Reinigung der Nachtschicht außerhalb des Verfahrens",
+    "pt": "Limpeza fora do procedimento no turno da noite"
+  },
+  "Revisión · Control de la junta": {
+    "en": "Check · Conveyor seal",
+    "fr": "Contrôle · Joint du convoyeur",
+    "it": "Verifica · Guarnizione del nastro",
+    "de": "Prüfung · Banddichtung",
+    "pt": "Revisão · Controlo da junta"
+  },
+  "Dentro de 10 días · 08:00 · Mantenimiento": {
+    "en": "In 10 days · 08:00 · Maintenance",
+    "fr": "Dans 10 jours · 08:00 · Maintenance",
+    "it": "Fra 10 giorni · 08:00 · Manutenzione",
+    "de": "In 10 Tagen · 08:00 · Instandhaltung",
+    "pt": "Dentro de 10 dias · 08:00 · Manutenção"
+  },
+  "Centraliza las conversaciones y recoge la información cualitativa junto a la incidencia": {
+    "en": "Centralise the conversations and keep the qualitative information next to the incident",
+    "fr": "Centralisez les conversations et recueillez l'information qualitative à côté de l'incident",
+    "it": "Centralizza le conversazioni e raccogli l'informazione qualitativa accanto all'anomalia",
+    "de": "Die Gespräche zentralisieren und die qualitativen Informationen bei der Störung sammeln",
+    "pt": "Centralize as conversas e reúna a informação qualitativa junto da ocorrência"
+  },
+  "Chat de la incidencia": {
+    "en": "Incident chat",
+    "fr": "Discussion de l'incident",
+    "it": "Chat dell'anomalia",
+    "de": "Chat zur Störung",
+    "pt": "Chat da ocorrência"
+  },
+  "Incidencia: UTD26_163_001": {
+    "en": "Incident: UTD26_163_001",
+    "fr": "Incident : UTD26_163_001",
+    "it": "Anomalia: UTD26_163_001",
+    "de": "Störung: UTD26_163_001",
+    "pt": "Ocorrência: UTD26_163_001"
+  },
+  "La fuga sale de la junta del cabezal, no del rodamiento. He parado la L3.": {
+    "en": "The leak comes from the head seal, not the bearing. I have stopped L3.",
+    "fr": "La fuite vient du joint de la tête, pas du roulement. J'ai arrêté la L3.",
+    "it": "La perdita viene dalla guarnizione della testa, non dal cuscinetto. Ho fermato la L3.",
+    "de": "Das Leck kommt von der Kopfdichtung, nicht vom Lager. Ich habe die L3 gestoppt.",
+    "pt": "A fuga vem da junta do cabeçal, não do rolamento. Parei a L3."
+  },
+  "Ningún lote afectado: el control de la cinta salió OK a las 06:00.": {
+    "en": "No batch affected: the conveyor check came out OK at 06:00.",
+    "fr": "Aucun lot concerné : le contrôle du convoyeur est sorti OK à 06:00.",
+    "it": "Nessun lotto interessato: il controllo del nastro è risultato OK alle 06:00.",
+    "de": "Keine Charge betroffen: die Bandkontrolle war um 06:00 OK.",
+    "pt": "Nenhum lote afetado: o controlo do tapete deu OK às 06:00."
+  },
+  "Junta sustituida y circuito purgado. Dejo la foto del montaje.": {
+    "en": "Seal replaced and circuit purged. Leaving the photo of the assembly.",
+    "fr": "Joint remplacé et circuit purgé. Je laisse la photo du montage.",
+    "it": "Guarnizione sostituita e circuito spurgato. Lascio la foto del montaggio.",
+    "de": "Dichtung getauscht und Kreislauf entlüftet. Foto der Montage liegt bei.",
+    "pt": "Junta substituída e circuito purgado. Deixo a foto da montagem."
+  },
+  "junta-cabezal.jpg": {
+    "en": "head-seal.jpg",
+    "fr": "joint-tete.jpg",
+    "it": "guarnizione-testa.jpg",
+    "de": "kopfdichtung.jpg",
+    "pt": "junta-cabecal.jpg"
+  },
+  "Mensaje": {
+    "en": "Message",
+    "fr": "Message",
+    "it": "Messaggio",
+    "de": "Nachricht",
+    "pt": "Mensagem"
+  },
+  "Adjunta también el parte del cambio de junta.": {
+    "en": "Attach the seal replacement report too.",
+    "fr": "Joignez aussi le rapport du changement de joint.",
+    "it": "Allega anche il rapporto della sostituzione della guarnizione.",
+    "de": "Bitte auch die Meldung zum Dichtungswechsel anhängen.",
+    "pt": "Anexe também o relatório da substituição da junta."
+  }
+}

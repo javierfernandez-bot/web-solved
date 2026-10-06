@@ -1,0 +1,117 @@
+{
+  "_nota": "Sección de IA de /auditorias/ (importación de plantillas desde Excel, PDF y Word; el cliente cerró los tres formatos el 8 sep 2026 y /ia/ dice ya lo mismo). Las cadenas con «Excel o PDF» son de la banda que sustituyó el vídeo y ya no las usa ninguna página — 7 sep 2026. Los cuatro tipos de control (Número, Seleccionable, Archivos, Firma) son nombres de la interfaz del producto: se traducen como los nombres de función, no como copy.",
+  "La IA de Solved importa el documento y lo estructura como plantilla de registro, acepta los cambios que se le piden sobre ella y contesta a lo que se le pregunta del contenido de los registros.": {
+    "en": "Solved's AI imports the document and structures it as a record template, applies the changes it is asked for, and answers questions about what the records contain.",
+    "fr": "L'IA de Solved importe le document et le structure en modèle d'enregistrement, applique les modifications qu'on lui demande et répond aux questions sur le contenu des enregistrements.",
+    "it": "L'IA di Solved importa il documento e lo struttura come modello di registrazione, applica le modifiche che le si chiedono e risponde alle domande sul contenuto delle registrazioni.",
+    "de": "Die KI von Solved importiert das Dokument und strukturiert es als Nachweisvorlage, setzt die gewünschten Änderungen um und beantwortet Fragen zum Inhalt der Nachweise.",
+    "pt": "A IA do Solved importa o documento e estrutura-o como modelo de registo, aplica as alterações que lhe são pedidas e responde às perguntas sobre o conteúdo dos registos."
+  },
+  "Convierte los partes que ya tienes en Excel o PDF en plantillas de registro": {
+    "en": "Turn the report forms you already keep in Excel or PDF into record templates",
+    "fr": "Transformez les fiches que vous avez déjà sous Excel ou PDF en modèles d'enregistrement",
+    "it": "Trasforma i moduli che già hai in Excel o PDF in modelli di registrazione",
+    "de": "Machen Sie aus den Formularen, die Sie schon in Excel oder PDF führen, fertige Nachweisvorlagen",
+    "pt": "Transforme os partes que já tem em Excel ou PDF em modelos de registo"
+  },
+  "La importación automática de plantillas es una de las seis funciones de IA integradas en el producto.": {
+    "en": "Automatic template import is one of the six AI features built into the product.",
+    "fr": "L'import automatique de modèles est l'une des six fonctions d'IA intégrées au produit.",
+    "it": "L'importazione automatica dei modelli è una delle sei funzioni di IA integrate nel prodotto.",
+    "de": "Der automatische Vorlagenimport ist eine der sechs KI-Funktionen im Produkt.",
+    "pt": "A importação automática de modelos é uma das seis funções de IA integradas no produto."
+  },
+  "Entra el control que ya usas.": {
+    "en": "In goes the check you already run.",
+    "fr": "Le contrôle que vous utilisez déjà entre.",
+    "it": "Entra il controllo che già usi.",
+    "de": "Hinein geht die Kontrolle, die Sie schon nutzen.",
+    "pt": "Entra o controlo que já utiliza."
+  },
+  "Sale la plantilla lista para rellenar.": {
+    "en": "Out comes the template, ready to fill in.",
+    "fr": "Le modèle en ressort, prêt à être rempli.",
+    "it": "Esce il modello, pronto da compilare.",
+    "de": "Heraus kommt die Vorlage, fertig zum Ausfüllen.",
+    "pt": "Sai o modelo pronto a preencher."
+  },
+  "La IA de Solved importa y estructura el documento de Excel o de PDF como plantilla de registro: secciones, controles, tipos de respuesta y valores admitidos. Sobre esa plantilla se programan la frecuencia y el responsable, y se rellena desde el móvil en el turno siguiente.": {
+    "en": "Solved's AI imports the Excel or PDF document and structures it as a record template: sections, checks, answer types and accepted values. Frequency and owner are then scheduled on that template, and it is filled in from a phone on the next shift.",
+    "fr": "L'IA de Solved importe le document Excel ou PDF et le structure en modèle d'enregistrement : sections, contrôles, types de réponse et valeurs admises. La fréquence et le responsable se programment ensuite sur ce modèle, qui se remplit depuis le téléphone au poste suivant.",
+    "it": "L'IA di Solved importa il documento Excel o PDF e lo struttura come modello di registrazione: sezioni, controlli, tipi di risposta e valori ammessi. Su quel modello si programmano frequenza e responsabile, e si compila dal telefono nel turno successivo.",
+    "de": "Die KI von Solved importiert das Excel- oder PDF-Dokument und strukturiert es als Nachweisvorlage: Abschnitte, Kontrollen, Antworttypen und zulässige Werte. Auf dieser Vorlage werden Frequenz und Verantwortlicher geplant, und ausgefüllt wird sie in der nächsten Schicht vom Telefon aus.",
+    "pt": "A IA do Solved importa e estrutura o documento de Excel ou de PDF como modelo de registo: secções, controlos, tipos de resposta e valores admitidos. Nesse modelo agendam-se a frequência e o responsável, e é preenchido a partir do telemóvel no turno seguinte."
+  },
+  ".xlsx": "=",
+  ".pdf": "=",
+  "Control de temperatura de cámaras": {
+    "en": "Cold room temperature check",
+    "fr": "Contrôle de température des chambres froides",
+    "it": "Controllo della temperatura delle celle",
+    "de": "Temperaturkontrolle der Kühlräume",
+    "pt": "Controlo de temperatura das câmaras"
+  },
+  "Instrucción de limpieza de línea": {
+    "en": "Line cleaning instruction",
+    "fr": "Instruction de nettoyage de ligne",
+    "it": "Istruzione di pulizia della linea",
+    "de": "Reinigungsanweisung der Linie",
+    "pt": "Instrução de limpeza da linha"
+  },
+  "Plantilla de registro": {
+    "en": "Record template",
+    "fr": "Modèle d'enregistrement",
+    "it": "Modello di registrazione",
+    "de": "Nachweisvorlage",
+    "pt": "Modelo de registo"
+  },
+  "Número": {
+    "en": "Number",
+    "fr": "Nombre",
+    "it": "Numero",
+    "de": "Zahl",
+    "pt": "Número"
+  },
+  "Seleccionable": {
+    "en": "Select",
+    "fr": "Sélection",
+    "it": "Selezione",
+    "de": "Auswahl",
+    "pt": "Seleção"
+  },
+  "Archivos": {
+    "en": "Files",
+    "fr": "Fichiers",
+    "it": "File",
+    "de": "Dateien",
+    "pt": "Ficheiros"
+  },
+  "Responsable del turno": {
+    "en": "Shift supervisor",
+    "fr": "Responsable du poste",
+    "it": "Responsabile del turno",
+    "de": "Schichtverantwortlicher",
+    "pt": "Responsável do turno"
+  },
+  "Firma": {
+    "en": "Signature",
+    "fr": "Signature",
+    "it": "Firma",
+    "de": "Unterschrift",
+    "pt": "Assinatura"
+  },
+  "Pendiente de frecuencia y planta": {
+    "en": "Pending frequency and site",
+    "fr": "En attente de fréquence et de site",
+    "it": "In attesa di frequenza e stabilimento",
+    "de": "Frequenz und Werk stehen noch aus",
+    "pt": "Frequência e fábrica por definir"
+  },
+  "Operaria de planta cumplimentando un registro en la tablet junto a la línea": {
+    "en": "A plant operator filling in a record on a tablet beside the line",
+    "fr": "Une opératrice de production remplit un enregistrement sur tablette au bord de la ligne",
+    "it": "Un'operatrice di stabilimento compila una registrazione dal tablet accanto alla linea",
+    "de": "Eine Werksmitarbeiterin füllt einen Nachweis am Tablet neben der Linie aus",
+    "pt": "Operadora de fábrica a preencher um registo no tablet junto à linha"
+  }
+}

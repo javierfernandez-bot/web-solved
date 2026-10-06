@@ -1,0 +1,94 @@
+{
+  "_nota": "Recorte de texto pedido por el cliente el 14 de septiembre de 2026: los subtítulos de hero de once páginas comerciales y el párrafo de la sección de escenas de la home, todos acortados a la mitad más o menos sin perder el hecho. Las cadenas viejas se quedan en sus ficheros de origen, sin usar.",
+  "Los mismos partes que ya usas —limpieza, temperaturas, pesos, mantenimiento—, rellenados en el momento. Un KO abre la incidencia solo.": {
+    "en": "The same reports you already use —cleaning, temperatures, weights, maintenance—, filled in on the spot. A KO opens the incident on its own.",
+    "fr": "Les mêmes rapports que vous utilisez déjà —nettoyage, températures, poids, maintenance—, remplis sur place. Un KO ouvre l'incident tout seul.",
+    "it": "Gli stessi rapporti che usi già —pulizia, temperature, pesi, manutenzione—, compilati sul momento. Un KO apre l'incidente da solo.",
+    "de": "Dieselben Meldungen, die du schon nutzt —Reinigung, Temperaturen, Gewichte, Instandhaltung—, sofort ausgefüllt. Ein KO öffnet die Störung automatisch.",
+    "pt": "Os mesmos partes que já usas —limpeza, temperaturas, pesos, manutenção—, preenchidos no momento. Um KO abre a ocorrência sozinho."
+  },
+  "Convierte cada hallazgo en un plan de acción con responsable y plazo, documentado hasta el cierre.": {
+    "en": "Turns every finding into an action plan with an owner and a due date, documented through to closure.",
+    "fr": "Transforme chaque constat en plan d'action avec un responsable et une échéance, documenté jusqu'à la clôture.",
+    "it": "Trasforma ogni rilievo in un piano d'azione con un responsabile e una scadenza, documentato fino alla chiusura.",
+    "de": "Macht aus jedem Befund einen Aktionsplan mit Verantwortlichem und Frist, dokumentiert bis zum Abschluss.",
+    "pt": "Transforma cada constatação num plano de ação com responsável e prazo, documentado até ao encerramento."
+  },
+  "Solved engancha a cada máquina sus incidencias, registros y acciones. El historial se construye solo, con el trabajo que la planta ya hace.": {
+    "en": "Solved links every machine to its incidents, records and actions. The history builds itself, from the work the plant already does.",
+    "fr": "Solved relie chaque machine à ses incidents, enregistrements et actions. L'historique se construit seul, avec le travail que l'usine fait déjà.",
+    "it": "Solved collega ogni macchina alle sue anomalie, registrazioni e azioni. Lo storico si costruisce da solo, con il lavoro che lo stabilimento fa già.",
+    "de": "Solved verknüpft jede Maschine mit ihren Störungen, Aufzeichnungen und Maßnahmen. Der Verlauf entsteht von selbst, aus der Arbeit, die im Werk schon läuft.",
+    "pt": "A Solved liga cada máquina às suas ocorrências, registos e ações. O histórico constrói-se só, com o trabalho que a fábrica já faz."
+  },
+  "Incidencias por área, tiempo de cierre y lo que se repite, en tiempo real. Sin exportar ni consolidar nada.": {
+    "en": "Incidents by area, closure time and what keeps repeating, in real time. Nothing to export or consolidate.",
+    "fr": "Incidents par zone, délai de clôture et ce qui se répète, en temps réel. Rien à exporter ni à consolider.",
+    "it": "Anomalie per area, tempo di chiusura e ciò che si ripete, in tempo reale. Niente da esportare o consolidare.",
+    "de": "Störungen nach Bereich, Abschlusszeit und Wiederholungen, in Echtzeit. Nichts zu exportieren oder zusammenzuführen.",
+    "pt": "Ocorrências por área, tempo de encerramento e o que se repete, em tempo real. Sem exportar nem consolidar nada."
+  },
+  "Una API abierta lo conecta con tu ERP, MES o GMAO sin tocarlos. Si no integras nada, funciona igual desde el primer día.": {
+    "en": "An open API connects it to your ERP, MES or CMMS without touching them. If you integrate nothing, it works the same from day one.",
+    "fr": "Une API ouverte le connecte à votre ERP, MES ou GMAO sans y toucher. Si vous n'intégrez rien, il fonctionne pareil dès le premier jour.",
+    "it": "Un'API aperta lo collega al tuo ERP, MES o CMMS senza toccarli. Se non integri nulla, funziona lo stesso dal primo giorno.",
+    "de": "Eine offene API verbindet es mit deinem ERP-, MES- oder CMMS-System, ohne sie anzufassen. Integrierst du nichts, funktioniert es ab Tag eins genauso.",
+    "pt": "Uma API aberta liga-o ao teu ERP, MES ou CMMS sem os tocar. Se não integrares nada, funciona igual desde o primeiro dia."
+  },
+  "Los mismos partes, incidencias y acciones que hoy llevas en hojas de cálculo, ahora desde el móvil de planta.": {
+    "en": "The same reports, incidents and actions you keep in spreadsheets today, now from the plant floor's phone.",
+    "fr": "Les mêmes rapports, incidents et actions que vous tenez aujourd'hui sur des feuilles de calcul, désormais depuis le mobile de l'atelier.",
+    "it": "Gli stessi rapporti, anomalie e azioni che oggi tieni su foglio di calcolo, ora dal cellulare di stabilimento.",
+    "de": "Dieselben Meldungen, Störungen und Maßnahmen, die du heute in Tabellen führst, jetzt vom Werksmobiltelefon aus.",
+    "pt": "Os mesmos partes, ocorrências e ações que hoje levas em folhas de cálculo, agora a partir do telemóvel de fábrica."
+  },
+  "APPCC, controles de proceso y trazabilidad de lote, desde el móvil. Registros firmados y revisados antes de la auditoría.": {
+    "en": "HACCP, process checks and batch traceability, from the phone. Records signed and reviewed before the audit.",
+    "fr": "HACCP, contrôles de procédé et traçabilité de lot, depuis le mobile. Enregistrements signés et vérifiés avant l'audit.",
+    "it": "HACCP, controlli di processo e tracciabilità di lotto, dal telefono. Registrazioni firmate e riviste prima dell'audit.",
+    "de": "HACCP, Prozesskontrollen und Chargenrückverfolgbarkeit, vom Handy aus. Aufzeichnungen unterschrieben und geprüft, bevor das Audit kommt.",
+    "pt": "HACCP, controlos de processo e rastreabilidade de lote, a partir do telemóvel. Registos assinados e revistos antes da auditoria."
+  },
+  "Digitaliza puntos críticos y prerrequisitos con hora, responsable y evidencia. Un valor fuera de límite abre la acción solo.": {
+    "en": "Digitises critical points and prerequisites with time, owner and evidence. An out-of-range value opens the action on its own.",
+    "fr": "Numérise les points critiques et les prérequis avec heure, responsable et preuve. Une valeur hors limite ouvre l'action toute seule.",
+    "it": "Digitalizza i punti critici e i prerequisiti con ora, responsabile ed evidenza. Un valore fuori limite apre l'azione da solo.",
+    "de": "Digitalisiert kritische Kontrollpunkte und Voraussetzungen mit Uhrzeit, Verantwortlichem und Nachweis. Eine Grenzwertüberschreitung öffnet die Maßnahme automatisch.",
+    "pt": "Digitaliza pontos críticos e pré-requisitos com hora, responsável e evidência. Um valor fora do limite abre a ação sozinho."
+  },
+  "La norma exige demostrar qué se controló y qué se hizo si algo falló. Solved lo registra al momento, listo para la auditoría.": {
+    "en": "The standard requires proof of what was checked and what was done if something failed. Solved records it on the spot, ready for the audit.",
+    "fr": "La norme exige de prouver ce qui a été contrôlé et ce qui a été fait en cas d'écart. Solved l'enregistre sur le moment, prêt pour l'audit.",
+    "it": "La norma richiede di dimostrare cosa è stato controllato e cosa si è fatto se qualcosa non ha funzionato. Solved lo registra al momento, pronto per l'audit.",
+    "de": "Die Norm verlangt den Nachweis, was kontrolliert wurde und was bei einer Abweichung geschah. Solved erfasst das sofort, bereit für das Audit.",
+    "pt": "A norma exige demonstrar o que foi controlado e o que se fez se algo falhou. A Solved regista-o no momento, pronto para a auditoria."
+  },
+  "IFS, BRCGS, ISO 9001 y FSSC 22000 comparten casi todos sus requisitos documentales. En Solved esa base se genera una vez y sirve para las cuatro.": {
+    "en": "IFS, BRCGS, ISO 9001 and FSSC 22000 share almost all of their documentation requirements. In Solved that base is generated once and serves all four.",
+    "fr": "IFS, BRCGS, ISO 9001 et FSSC 22000 partagent presque toutes leurs exigences documentaires. Dans Solved, cette base se génère une fois et sert aux quatre.",
+    "it": "IFS, BRCGS, ISO 9001 e FSSC 22000 condividono quasi tutti i requisiti documentali. In Solved quella base si genera una volta e serve per tutte le quattro.",
+    "de": "IFS, BRCGS, ISO 9001 und FSSC 22000 teilen sich fast alle Dokumentationsanforderungen. In Solved entsteht diese Basis einmal und deckt alle vier ab.",
+    "pt": "IFS, BRCGS, ISO 9001 e FSSC 22000 partilham quase todos os requisitos documentais. Na Solved essa base gera-se uma vez e serve para as quatro."
+  },
+  "En Solved, la homologación la resuelve el gestor documental: certificado, ficha técnica y analítica quedan junto al histórico de incidencias de ese proveedor.": {
+    "en": "In Solved, document management handles supplier approval: certificate, spec sheet and analysis sit alongside that supplier's incident history.",
+    "fr": "Dans Solved, l'homologation est gérée par la gestion documentaire : certificat, fiche technique et analyse restent avec l'historique des incidents de ce fournisseur.",
+    "it": "In Solved, la qualifica la risolve la gestione documentale: certificato, scheda tecnica e analisi restano insieme allo storico delle anomalie di quel fornitore.",
+    "de": "In Solved löst das Dokumentenmanagement die Lieferantenfreigabe: Zertifikat, Datenblatt und Analyse bleiben beim Störungsverlauf dieses Lieferanten.",
+    "pt": "Na Solved, a homologação é resolvida pela gestão documental: certificado, ficha técnica e análise ficam junto ao histórico de ocorrências desse fornecedor."
+  },
+  "Sin formación para quien la registra ni trabajo administrativo para quien la cierra.": {
+    "en": "No training for whoever logs it, no paperwork for whoever closes it.",
+    "fr": "Sans formation pour qui l'enregistre, ni travail administratif pour qui la clôture.",
+    "it": "Senza formazione per chi la registra, né lavoro amministrativo per chi la chiude.",
+    "de": "Ohne Schulung für die Meldung, ohne Verwaltungsaufwand für den Abschluss.",
+    "pt": "Sem formação para quem a regista, nem trabalho administrativo para quem a encerra."
+  },
+  "Muestra en tiempo real la operativa de tu fábrica y extrae lo más crítico de cada proceso.": {
+    "en": "Shows your factory's operations in real time and extracts what matters most from each process.",
+    "fr": "Montre en temps réel l'activité de votre usine et extrait l'essentiel de chaque processus.",
+    "it": "Mostra in tempo reale l'operatività della tua fabbrica ed estrae il dato più critico di ogni processo.",
+    "de": "Zeigt den Betrieb deiner Fabrik in Echtzeit und zieht aus jedem Prozess das Wichtigste heraus.",
+    "pt": "Mostra em tempo real a operação da tua fábrica e extrai o mais crítico de cada processo."
+  }
+}

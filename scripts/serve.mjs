@@ -30,6 +30,12 @@ const TIPOS = {
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif',
   '.gif': 'image/gif', '.ico': 'image/x-icon', '.mp4': 'video/mp4', '.webm': 'video/webm',
   '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf',
+  /* Sin esto el PDF salía como application/octet-stream y el navegador lo
+     descargaba en vez de abrirlo: un enlace «Ver el documento» que no
+     enseña nada, sino que suelta un fichero en Descargas. Pages sí manda
+     el tipo correcto, así que era un fallo sólo del servidor local — pero
+     es donde se revisa el sitio antes de publicarlo. */
+  '.pdf': 'application/pdf',
 };
 
 async function stat(p) { try { return await fs.stat(p); } catch { return null; } }

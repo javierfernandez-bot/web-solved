@@ -1,0 +1,59 @@
+{
+  "_nota": "28 de septiembre de 2026: cuarta capacidad nueva del rotador de /gestor-documental/, con su propia animación (.docaviso, ds/documentos.css). El párrafo de la capacidad 2 vuelve a su versión sin la frase del aviso —esa cadena ya estaba traducida en 24-gestor-documental-mas-corto.json y no cambia—, y la variante con el aviso de 25-dms-expiry-notificaciones.json queda sin usar en el rotador (la FAQ sí la sigue usando).",
+  "El aviso, antes de que caduque": {
+    "en": "The alert, before it expires",
+    "fr": "L'alerte, avant l'expiration",
+    "it": "L'avviso, prima della scadenza",
+    "de": "Die Benachrichtigung, vor dem Ablauf",
+    "pt": "O aviso, antes de expirar"
+  },
+  "El aviso llega antes de que caduque, y otra vez si ya ha pasado": {
+    "en": "The alert arrives before it expires, and again if it's already passed",
+    "fr": "L'alerte arrive avant l'expiration, et de nouveau si elle est déjà passée",
+    "it": "L'avviso arriva prima della scadenza, e di nuovo se è già passata",
+    "de": "Die Benachrichtigung kommt vor dem Ablauf, und erneut, falls er schon vorbei ist",
+    "pt": "O aviso chega antes de expirar, e outra vez se já tiver passado"
+  },
+  "Cada documento avisa por correo a su responsable antes de que caduque —y otra vez si ya ha pasado—. El aviso llega solo, sin que nadie tenga que revisar manualmente una hoja de vencimientos.": {
+    "en": "Every document emails its owner before it expires —and again if it's already passed—. The alert arrives on its own, with no one having to check a spreadsheet of deadlines manually.",
+    "fr": "Chaque document envoie un courriel à son responsable avant d'expirer —et de nouveau si c'est déjà passé—. L'alerte arrive toute seule, sans que personne ait à vérifier manuellement une feuille d'échéances.",
+    "it": "Ogni documento avvisa via email il responsabile prima di scadere —e di nuovo se è già passata—. L'avviso arriva da solo, senza che nessuno debba controllare manualmente un foglio di scadenze.",
+    "de": "Jedes Dokument benachrichtigt seinen Verantwortlichen per E-Mail, bevor es abläuft —und erneut, falls es schon abgelaufen ist—. Die Benachrichtigung kommt von allein, ohne dass jemand eine Tabelle mit Fristen manuell prüfen muss.",
+    "pt": "Cada documento avisa por email o seu responsável antes de expirar —e outra vez se já tiver passado—. O aviso chega sozinho, sem que ninguém tenha de verificar manualmente uma folha de prazos."
+  },
+  "Caduca en 12 días": {
+    "en": "Expires in 12 days",
+    "fr": "Expire dans 12 jours",
+    "it": "Scade tra 12 giorni",
+    "de": "Läuft in 12 Tagen ab",
+    "pt": "Expira em 12 dias"
+  },
+  "Caducado": {
+    "en": "Expired",
+    "fr": "Expiré",
+    "it": "Scaduto",
+    "de": "Abgelaufen",
+    "pt": "Expirado"
+  },
+  "Certificado IFS Food caduca en 12 días": {
+    "en": "IFS Food certificate expires in 12 days",
+    "fr": "Le certificat IFS Food expire dans 12 jours",
+    "it": "Il certificato IFS Food scade tra 12 giorni",
+    "de": "IFS-Food-Zertifikat läuft in 12 Tagen ab",
+    "pt": "Certificado IFS Food expira em 12 dias"
+  },
+  "Certificado IFS Food ha caducado": {
+    "en": "IFS Food certificate has expired",
+    "fr": "Le certificat IFS Food a expiré",
+    "it": "Il certificato IFS Food è scaduto",
+    "de": "IFS-Food-Zertifikat ist abgelaufen",
+    "pt": "Certificado IFS Food expirou"
+  },
+  "Para: Marta": {
+    "en": "To: Marta",
+    "fr": "À : Marta",
+    "it": "A: Marta",
+    "de": "An: Marta",
+    "pt": "Para: Marta"
+  }
+}

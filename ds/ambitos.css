@@ -1,0 +1,166 @@
+/* =========================================================
+   Solved Design System — ÁMBITOS DE APLICACIÓN (la home)
+   La foto de planta con una maqueta de la plataforma y una notificación.
+
+   Petición del cliente, 15 de septiembre de 2026, en dos vueltas. Primera: la
+   sección «Ámbitos de aplicación» tenía demasiado texto —titular, párrafo y
+   tres viñetas por pestaña— y la foto de al lado no decía nada. Se quita casi
+   todo el texto (queda el titular y una frase) y la foto cuenta. Segunda, el
+   mismo día: la sección TIENE QUE CABER EN UNA PANTALLA DE ORDENADOR, las
+   piezas no hace falta que se animen —prioridad a que sean fieles a la
+   plataforma—, y lo que va sobre la foto es UNA MAQUETA DE LA PLATAFORMA y
+   UNA NOTIFICACIÓN PEQUEÑA, dejando ver lo que pasa en la foto.
+
+   Tercera, 17 de septiembre de 2026: en ESTA sección la maqueta llevaba
+   siempre el marco de NAVEGADOR (`data-device="navegador"`, ds/device.css),
+   y no el de tablet o móvil, aunque las tres pantallas fueran de tablet o de
+   móvil de verdad. Revocado al día siguiente, ver la cuarta.
+
+   Cuarta, 18 de septiembre de 2026: el cliente pidió lo contrario de las dos
+   vueltas anteriores. No una maqueta de la plataforma con fidelidad de
+   pantalla completa —ni en su aparato original ni en el de navegador que
+   probó la tercera vuelta—, sino **sólo la representación gráfica de los
+   controles**: nada de recuadro de dispositivo (ni tablet, ni móvil, ni
+   navegador) y nada de encabezado de app (la barra azul con el logotipo y
+   el nombre de la pantalla). Lo que queda es la pieza de contenido sola
+   —la ronda de un registro, el listado de incidencias— flotando sobre la
+   foto con su propia sombra, sin decir en qué aparato ni en qué ventana
+   vive. Mismo marcado interior que las escenas de producto (`ds/app.css`,
+   `.app__rec`, `.app__mlist`…): sigue siendo la pantalla real, sólo que sin
+   el cromo que la enmarca. Esta hoja ya no depende de `ds/device.css`; sigue
+   cargado en `index.html` porque las escenas de la sección de utilidades,
+   más abajo en la misma página, sí lo usan.
+
+   Lo que hay, entonces:
+   · La foto, con altura en vh (no proporción): es la pieza que decide si la
+     sección cabe, y así se comprime sola en una ventana baja. Comprobado:
+     con la barra de navegación puesta, la sección entra en una ventana de
+     680px y en una de 800 (los portátiles de 1366×768 y 1440×900).
+   · La maqueta: el fragmento de contenido de ds/app.css, sin marco de
+     aparato y sin `.app__top`, QUIETO. La ronda de la tablet lleva
+     animación de serie —el OK que se pulsa—; aquí se apaga, porque lo que
+     se pide es la pantalla tal cual es, no el gesto. Mismo marcado y mismos
+     datos que en las escenas de producto: si se cambia un identificador
+     allí, aquí también.
+   · La notificación: `.res-pill` de ds/scene.css, a cuerpo pequeño.
+   · Sin tinte de módulo: Calidad, Mantenimiento y Producción son ámbitos, no
+     módulos, y el único color de la sección es el azul (patrón 7). Los OK/KO
+     llevan su color de conformidad, que es de la pantalla.
+
+   Requiere ds/scene.css (la píldora) y ds/app.css (el fragmento) cargados
+   antes. Sólo la carga la home.
+
+   Marcado (dentro de `.switch__panel`, en el sitio de la foto):
+
+     <div class="ambito" data-lado="izquierda|derecha" aria-hidden="true">
+       <img class="ambito__foto" src="…" alt="" width="1200" height="900">
+       <span class="ambito__velo"></span>
+       <span class="res-pill">…svg… <span>…</span></span>
+       <div class="ambito__dev ambito__dev--ancho|--estrecho">
+         <div class="app …"> … el fragmento, sin .app__top … </div>
+       </div>
+     </div>
+
+   `data-lado` dice en qué lado va la maqueta: el que NO ocupan la persona y
+   su dispositivo, que son lo que la foto cuenta. Calidad: la responsable está
+   a la derecha, la tablet va a la izquierda. Mantenimiento: el técnico en el
+   centro con su tablet, el móvil va a la derecha sobre el cuadro de la
+   máquina. Producción: la encargada a la izquierda, la tablet a la derecha
+   sobre la cinta. La notificación va en la esquina de arriba del otro lado.
+
+   La maqueta se ancla ARRIBA y la recorta el borde de abajo: la foto es más
+   ancha que alta y el aparato entero no cabe; lo que se ve es la cabecera y
+   las primeras filas, que es lo que hay que leer, y el recorte dice «esto
+   continúa» (regla del fragmento, ds/scene.css).
+   ========================================================= */
+
+.ambito{
+  position:relative;
+  /* La altura decide si la sección cabe en la ventana: 42vh son 286px en una
+     ventana de 680 y 336 en una de 800, y es lo que la tablet necesita para
+     enseñar la ronda con su firma. */
+  height:clamp(280px, 42vh, 420px);
+  border-radius:var(--ds-radius-card, 12px);
+  overflow:hidden;
+  /* Suelo si la foto tarda: tarjeta oscura, no rectángulo blanco. */
+  background:var(--color-graphite-900, #111214);
+  --res-acento:var(--color-primary);
+}
+.ambito__foto{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  /* La caja es apaisada (≈2:1) y la foto 4:3: `cover` recorta arriba y
+     abajo. Se sube el punto de interés para que la cara y las manos —que en
+     las tres fotos caen en el tercio superior— no se vayan por arriba. */
+  object-position:50% 38%;
+  display:block;
+}
+/* Velo neutro y ligero: aquí no hay título encima de la foto, sólo hace falta
+   que la notificación blanca y el aparato se despeguen. */
+.ambito__velo{
+  position:absolute; inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg, rgba(11,18,32,.30) 0%, rgba(11,18,32,.08) 34%, rgba(11,18,32,.10) 66%, rgba(11,18,32,.40) 100%);
+}
+
+/* — La maqueta —
+   Sin marco de dispositivo: la tarjeta es el propio fragmento de ds/app.css
+   (`.app`), con su radio y su sombra puestos aquí —dentro de una escena o de
+   un aparato eso lo pondrían ellos, pero suelta sobre la foto no tiene quien
+   se lo dé—. El alto lo decide el contenido (`.app` trae `height:100%` de
+   fábrica, pensado para vivir dentro de una pantalla de proporción fija; se
+   anula a `auto`), así que no hace falta aspect-ratio ni las dos variantes
+   de proporción que llevaba el marco de navegador. */
+.ambito__dev{
+  position:absolute; z-index:2;
+  top:22px; left:22px;
+  border-radius:var(--ds-radius-card, 12px);
+  overflow:hidden;
+  filter:drop-shadow(rgba(12,32,64,.30) 0 14px 28px);
+}
+.ambito[data-lado="derecha"] .ambito__dev{ left:auto; right:22px }
+.ambito .app{ height:auto }
+/* Ancho en píxeles, no en porcentaje: dentro hay texto de 10px reales, y es
+   el mismo tamaño en las tres pestañas. Mismos valores que llevaba el marco
+   de navegador: sin su bisel y su barra de dirección hay más aire dentro,
+   así que no hizo falta tocarlos. */
+.ambito__dev--ancho{ width:360px }
+.ambito__dev--estrecho{ width:230px }
+
+/* Quieta. La ronda de la tablet pulsa sus OK de serie; aquí no. */
+.ambito .app__opt--on{ animation:none }
+/* El registro ocupa la pantalla entera de la tablet (en la escena va al 84 %
+   para que se recorte por la derecha). Aquí lo que se recorta es el pie, y
+   con el 84 % la firma se partía en dos líneas y caía fuera. */
+.ambito .app--tablet{ --app-rec-w:100% }
+
+/* — La notificación — */
+.ambito .res-pill{
+  top:22px; right:22px;
+  padding:7px 11px;
+  font-size:12px;
+  gap:7px;
+}
+.ambito .res-pill svg{ width:13px; height:13px }
+.ambito[data-lado="derecha"] .res-pill{ right:auto; left:22px }
+
+/* En teléfono la sección se apila y la foto vuelve a llevar proporción: 42vh
+   de un teléfono no dicen nada. La maqueta baja a la esquina de abajo y se
+   sale por ese borde, para que la persona —que en las tres fotos está en la
+   mitad de arriba— siga viéndose; la notificación sube a la esquina de
+   arriba del lado contrario. El texto de dentro no puede encoger, así que la
+   tablet ocupa lo que ocupa y lo que se pierde es la última fila. */
+@media (max-width:600px){
+  .ambito{ height:auto; aspect-ratio:4/5 }
+  .ambito__foto{ object-position:50% 30% }
+  .ambito__dev{ top:auto; bottom:-36px; left:14px }
+  .ambito[data-lado="derecha"] .ambito__dev{ right:14px }
+  .ambito__dev--ancho{ width:min(330px, 78%) }
+  .ambito__dev--estrecho{ width:64%; bottom:-30% }
+  .ambito .res-pill,
+  .ambito[data-lado="derecha"] .res-pill{
+    top:14px; left:14px; right:auto; max-width:calc(100% - 28px);
+    white-space:normal;
+  }
+}

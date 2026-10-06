@@ -1,0 +1,365 @@
+/* =========================================================
+   Solved Design System — DIÁLOGO DE ESCENA
+   La pantalla emergente que abre una escena de producto: lo mismo que enseña
+   la tarjeta, pero con sitio para contarlo.
+
+   Va sobre <dialog> nativo. No es purismo: el elemento trae gratis el foco
+   atrapado dentro, el cierre con Escape, el aria-modal y la capa superior del
+   navegador —encima de todo sin pelearse con ningún z-index—. Un div con
+   position:fixed obliga a reimplementar las cuatro cosas y a fallar en alguna.
+
+   MEDIDO EN stripe.com/es EL 14 DE AGOSTO DE 2026, que es de donde viene el
+   patrón:
+     capa de fondo   #E5EDF5 al 90 % — su gris azulado, NO un negro al 50 %
+     panel           1184px · radio 16px · SIN sombra · scroll propio
+     reparto         título + párrafo + botones | lista de comprobación
+                     y debajo, los fragmentos a tamaño grande
+
+   Lo del fondo no es un detalle: un velo negro convierte la página en un
+   cuadro modal de aplicación. Con el gris del propio sistema, el diálogo se
+   lee como una capa más de la página, que es lo que es.
+
+   Requiere ds/tokens.css. Lo abre ds/scene.js.
+   ========================================================= */
+
+.ds-dialog{
+  width:min(1184px, calc(100vw - 48px));
+  max-height:calc(100vh - 96px);
+  margin:auto;
+  padding:0;
+  border:0;
+  border-radius:16px;
+  background:var(--ds-surface);
+  color:var(--ds-text);
+  overflow:hidden;                 /* el scroll lo lleva el cuerpo, no el marco */
+}
+/* El acento del diálogo lo dicta el módulo de la escena que lo abre, igual que
+   el tinte y el halo. Mismo atributo, misma lista cerrada. */
+.ds-dialog[data-module="incidencias"]{ --dialog-accent:var(--module-incidencias) }
+.ds-dialog[data-module="acciones"]   { --dialog-accent:var(--module-acciones) }
+.ds-dialog[data-module="checklists"] { --dialog-accent:var(--module-registros) }
+.ds-dialog[data-module="activos"]    { --dialog-accent:var(--module-activos) }
+.ds-dialog[data-module="kpis"]       { --dialog-accent:var(--module-kpis) }
+.ds-dialog[data-module="ia"]         { --dialog-accent:var(--module-ia) }
+
+.ds-dialog::backdrop{
+  background:rgba(229,237,245,.9);
+  backdrop-filter:blur(2px);
+}
+
+/* Entrada: el panel sube un poco y aparece. Nada rebota, como todo aquí. */
+@media (prefers-reduced-motion:no-preference){
+  .ds-dialog[open]{ animation:ds-dialog-in 260ms cubic-bezier(.16,1,.3,1) }
+  .ds-dialog[open]::backdrop{ animation:ds-backdrop-in 260ms linear }
+}
+@keyframes ds-dialog-in{
+  from{ opacity:0; translate:0 12px; scale:.99 }
+  to  { opacity:1; translate:0 0;    scale:1 }
+}
+@keyframes ds-backdrop-in{ from{opacity:0} to{opacity:1} }
+
+/* El fondo va también aquí, y no sólo en el <dialog>: el panel tiene que ser
+   opaco aunque alguien le toque el fondo al elemento por fuera. Detrás hay una
+   página entera, y un panel medio transparente no se lee. */
+.ds-dialog__body{
+  position:relative;
+  background:var(--ds-surface);
+  border-radius:inherit;
+  max-height:calc(100vh - 96px);
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  padding:40px;
+}
+
+/* Cerrar: arriba a la derecha y pegado al borde del panel. No lleva texto —
+   la × y la posición son convención suficiente— pero sí nombre accesible. */
+.ds-dialog__close{
+  position:absolute;
+  top:20px; right:20px;
+  z-index:2;
+  display:grid;
+  place-items:center;
+  width:36px; height:36px;
+  padding:0;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-control);
+  background:var(--ds-surface);
+  color:var(--ds-text-2);
+  cursor:pointer;
+  transition:border-color var(--ds-motion), color var(--ds-motion), background var(--ds-motion);
+}
+.ds-dialog__close:hover{ border-color:var(--color-hairline-input); color:var(--ds-text) }
+.ds-dialog__close:focus-visible{ outline:2px solid var(--color-primary); outline-offset:2px }
+.ds-dialog__close svg{ width:16px; height:16px; display:block }
+
+/* ---------------------------------------------------------
+   CABECERA: el argumento a la izquierda, la comprobación a la derecha
+   --------------------------------------------------------- */
+.ds-dialog__head{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.85fr);
+  gap:24px 56px;
+  align-items:start;
+  padding-right:52px;              /* hueco del botón de cerrar */
+}
+.ds-dialog__title{
+  margin:0;
+  font:var(--type-display-md);
+  letter-spacing:var(--tracking-display-md);
+  color:var(--ds-text);
+  text-wrap:balance;
+}
+.ds-dialog__lede{
+  margin:14px 0 0;
+  font:var(--type-body-lg);
+  color:var(--ds-text-2);
+  max-width:52ch;
+  text-wrap:pretty;
+}
+.ds-dialog__cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:24px }
+
+/* Lista de comprobación. El check va en el color del módulo que abre el
+   diálogo, que llega por --dialog-accent desde el atributo data-module. */
+.ds-dialog__checks{ list-style:none; margin:0; padding:0; display:grid; gap:14px }
+.ds-dialog__checks li{
+  display:flex; align-items:flex-start; gap:10px;
+  font:var(--type-body-md);
+  letter-spacing:var(--tracking-body);
+  color:var(--ds-text-2);
+}
+.ds-dialog__checks svg{
+  width:17px; height:17px; flex:0 0 auto; margin-top:2px;
+  color:var(--dialog-accent,var(--color-primary));
+}
+
+/* ---------------------------------------------------------
+   CUERPO: los fragmentos, ya sin recortar
+   Dentro del diálogo la pantalla se enseña entera: aquí no hay que decir "esto
+   continúa", que es el trabajo de la tarjeta. Por eso los marcos van completos
+   y con su sombra, no sangrando por el borde.
+   --------------------------------------------------------- */
+.ds-dialog__shots{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:20px;
+  margin-top:36px;
+  padding-top:32px;
+  border-top:var(--frame-width) solid var(--frame);
+}
+.ds-dialog__shot{
+  position:relative;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--color-hairline);
+  background:var(--ds-surface-soft);
+  aspect-ratio:16/10;
+}
+.ds-dialog__shot .app{ position:absolute; inset:0 }
+.ds-dialog__shot--tall{ aspect-ratio:4/5 }
+/* El escenario del puente: apaisado y a todo el ancho. La proporción es la del
+   recurso de Stripe que replica (1000×457) y el fondo es liso porque aquí lo
+   que tiene que destacar es la elevación de la tarjeta de delante.
+   `.ds-dialog__fig` existe sólo para que el pie no cuente como segundo hijo de
+   la rejilla y se coloque al lado del escenario. */
+.ds-dialog__fig{ margin:0 }
+.ds-dialog__shot--wide{ aspect-ratio:1000/470; background:var(--ds-surface-soft) }
+@media (max-width:719px){
+  .ds-dialog__shot--wide{ aspect-ratio:auto; padding:16px; overflow:visible }
+}
+.ds-dialog__cap{
+  margin:10px 0 0;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+
+@media (max-width:899px){
+  .ds-dialog{ width:calc(100vw - 24px); max-height:calc(100vh - 48px) }
+  .ds-dialog__body{ padding:24px; max-height:calc(100vh - 48px) }
+  .ds-dialog__head{ grid-template-columns:1fr; gap:22px; padding-right:44px }
+  .ds-dialog__title{ font:var(--type-heading-md); letter-spacing:var(--tracking-body) }
+  .ds-dialog__shots{ margin-top:26px; padding-top:24px }
+}
+
+/* =========================================================
+   CUERPO DEL DIÁLOGO — las bandas que van bajo la cabecera
+   El orden es el de la home de Stripe, y no es casual: primero POR QUÉ
+   importa (los tres detalles), luego QUÉ MÁS hay (las otras soluciones),
+   luego QUIÉN lo dice (el testimonio) y por último QUÉ HAGO AHORA (el cierre).
+   Argumento, contexto, prueba, salida.
+   ========================================================= */
+
+/* --- Tres detalles. Icono en cuadrado teñido del módulo + párrafo. --- */
+.ds-dialog__details{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:28px;
+  margin-top:36px;
+  padding-top:32px;
+  border-top:var(--frame-width) solid var(--frame);
+}
+.ds-dialog__detail{ display:block }
+.ds-dialog__detailico{
+  display:grid; place-items:center;
+  width:34px; height:34px;
+  margin-bottom:14px;
+  border-radius:var(--ds-radius-control);
+  /* El cuadrado va teñido con el color del módulo al 10 %, que es la misma
+     intensidad del lienzo de una escena. Ni un tinte nuevo ni uno más fuerte. */
+  background:color-mix(in srgb, var(--dialog-accent,var(--color-primary)) 10%, transparent);
+  color:var(--dialog-accent,var(--color-primary));
+}
+.ds-dialog__detailico svg{ width:17px; height:17px; display:block }
+.ds-dialog__detail p{
+  margin:0;
+  font:var(--type-body-md);
+  letter-spacing:var(--tracking-body);
+  color:var(--ds-text-mute);
+  text-wrap:pretty;
+}
+.ds-dialog__detail p .em{ font-weight:var(--font-weight-regular); color:var(--ds-text) }
+
+/* --- Otras soluciones. Tres enlaces con su frase. --- */
+.ds-dialog__more{
+  margin-top:36px;
+  padding-top:32px;
+  border-top:var(--frame-width) solid var(--frame);
+}
+.ds-dialog__moreh{
+  margin:0 0 20px;
+  font:var(--type-body-lg);
+  letter-spacing:var(--tracking-body);
+  color:var(--ds-text);
+}
+.ds-dialog__grid{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px }
+.ds-dialog__card{
+  display:flex; flex-direction:column; gap:10px;
+  padding:18px;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-card);
+  color:inherit; text-decoration:none;
+  transition:border-color var(--ds-motion), background var(--ds-motion);
+}
+.ds-dialog__card:hover{ border-color:var(--color-hairline-input); background:var(--ds-surface-soft) }
+.ds-dialog__card:focus-visible{ outline:2px solid var(--color-primary); outline-offset:2px }
+.ds-dialog__card p{
+  margin:0;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+.ds-dialog__card b{
+  font:var(--type-body-md);
+  letter-spacing:var(--tracking-body);
+  font-weight:var(--font-weight-medium);
+  color:var(--color-primary);
+  margin-top:auto;
+}
+
+/* --- Testimonio. Uno, centrado, en gris: el mismo criterio de .pull-quote. --- */
+.ds-dialog__quote{
+  margin-top:36px;
+  padding-top:32px;
+  border-top:var(--frame-width) solid var(--frame);
+  text-align:center;
+}
+.ds-dialog__quote img{ height:22px; width:auto; margin:0 auto 18px; display:block }
+.ds-dialog__quote blockquote{ margin:0 auto; max-width:56ch }
+.ds-dialog__quote blockquote p{
+  margin:0;
+  font:var(--type-body-lg);
+  color:var(--ds-text-mute);
+  text-wrap:balance;
+}
+.ds-dialog__by{
+  margin:14px 0 0;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+.ds-dialog__by b{ font-weight:var(--font-weight-medium); color:var(--ds-text) }
+
+/* --- Cierre. --- */
+.ds-dialog__end{
+  margin-top:36px;
+  padding-top:32px;
+  border-top:var(--frame-width) solid var(--frame);
+  text-align:center;
+}
+.ds-dialog__end p{
+  margin:0 0 18px;
+  font:var(--type-heading-md);
+  color:var(--ds-text);
+}
+.ds-dialog__end .ds-dialog__cta{ justify-content:center; margin-top:0 }
+
+@media (max-width:899px){
+  .ds-dialog__details,
+  .ds-dialog__grid{ grid-template-columns:1fr; gap:20px }
+  .ds-dialog__details,
+  .ds-dialog__more,
+  .ds-dialog__quote,
+  .ds-dialog__end{ margin-top:26px; padding-top:24px }
+}
+
+/* =========================================================
+   EL DIÁLOGO DE IA VA EN NEGRO
+   Misma regla que la etiqueta y que la escena: todo lo de IA vive sobre
+   grafito. Si la tarjeta es oscura y al abrirla el panel sale blanco, el salto
+   delata que el color era decoración — y aquí el color es el módulo.
+
+   Sólo se invierten las superficies y la tinta. El reparto, los tamaños y el
+   ritmo son los mismos: no es otro diálogo, es el mismo en oscuro.
+   ========================================================= */
+.ds-dialog[data-module="ia"],
+.ds-dialog[data-module="ia"] .ds-dialog__body{
+  background:var(--color-graphite-900);
+  color:#E7E9EC;
+}
+.ds-dialog[data-module="ia"]::backdrop{
+  background:rgba(10,11,13,.82);
+}
+.ds-dialog[data-module="ia"] .ds-dialog__title{ color:#fff }
+.ds-dialog[data-module="ia"] .ds-dialog__lede,
+.ds-dialog[data-module="ia"] .ds-dialog__checks li,
+.ds-dialog[data-module="ia"] .ds-dialog__detail p,
+.ds-dialog[data-module="ia"] .ds-dialog__card p,
+.ds-dialog[data-module="ia"] .ds-dialog__by{ color:#A8AEB7 }
+.ds-dialog[data-module="ia"] .ds-dialog__detail p .em,
+.ds-dialog[data-module="ia"] .ds-dialog__moreh,
+.ds-dialog[data-module="ia"] .ds-dialog__by b,
+.ds-dialog[data-module="ia"] .ds-dialog__end p{ color:#fff }
+
+/* Los hairlines que separan las bandas: en oscuro el gris del encuadre
+   desaparece, así que se sube a un gris propio del grafito. */
+.ds-dialog[data-module="ia"] .ds-dialog__details,
+.ds-dialog[data-module="ia"] .ds-dialog__more,
+.ds-dialog[data-module="ia"] .ds-dialog__quote,
+.ds-dialog[data-module="ia"] .ds-dialog__end{ border-top-color:#2A2E34 }
+
+.ds-dialog[data-module="ia"] .ds-dialog__close{
+  background:#1B2026; border-color:#33383F; color:#C9CFD6;
+}
+.ds-dialog[data-module="ia"] .ds-dialog__close:hover{ border-color:#4A5058; color:#fff }
+
+.ds-dialog[data-module="ia"] .ds-dialog__card{
+  background:#1B2026; border-color:#2A2E34;
+}
+.ds-dialog[data-module="ia"] .ds-dialog__card:hover{
+  background:#20262D; border-color:#3C424A;
+}
+/* El enlace y el check suben de tono: el morado de marca sobre grafito sí
+   contrasta —es justo lo que no pasaba sobre blanco—. */
+.ds-dialog[data-module="ia"] .ds-dialog__card b,
+.ds-dialog[data-module="ia"] .ds-dialog__checks svg,
+.ds-dialog[data-module="ia"] .ds-dialog__detailico{ color:#C88BFA }
+.ds-dialog[data-module="ia"] .ds-dialog__detailico{
+  background:rgba(168,85,247,.16);
+}
+/* El botón secundario, que sobre blanco es blanco, aquí sería un parche. */
+.ds-dialog[data-module="ia"] .ds-btn--secondary{
+  background:transparent; color:#E7E9EC; border-color:#3C424A;
+}
+.ds-dialog[data-module="ia"] .ds-btn--secondary:hover{
+  background:#20262D; border-color:#4A5058;
+}

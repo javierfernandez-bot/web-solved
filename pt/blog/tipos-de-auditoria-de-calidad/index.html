@@ -1,0 +1,556 @@
+<!DOCTYPE html><html lang="pt-PT"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>Tipos de auditoria de qualidade (e qual escolher) · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Os diferentes tipos de auditoria da qualidade cumprem funções complementares: internas para detetar falhas, externas para demonstrar conformidade.">
+<link rel="canonical" href="https://trysolved.com/pt/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="es" href="https://trysolved.com/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="fr" href="https://trysolved.com/fr/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="it" href="https://trysolved.com/it/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="de" href="https://trysolved.com/de/blog/tipos-de-auditoria-de-calidad/">
+<link rel="alternate" hreflang="pt-PT" href="https://trysolved.com/pt/blog/tipos-de-auditoria-de-calidad/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E6BFF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solved">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:url" content="https://trysolved.com/pt/blog/tipos-de-auditoria-de-calidad/">
+<meta property="og:title" content="Tipos de auditoria de qualidade (e qual escolher) · Solved">
+<meta property="og:description" content="Os diferentes tipos de auditoria da qualidade cumprem funções complementares: internas para detetar falhas, externas para demonstrar conformidade.">
+<meta property="og:image" content="https://trysolved.com/blog/assets/938f0aa9c709-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tipos de auditoria de qualidade (e qual escolher) · Solved">
+<meta name="twitter:description" content="Os diferentes tipos de auditoria da qualidade cumprem funções complementares: internas para detetar falhas, externas para demonstrar conformidade.">
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/938f0aa9c709-1200.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/pt/blog/tipos-de-auditoria-de-calidad/"},"headline":"Tipos de auditoria da qualidade (e qual escolher)","description":"Os diferentes tipos de auditoria da qualidade cumprem funções complementares: internas para detetar falhas, externas para demonstrar conformidade.","image":["https://trysolved.com/blog/assets/938f0aa9c709-1200.jpg"],"datePublished":"2025-10-28T19:45:55Z","dateModified":"2026-08-05T10:29:50Z","author":{"@type":"Person","name":"Karim"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/pt/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Auditorías y certificaciones"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://trysolved.com/pt/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Tipos de auditoria da qualidade (e qual escolher)","item":"https://trysolved.com/pt/blog/tipos-de-auditoria-de-calidad/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
+<link rel="stylesheet" href="/solved.css?v=20260910f">
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
+<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Migalhas de pão">
+      <a href="/pt/">Início</a> <span>/</span>
+      <a href="/pt/blog/">Blog</a> <span>/</span>
+      <span aria-current="page">Tipos de auditoria da qualidade (e qual escolher)</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Auditorias e certificações</span>
+      <h1>Tipos de auditoria da qualidade (e qual escolher)</h1>
+      <p class="post__meta">Por Karim · <time datetime="2025-10-28T19:45:55Z">28 de outubro de 2025</time> · 7 min de leitura</p>
+    </header>
+
+    <!-- banner-arriba:inicio -->
+    <div class="blog-banner" data-modulo="registros">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/lista.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Prepare as suas auditorias sem correrias de última hora</span>Checklists, evidências e constatações organizadas para ISO 9001, IFS, BRCGS ou FSSC 22000.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/checklists-digitais/">Ver auditorias</a>
+    </div>
+  </div>
+    <!-- banner-arriba:fin -->
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/938f0aa9c709-480.avif 480w, /blog/assets/938f0aa9c709-768.avif 768w, /blog/assets/938f0aa9c709-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/938f0aa9c709-480.webp 480w, /blog/assets/938f0aa9c709-768.webp 768w, /blog/assets/938f0aa9c709-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/938f0aa9c709-1200.jpg" width="1200" height="557" alt="Interior de um pavilhão industrial de produção vazio" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<p>Os diferentes <strong>tipos de auditoria de qualidade</strong> são essenciais para garantir que uma fábrica cumpre os padrões internos e externos que garantem a segurança, a rastreabilidade e a satisfação do cliente.&nbsp;</p>
+
+
+
+<p>Da ISO 9001 a normas mais específicas como a IFS ou a BRC, todas exigem que as organizações demonstrem controlo sobre os seus processos. No entanto, nem todas as auditorias são iguais, e muitas empresas ainda realizam estes processos manualmente, com um consumo de tempo e recursos que reduz a eficiência e a competitividade.</p>
+
+
+
+<p>Neste artigo analisaremos os principais tipos de auditoria de qualidade, o que os diferencia, que desafios implicam e como é possível torná-los mais ágeis e eficazes graças à digitalização e a ferramentas especializadas.</p>
+
+
+
+<h2><strong>O que são os tipos de auditoria de qualidade</strong></h2>
+
+
+
+<p>Uma <strong>auditoria de qualidade</strong> é um processo sistemático que avalia se uma organização cumpre critérios predefinidos. Mas, dependendo do objetivo e do âmbito, distinguem-se diferentes <strong>tipos de auditoria de qualidade</strong>: internas, externas, de certificação, de processos, de produto, temáticas, entre outras.</p>
+
+
+
+<p>Cada tipo de auditoria persegue um fim específico, mas todas partilham um denominador comum: transmitir confiança de que a empresa trabalha de acordo com procedimentos fiáveis, seguros e consistentes.</p>
+
+
+
+<h2><strong>Principais tipos de auditoria de qualidade</strong></h2>
+
+
+
+<h3><strong>Auditoria interna</strong></h3>
+
+
+
+<p>É a mais comum dentro das organizações. Realiza-se com pessoal próprio ou designado para avaliar se os processos cumprem normas e procedimentos internos. É obrigatória em sistemas baseados na ISO 9001, ISO 14001 ou ISO 22000.</p>
+
+
+
+<h3><strong>Auditoria externa</strong></h3>
+
+
+
+<p>É realizada por uma entidade independente para verificar o cumprimento de requisitos contratuais ou normativos. Pode ser realizada por clientes, fornecedores ou entidades certificadoras.</p>
+
+
+
+<h3><strong>Auditoria de certificação</strong></h3>
+
+
+
+<p>Centra-se em obter ou manter uma certificação oficial como a ISO 9001, ISO 22000, IFS ou BRCGS. Requer evidências documentadas e processos sólidos.</p>
+
+
+
+<h3><strong>Auditoria de processos</strong></h3>
+
+
+
+<p>Analisa especificamente como se executam os processos da empresa, avaliando eficiência, cumprimento de procedimentos e controlo de qualidade.</p>
+
+
+
+<h3><strong>Auditoria de produto</strong></h3>
+
+
+
+<p>Centra-se nas características do produto final. Verifica se cumpre especificações técnicas, normas de segurança ou requisitos de clientes.</p>
+
+
+
+<h3><strong>Auditorias temáticas</strong></h3>
+
+
+
+<p>Centram-se em aspetos concretos como o ambiente (ISO 14001), a segurança alimentar (ISO 22000, HACCP), a segurança laboral (PRL) ou a rastreabilidade (IFS, BRC).</p>
+
+
+
+<p>Cada um destes <strong>tipos de auditoria de qualidade</strong> fornece informação crítica para a melhoria contínua.</p>
+
+
+
+<h2><strong>Desafios comuns nas auditorias de qualidade</strong></h2>
+
+
+
+<p>Apesar da sua importância, os diferentes tipos de auditoria enfrentam problemas semelhantes:</p>
+
+
+
+<ul>
+<li><strong>Excesso de papelada</strong>: registos em papel ou Excel que se perdem ou demoram a consolidar-se.<br></li>
+
+
+
+<li><strong>Dados incompletos</strong>: falta de evidências claras ou consistência nos registos.<br></li>
+
+
+
+<li><strong>Tempos longos de preparação</strong>: semanas de trabalho para reunir informação antes de uma auditoria externa ou de certificação.<br></li>
+
+
+
+<li><strong>Resistência do pessoal</strong>: as equipas veem a auditoria como uma carga adicional, e não como uma oportunidade de melhoria.<br></li>
+
+
+
+<li><strong>Fragmentação de sistemas</strong>: a informação está dispersa em ERP, MES, GMAO ou pastas locais, dificultando a rastreabilidade.<br></li>
+</ul>
+
+
+
+<p>Resolver estes desafios é fundamental para ganhar eficiência em qualquer tipo de auditoria.</p>
+
+
+
+<h2><strong>Como ganhar eficiência em auditorias internas</strong></h2>
+
+
+
+<p>As auditorias internas costumam ser vistas como um trâmite obrigatório, mas na realidade são a oportunidade perfeita para detetar falhas antes de uma inspeção externa. Para ganhar eficiência neste tipo de auditoria:</p>
+
+
+
+<ul>
+<li>Usar <strong>checklists digitais personalizáveis</strong> de acordo com a norma aplicável.<br></li>
+
+
+
+<li>Documentar as constatações com <strong>fotos e vídeos em tempo real</strong>.<br></li>
+
+
+
+<li>Atribuir <strong><a href="/pt/blog/acciones-correctivas-y-preventivas-que-funcionan/">ações corretivas</a> automáticas</strong> aos responsáveis.<br></li>
+
+
+
+<li>Utilizar dashboards que mostrem o estado das auditorias e <a href="/pt/blog/gestion-de-no-conformidades-en-alimentacion-guia-completa/">não conformidades</a> num relance.<br></li>
+</ul>
+
+
+
+<p>Assim, a auditoria interna deixa de ser um processo burocrático e transforma-se num mecanismo ágil de melhoria contínua.</p>
+
+
+
+<h2><strong>Como ganhar eficiência em auditorias externas e de certificação</strong></h2>
+
+
+
+<p>Quando um cliente, fornecedor ou entidade certificadora realiza uma auditoria, a pressão aumenta: qualquer falha pode custar um contrato ou uma certificação. Neste contexto, os principais fatores de eficiência são:</p>
+
+
+
+<ul>
+<li>Centralizar a informação num único sistema, evitando pesquisas manuais.<br></li>
+
+
+
+<li>Ter <strong>rastreabilidade completa</strong>: desde as matérias-primas até ao produto final.<br></li>
+
+
+
+<li>Contar com alertas prévios que avisem de ocorrências não resolvidas.<br></li>
+
+
+
+<li>Reduzir o tempo de preparação de relatórios através da geração automática.<br></li>
+</ul>
+
+      <!-- banner-medio:inicio -->
+      <div class="blog-banner" data-modulo="registros">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/lista.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Prepare as suas auditorias sem correrias de última hora</span>Checklists, evidências e constatações organizadas para ISO 9001, IFS, BRCGS ou FSSC 22000.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/checklists-digitais/">Ver auditorias</a>
+    </div>
+  </div>
+      <!-- banner-medio:fin -->
+
+      
+
+
+
+<p>Em auditorias de certificação ISO 9001, ISO 14001, ISO 22000, IFS ou BRC, a digitalização é o fator decisivo para cumprir prazos e requisitos de evidência.</p>
+
+
+
+<h2><strong>Como ganhar eficiência em auditorias de processos</strong></h2>
+
+
+
+<p>As auditorias de processos permitem detetar estrangulamentos, atrasos ou incumprimentos. Para melhorar a sua eficiência é fundamental:</p>
+
+
+
+<ul>
+<li>Mapear cada processo com clareza e ter KPIs associados.<br></li>
+
+
+
+<li>Detetar padrões de ocorrências na produção e resolvê-los antes da auditoria.<br></li>
+
+
+
+<li>Usar ferramentas que permitam comparar o desempenho entre linhas ou turnos.<br></li>
+</ul>
+
+
+
+<p>Uma auditoria de processos não só valida o cumprimento, como também melhora a produtividade global da fábrica.</p>
+
+
+
+<h2><strong>Como ganhar eficiência em auditorias de produto</strong></h2>
+
+
+
+<p>Quando o foco está no produto, a qualidade final é o que conta. Para tornar esta auditoria eficiente:</p>
+
+
+
+<ul>
+<li>Registar parâmetros de qualidade de forma digital.<br></li>
+
+
+
+<li>Contar com históricos de testes de laboratório ou controlos de qualidade acessíveis em segundos.<br></li>
+
+
+
+<li>Integrar resultados com outros sistemas (ERP, MES) para mostrar coerência.<br></li>
+</ul>
+
+
+
+<p>Isto permite demonstrar ao auditor que o produto cumpre as especificações técnicas de forma verificável e rápida.</p>
+
+
+
+<h2><strong>Como ganhar eficiência em auditorias temáticas</strong></h2>
+
+
+
+<p>Em auditorias específicas como ISO 14001, ISO 22000, IFS ou BRC, o desafio costuma estar na rastreabilidade e na evidência documental. Para ganhar eficiência nestes casos:</p>
+
+
+
+<ul>
+<li>Documentar ocorrências ambientais ou de segurança alimentar em tempo real.<br></li>
+
+
+
+<li>Usar evidências digitais com fotos, vídeos ou sensores conectados.<br></li>
+
+
+
+<li>Assegurar rastreabilidade para trás (fornecedores) e para a frente (clientes).<br></li>
+</ul>
+
+
+
+<p>Desta forma, quando um auditor solicitar provas, estarão prontas em segundos.</p>
+
+
+
+<h2><strong>O papel da digitalização nos diferentes tipos de auditoria de qualidade</strong></h2>
+
+
+
+<p>A digitalização transformou os <strong>tipos de auditoria de qualidade</strong> em todos os setores. As vantagens de adotar uma ferramenta digital são:</p>
+
+
+
+<ul>
+<li><strong>Poupança de tempo</strong>: redução de até 65% na preparação de auditorias.<br></li>
+
+
+
+<li><strong>Rastreabilidade total</strong>: cada ocorrência e ação corretiva fica registada com evidências.<br></li>
+
+
+
+<li><strong>Padronização</strong>: utilizam-se modelos uniformes que garantem consistência.<br></li>
+
+
+
+<li><strong>Visibilidade em tempo real</strong>: dashboards que mostram o estado das auditorias e não conformidades.<br></li>
+
+
+
+<li><strong>Conformidade garantida</strong>: facilita superar auditorias ISO, IFS e BRC sem sobressaltos.<br></li>
+</ul>
+
+
+
+<p>As empresas que ainda dependem de registos manuais investem muito mais tempo e esforço nas suas auditorias, o que as coloca em desvantagem face a concorrentes digitalizados.</p>
+
+
+
+<h2><strong>Como a Solved facilita todos os tipos de auditoria de qualidade</strong></h2>
+
+
+
+<p>A plataforma <strong>Solved</strong> está concebida para simplificar qualquer tipo de auditoria de qualidade:</p>
+
+
+
+<ul>
+<li><strong>Checklists digitais</strong> adaptados a ISO 9001, ISO 14001, ISO 22000, IFS e BRC.<br></li>
+
+
+
+<li><strong>Registo imediato de constatações e evidências digitais</strong> na fábrica.<br></li>
+
+
+
+<li><strong>Atribuição automática de ações corretivas</strong> com acompanhamento em tempo real.<br></li>
+
+
+
+<li><strong>Dashboards centralizados</strong> que permitem à direção ver o estado de todas as auditorias.<br></li>
+
+
+
+<li><strong>Integração com ERP, MES e GMAO</strong> para evitar duplicações de dados.<br></li>
+</ul>
+
+
+
+<p>Com a Solved, uma fábrica reduz drasticamente os tempos de preparação, aumenta a fiabilidade da informação e transforma a auditoria num processo de melhoria contínua, e não numa formalidade temida.</p>
+
+
+
+<h2><strong>Conclusão</strong></h2>
+
+
+
+<p>Os diferentes <strong>tipos de auditoria de qualidade</strong> desempenham funções complementares: internas para detetar falhas, externas para demonstrar conformidade, de certificação para aceder a mercados, de processos para melhorar a eficiência e de produto para garantir resultados.</p>
+
+
+
+<p>O desafio está em torná-las eficientes, reduzindo tempo, erros e resistência do pessoal. A chave está na digitalização, que assegura rastreabilidade total, evidência imediata e controlo em tempo real.</p>
+
+
+
+<p>As fábricas que apostam em ferramentas como a Solved conseguem não só cumprir as normas ISO, IFS e BRC, como também transformar as auditorias numa vantagem competitiva.</p>
+
+
+
+<p>Quer ganhar eficiência em todos os <strong>tipos de auditoria de qualidade</strong> e reduzir o tempo de preparação até 65%? Peça uma demonstração de<a href="/pt/checklists-digitais/"> Solved</a> e descubra como digitalizar a sua gestão de auditorias.</p>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Termos relacionados</h2>
+      <ul>
+        <li><a href="/pt/glossario/seguridad-alimentaria/">Segurança alimentar</a></li>
+        <li><a href="/pt/glossario/auditoria-de-calidad/">Auditoria de qualidade</a></li>
+        <li><a href="/pt/glossario/auditoria-interna/">Auditoria interna</a></li>
+        <li><a href="/pt/glossario/fssc-22000/">FSSC 22000</a></li>
+      </ul>
+    </aside>
+
+    <div class="blog-banner" data-modulo="registros">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/lista.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Prepare as suas auditorias sem correrias de última hora</span>Checklists, evidências e constatações organizadas para ISO 9001, IFS, BRCGS ou FSSC 22000.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/checklists-digitais/">Ver auditorias</a>
+    </div>
+  </div>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="/pt/blog/">← Voltar ao blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Continue a ler</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/certificacion-brc-la-guia-definitiva/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/e90991ec8e6d-480.avif 480w, /blog/assets/e90991ec8e6d-768.avif 768w, /blog/assets/e90991ec8e6d-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/e90991ec8e6d-480.webp 480w, /blog/assets/e90991ec8e6d-768.webp 768w, /blog/assets/e90991ec8e6d-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/e90991ec8e6d-1200.jpg" width="1200" height="655" alt="Dois auditores com bata branca revisam documentação para a certificação BRC junto a uma linha de embalagem" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Auditorias e certificações</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/certificacion-brc-la-guia-definitiva/">Certificação BRC, o guia definitivo</a></h2>
+          <p class="blog-card__excerpt">Descubra o que é a certificação BRC, os seus requisitos, estrutura e como preparar-se para a auditoria com este guia definitivo.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-04T00:00:00Z">4 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/auditoria-interna-de-calidad-sin-sustos/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/f264648cdcb7-480.avif 480w, /blog/assets/f264648cdcb7-768.avif 768w, /blog/assets/f264648cdcb7-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/f264648cdcb7-480.webp 480w, /blog/assets/f264648cdcb7-768.webp 768w, /blog/assets/f264648cdcb7-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/f264648cdcb7-1200.jpg" width="1200" height="655" alt="Auditores a analisar uma linha de produção com prancheta durante uma auditoria interna de qualidade" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Auditorias e certificações</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/auditoria-interna-de-calidad-sin-sustos/">Auditoria interna de qualidade sem sustos</a></h2>
+          <p class="blog-card__excerpt">Descubra como realizar uma auditoria interna de qualidade eficaz. Passos, checklists e gestão de achados para melhorar o seu sistema.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-29T00:00:00Z">29 de julho de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/certificacion-ifs-food-guia-esencial/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/77aa5420999a-480.avif 480w, /blog/assets/77aa5420999a-768.avif 768w, /blog/assets/77aa5420999a-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/77aa5420999a-480.webp 480w, /blog/assets/77aa5420999a-768.webp 768w, /blog/assets/77aa5420999a-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/77aa5420999a-1200.jpg" width="1200" height="655" alt="Mulher jovem sentada no chão a consultar informação, imagem ilustrativa do artigo sobre a certificação IFS Food" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Auditorias e certificações</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/certificacion-ifs-food-guia-esencial/">Certificação IFS Food, guia essencial</a></h2>
+          <p class="blog-card__excerpt">Descubra o que é a certificação IFS Food, requisitos, estrutura e como preparar a sua auditoria com evidências e registos completos.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-25T00:00:00Z">25 de julho de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="/pt/chrome.js?v=20261005a"></script>
+
+</body></html>

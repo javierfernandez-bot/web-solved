@@ -1,0 +1,1045 @@
+{
+  "Incidencias →": {
+    "en": "Incidents →",
+    "fr": "Incidents →",
+    "it": "Anomalie →",
+    "de": "Störungen →",
+    "pt": "Ocorrências →"
+  },
+  "Los controles que abren acciones cuando salen KO.": {
+    "en": "The checks that open actions when they come back KO.",
+    "fr": "Les contrôles qui ouvrent des actions lorsqu'ils sortent KO.",
+    "it": "I controlli che aprono azioni quando risultano KO.",
+    "de": "Die Kontrollen, die bei Ergebnis KO Maßnahmen auslösen.",
+    "pt": "Os controlos que abrem ações quando têm resultado KO."
+  },
+  "Cuántas acciones se acumulan fuera de plazo.": {
+    "en": "How many actions are piling up overdue.",
+    "fr": "Combien d'actions s'accumulent hors délai.",
+    "it": "Quante azioni si accumulano fuori scadenza.",
+    "de": "Wie viele Maßnahmen überfällig auflaufen.",
+    "pt": "Quantas ações se acumulam fora do prazo."
+  },
+  "Comenzar por Acciones": {
+    "en": "Start with Actions",
+    "fr": "Commencer par les Actions",
+    "it": "Iniziare dalle Azioni",
+    "de": "Mit Maßnahmen beginnen",
+    "pt": "Começar pelas Ações"
+  },
+  "Es el punto en el que una ronda de control deja de ser documentación archivada. Al marcarse un control como KO, Solved genera la incidencia y la vincula al control y a la sección de origen.": {
+    "en": "This is where a round of checks stops being filed paperwork. When a check is marked KO, Solved raises the incident and links it to the check and to the section it came from.",
+    "fr": "C'est le moment où une ronde de contrôle cesse d'être de la documentation archivée. Dès qu'un contrôle est marqué KO, Solved crée l'incident et le relie au contrôle et à la section d'origine.",
+    "it": "È il punto in cui un giro di controlli smette di essere documentazione archiviata. Quando un controllo viene segnato KO, Solved genera l'anomalia e la collega al controllo e alla sezione di origine.",
+    "de": "Hier hört ein Kontrollrundgang auf, abgelegte Dokumentation zu sein. Sobald eine Kontrolle als KO markiert wird, legt Solved die Störung an und verknüpft sie mit der Kontrolle und dem Abschnitt, aus dem sie stammt.",
+    "pt": "É o ponto em que uma ronda de controlo deixa de ser documentação arquivada. Quando um controlo é marcado como KO, o Solved gera a ocorrência e associa-a ao controlo e à secção de origem."
+  },
+  "Ver el módulo de Registros": {
+    "en": "See the Records module",
+    "fr": "Voir le module Enregistrements",
+    "it": "Vedi il modulo Registrazioni",
+    "de": "Zum Modul Aufzeichnungen",
+    "pt": "Ver o módulo de Registos"
+  },
+  "La incidencia nace con la referencia del control y de su sección": {
+    "en": "The incident is born carrying the reference of the check and its section",
+    "fr": "L'incident naît avec la référence du contrôle et de sa section",
+    "it": "L'anomalia nasce con il riferimento del controllo e della sua sezione",
+    "de": "Die Störung entsteht mit dem Bezug zur Kontrolle und deren Abschnitt",
+    "pt": "A ocorrência nasce com a referência do controlo e da sua secção"
+  },
+  "Se firma quién ejecuta, quién supervisa y quién verifica": {
+    "en": "Who performs, who supervises and who verifies is signed off",
+    "fr": "Qui exécute, qui supervise et qui vérifie est signé",
+    "it": "Si firma chi esegue, chi supervisiona e chi verifica",
+    "de": "Wer ausführt, wer überwacht und wer prüft, wird unterschrieben",
+    "pt": "Fica assinado quem executa, quem supervisiona e quem verifica"
+  },
+  "Rondas planificadas, con aviso y responsable asignado": {
+    "en": "Scheduled rounds, with an alert and an assigned owner",
+    "fr": "Rondes planifiées, avec alerte et responsable assigné",
+    "it": "Giri pianificati, con avviso e responsabile assegnato",
+    "de": "Geplante Rundgänge, mit Benachrichtigung und zugewiesenem Verantwortlichen",
+    "pt": "Rondas planeadas, com alerta e responsável atribuído"
+  },
+  "El histórico queda completo y buscable para la auditoría": {
+    "en": "The history stays complete and searchable for the audit",
+    "fr": "L'historique reste complet et consultable pour l'audit",
+    "it": "Lo storico resta completo e ricercabile per l'audit",
+    "de": "Die Historie bleibt vollständig und für das Audit durchsuchbar",
+    "pt": "O histórico fica completo e pesquisável para a auditoria"
+  },
+  "Ejecución, supervisión y verificación, cada una con su responsable identificado.": {
+    "en": "Execution, supervision and verification, each with a named owner.",
+    "fr": "Exécution, supervision et vérification, chacune avec son responsable identifié.",
+    "it": "Esecuzione, supervisione e verifica, ciascuna con il suo responsabile identificato.",
+    "de": "Ausführung, Überwachung und Prüfung – jede mit namentlichem Verantwortlichen.",
+    "pt": "Execução, supervisão e verificação, cada uma com o seu responsável identificado."
+  },
+  "La ronda queda firmada.": {
+    "en": "The round is signed off.",
+    "fr": "La ronde est signée.",
+    "it": "Il giro resta firmato.",
+    "de": "Der Rundgang ist unterzeichnet.",
+    "pt": "A ronda fica assinada."
+  },
+  "Genera incidencia con la referencia del control y de su sección de origen.": {
+    "en": "It raises an incident carrying the reference of the check and the section it came from.",
+    "fr": "Il crée un incident avec la référence du contrôle et de sa section d'origine.",
+    "it": "Genera un'anomalia con il riferimento del controllo e della sezione di origine.",
+    "de": "Sie erzeugt eine Störung mit dem Bezug zur Kontrolle und deren Ursprungsabschnitt.",
+    "pt": "Gera uma ocorrência com a referência do controlo e da sua secção de origem."
+  },
+  "El resultado KO no se archiva.": {
+    "en": "A KO result does not get filed away.",
+    "fr": "Un résultat KO n'est pas archivé.",
+    "it": "L'esito KO non finisce in archivio.",
+    "de": "Ein KO-Ergebnis wird nicht abgeheftet.",
+    "pt": "O resultado KO não é arquivado."
+  },
+  "El histórico queda completo y consultable, sin recopilación documental de última hora.": {
+    "en": "The history stays complete and available, with no last-minute document hunt.",
+    "fr": "L'historique reste complet et consultable, sans collecte documentaire de dernière minute.",
+    "it": "Lo storico resta completo e consultabile, senza raccolte documentali dell'ultimo minuto.",
+    "de": "Die Historie bleibt vollständig und einsehbar – ohne Dokumentensuche in letzter Minute.",
+    "pt": "O histórico fica completo e consultável, sem recolha documental de última hora."
+  },
+  "La auditoría no requiere preparación previa.": {
+    "en": "The audit needs no prep work.",
+    "fr": "L'audit ne demande aucune préparation préalable.",
+    "it": "L'audit non richiede preparazione preventiva.",
+    "de": "Das Audit braucht keine Vorbereitung.",
+    "pt": "A auditoria não requer preparação prévia."
+  },
+  "Lo que abre un control cuando sale KO.": {
+    "en": "What a check opens when it comes back KO.",
+    "fr": "Ce qu'ouvre un contrôle lorsqu'il sort KO.",
+    "it": "Ciò che apre un controllo quando risulta KO.",
+    "de": "Was eine Kontrolle bei Ergebnis KO auslöst.",
+    "pt": "O que um controlo abre quando tem resultado KO."
+  },
+  "La tarea correctiva que cierra el hallazgo.": {
+    "en": "The corrective task that closes the finding.",
+    "fr": "La tâche corrective qui clôt le constat.",
+    "it": "L'attività correttiva che chiude il rilievo.",
+    "de": "Die Korrekturaufgabe, die den Befund abschließt.",
+    "pt": "A tarefa corretiva que encerra a constatação."
+  },
+  "Cuántos registros se firman y cuántos quedan pendientes.": {
+    "en": "How many records get signed and how many are left pending.",
+    "fr": "Combien d'enregistrements sont signés et combien restent en attente.",
+    "it": "Quante registrazioni vengono firmate e quante restano in sospeso.",
+    "de": "Wie viele Aufzeichnungen unterschrieben werden und wie viele offen bleiben.",
+    "pt": "Quantos registos são assinados e quantos ficam pendentes."
+  },
+  "«Lo que más valoramos es lo fácil que ha sido para el equipo adaptarse: Solved es muy intuitivo.»": {
+    "en": "“What we value most is how easily the team adapted: Solved is very intuitive.”",
+    "fr": "« Ce que nous apprécions le plus, c'est la facilité d'adaptation de l'équipe : Solved est très intuitif. »",
+    "it": "«Quello che apprezziamo di più è quanto sia stato facile per la squadra adattarsi: Solved è molto intuitivo.»",
+    "de": "„Am meisten schätzen wir, wie leicht sich das Team eingefunden hat: Solved ist sehr intuitiv.“",
+    "pt": "«O que mais valorizamos é a facilidade com que a equipa se adaptou: o Solved é muito intuitivo.»"
+  },
+  "Director de calidad · Prilux": {
+    "en": "Quality director · Prilux",
+    "fr": "Directeur qualité · Prilux",
+    "it": "Direttore qualità · Prilux",
+    "de": "Qualitätsleiter · Prilux",
+    "pt": "Diretor de qualidade · Prilux"
+  },
+  "Álvaro Sobrino": {
+    "en": "Álvaro Sobrino",
+    "fr": "Álvaro Sobrino",
+    "it": "Álvaro Sobrino",
+    "de": "Álvaro Sobrino",
+    "pt": "Álvaro Sobrino"
+  },
+  "Comenzar por Registros": {
+    "en": "Start with Records",
+    "fr": "Commencer par les Enregistrements",
+    "it": "Iniziare dalle Registrazioni",
+    "de": "Mit Aufzeichnungen beginnen",
+    "pt": "Começar pelos Registos"
+  },
+  "Los datos de planta ya están en el sistema, incorporados por la propia operación: incidencias abiertas, tiempo medio de cierre, acciones fuera de plazo y registros firmados. Sin exportación previa y sin esperar al cierre del periodo.": {
+    "en": "The plant data is already in the system, put there by the work itself: open incidents, average time to close, overdue actions and signed records. No prior export, no waiting for the period to close.",
+    "fr": "Les données de l'usine sont déjà dans le système, alimentées par l'exploitation elle-même : incidents ouverts, délai moyen de clôture, actions hors délai et enregistrements signés. Sans export préalable ni attente de la clôture de période.",
+    "it": "I dati di stabilimento sono già nel sistema, immessi dall'operatività stessa: anomalie aperte, tempo medio di chiusura, azioni fuori scadenza e registrazioni firmate. Senza esportazioni preventive e senza aspettare la chiusura del periodo.",
+    "de": "Die Werksdaten stecken bereits im System, eingetragen durch die Arbeit selbst: offene Störungen, durchschnittliche Abschlusszeit, überfällige Maßnahmen und unterzeichnete Aufzeichnungen. Ohne vorherigen Export und ohne auf den Periodenabschluss zu warten.",
+    "pt": "Os dados de fábrica já estão no sistema, introduzidos pela própria operação: ocorrências abertas, tempo médio de encerramento, ações fora do prazo e registos assinados. Sem exportação prévia e sem esperar pelo encerramento do período."
+  },
+  "Ver KPIs y dashboards": {
+    "en": "See KPIs and dashboards",
+    "fr": "Voir les KPI et tableaux de bord",
+    "it": "Vedi KPI e cruscotti",
+    "de": "Zu KPIs und Dashboards",
+    "pt": "Ver KPIs e dashboards"
+  },
+  "Incidencias abiertas y su reparto por categoría": {
+    "en": "Open incidents and how they split by category",
+    "fr": "Incidents ouverts et leur répartition par catégorie",
+    "it": "Anomalie aperte e la loro distribuzione per categoria",
+    "de": "Offene Störungen und ihre Verteilung nach Kategorie",
+    "pt": "Ocorrências abertas e a sua distribuição por categoria"
+  },
+  "Tiempo medio de cierre, con la variación respecto al mes anterior": {
+    "en": "Average time to close, with the change against last month",
+    "fr": "Délai moyen de clôture, avec la variation par rapport au mois précédent",
+    "it": "Tempo medio di chiusura, con la variazione rispetto al mese precedente",
+    "de": "Durchschnittliche Abschlusszeit, mit der Veränderung zum Vormonat",
+    "pt": "Tempo médio de encerramento, com a variação face ao mês anterior"
+  },
+  "Acciones fuera de plazo, señaladas una a una": {
+    "en": "Overdue actions, flagged one by one",
+    "fr": "Actions hors délai, signalées une à une",
+    "it": "Azioni fuori scadenza, segnalate una a una",
+    "de": "Überfällige Maßnahmen, einzeln markiert",
+    "pt": "Ações fora do prazo, assinaladas uma a uma"
+  },
+  "Informes exportables para su remisión externa": {
+    "en": "Exportable reports to send outside",
+    "fr": "Rapports exportables pour envoi externe",
+    "it": "Report esportabili da inviare all'esterno",
+    "de": "Exportierbare Berichte für den Versand nach außen",
+    "pt": "Relatórios exportáveis para envio externo"
+  },
+  "Los datos se incorporan con la propia operación, sin un paso previo de exportación.": {
+    "en": "The data arrives with the work itself, with no export step first.",
+    "fr": "Les données arrivent avec l'exploitation elle-même, sans étape d'export préalable.",
+    "it": "I dati entrano con l'operatività stessa, senza un passaggio di esportazione.",
+    "de": "Die Daten entstehen mit der Arbeit selbst, ohne vorgelagerten Exportschritt.",
+    "pt": "Os dados são incorporados com a própria operação, sem um passo prévio de exportação."
+  },
+  "Sin transcripción manual.": {
+    "en": "No manual re-keying.",
+    "fr": "Sans ressaisie manuelle.",
+    "it": "Senza trascrizione manuale.",
+    "de": "Ohne manuelles Abtippen.",
+    "pt": "Sem transcrição manual."
+  },
+  "La variación acompaña a cada cifra, que es lo que indica la tendencia.": {
+    "en": "Each figure comes with its change, which is what shows the trend.",
+    "fr": "Chaque chiffre est accompagné de sa variation, c'est elle qui indique la tendance.",
+    "it": "Ogni cifra è accompagnata dalla variazione, che è ciò che indica la tendenza.",
+    "de": "Zu jeder Zahl gehört ihre Veränderung – sie zeigt den Trend.",
+    "pt": "A variação acompanha cada valor, que é o que indica a tendência."
+  },
+  "Con comparativa del periodo anterior.": {
+    "en": "Compared with the previous period.",
+    "fr": "Avec comparaison de la période précédente.",
+    "it": "Con confronto sul periodo precedente.",
+    "de": "Mit Vergleich zur Vorperiode.",
+    "pt": "Com comparação com o período anterior."
+  },
+  "Para su remisión a cliente, entidad certificadora o dirección existe informe.": {
+    "en": "There is a report to send to a customer, a certification body or management.",
+    "fr": "Un rapport existe pour transmission au client, à l'organisme certificateur ou à la direction.",
+    "it": "Esiste un report da inviare al cliente, all'ente di certificazione o alla direzione.",
+    "de": "Für Kunde, Zertifizierungsstelle oder Geschäftsleitung gibt es einen Bericht.",
+    "pt": "Para envio ao cliente, à entidade certificadora ou à direção existe relatório."
+  },
+  "Con exportación cuando se requiere.": {
+    "en": "With an export when it is needed.",
+    "fr": "Avec export lorsque c'est nécessaire.",
+    "it": "Con esportazione quando serve.",
+    "de": "Mit Export, wenn er gebraucht wird.",
+    "pt": "Com exportação quando necessário."
+  },
+  "De dónde salen las cifras de apertura y cierre.": {
+    "en": "Where the opening and closing figures come from.",
+    "fr": "D'où viennent les chiffres d'ouverture et de clôture.",
+    "it": "Da dove escono le cifre di apertura e chiusura.",
+    "de": "Woher die Zahlen zu Eröffnung und Abschluss stammen.",
+    "pt": "De onde saem os números de abertura e encerramento."
+  },
+  "Lo que aparece como fuera de plazo en el panel.": {
+    "en": "What shows up as overdue on the dashboard.",
+    "fr": "Ce qui apparaît comme hors délai sur le tableau de bord.",
+    "it": "Ciò che appare come fuori scadenza nel cruscotto.",
+    "de": "Was im Dashboard als überfällig erscheint.",
+    "pt": "O que aparece como fora do prazo no painel."
+  },
+  "Los registros firmados que cuenta el dashboard.": {
+    "en": "The signed records the dashboard counts.",
+    "fr": "Les enregistrements signés que compte le tableau de bord.",
+    "it": "Le registrazioni firmate che il cruscotto conta.",
+    "de": "Die unterzeichneten Aufzeichnungen, die das Dashboard zählt.",
+    "pt": "Os registos assinados que o dashboard conta."
+  },
+  "«Con Solved, ahora tenemos visibilidad en tiempo real de todo lo que ocurre en nuestros centros productivos. Esto nos ha permitido mejorar el control de la merma y reducir enormemente los tiempos de comunicación y duplicidad de tareas.»": {
+    "en": "“With Solved we now have real-time visibility of everything that happens across our production sites. That has let us tighten waste control and cut communication time and duplicated work enormously.”",
+    "fr": "« Avec Solved, nous avons désormais une visibilité en temps réel de tout ce qui se passe dans nos sites de production. Cela nous a permis d'améliorer le contrôle des pertes et de réduire énormément les temps de communication et les doublons de tâches. »",
+    "it": "«Con Solved abbiamo ora visibilità in tempo reale di tutto ciò che accade nei nostri siti produttivi. Questo ci ha permesso di migliorare il controllo dello scarto e di ridurre enormemente i tempi di comunicazione e la duplicazione di attività.»",
+    "de": "„Mit Solved sehen wir in Echtzeit, was in unseren Produktionsstandorten passiert. Das hat uns geholfen, den Ausschuss besser zu steuern und Kommunikationszeiten sowie doppelte Arbeit stark zu reduzieren.“",
+    "pt": "«Com o Solved, temos agora visibilidade em tempo real de tudo o que acontece nos nossos centros produtivos. Isto permitiu-nos melhorar o controlo do desperdício e reduzir muito os tempos de comunicação e a duplicação de tarefas.»"
+  },
+  "Director general · Fritoper": {
+    "en": "General manager · Fritoper",
+    "fr": "Directeur général · Fritoper",
+    "it": "Direttore generale · Fritoper",
+    "de": "Geschäftsführer · Fritoper",
+    "pt": "Diretor geral · Fritoper"
+  },
+  "Sergio Pérez": {
+    "en": "Sergio Pérez",
+    "fr": "Sergio Pérez",
+    "it": "Sergio Pérez",
+    "de": "Sergio Pérez",
+    "pt": "Sergio Pérez"
+  },
+  "Comenzar por KPIs y dashboards": {
+    "en": "Start with KPIs and dashboards",
+    "fr": "Commencer par les KPI et tableaux de bord",
+    "it": "Iniziare da KPI e cruscotti",
+    "de": "Mit KPIs und Dashboards beginnen",
+    "pt": "Começar por KPIs e dashboards"
+  },
+  "La capa de IA de Solved responde sobre los datos de la propia organización: incidencias, acciones, registros y documentos. No es un chat genérico: opera directamente sobre la información de la planta.": {
+    "en": "Solved's AI layer answers from your own organisation's data: incidents, actions, records and documents. It is not a generic chat — it works directly on the plant's information.",
+    "fr": "La couche IA de Solved répond à partir des données de votre organisation : incidents, actions, enregistrements et documents. Ce n'est pas un chat générique : elle opère directement sur l'information de l'usine.",
+    "it": "Il livello di IA di Solved risponde sui dati della tua organizzazione: anomalie, azioni, registrazioni e documenti. Non è una chat generica: opera direttamente sulle informazioni dello stabilimento.",
+    "de": "Die KI-Schicht von Solved antwortet auf Basis der Daten Ihrer Organisation: Störungen, Maßnahmen, Aufzeichnungen und Dokumente. Kein generischer Chat – sie arbeitet direkt auf den Informationen des Werks.",
+    "pt": "A camada de IA do Solved responde com base nos dados da própria organização: ocorrências, ações, registos e documentos. Não é um chat genérico: opera diretamente sobre a informação da fábrica."
+  },
+  "Responde citando los partes y los registros concretos": {
+    "en": "It answers quoting the specific reports and records",
+    "fr": "Elle répond en citant les rapports et enregistrements précis",
+    "it": "Risponde citando i rapporti e le registrazioni specifiche",
+    "de": "Sie antwortet unter Nennung der konkreten Meldungen und Aufzeichnungen",
+    "pt": "Responde citando os partes e os registos concretos"
+  },
+  "Cruza el histórico de un activo con sus controles KO": {
+    "en": "It cross-checks an asset's history against its KO checks",
+    "fr": "Elle croise l'historique d'un actif avec ses contrôles KO",
+    "it": "Incrocia lo storico di un asset con i suoi controlli KO",
+    "de": "Sie verknüpft die Historie einer Anlage mit ihren KO-Kontrollen",
+    "pt": "Cruza o histórico de um ativo com os seus controlos KO"
+  },
+  "Crea la incidencia desde un texto libre o un correo": {
+    "en": "It creates the incident from free text or an email",
+    "fr": "Elle crée l'incident à partir d'un texte libre ou d'un courriel",
+    "it": "Crea l'anomalia da un testo libero o da una mail",
+    "de": "Sie legt die Störung aus Freitext oder einer E-Mail an",
+    "pt": "Cria a ocorrência a partir de um texto livre ou de um email"
+  },
+  "Genera el informe semanal de calidad por planta": {
+    "en": "It produces the weekly quality report per plant",
+    "fr": "Elle génère le rapport qualité hebdomadaire par usine",
+    "it": "Genera il report settimanale di qualità per stabilimento",
+    "de": "Sie erstellt den wöchentlichen Qualitätsbericht je Werk",
+    "pt": "Gera o relatório semanal de qualidade por fábrica"
+  },
+  "La respuesta procede de las incidencias, los registros y los documentos de la organización.": {
+    "en": "The answer comes from the organisation's incidents, records and documents.",
+    "fr": "La réponse provient des incidents, des enregistrements et des documents de l'organisation.",
+    "it": "La risposta viene dalle anomalie, dalle registrazioni e dai documenti dell'organizzazione.",
+    "de": "Die Antwort stammt aus den Störungen, Aufzeichnungen und Dokumenten der Organisation.",
+    "pt": "A resposta provém das ocorrências, dos registos e dos documentos da organização."
+  },
+  "Sobre datos propios.": {
+    "en": "On your own data.",
+    "fr": "Sur vos propres données.",
+    "it": "Sui dati dell'azienda.",
+    "de": "Auf den eigenen Daten.",
+    "pt": "Sobre dados próprios."
+  },
+  "Cada respuesta cita el código del parte o del registro del que procede.": {
+    "en": "Every answer quotes the code of the report or record it came from.",
+    "fr": "Chaque réponse cite le code du rapport ou de l'enregistrement d'origine.",
+    "it": "Ogni risposta cita il codice del rapporto o della registrazione da cui proviene.",
+    "de": "Jede Antwort nennt den Code der Meldung oder Aufzeichnung, aus der sie stammt.",
+    "pt": "Cada resposta cita o código do parte ou do registo de origem."
+  },
+  "Con referencia explícita.": {
+    "en": "With an explicit reference.",
+    "fr": "Avec référence explicite.",
+    "it": "Con riferimento esplicito.",
+    "de": "Mit ausdrücklichem Beleg.",
+    "pt": "Com referência explícita."
+  },
+  "La plataforma opera con un sistema de créditos, de modo que el coste de cada uso es conocido.": {
+    "en": "The platform runs on credits, so the cost of each use is known up front.",
+    "fr": "La plateforme fonctionne avec un système de crédits : le coût de chaque usage est connu.",
+    "it": "La piattaforma funziona a crediti, così il costo di ogni utilizzo è noto.",
+    "de": "Die Plattform arbeitet mit einem Guthabensystem, sodass die Kosten jeder Nutzung bekannt sind.",
+    "pt": "A plataforma funciona com um sistema de créditos, de modo que o custo de cada utilização é conhecido."
+  },
+  "Con consumo medido.": {
+    "en": "With measured usage.",
+    "fr": "Avec une consommation mesurée.",
+    "it": "Con consumo misurato.",
+    "de": "Mit gemessenem Verbrauch.",
+    "pt": "Com consumo medido."
+  },
+  "Los partes que la IA lee para responder.": {
+    "en": "The reports the AI reads to answer.",
+    "fr": "Les rapports que l'IA lit pour répondre.",
+    "it": "I rapporti che l'IA legge per rispondere.",
+    "de": "Die Meldungen, die die KI zum Antworten liest.",
+    "pt": "Os partes que a IA lê para responder."
+  },
+  "Los controles KO que explican la reincidencia.": {
+    "en": "The KO checks that explain the repeat.",
+    "fr": "Les contrôles KO qui expliquent la récidive.",
+    "it": "I controlli KO che spiegano la ricaduta.",
+    "de": "Die KO-Kontrollen, die die Wiederholung erklären.",
+    "pt": "Os controlos KO que explicam a reincidência."
+  },
+  "Las cifras que la IA resume en el informe semanal.": {
+    "en": "The figures the AI sums up in the weekly report.",
+    "fr": "Les chiffres que l'IA résume dans le rapport hebdomadaire.",
+    "it": "Le cifre che l'IA riassume nel report settimanale.",
+    "de": "Die Zahlen, die die KI im Wochenbericht zusammenfasst.",
+    "pt": "Os números que a IA resume no relatório semanal."
+  },
+  "Comenzar por la capa de IA": {
+    "en": "Start with the AI layer",
+    "fr": "Commencer par la couche IA",
+    "it": "Iniziare dal livello di IA",
+    "de": "Mit der KI-Schicht beginnen",
+    "pt": "Começar pela camada de IA"
+  },
+  "Ver más": {
+    "en": "See more",
+    "fr": "Voir plus",
+    "it": "Vedi di più",
+    "de": "Mehr ansehen",
+    "pt": "Ver mais"
+  },
+  "Solved no sustituye al ERP ni al GMAO: se conecta con ellos para que el dato de planta no quede aislado ni deba introducirse dos veces.": {
+    "en": "Solved does not replace your ERP or your CMMS: it connects to them so plant data is neither stranded nor entered twice.",
+    "fr": "Solved ne remplace ni l'ERP ni la GMAO : il s'y connecte pour que la donnée d'usine ne reste pas isolée et ne soit pas saisie deux fois.",
+    "it": "Solved non sostituisce l'ERP né il CMMS: si collega a loro perché il dato di stabilimento non resti isolato né vada inserito due volte.",
+    "de": "Solved ersetzt weder ERP noch Instandhaltungssystem: Es verbindet sich mit ihnen, damit Werksdaten nicht isoliert bleiben und nicht doppelt erfasst werden.",
+    "pt": "O Solved não substitui o ERP nem o GMAO: liga-se a eles para que o dado de fábrica não fique isolado nem seja necessário introduzi-lo duas vezes."
+  },
+  "Ver el documento de integraciones": {
+    "en": "See the integrations document",
+    "fr": "Voir le document sur les intégrations",
+    "it": "Vedi il documento sulle integrazioni",
+    "de": "Zum Integrationsdokument",
+    "pt": "Ver o documento de integrações"
+  },
+  "Conexión con ERP, MES y GMAO": {
+    "en": "Connection with ERP, MES and CMMS",
+    "fr": "Connexion avec ERP, MES et GMAO",
+    "it": "Collegamento con ERP, MES e CMMS",
+    "de": "Anbindung an ERP, MES und Instandhaltungssystem",
+    "pt": "Ligação com ERP, MES e GMAO"
+  },
+  "Los partes y los registros se sincronizan con el sistema ya implantado": {
+    "en": "Reports and records sync with the system already in place",
+    "fr": "Les rapports et les enregistrements se synchronisent avec le système déjà en place",
+    "it": "Rapporti e registrazioni si sincronizzano con il sistema già in uso",
+    "de": "Meldungen und Aufzeichnungen werden mit dem bestehenden System synchronisiert",
+    "pt": "Os partes e os registos sincronizam-se com o sistema já implementado"
+  },
+  "Avisos por correo, en Outlook o en Gmail": {
+    "en": "Email alerts, in Outlook or Gmail",
+    "fr": "Alertes par courriel, dans Outlook ou Gmail",
+    "it": "Avvisi via mail, in Outlook o Gmail",
+    "de": "E-Mail-Benachrichtigungen in Outlook oder Gmail",
+    "pt": "Alertas por email, no Outlook ou no Gmail"
+  },
+  "Sin duplicar datos y sin volcados manuales": {
+    "en": "No duplicated data and no manual dumps",
+    "fr": "Sans doublons de données ni transferts manuels",
+    "it": "Senza duplicare dati e senza travasi manuali",
+    "de": "Ohne doppelte Daten und ohne manuelle Übertragungen",
+    "pt": "Sem duplicar dados e sem transferências manuais"
+  },
+  "Conectado": {
+    "en": "Connected",
+    "fr": "Connecté",
+    "it": "Collegato",
+    "de": "Verbunden",
+    "pt": "Ligado"
+  },
+  "Salida al ERP · junio 2026": {
+    "en": "Output to ERP · June 2026",
+    "fr": "Sortie vers l'ERP · juin 2026",
+    "it": "Uscita verso l'ERP · giugno 2026",
+    "de": "Ausgabe an das ERP · Juni 2026",
+    "pt": "Saída para o ERP · junho de 2026"
+  },
+  "Parte creado": {
+    "en": "Report created",
+    "fr": "Rapport créé",
+    "it": "Rapporto creato",
+    "de": "Meldung angelegt",
+    "pt": "Parte criado"
+  },
+  "Enviando…": {
+    "en": "Sending…",
+    "fr": "Envoi…",
+    "it": "Invio…",
+    "de": "Wird gesendet…",
+    "pt": "A enviar…"
+  },
+  "Última sincronización hace 2 min": {
+    "en": "Last sync 2 min ago",
+    "fr": "Dernière synchronisation il y a 2 min",
+    "it": "Ultima sincronizzazione 2 min fa",
+    "de": "Letzte Synchronisierung vor 2 Min.",
+    "pt": "Última sincronização há 2 min"
+  },
+  "La incidencia se registra una vez en Solved y se transmite al ERP como parte de trabajo. Sin doble introducción de datos, y con el mismo identificador en ambos sistemas.": {
+    "en": "The incident is logged once in Solved and passed to the ERP as a work order. No double entry, and the same identifier in both systems.",
+    "fr": "L'incident est saisi une fois dans Solved et transmis à l'ERP comme bon de travail. Sans double saisie, et avec le même identifiant dans les deux systèmes.",
+    "it": "L'anomalia si registra una volta in Solved e passa all'ERP come ordine di lavoro. Senza doppio inserimento, e con lo stesso identificativo nei due sistemi.",
+    "de": "Die Störung wird einmal in Solved erfasst und als Arbeitsauftrag an das ERP übergeben. Ohne Doppelerfassung und mit derselben Kennung in beiden Systemen.",
+    "pt": "A ocorrência é registada uma vez no Solved e transmitida ao ERP como ordem de trabalho. Sem dupla introdução de dados, e com o mesmo identificador nos dois sistemas."
+  },
+  "La actividad de planta se propaga al ERP y los maestros del ERP descienden a la ficha.": {
+    "en": "Shop-floor activity flows up to the ERP and the ERP's master data comes down to the record.",
+    "fr": "L'activité de l'usine remonte vers l'ERP et les données de base de l'ERP redescendent dans la fiche.",
+    "it": "L'attività di stabilimento sale all'ERP e i dati anagrafici dell'ERP scendono nella scheda.",
+    "de": "Die Werksaktivität fließt ins ERP, und die Stammdaten des ERP kommen in den Datensatz.",
+    "pt": "A atividade de fábrica propaga-se ao ERP e os dados-mestre do ERP descem até à ficha."
+  },
+  "Sincronización bidireccional.": {
+    "en": "Two-way sync.",
+    "fr": "Synchronisation bidirectionnelle.",
+    "it": "Sincronizzazione bidirezionale.",
+    "de": "Bidirektionale Synchronisierung.",
+    "pt": "Sincronização bidirecional."
+  },
+  "Desaparece el paso de exportar y transcribir, y con él su margen de error.": {
+    "en": "The export-and-retype step disappears, and its margin for error with it.",
+    "fr": "L'étape d'export et de ressaisie disparaît, et avec elle sa marge d'erreur.",
+    "it": "Sparisce il passaggio di esportare e trascrivere, e con esso il suo margine di errore.",
+    "de": "Der Schritt aus Exportieren und Abtippen entfällt – und mit ihm seine Fehlerquelle.",
+    "pt": "Desaparece o passo de exportar e transcrever, e com ele a sua margem de erro."
+  },
+  "Sin volcados manuales.": {
+    "en": "No manual dumps.",
+    "fr": "Sans transferts manuels.",
+    "it": "Senza travasi manuali.",
+    "de": "Ohne manuelle Übertragungen.",
+    "pt": "Sem transferências manuais."
+  },
+  "Cada área continúa en el suyo y los datos se encuentran entre ambos.": {
+    "en": "Each area stays in its own system and the data meets in between.",
+    "fr": "Chaque service reste dans le sien et les données se rejoignent entre les deux.",
+    "it": "Ogni area resta nel proprio sistema e i dati si incontrano tra i due.",
+    "de": "Jeder Bereich bleibt in seinem System, und die Daten treffen sich dazwischen.",
+    "pt": "Cada área continua no seu sistema e os dados encontram-se entre os dois."
+  },
+  "Sin cambio de sistema para nadie.": {
+    "en": "Nobody has to switch systems.",
+    "fr": "Sans changement de système pour personne.",
+    "it": "Senza cambio di sistema per nessuno.",
+    "de": "Niemand muss das System wechseln.",
+    "pt": "Sem mudança de sistema para ninguém."
+  },
+  "El parte que viaja al sistema que ya usáis.": {
+    "en": "The report that travels to the system you already use.",
+    "fr": "Le rapport qui part vers le système que vous utilisez déjà.",
+    "it": "Il rapporto che viaggia verso il sistema che già usate.",
+    "de": "Die Meldung, die in Ihr bestehendes System wandert.",
+    "pt": "O parte que viaja para o sistema que já utiliza."
+  },
+  "Los controles firmados que quedan disponibles fuera.": {
+    "en": "The signed checks that become available outside.",
+    "fr": "Les contrôles signés qui deviennent disponibles à l'extérieur.",
+    "it": "I controlli firmati che restano disponibili all'esterno.",
+    "de": "Die unterzeichneten Kontrollen, die außerhalb verfügbar werden.",
+    "pt": "Os controlos assinados que ficam disponíveis no exterior."
+  },
+  "El panel que cruza calidad con lo que ya medís.": {
+    "en": "The dashboard that crosses quality with what you already measure.",
+    "fr": "Le tableau de bord qui croise la qualité avec ce que vous mesurez déjà.",
+    "it": "Il cruscotto che incrocia la qualità con ciò che già misurate.",
+    "de": "Das Dashboard, das Qualität mit dem verknüpft, was Sie bereits messen.",
+    "pt": "O painel que cruza a qualidade com o que já mede."
+  },
+  "Consultar una integración": {
+    "en": "Ask about an integration",
+    "fr": "Se renseigner sur une intégration",
+    "it": "Chiedere di un'integrazione",
+    "de": "Zu einer Integration beraten lassen",
+    "pt": "Consultar uma integração"
+  },
+  "Ámbitos de aplicación": {
+    "en": "Where it applies",
+    "fr": "Domaines d'application",
+    "it": "Ambiti di applicazione",
+    "de": "Anwendungsbereiche",
+    "pt": "Âmbitos de aplicação"
+  },
+  "La misma información, tres áreas funcionales y dos sectores con normativa propia.": {
+    "en": "The same information, three functional areas and two sectors with their own regulations.",
+    "fr": "La même information, trois domaines fonctionnels et deux secteurs avec leur propre réglementation.",
+    "it": "Le stesse informazioni, tre aree funzionali e due settori con normativa propria.",
+    "de": "Dieselbe Information, drei Funktionsbereiche und zwei Branchen mit eigener Regulierung.",
+    "pt": "A mesma informação, três áreas funcionais e dois setores com normativa própria."
+  },
+  "Calidad: los registros llegan cumplimentados a la auditoría": {
+    "en": "Quality: records reach the audit already filled in",
+    "fr": "Qualité : les enregistrements arrivent remplis à l'audit",
+    "it": "Qualità: le registrazioni arrivano compilate all'audit",
+    "de": "Qualität: Aufzeichnungen kommen ausgefüllt ins Audit",
+    "pt": "Qualidade: os registos chegam preenchidos à auditoria"
+  },
+  "Cada no conformidad se registra con su análisis de causa, su responsable y su fecha, y se sigue hasta el cierre. Los registros llegan a la auditoría cumplimentados y firmados en el punto donde se ejecutaron.": {
+    "en": "Every non-conformity is logged with its root cause analysis, its owner and its date, and followed through to closure. Records reach the audit filled in and signed at the point where they were carried out.",
+    "fr": "Chaque non-conformité est enregistrée avec son analyse de cause, son responsable et sa date, et suivie jusqu'à la clôture. Les enregistrements arrivent à l'audit remplis et signés à l'endroit où ils ont été réalisés.",
+    "it": "Ogni non conformità si registra con la sua analisi delle cause, il suo responsabile e la sua data, e si segue fino alla chiusura. Le registrazioni arrivano all'audit compilate e firmate nel punto in cui sono state eseguite.",
+    "de": "Jede Abweichung wird mit Ursachenanalyse, Verantwortlichem und Datum erfasst und bis zum Abschluss verfolgt. Aufzeichnungen kommen ausgefüllt und dort unterschrieben ins Audit, wo sie entstanden sind.",
+    "pt": "Cada não conformidade é registada com a sua análise de causa, o seu responsável e a sua data, e é acompanhada até ao encerramento. Os registos chegam à auditoria preenchidos e assinados no ponto onde foram executados."
+  },
+  "La reclamación de cliente entra por el mismo canal que la incidencia interna": {
+    "en": "A customer complaint comes in through the same channel as an internal incident",
+    "fr": "La réclamation client entre par le même canal que l'incident interne",
+    "it": "Il reclamo del cliente entra dallo stesso canale dell'anomalia interna",
+    "de": "Die Kundenreklamation läuft über denselben Kanal wie die interne Störung",
+    "pt": "A reclamação do cliente entra pelo mesmo canal que a ocorrência interna"
+  },
+  "El análisis de causa queda asociado a la no conformidad, no en un documento independiente": {
+    "en": "The root cause analysis stays attached to the non-conformity, not in a separate document",
+    "fr": "L'analyse de cause reste rattachée à la non-conformité, et non dans un document séparé",
+    "it": "L'analisi delle cause resta associata alla non conformità, non in un documento a parte",
+    "de": "Die Ursachenanalyse bleibt an der Abweichung, nicht in einem separaten Dokument",
+    "pt": "A análise de causa fica associada à não conformidade, e não num documento independente"
+  },
+  "IFS, BRC e ISO 9001 con el histórico completo y buscable": {
+    "en": "IFS, BRC and ISO 9001 with a complete, searchable history",
+    "fr": "IFS, BRC et ISO 9001 avec un historique complet et consultable",
+    "it": "IFS, BRC e ISO 9001 con lo storico completo e ricercabile",
+    "de": "IFS, BRC und ISO 9001 mit vollständiger, durchsuchbarer Historie",
+    "pt": "IFS, BRC e ISO 9001 com o histórico completo e pesquisável"
+  },
+  "Mantenimiento: el aviso de avería incorpora evidencia y activo afectado": {
+    "en": "Maintenance: the breakdown alert carries the evidence and the asset involved",
+    "fr": "Maintenance : l'avis de panne intègre la preuve et l'actif concerné",
+    "it": "Manutenzione: la segnalazione di guasto include evidenza e asset coinvolto",
+    "de": "Instandhaltung: Die Störmeldung enthält Nachweis und betroffene Anlage",
+    "pt": "Manutenção: o alerta de avaria inclui evidência e ativo afetado"
+  },
+  "La avería se registra en el punto de detección, desde el móvil, con fotografía y línea asociada. El mantenimiento preventivo queda firmado sobre el activo en el que se ejecuta, con su fecha.": {
+    "en": "The breakdown is logged where it is spotted, from a phone, with a photo and the line it belongs to. Preventive maintenance is signed off against the asset it was performed on, with its date.",
+    "fr": "La panne est enregistrée au point de détection, depuis le téléphone, avec photo et ligne associée. La maintenance préventive est signée sur l'actif où elle est réalisée, avec sa date.",
+    "it": "Il guasto si registra nel punto di rilevazione, dal telefono, con fotografia e linea associata. La manutenzione preventiva resta firmata sull'asset su cui viene eseguita, con la sua data.",
+    "de": "Die Störung wird am Ort der Feststellung per Smartphone erfasst, mit Foto und zugehöriger Linie. Die vorbeugende Instandhaltung wird an der Anlage unterschrieben, an der sie ausgeführt wurde – mit Datum.",
+    "pt": "A avaria é registada no ponto de deteção, a partir do telemóvel, com fotografia e linha de produção associada. A manutenção preventiva fica assinada no ativo em que é executada, com a sua data."
+  },
+  "El traspaso entre calidad y mantenimiento queda registrado, sin depender de un aviso verbal": {
+    "en": "The handover between quality and maintenance is on record, not left to a word in passing",
+    "fr": "Le passage de relais entre qualité et maintenance est enregistré, sans dépendre d'un avis verbal",
+    "it": "Il passaggio tra qualità e manutenzione resta registrato, senza dipendere da un avviso verbale",
+    "de": "Die Übergabe zwischen Qualität und Instandhaltung ist dokumentiert, nicht auf Zuruf",
+    "pt": "A passagem de testemunho entre qualidade e manutenção fica registada, sem depender de um aviso verbal"
+  },
+  "Mantenimiento preventivo y correctivo, en el mismo sistema": {
+    "en": "Preventive and corrective maintenance, in the same system",
+    "fr": "Maintenance préventive et corrective, dans le même système",
+    "it": "Manutenzione preventiva e correttiva, nello stesso sistema",
+    "de": "Vorbeugende und korrektive Instandhaltung im selben System",
+    "pt": "Manutenção preventiva e corretiva, no mesmo sistema"
+  },
+  "Convive con el GMAO ya implantado, sin sustituirlo": {
+    "en": "It sits alongside the CMMS you already have, without replacing it",
+    "fr": "Il cohabite avec la GMAO déjà en place, sans la remplacer",
+    "it": "Convive con il CMMS già in uso, senza sostituirlo",
+    "de": "Es koexistiert mit dem vorhandenen Instandhaltungssystem, ohne es zu ersetzen",
+    "pt": "Coexiste com o GMAO já implementado, sem o substituir"
+  },
+  "Producción: el control se ejecuta sin detener la línea": {
+    "en": "Production: the check gets done without stopping the line",
+    "fr": "Production : le contrôle se fait sans arrêter la ligne",
+    "it": "Produzione: il controllo si esegue senza fermare la linea",
+    "de": "Produktion: Die Kontrolle läuft, ohne die Linie anzuhalten",
+    "pt": "Produção: o controlo é executado sem parar a linha"
+  },
+  "El control se cumplimenta junto al equipo, desde el móvil o la tablet del puesto, y el relevo de turno se consulta en el propio sistema.": {
+    "en": "The check is filled in next to the machine, from the phone or the tablet at the workstation, and the shift handover is read in the system itself.",
+    "fr": "Le contrôle se remplit à côté de l'équipement, depuis le téléphone ou la tablette du poste, et la relève de poste se consulte dans le système lui-même.",
+    "it": "Il controllo si compila accanto alla macchina, dal telefono o dal tablet della postazione, e il cambio turno si consulta nel sistema stesso.",
+    "de": "Die Kontrolle wird direkt an der Anlage ausgefüllt, vom Smartphone oder Tablet am Arbeitsplatz, und die Schichtübergabe steht im System selbst.",
+    "pt": "O controlo é preenchido junto ao equipamento, a partir do telemóvel ou do tablet do posto, e a passagem de turno é consultada no próprio sistema."
+  },
+  "Un control con resultado KO abre la incidencia automáticamente": {
+    "en": "A check that comes back KO opens the incident automatically",
+    "fr": "Un contrôle au résultat KO ouvre l'incident automatiquement",
+    "it": "Un controllo con esito KO apre l'anomalia automaticamente",
+    "de": "Eine Kontrolle mit Ergebnis KO öffnet die Störung automatisch",
+    "pt": "Um controlo com resultado KO abre a ocorrência automaticamente"
+  },
+  "Cada turno consulta lo que dejó abierto el anterior": {
+    "en": "Each shift can see what the previous one left open",
+    "fr": "Chaque poste consulte ce que le précédent a laissé ouvert",
+    "it": "Ogni turno consulta ciò che il precedente ha lasciato aperto",
+    "de": "Jede Schicht sieht, was die vorherige offen gelassen hat",
+    "pt": "Cada turno consulta o que o anterior deixou em aberto"
+  },
+  "Sin formación previa: el operario registra desde el primer día": {
+    "en": "No prior training: the operator logs entries from day one",
+    "fr": "Sans formation préalable : l'opérateur enregistre dès le premier jour",
+    "it": "Senza formazione preventiva: l'operatore registra dal primo giorno",
+    "de": "Ohne Vorschulung: Der Werker erfasst ab dem ersten Tag",
+    "pt": "Sem formação prévia: o operador regista desde o primeiro dia"
+  },
+  "APPCC, control de proceso y trazabilidad de lote, con la documentación al día ante auditorías de IFS o BRC.": {
+    "en": "HACCP, process control and batch traceability, with the paperwork up to date for IFS or BRC audits.",
+    "fr": "HACCP, contrôle de procédé et traçabilité de lot, avec une documentation à jour pour les audits IFS ou BRC.",
+    "it": "HACCP, controllo di processo e tracciabilità di lotto, con la documentazione aggiornata per gli audit IFS o BRC.",
+    "de": "HACCP, Prozesskontrolle und Chargenrückverfolgbarkeit, mit aktueller Dokumentation für IFS- oder BRC-Audits.",
+    "pt": "HACCP, controlo de processo e rastreabilidade de lote, com a documentação atualizada para auditorias IFS ou BRC."
+  },
+  "Industria alimentaria:": {
+    "en": "Food industry:",
+    "fr": "Industrie agroalimentaire :",
+    "it": "Industria alimentare:",
+    "de": "Lebensmittelindustrie:",
+    "pt": "Indústria alimentar:"
+  },
+  "Ver industria alimentaria →": {
+    "en": "See the food industry →",
+    "fr": "Voir l'industrie agroalimentaire →",
+    "it": "Vedi industria alimentare →",
+    "de": "Zur Lebensmittelindustrie →",
+    "pt": "Ver indústria alimentar →"
+  },
+  "los mismos partes de control y las mismas acciones correctivas, bajo ISO 9001 en lugar de norma alimentaria.": {
+    "en": "the same control reports and the same corrective actions, under ISO 9001 instead of a food standard.",
+    "fr": "les mêmes rapports de contrôle et les mêmes actions correctives, sous ISO 9001 au lieu d'une norme alimentaire.",
+    "it": "gli stessi rapporti di controllo e le stesse azioni correttive, sotto ISO 9001 invece di una norma alimentare.",
+    "de": "dieselben Kontrollmeldungen und dieselben Korrekturmaßnahmen – nach ISO 9001 statt einer Lebensmittelnorm.",
+    "pt": "os mesmos partes de controlo e as mesmas ações corretivas, ao abrigo da ISO 9001 em vez de uma norma alimentar."
+  },
+  "Automoción, químico, plástico e iluminación:": {
+    "en": "Automotive, chemicals, plastics and lighting:",
+    "fr": "Automobile, chimie, plasturgie et éclairage :",
+    "it": "Automotive, chimico, plastica e illuminazione:",
+    "de": "Automobil, Chemie, Kunststoff und Beleuchtung:",
+    "pt": "Automóvel, química, plástico e iluminação:"
+  },
+  "Ver industria no alimentaria →": {
+    "en": "See non-food industry →",
+    "fr": "Voir l'industrie non alimentaire →",
+    "it": "Vedi industria non alimentare →",
+    "de": "Zur Nicht-Lebensmittelindustrie →",
+    "pt": "Ver indústria não alimentar →"
+  },
+  "Diseñado para el entorno de planta": {
+    "en": "Built for the shop floor",
+    "fr": "Conçu pour l'environnement de l'usine",
+    "it": "Progettato per l'ambiente di stabilimento",
+    "de": "Für die Werkshalle gebaut",
+    "pt": "Concebido para o ambiente de fábrica"
+  },
+  "La misma información en el móvil de línea, la tablet de turno y el puesto de oficina.": {
+    "en": "The same information on the line phone, the shift tablet and the office desktop.",
+    "fr": "La même information sur le téléphone de ligne, la tablette de poste et le poste de bureau.",
+    "it": "Le stesse informazioni sul telefono di linea, sul tablet di turno e sulla postazione in ufficio.",
+    "de": "Dieselbe Information auf dem Linien-Smartphone, dem Schicht-Tablet und dem Büroarbeitsplatz.",
+    "pt": "A mesma informação no telemóvel de linha, no tablet de turno e no posto de escritório."
+  },
+  "el registro se realiza a pie de línea, la revisión en tablet y el análisis en el puesto de oficina, siempre sobre el mismo dato. El personal de línea registra desde el primer día, sin formación previa.": {
+    "en": "entries are made at the line, review happens on a tablet and analysis at the office desk, always on the same data. Line staff log entries from day one, with no prior training.",
+    "fr": "la saisie se fait au pied de la ligne, la revue sur tablette et l'analyse au poste de bureau, toujours sur la même donnée. Le personnel de ligne enregistre dès le premier jour, sans formation préalable.",
+    "it": "la registrazione avviene a bordo linea, la revisione su tablet e l'analisi alla postazione in ufficio, sempre sullo stesso dato. Il personale di linea registra dal primo giorno, senza formazione preventiva.",
+    "de": "erfasst wird an der Linie, geprüft auf dem Tablet und ausgewertet am Büroarbeitsplatz – immer auf denselben Daten. Das Linienpersonal erfasst ab dem ersten Tag, ohne Vorschulung.",
+    "pt": "o registo é feito junto à linha, a revisão no tablet e a análise no posto de escritório, sempre sobre o mesmo dado. O pessoal de linha regista desde o primeiro dia, sem formação prévia."
+  },
+  "Acceso multidispositivo:": {
+    "en": "Multi-device access:",
+    "fr": "Accès multi-appareils :",
+    "it": "Accesso multidispositivo:",
+    "de": "Zugriff von allen Geräten:",
+    "pt": "Acesso multidispositivo:"
+  },
+  "64 conectores con ERP, MES y GMAO disponibles, para que el dato de planta no quede aislado ni se introduzca dos veces.": {
+    "en": "64 connectors to ERP, MES and CMMS systems available, so plant data is neither stranded nor entered twice.",
+    "fr": "64 connecteurs ERP, MES et GMAO disponibles, pour que la donnée d'usine ne reste pas isolée et ne soit pas saisie deux fois.",
+    "it": "64 connettori con ERP, MES e CMMS disponibili, perché il dato di stabilimento non resti isolato né venga inserito due volte.",
+    "de": "64 Konnektoren zu ERP-, MES- und Instandhaltungssystemen verfügbar, damit Werksdaten nicht isoliert bleiben und nicht doppelt erfasst werden.",
+    "pt": "64 conectores com ERP, MES e GMAO disponíveis, para que o dado de fábrica não fique isolado nem seja introduzido duas vezes."
+  },
+  "Interoperabilidad:": {
+    "en": "Interoperability:",
+    "fr": "Interopérabilité :",
+    "it": "Interoperabilità:",
+    "de": "Interoperabilität:",
+    "pt": "Interoperabilidade:"
+  },
+  "Ver las integraciones →": {
+    "en": "See the integrations →",
+    "fr": "Voir les intégrations →",
+    "it": "Vedi le integrazioni →",
+    "de": "Zu den Integrationen →",
+    "pt": "Ver as integrações →"
+  },
+  "configuración de plantillas, migración de los registros existentes y formación de los responsables de cada planta antes del primer parte. El alcance se amplía por módulos, sin migrar de sistema.": {
+    "en": "template setup, migration of existing records and training for each plant's owners before the first report. The scope widens module by module, with no system migration.",
+    "fr": "configuration des modèles, migration des enregistrements existants et formation des responsables de chaque usine avant le premier rapport. Le périmètre s'élargit par modules, sans migration de système.",
+    "it": "configurazione dei modelli, migrazione delle registrazioni esistenti e formazione dei responsabili di ogni stabilimento prima del primo rapporto. Il perimetro si amplia per moduli, senza migrare di sistema.",
+    "de": "Vorlagen einrichten, bestehende Aufzeichnungen migrieren und die Verantwortlichen jedes Werks schulen – vor der ersten Meldung. Der Umfang wächst Modul für Modul, ohne Systemwechsel.",
+    "pt": "configuração de modelos, migração dos registos existentes e formação dos responsáveis de cada fábrica antes do primeiro parte. O âmbito alarga-se por módulos, sem migração de sistema."
+  },
+  "Puesta en marcha en dos o tres semanas:": {
+    "en": "Live in two or three weeks:",
+    "fr": "Mise en service en deux ou trois semaines :",
+    "it": "Avvio in due o tre settimane:",
+    "de": "In zwei bis drei Wochen produktiv:",
+    "pt": "Arranque em duas ou três semanas:"
+  },
+  "Lo que dicen los equipos que ya usan Solved": {
+    "en": "What the teams already using Solved say",
+    "fr": "Ce que disent les équipes qui utilisent déjà Solved",
+    "it": "Cosa dicono le squadre che già usano Solved",
+    "de": "Was die Teams sagen, die Solved bereits nutzen",
+    "pt": "O que dizem as equipas que já usam o Solved"
+  },
+  "Ver los casos en vídeo": {
+    "en": "Watch the case studies",
+    "fr": "Voir les cas en vidéo",
+    "it": "Guarda i casi in video",
+    "de": "Fallstudien als Video ansehen",
+    "pt": "Ver os casos em vídeo"
+  },
+  "Proceso de implantación": {
+    "en": "How the rollout works",
+    "fr": "Déroulement du déploiement",
+    "it": "Processo di avvio",
+    "de": "Ablauf der Einführung",
+    "pt": "Processo de implementação"
+  },
+  "Por un área y un caso de uso definidos, no por el conjunto de la planta.": {
+    "en": "Starting from one area and one defined use case, not the whole plant at once.",
+    "fr": "Par un domaine et un cas d'usage définis, pas par l'ensemble de l'usine.",
+    "it": "Da un'area e un caso d'uso definiti, non dall'intero stabilimento.",
+    "de": "Mit einem Bereich und einem definierten Anwendungsfall, nicht mit dem ganzen Werk.",
+    "pt": "Por uma área e um caso de uso definidos, não pelo conjunto da fábrica."
+  },
+  "Análisis de la operativa actual": {
+    "en": "A look at how you work today",
+    "fr": "Analyse du fonctionnement actuel",
+    "it": "Analisi dell'operatività attuale",
+    "de": "Analyse der heutigen Arbeitsweise",
+    "pt": "Análise da operação atual"
+  },
+  "Qué se registra, en qué soporte se recoge y quién lo cumplimenta. De ese análisis sale el caso de uso inicial.": {
+    "en": "What gets recorded, on what medium and who fills it in. The initial use case comes out of that.",
+    "fr": "Ce qui est enregistré, sur quel support et par qui. Le cas d'usage initial découle de cette analyse.",
+    "it": "Cosa si registra, su quale supporto e chi lo compila. Da questa analisi esce il caso d'uso iniziale.",
+    "de": "Was erfasst wird, auf welchem Medium und von wem. Daraus ergibt sich der erste Anwendungsfall.",
+    "pt": "O que se regista, em que suporte é recolhido e quem o preenche. Desta análise sai o caso de uso inicial."
+  },
+  "Media hora": {
+    "en": "Half an hour",
+    "fr": "Une demi-heure",
+    "it": "Mezz'ora",
+    "de": "Eine halbe Stunde",
+    "pt": "Meia hora"
+  },
+  "Configuración sobre los formatos existentes": {
+    "en": "Setup on your existing forms",
+    "fr": "Configuration sur les formats existants",
+    "it": "Configurazione sui formati esistenti",
+    "de": "Einrichtung auf den bestehenden Formularen",
+    "pt": "Configuração sobre os formatos existentes"
+  },
+  "Plantillas, campos y categorías propias. No requiere rehacer los procedimientos: el sistema se configura sobre los ya documentados.": {
+    "en": "Your own templates, fields and categories. No need to redo the procedures: the system is configured on the ones already documented.",
+    "fr": "Vos propres modèles, champs et catégories. Inutile de refaire les procédures : le système se configure sur celles déjà documentées.",
+    "it": "Modelli, campi e categorie propri. Non serve rifare le procedure: il sistema si configura su quelle già documentate.",
+    "de": "Eigene Vorlagen, Felder und Kategorien. Die Verfahren müssen nicht neu gemacht werden: Das System wird auf den bereits dokumentierten aufgesetzt.",
+    "pt": "Modelos, campos e categorias próprias. Não é preciso refazer os procedimentos: o sistema é configurado sobre os que já estão documentados."
+  },
+  "Semana 1 y 2": {
+    "en": "Weeks 1 and 2",
+    "fr": "Semaines 1 et 2",
+    "it": "Settimane 1 e 2",
+    "de": "Woche 1 und 2",
+    "pt": "Semana 1 e 2"
+  },
+  "Arranque en un área y despliegue progresivo": {
+    "en": "Start in one area, then a step-by-step rollout",
+    "fr": "Démarrage dans un secteur et déploiement progressif",
+    "it": "Avvio in un'area e diffusione progressiva",
+    "de": "Start in einem Bereich und schrittweiser Rollout",
+    "pt": "Arranque numa área e implementação progressiva"
+  },
+  "El equipo de esa línea comienza a registrar, la configuración se ajusta con sus observaciones y el despliegue se extiende al resto de la planta una vez validado.": {
+    "en": "That line's team starts logging, the setup is adjusted with their feedback and the rollout extends to the rest of the plant once it is validated.",
+    "fr": "L'équipe de cette ligne commence à enregistrer, la configuration est ajustée avec ses retours et le déploiement s'étend au reste de l'usine une fois validé.",
+    "it": "La squadra di quella linea inizia a registrare, la configurazione si adatta con le loro osservazioni e la diffusione si estende al resto dello stabilimento una volta validata.",
+    "de": "Das Team dieser Linie beginnt zu erfassen, die Konfiguration wird mit seinem Feedback angepasst, und nach der Freigabe wächst der Rollout auf das restliche Werk.",
+    "pt": "A equipa dessa linha começa a registar, a configuração é ajustada com as suas observações e a implementação estende-se ao resto da fábrica depois de validada."
+  },
+  "Semana 3": {
+    "en": "Week 3",
+    "fr": "Semaine 3",
+    "it": "Settimana 3",
+    "de": "Woche 3",
+    "pt": "Semana 3"
+  },
+  "Preguntas frecuentes": {
+    "en": "Frequently asked questions",
+    "fr": "Questions fréquentes",
+    "it": "Domande frequenti",
+    "de": "Häufige Fragen",
+    "pt": "Perguntas frequentes"
+  },
+  "¿Qué es Solved?": {
+    "en": "What is Solved?",
+    "fr": "Qu'est-ce que Solved ?",
+    "it": "Che cos'è Solved?",
+    "de": "Was ist Solved?",
+    "pt": "O que é o Solved?"
+  },
+  "Solved es un software de gestión de operaciones industriales: centraliza incidencias, registros de control, documentación e indicadores en un único sistema, accesible desde móvil, tablet y PC.": {
+    "en": "Solved is industrial operations management software: it brings incidents, control records, documentation and indicators together in a single system, reachable from phone, tablet and PC.",
+    "fr": "Solved est un logiciel de gestion des opérations industrielles : il centralise incidents, enregistrements de contrôle, documentation et indicateurs dans un seul système, accessible depuis téléphone, tablette et PC.",
+    "it": "Solved è un software di gestione delle operazioni industriali: centralizza anomalie, registrazioni di controllo, documentazione e indicatori in un unico sistema, accessibile da telefono, tablet e PC.",
+    "de": "Solved ist eine Software für industrielle Betriebsführung: Sie bündelt Störungen, Kontrollaufzeichnungen, Dokumentation und Kennzahlen in einem System – erreichbar per Smartphone, Tablet und PC.",
+    "pt": "O Solved é um software de gestão de operações industriais: centraliza ocorrências, registos de controlo, documentação e indicadores num único sistema, acessível a partir de telemóvel, tablet e PC."
+  },
+  "¿Para qué empresas está pensado Solved?": {
+    "en": "Which companies is Solved for?",
+    "fr": "À quelles entreprises Solved s'adresse-t-il ?",
+    "it": "Per quali aziende è pensato Solved?",
+    "de": "Für welche Unternehmen ist Solved gedacht?",
+    "pt": "Para que empresas foi pensado o Solved?"
+  },
+  "Para plantas industriales —alimentación, química, packaging, fabricación general— que gestionan hoy sus operaciones en hojas de cálculo, en papel o por mensajería y necesitan consolidarlas en un único sistema.": {
+    "en": "For industrial plants — food, chemicals, packaging, general manufacturing — that run their operations today on spreadsheets, paper or messaging apps and need to bring them into a single system.",
+    "fr": "Pour les usines industrielles — agroalimentaire, chimie, emballage, fabrication générale — qui gèrent aujourd'hui leurs opérations sur tableur, sur papier ou par messagerie et doivent les regrouper dans un seul système.",
+    "it": "Per stabilimenti industriali — alimentare, chimico, packaging, manifattura generale — che oggi gestiscono l'operatività su fogli di calcolo, su carta o via messaggistica e devono consolidarla in un unico sistema.",
+    "de": "Für Industriewerke – Lebensmittel, Chemie, Verpackung, allgemeine Fertigung –, die ihren Betrieb heute in Tabellen, auf Papier oder per Messenger steuern und ihn in einem System zusammenführen müssen.",
+    "pt": "Para fábricas industriais — alimentação, química, embalagem, fabrico geral — que gerem hoje as suas operações em folhas de cálculo, em papel ou por aplicações de mensagens e precisam de as consolidar num único sistema."
+  },
+  "¿Solved se integra con mi ERP, MES o GMAO?": {
+    "en": "Does Solved integrate with my ERP, MES or CMMS?",
+    "fr": "Solved s'intègre-t-il à mon ERP, MES ou GMAO ?",
+    "it": "Solved si integra con il mio ERP, MES o CMMS?",
+    "de": "Lässt sich Solved in mein ERP, MES oder Instandhaltungssystem integrieren?",
+    "pt": "O Solved integra-se com o meu ERP, MES ou GMAO?"
+  },
+  "Sí. Solved dispone de conectores con los principales ERP, MES y GMAO del mercado, lo que evita la duplicidad de datos y centraliza la gestión.": {
+    "en": "Yes. Solved has connectors for the main ERP, MES and CMMS systems on the market, which avoids duplicated data and keeps management in one place.",
+    "fr": "Oui. Solved dispose de connecteurs avec les principaux ERP, MES et GMAO du marché, ce qui évite les doublons de données et centralise la gestion.",
+    "it": "Sì. Solved dispone di connettori con i principali ERP, MES e CMMS del mercato, il che evita la duplicazione dei dati e centralizza la gestione.",
+    "de": "Ja. Solved verfügt über Konnektoren zu den wichtigsten ERP-, MES- und Instandhaltungssystemen am Markt – das vermeidet doppelte Daten und bündelt die Steuerung.",
+    "pt": "Sim. O Solved dispõe de conectores com os principais ERP, MES e GMAO do mercado, o que evita a duplicação de dados e centraliza a gestão."
+  },
+  "¿Puedo usar Solved desde el móvil?": {
+    "en": "Can I use Solved on a phone?",
+    "fr": "Puis-je utiliser Solved depuis un téléphone ?",
+    "it": "Posso usare Solved dal telefono?",
+    "de": "Kann ich Solved auf dem Smartphone nutzen?",
+    "pt": "Posso usar o Solved a partir do telemóvel?"
+  },
+  "Sí. Solved opera en móvil, tablet y PC, de modo que el registro y la consulta se realizan en el propio punto de trabajo.": {
+    "en": "Yes. Solved runs on phone, tablet and PC, so logging and looking things up happen right at the workstation.",
+    "fr": "Oui. Solved fonctionne sur téléphone, tablette et PC : la saisie et la consultation se font sur le poste de travail lui-même.",
+    "it": "Sì. Solved funziona su telefono, tablet e PC, così registrazione e consultazione avvengono nel punto di lavoro stesso.",
+    "de": "Ja. Solved läuft auf Smartphone, Tablet und PC – erfasst und nachgeschlagen wird direkt am Arbeitsplatz.",
+    "pt": "Sim. O Solved funciona em telemóvel, tablet e PC, de modo que o registo e a consulta são feitos no próprio posto de trabalho."
+  },
+  "¿Cuánto tarda la implementación?": {
+    "en": "How long does implementation take?",
+    "fr": "Combien de temps prend la mise en œuvre ?",
+    "it": "Quanto dura l'implementazione?",
+    "de": "Wie lange dauert die Einführung?",
+    "pt": "Quanto tempo demora a implementação?"
+  },
+  "La implantación media es de dos a tres semanas, con acompañamiento durante todo el proceso de puesta en marcha.": {
+    "en": "A typical rollout takes two to three weeks, with support throughout the go-live.",
+    "fr": "Le déploiement moyen dure de deux à trois semaines, avec un accompagnement tout au long de la mise en service.",
+    "it": "L'avvio medio è di due o tre settimane, con affiancamento lungo tutto il processo di messa in servizio.",
+    "de": "Eine Einführung dauert im Schnitt zwei bis drei Wochen, mit Begleitung während der gesamten Inbetriebnahme.",
+    "pt": "A implementação média é de duas a três semanas, com acompanhamento durante todo o processo de arranque."
+  },
+  "Contacto con un especialista en operaciones industriales": {
+    "en": "Talk to an industrial operations specialist",
+    "fr": "Contact avec un spécialiste des opérations industrielles",
+    "it": "Contatto con uno specialista di operazioni industriali",
+    "de": "Kontakt zu einem Spezialisten für industrielle Abläufe",
+    "pt": "Contacto com um especialista em operações industriais"
+  },
+  "Empresas que ya trabajan con Solved": {
+    "en": "Companies already working with Solved",
+    "fr": "Entreprises qui travaillent déjà avec Solved",
+    "it": "Aziende che già lavorano con Solved",
+    "de": "Unternehmen, die bereits mit Solved arbeiten",
+    "pt": "Empresas que já trabalham com o Solved"
+  },
+  "Dos operarios con bata y cofia recorren el pasillo entre dos líneas de proceso de una planta alimentaria; uno consulta una tablet": {
+    "en": "Two operators in coats and hairnets walk the aisle between two process lines in a food plant; one is looking at a tablet",
+    "fr": "Deux opérateurs en blouse et charlotte parcourent l'allée entre deux lignes de process d'une usine agroalimentaire ; l'un consulte une tablette",
+    "it": "Due operatori con camice e cuffia percorrono il corridoio tra due linee di processo di uno stabilimento alimentare; uno consulta un tablet",
+    "de": "Zwei Werker in Kittel und Haarnetz gehen den Gang zwischen zwei Prozesslinien eines Lebensmittelwerks entlang; einer schaut auf ein Tablet",
+    "pt": "Dois operadores com bata e touca percorrem o corredor entre duas linhas de processo de uma fábrica alimentar; um consulta um tablet"
+  },
+  "Cerrar": {
+    "en": "Close",
+    "fr": "Fermer",
+    "it": "Chiudi",
+    "de": "Schließen",
+    "pt": "Fechar"
+  },
+  "Perfiles que usan Solved": {
+    "en": "Who uses Solved",
+    "fr": "Profils qui utilisent Solved",
+    "it": "Profili che usano Solved",
+    "de": "Wer Solved nutzt",
+    "pt": "Perfis que usam o Solved"
+  },
+  "Responsable de calidad revisa una tablet junto a una línea de envasado en una planta alimentaria": {
+    "en": "A quality manager checks a tablet next to a packaging line in a food plant",
+    "fr": "Une responsable qualité consulte une tablette près d'une ligne de conditionnement dans une usine agroalimentaire",
+    "it": "Una responsabile qualità controlla un tablet accanto a una linea di confezionamento in uno stabilimento alimentare",
+    "de": "Eine Qualitätsleiterin prüft ein Tablet neben einer Verpackungslinie in einem Lebensmittelwerk",
+    "pt": "Uma responsável da qualidade verifica um tablet junto a uma linha de embalagem numa fábrica alimentar"
+  },
+  "Técnico de mantenimiento arrodillado junto a una máquina de proceso con el panel abierto, consultando una tablet": {
+    "en": "A maintenance technician kneeling by a process machine with the panel open, looking at a tablet",
+    "fr": "Un technicien de maintenance agenouillé près d'une machine de process, panneau ouvert, consultant une tablette",
+    "it": "Un tecnico di manutenzione inginocchiato accanto a una macchina di processo con il pannello aperto, mentre consulta un tablet",
+    "de": "Ein Instandhaltungstechniker kniet an einer Prozessmaschine mit geöffneter Klappe und schaut auf ein Tablet",
+    "pt": "Um técnico de manutenção ajoelhado junto a uma máquina de processo com o painel aberto, a consultar um tablet"
+  },
+  "Encargada de producción con chaleco reflectante y cofia revisa una línea de embotellado en una planta": {
+    "en": "A production supervisor in a hi-vis vest and hairnet checks a bottling line in a plant",
+    "fr": "Une cheffe de production en gilet réfléchissant et charlotte inspecte une ligne d'embouteillage dans une usine",
+    "it": "Una responsabile di produzione con gilet catarifrangente e cuffia controlla una linea di imbottigliamento in stabilimento",
+    "de": "Eine Produktionsleiterin in Warnweste und Haarnetz kontrolliert eine Abfülllinie im Werk",
+    "pt": "Uma encarregada de produção com colete refletor e touca verifica uma linha de engarrafamento numa fábrica"
+  },
+  "Operario de almacén consulta el parte en la tablet, entre las estanterías": {
+    "en": "A warehouse operator reads the report on a tablet, between the racks",
+    "fr": "Un opérateur d'entrepôt consulte le rapport sur la tablette, entre les rayonnages",
+    "it": "Un operatore di magazzino consulta il rapporto sul tablet, tra le scaffalature",
+    "de": "Ein Lagerarbeiter liest die Meldung zwischen den Regalen auf dem Tablet",
+    "pt": "Um operador de armazém consulta o parte no tablet, entre as estantes"
+  },
+  "Dos responsables de planta revisan los datos de producción en el portátil, junto a la línea": {
+    "en": "Two plant managers review production data on a laptop, next to the line",
+    "fr": "Deux responsables d'usine examinent les données de production sur l'ordinateur portable, à côté de la ligne",
+    "it": "Due responsabili di stabilimento rivedono i dati di produzione sul portatile, accanto alla linea",
+    "de": "Zwei Werksverantwortliche prüfen Produktionsdaten am Laptop, direkt an der Linie",
+    "pt": "Dois responsáveis de fábrica analisam os dados de produção no portátil, junto à linha"
+  },
+  "Tres operarios de planta miran juntos la misma tablet durante la puesta en marcha": {
+    "en": "Three plant operators look at the same tablet together during go-live",
+    "fr": "Trois opérateurs regardent ensemble la même tablette pendant la mise en service",
+    "it": "Tre operatori di stabilimento guardano insieme lo stesso tablet durante l'avvio",
+    "de": "Drei Werker schauen bei der Inbetriebnahme gemeinsam auf dasselbe Tablet",
+    "pt": "Três operadores de fábrica olham juntos para o mesmo tablet durante o arranque"
+  },
+  "Técnica de planta consultando Solved en la tablet": {
+    "en": "A plant technician using Solved on a tablet",
+    "fr": "Une technicienne d'usine consulte Solved sur la tablette",
+    "it": "Una tecnica di stabilimento consulta Solved sul tablet",
+    "de": "Eine Werkstechnikerin nutzt Solved auf dem Tablet",
+    "pt": "Uma técnica de fábrica a consultar o Solved no tablet"
+  },
+  "Software de operaciones para fábricas: incidencias, registros, documentos y KPIs de planta en una sola herramienta.": {
+    "en": "Operations software for factories: incidents, records, documents and plant KPIs in a single tool.",
+    "fr": "Logiciel d'exploitation pour usines : incidents, enregistrements, documents et KPI d'usine dans un seul outil.",
+    "it": "Software operativo per fabbriche: anomalie, registrazioni, documenti e KPI di stabilimento in un unico strumento.",
+    "de": "Betriebssoftware für Fabriken: Störungen, Aufzeichnungen, Dokumente und Werks-KPIs in einem einzigen Werkzeug.",
+    "pt": "Software de operações para fábricas: ocorrências, registos, documentos e KPIs de fábrica numa única ferramenta."
+  }
+}

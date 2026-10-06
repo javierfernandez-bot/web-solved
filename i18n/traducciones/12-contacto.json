@@ -1,0 +1,52 @@
+{
+  "_nota": "Notas de contacto de las landings de producto (7 sep 2026). Enuncian las consultas que la página deja abiertas a propósito —integración, configuración sobre procedimientos propios— justo encima del formulario. Se traducen a mano como el resto del copy de venta. Convención heredada para GMAO: en=CMMS, fr=GMAO, it=CMMS, de=Instandhaltungssystem. NINGUNA NOMBRA UN PILOTO: Solved no hace pruebas piloto (corrección de negocio del 7 sep 2026).",
+  "Consultas habituales en esta fase: el encaje con el ERP, el MES o el GMAO ya implantados y la configuración de los flujos de derivación sobre los procedimientos propios.": {
+    "en": "Common questions at this stage: how it fits the ERP, MES or CMMS already in place, and how routing workflows are configured on the organisation's own procedures.",
+    "fr": "Questions fréquentes à ce stade : l'intégration avec l'ERP, le MES ou la GMAO déjà en place et la configuration des flux d'affectation sur les procédures existantes.",
+    "it": "Domande frequenti in questa fase: l'integrazione con l'ERP, il MES o il CMMS già in uso e la configurazione dei flussi di assegnazione sulle procedure esistenti.",
+    "de": "Häufige Fragen in dieser Phase: die Anbindung an vorhandene ERP-, MES- oder Instandhaltungssysteme und die Konfiguration der Zuweisungsabläufe anhand der eigenen Verfahren.",
+    "pt": "Questões frequentes nesta fase: a integração com o ERP, o MES ou a GMAO já implementados e a configuração dos fluxos de encaminhamento sobre os procedimentos próprios."
+  },
+  "Consultas habituales en esta fase: la conversión de los partes y las listas de control en uso y la frecuencia y el alcance de cada inspección.": {
+    "en": "Common questions at this stage: converting the report forms and checklists already in use, and the frequency and scope of each inspection.",
+    "fr": "Questions fréquentes à ce stade : la conversion des fiches et des listes de contrôle déjà utilisées et la fréquence et le périmètre de chaque inspection.",
+    "it": "Domande frequenti in questa fase: la conversione dei moduli e delle liste di controllo già in uso e la frequenza e il perimetro di ogni ispezione.",
+    "de": "Häufige Fragen in dieser Phase: die Übernahme der vorhandenen Formulare und Prüflisten sowie Frequenz und Umfang jeder Prüfung.",
+    "pt": "Questões frequentes nesta fase: a conversão dos partes e das listas de controlo em uso, e a frequência e o âmbito de cada inspeção."
+  },
+  "Consultas habituales en esta fase: el circuito de aprobación de cada organización y el enlace con las incidencias y los registros ya abiertos.": {
+    "en": "Common questions at this stage: each organisation's approval circuit, and the link to incidents and control records already open.",
+    "fr": "Questions fréquentes à ce stade : le circuit de validation propre à chaque organisation et le lien avec les incidents et les enregistrements déjà ouverts.",
+    "it": "Domande frequenti in questa fase: il circuito di approvazione di ogni organizzazione e il collegamento con le anomalie e le registrazioni già aperte.",
+    "de": "Häufige Fragen in dieser Phase: der Freigabeweg der jeweiligen Organisation und die Verknüpfung mit bereits offenen Störungen und Nachweisen.",
+    "pt": "Questões frequentes nesta fase: o circuito de aprovação de cada organização e a ligação com as ocorrências e os registos já abertos."
+  },
+  "Consultas habituales en esta fase: la convivencia con el GMAO implantado y la carga inicial del inventario de equipos.": {
+    "en": "Common questions at this stage: working alongside the CMMS already in place, and the initial upload of the equipment inventory.",
+    "fr": "Questions fréquentes à ce stade : la coexistence avec la GMAO en place et le chargement initial de l'inventaire des équipements.",
+    "it": "Domande frequenti in questa fase: la convivenza con il CMMS già in uso e il caricamento iniziale dell'inventario delle macchine.",
+    "de": "Häufige Fragen in dieser Phase: das Zusammenspiel mit dem vorhandenen Instandhaltungssystem und die Ersterfassung des Anlagenbestands.",
+    "pt": "Questões frequentes nesta fase: a convivência com a GMAO já implementada e o carregamento inicial do inventário de equipamentos."
+  },
+  "Consultas habituales en esta fase: la migración de la documentación vigente y la convivencia con el repositorio corporativo.": {
+    "en": "Common questions at this stage: migrating the documentation currently in force, and working alongside the corporate repository.",
+    "fr": "Questions fréquentes à ce stade : la migration de la documentation en vigueur et la coexistence avec le référentiel documentaire de l'entreprise.",
+    "it": "Domande frequenti in questa fase: la migrazione della documentazione in vigore e la convivenza con il repository aziendale.",
+    "de": "Häufige Fragen in dieser Phase: die Migration der gültigen Dokumentation und das Zusammenspiel mit dem unternehmenseigenen Ablagesystem.",
+    "pt": "Questões frequentes nesta fase: a migração da documentação em vigor e a convivência com o repositório corporativo."
+  },
+  "Consultas habituales en esta fase: los indicadores propios de cada planta y el origen de los datos que los alimentan.": {
+    "en": "Common questions at this stage: each plant's own indicators, and the source of the data behind them.",
+    "fr": "Questions fréquentes à ce stade : les indicateurs propres à chaque site et l'origine des données qui les alimentent.",
+    "it": "Domande frequenti in questa fase: gli indicatori propri di ogni stabilimento e l'origine dei dati che li alimentano.",
+    "de": "Häufige Fragen in dieser Phase: die werkseigenen Kennzahlen und die Herkunft der zugrunde liegenden Daten.",
+    "pt": "Questões frequentes nesta fase: os indicadores próprios de cada fábrica e a origem dos dados que os alimentam."
+  },
+  "Consultas habituales en esta fase: el tratamiento de los datos de la propia planta, el encaje con los sistemas ya implantados y el alcance de una evaluación.": {
+    "en": "Common questions at this stage: how the plant's own data is handled, how it fits the systems already in place, and the scope of an evaluation.",
+    "fr": "Questions fréquentes à ce stade : le traitement des données du site, l'intégration avec les systèmes déjà en place et le périmètre d'une évaluation.",
+    "it": "Domande frequenti in questa fase: il trattamento dei dati dello stabilimento, l'integrazione con i sistemi già in uso e il perimetro di una valutazione.",
+    "de": "Häufige Fragen in dieser Phase: der Umgang mit den Daten des eigenen Werks, die Anbindung an vorhandene Systeme und der Umfang einer Evaluierung.",
+    "pt": "Questões frequentes nesta fase: o tratamento dos dados da própria fábrica, a integração com os sistemas já implementados e o âmbito de uma avaliação."
+  }
+}

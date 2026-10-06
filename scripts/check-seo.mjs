@@ -118,6 +118,14 @@ for (const file of htmls) {
     }
 
     if (/^(https?:|\/\/|#|mailto:|tel:|data:|javascript:)/i.test(raw)) continue;
+
+    // Rutas que las escribe el navegador, no el HTML: las guidelines montan
+    // marcado con plantillas de JS (`src="/assets/x/${logo}.webp"`), y ahí el
+    // atributo que se ve en el fichero no es una ruta, es un molde. Comprobarlo
+    // da un fallo por cada molde y, si el molde lleva un `%` —un módulo, por
+    // ejemplo—, `decodeURIComponent` revienta y se cae la auditoría entera.
+    // La ruta de verdad sólo existe en tiempo de ejecución.
+    if (raw.includes('${')) continue;
     const limpio = raw.split('#')[0].split('?')[0];
     if (!limpio) continue;
 

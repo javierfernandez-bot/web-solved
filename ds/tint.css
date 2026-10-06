@@ -1,0 +1,78 @@
+/* =========================================================
+   Solved Design System — TINTES DE ESCENA
+   Lienzos teñidos de las tarjetas "Escena de producto" (SceneCard).
+
+   Qué NO son: colores nuevos del sistema. Cada tinte es el color de módulo
+   que ya vive en ds/tokens.css llevado a superficie. Por eso los triples RGB
+   de abajo no se eligen: se copian de --module-*, y si un módulo cambia de
+   color, aquí se cambia el triple y nada más.
+
+   Qué NO es un tinte: el material de gradiente (la onda del hero, el panel
+   oscuro de IA, las teselas). Ese lleva filamentos, luz y saturación, y tiene
+   presupuesto de dos apariciones grandes por página. El tinte es plano, de dos
+   paradas, y puede repetirse en las seis tarjetas de una rejilla sin gastar
+   nada de ese presupuesto.
+   ========================================================= */
+
+:root{
+  /* — El ángulo es UNA sola variable, compartida por los seis tintes —
+     Si cada tinte cayera hacia un lado distinto, la rejilla se descompone: el
+     ojo lee seis fondos sueltos en vez de una familia. Cambiar la caída de la
+     luz de toda la web debe ser esta única edición. */
+  --tint-angle:145deg;
+  --tint-stop:78%;   /* dónde el tinte llega a 0: la diagonal opuesta */
+
+  /* — Triples RGB, copiados de los tokens de módulo —
+     rgba() no admite un hex en variable, así que el color viaja como triple.
+     El comentario es el contrato: si no coincide con ds/tokens.css, está mal. */
+  --tint-rgb-incidencias:15,104,244;   /* --module-incidencias  #0F68F4 */
+  --tint-rgb-acciones:249,115,22;      /* --module-acciones     #F97316 */
+  --tint-rgb-checklists:124,58,237;    /* --module-registros    #7C3AED */
+  --tint-rgb-activos:59,67,76;         /* --module-activos      #3B434C (grafito) */
+  --tint-rgb-kpis:0,163,224;           /* --module-kpis         #00A3E0 (Open Sky, OpenSearch) */
+  --tint-rgb-ia:168,85,247;            /* --module-ia           #A855F7 */
+
+  /* — Los seis tintes —
+     Dos paradas: color al X% en el origen, 0% en la diagonal opuesta.
+     Ninguno pasa del 12%. Por encima de ahí el lienzo compite con el
+     fragmento de producto, que es lo único que tiene que leerse. */
+  --tint-incidencias:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-incidencias),.10) 0%,rgba(var(--tint-rgb-incidencias),0) var(--tint-stop));
+  --tint-acciones:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-acciones),.10) 0%,rgba(var(--tint-rgb-acciones),0) var(--tint-stop));
+  --tint-checklists:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-checklists),.10) 0%,rgba(var(--tint-rgb-checklists),0) var(--tint-stop));
+
+  /* Grafito va al 8% y no al 10%: un neutro oscuro pesa más ópticamente que un
+     cromático a la misma opacidad. Al 10% esta tarjeta se adelanta a las otras
+     cinco y rompe la familia. */
+  --tint-activos:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-activos),.08) 0%,rgba(var(--tint-rgb-activos),0) var(--tint-stop));
+
+  /* KPIs vive al lado de Incidencias en casi todas las rejillas, así que se
+     separa por temperatura y con algo más de cuerpo (12%). Con el #5A96FF de
+     partida —el azul de marca aclarado— las dos tarjetas eran la misma; se
+     probaron cinco variantes en guidelines/tintes.prueba.html y ésta es la
+     mínima que se lee sin salirse del azul. */
+  --tint-kpis:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-kpis),.12) 0%,rgba(var(--tint-rgb-kpis),0) var(--tint-stop));
+
+  /* --tint-ia SÓLO sobre grafito #111214. Nunca sobre blanco: al 16% sobre
+     claro es un morado decorativo, y el morado en Solved no decora. Sobre
+     oscuro es luz, que es lo que la capa de IA tiene que parecer. */
+  --tint-ia:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-ia),.16) 0%,rgba(var(--tint-rgb-ia),0) var(--tint-stop));
+
+  /* — Los mismos seis, para el LIENZO DE FOTO —
+     Cuando el lienzo de la escena no es una superficie plana sino una
+     fotografía de planta (.scene[data-canvas="foto"]), un tinte al 10% no es
+     una señal: es suciedad sobre la foto. El color no cambia —sale del mismo
+     triple RGB de arriba, que es lo que hace que el tinte siga significando
+     módulo— pero sube al 22%, que es la mínima a la que se distingue un azul
+     de un violeta encima de una imagen con su propio color.
+
+     El techo del 12% de los tintes planos sigue en pie donde vive: sobre
+     lienzo plano el tinte compite con el fragmento, y sobre foto compite con
+     la foto, que es el fondo y no el argumento. Dos substratos, dos números;
+     una sola lista de colores. */
+  --tint-foto-incidencias:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-incidencias),.22) 0%,rgba(var(--tint-rgb-incidencias),0) var(--tint-stop));
+  --tint-foto-acciones:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-acciones),.22) 0%,rgba(var(--tint-rgb-acciones),0) var(--tint-stop));
+  --tint-foto-checklists:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-checklists),.22) 0%,rgba(var(--tint-rgb-checklists),0) var(--tint-stop));
+  --tint-foto-activos:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-activos),.20) 0%,rgba(var(--tint-rgb-activos),0) var(--tint-stop));
+  --tint-foto-kpis:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-kpis),.24) 0%,rgba(var(--tint-rgb-kpis),0) var(--tint-stop));
+  --tint-foto-ia:linear-gradient(var(--tint-angle),rgba(var(--tint-rgb-ia),.28) 0%,rgba(var(--tint-rgb-ia),0) var(--tint-stop));
+}

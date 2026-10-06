@@ -1,0 +1,38 @@
+{
+  "_nota": "Recorte de texto pedido por el cliente el 28 de septiembre de 2026: los tres cuerpos del rotador de capacidades de /gestor-documental/ pasan de dos párrafos a uno, y con ellos el subtítulo de la sección (de cuatro a tres capacidades, tras retirar la de preguntar a los documentos en castellano). De paso, /industria-alimentaria/ pierde dos de sus cuatro aplicaciones (certificaciones y homologación de proveedores, páginas retiradas) y su párrafo pasa de cuatro a dos.",
+  "Tres capacidades del módulo, cada una sobre la pantalla que la resuelve.": {
+    "en": "Three capabilities of the module, each on the screen that solves it.",
+    "fr": "Trois capacités du module, chacune sur l'écran qui la résout.",
+    "it": "Tre capacità del modulo, ciascuna sulla schermata che la risolve.",
+    "de": "Drei Funktionen des Moduls, jede auf dem Bildschirm, der sie löst.",
+    "pt": "Três capacidades do módulo, cada uma no ecrã que a resolve."
+  },
+  "La carpeta se abre desde el mismo móvil o la misma tablet con los que se rellena el registro: procedimientos, certificados, fichas técnicas, manuales de equipo y expedientes de proveedor, organizados en carpetas y con búsqueda. El código de la máquina lleva a su documentación sin buscarla.": {
+    "en": "The folder opens from the same phone or tablet used to fill in the record: procedures, certificates, technical data sheets, equipment manuals and supplier files, organised in folders and searchable. The machine's code leads straight to its documentation.",
+    "fr": "Le dossier s'ouvre depuis le même smartphone ou la même tablette avec lesquels le registre est rempli : procédures, certificats, fiches techniques, manuels d'équipement et dossiers fournisseurs, organisés en dossiers et consultables par recherche. Le code de la machine mène directement à sa documentation.",
+    "it": "La cartella si apre dallo stesso smartphone o dallo stesso tablet con cui si compila la registrazione: procedure, certificati, schede tecniche, manuali di attrezzatura e fascicoli fornitore, organizzati in cartelle e ricercabili. Il codice della macchina porta direttamente alla sua documentazione.",
+    "de": "Der Ordner öffnet sich auf demselben Smartphone oder Tablet, mit dem die Aufzeichnung ausgefüllt wird: Verfahren, Zertifikate, Datenblätter, Anlagenhandbücher und Lieferantenakten, in Ordnern organisiert und durchsuchbar. Der Code der Maschine führt direkt zu ihrer Dokumentation.",
+    "pt": "A pasta abre a partir do mesmo telemóvel ou do mesmo tablet com que se preenche o registo: procedimentos, certificados, fichas técnicas, manuais de equipamento e processos de fornecedor, organizados em pastas e pesquisáveis. O código da máquina leva diretamente à sua documentação."
+  },
+  "La versión que se sube entra como pendiente y no sustituye a la vigente hasta que se valida —o se rechaza—, con su nombre y su fecha en la actividad del documento. Cada uno lleva además su fecha de revisión y de expiración, con vista de calendario, su responsable, su alcance por planta y las personas asignadas.": {
+    "en": "The version that's uploaded comes in as pending and doesn't replace the current one until it's validated —or rejected—, with its name and date logged in the document's activity. Each document also carries its review and expiry dates, with a calendar view, its owner, its scope by plant and the people assigned to it.",
+    "fr": "La version envoyée entre comme en attente et ne remplace pas la version en vigueur tant qu'elle n'est pas validée —ou rejetée—, avec son nom et sa date dans l'activité du document. Chaque document porte en outre sa date de révision et d'expiration, avec une vue calendrier, son responsable, son périmètre par site et les personnes assignées.",
+    "it": "La versione caricata entra come in attesa e non sostituisce quella vigente finché non viene validata —o rifiutata—, con il proprio nome e la propria data nell'attività del documento. Ogni documento riporta inoltre la data di revisione e di scadenza, con vista calendario, il responsabile, l'ambito per stabilimento e le persone assegnate.",
+    "de": "Die hochgeladene Version wird als ausstehend geführt und ersetzt die gültige erst, wenn sie freigegeben —oder abgelehnt— wird, mit Name und Datum in der Dokumentenaktivität. Jedes Dokument trägt außerdem sein Prüf- und Ablaufdatum, mit Kalenderansicht, seinen Verantwortlichen, seinen Geltungsbereich je Werk und die zugewiesenen Personen.",
+    "pt": "A versão carregada entra como pendente e não substitui a vigente até ser validada —ou rejeitada—, com o seu nome e a sua data na atividade do documento. Cada um tem ainda a sua data de revisão e de validade, com vista de calendário, o seu responsável, o seu âmbito por fábrica e as pessoas atribuídas."
+  },
+  "El registro que aplica el procedimiento lo lleva dentro, la ficha del equipo trae su manual y sus certificados, y la incidencia cita el que la explica: el mismo documento, no una copia, así que al validar una versión nueva cambia en los tres a la vez.": {
+    "en": "The record that applies the procedure carries it inside, the equipment's file holds its manual and certificates, and the incident cites the one that explains it: the same document, not a copy, so validating a new version changes it in all three at once.",
+    "fr": "Le registre qui applique la procédure la porte à l'intérieur, la fiche de l'équipement contient son manuel et ses certificats, et l'incident cite celui qui l'explique : le même document, pas une copie, donc valider une nouvelle version le change dans les trois à la fois.",
+    "it": "La registrazione che applica la procedura la porta al proprio interno, la scheda dell'attrezzatura contiene il suo manuale e i suoi certificati, e l'anomalia cita quello che la spiega: lo stesso documento, non una copia, quindi validare una nuova versione lo cambia in tutti e tre contemporaneamente.",
+    "de": "Die Aufzeichnung, die das Verfahren anwendet, trägt es in sich, die Anlagenakte enthält ihr Handbuch und ihre Zertifikate, und die Störung verweist auf das Dokument, das sie erklärt: dasselbe Dokument, keine Kopie — die Freigabe einer neuen Version ändert es also an allen drei Stellen gleichzeitig.",
+    "pt": "O registo que aplica o procedimento leva-o dentro, a ficha do equipamento traz o seu manual e os seus certificados, e a ocorrência cita o que a explica: o mesmo documento, não uma cópia, por isso ao validar uma versão nova muda nos três ao mesmo tempo."
+  },
+  "Dos aplicaciones de Solved en planta alimentaria, con su alcance respectivo.": {
+    "en": "Two applications of Solved on the food plant floor, each with its own scope.",
+    "fr": "Deux applications de Solved en usine agroalimentaire, chacune avec son périmètre.",
+    "it": "Due applicazioni di Solved in stabilimento alimentare, ciascuna con il proprio ambito.",
+    "de": "Zwei Anwendungen von Solved im Lebensmittelbetrieb, jede mit eigenem Geltungsbereich.",
+    "pt": "Duas aplicações do Solved em fábrica alimentar, cada uma com o seu âmbito."
+  }
+}

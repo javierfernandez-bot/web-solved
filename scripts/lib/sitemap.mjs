@@ -11,10 +11,11 @@
 //   - resto de páginas → fecha del último commit que tocó su index.html
 // =========================================================
 import { execFile } from 'node:child_process';
-import { promises as fs } from 'node:fs';
-import path from 'node:path';
+import { promises as fs, existsSync } from 'node:fs';
 import { promisify } from 'node:util';
 import { config } from '../config.mjs';
+import { TARGETS } from '../../i18n/config.mjs';
+import { rutaContenido } from './i18n-rutas.mjs';
 
 const exec = promisify(execFile);
 const { SITE_URL, STATIC_PAGES } = config;
@@ -43,6 +44,24 @@ export function urlBlock({ loc, lastmod, changefreq, priority }) {
     priority ? `    <priority>${priority}</priority>` : null,
     '  </url>',
   ].filter(Boolean).join('\n');
+}
+
+/* Añade las versiones traducidas de cada URL española.
+   Sólo entra lo que existe en disco: la tubería de idiomas se construye aparte
+   (npm run build:i18n y build:i18n:contenido) y anunciar en el sitemap una
+   página que todavía no se ha generado es un 404 servido a Google. El <lastmod>
+   se hereda del español, que es de donde sale el texto. */
+export function conIdiomas(entries) {
+  const fuera = [];
+  for (const e of entries) {
+    fuera.push(e);
+    for (const lang of TARGETS) {
+      const loc = rutaContenido(e.loc, lang);
+      if (!loc || !existsSync(locToFile(loc))) continue;
+      fuera.push({ ...e, loc });
+    }
+  }
+  return fuera;
 }
 
 export function renderSitemap(entries) {
@@ -78,32 +97,7 @@ export async function writeSitemap(posts, today) {
     entries.push({ loc: `/blog/${post.slug}/`, lastmod, changefreq: 'monthly', priority: '0.6' });
   }
 
-  // Blog en inglés (/en/blog/…): no viene de la API de WordPress (solo se
-  // traducen manualmente), así que se descubre leyendo disco, igual que
-  // build-sitemap.mjs. Si no existe todavía /en/blog/, se omite sin más.
-  try {
-    await fs.access('en/blog/index.html');
-    entries.push({
-      loc: '/en/blog/',
-      lastmod: await gitLastmod('en/blog/index.html', today),
-      changefreq: 'weekly',
-      priority: '0.7',
-    });
-    const EXCLUIDAS = new Set(['assets', 'page', 'webinar-patatas-aguilar']);
-    const dirs = (await fs.readdir('en/blog', { withFileTypes: true }))
-      .filter(e => e.isDirectory() && !EXCLUIDAS.has(e.name))
-      .map(e => e.name)
-      .sort();
-    for (const slug of dirs) {
-      const file = path.join('en/blog', slug, 'index.html');
-      try { await fs.access(file); } catch { continue; }
-      const html = await fs.readFile(file, 'utf8');
-      const m = html.match(/"dateModified"\s*:\s*"([^"]+)"/) || html.match(/"datePublished"\s*:\s*"([^"]+)"/);
-      const lastmod = m ? m[1].slice(0, 10) : await gitLastmod(file, today);
-      entries.push({ loc: `/en/blog/${slug}/`, lastmod, changefreq: 'monthly', priority: '0.6' });
-    }
-  } catch { /* en/blog/ no existe todavía */ }
-
-  await fs.writeFile('sitemap.xml', renderSitemap(entries), 'utf8');
-  return entries.length;
+  const todas = conIdiomas(entries);
+  await fs.writeFile('sitemap.xml', renderSitemap(todas), 'utf8');
+  return todas.length;
 }

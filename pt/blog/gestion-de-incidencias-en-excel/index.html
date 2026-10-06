@@ -1,0 +1,514 @@
+<!DOCTYPE html><html lang="pt-PT"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>Gestão de ocorrências no Excel: vantagens e limites · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Em muitas fábricas, a gestão de ocorrências continua a depender de modelos em Excel, embora o presente e o futuro estejam na automação.">
+<link rel="canonical" href="https://trysolved.com/pt/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="es" href="https://trysolved.com/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="fr" href="https://trysolved.com/fr/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="it" href="https://trysolved.com/it/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="de" href="https://trysolved.com/de/blog/gestion-de-incidencias-en-excel/">
+<link rel="alternate" hreflang="pt-PT" href="https://trysolved.com/pt/blog/gestion-de-incidencias-en-excel/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E6BFF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solved">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:url" content="https://trysolved.com/pt/blog/gestion-de-incidencias-en-excel/">
+<meta property="og:title" content="Gestão de ocorrências no Excel: vantagens e limites · Solved">
+<meta property="og:description" content="Em muitas fábricas, a gestão de ocorrências continua a depender de modelos em Excel, embora o presente e o futuro estejam na automação.">
+<meta property="og:image" content="https://trysolved.com/blog/assets/2c3c46ea13bd-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gestão de ocorrências no Excel: vantagens e limites · Solved">
+<meta name="twitter:description" content="Em muitas fábricas, a gestão de ocorrências continua a depender de modelos em Excel, embora o presente e o futuro estejam na automação.">
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/2c3c46ea13bd-1200.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/pt/blog/gestion-de-incidencias-en-excel/"},"headline":"Gestão de ocorrências no Excel: vantagens e limites","description":"Em muitas fábricas, a gestão de ocorrências continua a depender de modelos em Excel, embora o presente e o futuro estejam na automação.","image":["https://trysolved.com/blog/assets/2c3c46ea13bd-1200.jpg"],"datePublished":"2025-10-23T19:22:21Z","dateModified":"2026-08-05T10:30:30Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/pt/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Gestión de incidencias"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://trysolved.com/pt/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Gestão de ocorrências no Excel: vantagens e limites","item":"https://trysolved.com/pt/blog/gestion-de-incidencias-en-excel/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
+<link rel="stylesheet" href="/solved.css?v=20260910f">
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
+<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Migalhas de pão">
+      <a href="/pt/">Início</a> <span>/</span>
+      <a href="/pt/blog/">Blog</a> <span>/</span>
+      <span aria-current="page">Gestão de ocorrências no Excel: vantagens e limites</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Gestão de ocorrências</span>
+      <h1>Gestão de ocorrências no Excel: vantagens e limites</h1>
+      <p class="post__meta">Por Claudia · <time datetime="2025-10-23T19:22:21Z">23 de outubro de 2025</time> · 6 min de leitura</p>
+    </header>
+
+    <!-- banner-arriba:inicio -->
+    <div class="blog-banner" data-modulo="incidencias">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/reportar.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Faça a gestão das ocorrências da sua fábrica com a Solved</span>Registe, atribua e encerre ocorrências a partir do telemóvel, com evidências e rastreabilidade completa.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/gestao-de-incidentes/">Ver gestão de ocorrências</a>
+    </div>
+  </div>
+    <!-- banner-arriba:fin -->
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/2c3c46ea13bd-480.avif 480w, /blog/assets/2c3c46ea13bd-768.avif 768w, /blog/assets/2c3c46ea13bd-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/2c3c46ea13bd-480.webp 480w, /blog/assets/2c3c46ea13bd-768.webp 768w, /blog/assets/2c3c46ea13bd-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/2c3c46ea13bd-1200.jpg" width="1200" height="800" alt="Operador a manusear peças metálicas numa oficina de produção" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<p>Em muitas fábricas, a gestão de ocorrências continua a depender de modelos em Excel. Esta prática foi, durante anos, a solução mais acessível e económica para registar problemas, mas apresenta limitações importantes quando a operação cresce ou é necessário cumprir normas internacionais de qualidade. Face a este modelo, os softwares especializados oferecem uma alternativa robusta, com rastreabilidade completa, dados em tempo real e funcionalidades que permitem tomar decisões mais rápidas.</p>
+
+
+
+<p>Neste artigo, faremos uma comparação técnica entre as duas abordagens, mostrando vantagens, desvantagens e o impacto direto na produtividade e no cumprimento normativo.</p>
+
+
+
+<h2><strong>O Excel na gestão de ocorrências: um recurso limitado mas generalizado</strong></h2>
+
+
+
+<p>O Excel é uma das ferramentas mais utilizadas no mundo. Em fábricas pequenas ou em departamentos com recursos limitados, costuma ser usado para registar ocorrências de qualidade, manutenção ou segurança. O seu principal atrativo está na facilidade de acesso: praticamente qualquer utilizador sabe usá-lo e não exige um investimento inicial significativo.</p>
+
+
+
+<p>No entanto, quando falamos de <strong>gestão de ocorrências em fábricas</strong>, o Excel apresenta limitações graves:</p>
+
+
+
+<ul>
+<li><strong>Falta de automação</strong>: tudo depende de registos manuais.<br></li>
+
+
+
+<li><strong>Erros humanos frequentes</strong>: células mal copiadas, dados incompletos ou duplicados.<br></li>
+
+
+
+<li><strong>Dificuldade de rastreabilidade</strong>: encontrar padrões ou causas-raiz torna-se um exercício lento e pouco fiável.<br></li>
+
+
+
+<li><strong>Complexidade nas auditorias</strong>: preparar relatórios para a ISO 9001, ISO 22000, IFS ou BRC exige consolidar múltiplas folhas e verificar a consistência dos dados.<br></li>
+
+
+
+<li><strong>Colaboração escassa</strong>: quando várias pessoas trabalham no mesmo ficheiro, os conflitos e as perdas de informação são habituais.<br></li>
+</ul>
+
+
+
+<p>O Excel pode ser útil em operações pequenas ou como apoio inicial, mas fica aquém dos requisitos atuais da indústria.</p>
+
+
+
+<h2><strong>Software especializado: rastreabilidade, controlo e eficiência</strong></h2>
+
+
+
+<p>Um software especializado de gestão de ocorrências está desenhado especificamente para resolver as limitações do Excel. Trata-se de uma plataforma que permite registar, analisar e resolver ocorrências com uma lógica pensada para o ambiente industrial.</p>
+
+
+
+<p>Entre as suas principais vantagens encontram-se:</p>
+
+
+
+<ul>
+<li><strong>Registo imediato a partir de qualquer dispositivo</strong>: telemóvel, tablet ou PC.<br></li>
+
+
+
+<li><strong>Rastreabilidade total</strong>: cada ocorrência fica associada a datas, responsáveis, evidências e <a href="/pt/blog/acciones-correctivas-y-preventivas-que-funcionan/">ações corretivas</a>.<br></li>
+
+
+
+<li><strong>Automação de fluxos de trabalho</strong>: o sistema atribui automaticamente a ocorrência ao responsável adequado.<br></li>
+
+
+
+<li><strong>Dados em tempo real</strong>: dashboards que mostram ocorrências abertas, tempos de resolução, tendências e pontos críticos.<br></li>
+
+
+
+<li><strong>Preparação para auditorias</strong>: facilita o cumprimento da ISO 9001, ISO 14001, ISO 22000, IFS e BRC graças à documentação estruturada e verificável.<br></li>
+
+
+
+<li><strong>Colaboração transversal</strong>: diferentes departamentos acedem à mesma informação sem duplicações nem atrasos.<br></li>
+</ul>
+
+
+
+<p>A diferença fundamental é que um software especializado não se limita a registar dados, mas transforma-os em informação acionável.</p>
+
+
+
+<h2><strong>Comparação técnica: Excel vs software especializado</strong></h2>
+
+
+
+<p>De seguida, apresenta-se uma análise técnica das principais diferenças:</p>
+
+
+
+<h3><strong>Registo de ocorrências</strong></h3>
+
+
+
+<ul>
+<li><strong>Excel</strong>: manual, requer que o operador preencha células e que outra pessoa valide os dados.<br></li>
+
+
+
+<li><strong>Software especializado</strong>: permite registar ocorrências na fábrica com fotos e vídeos, diretamente a partir de um dispositivo móvel.<br></li>
+</ul>
+
+
+
+<h3><strong>Rastreabilidade</strong></h3>
+
+
+
+<ul>
+<li><strong>Excel</strong>: limitada. O histórico depende de que se mantenha a ordem nas folhas.<br></li>
+
+
+
+<li><strong>Software especializado</strong>: cada ocorrência gera um processo completo com data, responsável, estado, ações e evidências.<br></li>
+</ul>
+
+
+
+<h3><strong>Análise de dados</strong></h3>
+
+
+
+<ul>
+<li><strong>Excel</strong>: requer criar gráficos manualmente, com risco de erros.<br></li>
+
+
+
+<li><strong>Software especializado</strong>: gera dashboards automáticos, com filtros por linha, turno, tipo de ocorrência, etc.<br></li>
+</ul>
+
+
+
+<h3><strong>Integração com outros sistemas</strong></h3>
+
+
+
+<ul>
+<li><strong>Excel</strong>: não se integra facilmente com ERP, MES ou GMAO.<br></li>
+
+
+
+<li><strong>Software especializado</strong>: permite sincronização automática, evitando duplicações.<br></li>
+</ul>
+
+
+
+<h3><strong>Conformidade normativa</strong></h3>
+
+
+
+<ul>
+<li><strong>Excel</strong>: preparar auditorias ISO ou IFS implica consolidar dados manualmente.<br></li>
+
+
+
+<li><strong>Software especializado</strong>: gera relatórios completos e facilita evidências em segundos.<br></li>
+</ul>
+
+      <!-- banner-medio:inicio -->
+      <div class="blog-banner" data-modulo="incidencias">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/reportar.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Faça a gestão das ocorrências da sua fábrica com a Solved</span>Registe, atribua e encerre ocorrências a partir do telemóvel, com evidências e rastreabilidade completa.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/gestao-de-incidentes/">Ver gestão de ocorrências</a>
+    </div>
+  </div>
+      <!-- banner-medio:fin -->
+
+      
+
+
+
+<h3><strong>Escalabilidade</strong></h3>
+
+
+
+<ul>
+<li><strong>Excel</strong>: funcional para poucas ocorrências, mas incontrolável em fábricas grandes.<br></li>
+
+
+
+<li><strong>Software especializado</strong>: está concebido para crescer com a operação, mesmo com múltiplas fábricas e utilizadores.<br></li>
+</ul>
+
+
+
+<h2><strong>Casos práticos: o impacto numa auditoria</strong></h2>
+
+
+
+<p>Vejamos como se comportam os dois sistemas perante uma auditoria de qualidade:</p>
+
+
+
+<ul>
+<li><strong>Com o Excel</strong>: o auditor solicita evidências de uma ocorrência sucedida há três meses. O responsável tem de procurar em várias folhas, verificar a consistência e reunir documentos anexos em pastas partilhadas. O processo pode demorar horas.<br></li>
+
+
+
+<li><strong>Com software especializado</strong>: entra-se no sistema, filtra-se por data ou tipo de ocorrência, e em segundos apresenta-se um registo com evidências, ações corretivas e estado final. O auditor tem toda a informação pronta e estruturada.<br></li>
+</ul>
+
+
+
+<p>A diferença em tempo, esforço e fiabilidade é evidente.</p>
+
+
+
+<h2><strong>Benefícios estratégicos do software face ao Excel</strong></h2>
+
+
+
+<p>Adotar um software especializado não só melhora a operação diária, como também oferece vantagens estratégicas:</p>
+
+
+
+<ul>
+<li><strong>Antecipação de problemas</strong>: ao analisar dados em tempo real, é possível identificar padrões e prevenir ocorrências recorrentes.<br></li>
+
+
+
+<li><strong>Maior produtividade</strong>: as equipas dedicam menos tempo a documentar e mais a resolver.<br></li>
+
+
+
+<li><strong>Melhor cultura de qualidade</strong>: ao simplificar o registo e a rastreabilidade, incentiva-se a que todo o pessoal participe ativamente.<br></li>
+
+
+
+<li><strong>Vantagem competitiva</strong>: fábricas que cumprem as auditorias de forma ágil e demonstram rastreabilidade geram maior confiança em clientes e autoridades.<br></li>
+</ul>
+
+
+
+<h2><strong>Desafios e resistências</strong></h2>
+
+
+
+<p>A passagem do Excel para um software especializado também enfrenta barreiras:</p>
+
+
+
+<ul>
+<li><strong>Resistência do pessoal</strong>: alguns trabalhadores podem mostrar-se relutantes em abandonar um sistema conhecido.<br></li>
+
+
+
+<li><strong>Investimento inicial</strong>: embora menor que os custos ocultos do Excel, requer orçamento.<br></li>
+
+
+
+<li><strong>Adaptação cultural</strong>: implica instaurar um hábito de registo imediato e digital.<br></li>
+</ul>
+
+
+
+<p>Superar estes desafios exige comunicação clara dos benefícios, formação simples e seleção de uma ferramenta intuitiva.</p>
+
+
+
+<h2><strong>Como a Solved resolve a transição</strong></h2>
+
+
+
+<p>A plataforma <strong>Solved</strong> está concebida para tornar a passagem do Excel para um software especializado o mais simples possível. As suas características incluem:</p>
+
+
+
+<ul>
+<li>Registo em tempo real a partir de qualquer dispositivo.<br></li>
+
+
+
+<li>Evidências digitais integradas.<br></li>
+
+
+
+<li>Fluxos de trabalho automáticos.<br></li>
+
+
+
+<li>Integração com ERP, MES e GMAO.<br></li>
+
+
+
+<li>Dashboards intuitivos para detetar padrões.<br></li>
+</ul>
+
+
+
+<p>Com a Solved, as fábricas conseguem reduzir até 90% o tempo dedicado a documentar ocorrências, melhorar a rastreabilidade em auditorias ISO, IFS e BRC, e aumentar a produtividade das equipas de qualidade.</p>
+
+
+
+<h2><strong>Conclusão</strong></h2>
+
+
+
+<p>A comparação é clara: o Excel é uma ferramenta útil como ponto de partida, mas não está concebido para a gestão avançada de ocorrências. Em contrapartida, um software especializado oferece rastreabilidade total, automatização e preparação para as exigências regulamentares da indústria moderna.</p>
+
+
+
+<p>Num contexto em que as certificações internacionais são cada vez mais relevantes, a <strong>gestão de ocorrências</strong> com o Excel torna-se um risco. Apostar num software especializado é dar um passo rumo à eficiência, a <a href="/pt/blog/como-aplicar-la-mejora-continua-a-traves-de-los-datos/">melhoria contínua</a> e a competitividade.Quer deixar para trás os limites do Excel e gerir ocorrências com rastreabilidade e eficiência? Peça uma demonstração de<a href="/pt/gestao-de-incidentes/"> Solved</a> e descubra como transformar a gestão da qualidade na sua fábrica.<br></p>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Termos relacionados</h2>
+      <ul>
+        <li><a href="/pt/glossario/auditoria-de-calidad/">Auditoria de qualidade</a></li>
+        <li><a href="/pt/glossario/iso-22000/">ISO 22000</a></li>
+      </ul>
+    </aside>
+
+    <div class="blog-banner" data-modulo="incidencias">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/reportar.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Faça a gestão das ocorrências da sua fábrica com a Solved</span>Registe, atribua e encerre ocorrências a partir do telemóvel, com evidências e rastreabilidade completa.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/gestao-de-incidentes/">Ver gestão de ocorrências</a>
+    </div>
+  </div>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="/pt/blog/">← Voltar ao blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Continue a ler</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/cuanto-cuesta-un-software-de-gestion-de-incidencias/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/4010b73c7201-480.avif 480w, /blog/assets/4010b73c7201-768.avif 768w, /blog/assets/4010b73c7201-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/4010b73c7201-480.webp 480w, /blog/assets/4010b73c7201-768.webp 768w, /blog/assets/4010b73c7201-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/4010b73c7201-1200.jpg" width="1200" height="655" alt="Responsável da qualidade a analisar num portátil o custo de um software de gestão de ocorrências" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Gestão de ocorrências</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/cuanto-cuesta-un-software-de-gestion-de-incidencias/">Quanto custa um software de gestão de ocorrências</a></h2>
+          <p class="blog-card__excerpt">Descubra quanto custa um software de gestão de ocorrências e que modelo de preço se adapta melhor à sua fábrica. Compare custos.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-20T05:01:30Z">20 de julho de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/gestor-de-incidencias-como-elegir-el-mejor/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/d45ac6f4eb4c-480.avif 480w, /blog/assets/d45ac6f4eb4c-768.avif 768w, /blog/assets/d45ac6f4eb4c-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/d45ac6f4eb4c-480.webp 480w, /blog/assets/d45ac6f4eb4c-768.webp 768w, /blog/assets/d45ac6f4eb4c-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/d45ac6f4eb4c-1200.jpg" width="1200" height="655" alt="Responsável a utilizar um gestor de ocorrências num tablet na linha de produção" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Gestão de ocorrências</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/gestor-de-incidencias-como-elegir-el-mejor/">Gestor de ocorrências: como escolher o melhor</a></h2>
+          <p class="blog-card__excerpt">Um gestor de ocorrências melhora a rastreabilidade e o encerramento de problemas em fábricas agroalimentares. Descubra as suas funcionalidades indispensáveis e como escolher a melhor solução.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-18T05:01:21Z">18 de julho de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/gestion-de-no-conformidades-en-alimentacion-guia-completa/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/314b9b9c8252-480.avif 480w, /blog/assets/314b9b9c8252-768.avif 768w, /blog/assets/314b9b9c8252-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/314b9b9c8252-480.webp 480w, /blog/assets/314b9b9c8252-768.webp 768w, /blog/assets/314b9b9c8252-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/314b9b9c8252-1200.jpg" width="1200" height="655" alt="Técnico a anotar uma não conformidade na linha de produção de bolachas" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Gestão de ocorrências</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/gestion-de-no-conformidades-en-alimentacion-guia-completa/">Gestão de não conformidades na indústria alimentar: guia completo</a></h2>
+          <p class="blog-card__excerpt">Descubra como implementar uma gestão de não conformidades alimentares eficaz para melhorar a qualidade e reduzir ocorrências na sua empresa agroalimentar.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-14T05:01:12Z">14 de julho de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="/pt/chrome.js?v=20261005a"></script>
+
+</body></html>

@@ -1,0 +1,210 @@
+/* =========================================================
+   SOLVED · EL FORMULARIO DE HUBSPOT, CON LA ESTÉTICA DEL SITIO
+   ---------------------------------------------------------
+   HubSpot pinta su formulario DENTRO DE UN IFRAME (`.hs-form-iframe`), así que
+   ni una regla de `solved.css` ni de `ds/*.css` lo alcanza: por eso el
+   formulario se veía como HubSpot y no como Solved. Lo que sí se puede es
+   entrar: el iframe es `about:blank` —el embed v2 escribe dentro, no carga una
+   URL— y por tanto es del MISMO ORIGEN que la página. `chrome.js` mete esta
+   hoja ahí dentro cuando el formulario está listo.
+
+   SI ALGÚN DÍA HUBSPOT PASA EL EMBED A UN IFRAME CON `src` PROPIO, esto deja de
+   funcionar de golpe y sin error: el navegador bloquea el acceso al documento.
+   La salida entonces no es pelear con el iframe, es montar el formulario en
+   HTML nuestro y mandarlo a la API de submissions de HubSpot. Queda escrito
+   aquí para no tener que volver a descubrirlo.
+
+   LOS TOKENS SE COPIAN, no se heredan: las variables viven en el `:root` de la
+   página y el iframe tiene su propio documento. Si `ds/tokens.css` cambia un
+   valor de los de abajo, hay que cambiarlo aquí también — son ocho.
+
+   POR QUÉ TANTO `!important`, y no es pereza: el tema del formulario se sirve
+   con reglas del tipo
+     `.hs-form-<formId>_<instanceId> .hs-form-field label:not(.hs-error-msg)`
+   —cuatro clases— y **el `<instanceId>` cambia en cada render**, así que no hay
+   selector estable al que subirle la especificidad. Con la hoja detrás no basta:
+   pierde por peso. Los `!important` son exactamente las propiedades que ese
+   tema declara (tipografía, tamaño y color de etiqueta, y la caja del campo).
+   ========================================================= */
+:root{
+  --sv-primary:#0F68F4;
+  --sv-primary-deep:#0B54C8;
+  --sv-ink:#111214;
+  --sv-ink-2:#3B434C;
+  --sv-mute:#6C757E;
+  --sv-hairline:#DDE3EA;
+  --sv-hairline-input:#B4BFCA;
+  --sv-fault:#E5484D;
+  --sv-radius:6px;
+  --sv-sans:Geist,'SF Pro Display',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+
+html,body{ background:transparent }
+body,
+.hs-form,
+.hs-form input,
+.hs-form select,
+.hs-form textarea,
+.hs-form button{
+  font-family:var(--sv-sans) !important;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* — El ritmo vertical — */
+.hs-form fieldset{ max-width:none !important; margin-bottom:0 }
+.hs-form fieldset + fieldset{ margin-top:18px }
+.hs-form .hs-form-field{ margin-bottom:0 }
+/* Dos campos en una columna —el formulario vive en una tarjeta estrecha y las
+   dos columnas se apilan— necesitan el mismo aire que dos fieldsets. */
+.hs-form fieldset.form-columns-2 .hs-form-field + .hs-form-field{ margin-top:18px }
+
+/* — La etiqueta —
+   Peso 400 sobre cuerpo 300, que es el escalón del sistema. Nada de negrita:
+   la hoja de HubSpot las pone en 700. */
+.hs-form .hs-form-field > label{
+  display:block;
+  margin:0 0 6px;
+  font-size:13px !important; line-height:1.35;
+  font-weight:400 !important;
+  color:var(--sv-ink-2) !important;
+  letter-spacing:.01em;
+}
+.hs-form .hs-form-required{ color:var(--sv-mute); margin-left:2px }
+
+/* — El campo —
+   Radio 6, hairline del sistema y foco con el azul de marca. El alto sale del
+   padding y no de una altura escrita: con dos líneas de etiqueta el campo no
+   se descuadra. */
+.hs-form .hs-input{
+  width:100% !important;
+  max-width:none !important;
+  height:auto !important;
+  box-sizing:border-box;
+  padding:11px 12px !important;
+  border:1px solid var(--sv-hairline-input) !important;
+  border-radius:var(--sv-radius) !important;
+  background-color:#fff !important;
+  font-size:15px !important; line-height:1.4; font-weight:300;
+  color:var(--sv-ink) !important;
+  transition:border-color .16s ease, box-shadow .16s ease;
+}
+/* Las casillas no son campos de texto: recuperan su tamaño propio. */
+.hs-form .hs-input[type="checkbox"],
+.hs-form .hs-input[type="radio"]{
+  width:16px !important; height:16px !important; padding:0 !important;
+  border-radius:3px !important;
+}
+.hs-form .hs-input::placeholder{ color:#9AA3AC }
+.hs-form .hs-input:hover{ border-color:#94A1AE }
+.hs-form .hs-input:focus{
+  outline:none;
+  border-color:var(--sv-primary) !important;
+  box-shadow:0 0 0 3px rgba(15,104,244,.16);
+}
+.hs-form textarea.hs-input{ min-height:120px; resize:vertical }
+.hs-form select.hs-input{ appearance:none; padding-right:34px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236C757E' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 11px center; background-size:16px;
+}
+
+/* Dos columnas con la calle del sistema. HubSpot las reparte con porcentajes y
+   márgenes; aquí es una rejilla y el hueco es real.
+
+   EL UMBRAL SE MIDE CONTRA EL ANCHO DEL IFRAME, no de la ventana: la marca
+   estaba en 520px porque así se escribió cuando el formulario vivía a todo el
+   ancho de la página. Desde que el contacto reparte tarjeta + foto a dos
+   columnas, el iframe mide ~390-450px SIEMPRE —comprobado en `/software-gmao/`
+   con el iframe en vivo—, así que el umbral no se cruzaba nunca y Nombre y
+   Apellidos caían al `float:left` de HubSpot: sin `display:grid` de por
+   medio, el segundo campo queda descuadrado respecto al primero. Bajado a
+   320px, que es lo que cabe sin problema para dos etiquetas cortas y sigue
+   dejando el estado apilado como red de seguridad en un iframe todavía más
+   estrecho. */
+@media (min-width:320px){
+  .hs-form fieldset.form-columns-2{
+    display:grid; grid-template-columns:1fr 1fr; gap:16px;
+  }
+  .hs-form fieldset.form-columns-2 .hs-form-field{ width:100% !important; float:none !important }
+  .hs-form fieldset.form-columns-2 .hs-form-field + .hs-form-field{ margin-top:0 }
+  .hs-form fieldset.form-columns-2 .input{ margin-right:0 !important }
+}
+.hs-form fieldset.form-columns-1 .hs-form-field{ width:100% !important; float:none !important }
+.hs-form .input{ margin-right:0 !important }
+
+/* — El consentimiento —
+   Es texto legal: va en cuerpo pequeño y atenuado, y la casilla se alinea con
+   la primera línea, no con el bloque. */
+.hs-form .legal-consent-container,
+.hs-form .legal-consent-container .hs-richtext,
+.hs-form .legal-consent-container label:not(.hs-error-msg){
+  font-size:13px !important; line-height:1.5;
+  color:var(--sv-ink-2) !important;
+}
+.hs-form .legal-consent-container{ margin-top:18px }
+.hs-form .legal-consent-container p{ margin:0 0 8px }
+/* La lista de casillas trae sangrado de lista: fuera, que la casilla es la que
+   marca el margen izquierdo del bloque. */
+.hs-form .inputs-list{ list-style:none !important; margin:0 !important; padding:0 !important }
+.hs-form .inputs-list li{ margin:0 }
+.hs-form .inputs-list label{ padding:0 !important; margin:0 !important; width:auto !important }
+.hs-form .inputs-list li + li{ margin-top:8px }
+.hs-form .hs-form-booleancheckbox-display{
+  display:grid; grid-template-columns:16px minmax(0,1fr); gap:9px;
+  align-items:start;
+  font-size:13px; line-height:1.5; color:var(--sv-ink-2);
+}
+/* HubSpot separa el texto de la casilla con un `margin-left` en el span, porque
+   en su maqueta la casilla flota. Aquí la separación la pone la rejilla, así
+   que ese margen se suma y deja el texto a 45px de la casilla. */
+.hs-form .hs-form-booleancheckbox-display > span{ margin-left:0 !important }
+.hs-form .hs-form-booleancheckbox-display > input[type=checkbox]{
+  margin:2px 0 0 !important;
+  accent-color:var(--sv-primary);
+}
+.hs-form .legal-consent-container a{ color:var(--sv-primary); text-decoration:underline }
+
+/* — El botón —
+   El primario del sistema: azul, radio 6, peso 400 y sin sombra. Nada escala
+   ni se levanta al pulsar; sólo cambia el color. */
+.hs-form .hs-button{
+  appearance:none;
+  display:inline-block;
+  margin-top:22px;
+  padding:12px 22px;
+  border:0; border-radius:var(--sv-radius);
+  background:var(--sv-primary) !important;
+  color:#fff !important;
+  font-size:15px; line-height:1.2; font-weight:400 !important;
+  letter-spacing:.01em;
+  text-transform:none !important;
+  box-shadow:none !important;
+  cursor:pointer;
+  transition:background .16s ease;
+}
+.hs-form .hs-button:hover{ background:var(--sv-primary-deep) !important; transform:none !important }
+.hs-form .hs-button:focus-visible{ outline:2px solid var(--sv-primary); outline-offset:2px }
+
+/* — El error —
+   Rojo de estado del sistema, debajo del campo y sin fondo: un aviso no es una
+   tarjeta. El campo con error se marca en el borde. */
+.hs-form .hs-error-msgs{ list-style:none; margin:6px 0 0; padding:0 }
+.hs-form .hs-error-msg,
+.hs-form .hs-error-msgs label{
+  color:var(--sv-fault) !important;
+  font-size:12.5px; line-height:1.4; font-weight:400 !important;
+}
+.hs-form .hs-input.invalid,
+.hs-form .hs-input.error{ border-color:var(--sv-fault) }
+.hs-form .hs-input.invalid:focus{ box-shadow:0 0 0 3px rgba(229,72,77,.14) }
+
+/* — El mensaje de gracias —
+   Sustituye al formulario entero cuando se manda, así que es lo único que
+   queda en la tarjeta: se le da el cuerpo de un párrafo del sitio. */
+.submitted-message{
+  font-size:15px; line-height:1.55; font-weight:300; color:var(--sv-ink-2);
+}
+.submitted-message p{ margin:0 0 10px }
+
+@media (prefers-reduced-motion:reduce){
+  .hs-form .hs-input, .hs-form .hs-button{ transition:none }
+}

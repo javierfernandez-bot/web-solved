@@ -1,0 +1,1088 @@
+{
+  "_nota_canales": "Los cuatro canales del encabezado de /incidencias/ los pidió el cliente el 8 sep 2026 y se editaron fuera de la sesión que los tradujo. «Teams» va en 00-invariables.",
+  "Reporta incidencias en cualquier formato": {
+    "en": "Report incidents in any format",
+    "fr": "Signalez les incidents dans n'importe quel format",
+    "it": "Segnala le anomalie in qualsiasi formato",
+    "de": "Melden Sie Störungen in jedem Format",
+    "pt": "Reporte ocorrências em qualquer formato"
+  },
+  "y desde cualquier lugar.": {
+    "en": "and from anywhere.",
+    "fr": "et depuis n'importe où.",
+    "it": "e da qualsiasi luogo.",
+    "de": "und von überall.",
+    "pt": "e a partir de qualquer lugar."
+  },
+  "Un mensaje de Teams, un correo, una nota de voz o la plantilla de Solved. La IA normaliza cualquiera de esas entradas en una única incidencia, con código, categoría, responsable y fecha.": {
+    "en": "A Teams message, an email, a voice note or the Solved template. The AI turns any of those inputs into a single incident, with its code, category, owner and date.",
+    "fr": "Un message Teams, un courriel, une note vocale ou le modèle Solved. L'IA normalise n'importe laquelle de ces entrées en un seul incident, avec son code, sa catégorie, son responsable et sa date.",
+    "it": "Un messaggio di Teams, una mail, una nota vocale o il modello di Solved. L'IA normalizza qualsiasi di questi ingressi in un'unica anomalia, con codice, categoria, responsabile e data.",
+    "de": "Eine Teams-Nachricht, eine E-Mail, eine Sprachnotiz oder die Solved-Vorlage. Die KI führt jede dieser Eingaben zu einer einzigen Störung zusammen – mit Code, Kategorie, Verantwortlichem und Datum.",
+    "pt": "Uma mensagem do Teams, um e-mail, uma nota de voz ou o modelo Solved. A IA transforma qualquer uma destas entradas numa única ocorrência, com código, categoria, responsável e data."
+  },
+  "Nota de voz": {
+    "en": "Voice note",
+    "fr": "Note vocale",
+    "it": "Nota vocale",
+    "de": "Sprachnotiz",
+    "pt": "Nota de voz"
+  },
+  "Plantilla de Solved": {
+    "en": "Solved template",
+    "fr": "Modèle Solved",
+    "it": "Modello Solved",
+    "de": "Solved-Vorlage",
+    "pt": "Modelo Solved"
+  },
+  "Estado de la cinta L3": {
+    "en": "Conveyor L3 status",
+    "fr": "État du convoyeur L3",
+    "it": "Stato del nastro trasportatore L3",
+    "de": "Zustand des Förderbands L3",
+    "pt": "Estado do tapete transportador L3"
+  },
+  "Herramienta de operaciones industriales: incidencias, registros y checklists digitales, documentos e informes en tiempo real.": {
+    "en": "A tool for industrial operations: incidents, digital records and checklists, documents and reports in real time.",
+    "fr": "Un outil pour les opérations industrielles : incidents, enregistrements et checklists numériques, documents et rapports en temps réel.",
+    "it": "Uno strumento per le operazioni industriali: anomalie, registrazioni e checklist digitali, documenti e report in tempo reale.",
+    "de": "Ein Werkzeug für industrielle Abläufe: Störungen, digitale Aufzeichnungen und Checklisten, Dokumente und Berichte in Echtzeit.",
+    "pt": "Uma ferramenta para operações industriais: ocorrências, registos e checklists digitais, documentos e relatórios em tempo real."
+  },
+  "Software de gestión de incidencias en planta · Solved": {
+    "en": "Plant incident management software · Solved",
+    "fr": "Logiciel de gestion des incidents en usine · Solved",
+    "it": "Software di gestione delle anomalie in stabilimento · Solved",
+    "de": "Software für Störungsmanagement im Werk · Solved",
+    "pt": "Software de gestão de ocorrências em fábrica · Solved"
+  },
+  "Registro de incidencias desde el móvil y en el punto de detección. Cada una deriva en una acción con responsable, fecha y trazabilidad hasta su cierre.": {
+    "en": "Log incidents from a phone, right where they are spotted. Each one turns into an action with an owner, a date and traceability through to closure.",
+    "fr": "Enregistrement des incidents depuis le téléphone, au point de détection. Chacun donne lieu à une action avec responsable, date et traçabilité jusqu'à sa clôture.",
+    "it": "Registrazione delle anomalie dal telefono, nel punto di rilevazione. Ognuna genera un'azione con responsabile, data e tracciabilità fino alla chiusura.",
+    "de": "Störungen per Smartphone direkt am Ort der Feststellung erfassen. Jede wird zu einer Maßnahme mit Verantwortlichem, Termin und Nachvollziehbarkeit bis zum Abschluss.",
+    "pt": "Registo de ocorrências a partir do telemóvel e no ponto de deteção. Cada uma dá origem a uma ação com responsável, data e rastreabilidade até ao encerramento."
+  },
+  "Gestión de incidencias": {
+    "en": "Incident management",
+    "fr": "Gestion des incidents",
+    "it": "Gestione delle anomalie",
+    "de": "Störungsmanagement",
+    "pt": "Gestão de ocorrências"
+  },
+  "Gestiona las incidencias de tu planta de principio a fin,": {
+    "en": "Handle your plant's incidents end to end,",
+    "fr": "Gérez les incidents de votre usine de bout en bout,",
+    "it": "Gestisci le anomalie del tuo stabilimento dall'inizio alla fine,",
+    "de": "Führen Sie die Störungen Ihres Werks von Anfang bis Ende,",
+    "pt": "Faça a gestão das ocorrências da sua fábrica do início ao fim,"
+  },
+  "desde el aviso en la línea hasta la documentación del cierre.": {
+    "en": "from the alert on the line to the closing paperwork.",
+    "fr": "de l'alerte sur la ligne à la documentation de clôture.",
+    "it": "dall'avviso in linea alla documentazione di chiusura.",
+    "de": "vom Hinweis an der Linie bis zur Abschlussdokumentation.",
+    "pt": "desde o alerta na linha até à documentação do encerramento."
+  },
+  "Sin formación previa para quien la registra y sin trabajo administrativo para quien la cierra.": {
+    "en": "No training for whoever logs it, no admin for whoever closes it.",
+    "fr": "Sans formation pour celui qui l'enregistre et sans travail administratif pour celui qui la clôture.",
+    "it": "Senza formazione per chi la registra e senza lavoro amministrativo per chi la chiude.",
+    "de": "Ohne Schulung für den, der sie erfasst, und ohne Verwaltungsarbeit für den, der sie abschließt.",
+    "pt": "Sem formação prévia para quem a regista e sem trabalho administrativo para quem a encerra."
+  },
+  "Ver el recorrido de producto (25 s)": {
+    "en": "Take the product tour (25 s)",
+    "fr": "Voir la visite produit (25 s)",
+    "it": "Guarda il tour del prodotto (25 s)",
+    "de": "Produkt-Tour ansehen (25 s)",
+    "pt": "Ver o tour do produto (25 s)"
+  },
+  "Entran sin estructura.": {
+    "en": "They come in unstructured.",
+    "fr": "Ils arrivent sans structure.",
+    "it": "Entrano senza struttura.",
+    "de": "Sie kommen unstrukturiert an.",
+    "pt": "Entram sem estrutura."
+  },
+  "Salen normalizadas.": {
+    "en": "They come out standardised.",
+    "fr": "Ils ressortent normalisés.",
+    "it": "Escono normalizzate.",
+    "de": "Sie gehen normiert heraus.",
+    "pt": "Saem normalizadas."
+  },
+  "Mensajería, correo, aviso verbal o parte manuscrito. La IA de Solved normaliza cualquiera de esas entradas en una única incidencia, con código, categoría, responsable y fecha.": {
+    "en": "A message, an email, a word in passing or a handwritten note. Solved's AI turns any of those inputs into a single incident, with a code, a category, an owner and a date.",
+    "fr": "Messagerie, courriel, avis verbal ou rapport manuscrit. L'IA de Solved normalise n'importe laquelle de ces entrées en un seul incident, avec code, catégorie, responsable et date.",
+    "it": "Messaggistica, mail, avviso verbale o rapporto scritto a mano. L'IA di Solved normalizza qualunque di questi ingressi in un'unica anomalia, con codice, categoria, responsabile e data.",
+    "de": "Messenger, E-Mail, Zuruf oder handschriftlicher Zettel. Die KI von Solved führt jede dieser Eingaben zu einer einzigen Störung zusammen – mit Code, Kategorie, Verantwortlichem und Datum.",
+    "pt": "Mensagens, e-mail, aviso verbal ou parte manuscrito. A IA da Solved transforma qualquer uma destas entradas numa única ocorrência, com código, categoria, responsável e data."
+  },
+  "se ha roto la envasadora, otra vez lo mismo": {
+    "en": "the packaging machine broke again, same as always",
+    "fr": "la conditionneuse est encore tombée en panne, toujours pareil",
+    "it": "si è rotta di nuovo la confezionatrice, sempre la stessa storia",
+    "de": "die Verpackungsmaschine ist wieder kaputt, immer dasselbe",
+    "pt": "a envasadora avariou-se outra vez, sempre a mesma coisa"
+  },
+  "Correo": {
+    "en": "Email",
+    "fr": "Courriel",
+    "it": "Mail",
+    "de": "E-Mail",
+    "pt": "E-mail"
+  },
+  "Asunto: aviso de la línea 3": {
+    "en": "Subject: alert from line 3",
+    "fr": "Objet : alerte de la ligne 3",
+    "it": "Oggetto: avviso dalla linea 3",
+    "de": "Betreff: Hinweis von Linie 3",
+    "pt": "Assunto: alerta da linha 3"
+  },
+  "Llamada": {
+    "en": "Phone call",
+    "fr": "Appel",
+    "it": "Chiamata",
+    "de": "Anruf",
+    "pt": "Chamada"
+  },
+  "Jefe de turno": {
+    "en": "Shift supervisor",
+    "fr": "Chef de poste",
+    "it": "Capoturno",
+    "de": "Schichtführer",
+    "pt": "Chefe de turno"
+  },
+  "Parte a mano": {
+    "en": "Handwritten note",
+    "fr": "Rapport manuscrit",
+    "it": "Rapporto a mano",
+    "de": "Handschriftliche Meldung",
+    "pt": "Parte manuscrito"
+  },
+  "turno de noche": {
+    "en": "night shift",
+    "fr": "poste de nuit",
+    "it": "turno di notte",
+    "de": "Nachtschicht",
+    "pt": "turno da noite"
+  },
+  "Categoría": {
+    "en": "Category",
+    "fr": "Catégorie",
+    "it": "Categoria",
+    "de": "Kategorie",
+    "pt": "Categoria"
+  },
+  "Prioridad": {
+    "en": "Priority",
+    "fr": "Priorité",
+    "it": "Priorità",
+    "de": "Priorität",
+    "pt": "Prioridade"
+  },
+  "Activo": {
+    "en": "Asset",
+    "fr": "Actif",
+    "it": "Asset",
+    "de": "Anlage",
+    "pt": "Ativo"
+  },
+  "Detectada": {
+    "en": "Detected",
+    "fr": "Détecté",
+    "it": "Rilevata",
+    "de": "Erkannt",
+    "pt": "Detetada"
+  },
+  "26_158 · Control de mantenimiento": {
+    "en": "26_158 · Maintenance check",
+    "fr": "26_158 · Contrôle de maintenance",
+    "it": "26_158 · Controllo di manutenzione",
+    "de": "26_158 · Instandhaltungskontrolle",
+    "pt": "26_158 · Controlo de manutenção"
+  },
+  "Acción asignada a Pablo · cierre 28/06": {
+    "en": "Action assigned to Pablo · due 28/06",
+    "fr": "Action assignée à Pablo · clôture 28/06",
+    "it": "Azione assegnata a Pablo · chiusura 28/06",
+    "de": "Maßnahme an Pablo · Frist 28.06.",
+    "pt": "Ação atribuída a Pablo · encerramento 28/06"
+  },
+  "Registro en el punto de detección, con evidencia y responsable": {
+    "en": "Logged where it is spotted, with evidence and an owner",
+    "fr": "Enregistrement au point de détection, avec preuve et responsable",
+    "it": "Registrazione nel punto di rilevazione, con evidenza e responsabile",
+    "de": "Erfassung am Ort der Feststellung, mit Nachweis und Verantwortlichem",
+    "pt": "Registo no ponto de deteção, com evidência e responsável"
+  },
+  "Abiertas 5": {
+    "en": "Open 5",
+    "fr": "Ouverts 5",
+    "it": "Aperte 5",
+    "de": "Offen 5",
+    "pt": "Abertas 5"
+  },
+  "Asignación automática al responsable, sin reparto manual": {
+    "en": "Automatic assignment to the owner, with no manual sorting",
+    "fr": "Attribution automatique au responsable, sans répartition manuelle",
+    "it": "Assegnazione automatica al responsabile, senza smistamento manuale",
+    "de": "Automatische Zuweisung an den Verantwortlichen, ohne manuelle Verteilung",
+    "pt": "Atribuição automática ao responsável, sem distribuição manual"
+  },
+  "Tendencias y puntos críticos, actualizados en tiempo real": {
+    "en": "Trends and hot spots, updated in real time",
+    "fr": "Tendances et points critiques, mis à jour en temps réel",
+    "it": "Tendenze e punti critici, aggiornati in tempo reale",
+    "de": "Trends und kritische Punkte, in Echtzeit aktualisiert",
+    "pt": "Tendências e pontos críticos, atualizados em tempo real"
+  },
+  "Sincronización de partes con el ERP, el MES o el GMAO": {
+    "en": "Reports synced with the ERP, the MES or the CMMS",
+    "fr": "Synchronisation des rapports avec l'ERP, le MES ou la GMAO",
+    "it": "Sincronizzazione dei rapporti con l'ERP, il MES o il CMMS",
+    "de": "Meldungen synchron mit ERP, MES oder Instandhaltungssystem",
+    "pt": "Sincronização de partes com o ERP, o MES ou o CMMS"
+  },
+  "Los partes y los registros salen hacia el sistema que ya usáis, sin teclear nada dos veces.": {
+    "en": "Reports and records flow out to the system you already use, with nothing typed twice.",
+    "fr": "Les rapports et les enregistrements partent vers le système que vous utilisez déjà, sans rien ressaisir.",
+    "it": "Rapporti e registrazioni escono verso il sistema che già usate, senza digitare nulla due volte.",
+    "de": "Meldungen und Aufzeichnungen laufen in Ihr bestehendes System – nichts wird zweimal getippt.",
+    "pt": "Os partes e os registos são enviados para o sistema que já utiliza, sem escrever nada duas vezes."
+  },
+  "La incidencia que vuelve no es una incidencia nueva": {
+    "en": "An incident that comes back is not a new incident",
+    "fr": "Un incident qui revient n'est pas un nouvel incident",
+    "it": "L'anomalia che ritorna non è un'anomalia nuova",
+    "de": "Eine Störung, die wiederkommt, ist keine neue Störung",
+    "pt": "A ocorrência que volta não é uma ocorrência nova"
+  },
+  "Es la misma sin resolver, y cerrarla otra vez no arregla nada. El análisis de causa —los cinco porqués o el diagrama de Ishikawa— se hace dentro del propio parte y con método, y la acción correctiva que sale de él queda unida a su análisis en vez de vivir en un documento que nadie vuelve a abrir.": {
+    "en": "It is the same one, still unsolved, and closing it again fixes nothing. The root cause analysis — five whys or an Ishikawa diagram — is done inside the report itself and by the book, and the corrective action that comes out of it stays attached to its analysis instead of living in a document nobody opens again.",
+    "fr": "C'est le même, toujours non résolu, et le clôturer une fois de plus ne règle rien. L'analyse de cause — les cinq pourquoi ou le diagramme d'Ishikawa — se fait dans le rapport lui-même et avec méthode, et l'action corrective qui en découle reste attachée à son analyse au lieu de vivre dans un document que personne ne rouvre.",
+    "it": "È la stessa, ancora irrisolta, e chiuderla di nuovo non risolve niente. L'analisi delle cause — i cinque perché o il diagramma di Ishikawa — si fa dentro il rapporto stesso e con metodo, e l'azione correttiva che ne deriva resta unita alla sua analisi invece di vivere in un documento che nessuno riapre.",
+    "de": "Es ist dieselbe, weiter ungelöst, und sie erneut zu schließen behebt nichts. Die Ursachenanalyse – fünf Warum oder Ishikawa-Diagramm – geschieht methodisch in der Meldung selbst, und die daraus folgende Korrekturmaßnahme bleibt mit ihrer Analyse verbunden, statt in einem Dokument zu liegen, das niemand wieder öffnet.",
+    "pt": "É a mesma, ainda por resolver, e voltar a encerrá-la não resolve nada. A análise de causa — os cinco porquês ou o diagrama de Ishikawa — faz-se dentro do próprio parte e com método, e a ação corretiva que daí resulta fica associada à sua análise em vez de existir num documento que ninguém volta a abrir."
+  },
+  "El síntoma": {
+    "en": "The symptom",
+    "fr": "Le symptôme",
+    "it": "Il sintomo",
+    "de": "Das Symptom",
+    "pt": "O sintoma"
+  },
+  "Producto rechazado en la línea 3. Es lo que se ve, lo que para la línea y lo que se registra en el control del turno. Cerrar aquí es apagar el fuego.": {
+    "en": "Product rejected on line 3. It is what you see, what stops the line and what goes into the shift check. Closing here is just putting out the fire.",
+    "fr": "Produit rejeté sur la ligne 3. C'est ce que l'on voit, ce qui arrête la ligne et ce qui est consigné dans le contrôle de poste. Clôturer ici, c'est éteindre l'incendie.",
+    "it": "Prodotto scartato sulla linea 3. È ciò che si vede, ciò che ferma la linea e ciò che finisce nel controllo di turno. Chiudere qui è spegnere l'incendio.",
+    "de": "Produkt an Linie 3 abgewiesen. Das ist, was man sieht, was die Linie stoppt und was in der Schichtkontrolle landet. Hier abzuschließen heißt nur, das Feuer zu löschen.",
+    "pt": "Produto rejeitado na linha 3. É o que se vê, o que para a linha e o que fica registado no controlo do turno. Encerrar aqui é apagar o fogo."
+  },
+  "¿Por qué?": {
+    "en": "Why?",
+    "fr": "Pourquoi ?",
+    "it": "Perché?",
+    "de": "Warum?",
+    "pt": "Porquê?"
+  },
+  "El sellado del envase venía defectuoso. Sigue siendo un efecto: nadie ha decidido nada todavía, sólo se ha bajado un piso.": {
+    "en": "The pack seal was faulty. Still an effect: nobody has decided anything yet, we have only gone down one floor.",
+    "fr": "Le scellage de l'emballage était défectueux. C'est encore un effet : personne n'a rien décidé, on est juste descendu d'un étage.",
+    "it": "La sigillatura della confezione era difettosa. È ancora un effetto: nessuno ha deciso nulla, si è solo sceso di un piano.",
+    "de": "Die Siegelnaht der Verpackung war fehlerhaft. Immer noch eine Wirkung: Entschieden ist nichts, wir sind nur eine Ebene tiefer.",
+    "pt": "A vedação da embalagem estava defeituosa. Continua a ser um efeito: ainda ninguém decidiu nada, desceu-se apenas um piso."
+  },
+  "La junta de la selladora estaba desgastada. Aquí ya hay algo material, pero cambiarla y volver al trabajo deja el problema intacto.": {
+    "en": "The sealer's gasket was worn. Now there is something physical, but swapping it and going back to work leaves the problem untouched.",
+    "fr": "Le joint de la scelleuse était usé. Il y a là quelque chose de matériel, mais le remplacer et reprendre le travail laisse le problème intact.",
+    "it": "La guarnizione della sigillatrice era usurata. Qui c'è qualcosa di materiale, ma sostituirla e tornare al lavoro lascia il problema intatto.",
+    "de": "Die Dichtung der Siegelmaschine war verschlissen. Jetzt ist etwas Greifbares da, aber sie zu tauschen und weiterzuarbeiten lässt das Problem unberührt.",
+    "pt": "A junta da seladora estava desgastada. Aqui já há algo material, mas substituí-la e voltar ao trabalho deixa o problema intacto."
+  },
+  "La causa": {
+    "en": "The cause",
+    "fr": "La cause",
+    "it": "La causa",
+    "de": "Die Ursache",
+    "pt": "A causa"
+  },
+  "No había plan de recambio preventivo. Sobre esto sí se puede actuar, y la acción correctiva que sale —dar de alta el preventivo en el GMAO— se guarda unida a este análisis.": {
+    "en": "There was no preventive replacement plan. This one can be acted on, and the corrective action that follows — setting up the preventive job in the CMMS — is saved attached to this analysis.",
+    "fr": "Il n'existait pas de plan de remplacement préventif. Là, on peut agir, et l'action corrective qui en découle — créer le préventif dans la GMAO — est enregistrée avec cette analyse.",
+    "it": "Non c'era un piano di sostituzione preventiva. Su questo si può agire, e l'azione correttiva che ne esce — inserire il preventivo nel CMMS — si salva insieme a questa analisi.",
+    "de": "Es gab keinen vorbeugenden Austauschplan. Hier lässt sich handeln, und die folgende Korrekturmaßnahme – die Vorbeugeaufgabe im Instandhaltungssystem anlegen – wird zusammen mit dieser Analyse gespeichert.",
+    "pt": "Não havia plano de substituição preventiva. Sobre isto sim se pode atuar, e a ação corretiva que daí resulta — criar o preventivo no CMMS — fica guardada junto a esta análise."
+  },
+  "Lo que vas a poder hacer el primer día": {
+    "en": "What you will be able to do on day one",
+    "fr": "Ce que vous pourrez faire dès le premier jour",
+    "it": "Cosa potrai fare il primo giorno",
+    "de": "Was Sie am ersten Tag tun können",
+    "pt": "O que vai poder fazer no primeiro dia"
+  },
+  "Las seis cosas que más piden los responsables de calidad, producción y mantenimiento, y dónde las resuelve Solved.": {
+    "en": "The six things quality, production and maintenance managers ask for most, and where Solved handles them.",
+    "fr": "Les six demandes les plus fréquentes des responsables qualité, production et maintenance, et où Solved y répond.",
+    "it": "Le sei cose che responsabili di qualità, produzione e manutenzione chiedono di più, e dove Solved le risolve.",
+    "de": "Die sechs Dinge, die Qualitäts-, Produktions- und Instandhaltungsverantwortliche am häufigsten fordern – und wo Solved sie löst.",
+    "pt": "As seis coisas mais pedidas pelos responsáveis de qualidade, produção e manutenção, e onde a Solved as resolve."
+  },
+  "La incidencia se abre con su categoría, su responsable y su fecha, y la notificación se emite sin que nadie tenga que distribuir el trabajo entre turnos.": {
+    "en": "The incident opens with its category, its owner and its date, and the notification goes out without anyone having to hand work between shifts.",
+    "fr": "L'incident s'ouvre avec sa catégorie, son responsable et sa date, et la notification part sans que personne ait à répartir le travail entre les postes.",
+    "it": "L'anomalia si apre con la sua categoria, il suo responsabile e la sua data, e la notifica parte senza che nessuno debba distribuire il lavoro tra i turni.",
+    "de": "Die Störung entsteht mit Kategorie, Verantwortlichem und Datum, und die Benachrichtigung geht raus, ohne dass jemand Arbeit zwischen Schichten verteilen muss.",
+    "pt": "A ocorrência abre com a sua categoria, o seu responsável e a sua data, e a notificação é emitida sem que ninguém tenha de distribuir o trabalho entre turnos."
+  },
+  "Asignación sin intermediarios.": {
+    "en": "Assignment with no middleman.",
+    "fr": "Attribution sans intermédiaire.",
+    "it": "Assegnazione senza intermediari.",
+    "de": "Zuweisung ohne Zwischenstelle.",
+    "pt": "Atribuição sem intermediários."
+  },
+  "Cada incidencia deriva en una acción con responsable y fecha de cierre, y el vencimiento queda visible sin necesidad de reclamarlo.": {
+    "en": "Every incident turns into an action with an owner and a closing date, and the deadline is visible without anyone chasing it.",
+    "fr": "Chaque incident donne lieu à une action avec responsable et date de clôture, et l'échéance est visible sans avoir à la réclamer.",
+    "it": "Ogni anomalia genera un'azione con responsabile e data di chiusura, e la scadenza è visibile senza doverla sollecitare.",
+    "de": "Jede Störung wird zu einer Maßnahme mit Verantwortlichem und Abschlusstermin, und die Frist ist sichtbar, ohne dass jemand nachhaken muss.",
+    "pt": "Cada ocorrência dá origem a uma ação com responsável e data de encerramento, e o prazo fica visível sem necessidade de o reclamar."
+  },
+  "Cierre con responsable y plazo.": {
+    "en": "Closure with an owner and a deadline.",
+    "fr": "Clôture avec responsable et échéance.",
+    "it": "Chiusura con responsabile e scadenza.",
+    "de": "Abschluss mit Verantwortlichem und Frist.",
+    "pt": "Encerramento com responsável e prazo."
+  },
+  "Ver no conformidades y acciones →": {
+    "en": "See non-conformities and actions →",
+    "fr": "Voir non-conformités et actions →",
+    "it": "Vedi non conformità e azioni →",
+    "de": "Zu Abweichungen und Maßnahmen →",
+    "pt": "Ver não conformidades e ações →"
+  },
+  "El mismo fallo queda agrupado por línea, por activo y por categoría, con las tendencias y los puntos críticos actualizados en tiempo real.": {
+    "en": "The same fault is grouped by line, by asset and by category, with trends and hot spots updated in real time.",
+    "fr": "La même défaillance est regroupée par ligne, par actif et par catégorie, avec les tendances et les points critiques mis à jour en temps réel.",
+    "it": "Lo stesso guasto viene raggruppato per linea, per asset e per categoria, con tendenze e punti critici aggiornati in tempo reale.",
+    "de": "Derselbe Fehler wird nach Linie, Anlage und Kategorie gebündelt, mit Trends und kritischen Punkten in Echtzeit.",
+    "pt": "A mesma falha fica agrupada por linha, por ativo e por categoria, com as tendências e os pontos críticos atualizados em tempo real."
+  },
+  "Análisis de reincidencia.": {
+    "en": "Repeat-failure analysis.",
+    "fr": "Analyse de récidive.",
+    "it": "Analisi delle ricadute.",
+    "de": "Analyse von Wiederholungsfällen.",
+    "pt": "Análise de reincidência."
+  },
+  "Ver KPIs y dashboards →": {
+    "en": "See KPIs and dashboards →",
+    "fr": "Voir les KPI et tableaux de bord →",
+    "it": "Vedi KPI e cruscotti →",
+    "de": "Zu KPIs und Dashboards →",
+    "pt": "Ver KPIs e dashboards →"
+  },
+  "La incidencia incorpora categoría y activo desde su apertura —cinta, envasadora, línea—, y el parte se sincroniza con el ERP, el MES o el GMAO ya implantado.": {
+    "en": "The incident carries a category and an asset from the moment it opens — conveyor, packaging machine, line — and the report syncs with the ERP, MES or CMMS already in place.",
+    "fr": "L'incident porte une catégorie et un actif dès son ouverture — convoyeur, conditionneuse, ligne — et le rapport se synchronise avec l'ERP, le MES ou la GMAO déjà en place.",
+    "it": "L'anomalia porta categoria e asset fin dall'apertura — nastro, confezionatrice, linea — e il rapporto si sincronizza con l'ERP, il MES o il CMMS già in uso.",
+    "de": "Die Störung trägt ab dem Öffnen Kategorie und Anlage – Förderband, Verpackungsmaschine, Linie – und die Meldung synchronisiert mit dem vorhandenen ERP, MES oder Instandhaltungssystem.",
+    "pt": "A ocorrência incorpora categoria e ativo desde a sua abertura — tapete transportador, envasadora, linha —, e o parte sincroniza-se com o ERP, o MES ou o CMMS já implementado."
+  },
+  "Averías y activos.": {
+    "en": "Breakdowns and assets.",
+    "fr": "Pannes et actifs.",
+    "it": "Guasti e asset.",
+    "de": "Störungen und Anlagen.",
+    "pt": "Avarias e ativos."
+  },
+  "Cada incidencia conserva autor, evidencia, actuación y fecha de cierre, junto a los partes de control del mismo turno.": {
+    "en": "Every incident keeps its author, evidence, what was done and closing date, alongside the control reports from the same shift.",
+    "fr": "Chaque incident conserve son auteur, sa preuve, l'intervention et la date de clôture, à côté des rapports de contrôle du même poste.",
+    "it": "Ogni anomalia conserva autore, evidenza, intervento e data di chiusura, insieme ai rapporti di controllo dello stesso turno.",
+    "de": "Jede Störung behält Verfasser, Nachweis, Maßnahme und Abschlussdatum – neben den Kontrollmeldungen derselben Schicht.",
+    "pt": "Cada ocorrência conserva autor, evidência, atuação e data de encerramento, junto aos partes de controlo do mesmo turno."
+  },
+  "Evidencia auditable.": {
+    "en": "Auditable evidence.",
+    "fr": "Preuve auditable.",
+    "it": "Evidenza verificabile.",
+    "de": "Prüffähiger Nachweis.",
+    "pt": "Evidência auditável."
+  },
+  "Ver registros y auditorías →": {
+    "en": "See records and audits →",
+    "fr": "Voir enregistrements et audits →",
+    "it": "Vedi registrazioni e audit →",
+    "de": "Zu Aufzeichnungen und Audits →",
+    "pt": "Ver registos e auditorias →"
+  },
+  "A partir de un mensaje recibido o de dos líneas de texto, la IA devuelve la incidencia con código, categoría y responsable asignados.": {
+    "en": "From an incoming message or two lines of text, the AI returns the incident with a code, a category and an owner already assigned.",
+    "fr": "À partir d'un message reçu ou de deux lignes de texte, l'IA renvoie l'incident avec code, catégorie et responsable attribués.",
+    "it": "Da un messaggio ricevuto o da due righe di testo, l'IA restituisce l'anomalia con codice, categoria e responsabile assegnati.",
+    "de": "Aus einer eingegangenen Nachricht oder zwei Zeilen Text liefert die KI die Störung mit Code, Kategorie und zugewiesenem Verantwortlichen.",
+    "pt": "A partir de uma mensagem recebida ou de duas linhas de texto, a IA devolve a ocorrência com código, categoria e responsável atribuídos."
+  },
+  "Redacción asistida por IA.": {
+    "en": "AI-assisted write-up.",
+    "fr": "Rédaction assistée par IA.",
+    "it": "Redazione assistita dall'IA.",
+    "de": "KI-gestützte Erfassung.",
+    "pt": "Redação assistida por IA."
+  },
+  "Ver la IA de Solved →": {
+    "en": "See Solved's AI →",
+    "fr": "Voir l'IA de Solved →",
+    "it": "Vedi l'IA di Solved →",
+    "de": "Zur KI von Solved →",
+    "pt": "Ver a IA da Solved →"
+  },
+  "Lo que consiguen en el primer año": {
+    "en": "What they achieve in the first year",
+    "fr": "Ce qu'ils obtiennent la première année",
+    "it": "Cosa ottengono nel primo anno",
+    "de": "Was im ersten Jahr erreicht wird",
+    "pt": "O que conseguem no primeiro ano"
+  },
+  "Indicadores registrados por clientes de Solved durante su primer año de uso": {
+    "en": "Figures recorded by Solved customers during their first year of use",
+    "fr": "Indicateurs enregistrés par des clients de Solved durant leur première année d'utilisation",
+    "it": "Indicatori registrati dai clienti di Solved nel loro primo anno di utilizzo",
+    "de": "Kennzahlen, die Solved-Kunden im ersten Nutzungsjahr erfasst haben",
+    "pt": "Indicadores registados por clientes da Solved durante o seu primeiro ano de utilização"
+  },
+  "De ahorro anual en costes operativos": {
+    "en": "Saved each year in operating costs",
+    "fr": "D'économies annuelles sur les coûts opérationnels",
+    "it": "Di risparmio annuo sui costi operativi",
+    "de": "Jährliche Einsparung bei den Betriebskosten",
+    "pt": "De poupança anual em custos operacionais"
+  },
+  "Menos tiempo invertido en la documentación de incidencias": {
+    "en": "Less time spent documenting incidents",
+    "fr": "De temps en moins consacré à la documentation des incidents",
+    "it": "In meno di tempo speso a documentare le anomalie",
+    "de": "Weniger Zeit für die Dokumentation von Störungen",
+    "pt": "Menos tempo dedicado à documentação de ocorrências"
+  },
+  "De productividad en los equipos de calidad": {
+    "en": "More productivity in quality teams",
+    "fr": "De productivité dans les équipes qualité",
+    "it": "Di produttività nei team qualità",
+    "de": "Mehr Produktivität in den Qualitätsteams",
+    "pt": "De produtividade nas equipas de qualidade"
+  },
+  "De las incidencias se resuelven antes de 48 hs": {
+    "en": "Of incidents are resolved within 48 h",
+    "fr": "Des incidents sont résolus en moins de 48 h",
+    "it": "Delle anomalie si risolvono entro 48 h",
+    "de": "Der Störungen werden binnen 48 h gelöst",
+    "pt": "Das ocorrências resolvem-se antes de 48 h"
+  },
+  "Compatible con sistemas ERP, MES y GMAO": {
+    "en": "Compatible with ERP, MES and CMMS systems",
+    "fr": "Compatible avec les systèmes ERP, MES et GMAO",
+    "it": "Compatibile con sistemi ERP, MES e CMMS",
+    "de": "Kompatibel mit ERP-, MES- und Instandhaltungssystemen",
+    "pt": "Compatível com sistemas ERP, MES e CMMS"
+  },
+  "Registra una incidencia en 25 segundos, paso a paso": {
+    "en": "Log an incident in 25 seconds, step by step",
+    "fr": "Enregistrez un incident en 25 secondes, étape par étape",
+    "it": "Registra un'anomalia in 25 secondi, passo dopo passo",
+    "de": "Eine Störung in 25 Sekunden erfassen, Schritt für Schritt",
+    "pt": "Registe uma ocorrência em 25 segundos, passo a passo"
+  },
+  "Demostración guiada del módulo de incidencias, de la detección a la acción correctiva.": {
+    "en": "A guided walkthrough of the incidents module, from detection to corrective action.",
+    "fr": "Démonstration guidée du module incidents, de la détection à l'action corrective.",
+    "it": "Dimostrazione guidata del modulo anomalie, dal rilevamento all'azione correttiva.",
+    "de": "Geführte Vorführung des Störungsmoduls, von der Erkennung bis zur Korrekturmaßnahme.",
+    "pt": "Demonstração guiada do módulo de ocorrências, da deteção à ação corretiva."
+  },
+  "Demo guiada": {
+    "en": "Guided demo",
+    "fr": "Démo guidée",
+    "it": "Demo guidata",
+    "de": "Geführte Demo",
+    "pt": "Demonstração guiada"
+  },
+  "Módulo de incidencias — de la detección a la acción correctiva": {
+    "en": "Incidents module — from detection to corrective action",
+    "fr": "Module incidents — de la détection à l'action corrective",
+    "it": "Modulo anomalie — dal rilevamento all'azione correttiva",
+    "de": "Störungsmodul — von der Erkennung bis zur Korrekturmaßnahme",
+    "pt": "Módulo de ocorrências — da deteção à ação corretiva"
+  },
+  "↻ Reiniciar": {
+    "en": "↻ Restart",
+    "fr": "↻ Recommencer",
+    "it": "↻ Ricomincia",
+    "de": "↻ Neu starten",
+    "pt": "↻ Reiniciar"
+  },
+  "Papelera": {
+    "en": "Trash",
+    "fr": "Corbeille",
+    "it": "Cestino",
+    "de": "Papierkorb",
+    "pt": "Lixo"
+  },
+  "Tabla": {
+    "en": "Table",
+    "fr": "Tableau",
+    "it": "Tabella",
+    "de": "Tabelle",
+    "pt": "Tabela"
+  },
+  "Calendario": {
+    "en": "Calendar",
+    "fr": "Calendrier",
+    "it": "Calendario",
+    "de": "Kalender",
+    "pt": "Calendário"
+  },
+  "Abierto": {
+    "en": "Open",
+    "fr": "Ouvert",
+    "it": "Aperto",
+    "de": "Offen",
+    "pt": "Aberto"
+  },
+  "En Revisión": {
+    "en": "In review",
+    "fr": "En revue",
+    "it": "In revisione",
+    "de": "In Prüfung",
+    "pt": "Em Revisão"
+  },
+  "Cerrado": {
+    "en": "Closed",
+    "fr": "Clôturé",
+    "it": "Chiuso",
+    "de": "Abgeschlossen",
+    "pt": "Encerrado"
+  },
+  "Añadir Incidencia": {
+    "en": "Add incident",
+    "fr": "Ajouter un incident",
+    "it": "Aggiungi anomalia",
+    "de": "Störung anlegen",
+    "pt": "Adicionar Ocorrência"
+  },
+  "Mostrar:": {
+    "en": "Show:",
+    "fr": "Afficher :",
+    "it": "Mostra:",
+    "de": "Anzeigen:",
+    "pt": "Mostrar:"
+  },
+  "de": {
+    "en": "of",
+    "fr": "sur",
+    "it": "di",
+    "de": "von",
+    "pt": "de"
+  },
+  "Descripción": {
+    "en": "Description",
+    "fr": "Description",
+    "it": "Descrizione",
+    "de": "Beschreibung",
+    "pt": "Descrição"
+  },
+  "Fecha Inicio": {
+    "en": "Start date",
+    "fr": "Date de début",
+    "it": "Data inizio",
+    "de": "Startdatum",
+    "pt": "Data de Início"
+  },
+  "Proveedor": {
+    "en": "Supplier",
+    "fr": "Fournisseur",
+    "it": "Fornitore",
+    "de": "Lieferant",
+    "pt": "Fornecedor"
+  },
+  "Fecha de cierre": {
+    "en": "Closing date",
+    "fr": "Date de clôture",
+    "it": "Data di chiusura",
+    "de": "Abschlussdatum",
+    "pt": "Data de encerramento"
+  },
+  "Ahora": {
+    "en": "Now",
+    "fr": "Maintenant",
+    "it": "Adesso",
+    "de": "Jetzt",
+    "pt": "Agora"
+  },
+  "KO en 'LUMINARIAS' — Control Almacenes": {
+    "en": "KO on ‘LIGHTING’ — Warehouse check",
+    "fr": "KO sur « ÉCLAIRAGE » — Contrôle entrepôts",
+    "it": "KO su «CORPI ILLUMINANTI» — Controllo magazzini",
+    "de": "KO bei „BELEUCHTUNG“ — Lagerkontrolle",
+    "pt": "KO em «ILUMINAÇÃO» — Controlo de Armazéns"
+  },
+  "Cinta averiada": {
+    "en": "Conveyor down",
+    "fr": "Convoyeur en panne",
+    "it": "Nastro guasto",
+    "de": "Förderband defekt",
+    "pt": "Tapete transportador avariado"
+  },
+  "Configura los datos iniciales": {
+    "en": "Set the initial details",
+    "fr": "Configurez les données initiales",
+    "it": "Imposta i dati iniziali",
+    "de": "Ausgangsdaten festlegen",
+    "pt": "Configure os dados iniciais"
+  },
+  "Selecciona el centro y la categoría de la incidencia": {
+    "en": "Choose the site and the incident category",
+    "fr": "Sélectionnez le site et la catégorie de l'incident",
+    "it": "Seleziona la sede e la categoria dell'anomalia",
+    "de": "Standort und Kategorie der Störung wählen",
+    "pt": "Selecione o centro e a categoria da ocorrência"
+  },
+  "Selecciona el centro": {
+    "en": "Choose the site",
+    "fr": "Sélectionnez le site",
+    "it": "Seleziona la sede",
+    "de": "Standort wählen",
+    "pt": "Selecione o centro"
+  },
+  "Sin planta asignada": {
+    "en": "No plant assigned",
+    "fr": "Aucune usine assignée",
+    "it": "Nessuno stabilimento assegnato",
+    "de": "Kein Werk zugewiesen",
+    "pt": "Sem fábrica atribuída"
+  },
+  "Seleccionado automáticamente": {
+    "en": "Selected automatically",
+    "fr": "Sélectionné automatiquement",
+    "it": "Selezionato automaticamente",
+    "de": "Automatisch ausgewählt",
+    "pt": "Selecionado automaticamente"
+  },
+  "Categoría de Incidencia": {
+    "en": "Incident category",
+    "fr": "Catégorie d'incident",
+    "it": "Categoria di anomalia",
+    "de": "Störungskategorie",
+    "pt": "Categoria de Ocorrência"
+  },
+  "tu plantilla →": {
+    "en": "your template →",
+    "fr": "votre modèle →",
+    "it": "il tuo modello →",
+    "de": "Ihre Vorlage →",
+    "pt": "o seu modelo →"
+  },
+  "No conformidad": {
+    "en": "Non-conformity",
+    "fr": "Non-conformité",
+    "it": "Non conformità",
+    "de": "Abweichung",
+    "pt": "Não conformidade"
+  },
+  "Proveedores": {
+    "en": "Suppliers",
+    "fr": "Fournisseurs",
+    "it": "Fornitori",
+    "de": "Lieferanten",
+    "pt": "Fornecedores"
+  },
+  "Detalles de la Incidencia": {
+    "en": "Incident details",
+    "fr": "Détails de l'incident",
+    "it": "Dettagli dell'anomalia",
+    "de": "Details der Störung",
+    "pt": "Detalhes da Ocorrência"
+  },
+  "6 campos · Plantilla: Reclamación": {
+    "en": "6 fields · Template: Complaint",
+    "fr": "6 champs · Modèle : Réclamation",
+    "it": "6 campi · Modello: Reclamo",
+    "de": "6 Felder · Vorlage: Reklamation",
+    "pt": "6 campos · Modelo: Reclamação"
+  },
+  "¿Qué ha pasado?": {
+    "en": "What happened?",
+    "fr": "Que s'est-il passé ?",
+    "it": "Che cosa è successo?",
+    "de": "Was ist passiert?",
+    "pt": "O que aconteceu?"
+  },
+  "⚠ Obligatorio": {
+    "en": "⚠ Required",
+    "fr": "⚠ Obligatoire",
+    "it": "⚠ Obbligatorio",
+    "de": "⚠ Pflichtfeld",
+    "pt": "⚠ Obrigatório"
+  },
+  "Archivo(s)": {
+    "en": "File(s)",
+    "fr": "Fichier(s)",
+    "it": "File",
+    "de": "Datei(en)",
+    "pt": "Ficheiro(s)"
+  },
+  "¿Quieres añadir una foto de la incidencia?": {
+    "en": "Do you want to add a photo of the incident?",
+    "fr": "Voulez-vous ajouter une photo de l'incident ?",
+    "it": "Vuoi aggiungere una foto dell'anomalia?",
+    "de": "Möchten Sie ein Foto der Störung hinzufügen?",
+    "pt": "Pretende adicionar uma fotografia da ocorrência?"
+  },
+  "1,8 MB · subida correctamente": {
+    "en": "1.8 MB · uploaded successfully",
+    "fr": "1,8 Mo · téléversé correctement",
+    "it": "1,8 MB · caricato correttamente",
+    "de": "1,8 MB · erfolgreich hochgeladen",
+    "pt": "1,8 MB · carregado com sucesso"
+  },
+  "Adjuntada": {
+    "en": "Attached",
+    "fr": "Jointe",
+    "it": "Allegata",
+    "de": "Angehängt",
+    "pt": "Anexada"
+  },
+  "Arrastra o selecciona un archivo": {
+    "en": "Drag or choose a file",
+    "fr": "Glissez ou sélectionnez un fichier",
+    "it": "Trascina o seleziona un file",
+    "de": "Datei ziehen oder auswählen",
+    "pt": "Arraste ou selecione um ficheiro"
+  },
+  "Confirmar Envío": {
+    "en": "Confirm submission",
+    "fr": "Confirmer l'envoi",
+    "it": "Conferma invio",
+    "de": "Senden bestätigen",
+    "pt": "Confirmar Envio"
+  },
+  "Revisa que toda la información sea correcta": {
+    "en": "Check that everything is correct",
+    "fr": "Vérifiez que toutes les informations sont correctes",
+    "it": "Verifica che tutte le informazioni siano corrette",
+    "de": "Prüfen Sie, ob alle Angaben stimmen",
+    "pt": "Verifique se todas as informações estão corretas"
+  },
+  "Enviar incidencia": {
+    "en": "Submit incident",
+    "fr": "Envoyer l'incident",
+    "it": "Invia anomalia",
+    "de": "Störung senden",
+    "pt": "Enviar ocorrência"
+  },
+  "ahora": {
+    "en": "now",
+    "fr": "maintenant",
+    "it": "adesso",
+    "de": "jetzt",
+    "pt": "agora"
+  },
+  "Nueva incidencia asignada": {
+    "en": "New incident assigned",
+    "fr": "Nouvel incident assigné",
+    "it": "Nuova anomalia assegnata",
+    "de": "Neue Störung zugewiesen",
+    "pt": "Nova ocorrência atribuída"
+  },
+  "UTD26_163_001 · Fuga de aceite en cinta transportadora L3 se ha registrado y se te ha comunicado automáticamente.": {
+    "en": "UTD26_163_001 · Oil leak on conveyor L3 has been logged and sent to you automatically.",
+    "fr": "UTD26_163_001 · Fuite d'huile sur le convoyeur L3 a été enregistrée et vous a été communiquée automatiquement.",
+    "it": "UTD26_163_001 · Perdita d'olio sul nastro trasportatore L3 è stata registrata e ti è stata comunicata automaticamente.",
+    "de": "UTD26_163_001 · Ölleck am Förderband L3 wurde erfasst und Ihnen automatisch mitgeteilt.",
+    "pt": "UTD26_163_001 · Fuga de óleo no tapete transportador L3 foi registada e foi-lhe comunicada automaticamente."
+  },
+  "Paso 1 de 4": {
+    "en": "Step 1 of 4",
+    "fr": "Étape 1 sur 4",
+    "it": "Passo 1 di 4",
+    "de": "Schritt 1 von 4",
+    "pt": "Passo 1 de 4"
+  },
+  "Pulsa Añadir Incidencia para empezar.": {
+    "en": "Press Add incident to begin.",
+    "fr": "Appuyez sur Ajouter un incident pour commencer.",
+    "it": "Premi Aggiungi anomalia per iniziare.",
+    "de": "Auf „Störung anlegen“ tippen, um zu beginnen.",
+    "pt": "Prima Adicionar Ocorrência para começar."
+  },
+  "Ver la demo interactiva": {
+    "en": "Open the interactive demo",
+    "fr": "Voir la démo interactive",
+    "it": "Apri la demo interattiva",
+    "de": "Interaktive Demo öffnen",
+    "pt": "Ver a demonstração interativa"
+  },
+  "Recorre el módulo de incidencias en 4 pasos — de la detección al aviso automático al responsable (~25 s).": {
+    "en": "Walk through the incidents module in 4 steps — from detection to the automatic alert to the owner (~25 s).",
+    "fr": "Parcourez le module incidents en 4 étapes — de la détection à l'alerte automatique au responsable (~25 s).",
+    "it": "Percorri il modulo anomalie in 4 passi — dal rilevamento all'avviso automatico al responsabile (~25 s).",
+    "de": "Gehen Sie das Störungsmodul in 4 Schritten durch – von der Erkennung bis zur automatischen Benachrichtigung des Verantwortlichen (~25 s).",
+    "pt": "Percorra o módulo de ocorrências em 4 passos — da deteção ao alerta automático ao responsável (~25 s)."
+  },
+  "Recorrido completado": {
+    "en": "Tour finished",
+    "fr": "Parcours terminé",
+    "it": "Percorso completato",
+    "de": "Rundgang abgeschlossen",
+    "pt": "Percurso concluído"
+  },
+  "Así de rápido se registra una incidencia y Solved avisa al responsable automáticamente. ¿Lo vemos con tus procesos?": {
+    "en": "That is how quickly an incident is logged and Solved alerts the owner automatically. Shall we try it on your processes?",
+    "fr": "Voilà à quelle vitesse un incident est enregistré et Solved alerte automatiquement le responsable. On le voit avec vos procédés ?",
+    "it": "Ecco quanto è rapido registrare un'anomalia e far avvisare da Solved il responsabile in automatico. Lo vediamo sui tuoi processi?",
+    "de": "So schnell ist eine Störung erfasst und Solved benachrichtigt den Verantwortlichen automatisch. Schauen wir es uns an Ihren Prozessen an?",
+    "pt": "É assim tão rápido que se regista uma ocorrência e a Solved avisa o responsável automaticamente. Vemos isto com os seus processos?"
+  },
+  "Agendar una demostración con el equipo de Solved": {
+    "en": "Book a demo with the Solved team",
+    "fr": "Planifier une démo avec l'équipe Solved",
+    "it": "Fissare una demo con il team di Solved",
+    "de": "Demo mit dem Solved-Team vereinbaren",
+    "pt": "Agendar uma demonstração com a equipa da Solved"
+  },
+  "↻ Ver de nuevo": {
+    "en": "↻ Watch again",
+    "fr": "↻ Revoir",
+    "it": "↻ Rivedi",
+    "de": "↻ Erneut ansehen",
+    "pt": "↻ Ver novamente"
+  },
+  "Referencias: equipos que ya registran aquí sus incidencias": {
+    "en": "References: teams already logging their incidents here",
+    "fr": "Références : des équipes qui enregistrent déjà leurs incidents ici",
+    "it": "Referenze: squadre che registrano già qui le loro anomalie",
+    "de": "Referenzen: Teams, die ihre Störungen bereits hier erfassen",
+    "pt": "Referências: equipas que já registam aqui as suas ocorrências"
+  },
+  "«Es tan intuitiva que se la instalas en el móvil a un repartidor y no tienes ni que explicarle cómo registrar una incidencia. Somos operativos desde el día cero.»": {
+    "en": "“It is so intuitive that you install it on a driver's phone and you do not even have to explain how to log an incident. We were up and running from day zero.”",
+    "fr": "« C'est tellement intuitif qu'on l'installe sur le téléphone d'un livreur sans même avoir à lui expliquer comment enregistrer un incident. Nous sommes opérationnels dès le jour zéro. »",
+    "it": "«È così intuitiva che la installi sul telefono di un fattorino e non devi nemmeno spiegargli come registrare un'anomalia. Siamo operativi dal giorno zero.»",
+    "de": "„Sie ist so intuitiv, dass man sie einem Fahrer aufs Handy spielt und ihm nicht einmal erklären muss, wie man eine Störung erfasst. Wir waren ab Tag null einsatzfähig.“",
+    "pt": "«É tão intuitiva que se instala no telemóvel de um estafeta e nem é preciso explicar-lhe como registar uma ocorrência. Estamos operacionais desde o dia zero.»"
+  },
+  "Responsable de calidad · Carnavi": {
+    "en": "Quality manager · Carnavi",
+    "fr": "Responsable qualité · Carnavi",
+    "it": "Responsabile qualità · Carnavi",
+    "de": "Qualitätsleiterin · Carnavi",
+    "pt": "Responsável da qualidade · Carnavi"
+  },
+  "Ver el caso de Carnavi en vídeo →": {
+    "en": "Watch the Carnavi case study →",
+    "fr": "Voir le cas Carnavi en vidéo →",
+    "it": "Guarda il caso Carnavi in video →",
+    "de": "Fallstudie Carnavi als Video →",
+    "pt": "Ver o caso da Carnavi em vídeo →"
+  },
+  "¿Cómo se registra una incidencia en Solved?": {
+    "en": "How is an incident logged in Solved?",
+    "fr": "Comment enregistre-t-on un incident dans Solved ?",
+    "it": "Come si registra un'anomalia in Solved?",
+    "de": "Wie wird eine Störung in Solved erfasst?",
+    "pt": "Como se regista uma ocorrência na Solved?"
+  },
+  "Desde móvil, tablet o PC, en el propio punto de trabajo: se describe la desviación, se adjuntan fotografías o vídeos y se asigna responsable.": {
+    "en": "From a phone, tablet or PC, right at the workstation: describe the deviation, attach photos or video and assign an owner.",
+    "fr": "Depuis un téléphone, une tablette ou un PC, sur le poste de travail : on décrit l'écart, on joint des photos ou des vidéos et on assigne un responsable.",
+    "it": "Da telefono, tablet o PC, nel punto di lavoro stesso: si descrive la deviazione, si allegano foto o video e si assegna un responsabile.",
+    "de": "Per Smartphone, Tablet oder PC direkt am Arbeitsplatz: Abweichung beschreiben, Fotos oder Videos anhängen, Verantwortlichen zuweisen.",
+    "pt": "A partir de telemóvel, tablet ou PC, no próprio posto de trabalho: descreve-se o desvio, anexam-se fotografias ou vídeos e atribui-se um responsável."
+  },
+  "¿Puedo automatizar la resolución de incidencias?": {
+    "en": "Can incident handling be automated?",
+    "fr": "Puis-je automatiser la résolution des incidents ?",
+    "it": "Posso automatizzare la risoluzione delle anomalie?",
+    "de": "Lässt sich die Bearbeitung von Störungen automatisieren?",
+    "pt": "É possível automatizar a resolução de ocorrências?"
+  },
+  "Sí. Los flujos de trabajo son configurables, de modo que cada incidencia se deriva al responsable que corresponde sin intervención manual.": {
+    "en": "Yes. The workflows are configurable, so each incident is routed to the right owner with no manual step.",
+    "fr": "Oui. Les flux de travail sont configurables : chaque incident est orienté vers le bon responsable sans intervention manuelle.",
+    "it": "Sì. I flussi di lavoro sono configurabili, così ogni anomalia arriva al responsabile giusto senza intervento manuale.",
+    "de": "Ja. Die Abläufe sind konfigurierbar, sodass jede Störung ohne manuellen Schritt beim richtigen Verantwortlichen landet.",
+    "pt": "Sim. Os fluxos de trabalho são configuráveis, pelo que cada ocorrência é encaminhada para o responsável correspondente sem intervenção manual."
+  },
+  "¿Solved gestiona las no conformidades?": {
+    "en": "Does Solved handle non-conformities?",
+    "fr": "Solved gère-t-il les non-conformités ?",
+    "it": "Solved gestisce le non conformità?",
+    "de": "Verwaltet Solved auch Abweichungen?",
+    "pt": "A Solved gere as não conformidades?"
+  },
+  "Sí. Incidencias y no conformidades se gestionan en el mismo sistema, con seguimiento desde el aviso inicial hasta la acción correctiva y su cierre.": {
+    "en": "Yes. Incidents and non-conformities are handled in the same system, tracked from the first alert to the corrective action and its closure.",
+    "fr": "Oui. Incidents et non-conformités sont gérés dans le même système, avec un suivi de l'alerte initiale à l'action corrective et sa clôture.",
+    "it": "Sì. Anomalie e non conformità si gestiscono nello stesso sistema, con monitoraggio dall'avviso iniziale all'azione correttiva e alla sua chiusura.",
+    "de": "Ja. Störungen und Abweichungen laufen im selben System, nachverfolgt vom ersten Hinweis bis zur Korrekturmaßnahme und deren Abschluss.",
+    "pt": "Sim. Ocorrências e não conformidades são geridas no mesmo sistema, com acompanhamento desde o alerta inicial até à ação corretiva e ao seu encerramento."
+  },
+  "¿Se integra con ERP, MES o GMAO?": {
+    "en": "Does it integrate with ERP, MES or CMMS?",
+    "fr": "S'intègre-t-il à un ERP, un MES ou une GMAO ?",
+    "it": "Si integra con ERP, MES o CMMS?",
+    "de": "Lässt es sich in ERP, MES oder Instandhaltungssystem integrieren?",
+    "pt": "Integra-se com ERP, MES ou CMMS?"
+  },
+  "Sí. Solved se conecta con los sistemas de producción y mantenimiento ya implantados, lo que evita la duplicidad de datos.": {
+    "en": "Yes. Solved connects to the production and maintenance systems already in place, which avoids duplicated data.",
+    "fr": "Oui. Solved se connecte aux systèmes de production et de maintenance déjà en place, ce qui évite les doublons de données.",
+    "it": "Sì. Solved si collega ai sistemi di produzione e manutenzione già in uso, evitando la duplicazione dei dati.",
+    "de": "Ja. Solved verbindet sich mit den vorhandenen Produktions- und Instandhaltungssystemen und vermeidet so doppelte Daten.",
+    "pt": "Sim. A Solved liga-se aos sistemas de produção e manutenção já implementados, o que evita a duplicação de dados."
+  },
+  "¿Puedo ver métricas e informes de incidencias?": {
+    "en": "Can I see incident metrics and reports?",
+    "fr": "Puis-je voir des indicateurs et des rapports d'incidents ?",
+    "it": "Posso vedere metriche e report sulle anomalie?",
+    "de": "Kann ich Kennzahlen und Berichte zu Störungen sehen?",
+    "pt": "É possível ver métricas e relatórios de ocorrências?"
+  },
+  "Sí. El sistema ofrece gráficos y tendencias en tiempo real para identificar puntos críticos y anticipar la reincidencia.": {
+    "en": "Yes. The system gives you real-time charts and trends to spot hot spots and get ahead of repeat failures.",
+    "fr": "Oui. Le système fournit des graphiques et des tendances en temps réel pour repérer les points critiques et anticiper la récidive.",
+    "it": "Sì. Il sistema offre grafici e tendenze in tempo reale per individuare i punti critici e anticipare le ricadute.",
+    "de": "Ja. Das System liefert Diagramme und Trends in Echtzeit, um kritische Punkte zu erkennen und Wiederholungen vorzubeugen.",
+    "pt": "Sim. O sistema oferece gráficos e tendências em tempo real para identificar pontos críticos e antecipar a reincidência."
+  },
+  "Ver demo": {
+    "en": "Watch demo",
+    "fr": "Voir la démo",
+    "it": "Guarda la demo",
+    "de": "Demo ansehen",
+    "pt": "Ver demonstração"
+  },
+  "Cerrar demo": {
+    "en": "Close demo",
+    "fr": "Fermer la démo",
+    "it": "Chiudi la demo",
+    "de": "Demo schließen",
+    "pt": "Fechar demonstração"
+  },
+  "Registros digitales y checklists de planta · Solved": {
+    "en": "Digital records and plant checklists · Solved",
+    "fr": "Enregistrements numériques et checklists d'usine · Solved",
+    "it": "Registrazioni digitali e checklist di stabilimento · Solved",
+    "de": "Digitale Aufzeichnungen und Werks-Checklisten · Solved",
+    "pt": "Registos digitais e checklists de fábrica · Solved"
+  },
+  "Limpieza, temperaturas, pesos y preventivos de mantenimiento, en el móvil de planta. Un control con resultado KO abre la incidencia con responsable y plazo.": {
+    "en": "Cleaning, temperatures, weights and preventive maintenance, on the shop-floor phone. A check that comes back KO opens the incident with an owner and a deadline.",
+    "fr": "Nettoyage, températures, pesées et préventifs de maintenance, sur le téléphone de l'usine. Un contrôle au résultat KO ouvre l'incident avec responsable et échéance.",
+    "it": "Pulizia, temperature, pesi e preventivi di manutenzione, sul telefono di stabilimento. Un controllo con esito KO apre l'anomalia con responsabile e scadenza.",
+    "de": "Reinigung, Temperaturen, Gewichte und vorbeugende Instandhaltung – auf dem Smartphone im Werk. Eine Kontrolle mit Ergebnis KO öffnet die Störung mit Verantwortlichem und Frist.",
+    "pt": "Limpeza, temperaturas, pesos e preventivos de manutenção, no telemóvel de fábrica. Um controlo com resultado KO abre a ocorrência com responsável e prazo."
+  },
+  "Registros y auditorías": {
+    "en": "Records and audits",
+    "fr": "Enregistrements et audits",
+    "it": "Registrazioni e audit",
+    "de": "Aufzeichnungen und Audits",
+    "pt": "Registos e auditorias"
+  },
+  "Digitaliza tus registros y checklists de planta:": {
+    "en": "Digitise your plant records and checklists:",
+    "fr": "Numérisez vos enregistrements et checklists d'usine :",
+    "it": "Digitalizza le registrazioni e le checklist del tuo stabilimento:",
+    "de": "Digitalisieren Sie Ihre Werksaufzeichnungen und Checklisten:",
+    "pt": "Digitalize os registos e checklists da sua fábrica:"
+  },
+  "registra desde cualquier parte y genera los documentos automáticamente.": {
+    "en": "record from anywhere and generate the documents automatically.",
+    "fr": "enregistrez depuis n'importe où et générez les documents automatiquement.",
+    "it": "registra da qualsiasi luogo e genera i documenti automaticamente.",
+    "de": "Erfassen Sie von überall und erzeugen Sie die Dokumente automatisch.",
+    "pt": "registe a partir de qualquer lugar e gere os documentos automaticamente."
+  },
+  "Limpieza, temperaturas, pesos, recepción de materia prima y preventivos de mantenimiento: los mismos partes que ya usas, sobre tus propios formatos y rellenados en el momento. Un control con resultado KO abre la incidencia solo.": {
+    "en": "Cleaning, temperatures, weights, raw material intake and preventive maintenance: the same reports you already use, on your own forms and filled in on the spot. A check that comes back KO opens the incident on its own.",
+    "fr": "Nettoyage, températures, pesées, réception de matières premières et préventifs de maintenance : les mêmes rapports que vous utilisez déjà, sur vos propres formats et remplis sur le moment. Un contrôle au résultat KO ouvre l'incident tout seul.",
+    "it": "Pulizia, temperature, pesi, ricevimento materie prime e preventivi di manutenzione: gli stessi rapporti che già usi, sui tuoi formati e compilati sul momento. Un controllo con esito KO apre l'anomalia da solo.",
+    "de": "Reinigung, Temperaturen, Gewichte, Wareneingang und vorbeugende Instandhaltung: dieselben Meldungen, die Sie schon nutzen, auf Ihren eigenen Formularen und direkt vor Ort ausgefüllt. Eine Kontrolle mit Ergebnis KO öffnet die Störung von selbst.",
+    "pt": "Limpeza, temperaturas, pesos, receção de matéria-prima e preventivos de manutenção: os mesmos partes que já utiliza, nos seus próprios formatos e preenchidos no momento. Um controlo com resultado KO abre a ocorrência sozinho."
+  },
+  "Rellena, firma y cierra cada control desde donde se hace": {
+    "en": "Fill in, sign and close every check where it is carried out",
+    "fr": "Remplissez, signez et clôturez chaque contrôle là où il se fait",
+    "it": "Compila, firma e chiudi ogni controllo dove viene fatto",
+    "de": "Jede Kontrolle dort ausfüllen, unterschreiben und abschließen, wo sie stattfindet",
+    "pt": "Preencha, assine e encerre cada controlo a partir de onde é feito"
+  },
+  "Seis cosas que hace el módulo de registros, funcionando.": {
+    "en": "Six things the records module does, in action.",
+    "fr": "Six choses que fait le module d'enregistrements, en fonctionnement.",
+    "it": "Sei cose che fa il modulo registrazioni, in funzione.",
+    "de": "Sechs Dinge, die das Aufzeichnungsmodul tut – im Betrieb.",
+    "pt": "Seis coisas que o módulo de registos faz, em funcionamento."
+  },
+  "Tus plantillas, campo por campo": {
+    "en": "Your templates, field by field",
+    "fr": "Vos modèles, champ par champ",
+    "it": "I tuoi modelli, campo per campo",
+    "de": "Ihre Vorlagen, Feld für Feld",
+    "pt": "Os seus modelos, campo a campo"
+  },
+  "El parte que ya usas se replica con sus mismos campos, sus límites y su orden. El lote y el activo se rellenan leyendo su código de barras.": {
+    "en": "The report you already use is replicated with the same fields, the same limits and the same order. Batch and asset are filled in by reading their barcode.",
+    "fr": "Le rapport que vous utilisez déjà est reproduit avec ses champs, ses limites et son ordre. Le lot et l'actif se renseignent en lisant leur code-barres.",
+    "it": "Il rapporto che già usi viene replicato con gli stessi campi, gli stessi limiti e lo stesso ordine. Il lotto e l'asset si compilano leggendo il loro codice a barre.",
+    "de": "Die Meldung, die Sie bereits nutzen, wird mit denselben Feldern, Grenzwerten und derselben Reihenfolge nachgebildet. Charge und Anlage werden durch Lesen ihres Barcodes ausgefüllt.",
+    "pt": "O parte que já utiliza é replicado com os mesmos campos, os mesmos limites e a mesma ordem. O lote e o ativo preenchem-se lendo o seu código de barras."
+  },
+  "Lote": {
+    "en": "Batch",
+    "fr": "Lot",
+    "it": "Lotto",
+    "de": "Charge",
+    "pt": "Lote"
+  },
+  "Temperatura cámara 3": {
+    "en": "Cold room 3 temperature",
+    "fr": "Température chambre 3",
+    "it": "Temperatura cella 3",
+    "de": "Temperatur Kühlraum 3",
+    "pt": "Temperatura câmara 3"
+  },
+  "4,1 °C": {
+    "en": "4.1 °C",
+    "fr": "4,1 °C",
+    "it": "4,1 °C",
+    "de": "4,1 °C",
+    "pt": "4,1 °C"
+  },
+  "Estado de la junta": {
+    "en": "Gasket condition",
+    "fr": "État du joint",
+    "it": "Stato della guarnizione",
+    "de": "Zustand der Dichtung",
+    "pt": "Estado da junta"
+  },
+  "Respuestas acotadas, no texto libre": {
+    "en": "Bounded answers, not free text",
+    "fr": "Réponses fermées, pas de texte libre",
+    "it": "Risposte chiuse, non testo libero",
+    "de": "Feste Antworten statt Freitext",
+    "pt": "Respostas limitadas, não texto livre"
+  },
+  "OK, KO o no aplica. Lo que se responde se puede contar; un campo libre, no.": {
+    "en": "OK, KO or not applicable. Answers like that can be counted; a free-text field cannot.",
+    "fr": "OK, KO ou sans objet. Ce type de réponse se compte ; un champ libre, non.",
+    "it": "OK, KO o non applicabile. Ciò che si risponde si può contare; un campo libero no.",
+    "de": "OK, KO oder nicht zutreffend. Solche Antworten lassen sich zählen; ein Freitextfeld nicht.",
+    "pt": "OK, KO ou não aplicável. O que se responde pode ser contado; um campo livre, não."
+  }
+}

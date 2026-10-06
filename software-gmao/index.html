@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.hsforms.net https://*.hsforms.com https://*.hs-scripts.com https://*.hscollectedforms.net https://*.hs-analytics.net https://*.hubspot.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com https://maps.google.com https://*.hsforms.com https://*.hsforms.net; connect-src 'self' https://*.hsforms.com https://*.hubspot.com https://*.hs-analytics.net https://*.hscollectedforms.net; object-src 'none'; base-uri 'self'; form-action 'self' https://*.hsforms.com; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>Gestión de mantenimiento y averías en planta · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Solved para mantenimiento: ficha y QR por máquina, avería enganchada al aviso, preventivo programado y KPIs por equipo. No sustituye tu GMAO: se conecta con él.">
+<link rel="canonical" href="https://trysolved.com/software-gmao/">
+<!-- SIN hreflang, y es deliberado mientras la página no esté traducida: las
+     alternates de las demás páginas apuntan a /en/, /fr/, /it/, /de/ y /pt/,
+     que aquí todavía no existen. Se añaden cuando esta página entre en
+     i18n/config.mjs (RUTAS + PAGINAS_CATALOGO) y se construyan los cinco
+     idiomas, igual que se dejó pendiente con /software-calidad/. -->
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E6BFF">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solved">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://trysolved.com/software-gmao/">
+<meta property="og:title" content="Gestión de mantenimiento y averías en planta · Solved">
+<meta property="og:description" content="Solved para mantenimiento: ficha y QR por máquina, avería enganchada al aviso, preventivo programado y KPIs por equipo. No sustituye tu GMAO: se conecta con él.">
+<meta property="og:image" content="https://trysolved.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gestión de mantenimiento y averías en planta · Solved">
+<meta name="twitter:description" content="Solved para mantenimiento: ficha y QR por máquina, avería enganchada al aviso, preventivo programado y KPIs por equipo. No sustituye tu GMAO: se conecta con él.">
+<meta name="twitter:image" content="https://trysolved.com/assets/og-image.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"GMAO y mantenimiento","item":"https://trysolved.com/software-gmao/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Solved es un GMAO?","acceptedAnswer":{"@type":"Answer","text":"No, y conviene decirlo claro: no lleva stock de repuestos, ni costes, ni horas de mano de obra. Lleva el historial operativo del equipo — avisos, registros, acciones y su cierre — y se conecta con el GMAO que ya exista."}},{"@type":"Question","name":"¿Sustituye al GMAO que ya tenemos?","acceptedAnswer":{"@type":"Answer","text":"No. Se integra con él a través de las conexiones con ERP, MES y GMAO del catálogo de integraciones: el aviso puede seguir viviendo donde vive hoy, y Solved aporta el enganche con calidad y producción que hoy falta entre sistemas."}},{"@type":"Question","name":"¿Cómo se programa el preventivo?","acceptedAnswer":{"@type":"Answer","text":"Como un registro con su frecuencia, su responsable y su fecha. El sistema avisa antes del vencimiento, y un control que sale KO abre la incidencia automáticamente, enganchada al equipo y al registro del que sale."}},{"@type":"Question","name":"¿Qué hace el código QR de cada equipo?","acceptedAnswer":{"@type":"Answer","text":"Cada equipo tiene su propio código. Se descarga o se imprime desde su ficha y se pega en la máquina. Al escanearlo se abre la ficha de ese equipo: lo que le ha pasado, lo que tiene abierto y el sitio desde el que se registra lo nuevo."}},{"@type":"Question","name":"¿Vale si todavía no hay ningún sistema de mantenimiento?","acceptedAnswer":{"@type":"Answer","text":"Sí. El historial del equipo lo construye Solved con el trabajo que la planta ya hace: cada aviso, cada registro y cada acción quedan enganchados a su máquina desde el primer día, sin proyecto de implantación previo."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
+<link rel="stylesheet" href="/solved.css?v=20260910f">
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
+<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+<link rel="stylesheet" href="/ds/hero.css?v=20260930a">
+<link rel="stylesheet" href="/ds/tint.css?v=20260928a">
+<link rel="stylesheet" href="/ds/app.css?v=20261005b">
+<link rel="stylesheet" href="/ds/scene.css?v=20261005a">
+<link rel="stylesheet" href="/ds/sections.css?v=20260930a">
+</head>
+<body data-screen-label="GMAO y mantenimiento">
+
+<div id="nav"></div>
+
+<!-- ============ HERO ============ -->
+<!-- La misma hero que el resto del sitio: el shader de ds/hero-wave.js por
+     detrás y el texto dentro del encuadre. El copy es el de esta página. -->
+<section class="ds-hero" data-screen-label="GMAO · Hero">
+  <canvas class="ds-hero__weave" aria-hidden="true" id="dsWeave"></canvas>
+  <div class="frame frame--seam ds-hero__frame">
+    <div class="ds-hero__txt">
+      <div class="ds-hero__strip">
+        <span class="ds-eyebrow">GMAO y mantenimiento</span>
+        <span class="ds-badge ds-badge--ia">
+          <svg class="ds-badge__star" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <linearGradient id="dsBadgeIaGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#A855F7"></stop>
+              <stop offset=".52" stop-color="#D34F9D"></stop>
+              <stop offset="1" stop-color="#1FD6F5"></stop>
+            </linearGradient>
+            <path fill="url(#dsBadgeIaGrad)" d="M12 1.4c.62 5.62 4.56 9.56 10.18 10.18v.84c-5.62.62-9.56 4.56-10.18 10.18h-.84C10.54 17 6.6 13.04.98 12.42v-.84C6.6 10.96 10.54 7.02 11.16 1.4z"></path>
+          </svg>
+          AI Powered
+        </span>
+      </div>
+      <h1>Gestiona todas las tareas del área de mantenimiento <span class="ds-dim">mientras colaboras con el resto de la fábrica.</span></h1>
+      <p class="ds-hero__sub">Activos, preventivos, incidencias... Todo listo para completar las tareas de manera sencilla, sin carga administrativa o plataformas que hacen perder más tiempo.</p>
+      <div class="ds-hero__cta">
+        <a class="ds-btn ds-btn--primary" href="#contacto">Solicitar demostración</a>
+      </div>
+      <!-- Tira de compatibilidad MCP (ds/site.css). Iconos = marcas de sus
+           titulares; procedencia en assets/mcp/FUENTES.md. -->
+      <div class="mcp">
+        <span class="mcp__lb">Servidor MCP</span>
+        <span class="mcp__logos">
+          <span class="mcp__logo"><img src="/assets/mcp/claude.webp" alt="" width="96" height="96" decoding="async" loading="lazy">Claude</span>
+          <span class="mcp__logo mcp__logo--mono"><img src="/assets/mcp/chatgpt.webp" alt="" width="96" height="96" decoding="async" loading="lazy">ChatGPT</span>
+          <span class="mcp__logo"><img src="/assets/mcp/gemini.webp" alt="" width="96" height="96" decoding="async" loading="lazy">Gemini</span>
+        </span>
+        <span class="mcp__txt">Opera la plataforma de Solved potenciado por las herramientas de IA que ya utilizas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGOS BAND ============ -->
+<!-- ============ CLIENTES ============
+     La misma franja que el resto del sitio: una sola cinta, logos a color,
+     dentro del marco y sin unión superior, para que continúe la hero. -->
+<div class="frame frame--seam ds-logos-frame">
+  <div class="ds-logos" aria-label="Empresas que ya trabajan con Solved">
+    <div class="ds-logos__track" id="dsLogos">
+      <img src="/assets/clients-color/agroveco.webp" alt="Agroveco" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/jealsa.webp" alt="Jealsa" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/covap.webp" alt="COVAP" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/delaviuda.webp" alt="Delaviuda" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/dogfy-diet.webp" alt="Dogfy Diet" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/la-chinata.webp" alt="La Chinata" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/patatas-gomez.webp" alt="Patatas Gómez" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/deterra.webp" alt="Deterra" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/fritoper.webp" alt="Fritoper" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/genesal-energy.webp" alt="Genesal Energy" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/almendras-de-la-mancha.webp" alt="Almendras de La Mancha" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/laboratorios-almond.webp" alt="Laboratorios Almond" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/carnavi.webp" alt="Carnavi" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/cotecnica.webp" alt="Cotecnica" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/riverbend-espana.webp" alt="Riverbend" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/pampling.webp" alt="Pampling" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/wetaca.webp" alt="Wetaca" width="800" height="320" decoding="async">
+      <img src="/assets/clients-color/asp-asepsia.webp" alt="ASP Asepsia" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/exquisitarium.webp" alt="Exquisitarium" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/ga-torres.webp" alt="G.A. Torres" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/imperio-garlic.webp" alt="Imperio Garlic" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/patatas-hijolusa.webp" alt="Patatas Hijolusa" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/prilux.webp" alt="Prilux" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/royal-chef.webp" alt="Royal Chef" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/gil-comes.webp" alt="Gil Comes" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/inalsa.webp" alt="Inalsa" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/rujamar.webp" alt="Grupo Avícola Rujamar" width="800" height="320" decoding="async" loading="lazy">
+      <img src="/assets/clients-color/tuflesa.webp" alt="Tuflesa" width="800" height="320" decoding="async" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- ============ CAPACIDADES ============
+     Rehecha con los componentes de la 3.0 (1 oct 2026, petición del cliente:
+     «componentes similares a los de las otras páginas»). Esta página seguía
+     en la familia de la 2.0 —`.pain-grid`, `.split`+`.feat-list`,
+     `.check-grid`— mientras el resto de páginas comerciales ya habían
+     pasado al rotador de capacidades (patrón 12 de ds/sections.css), que es
+     el mismo componente que usan /incidencias/, /industria-alimentaria/ e
+     /industria-general/. El titular y el párrafo de la antigua sección de
+     Dolor pasan a encabezar el rotador, mismo criterio que se aplicó en
+     /industria-general/ el 30 de septiembre: una sola cabecera para el
+     titular y las capacidades, sin la rejilla de dolor suelta en medio.
+
+     ELENCO PROPIO DE ESTA PÁGINA (regla del 29 de septiembre: cada página
+     comercial, su propia máquina y sus propios identificadores, sin
+     compartir con ninguna otra): Hugo Beltrán, técnico de mantenimiento;
+     BOM-005 · Bomba de vacío · Línea 5; incidencia insignia UTD26_230_001.
+     Comprobado contra el resto del sitio que ni el nombre ni el código de
+     máquina ni el rango de incidencia chocan con ninguno ya usado.
+
+     Las cuatro capacidades cubren los cuatro módulos de siempre —incidencias,
+     registros, acciones, KPIs—, cada una con su `.res` (el recurso flotante
+     que ya usa el resto del sistema para comunicar una acción sin maquetar
+     una pantalla entera), sobre el lienzo teñido de su módulo. La ficha
+     completa del equipo, con su QR, sigue viviendo en /gestion-de-activos/:
+     se enlaza, no se repite.
+
+     FOTO DE FONDO (5 oct 2026, petición del cliente: «haz las animaciones de
+     cero, las fotos de fondo sácalas de Google Flow»). Las cuatro escenas
+     pasan a `data-canvas="foto"` —mismo patrón que estrenó
+     /industria-alimentaria/ el 1 de octubre: foto de persona + dispositivo en
+     planta, velo neutro y un `.ntf` flotando arriba a la izquierda—. Cuatro
+     fotos, una por capacidad, generadas en Google Flow (Nano Banana Pro,
+     prompt en inglés con la distribución primero y las negaciones al final,
+     misma fórmula que `assets/planta/FUENTES.md`): `gmao-tecnico-bomba.webp`
+     (incidencias, la bomba BOM-005 de esta misma página), `gmao-tecnico-
+     cinta.webp` (preventivo, una cinta transportadora con tablet),
+     `gmao-tecnico-panel.webp` (acciones, un cuadro eléctrico con llave y
+     móvil) y `gmao-supervisor-taller.webp` (KPIs, una nave de mecanizado con
+     tablet). Ninguna reutiliza una foto de otra página.
+
+     SEGUNDA VUELTA, EL MISMO DÍA — tres correcciones del cliente sobre lo de
+     arriba:
+
+     1. «Ahora están todos a la derecha, pon derecha izquierda de manera
+        alternativa»: las cuatro fotos se regeneraron con la persona en
+        lados opuestos a propósito —izquierda en incidencias y acciones,
+        derecha en preventivo y KPIs—, indicado en el propio prompt
+        («the LEFT third»/«the RIGHT third»), no dejado al azar del modelo.
+
+     2. «Notificaciones reales versión iPhone, con el logo de Solved, y si
+        es de una persona una foto»: el `.ntf` de cristal con un icono del
+        brandbook pasa a `.ntf--iphone` (ds/scene.css) — banda blanca real,
+        con su fila de app + hora y el icono cuadrado de Solved
+        (`/assets/apple-touch-icon.png`). La de Acciones es la excepción:
+        viene de Hugo Beltrán, no del sistema, así que lleva su foto
+        redonda (`.ntf__ico--avatar`, `assets/ia/avatar-hugo.webp`, generada
+        en Google Flow el mismo día) y su nombre en la cabecera en vez de
+        «Solved» (`.ntf__app--persona`).
+
+     3. «Nada de cuadros hielo con 4 datos, fiel a la interfaz de Solved,
+        como si fuera lo que ves en la pantalla»: el `.res` de cada
+        capacidad se retira y entra la pantalla real del módulo, ya
+        verificada en el resto del sitio — el listado de incidencias en el
+        móvil (`.app--movil`, home), el registro con sus OK/KO y la firma
+        (`.app__rec`, home), el formulario de alta de acción con el
+        desplegable de responsable (`.app__asigna`, /incidencias/) y la
+        ventana de Informes con el tablero (`.app__kpis`+`.app__bars`,
+        home). La página pasa a cargar `ds/device.css` y `ds/app.css`, que
+        antes no necesitaba. **Trampa de esta vuelta:** `.app__kpiv--count`
+        trae de serie el ciclo de tres cifras del filtro de turno de la
+        home (`app-n-abiertas`…) y pisaba el `--app-n` fijo que esta
+        tarjeta quiere enseñar — se apaga con `style="animation:none"` en
+        los tres KPI, comprobado con captura que las cifras se quedan fijas
+        (3 · 1,8 d · 1) y no en 5 · 2,4 d · 1, que es lo que salía antes de
+        apagarla. Y el iPhone del listado de incidencias no admite el mismo
+        `data-crop="dev-br"` que usan los demás dispositivos de esta
+        página: con la isla dinámica tan cerca del borde superior, el
+        recorte la dejaba flotando a mitad de pantalla, separada del
+        aparato. Va con `data-crop="b"`, sin sangrar, que es el que ya usa
+        `.regpush` para un `.device` entero sobre su propia caja. -->
+     <!-- ds/scene.css sube a ?v=20261005a en las 67+ páginas que lo cargan
+          (sólo aditivo: `.ntf--iphone` es un modificador nuevo, ninguna
+          regla existente de `.ntf` se ha tocado). -->
+<section class="section" data-screen-label="GMAO · Capacidades">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <h2>Dale a tu equipo <span class="ds-dim">herramientas que sí usen.</span></h2>
+      <p>Organiza a tu equipo y controla todas las tareas sin aumentar la carga de trabajo.</p>
+    </div>
+
+    <div class="rotador" data-intervalo="7000">
+      <div class="rotador__lista" role="tablist" aria-orientation="vertical" aria-label="Lo que Solved centraliza en el mantenimiento de una planta">
+        <div class="rotador__item">
+          <button class="rotador__btn" id="rot-gmao-incidencias-b" role="tab" aria-controls="rot-gmao-incidencias" aria-selected="false" type="button">Avisos de avería enganchados al equipo, con responsable asignado</button>
+          <div class="rotador__cuerpo">
+            <p>El aviso se abre con el equipo ya identificado, su prioridad y su evidencia, y queda trazado desde la detección hasta el cierre, sea cual sea el canal por el que entró.</p>
+            <a href="/incidencias/">Ver la gestión de incidencias →</a>
+          </div>
+        </div>
+        <div class="rotador__item">
+          <button class="rotador__btn" id="rot-gmao-preventivo-b" role="tab" aria-controls="rot-gmao-preventivo" aria-selected="false" type="button">Preventivo programado, con aviso antes del vencimiento</button>
+          <div class="rotador__cuerpo">
+            <p>El plan de mantenimiento se programa una vez, con su frecuencia y su responsable, y el sistema avisa antes de que venza en vez de depender de que alguien se acuerde.</p>
+            <a href="/auditorias/">Ver registros y auditorías →</a>
+          </div>
+        </div>
+        <div class="rotador__item">
+          <button class="rotador__btn" id="rot-gmao-acciones-b" role="tab" aria-controls="rot-gmao-acciones" aria-selected="false" type="button">Reparación asignada con responsable y fecha de cierre</button>
+          <div class="rotador__cuerpo">
+            <p>De cada avería sale una acción con su equipo, su responsable y su plazo, y queda enganchada a la máquina con lo que se hizo para resolverla.</p>
+            <a href="/no-conformidades/">Ver no conformidades y acciones →</a>
+          </div>
+        </div>
+        <div class="rotador__item">
+          <button class="rotador__btn" id="rot-gmao-kpis-b" role="tab" aria-controls="rot-gmao-kpis" aria-selected="false" type="button">Reincidencia visible por equipo, antes de la tercera vez</button>
+          <div class="rotador__cuerpo">
+            <p>Los KPIs se calculan máquina a máquina, así que una avería que se repite se detecta en la segunda vez y no en la cuarta.</p>
+            <a href="/dashboard/">Ver KPIs y dashboards →</a>
+          </div>
+        </div>
+      </div>
+      <div class="rotador__vista">
+          <article class="scene" id="rot-gmao-incidencias" role="tabpanel" aria-labelledby="rot-gmao-incidencias-b" data-module="incidencias" data-canvas="foto">
+            <img class="scene__foto" src="/assets/planta/gmao-tecnico-bomba.webp" alt="" width="1400" height="1050" loading="lazy" decoding="async">
+            <span class="scene__velo" aria-hidden="true"></span>
+            <h3 class="scene__title">Aviso de avería enganchado al equipo desde el primer momento</h3>
+            <span class="scene__glow" aria-hidden="true"></span>
+            <div class="ntf ntf--iphone" style="left:20px; top:20px" aria-hidden="true">
+              <span class="ntf__ico"><img src="/assets/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div class="ntf__body">
+                <div class="ntf__meta"><span class="ntf__app">Solved</span><span class="ntf__time">ahora</span></div>
+                <p class="ntf__t">Aviso creado</p>
+                <p class="ntf__s">Plantillas Solved</p>
+              </div>
+            </div>
+            <!-- NUEVA NORMA (5 oct 2026, petición del cliente): ningún
+                 componente puede tapar la escena de la foto — hay que
+                 encajarlo, y si no cabe, la creatividad va por el lado
+                 conservador. El iPhone con el listado entero (primera
+                 vuelta de hoy) tapaba al técnico casi entero: con el
+                 recorte `dev-br`/`b` de este rotador, pensado para una
+                 escena SIN foto detrás, un aparato de 104% de ancho se come
+                 el lienzo. Referencia del cliente: mitti.com/es/activos dejó
+                 al operario libre y metió las fichas de equipo pequeñas,
+                 sueltas, en el hueco vacío que deja la foto — ninguna pantalla
+                 entera encima de la persona. Misma idea aquí: una ficha suelta
+                 y pequeña (`.app__mcard`, la misma fila que ya usa el listado
+                 real de /incidencias/), anclada a la esquina que deja libre
+                 la foto (BOM-005 queda a la derecha; el técnico, a la
+                 izquierda, entero). -->
+            <div class="scene__media" style="left:auto; top:auto; right:5%; bottom:6%; width:min(62%,280px)">
+              <div class="app__mcard" aria-hidden="true">
+                <div class="app__mtxt">
+                  <span class="app__code">UTD26_230_001</span><span class="app__dot"></span>
+                  <div class="app__mdesc">Fuga en el sello mecánico</div>
+                  <div class="app__mmeta"><span class="app__tag app__tag--alta">Alta</span> BOM-005 · Hugo Beltrán</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="scene" id="rot-gmao-preventivo" role="tabpanel" aria-labelledby="rot-gmao-preventivo-b" data-module="checklists" data-canvas="foto">
+            <img class="scene__foto" src="/assets/planta/gmao-tecnico-cinta.webp" alt="" width="1400" height="1050" loading="lazy" decoding="async">
+            <span class="scene__velo" aria-hidden="true"></span>
+            <h3 class="scene__title">El preventivo se programa con su frecuencia y avisa antes del vencimiento</h3>
+            <span class="scene__glow" aria-hidden="true"></span>
+            <div class="ntf ntf--iphone" style="left:20px; top:20px" aria-hidden="true">
+              <span class="ntf__ico"><img src="/assets/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div class="ntf__body">
+                <div class="ntf__meta"><span class="ntf__app">Solved</span><span class="ntf__time">ahora</span></div>
+                <p class="ntf__t">Recordatorio de preventivo</p>
+                <p class="ntf__s">BOM-005 · antes del vencimiento</p>
+              </div>
+            </div>
+            <!-- Misma norma que en Incidencias: ficha suelta y pequeña en vez
+                 de la tablet entera (que tapaba al técnico casi por completo).
+                 Aquí la persona está a la DERECHA, así que la ficha va anclada
+                 a la izquierda, sobre la cinta, que es lo que deja libre. -->
+            <div class="scene__media" style="left:5%; top:auto; right:auto; bottom:6%; width:min(64%,300px)">
+              <div class="app__mcard" aria-hidden="true" style="flex-direction:column; align-items:stretch; gap:0; padding:0; overflow:hidden">
+                <div class="app__rechead" style="padding:10px 12px">
+                  <span class="app__recico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5h7a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"></path><path d="M9 4h6v2H9zM10 11l1.4 1.4L14 9.6"></path></svg></span>
+                  <div>
+                    <div class="app__rect">Control preventivo · BOM-005</div>
+                    <div class="app__recs">hoy · 09:00 · Hugo Beltrán</div>
+                  </div>
+                  <span class="app__recprog">3 de 3</span>
+                </div>
+                <div class="app__items" style="border:0; border-radius:0; border-top:1px solid var(--app-line)">
+                  <div class="app__item"><span class="app__itemq">Nivel de aceite</span><span class="app__opts"><span class="app__opt app__opt--ok app__opt--on">OK</span></span></div>
+                  <div class="app__item"><span class="app__itemq">Vibración del rodamiento</span><span class="app__opts"><span class="app__opt app__opt--ok app__opt--on">OK</span></span></div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="scene" id="rot-gmao-acciones" role="tabpanel" aria-labelledby="rot-gmao-acciones-b" data-module="acciones" data-canvas="foto">
+            <img class="scene__foto" src="/assets/planta/gmao-tecnico-panel.webp" alt="" width="1400" height="1050" loading="lazy" decoding="async">
+            <span class="scene__velo" aria-hidden="true"></span>
+            <h3 class="scene__title">Asignación automática al responsable, sin reparto manual</h3>
+            <span class="scene__glow" aria-hidden="true"></span>
+            <!-- De una persona, no del sistema: el icono pasa a ser la foto
+                 de Hugo y la cabecera lleva su nombre, no «Solved» — así es
+                 como iOS distingue un aviso de alguien de un aviso de la app
+                 (5 oct 2026, petición del cliente). -->
+            <div class="ntf ntf--iphone" style="left:20px; top:20px" aria-hidden="true">
+              <span class="ntf__ico ntf__ico--avatar"><img src="/assets/ia/avatar-hugo.webp" alt="" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div class="ntf__body">
+                <div class="ntf__meta"><span class="ntf__app ntf__app--persona">Hugo Beltrán</span><span class="ntf__time">ahora</span></div>
+                <p class="ntf__t">Te han asignado una reparación</p>
+                <p class="ntf__s">BOM-005 · Mantenimiento</p>
+              </div>
+            </div>
+            <!-- Misma norma: el formulario entero —con el desplegable
+                 abierto— tapaba al técnico casi por completo. Se queda sólo
+                 lo que cuenta la notificación de arriba —quién, y en qué—,
+                 sin el desplegable abierto ni los campos de cierre, y
+                 anclado a la derecha, sobre el cuadro eléctrico, que es lo
+                 que deja libre la foto (el técnico está a la izquierda). -->
+            <div class="scene__media scene__media--suelto" style="left:auto; top:auto; right:5%; bottom:6%; width:min(64%,300px)">
+              <div class="app__asigna" aria-hidden="true">
+                <div class="app__panelt app__panelt--nueva">
+                  Nueva acción
+                  <span class="app__vinc">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 0 0-5.7-5.7L11.4 7"></path><path d="M14 10a4 4 0 0 0-5.7 0L5.5 12.8a4 4 0 0 0 5.7 5.7L12.6 17"></path></svg>
+                    <span class="app__code">UTD26_230_001</span>
+                  </span>
+                </div>
+                <div class="app__campo">
+                  <span class="app__campok">Descripción</span>
+                  <span class="app__campov app__campov--tecla"><span>Sustituir el sello mecánico</span></span>
+                </div>
+                <!-- `.app__campov--sel`/`.app__campoval` traen `opacity:0` de
+                     serie (ds/app.css): están pensados para un reloj que los
+                     revela a mitad de ciclo, y `.scene[data-terminado]` los
+                     vuelve a apagar en el estado resuelto. Sin ese reloj
+                     montado aquí, el campo se quedaba siempre vacío —sólo la
+                     flecha, sin avatar ni nombre—. Se resuelve con el campo
+                     base, `.app__campov` a secas, que es estático y visible
+                     siempre. -->
+                <div class="app__campo app__campo--resp">
+                  <span class="app__campok">Responsable</span>
+                  <span class="app__campov" style="display:flex; align-items:center; gap:6px">
+                    <img class="app__ava app__ava--foto" src="/assets/ia/avatar-hugo.webp" alt="" width="20" height="20" loading="lazy" decoding="async">Hugo Beltrán
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="scene" id="rot-gmao-kpis" role="tabpanel" aria-labelledby="rot-gmao-kpis-b" data-module="kpis" data-canvas="foto">
+            <img class="scene__foto" src="/assets/planta/gmao-supervisor-taller.webp" alt="" width="1400" height="1050" loading="lazy" decoding="async">
+            <span class="scene__velo" aria-hidden="true"></span>
+            <h3 class="scene__title">Cuadros de mando configurables, por equipo y en tiempo real</h3>
+            <span class="scene__glow" aria-hidden="true"></span>
+            <div class="ntf ntf--iphone" style="left:20px; top:20px" aria-hidden="true">
+              <span class="ntf__ico"><img src="/assets/apple-touch-icon.png" alt="" width="60" height="60" loading="lazy" decoding="async"></span>
+              <div class="ntf__body">
+                <div class="ntf__meta"><span class="ntf__app">Solved</span><span class="ntf__time">ahora</span></div>
+                <p class="ntf__t">Reincidencia detectada</p>
+                <p class="ntf__s">BOM-005 · 2ª vez</p>
+              </div>
+            </div>
+            <!-- Misma norma: la ventana de Informes entera —sidebar,
+                 cabecera y gráfico— tapaba al supervisor casi por completo.
+                 Se queda sólo lo que cuenta la notificación de arriba: dos
+                 cifras reales (`.app__kpi`, la misma pieza de la home),
+                 sueltas y ancladas a la izquierda, sobre la maquinaria —el
+                 supervisor, a la derecha, queda libre—. `animation:none`
+                 sigue haciendo falta: `.app__kpiv--count` trae de serie el
+                 ciclo de tres cifras del filtro de turno de la home y pisa
+                 el `--app-n` fijo que esta ficha quiere enseñar. -->
+            <!-- Petición del cliente (5 oct 2026): un número suelto no es un
+                 KPI, es una cifra — combina mejor con su gráfico. Entran las
+                 mismas barras reales de «Actividad por mes» (`.app__bar`/
+                 `.app__bseg`, la pieza de la home), en una sola serie —el
+                 número de arriba es justo lo que esas barras acumulan— y con
+                 `animation:none` en cada `.app__barv`: igual que el contador,
+                 trae de serie un ciclo de escala pensado para el filtro de
+                 turno de la home que aquí no existe. -->
+            <div class="scene__media" style="left:5%; top:auto; right:auto; bottom:6%; width:min(62%,280px)">
+              <div class="app__mcard" aria-hidden="true" style="flex-direction:column; align-items:stretch; gap:2px">
+                <div class="app__kpi">
+                  <div class="app__kpil">Averías en 90 días</div>
+                  <div class="app__kpiv app__kpiv--incidencias app__kpiv--count" style="--app-n:3;animation:none"></div>
+                </div>
+                <div class="app__bars" style="height:40px; margin-top:4px; gap:5px">
+                  <div class="app__bar"><div class="app__barv" style="height:45%;animation:none"><span class="app__bseg app__bseg--incidencias" style="flex:1"></span></div></div>
+                  <div class="app__bar"><div class="app__barv" style="height:28%;animation:none"><span class="app__bseg app__bseg--incidencias" style="flex:1"></span></div></div>
+                  <div class="app__bar"><div class="app__barv" style="height:62%;animation:none"><span class="app__bseg app__bseg--incidencias" style="flex:1"></span></div></div>
+                  <div class="app__bar"><div class="app__barv" style="height:38%;animation:none"><span class="app__bseg app__bseg--incidencias" style="flex:1"></span></div></div>
+                  <div class="app__bar"><div class="app__barv" style="height:100%;animation:none"><span class="app__bseg app__bseg--incidencias" style="flex:1"></span></div></div>
+                </div>
+                <div class="app__kpi" style="margin-top:8px">
+                  <div class="app__kpil">Reincidencias detectadas</div>
+                  <div class="app__kpiv app__kpiv--acciones app__kpiv--count" style="--app-n:1;animation:none"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTEGRAR ES OPCIONAL ============
+     Sin tocar (1 oct 2026): ya era el patrón de /integraciones/
+     («Integrar no es el requisito, es la opción») aplicado aquí, con las
+     mismas dos cifras reutilizadas tal cual. Es una de las pocas secciones
+     de esta página que ya estaba en el sistema de la 3.0 antes de esta
+     vuelta. -->
+<section class="section section--tight" data-screen-label="GMAO · Integración">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <h2>Se conecta con tu GMAO, <span class="ds-dim">no lo sustituye</span></h2>
+      <p>Si ya existe uno, Solved aporta el enganche con calidad y producción que hoy falta entre sistemas. Si no existe, hace de sistema de mantenimiento desde el primer día, sin proyecto de implantación aparte.</p>
+    </div>
+    <div class="ds-stats">
+      <div class="ds-stat"><b>Todos</b><span>tus sistemas ERP, MES y GMAO conectados</span></div>
+      <div class="ds-stat"><b>2-3</b><span>semanas de implantación media</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LO QUE PIDE UN GMAO ============
+     Sustituye a la sección «Lo que aporta» (1 oct 2026, petición del
+     cliente: una lista de las funciones que se le piden a un GMAO y cómo
+     las resuelve Solved, nativas o por integración). Los seis puntos
+     anteriores quedan recogidos dentro de esta lista más completa —ficha y
+     QR, documentación, responsable asignado— sin repetirse aparte.
+
+     ONCE FUNCIONES, CONTRASTADAS CONTRA EL PRODUCTO (2 oct 2026), no contra
+     lo que «suena a GMAO»: las nueve nativas están comprobadas contra el
+     código fuente de Solved (ficha y QR de equipo, historial de incidencia
+     enganchado al control que la abre, ocurrencias programadas con aviso
+     antes del vencimiento, acciones con responsable y cierre, tiempo por
+     sección —cronómetro o entrada manual—, caducidad de documentos con
+     aviso configurable, los 64 conectores de ERP/MES/GMAO del catálogo de
+     /integraciones/). Las dos últimas —stock de repuestos y costes de
+     mantenimiento— se comprobó que NO existen como función de Solved, y se
+     dicen así de claro: es la misma honestidad que ya pedía la FAQ de esta
+     página («¿Solved es un GMAO? No, y conviene decirlo claro…»), llevada a
+     una lista completa en vez de a una sola pregunta.
+
+     Va como `.reasons` sin `--cuadro`, mismo criterio que la sección a la
+     que sustituye: no va pegada a las escenas (en medio sigue la banda de
+     integración), así que el texto no se lee como el pie del rotador y no
+     hace falta el marco de hairline. -->
+<section class="section section--tight" data-screen-label="GMAO · Funciones de un GMAO">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <h2>Lo que pide un GMAO, <span class="ds-dim">función por función</span></h2>
+      <p>Once funciones habituales de un GMAO y cómo las resuelve Solved: de forma nativa, o conectado con el sistema que ya gestione lo que Solved no hace.</p>
+    </div>
+    <div class="reasons" style="margin-top:var(--s-6)">
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><path d="M14 14h3v3h-3zM19 14v3M14 19h3M19 19h.01"></path></svg></span>
+        <p><span class="em">Ficha y QR por equipo (nativo):</span> cada máquina tiene su ficha con histórico completo y su código QR; se descarga, se imprime y se pega en el equipo, y al escanearlo se abre lo que le ha pasado.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 9v4"></path><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 17h.01"></path></svg></span>
+        <p><span class="em">Parte de avería con responsable y cierre (nativo):</span> el aviso se abre en el punto de detección, con su prioridad y su evidencia, y queda trazado hasta el cierre sea cual sea el canal por el que entró.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9 12h6M13 9l3 3-3 3"></path></svg></span>
+        <p><span class="em">La avería nace del propio control (nativo):</span> un control de un registro que sale KO abre la incidencia automáticamente, enganchada al equipo y al control del que sale, sin que nadie la teclee aparte.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg></span>
+        <p><span class="em">Preventivo programado, con aviso (nativo):</span> el plan se programa una vez, con su frecuencia y su responsable, y el sistema avisa antes de que venza en vez de depender de que alguien se acuerde.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 11l2 2 4-4"></path><rect x="4" y="3" width="16" height="18" rx="2"></rect></svg></span>
+        <p><span class="em">Reparación asignada con plazo (nativo):</span> de cada avería sale una acción con su equipo, su responsable y su fecha de cierre, sin reparto manual.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+        <p><span class="em">Tiempo por intervención (nativo):</span> el propio registro puede llevar un cronómetro o una entrada manual por sección, así que el tiempo de la reparación queda escrito sin hoja aparte.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"></path><path d="M14 3v4h4"></path><path d="M9 17l2-2 2 2 3-4"></path></svg></span>
+        <p><span class="em">Documentación técnica, con caducidad (nativo):</span> manuales, certificados y fichas técnicas viven en el gestor documental, con aviso configurable antes de que caduquen.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 3v18h18"></path><rect x="7" y="11" width="3" height="6"></rect><rect x="12" y="7" width="3" height="10"></rect><rect x="17" y="13" width="3" height="4"></rect></svg></span>
+        <p><span class="em">KPIs de mantenimiento por equipo (nativo):</span> reincidencia, tiempo medio de cierre y averías abiertas, calculados máquina a máquina y no sólo por área.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 5"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L13 19"></path></svg></span>
+        <p><span class="em">Conexión con tu ERP, MES o GMAO (vía integración):</span> el aviso puede seguir viviendo donde vive hoy. Solved se conecta con 64 sistemas —27 ERP, 19 MES y 17 GMAO— y aporta el enganche con calidad y producción que hoy falta entre ellos.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4Z"></path><path d="M3 7v10l9 4 9-4V7"></path><path d="M12 11v10"></path></svg></span>
+        <p><span class="em">Stock de repuestos y almacén (no nativo, vía integración):</span> Solved no lleva inventario de recambios. Ese dato sigue en el GMAO o el ERP que ya lo gestione, conectado por la misma vía.</p>
+      </div>
+      <div data-span="4">
+        <span class="reasons__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M15 8.5a4 4 0 0 0-6 3.5 4 4 0 0 0 6 3.5"></path><path d="M7 10h5M7 14h5"></path></svg></span>
+        <p><span class="em">Costes de mantenimiento (no nativo, vía integración):</span> Solved no calcula tarifas por hora ni coste de materiales. Lo que aporta es el tiempo y el histórico de cada intervención; el coste se sigue calculando donde ya se calculaba.</p>
+      </div>
+    </div>
+    <a class="reasons__link" href="/gestion-de-activos/" style="margin-top:var(--s-5);display:inline-block;">Ver la ficha completa del equipo →</a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--tight" data-screen-label="GMAO · FAQ">
+  <div class="wrap">
+    <div class="section-head"><h2>Preguntas frecuentes</h2></div>
+    <div class="faq">
+      <details class="faq__item" name="faq" open=""><summary>¿Solved es un GMAO?</summary><div class="faq__a"><p>No, y conviene decirlo claro: no lleva stock de repuestos, ni costes, ni horas de mano de obra. Lleva el historial operativo del equipo — avisos, registros, acciones y su cierre — y se conecta con el GMAO que ya exista.</p></div></details>
+      <details class="faq__item" name="faq"><summary>¿Sustituye al GMAO que ya tenemos?</summary><div class="faq__a"><p>No. Se integra con él a través de las conexiones con ERP, MES y GMAO del catálogo de integraciones: el aviso puede seguir viviendo donde vive hoy, y Solved aporta el enganche con calidad y producción que hoy falta entre sistemas.</p></div></details>
+      <details class="faq__item" name="faq"><summary>¿Cómo se programa el preventivo?</summary><div class="faq__a"><p>Como un registro con su frecuencia, su responsable y su fecha. El sistema avisa antes del vencimiento, y un control que sale KO abre la incidencia automáticamente, enganchada al equipo y al registro del que sale.</p></div></details>
+      <details class="faq__item" name="faq"><summary>¿Qué hace el código QR de cada equipo?</summary><div class="faq__a"><p>Cada equipo tiene su propio código. Se descarga o se imprime desde su ficha y se pega en la máquina. Al escanearlo se abre la ficha de ese equipo: lo que le ha pasado, lo que tiene abierto y el sitio desde el que se registra lo nuevo.</p></div></details>
+      <details class="faq__item" name="faq"><summary>¿Vale si todavía no hay ningún sistema de mantenimiento?</summary><div class="faq__a"><p>Sí. El historial del equipo lo construye Solved con el trabajo que la planta ya hace: cada aviso, cada registro y cada acción quedan enganchados a su máquina desde el primer día, sin proyecto de implantación previo.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contacto" data-screen-label="GMAO · Contacto">
+  <div class="wrap contact__in">
+    <div class="form-card">
+      <h2>Contacto con un especialista en operaciones industriales</h2>
+      <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689) -->
+      <div class="hs-contact-form"></div>
+    </div>
+    <div class="contact__art">
+      <video class="contact__v" data-lazy="/assets/registro-tablet-planta.mp4" poster="/assets/contacto-registro-planta.webp" muted="" loop="" playsinline="" preload="none" width="1280" height="720" aria-label="Operaria de planta cumplimentando un registro en la tablet junto a la línea"></video>
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+<script src="/chrome.js?v=20261005a"></script>
+<script src="/ds/rotador.js?v=20260930a" defer=""></script>
+<!-- Hero y franja de clientes: el mismo shader y la misma cinta que el resto del sitio. -->
+<script src="/ds/hero-wave.js?v=20260928a" defer=""></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function mount() {
+    if (window.SolvedHeroWave) window.SolvedHeroWave.mount(document.getElementById('dsWeave'));
+  }
+  if (window.SolvedHeroWave) mount();
+  else document.querySelector('script[src*="ds/hero-wave.js"]').addEventListener('load', mount);
+
+  /* La cinta de logos se duplica para que el bucle no tenga costura. */
+  var t = document.getElementById('dsLogos');
+  if (t) t.innerHTML += t.innerHTML;
+});
+</script>
+
+
+</body></html>

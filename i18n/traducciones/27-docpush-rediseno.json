@@ -1,0 +1,10 @@
+{
+  "_nota": "28 de septiembre de 2026: la capacidad «El aviso, antes de que caduque» de /gestor-documental/ se rehace de `.docaviso` (dos tarjetas de papel) a `.docpush` (petición del cliente, que no le convencía la primera): un teléfono en la pantalla de Incidencias, una notificación push que cae, se toca, y aterriza en la pantalla del documento con su aviso de caducidad. Reutiliza cadenas ya traducidas —\"Certificado IFS Food\", \"v1 · Caduca el 30/11/26\", \"Caduca en 12 días\", \"Certificado IFS Food caduca en 12 días\", \"Fuga de aceite en cinta transportadora L3\", \"Etiquetado del lote\", \"Información\", \"Versiones\", \"Actividad\", \"Incidencias\"— y añade sólo la etiqueta de la propia notificación.",
+  "Solved · ahora": {
+    "en": "Solved · now",
+    "fr": "Solved · maintenant",
+    "it": "Solved · ora",
+    "de": "Solved · jetzt",
+    "pt": "Solved · agora"
+  }
+}

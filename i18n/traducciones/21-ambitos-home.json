@@ -1,0 +1,185 @@
+{
+  "_nota": "Sección «Ámbitos de aplicación» de la home, rehecha el 15 de septiembre de 2026 (dos vueltas): cada pestaña se queda con el titular y una frase, y sobre la foto va una maqueta de la plataforma —las pantallas de ds/app.css, quietas— y una notificación pequeña (ds/ambitos.css). Los identificadores son los del resto del sitio: UTD26_163_001 es la fuga de aceite de la cinta L3; el KO del etiquetado abre UTD26_166_001. Las cadenas de la primera vuelta (la ficha animada) y las de las viñetas retiradas se quedan aquí y en 02-home-b.json, sin usar.",
+  "Cada no conformidad, con su causa, su responsable y su cierre. IFS, BRC e ISO 9001 con el histórico completo.": {
+    "en": "Every non-conformity with its cause, its owner and its closure. IFS, BRC and ISO 9001 with the full history.",
+    "fr": "Chaque non-conformité avec sa cause, son responsable et sa clôture. IFS, BRC et ISO 9001 avec l'historique complet.",
+    "it": "Ogni non conformità con la sua causa, il suo responsabile e la sua chiusura. IFS, BRC e ISO 9001 con lo storico completo.",
+    "de": "Jede Abweichung mit Ursache, Verantwortlichem und Abschluss. IFS, BRC und ISO 9001 mit vollständigem Verlauf.",
+    "pt": "Cada não conformidade com a sua causa, o seu responsável e o seu encerramento. IFS, BRC e ISO 9001 com o histórico completo."
+  },
+  "Firmada en línea · lista para auditoría": {
+    "en": "Signed on the line · audit-ready",
+    "fr": "Signée sur la ligne · prête pour l'audit",
+    "it": "Firmata in linea · pronta per l'audit",
+    "de": "An der Linie unterschrieben · auditbereit",
+    "pt": "Assinada na linha · pronta para auditoria"
+  },
+  "UTD26_157_REC · Lote dañado": {
+    "en": "UTD26_157_REC · Damaged batch",
+    "fr": "UTD26_157_REC · Lot endommagé",
+    "it": "UTD26_157_REC · Lotto danneggiato",
+    "de": "UTD26_157_REC · Beschädigte Charge",
+    "pt": "UTD26_157_REC · Lote danificado"
+  },
+  "Reclamación de cliente · 22/06/2026": {
+    "en": "Customer complaint · 22/06/2026",
+    "fr": "Réclamation client · 22/06/2026",
+    "it": "Reclamo cliente · 22/06/2026",
+    "de": "Kundenreklamation · 22.06.2026",
+    "pt": "Reclamação de cliente · 22/06/2026"
+  },
+  "Causa": {
+    "en": "Cause",
+    "fr": "Cause",
+    "it": "Causa",
+    "de": "Ursache",
+    "pt": "Causa"
+  },
+  "Golpe en paletizado": {
+    "en": "Impact during palletising",
+    "fr": "Choc à la palettisation",
+    "it": "Urto in pallettizzazione",
+    "de": "Stoß beim Palettieren",
+    "pt": "Pancada na paletização"
+  },
+  "Calidad · Lucía": {
+    "en": "Quality · Lucía",
+    "fr": "Qualité · Lucía",
+    "it": "Qualità · Lucía",
+    "de": "Qualität · Lucía",
+    "pt": "Qualidade · Lucía"
+  },
+  "La avería se registra desde el móvil, con fotografía y activo, y pasa a mantenimiento sin aviso verbal. Convive con el GMAO ya implantado.": {
+    "en": "The breakdown is logged from the phone, with a photo and the asset, and goes to maintenance with no verbal hand-off. It works alongside the CMMS already in place.",
+    "fr": "La panne est enregistrée depuis le téléphone, avec photo et actif, et passe à la maintenance sans transmission orale. Elle coexiste avec la GMAO déjà en place.",
+    "it": "Il guasto si registra dal telefono, con foto e asset, e passa alla manutenzione senza avviso verbale. Convive con il CMMS già in uso.",
+    "de": "Die Störung wird am Smartphone erfasst, mit Foto und Anlage, und geht ohne mündliche Übergabe an die Instandhaltung. Sie läuft neben dem bestehenden CMMS.",
+    "pt": "A avaria é registada a partir do telemóvel, com fotografia e ativo, e passa à manutenção sem aviso verbal. Convive com o GMAO já implementado."
+  },
+  "Asignada a Mantenimiento · 14:09": {
+    "en": "Assigned to Maintenance · 14:09",
+    "fr": "Affectée à la Maintenance · 14:09",
+    "it": "Assegnata a Manutenzione · 14:09",
+    "de": "Der Instandhaltung zugewiesen · 14:09",
+    "pt": "Atribuída à Manutenção · 14:09"
+  },
+  "UTD26_163_001 · Fuga de aceite en cinta L3": {
+    "en": "UTD26_163_001 · Oil leak on conveyor L3",
+    "fr": "UTD26_163_001 · Fuite d'huile sur le convoyeur L3",
+    "it": "UTD26_163_001 · Perdita d'olio sul nastro L3",
+    "de": "UTD26_163_001 · Ölleck am Förderband L3",
+    "pt": "UTD26_163_001 · Fuga de óleo no tapete L3"
+  },
+  "Cinta transportadora L3": {
+    "en": "Conveyor L3",
+    "fr": "Convoyeur L3",
+    "it": "Nastro trasportatore L3",
+    "de": "Förderband L3",
+    "pt": "Tapete transportador L3"
+  },
+  "Origen": {
+    "en": "Source",
+    "fr": "Origine",
+    "it": "Origine",
+    "de": "Herkunft",
+    "pt": "Origem"
+  },
+  "Calidad · turno de mañana": {
+    "en": "Quality · morning shift",
+    "fr": "Qualité · poste du matin",
+    "it": "Qualità · turno di mattina",
+    "de": "Qualität · Frühschicht",
+    "pt": "Qualidade · turno da manhã"
+  },
+  "El control se cumplimenta junto al equipo; un KO abre la incidencia y el siguiente turno ve lo que quedó pendiente.": {
+    "en": "The check is filled in next to the equipment; a KO opens the incident and the next shift sees what was left open.",
+    "fr": "Le contrôle est rempli à côté de l'équipement ; un KO ouvre l'incident et le poste suivant voit ce qui est resté en attente.",
+    "it": "Il controllo si compila accanto alla macchina; un KO apre l'anomalia e il turno successivo vede cosa è rimasto in sospeso.",
+    "de": "Die Kontrolle wird direkt an der Anlage ausgefüllt; ein KO öffnet die Störung, und die nächste Schicht sieht, was offen geblieben ist.",
+    "pt": "O controlo é preenchido junto ao equipamento; um KO abre a ocorrência e o turno seguinte vê o que ficou pendente."
+  },
+  "Incidencia UTD26_166_001 abierta": {
+    "en": "Incident UTD26_166_001 opened",
+    "fr": "Incident UTD26_166_001 ouvert",
+    "it": "Anomalia UTD26_166_001 aperta",
+    "de": "Störung UTD26_166_001 geöffnet",
+    "pt": "Ocorrência UTD26_166_001 aberta"
+  },
+  "Control de arranque · Línea 2": {
+    "en": "Start-up check · Line 2",
+    "fr": "Contrôle de démarrage · Ligne 2",
+    "it": "Controllo di avvio · Linea 2",
+    "de": "Anlaufkontrolle · Linie 2",
+    "pt": "Controlo de arranque · Linha 2"
+  },
+  "Turno de tarde · 14:02 · Marta": {
+    "en": "Afternoon shift · 14:02 · Marta",
+    "fr": "Poste de l'après-midi · 14:02 · Marta",
+    "it": "Turno di pomeriggio · 14:02 · Marta",
+    "de": "Spätschicht · 14:02 · Marta",
+    "pt": "Turno da tarde · 14:02 · Marta"
+  },
+  "Presión de sellado": {
+    "en": "Sealing pressure",
+    "fr": "Pression de scellage",
+    "it": "Pressione di saldatura",
+    "de": "Siegeldruck",
+    "pt": "Pressão de selagem"
+  },
+  "Temperatura del túnel": {
+    "en": "Tunnel temperature",
+    "fr": "Température du tunnel",
+    "it": "Temperatura del tunnel",
+    "de": "Tunneltemperatur",
+    "pt": "Temperatura do túnel"
+  },
+  "Etiquetado del lote": {
+    "en": "Batch labelling",
+    "fr": "Étiquetage du lot",
+    "it": "Etichettatura del lotto",
+    "de": "Chargenetikettierung",
+    "pt": "Etiquetagem do lote"
+  },
+  "Firmado en línea · listo para auditoría": {
+    "en": "Signed on the line · audit-ready",
+    "fr": "Signé sur la ligne · prêt pour l'audit",
+    "it": "Firmato in linea · pronto per l'audit",
+    "de": "An der Linie unterschrieben · auditbereit",
+    "pt": "Assinado na linha · pronto para auditoria"
+  },
+  "Abiertas 7": {
+    "en": "Open 7",
+    "fr": "Ouverts 7",
+    "it": "Aperte 7",
+    "de": "Offen 7",
+    "pt": "Abertas 7"
+  },
+  "24/06 · Marta": {
+    "en": "24/06 · Marta",
+    "fr": "24/06 · Marta",
+    "it": "24/06 · Marta",
+    "de": "24.06. · Marta",
+    "pt": "24/06 · Marta"
+  },
+  "26/06/2026 · 14:02 · Marta": {
+    "en": "26/06/2026 · 14:02 · Marta",
+    "fr": "26/06/2026 · 14:02 · Marta",
+    "it": "26/06/2026 · 14:02 · Marta",
+    "de": "26.06.2026 · 14:02 · Marta",
+    "pt": "26/06/2026 · 14:02 · Marta"
+  },
+  "3 de 5": {
+    "en": "3 of 5",
+    "fr": "3 sur 5",
+    "it": "3 di 5",
+    "de": "3 von 5",
+    "pt": "3 de 5"
+  },
+  "Peso de la bolsa": {
+    "en": "Bag weight",
+    "fr": "Poids du sachet",
+    "it": "Peso della busta",
+    "de": "Beutelgewicht",
+    "pt": "Peso da embalagem"
+  }
+}

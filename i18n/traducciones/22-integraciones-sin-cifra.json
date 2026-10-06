@@ -1,0 +1,52 @@
+{
+  "_nota": "Decisión de negocio (22 sep 2026): no se publica la cifra del catálogo de integraciones —ni el total, ni el desglose por ERP/MES/GMAO— en ningún idioma. Donde antes se leía «64 sistemas» o «64 conectores» ahora dice que Solved se integra con todos los sistemas del cliente. Afecta a /integraciones/ (meta, JSON-LD, hero, banda de cifras, título del catálogo, contador en vivo y FAQ) y a la home (banda de autoridad y trío de apoyo). Las traducciones antiguas con la cifra se quedan en 01-home-a.json, 02-home-b.json y 07-ia-integraciones.json, sin usar.",
+  "tus sistemas ERP, MES y GMAO conectados": {
+    "en": "your ERP, MES and CMMS systems connected",
+    "fr": "vos systèmes ERP, MES et GMAO connectés",
+    "it": "i tuoi sistemi ERP, MES e CMMS collegati",
+    "de": "Ihre angebundenen ERP-, MES- und Instandhaltungssysteme",
+    "pt": "os seus sistemas ERP, MES e CMMS ligados"
+  },
+  "Se integra con todos tus sistemas —ERP, MES y GMAO—, para que el dato de planta no quede aislado ni se introduzca dos veces.": {
+    "en": "It integrates with all your systems —ERP, MES and CMMS—, so plant data is neither stranded nor entered twice.",
+    "fr": "Il s'intègre à tous vos systèmes —ERP, MES et GMAO—, pour que la donnée d'usine ne reste pas isolée et ne soit pas saisie deux fois.",
+    "it": "Si integra con tutti i tuoi sistemi —ERP, MES e CMMS—, perché il dato di stabilimento non resti isolato né venga inserito due volte.",
+    "de": "Es lässt sich mit allen Ihren Systemen verbinden —ERP, MES und Instandhaltungssystemen—, damit Werksdaten nicht isoliert bleiben und nicht doppelt erfasst werden.",
+    "pt": "Integra-se com todos os seus sistemas —ERP, MES e CMMS—, para que o dado de fábrica não fique isolado nem seja introduzido duas vezes."
+  },
+  "Se integra con todos tus sistemas: ERP, MES y GMAO, como SAP, Dynamics, Odoo o Maximo. Solved opera de forma autónoma; integrar es opción, no requisito.": {
+    "en": "It integrates with all your systems: ERP, MES and CMMS, such as SAP, Dynamics, Odoo or Maximo. Solved runs on its own; integrating is an option, not a requirement.",
+    "fr": "Il s'intègre à tous vos systèmes : ERP, MES et GMAO, comme SAP, Dynamics, Odoo ou Maximo. Solved fonctionne de façon autonome ; intégrer est une option, pas une condition.",
+    "it": "Si integra con tutti i tuoi sistemi: ERP, MES e CMMS, come SAP, Dynamics, Odoo o Maximo. Solved opera in autonomia; integrare è un'opzione, non un requisito.",
+    "de": "Es verbindet sich mit allen Ihren Systemen: ERP, MES und Instandhaltungssysteme, etwa SAP, Dynamics, Odoo oder Maximo. Solved läuft eigenständig; die Integration ist eine Option, keine Voraussetzung.",
+    "pt": "Integra-se com todos os seus sistemas: ERP, MES e CMMS, como SAP, Dynamics, Odoo ou Maximo. O Solved funciona de forma autónoma; integrar é opção, não requisito."
+  },
+  "Ver los sistemas conectados": {
+    "en": "See the connected systems",
+    "fr": "Voir les systèmes connectés",
+    "it": "Vedi i sistemi collegati",
+    "de": "Die angebundenen Systeme ansehen",
+    "pt": "Ver os sistemas ligados"
+  },
+  "Se integra con todos tus sistemas,": {
+    "en": "It integrates with all your systems,",
+    "fr": "Il s'intègre à tous vos systèmes,",
+    "it": "Si integra con tutti i tuoi sistemi,",
+    "de": "Es verbindet sich mit allen Ihren Systemen,",
+    "pt": "Integra-se com todos os seus sistemas,"
+  },
+  "Se integra con todos tus sistemas": {
+    "en": "It integrates with all your systems",
+    "fr": "Il s'intègre à tous vos systèmes",
+    "it": "Si integra con tutti i tuoi sistemi",
+    "de": "Es verbindet sich mit allen Ihren Systemen",
+    "pt": "Integra-se com todos os seus sistemas"
+  },
+  "Se integra con todos tus sistemas del mercado: ERP —SAP S/4HANA y Business One, Microsoft Dynamics 365, Navision y Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded…—, MES —Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition…—, GMAO/CMMS —IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin…— y Power BI. El catálogo completo está en esta misma página.": {
+    "en": "It integrates with all your systems on the market: ERP — SAP S/4HANA and Business One, Microsoft Dynamics 365, Navision and Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — and Power BI. The full catalogue is on this same page.",
+    "fr": "Il s'intègre à tous vos systèmes du marché : ERP — SAP S/4HANA et Business One, Microsoft Dynamics 365, Navision et Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, GMAO/CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — et Power BI. Le catalogue complet figure sur cette même page.",
+    "it": "Si integra con tutti i tuoi sistemi del mercato: ERP — SAP S/4HANA e Business One, Microsoft Dynamics 365, Navision e Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — e Power BI. Il catalogo completo è in questa stessa pagina.",
+    "de": "Es verbindet sich mit allen Ihren Systemen am Markt: ERP – SAP S/4HANA und Business One, Microsoft Dynamics 365, Navision und Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… –, MES – Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… –, Instandhaltungssysteme – IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… – und Power BI. Der vollständige Katalog steht auf dieser Seite.",
+    "pt": "Integra-se com todos os seus sistemas do mercado: ERP — SAP S/4HANA e Business One, Microsoft Dynamics 365, Navision e Business Central, Odoo, Sage, Oracle NetSuite, Infor, Unit4, IFS, A3ERP, Holded… —, MES — Siemens Opcenter, Rockwell FactoryTalk, DELMIA Apriso, Wonderware, Plex, Ignition… —, CMMS — IBM Maximo, Fracttal, Infraspeak, Fiix, UpKeep, ManWinWin… — e Power BI. O catálogo completo está nesta mesma página."
+  }
+}

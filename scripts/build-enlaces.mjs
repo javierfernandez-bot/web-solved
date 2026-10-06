@@ -25,6 +25,47 @@ const INICIO = '<!-- enlazado:inicio -->';
 const FIN = '<!-- enlazado:fin -->';
 const ANCLA_POST = '<footer class="post__foot">';
 const ANCLA_GLOSARIO = '<p><a class="btn btn--secondary" href="../">';
+const ANCLA_HEADER = '</header>';
+const ANCLA_BODY = '<div class="post__body">';
+
+// El banner de producto (ver .blog-banner en solved.css) va integrado en el
+// texto del post, no fijo: tres bloques idempotentes con sus propios
+// comentarios, cada uno en su sitio — entre el título y el cuerpo, a mitad
+// del cuerpo y al final, delante del bloque de términos + CTA que ya vivía
+// ahí. Marcadores separados para que tocar uno no arrastre a los otros dos.
+// (el de "al final" no necesita marcador propio: cae dentro del bloque
+// enlazado:inicio/fin que ya existia, junto a los terminos relacionados)
+const BANNER_ARRIBA = { inicio: '<!-- banner-arriba:inicio -->', fin: '<!-- banner-arriba:fin -->' };
+const BANNER_MEDIO  = { inicio: '<!-- banner-medio:inicio -->',  fin: '<!-- banner-medio:fin -->' };
+
+// El banner no es azul plano: se pinta con el color del modulo al que
+// enlaza, el mismo criterio cerrado de seis valores que .scene[data-module]
+// (ver ds/tint.css). "registros" es como se llama el modulo puertas afuera;
+// "checklists" es la clave interna que usa ds/tint.css, de ahi el desajuste
+// de nombres entre las dos tablas de abajo. Documentos no tiene color en el
+// sistema, asi que su variante no es un modulo: es tinta neutra. Las paginas
+// de sector (industria-*) tampoco son un modulo — "marca" es el azul de
+// Solved sin mas.
+const MODULO_POR_PRODUCTO = {
+  '/incidencias/': 'incidencias',
+  '/no-conformidades/': 'acciones',
+  '/auditorias/': 'registros',
+  '/dashboard/': 'kpis',
+  '/gestion-de-activos/': 'activos',
+  '/gestor-documental/': 'documentos',
+  '/industria-alimentaria/': 'marca',
+  '/industria-general/': 'marca',
+  '/software-calidad/': 'marca',
+};
+const ICONO_POR_MODULO = {
+  incidencias: 'reportar',
+  acciones: 'aceptar',
+  registros: 'lista',
+  activos: 'base-de-datos',
+  kpis: 'grafico-torta',
+  documentos: 'archivo',
+  marca: 'seguridad',
+};
 
 const avisos = [];
 const aviso = (m) => { avisos.push(m); };
@@ -75,6 +116,27 @@ function bloqueCta(MAPA, producto) {
   ].join('\n      ');
 }
 
+// El mismo texto de CTA que bloqueCta(), pero como tarjeta de banner en vez
+// de aside de cierre. Se reutiliza tal cual en las tres posiciones.
+function bloqueBanner(MAPA, producto) {
+  const c = MAPA.cta && MAPA.cta[producto];
+  if (!c) { aviso('sin texto de CTA para ' + producto + ' (banner)'); return ''; }
+  const modulo = MODULO_POR_PRODUCTO[producto] || 'marca';
+  const icono = ICONO_POR_MODULO[modulo];
+  return [
+    '<div class="blog-banner" data-modulo="' + modulo + '">',
+    '  <div class="blog-banner__in">',
+    '    <div class="blog-banner__icon-wrap">',
+    '      <span class="blog-banner__halo" aria-hidden="true"></span>',
+    '      <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url(\'/assets/iconos/' + icono + '.svg\')"></i></span>',
+    '    </div>',
+    '    <p class="blog-banner__text"><span class="blog-banner__title">' + esc(c.titulo) + '</span>' + esc(c.texto) + '</p>',
+    '    <a class="btn btn--primary blog-banner__btn" href="' + rel(producto) + '">' + esc(c.boton) + '</a>',
+    '  </div>',
+    '</div>',
+  ].join('\n  ');
+}
+
 function bloqueTerminos(items) {
   if (!items.length) return '';
   const lis = items
@@ -118,6 +180,47 @@ function inyectar(html, bloque, ancla) {
   const i = html.indexOf(ancla);
   if (i === -1) return null;
   return html.slice(0, i) + marcado + '\n\n    ' + html.slice(i);
+}
+
+// Igual que inyectar(), pero DESPUES del ancla en vez de delante: el banner
+// de arriba va justo detras de </header>, no delante de un ancla que le siga.
+function inyectarDespues(html, bloque, ancla, inicio, fin) {
+  const marcado = inicio + '\n    ' + bloque + '\n    ' + fin;
+  const a = html.indexOf(inicio);
+  const b = html.indexOf(fin);
+  if (a !== -1 && b !== -1 && b > a) {
+    return html.slice(0, a) + marcado + html.slice(b + fin.length);
+  }
+  const i = html.indexOf(ancla);
+  if (i === -1) return null;
+  const j = i + ancla.length;
+  return html.slice(0, j) + '\n\n    ' + marcado + html.slice(j);
+}
+
+// El banner de en medio no tiene un ancla fija: se cuenta cuantos bloques de
+// nivel superior (parrafos, encabezados, listas...) tiene el cuerpo del post
+// y se inserta despues del que cae a mitad. Solo se recalcula la posicion la
+// PRIMERA vez — con los marcadores ya puestos, una relectura los reemplaza
+// en su sitio en vez de volver a contar (que ahora contaria tambien el
+// banner ya insertado y lo iria desplazando en cada build).
+const CIERRES_DE_BLOQUE = /<\/(p|h2|h3|h4|ul|ol|blockquote|figure|table|pre)>/gi;
+
+function inyectarMedio(html, bloque, inicio, fin) {
+  const marcado = inicio + '\n      ' + bloque + '\n      ' + fin;
+  const a = html.indexOf(inicio);
+  const b = html.indexOf(fin);
+  if (a !== -1 && b !== -1 && b > a) {
+    return html.slice(0, a) + marcado + html.slice(b + fin.length);
+  }
+  const inicioCuerpo = html.indexOf(ANCLA_BODY);
+  const finCuerpo = html.indexOf(ANCLA_POST);
+  if (inicioCuerpo === -1 || finCuerpo === -1 || finCuerpo <= inicioCuerpo) return null;
+  const cuerpo = html.slice(inicioCuerpo, finCuerpo);
+  const cierres = [...cuerpo.matchAll(CIERRES_DE_BLOQUE)];
+  if (cierres.length < 4) return null; // texto corto: no se parte en dos
+  const elegido = cierres[Math.floor(cierres.length / 2)];
+  const posAbs = inicioCuerpo + elegido.index + elegido[0].length;
+  return html.slice(0, posAbs) + '\n\n      ' + marcado + '\n\n      ' + html.slice(posAbs);
 }
 
 async function main() {
@@ -166,9 +269,24 @@ async function main() {
     }
 
     const relacionados = detectarTerminos(cuerpoDe(html), terminos, max, []);
-    const bloque = [bloqueTerminos(relacionados), bloqueCta(MAPA, producto)].filter(Boolean).join('\n\n    ');
-    const nuevo = inyectar(html, bloque, ANCLA_POST);
+    const banner = bloqueBanner(MAPA, producto);
+
+    // Final: delante de post__foot, junto con los terminos relacionados —
+    // mismo sitio que ocupaba antes el CTA suelto, ahora con la tarjeta.
+    const bloque = [bloqueTerminos(relacionados), banner].filter(Boolean).join('\n\n    ');
+    let nuevo = inyectar(html, bloque, ANCLA_POST);
     if (nuevo === null) { saltados++; continue; }
+
+    // Arriba: justo detras del header, antes de la portada y del cuerpo.
+    const conArriba = inyectarDespues(nuevo, banner, ANCLA_HEADER, BANNER_ARRIBA.inicio, BANNER_ARRIBA.fin);
+    if (conArriba === null) aviso('no encuentro </header> para el banner de arriba en ' + e.name);
+    else nuevo = conArriba;
+
+    // Medio: a mitad del cuerpo, contando bloques de nivel superior.
+    const conMedio = inyectarMedio(nuevo, banner, BANNER_MEDIO.inicio, BANNER_MEDIO.fin);
+    if (conMedio === null) aviso('texto demasiado corto para el banner de en medio en ' + e.name);
+    else nuevo = conMedio;
+
     if (nuevo !== html) await fs.writeFile(file, nuevo, 'utf8');
     posts++;
   }
@@ -204,6 +322,7 @@ async function main() {
   }
 
   console.log('  Enlazado: ' + posts + ' posts y ' + fichas + ' fichas de glosario');
+  console.log('  Banner de producto: 3 por post (arriba, en medio y al final) en ' + posts + ' posts');
   if (saltados) console.log('  ' + saltados + ' ficheros de /blog sin ancla (indices y paginado): saltados');
   for (const a of avisos) console.log('  aviso: ' + a);
 }

@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>IA en registros · fuente del vídeo — Solved DS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="/ds/tokens.css"/>
+<link rel="stylesheet" href="/ds/aiband.css"/>
+<style>
+/* =========================================================
+   FUENTE DEL VÍDEO DE REGISTROS — no es una página del sitio
+
+   Hermana de ia.banda.reel.html, con los tres casos que pidió el cliente para
+   /auditorias/ (7 sep 2026): el parte que se convierte en plantilla, el cambio
+   estructural pedido en lenguaje natural, y la consulta sobre el contenido de
+   los registros que acaba en un informe de trazabilidad. El mecanismo —el reloj,
+   la barra fija, la cartela— es el mismo fichero copiado: si se toca allí, se
+   toca aquí.
+
+   Se graba con `npm run render:registros`.
+   Un solo fotograma con la banda dentro, sin encabezado y sin leyenda: lo que
+   se graba es el producto contestando, y el titular lo pone la landing donde
+   se inserte el vídeo. El ancho es fijo —1400px, que es el que suponen las
+   posiciones de las piezas— y el alto lo pone la ventana del render, para que
+   el encuadre sea exactamente el que se ve al abrir la página.
+
+   POR QUÉ ESTA PÁGINA EXISTE APARTE
+   El componente de /guidelines/ia.banda.html se mueve con el reloj del
+   navegador —transiciones y keyframes—, y eso no se puede fotografiar
+   fotograma a fotograma: cada captura caería en un instante distinto del que
+   toca. Aquí no hay ni una animación de CSS. Todo lo pinta `pintar(t)` a
+   partir del milisegundo que se le pasa, así que el fotograma 137 es siempre
+   el mismo. Es lo que permite grabar sin depender de la velocidad de la
+   máquina.
+
+   LA BARRA NO SE VA NUNCA
+   En la versión web cada turno entra y sale entero. Aquí la barra se queda
+   puesta y lo único que cambia es lo que hay dentro y alrededor. No es un
+   capricho: el vídeo va a ir en bucle, y para que la vuelta no dé un salto el
+   último fotograma tiene que ser igual que el primero. Con la barra fija, los
+   dos son la barra vacía.
+
+   ========================================================= */
+html,body{margin:0;height:100%;background:#111214}
+.reel{width:1400px;height:100vh;position:relative;overflow:hidden}
+.reel .aiband{position:absolute;inset:0}
+.reel .aiband__inner{min-height:100%;padding:0;display:grid;place-items:center;border:0}
+
+/* Ni una animación ni una transición: el tiempo lo lleva el script. */
+.reel .aiband,.reel .aiband *{animation:none!important;transition:none!important}
+
+/* La banda se ve a 1400px pero el vídeo se insertará a ~1200: el cuerpo sube
+   un escalón para que la pregunta siga siendo lo primero que se lee. */
+.reel .aiband__stage{width:700px}
+.reel .aiband__bar{padding:18px 18px 18px 20px;border-radius:14px}
+.reel .aiband__spark{width:34px;height:34px;border-radius:10px}
+.reel .aiband__spark svg{width:19px;height:19px}
+.reel .aiband__send{width:40px;height:40px;border-radius:11px}
+.reel .aiband__send svg{width:20px;height:20px}
+.reel .aiband__text{font-size:24px;min-height:2.6em}
+.reel .aiband__caret{width:2px}
+.reel .aiband__reply{margin-top:20px;min-height:116px}
+.reel .aiband__answer p{font-size:17px;max-width:46ch}
+.reel .aiband__aiico{width:30px;height:30px}
+.reel .aiband__aiico svg{width:17px;height:17px}
+.reel .aiband__status{font-size:14px}
+.reel .aiband__card{--w:268px;padding:12px 13px;border-radius:12px}
+.reel .aiband__code{font-size:12px}
+.reel .aiband__desc{font-size:13px}
+.reel .aiband__meta{font-size:11.5px}
+.reel .aiband__row{font-size:12.5px;padding:6px 0}
+.reel .aiband__task{font-size:12.5px;padding:7px 0}
+.reel .aiband__chart{height:76px}
+.reel .aiband__xaxis{font-size:10px}
+.reel .aiband__clegend{font-size:11px;gap:11px}
+.reel .aiband__sq{font-size:17px}
+.reel .aiband__act{font-size:14px;padding:8px 14px}
+.reel .aiband__ava{width:20px;height:20px}
+.reel .aiband__endmark img{height:44px}
+.reel .aiband__endai{font-size:34px}
+.reel .aiband__endai svg{width:27px;height:27px}
+.reel .aiband__endbar{height:30px}
+.reel .aiband__endt{font-size:34px}
+.reel .aiband__endu{font-size:16px;margin-top:24px}
+.reel .aiband__chip{font-size:12.5px;padding:7px 12px}
+.reel .aiband__tag{font-size:11px}
+.reel .aiband__thumb{width:30px;height:30px}
+
+/* — LA ZONA DE SOLTAR —
+   Atrezo del vídeo, no un componente del sitio: por eso vive aquí y no en
+   ds/aiband.css, que la cargan once páginas de producción. Es el gesto que
+   todo el mundo reconoce —el recuadro de puntos, «suelta aquí», el fichero
+   cayendo y la barra llenándose— y su única función es que se entienda de
+   dónde sale la plantilla. Los tres logotipos van desde el primer fotograma. */
+.suelta{
+  width:286px; padding:18px 16px 16px;
+  border:1.5px dashed #3A4048; border-radius:14px;
+  background:rgba(27,32,38,.72);
+  text-align:center;
+  transition:none;
+}
+.suelta[data-encima]{ border-color:#A855F7; border-style:solid; background:rgba(168,85,247,.10) }
+.suelta__logos{ display:flex; justify-content:center; gap:10px; margin-bottom:11px }
+.suelta__logos svg{ width:30px; height:30px }
+.suelta__t{ margin:0; font:var(--font-weight-regular) 14px/1.3 var(--font-sans); color:#E7E9EC }
+.suelta__u{ margin:4px 0 0; font:var(--font-weight-thin) 12px/1.3 var(--font-sans); color:rgba(231,233,236,.52) }
+.suelta__fich{
+  display:flex; align-items:center; gap:8px;
+  margin-top:13px; padding:8px 10px;
+  background:#20262D; border:1px solid #333A42; border-radius:10px;
+  font:var(--font-weight-thin) 12px/1.2 var(--font-sans); color:#E7E9EC;
+  text-align:left;
+}
+.suelta__fich svg{ width:18px; height:18px; flex:none }
+.suelta__fich span:first-of-type{ flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+.suelta__pct{ color:rgba(231,233,236,.55); font-variant-numeric:tabular-nums }
+.suelta__pista{ margin-top:9px; height:4px; border-radius:3px; background:#2A3038; overflow:hidden }
+.suelta__pista i{ display:block; height:100%; width:0; border-radius:3px; background:var(--module-ia,#A855F7) }
+
+/* Los grupos de turno: aquí sólo agrupan: quién se ve lo decide el script. */
+.reel__t{position:absolute;inset:0;pointer-events:none}
+.reel__t .aiband__art{position:absolute;left:50%;top:50%}
+</style>
+</head>
+<body>
+
+<div class="reel" id="reel">
+  <div class="aiband is-live" data-reel>
+    <span class="aiband__glow" id="glow"></span>
+    <span class="aiband__grid"></span>
+
+    <!-- El vídeo viaja solo —una landing, LinkedIn, un correo—, así que lleva
+         el logotipo. Va en versión clara: el de tinta negra desaparece sobre
+         grafito. -->
+    <img class="aiband__brand" src="/assets/logotipo-solved-claro.webp" alt="" width="105" height="24" decoding="async">
+
+    <div class="aiband__inner">
+      <div class="aiband__stage">
+
+        <!-- LA BARRA, que no se va nunca -->
+        <div class="aiband__bar">
+          <span class="aiband__spark">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg>
+          </span>
+          <div class="aiband__text"><span><span class="aiband__ph" id="ph">Pide una plantilla, un cambio o un informe de registros…</span><span class="aiband__q" id="q"></span><span class="aiband__caret" id="caret"></span></span></div>
+          <span class="aiband__send" id="send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="aiband__reply" id="reply"></div>
+
+        <!-- TURNO 1 — El parte que ya existe se convierte en plantilla.
+             Es la función «importación automática de plantillas» de /ia/, y los
+             tipos de control que salen (Número, Seleccionable, Archivos, Firma)
+             son los del producto. El documento de entrada es el mismo que
+             enseñaba la banda de /auditorias/: el Excel de las cámaras. -->
+        <div class="reel__t" data-q="Convierte este parte de control en una plantilla de registro"
+             data-status="Leyendo el documento y estructurando la plantilla">
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>Hecha la plantilla <span class="aiband__ref">Control de temperatura de cámaras</span> con
+            <span class="aiband__em">3 secciones y 14 controles</span>, cada uno con su tipo y sus valores
+            admitidos. Queda pendiente de frecuencia y planta.</p>
+          </div>
+
+          <!-- LA ZONA DE SOLTAR. Se ve desde el primer fotograma del turno
+               (`data-fase="pronto"`), con los tres logotipos puestos: lo primero
+               que tiene que quedar claro es qué formatos entran. El fichero cae
+               dentro mientras la barra se llena, entre el envío y la respuesta.
+               Los logos son el mismo SVG que usaba la banda de /auditorias/. -->
+          <div class="aiband__art" data-fase="pronto" style="--x:-528px;--y:-10px;--r:-1.5deg">
+            <div class="suelta" data-suelta>
+              <span class="suelta__logos">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.6" fill="#107C41"></rect><path d="M8.1 8.6h2.15l1.62 2.6 1.63-2.6H15.7l-2.6 3.85 2.7 3.95h-2.2l-1.72-2.7-1.72 2.7H7.98l2.7-3.95z" fill="#fff"></path></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.6" fill="#D6272A"></rect><text x="12" y="15.4" text-anchor="middle" font-family="Geist, Helvetica, Arial, sans-serif" font-size="7.4" font-weight="600" fill="#fff" letter-spacing=".2">PDF</text></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.6" fill="#185ABD"></rect><text x="12" y="15.8" text-anchor="middle" font-family="Geist, Helvetica, Arial, sans-serif" font-size="9.4" font-weight="600" fill="#fff">W</text></svg>
+              </span>
+              <p class="suelta__t">Suelta aquí el parte de control</p>
+              <p class="suelta__u">Excel, PDF o Word</p>
+
+              <!-- El fichero que cae: entra por arriba mientras sube. -->
+              <div class="suelta__fich" data-cae>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.6" fill="#107C41"></rect><path d="M8.1 8.6h2.15l1.62 2.6 1.63-2.6H15.7l-2.6 3.85 2.7 3.95h-2.2l-1.72-2.7-1.72 2.7H7.98l2.7-3.95z" fill="#fff"></path></svg>
+                <span>control-camaras.xlsx</span>
+                <span class="suelta__pct" data-pct>0 %</span>
+              </div>
+              <div class="suelta__pista"><i data-progreso></i></div>
+            </div>
+          </div>
+
+          <div class="aiband__art" style="--x:488px;--y:-40px;--r:2.5deg">
+            <div class="aiband__card" style="--w:268px">
+              <div class="aiband__code">Plantilla de registro</div>
+              <div class="aiband__desc">Control de temperatura de cámaras</div>
+              <div class="aiband__row"><span>Temperatura cámara 3</span><span class="aiband__tag aiband__tag--tipo">Número</span></div>
+              <div class="aiband__row"><span>Estado de la junta</span><span class="aiband__tag aiband__tag--tipo">Seleccionable</span></div>
+              <div class="aiband__row"><span>Evidencia</span><span class="aiband__tag aiband__tag--tipo">Archivos</span></div>
+            </div>
+          </div>
+
+          <div class="aiband__art" style="--x:480px;--y:104px;--r:-2deg">
+            <span class="aiband__chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12l5 5L20 7"/></svg>
+              Pendiente de frecuencia y planta
+            </span>
+          </div>
+        </div>
+
+        <!-- TURNO 2 — El cambio estructural. No es rellenar un registro: es
+             tocar la plantilla —una sección nueva, sus controles y una firma— y
+             que la versión anterior quede guardada, que es como funciona el
+             historial de versiones del producto. -->
+        <div class="reel__t" data-q="Añade una sección de limpieza con tres controles y la firma del responsable"
+             data-status="Modificando la estructura de la plantilla">
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>Añadida la sección <span class="aiband__em">Limpieza de línea</span> con producto, dosis y
+            tiempo de contacto, y la firma del responsable al cierre. El resto de la plantilla no se toca y la
+            versión anterior queda guardada.</p>
+          </div>
+
+          <div class="aiband__art" style="--x:-494px;--y:-40px;--r:-2.5deg">
+            <div class="aiband__card" style="--w:266px">
+              <div class="aiband__code">Sección nueva · Limpieza de línea</div>
+              <div class="aiband__row"><span>Producto utilizado</span><span class="aiband__tag aiband__tag--tipo">Seleccionable</span></div>
+              <div class="aiband__row"><span>Dosis aplicada</span><span class="aiband__tag aiband__tag--tipo">Número</span></div>
+              <div class="aiband__row"><span>Tiempo de contacto</span><span class="aiband__tag aiband__tag--tipo">Número</span></div>
+              <div class="aiband__row"><span>Responsable</span><span class="aiband__tag aiband__tag--tipo">Firma</span></div>
+            </div>
+          </div>
+
+          <div class="aiband__art" style="--x:486px;--y:-46px;--r:3deg">
+            <span class="aiband__chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="8.5"/></svg>
+              4 secciones · 18 controles
+            </span>
+          </div>
+
+          <div class="aiband__art" style="--x:490px;--y:92px;--r:-2deg">
+            <div class="aiband__card" style="--w:246px">
+              <div class="aiband__code">Historial de versiones</div>
+              <div class="aiband__row"><span>v2 · hoy</span><span class="aiband__tag aiband__tag--ok">Vigente</span></div>
+              <div class="aiband__row"><span>v1 · 12/06</span><span class="aiband__tag aiband__tag--tipo">Guardada</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TURNO 3 — La consulta sobre el contenido de los registros y el
+             informe de trazabilidad. El dato es el de esta misma página: la
+             cámara 3 y sus dos KO del 12 y el 19 de junio, los mismos que ya
+             salen en el histórico del registro 26_158. -->
+        <div class="reel__t" data-q="¿Qué lotes se envasaron con la cámara 3 fuera de rango en junio?"
+             data-status="Cruzando los registros de junio con los lotes envasados">
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>La cámara 3 salió fuera de límite <span class="aiband__em">dos días</span> —12 y 19 de junio— y en
+            esas franjas se envasaron <span class="aiband__em">6 lotes</span>. Tienes el informe de trazabilidad
+            con cada registro, su evidencia y quién lo firmó.</p>
+          </div>
+
+          <div class="aiband__art" style="--x:-496px;--y:-38px;--r:-2.5deg">
+            <div class="aiband__card" style="--w:258px">
+              <div class="aiband__code">Temperatura cámara 3 · junio</div>
+              <div class="aiband__row"><span>12/06 · 08:40</span><span class="aiband__tag aiband__tag--ko">8,2 °C</span></div>
+              <div class="aiband__row"><span>19/06 · 08:35</span><span class="aiband__tag aiband__tag--ko">7,9 °C</span></div>
+              <div class="aiband__row"><span>Resto del mes</span><span class="aiband__tag aiband__tag--ok">En rango</span></div>
+            </div>
+          </div>
+
+          <div class="aiband__art" style="--x:-480px;--y:108px;--r:2deg">
+            <span class="aiband__chip">
+              <span class="aiband__user"><img class="aiband__ava" src="/assets/ia/avatar-ana.webp" alt="" width="18" height="18" decoding="async"> Firmado por Javier</span>
+            </span>
+          </div>
+
+          <div class="aiband__art" style="--x:490px;--y:-30px;--r:2.5deg">
+            <div class="aiband__card" style="--w:272px">
+              <div class="aiband__code">Informe de trazabilidad · 6 lotes</div>
+              <div class="aiband__row"><span>L-2606-14 · 12/06</span><span class="aiband__tag aiband__tag--tipo">Con evidencia</span></div>
+              <div class="aiband__row"><span>L-2606-15 · 12/06</span><span class="aiband__tag aiband__tag--tipo">Con evidencia</span></div>
+              <div class="aiband__row"><span>L-2619-03 · 19/06</span><span class="aiband__tag aiband__tag--tipo">Con evidencia</span></div>
+            </div>
+          </div>
+
+          <div class="aiband__art" style="--x:482px;--y:108px;--r:-3deg">
+            <span class="aiband__chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h4"/></svg>
+              Informe listo para exportar
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LA CARTELA. Va al final y se va antes de que el bucle vuelva a
+           empezar: los últimos fotogramas son otra vez la barra vacía. La frase
+           sale del diálogo de IA de la home, no es un eslogan nuevo. -->
+      <div class="aiband__end" id="cartela">
+        <div class="aiband__endmark">
+          <img src="/assets/logotipo-solved-claro.webp" alt="" width="167" height="38" decoding="async">
+          <span class="aiband__endbar"></span>
+          <span class="aiband__endai">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <linearGradient id="reelStar" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#A855F7"/><stop offset=".52" stop-color="#D34F9D"/><stop offset="1" stop-color="#1FD6F5"/>
+              </linearGradient>
+              <path fill="url(#reelStar)" d="M12 1.4c.62 5.62 4.56 9.56 10.18 10.18v.84c-5.62.62-9.56 4.56-10.18 10.18h-.84C10.54 17 6.6 13.04.98 12.42v-.84C6.6 10.96 10.54 7.02 11.16 1.4z"/>
+            </svg>
+            AI
+          </span>
+        </div>
+        <p class="aiband__endt">La plataforma que potencia<br><span>tus operaciones industriales con IA</span></p>
+        <p class="aiband__endu">trysolved.com</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   EL RELOJ DEL VÍDEO
+   `pintar(t)` deja la página exactamente como tiene que estar en el
+   milisegundo t. No hay estado acumulado: se puede llamar en cualquier orden y
+   sale siempre lo mismo, que es la condición para grabar fotograma a fotograma.
+
+   El compás va por turno y depende de lo que se tarde en teclear la pregunta,
+   así que los turnos no duran lo mismo. Se calcula al cargar y el total queda
+   en `window.DURACION`, que es lo que lee el script de render.
+   ========================================================= */
+(() => {
+  'use strict';
+
+  const TECLA = 26;      // ms por carácter
+  const POSAR = 360;     // el dedo, antes de mandar
+  const BUSCA = 1000;    // «buscando en…»
+  const ENTRA = 320;     // la respuesta apareciendo
+  const LEER  = 3000;    // la respuesta, quieta
+  const SALIR = 380;     // todo yéndose
+
+  const q      = document.getElementById('q');
+  const ph     = document.getElementById('ph');
+  const caret  = document.getElementById('caret');
+  const send   = document.getElementById('send');
+  const reply  = document.getElementById('reply');
+  const glow   = document.getElementById('glow');
+  const grupos = [...document.querySelectorAll('.reel__t')];
+
+  /* La línea de estado se construye una vez por turno y vive en el hueco de la
+     respuesta: las dos comparten celda, como en el componente. */
+  const estados = grupos.map((g) => {
+    const d = document.createElement('div');
+    d.className = 'aiband__status';
+    d.innerHTML = g.dataset.status + ' <span class="aiband__dots"><i></i><i></i><i></i></span>';
+    reply.appendChild(d);
+    return d;
+  });
+  const respuestas = grupos.map((g) => reply.appendChild(g.querySelector('.aiband__answer')));
+
+  /* La propuesta vive en la misma celda que el estado y la respuesta: los tres
+     se relevan en el mismo sitio, que es lo que evita que la banda se mueva. */
+  const sugerencias = grupos.map((g) => {
+    const sug = g.querySelector('.aiband__suggest');
+    return sug ? reply.appendChild(sug) : null;
+  });
+  const botones = sugerencias.map((sug) => sug && sug.querySelector('.aiband__act--si'));
+
+  const turnos = grupos.map((g, i) => {
+    /* En el turno de propuesta no se teclea nada: la fase previa dura lo que se
+       tarda en leer lo que Solved propone, y eso se declara en el marcado. */
+    const propuesta = g.dataset.tipo === 'propuesta';
+    const texto = g.dataset.q || '';
+    const teclear = propuesta ? Number(g.dataset.espera || 2400) : texto.length * TECLA;
+    return {
+      texto, teclear, propuesta, i,
+      artes: [...g.querySelectorAll('.aiband__art')],
+      dur: teclear + POSAR + BUSCA + ENTRA + LEER + SALIR
+    };
+  });
+
+  /* La cartela CIERRA el vídeo: entra y se queda hasta el último fotograma.
+     No se va al final a propósito — con la barra vacía detrás, el vídeo acababa
+     en un fotograma de chat en blanco, que es el que se ve al pararse.
+
+     Y entra un poco ANTES de que acabe el último turno (CART_ADELANTO), solapada
+     con su salida: si esperara a que el turno terminara del todo, entre la
+     última respuesta y la cartela habría otro medio segundo de barra vacía.
+
+     El precio es que el bucle ya no cierra por fotograma: al volver a empezar se
+     pasa de la cartela a la barra. Por eso el arranque lleva un fundido corto
+     (ARRANQUE), que convierte el corte en una entrada. */
+  const CARTELA = 3400, CART_ENTRA = 520, CART_ADELANTO = 320, ARRANQUE = 320;
+  const cartela = document.getElementById('cartela');
+  const escenario = document.querySelector('.aiband__stage');
+  const marca = document.querySelector('.aiband__brand');
+
+  const TURNOS_MS = turnos.reduce((s, t) => s + t.dur, 0);
+  const CART_INICIO = TURNOS_MS - CART_ADELANTO;
+  const TOTAL = TURNOS_MS + CARTELA;
+  window.DURACION = TOTAL;
+
+  const recorta = (v) => v < 0 ? 0 : v > 1 ? 1 : v;
+  const suave   = (v) => 1 - Math.pow(1 - recorta(v), 3);   // easeOutCubic
+
+  window.pintar = (t) => {
+    t = ((t % TOTAL) + TOTAL) % TOTAL;
+
+    /* — La cartela —
+       Mientras está puesta, el escenario y el logotipo de la esquina se apartan:
+       el logotipo grande de la cartela ya dice la marca, y dos logotipos a la
+       vez serían dos. */
+    const tc = t - CART_INICIO;
+    const cartelaOp = tc > 0 ? suave(tc / CART_ENTRA) : 0;
+    cartela.style.opacity = cartelaOp;
+    escenario.style.opacity = Math.min(suave(t / ARRANQUE), 1 - cartelaOp);
+    if (marca) marca.style.opacity = Math.min(1, 1 - cartelaOp);
+
+    // Pasado el último turno, el escenario se congela en su último instante:
+    // ya está debajo de la cartela y no tiene nada más que contar.
+    if (t >= TURNOS_MS) t = TURNOS_MS - 1;
+
+    // El resplandor va con el reloj global, no con el del turno: si se
+    // reiniciara en cada pregunta, la vuelta del bucle daría un tirón.
+    const f = t / 26000 * Math.PI * 2;
+    glow.style.transform =
+      'translate3d(' + (Math.sin(f) * 2.5) + '%,' + (Math.cos(f * .8) * 1.5) + '%,0) scale(' + (1.04 + Math.sin(f) * .04) + ')';
+
+    let i = 0, local = t;
+    while (local >= turnos[i].dur) { local -= turnos[i].dur; i++; }
+    const T = turnos[i];
+
+    const tPosar  = T.teclear;
+    const tBuscar = tPosar + POSAR;
+    const tEntrar = tBuscar + BUSCA;
+    const tLeer   = tEntrar + ENTRA;
+    const tSalir  = tLeer + LEER;
+
+    // — La pregunta —
+    const yendose = suave((local - tSalir) / SALIR);
+
+    /* El placeholder sólo existe en el turno de propuesta, y se va con el resto
+       al final: si se quedara puesto, el último fotograma no coincidiría con el
+       primero y la vuelta del bucle daría un salto. Fuera de ese turno va con
+       display:none y no sólo transparente, porque si no ocuparía su ancho y
+       empujaría la pregunta a la derecha. */
+    ph.style.display = T.propuesta ? '' : 'none';
+    ph.style.opacity = T.propuesta ? 1 - yendose : 0;
+
+    if (T.propuesta) {
+      q.textContent = '';
+      caret.style.opacity = 0;
+    } else {
+      const letras = Math.min(T.texto.length, Math.floor(local / TECLA));
+      q.textContent = local < tSalir ? T.texto.slice(0, letras) : T.texto;
+      q.style.opacity = local < tSalir ? 1 : 1 - yendose;
+
+      // El cursor no parpadea mientras se escribe: parpadear y escribir a la vez
+      // es ruido. Parpadea sólo en el respiro previo al envío.
+      const escribiendo = local < tPosar;
+      const vivo = local < tBuscar;
+      caret.style.opacity = !vivo ? 0 : escribiendo ? 1 : ((local % 1100) < 550 ? 1 : 0);
+    }
+
+    // — El envío —
+    // En la propuesta la barra está en reposo: lo que se acepta es el botón, y
+    // por eso el botón de enviar no se enciende.
+    const mandado = !T.propuesta && local >= tBuscar && local < tSalir;
+    send.style.background = mandado ? 'var(--module-ia)' : 'rgba(168,85,247,.16)';
+    send.style.color      = mandado ? '#fff' : '#C88BFA';
+
+    // — Propuesta, estado y respuesta —
+    grupos.forEach((g, n) => {
+      const suyo = n === i;
+
+      const sug = sugerencias[n];
+      if (sug) {
+        const abre  = suave(local / 300);
+        const cierra = suave((local - (tBuscar - 120)) / 240);
+        sug.style.opacity = suyo ? abre * (1 - cierra) : 0;
+        const boton = botones[n];
+        if (boton) {
+          const aceptado = suyo && local >= tPosar + POSAR * .6;
+          boton.style.background  = aceptado ? 'var(--module-ia)' : 'rgba(168,85,247,.16)';
+          boton.style.color       = aceptado ? '#fff' : '#C88BFA';
+          boton.style.borderColor = aceptado ? 'transparent' : 'rgba(168,85,247,.34)';
+        }
+      }
+
+      estados[n].style.opacity = suyo ? (local >= tBuscar && local < tEntrar ? 1 : 0) : 0;
+      const r = respuestas[n];
+      const entra = suave((local - tEntrar) / ENTRA);
+      const sale  = suave((local - tSalir) / SALIR);
+      const o = suyo ? entra * (1 - sale) : 0;
+      r.style.opacity = o;
+      r.style.translate = '0 ' + ((1 - entra) * 6) + 'px';
+
+      T.artes; // (las piezas se pintan abajo, sólo las del turno en curso)
+      /* — La subida del documento —
+         Ocupa la ventana entre el envío y la respuesta: el fichero cae dentro
+         del recuadro, el recuadro se enciende y la barra se llena. Es lo único
+         de este reel que no está en el de /ia/, y por eso vive aquí. */
+      const subiendo = suyo ? recorta((local - tBuscar) / (tEntrar - tBuscar)) : 0;
+      g.querySelectorAll('[data-suelta]').forEach((z) => {
+        if (subiendo > 0 && subiendo < 1) z.setAttribute('data-encima', '');
+        else z.removeAttribute('data-encima');
+      });
+      g.querySelectorAll('[data-progreso]').forEach((b) => {
+        b.style.width = (subiendo * 100).toFixed(1) + '%';
+      });
+      g.querySelectorAll('[data-pct]').forEach((n) => {
+        n.textContent = Math.round(subiendo * 100) + ' %';
+      });
+      g.querySelectorAll('[data-cae]').forEach((f) => {
+        // Antes de soltarlo no está; cae de golpe y se queda.
+        const cae = suave(subiendo * 3);
+        f.style.opacity = cae;
+        f.style.translate = '0 ' + ((1 - cae) * -16).toFixed(1) + 'px';
+      });
+
+      g.querySelectorAll('.aiband__art').forEach((a, k) => {
+        /* `data-fase="pronto"` entra con el turno y no con la respuesta: la zona
+           de soltar tiene que estar puesta ANTES de que se mande la pregunta,
+           que es el orden en que pasan las cosas. */
+        const pronto = a.dataset.fase === 'pronto';
+        const retardo = pronto ? 0 : 100 + k * 120;
+        const e = suyo ? suave((local - (pronto ? 0 : tEntrar) - retardo) / ENTRA) : 0;
+        const s = suyo ? sale : 1;
+        a.style.opacity = e * (1 - s);
+        // La flotación va con el reloj global y con la fase de la pieza, para
+        // que dos tarjetas vecinas no suban a la vez.
+        const flota = Math.sin(t / 3400 * Math.PI * 2 + k * 1.9) * 3;
+        const x = a.style.getPropertyValue('--x'), y = a.style.getPropertyValue('--y');
+        a.style.translate = 'calc(-50% + ' + x + ') calc(-50% + ' + y + ' + ' + flota.toFixed(2) + 'px)';
+        a.style.scale = (.95 + .05 * e);
+      });
+    });
+  };
+
+  /* El render no dispara hasta que la tipografía esté cargada: con la fuente de
+     reserva puesta, el primer fotograma saldría con otra letra y otro ancho. */
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
+    window.pintar(0);
+    window.reelListo = true;
+  });
+})();
+</script>
+</body>
+</html>

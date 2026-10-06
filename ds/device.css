@@ -1,0 +1,238 @@
+/* =========================================================
+   Solved Design System — MARCOS DE DISPOSITIVO
+   iPhone · iPad · ventana de navegador, para el fragmento de una escena.
+
+   CUÁNDO SE USA, que es lo único delicado: la regla del fragmento dice "sin
+   cromo de navegador", y su única excepción es el marco de dispositivo cuando
+   lo que se enseña ES la app en ese aparato, porque ahí el aparato forma parte
+   del argumento. Un iPhone en la tarjeta de "reportar desde planta" argumenta;
+   un iPhone en la de KPIs sólo decora, y entonces sobra.
+
+     iPhone  → el operario reporta de pie, delante de la máquina
+     iPad    → la tablet de línea, la ronda de calidad firmada in situ
+     navegador → el escritorio de calidad o dirección: informes, análisis.
+                  En escritorio no se enseña el ordenador, se enseña la
+                  ventana: el aparato no argumenta nada, la ventana sí.
+
+   Lo que NO llevan nunca: pestañas, marcadores, extensiones, botones de atrás
+   y adelante, semáforo de colores de macOS ni sombra de ventana. El marco es
+   el aparato o la ventana desnuda, nunca un navegador completo dentro.
+
+   Requiere ds/tokens.css. Se usa dentro de .scene__media (ds/scene.css), que
+   es quien pone la sombra y el recorte por el borde.
+
+     <div class="scene__media" data-crop="dev-br">
+       <div class="device" data-device="ipad">
+         <div class="device__screen"> …captura o maqueta… </div>
+       </div>
+     </div>
+   ========================================================= */
+
+/* La unidad de medida del aparato: 1cqw es el 1% del ancho de la caja que lo
+   contiene, y como el aparato la ocupa entera (width:100%), es el 1% de su
+   propio ancho. Así bisel, radio y muescas escalan solos, y el marco se ve
+   igual de bien en una tarjeta de 4 columnas que en una de 12.
+
+   El contenedor tiene que ser el PADRE, no el propio .device: una caja no
+   resuelve sus propias unidades de contenedor —el bisel y el radio de .device
+   se calcularían contra el viewport y saldría un marco deforme—. Dentro de una
+   escena el contenedor es .scene__media (ds/scene.css); fuera, .device-box. */
+.device-box{ container-type:inline-size }
+
+.device{
+  position:relative;
+  display:block;
+  width:100%;
+  /* solved.css (la hoja de la 2.0) tiene un `.device{min-height:280px}` de sus
+     filas de producto, que ya no usa ninguna página pero sigue cargado. En
+     escritorio no se nota —el aparato mide más—, pero en un teléfono el iPad
+     de la home mide 200px de alto natural y el mínimo lo estiraba a 280: la
+     pantalla se quedaba arriba y debajo asomaba un canto de 60px de carcasa,
+     como si el aparato tuviera otra proporción (15 sep 2026). El alto lo pone
+     SÓLO la proporción de la pantalla. */
+  min-height:0;
+  background:var(--device-shell);
+  padding:var(--device-bezel);
+  border-radius:var(--device-radius);
+}
+
+/* El ancho va explícito y el alto lo pone SÓLO la proporción del aparato. Si se
+   deja que el alto lo decida el contenido, y el contenido a su vez se mide
+   contra la pantalla, se monta una dependencia circular: Chrome la rompe por
+   donde quiere y el marco sale con la mitad de su tamaño. De ahí que el
+   contenido vaya posicionado en absoluto, fuera del cálculo. */
+.device__screen{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  aspect-ratio:var(--device-ar);
+  border-radius:var(--device-screen-radius);
+  background:var(--ds-surface);
+  /* PRECISIÓN — el resquicio de la esquina, comprobado y aislado el 30 sep
+     2026. El bisel de iPhone/iPad no es un color plano: es un
+     `linear-gradient`. Con `.device` sin `overflow:hidden`, Chrome pinta ese
+     degradado recortado a `border-radius` y la pantalla (blanca, redondeada
+     con su propio radio, más pequeña) encima; en la esquina donde las dos
+     curvas casi coinciden, el degradado se antialiasa peor que un color
+     plano y deja un filo de un píxel sin pintar — se ve el lienzo de la
+     escena (claro) asomando entre el bisel oscuro y la interfaz. Aislado
+     probando cada capa por separado con `javascript_tool`: un bisel de
+     color plano no lo hace, uno en degradado sí, y ni `overflow:hidden` en
+     `.device` ni forzar la esquina a máscara lo quitan — sólo desaparece
+     tapando el filo con un trazo sólido. Por eso el arreglo no es
+     geométrico, es un anillo de 1px del tono del bisel alrededor de la
+     pantalla, exactamente donde el resquicio aparece: `--device-seam-fix`
+     lo fija cada bisel en degradado (ninguno en el bisel plano del
+     navegador, que no lo necesita). */
+  box-shadow:0 0 0 1px var(--device-seam-fix,transparent);
+}
+/* Lo que se mete en la pantalla la rellena sin opinar sobre su tamaño. */
+.device__screen>*{ position:absolute; inset:0 }
+.device__screen>img,
+.device__screen>picture,
+.device__screen>video{ display:block; object-fit:cover; object-position:top left }
+
+/* ---------------------------------------------------------
+   iPhone
+   --------------------------------------------------------- */
+.device[data-device="iphone"]{
+  --device-ar:9/19.5;
+  --device-shell:linear-gradient(150deg,#2B3037 0%,#0D0F12 42%,#1A1E24 100%);
+  --device-bezel:3.1cqw;
+  --device-radius:13.5cqw;
+  --device-screen-radius:10.6cqw;
+  --device-seam-fix:#0D0F12;
+}
+/* Isla dinámica. Va sobre la pantalla, no dentro del bisel: es parte del
+   aparato y tiene que tapar contenido, como en el real. */
+.device[data-device="iphone"]::after{
+  content:"";
+  position:absolute;
+  top:5.4cqw; left:50%; translate:-50% 0;
+  width:26cqw; height:7.2cqw;
+  border-radius:999px;
+  background:#0A0B0D;
+  z-index:2;
+}
+/* Botones laterales, apenas insinuados: sin ellos el canto se lee como una
+   lámina de plástico. */
+.device[data-device="iphone"]::before{
+  content:"";
+  position:absolute;
+  left:-0.7cqw; top:24cqw;
+  width:0.8cqw; height:26cqw;
+  border-radius:999px;
+  background:linear-gradient(180deg,#3A4048 0 24%,transparent 24% 34%,#3A4048 34% 62%,transparent 62% 72%,#3A4048 72%);
+}
+
+/* ---------------------------------------------------------
+   iPad
+   --------------------------------------------------------- */
+.device[data-device="ipad"]{
+  --device-ar:4/3;
+  --device-shell:linear-gradient(150deg,#31363D 0%,#12151A 46%,#22262C 100%);
+  --device-bezel:3.4cqw;
+  --device-radius:5.4cqw;
+  --device-screen-radius:2.4cqw;
+  --device-seam-fix:#12151A;
+}
+/* BISEL FINO — `.device--fino`, a petición del cliente sobre la escena de
+   Registros de la home (30 sep 2026): el bisel de serie es el de un iPad
+   real y aquí pesaba más de lo que la tarjeta necesitaba. Mismo aparato,
+   bisel a un tercio (3.4cqw → 1cqw) y el radio ajustado para que la pantalla
+   se quede correctamente anidada dentro del marco (`--device-screen-radius`
+   = `--device-radius` − `--device-bezel`, 4.2 − 1 = 3.2cqw) en vez de que la
+   diferencia crezca al estrechar el bisel. */
+.device--fino[data-device="ipad"]{
+  --device-bezel:1cqw;
+  --device-radius:4.2cqw;
+  --device-screen-radius:3.2cqw;
+}
+/* Cámara en el lado largo: es donde la tienen los iPad desde 2021, y es el
+   detalle que distingue un iPad de un rectángulo negro con una pantalla. */
+.device[data-device="ipad"]::after{
+  content:"";
+  position:absolute;
+  top:50%; left:1.35cqw; translate:0 -50%;
+  width:0.75cqw; height:0.75cqw;
+  border-radius:50%;
+  background:#4A5057;
+}
+
+/* ---------------------------------------------------------
+   La capa de IA va sobre grafito, y ahí un marco negro desaparece: se le sube
+   el canto para que el aparato siga leyéndose contra el fondo oscuro.
+   --------------------------------------------------------- */
+.scene[data-module="ia"] .device{
+  --device-shell:linear-gradient(150deg,#4A5058 0%,#2A2E34 46%,#3A3F46 100%);
+  --device-seam-fix:#2A2E34;
+}
+.scene[data-module="ia"] .device__screen{ background:#1B2026 }
+
+@media (prefers-reduced-motion:reduce){
+  .device{ transition:none }
+}
+
+/* ---------------------------------------------------------
+   NAVEGADOR — el "aparato" del escritorio
+   En escritorio no se enseña el ordenador: se enseña la ventana. El portátil
+   no argumenta nada —nadie duda de que la app se abre en un PC— y encima
+   obliga a encoger la captura para que quepa la carcasa. La ventana sí dice
+   algo: que Solved es web, que se entra con una URL y sin instalar.
+
+   Ojo con lo que NO lleva, que es la parte que se degrada sola: ni pestañas,
+   ni barra de marcadores, ni extensiones, ni botones de atrás y adelante, ni
+   el semáforo de colores de macOS. Tres puntos neutros y la dirección. Todo lo
+   demás es cromo de navegador del que la regla del fragmento sigue hablando.
+   --------------------------------------------------------- */
+.device[data-device="navegador"]{
+  --device-ar:16/10;
+  --device-shell:#EDF1F6;
+  --device-bezel:0;
+  --device-radius:1.4cqw;
+  --device-screen-radius:0;
+  padding-top:4.6cqw;              /* la barra */
+  border:1px solid var(--color-hairline);
+  overflow:hidden;
+}
+.device[data-device="navegador"] .device__screen{
+  border-top:1px solid var(--color-hairline);
+}
+/* Los tres puntos: afordancia de ventana, no el semáforo de macOS. */
+.device[data-device="navegador"]::before{
+  content:"";
+  position:absolute;
+  top:2.3cqw; left:1.6cqw; translate:0 -50%;
+  width:4.4cqw; height:0.9cqw;
+  border-radius:999px;
+  background:
+    radial-gradient(circle at 0.45cqw 50%,#C3CBD5 0 0.45cqw,transparent 0.45cqw),
+    radial-gradient(circle at 2.2cqw 50%,#C3CBD5 0 0.45cqw,transparent 0.45cqw),
+    radial-gradient(circle at 3.95cqw 50%,#C3CBD5 0 0.45cqw,transparent 0.45cqw);
+}
+/* La dirección. El texto lo pone el autor con --device-url; sin ella queda la
+   píldora vacía, que también es honesto: mejor sin URL que con una inventada. */
+.device[data-device="navegador"]::after{
+  content:var(--device-url,"");
+  position:absolute;
+  top:2.3cqw; left:50%; translate:-50% -50%;
+  min-width:26cqw; max-width:52cqw;
+  padding:0.55cqw 2.2cqw;
+  border-radius:999px;
+  background:#FFFFFF;
+  border:1px solid #DFE5EC;
+  font:var(--font-weight-regular) 1.35cqw/1.5 var(--font-sans);
+  color:var(--color-ink-mute);
+  text-align:center;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.scene[data-module="ia"] .device[data-device="navegador"]{
+  --device-shell:#23262B;
+  border-color:#3C424A;
+}
+.scene[data-module="ia"] .device[data-device="navegador"] .device__screen{ border-top-color:#3C424A }
+.scene[data-module="ia"] .device[data-device="navegador"]::after{
+  background:#15181C; border-color:#3C424A; color:#8A929B;
+}

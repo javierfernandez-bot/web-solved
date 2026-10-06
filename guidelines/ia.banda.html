@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>Banda de IA — Solved DS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="/ds/tokens.css"/>
+<link rel="stylesheet" href="/ds/site.css"/>
+<link rel="stylesheet" href="/ds/aiband.css"/>
+<style>
+/* Sólo la página de guideline. El componente vive entero en ds/aiband.css: si
+   algo de aquí hiciera falta para que la banda se vea bien, estaría allí. */
+body{margin:0;background:var(--ds-surface);color:var(--ds-text)}
+.wrap{max-width:var(--container);margin-inline:auto;padding:64px 32px 40px}
+.wrap--pie{padding-block:56px 120px}
+h1{font:var(--type-display-lg);letter-spacing:var(--tracking-display-lg);margin:0 0 8px}
+.lede{font:var(--type-body-lg);color:var(--ds-text-2);max-width:64ch;margin:0 0 12px}
+h2{font:var(--type-heading-md);margin:48px 0 4px}
+.nota{font:var(--type-caption);letter-spacing:var(--tracking-caption);color:var(--ds-text-mute);max-width:76ch;margin:0 0 20px}
+.nota b{font-weight:var(--font-weight-medium)}
+code{font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;background:var(--color-canvas-soft);padding:1px 5px;border-radius:4px}
+pre{font-family:ui-monospace,SFMono-Regular,monospace;font-size:12px;line-height:1.55;background:var(--color-canvas-soft);
+  border:1px solid var(--color-hairline);border-radius:8px;padding:14px 16px;overflow-x:auto;max-width:76ch;margin:0 0 20px}
+ul.reglas{margin:0;padding-left:18px;max-width:76ch}
+ul.reglas li{font:var(--type-body-md);color:var(--ds-text-2);margin-bottom:8px}
+
+/* El encabezado de la banda, que en producción lo pone la página que la monta:
+   la banda no trae titular, para poder ir con el que haga falta. */
+.cab{position:relative;z-index:1;text-align:center;max-width:720px;margin:0 auto 56px}
+.cab__t{font:var(--type-display-xl);letter-spacing:var(--tracking-display-xl);margin:14px 0 10px;color:#fff}
+.cab__t span{color:#8A929B}
+.cab__p{font:var(--type-body-lg);color:#B9BEC6;margin:0;max-width:56ch;margin-inline:auto}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <h1>Banda de IA</h1>
+  <p class="lede">La capa de IA contada a escala de página: una barra de prompt sobre grafito, la pregunta que
+  se teclea sola y las piezas de la respuesta entrando alrededor. Cuatro turnos en bucle, uno por cada cosa
+  que la IA sabe hacer.</p>
+  <p class="nota">Componente en <code>ds/aiband.css</code> y <code>ds/aiband.js</code>. Es HTML, no un vídeo:
+  el texto es texto, pesa cero y se edita donde se lee. Si hace falta un MP4 para LinkedIn o para una demo
+  comercial, se graba de aquí — al revés no se puede.</p>
+</div>
+
+<!-- ================= LA BANDA =================
+     Va a sangre, sin .frame por fuera: la banda ES el fondo. Los datos son los
+     del tour de /incidencias/ — UTD26_163_001 es la fuga de aceite de la cinta
+     L3, la misma que sale en la home— y las cuatro preguntas son las cuatro
+     capacidades que ya declara el diálogo de IA de la home.
+     ============================================ -->
+<section class="aiband" aria-hidden="true">
+  <span class="aiband__glow"></span>
+  <span class="aiband__grid"></span>
+
+  <div class="frame frame--seam aiband__inner">
+
+    <div class="cab">
+      <span class="ds-badge ds-badge--ia">
+        <svg class="ds-badge__star" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <linearGradient id="iaBandStar" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#A855F7"/><stop offset=".52" stop-color="#D34F9D"/><stop offset="1" stop-color="#1FD6F5"/>
+          </linearGradient>
+          <path fill="url(#iaBandStar)" d="M12 1.4c.62 5.62 4.56 9.56 10.18 10.18v.84c-5.62.62-9.56 4.56-10.18 10.18h-.84C10.54 17 6.6 13.04.98 12.42v-.84C6.6 10.96 10.54 7.02 11.16 1.4z"/>
+        </svg>
+        AI POWERED
+      </span>
+      <h2 class="cab__t">Pregúntale a tus datos.<br><span>Contesta con el parte delante.</span></h2>
+      <p class="cab__p">La IA de Solved responde sobre tus incidencias, tus registros y tus documentos.
+      No es un chat al que hay que explicarle tu fábrica: ya la tiene delante.</p>
+    </div>
+
+    <div class="aiband__stage">
+
+      <!-- TURNO 1 — Responde citando los partes y los registros concretos -->
+      <div class="aiband__turn">
+        <div class="aiband__bar">
+          <span class="aiband__spark">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg>
+          </span>
+          <div class="aiband__text"><span><span class="aiband__q">¿Por qué se repite la fuga de la cinta L3?</span><span class="aiband__caret"></span></span></div>
+          <span class="aiband__send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="aiband__reply">
+          <div class="aiband__status">Buscando en incidencias, registros y documentos <span class="aiband__dots"><i></i><i></i><i></i></span></div>
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>He encontrado <span class="aiband__em">4 incidencias</span> en la cinta transportadora L3 desde marzo.
+            Tres se cerraron sustituyendo la junta —<span class="aiband__ref">UTD26_163_001</span>,
+            <span class="aiband__ref">UTD26_154_001</span>— y ninguna dejó acción preventiva abierta.</p>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:-460px;--y:-26px;--r:-3deg;--d:80ms">
+          <div class="aiband__card">
+            <div class="aiband__head">
+              <img class="aiband__thumb" src="/assets/tour/tour-fuga.webp" alt="" width="26" height="26" loading="lazy" decoding="async">
+              <div>
+                <div class="aiband__code">UTD26_163_001</div>
+                <div class="aiband__desc">Fuga de aceite en cinta transportadora L3</div>
+              </div>
+            </div>
+            <div class="aiband__meta"><span class="aiband__tag aiband__tag--media">Media</span> 26/06 · Javier</div>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:455px;--y:-44px;--r:2.5deg;--d:200ms">
+          <span class="aiband__chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h9"/></svg>
+            UTD26_154_001 · Cambiar el rodamiento
+          </span>
+        </div>
+
+        <div class="aiband__art" style="--x:455px;--y:112px;--r:3deg;--d:320ms">
+          <div class="aiband__card" style="--w:230px">
+            <div class="aiband__code">26_158 · Control de mantenimiento</div>
+            <div class="aiband__row"><span>12/06 · 08:40</span><span class="aiband__tag aiband__tag--ko">KO</span></div>
+            <div class="aiband__row"><span>19/06 · 08:35</span><span class="aiband__tag aiband__tag--ko">KO</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TURNO 2 — Cruza el histórico de un activo con sus controles KO -->
+      <div class="aiband__turn">
+        <div class="aiband__bar">
+          <span class="aiband__spark">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg>
+          </span>
+          <div class="aiband__text"><span><span class="aiband__q">¿Qué control salió KO antes de cada avería de la L3?</span><span class="aiband__caret"></span></span></div>
+          <span class="aiband__send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="aiband__reply">
+          <div class="aiband__status">Cruzando el histórico del activo con sus registros <span class="aiband__dots"><i></i><i></i><i></i></span></div>
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>El control de mantenimiento del registro <span class="aiband__ref">26_158</span> marcó
+            <span class="aiband__em">KO dos veces</span> en las dos semanas anteriores a la primera fuga.
+            Es el único control que se repite en KO en esa línea.</p>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:-462px;--y:-30px;--r:-2.5deg;--d:80ms">
+          <div class="aiband__card" style="--w:238px">
+            <div class="aiband__code">Cinta transportadora L3</div>
+            <div class="aiband__row"><span>Incidencias desde marzo</span><span class="aiband__em">4</span></div>
+            <div class="aiband__row"><span>Controles KO</span><span class="aiband__tag aiband__tag--ko">2</span></div>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:-450px;--y:118px;--r:2deg;--d:240ms">
+          <span class="aiband__chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.5l3.5 2"/></svg>
+            2 KO en 14 días
+          </span>
+        </div>
+
+        <div class="aiband__art" style="--x:460px;--y:30px;--r:3deg;--d:340ms">
+          <div class="aiband__card" style="--w:234px">
+            <div class="aiband__code">26_158 · Mantenimiento</div>
+            <div class="aiband__row"><span>Estado de la junta</span><span class="aiband__tag aiband__tag--ko">KO</span></div>
+            <div class="aiband__row"><span>Tensión de la cinta</span><span class="aiband__tag aiband__tag--ok">OK</span></div>
+            <div class="aiband__row"><span>Engrase del reductor</span><span class="aiband__tag aiband__tag--ok">OK</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TURNO 3 — Crea la incidencia desde un texto libre o un correo -->
+      <div class="aiband__turn">
+        <div class="aiband__bar">
+          <span class="aiband__spark">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg>
+          </span>
+          <div class="aiband__text"><span><span class="aiband__q">Abre la incidencia con el correo que ha mandado el turno de noche</span><span class="aiband__caret"></span></span></div>
+          <span class="aiband__send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="aiband__reply">
+          <div class="aiband__status">Leyendo el correo y abriendo el parte <span class="aiband__dots"><i></i><i></i><i></i></span></div>
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>Creada <span class="aiband__ref">UTD26_165_001</span> —«Ruido en el reductor de la L3»—, prioridad
+            Media y el correo dentro como evidencia. Se la he asignado a <span class="aiband__em">Pablo</span>,
+            que cerró las dos anteriores de esa línea.</p>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:-450px;--y:-38px;--r:-3deg;--d:60ms">
+          <span class="aiband__chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6.5h18v11H3z"/><path d="M3 7l9 6 9-6"/></svg>
+            Correo del turno de noche
+          </span>
+        </div>
+
+        <div class="aiband__art" style="--x:462px;--y:-26px;--r:2.5deg;--d:220ms">
+          <div class="aiband__card">
+            <div class="aiband__code">UTD26_165_001</div>
+            <div class="aiband__desc">Ruido en el reductor de la L3</div>
+            <div class="aiband__meta"><span class="aiband__tag aiband__tag--media">Media</span> Correo</div>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:448px;--y:116px;--r:-2deg;--d:340ms">
+          <span class="aiband__chip">
+            <span class="aiband__user"><img class="aiband__ava" src="/assets/ia/avatar-pablo.webp" alt="" width="18" height="18" loading="lazy" decoding="async"> Pablo</span>
+            <span class="aiband__tag aiband__tag--curso">En curso</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- TURNO 4 — Genera el informe semanal de calidad por planta -->
+      <div class="aiband__turn">
+        <div class="aiband__bar">
+          <span class="aiband__spark">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg>
+          </span>
+          <div class="aiband__text"><span><span class="aiband__q">Prepárame el informe de calidad de la planta de junio</span><span class="aiband__caret"></span></span></div>
+          <span class="aiband__send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="aiband__reply">
+          <div class="aiband__status">Resumiendo incidencias, acciones y registros de junio <span class="aiband__dots"><i></i><i></i><i></i></span></div>
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>Junio cierra con <span class="aiband__em">5 incidencias abiertas</span>, 96 registros firmados y
+            el cierre medio en 2,4 días. Fuera de plazo sólo queda una acción,
+            <span class="aiband__ref">UTD26_157_REC</span>.</p>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:-464px;--y:-28px;--r:-2.5deg;--d:80ms">
+          <div class="aiband__card" style="--w:272px">
+            <div class="aiband__code">Informe de calidad · junio 2026</div>
+            <!-- Barras partidas por módulo, como el panel «Actividad por mes» del
+                 tablero: un gráfico monocolor diría que el dato sale de un sitio,
+                 y sale de tres. -->
+            <div class="aiband__chart">
+              <div class="aiband__col"><span class="aiband__bseg aiband__bseg--reg" style="height:30%"></span><span class="aiband__bseg aiband__bseg--acc" style="height:24%"></span><span class="aiband__bseg aiband__bseg--inc" style="height:40%"></span></div>
+              <div class="aiband__col"><span class="aiband__bseg aiband__bseg--reg" style="height:16%"></span><span class="aiband__bseg aiband__bseg--acc" style="height:13%"></span><span class="aiband__bseg aiband__bseg--inc" style="height:22%"></span></div>
+              <div class="aiband__col"><span class="aiband__bseg aiband__bseg--reg" style="height:38%"></span><span class="aiband__bseg aiband__bseg--acc" style="height:30%"></span><span class="aiband__bseg aiband__bseg--inc" style="height:52%"></span></div>
+              <div class="aiband__col"><span class="aiband__bseg aiband__bseg--reg" style="height:24%"></span><span class="aiband__bseg aiband__bseg--acc" style="height:20%"></span><span class="aiband__bseg aiband__bseg--inc" style="height:34%"></span></div>
+              <div class="aiband__col"><span class="aiband__bseg aiband__bseg--reg" style="height:12%"></span><span class="aiband__bseg aiband__bseg--acc" style="height:10%"></span><span class="aiband__bseg aiband__bseg--inc" style="height:18%"></span></div>
+              <div class="aiband__col"><span class="aiband__bseg aiband__bseg--reg" style="height:34%"></span><span class="aiband__bseg aiband__bseg--acc" style="height:22%"></span><span class="aiband__bseg aiband__bseg--inc" style="height:38%"></span></div>
+            </div>
+            <div class="aiband__xaxis"><span>ENE</span><span>FEB</span><span>MAR</span><span>ABR</span><span>MAY</span><span>JUN</span></div>
+            <div class="aiband__clegend">
+              <span><i style="background:#4C8DF6"></i>Incidencias</span>
+              <span><i style="background:#FB923C"></i>Acciones</span>
+              <span><i style="background:#A78BFA"></i>Registros</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:452px;--y:-38px;--r:3deg;--d:220ms">
+          <span class="aiband__chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></svg>
+            Listo para enviar
+          </span>
+        </div>
+
+        <div class="aiband__art" style="--x:456px;--y:114px;--r:-2deg;--d:340ms">
+          <div class="aiband__card" style="--w:226px">
+            <div class="aiband__code">UTD26_157_REC</div>
+            <div class="aiband__desc">Reclamación pendiente de cierre</div>
+            <div class="aiband__meta"><span class="aiband__tag aiband__tag--alta">Fuera de plazo</span></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- TURNO 5 — La propuesta. Aquí no pregunta la persona: propone Solved,
+           y la barra se queda en reposo con su placeholder. Es el único turno
+           con botones — una propuesta sin forma de decir que no es una orden—,
+           y el único que no se teclea (data-tipo lo dice, y ds/aiband.js lo lee). -->
+      <div class="aiband__turn" data-tipo="propuesta">
+        <div class="aiband__bar">
+          <span class="aiband__spark">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg>
+          </span>
+          <div class="aiband__text"><span><span class="aiband__ph">Pregunta sobre incidencias, registros o acciones…</span></span></div>
+          <span class="aiband__send">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="aiband__reply">
+          <div class="aiband__suggest">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <div>
+              <p class="aiband__sq">Toca la parada de mantenimiento de la L3.
+              ¿Quieres generar las tareas que hiciste la última vez?</p>
+              <div class="aiband__acts">
+                <span class="aiband__act aiband__act--si">Sí, genéralas</span>
+                <span class="aiband__act">Ahora no</span>
+              </div>
+            </div>
+          </div>
+          <div class="aiband__status">Generando las tareas de la última parada <span class="aiband__dots"><i></i><i></i><i></i></span></div>
+          <div class="aiband__answer">
+            <span class="aiband__aiico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.6 5.4 4.6 9.4 10 10-5.4.6-9.4 4.6-10 10-.6-5.4-4.6-9.4-10-10 5.4-.6 9.4-4.6 10-10z"/></svg></span>
+            <p>Hechas: <span class="aiband__em">6 tareas</span> con las mismas comprobaciones de la parada
+            de marzo. Cuatro para Pablo y dos para Ana, con vencimiento el 30/06.</p>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:-462px;--y:-30px;--r:-2.5deg;--d:80ms">
+          <div class="aiband__card" style="--w:258px">
+            <div class="aiband__code">Parada L3 · 6 tareas</div>
+            <div class="aiband__task"><span class="aiband__box"></span><span>Sustituir la junta de la cinta</span><img class="aiband__ava" src="/assets/ia/avatar-pablo.webp" alt="" width="18" height="18" loading="lazy" decoding="async"></div>
+            <div class="aiband__task"><span class="aiband__box"></span><span>Engrasar el reductor</span><img class="aiband__ava" src="/assets/ia/avatar-pablo.webp" alt="" width="18" height="18" loading="lazy" decoding="async"></div>
+            <div class="aiband__task"><span class="aiband__box"></span><span>Firmar el control de arranque</span><img class="aiband__ava" src="/assets/ia/avatar-ana.webp" alt="" width="18" height="18" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+
+        <div class="aiband__art" style="--x:455px;--y:-44px;--r:2.5deg;--d:200ms">
+          <span class="aiband__chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>
+            Copiadas de la parada del 12/03
+          </span>
+        </div>
+
+        <div class="aiband__art" style="--x:450px;--y:104px;--r:-2deg;--d:320ms">
+          <div class="aiband__card" style="--w:226px">
+            <div class="aiband__code">Reparto</div>
+            <div class="aiband__task"><img class="aiband__ava" src="/assets/ia/avatar-pablo.webp" alt="" width="18" height="18" loading="lazy" decoding="async"><span>Pablo</span><span class="aiband__em">4</span></div>
+            <div class="aiband__task"><img class="aiband__ava" src="/assets/ia/avatar-ana.webp" alt="" width="18" height="18" loading="lazy" decoding="async"><span>Ana</span><span class="aiband__em">2</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- La leyenda es lo que convierte el bucle en un índice: sin ella, cinco
+         turnos seguidos parecen una demo de chat. -->
+    <div class="aiband__legend">
+      <span class="aiband__leg">Cita el parte y el registro</span>
+      <span class="aiband__leg">Cruza el activo con sus KO</span>
+      <span class="aiband__leg">Abre la incidencia desde un correo</span>
+      <span class="aiband__leg">Genera el informe de la planta</span>
+      <span class="aiband__leg">Propone las tareas del trabajo repetido</span>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrap wrap--pie">
+  <h2>Qué hay que respetar</h2>
+  <ul class="reglas">
+    <li><b>Va sobre grafito, siempre.</b> Sobre blanco esta pieza no existe: el morado ni contrasta ni se lee
+    como la capa de IA, que en el producto es oscura.</li>
+    <li><b>Gasta una de las dos apariciones de material</b> de la página. Si la banda entra en una página con
+    hero de onda, ya no cabe una tercera.</li>
+    <li><b>Los datos son los del tour.</b> <code>UTD26_163_001</code> es la fuga de aceite de la cinta L3 aquí,
+    en la home y en <code>/incidencias/</code>. Un código que signifique dos cosas rompe el sistema entero.</li>
+    <li><b>Cada turno afirma una capacidad.</b> Los cuatro primeros salen, uno a uno, de los cuatro
+    <code>checks</code> del diálogo de IA de la home. <b style="color:var(--color-status-fault)">El quinto
+    no</b>: que Solved proponga generar las tareas de un trabajo que ya se hizo no lo dice hoy ninguna
+    página del sitio. Entra porque lo pidió el cliente, y <b>hay que confirmarlo con el producto antes
+    de publicar</b> — si no existe, se cae el turno, no se matiza el texto.</li>
+    <li><b>Las caras de los avatares son de banco.</b> Son recortes de las fotos de planta que ya están
+    en <code>assets/</code>, y van dentro de una demo <code>aria-hidden</code>: son avatares de
+    ejemplo, no el retrato de nadie. La aplicación de verdad pinta la inicial, así que aquí hay una
+    licencia consciente — a tamaño de vídeo una letra sola no se lee como «persona».</li>
+    <li><b>Sin JS y con movimiento reducido</b> se ve el primer turno resuelto y quieto. Eso es el estado
+    seguro, no un degradado.</li>
+    <li><b>La banda no trae titular.</b> El encabezado lo pone la página que la monta, para que sirva igual en
+    la home que en una landing de IA.</li>
+  </ul>
+
+  <h2>Cómo se monta</h2>
+  <p class="nota">Hojas: <code>ds/tokens.css</code> → <code>ds/site.css</code> (por la etiqueta
+  <code>.ds-badge--ia</code>) → <code>ds/aiband.css</code>. Script <code>ds/aiband.js</code> al final del
+  <code>&lt;body&gt;</code>. Un turno es un <code>.aiband__turn</code> con su barra, su respuesta y sus piezas;
+  cada pieza se coloca con <code>--x</code>, <code>--y</code>, <code>--r</code> y <code>--d</code> en el
+  <code>style</code>, porque su sitio depende de lo que diga la barra en ese turno. El compás del bucle —tecleo,
+  envío, búsqueda y lectura— está en cinco constantes al principio del script.</p>
+
+  <h2>Y si hace falta el vídeo</h2>
+  <p class="nota">Esto es la fuente, no una maqueta del vídeo: para un MP4 de LinkedIn o de una demo comercial se
+  graba esta misma página a 1280×568 y sale un loop de unos 32 s. Al revés no se puede — de un MP4 no se saca ni
+  texto seleccionable, ni nitidez a cualquier tamaño, ni un dato que el cliente pueda cambiar sin volver a
+  renderizar.</p>
+</div>
+
+
+<div class="wrap" style="padding-bottom:24px">
+  <h2 style="margin-top:0">El mismo, en vídeo</h2>
+  <p class="nota">Para insertarlo en una landing sin depender del navegador. Sale de
+  <code>guidelines/ia.banda.reel.html</code> —la misma hoja y los mismos datos, sin encabezado y sin
+  leyenda, pero <b>con el logotipo dentro</b>, porque el vídeo viaja solo— con
+  <code>npm run render:ia</code>: 1400×540 a 30 fps, escalado a 1920, 37 s, ~2 MB, sin audio, con
+  <b>cartela de cierre</b>, y
+  <b>el bucle cierra</b> (la barra no se va nunca, así que el último fotograma enlaza con el primero).
+  Si cambia una pregunta o una cifra, se vuelve a renderizar y ya está.</p>
+</div>
+
+<section class="iavideo">
+  <video class="iavideo__v" data-src="/assets/ia/ia-reel.mp4" poster="/assets/ia/ia-reel-poster.webp"
+         muted loop playsinline preload="none" aria-hidden="true"></video>
+</section>
+
+<div class="wrap wrap--pie">
+  <h2 style="margin-top:32px">Cómo se inserta</h2>
+  <pre>&lt;link rel="stylesheet" href="/ds/aiband.css?v=20260908b"&gt;
+
+&lt;section class="iavideo"&gt;
+  &lt;video class="iavideo__v"
+         data-src="/assets/ia/ia-reel.mp4"
+         poster="/assets/ia/ia-reel-poster.webp"
+         muted loop playsinline preload="none" aria-hidden="true"&gt;&lt;/video&gt;
+&lt;/section&gt;
+
+&lt;script src="/ds/aiband.js?v=20260901a"&gt;&lt;/script&gt;</pre>
+  <p class="nota"><b>El <code>src</code> va en <code>data-src</code> a propósito.</b> El vídeo no se
+  descarga hasta que entra en pantalla —hasta entonces se ve el póster— y se pausa al salir. Es la
+  misma regla del gate de los casos: con el <code>src</code> puesto, un navegador con preload agresivo
+  se trae el fichero entero para enseñar una imagen fija.</p>
+  <p class="nota"><b>Con <code>prefers-reduced-motion</code> no se carga:</b> se queda el póster, que
+  es el fotograma con la primera respuesta ya puesta y sigue contando lo que cuenta el vídeo. Un
+  <code>autoplay</code> en el marcado no obedece esa preferencia por sí solo, y por eso el arranque lo
+  decide <code>ds/aiband.js</code> y no el atributo.</p>
+  <p class="nota"><b>El vídeo va sin titular</b>, igual que la banda: el encabezado lo pone la sección
+  de la landing. Y va a sangre sobre grafito, así que la sección que lo contenga tiene que llevar el
+  mismo fondo o no habrá costura.</p>
+</div>
+
+<script src="/ds/aiband.js"></script>
+</body>
+</html>

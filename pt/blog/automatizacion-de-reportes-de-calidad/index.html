@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="pt-PT"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>Automatización de reportes de calidad · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="La automatización de reportes de calidad elimina horas de consolidar datos dispersos y asegura la trazabilidad. Genera informes de calidad fiables al…">
+<link rel="canonical" href="https://trysolved.com/pt/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="es" href="https://trysolved.com/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="fr" href="https://trysolved.com/fr/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="it" href="https://trysolved.com/it/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="de" href="https://trysolved.com/de/blog/automatizacion-de-reportes-de-calidad/">
+<link rel="alternate" hreflang="pt-PT" href="https://trysolved.com/pt/blog/automatizacion-de-reportes-de-calidad/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E6BFF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solved">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:url" content="https://trysolved.com/pt/blog/automatizacion-de-reportes-de-calidad/">
+<meta property="og:title" content="Automatización de reportes de calidad · Solved">
+<meta property="og:description" content="La automatización de reportes de calidad elimina horas de consolidar datos dispersos y asegura la trazabilidad. Genera informes de calidad fiables al…">
+<meta property="og:image" content="https://trysolved.com/blog/assets/c15b34423ca0-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Automatización de reportes de calidad · Solved">
+<meta name="twitter:description" content="La automatización de reportes de calidad elimina horas de consolidar datos dispersos y asegura la trazabilidad. Genera informes de calidad fiables al…">
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/c15b34423ca0-1200.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/pt/blog/automatizacion-de-reportes-de-calidad/"},"headline":"Automatização de relatórios de qualidade","description":"La automatización de reportes de calidad elimina horas de consolidar datos dispersos y asegura la trazabilidad. Genera informes de calidad fiables al…","image":["https://trysolved.com/blog/assets/c15b34423ca0-1200.jpg"],"datePublished":"2025-11-12T22:11:59Z","dateModified":"2026-08-05T10:27:34Z","author":{"@type":"Person","name":"Pablo"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/pt/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Calidad y mejora continua"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://trysolved.com/pt/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Automatização de relatórios de qualidade","item":"https://trysolved.com/pt/blog/automatizacion-de-reportes-de-calidad/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
+<link rel="stylesheet" href="/solved.css?v=20260910f">
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
+<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Migalhas de pão">
+      <a href="/pt/">Início</a> <span>/</span>
+      <a href="/pt/blog/">Blog</a> <span>/</span>
+      <span aria-current="page">Automatização de relatórios de qualidade</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Qualidade e melhoria contínua</span>
+      <h1>Automatização de relatórios de qualidade</h1>
+      <p class="post__meta">Por Pablo · <time datetime="2025-11-12T22:11:59Z">12 de novembro de 2025</time> · 6 min de leitura</p>
+    </header>
+
+    <!-- banner-arriba:inicio -->
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Meça a qualidade em tempo real</span>KPIs, quebras e reincidências num painel de controlo que se atualiza sozinho.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/dashboards/">Ver o dashboard</a>
+    </div>
+  </div>
+    <!-- banner-arriba:fin -->
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/c15b34423ca0-480.avif 480w, /blog/assets/c15b34423ca0-768.avif 768w, /blog/assets/c15b34423ca0-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/c15b34423ca0-480.webp 480w, /blog/assets/c15b34423ca0-768.webp 768w, /blog/assets/c15b34423ca0-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/c15b34423ca0-1200.jpg" width="1200" height="800" alt="Equipa reunida numa sala a rever a automatização de relatórios de qualidade" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<p>A <strong>automatização de relatórios de qualidade</strong> es una de las palancas más poderosas que tienen hoy las fábricas para ganar eficiencia, reducir errores y asegurar la trazabilidad de sus procesos. Tradicionalmente, los equipos de calidad han invertido horas —o incluso días enteros— consolidando información dispersa: fotos hechas en planta, documentos guardados en ordenadores personales, registros en papel y datos enviados por WhatsApp o correo electrónico. Este sistema no solo consume tiempo, sino que aumenta las posibilidades de cometer errores críticos en auditorías o al reportar incidencias a proveedores y clientes.</p>
+
+
+
+<p>El futuro de la calidad pasa por digitalizar y automatizar la recopilación, el análisis y la presentación de datos. Este artículo explora por qué la <strong>automatização de relatórios de qualidade</strong> es fundamental en la industria moderna, cuáles son sus beneficios, qué pasos se deben seguir para implementarla y cómo herramientas especializadas como Solved están transformando la forma en que los equipos gestionan la información.</p>
+
+
+
+<h2><strong>El problema con los reportes manuales de calidad</strong></h2>
+
+
+
+
+
+
+
+<p>Antes de hablar de la <strong>automatização de relatórios de qualidade</strong>, es necesario entender los retos de los procesos manuales. Muchas fábricas todavía dependen de métodos tradicionales que implican:</p>
+
+
+
+<ul>
+<li>Bajar a planta para tomar una foto de la incidencia.<br></li>
+
+
+
+<li>Pasar la imagen por WhatsApp o correo electrónico al responsable.<br></li>
+
+
+
+<li>Descargarla en el ordenador y pegarla en un documento Word.<br></li>
+
+
+
+<li>Añadir comentarios manuales, copiar datos de un Excel y formatear el archivo.<br></li>
+
+
+
+<li>Enviarlo por correo al proveedor, al cliente o a la dirección.<br></li>
+</ul>
+
+
+
+<p>Este proceso puede repetirse decenas de veces al día, generando cuellos de botella. El resultado es un equipo de calidad sobrecargado, informes inconsistentes y pérdida de trazabilidad. En auditorías, este método multiplica el riesgo de <a href="/pt/blog/gestion-de-no-conformidades-en-alimentacion-guia-completa/">não conformidades</a> porque los registros no siempre son completos o están correctamente documentados.</p>
+
+
+
+<h2><strong>Qué es la automatización de reportes de calidad</strong></h2>
+
+
+
+
+
+
+
+<p>A <strong>automatização de relatórios de qualidade</strong> consiste en utilizar un sistema digital que recopile los datos en el mismo momento en que se generan, los organice automáticamente y cree informes estandarizados listos para ser compartidos.</p>
+
+
+
+<p>Un sistema automatizado permite:</p>
+
+
+
+<ul>
+<li>Registrar incidencias en planta con fotos y vídeos desde móvil o tablet.<br></li>
+
+
+
+<li>Guardar la información en la nube de forma segura.<br></li>
+
+
+
+<li>Generar reportes automáticos con los datos necesarios.<br></li>
+
+
+
+<li>Compartir informes con clientes, proveedores o auditores en segundos.<br></li>
+</ul>
+
+
+
+<p>La diferencia es abismal: lo que antes requería horas de consolidación manual, con la automatización se reduce a segundos.</p>
+
+
+
+<h2><strong>Beneficios de la automatización de reportes de calidad</strong></h2>
+
+
+
+
+
+
+
+<p>Implementar la <strong>automatização de relatórios de qualidade</strong> ofrece ventajas inmediatas y medibles:</p>
+
+
+
+<h3><strong>Poupança de tempo</strong></h3>
+
+
+
+<p>Los equipos dejan de invertir horas en recopilar y formatear información. Esto libera recursos para tareas estratégicas de análisis y mejora continua.</p>
+
+
+
+<h3><strong>Reducción de errores humanos</strong></h3>
+
+
+
+<p>Los procesos manuales son propensos a fallos: datos incompletos, copias equivocadas, informes mal estructurados. Con la automatización, la información fluye directamente desde el registro al reporte final sin pasos intermedios.</p>
+
+
+
+<h3><strong>Padronização</strong></h3>
+
+
+
+<p>Cada informe sigue un formato definido, lo que facilita las auditorías y la comunicación con proveedores y clientes.</p>
+
+
+
+<h3><strong>Trazabilidad completa</strong></h3>
+
+
+
+<p>Los reportes incluyen evidencias digitales (fotos, vídeos, documentos adjuntos) y un historial claro de quién registró la incidencia, cuándo y qué acciones se tomaron.</p>
+
+
+
+<h3><strong>Preparação para auditorias</strong></h3>
+
+
+
+<p>Con la <strong>automatização de relatórios de qualidade</strong>, una fábrica puede demostrar cumplimiento en auditorías ISO 9001, ISO 22000, IFS o BRC sin invertir semanas en preparar documentos.</p>
+
+
+
+<h3><strong>Vantagem competitiva</strong></h3>
+
+
+
+<p>La capacidad de responder de manera rápida y transparente a clientes y auditores genera confianza y fortalece la reputación de la empresa.</p>
+
+
+
+<h2><strong>Pasos para implementar la automatización de reportes de calidad</strong></h2>
+
+
+
+
+
+
+
+<p>Adoptar la <strong>automatização de relatórios de qualidade</strong> requiere planificación. Estos son los pasos clave:</p>
+
+
+
+<h3><strong>1. Identificar procesos críticos</strong></h3>
+
+
+
+<p>Definir qué tipos de incidencias, auditorías o controles deben registrarse y reportarse de manera sistemática.</p>
+
+
+
+<h3><strong>2. Estandarizar la recopilación de datos</strong></h3>
+
+
+
+<p>Crear categorías y plantillas para registrar incidencias de forma homogénea en toda la organización.</p>
+
+      <!-- banner-medio:inicio -->
+      <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Meça a qualidade em tempo real</span>KPIs, quebras e reincidências num painel de controlo que se atualiza sozinho.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/dashboards/">Ver o dashboard</a>
+    </div>
+  </div>
+      <!-- banner-medio:fin -->
+
+      
+
+
+
+<h3><strong>3. Digitalizar la captura de evidencias</strong></h3>
+
+
+
+<p>Dotar a los equipos de dispositivos móviles y aplicaciones que permitan adjuntar fotos, vídeos y documentos en tiempo real.</p>
+
+
+
+<h3><strong>4. Configurar flujos de trabajo automatizados</strong></h3>
+
+
+
+<p>Definir cómo se asignan incidencias, cómo se generan los reportes y a quién se envían automáticamente.</p>
+
+
+
+<h3><strong>5. Integrar con otros sistemas</strong></h3>
+
+
+
+<p>Asegurar que los reportes estén conectados con ERP, MES o GMAO para evitar duplicaciones y mantener coherencia en los datos.</p>
+
+
+
+<h3><strong>6. Capacitar al personal</strong></h3>
+
+
+
+<p>Formar a los equipos en el uso de las herramientas digitales para garantizar una adopción fluida.</p>
+
+
+
+<h3><strong>7. Medir resultados</strong></h3>
+
+
+
+<p>Establecer KPIs para evaluar el impacto: tiempo de generación de reportes, reducción de errores, satisfacción de clientes y auditores.</p>
+
+
+
+<h2><strong>Retos comunes en la automatización</strong></h2>
+
+
+
+
+
+
+
+<p>Aunque los beneficios son claros, algunas fábricas enfrentan obstáculos:</p>
+
+
+
+<ul>
+<li><strong>Resistência à mudança</strong>: algunos empleados ven la digitalización como burocracia.<br></li>
+
+
+
+<li><strong>Problemas de conectividad</strong> en planta que dificultan la sincronización.<br></li>
+
+
+
+<li><strong>Miedo a perder control</strong>: responsables que creen que los sistemas manuales son más seguros porque “los controlan ellos”.<br></li>
+</ul>
+
+
+
+<p>La clave está en mostrar resultados rápidos y tangibles. Una vez que los equipos ven cómo la <strong>automatização de relatórios de qualidade</strong> les ahorra horas de trabajo, la adopción se acelera.</p>
+
+
+
+<h2><strong>Casos prácticos de automatización de reportes</strong></h2>
+
+
+
+
+
+
+
+<p>Un ejemplo real es el de una fábrica de conservas que antes tardaba hasta 3 días en consolidar un informe de incidencias para un proveedor. Con la automatización, el reporte se genera automáticamente en menos de 15 minutos con evidencias digitales incluidas.</p>
+
+
+
+<p>Otro caso es el de una empresa textil que debía preparar <a href="/pt/blog/auditoria-interna-de-calidad-sin-sustos/">auditorías internas</a> con semanas de antelación. Tras implementar la <strong>automatização de relatórios de qualidade</strong>, los auditores pueden acceder directamente a la plataforma para verificar registros, reduciendo el tiempo de preparación en un 70%.</p>
+
+
+
+<p>Estos ejemplos demuestran que la automatización no es solo un tema tecnológico, sino un cambio cultural que impacta directamente en la eficiencia y la competitividad.</p>
+
+
+
+<h2><strong>Cómo Solved facilita la automatización de reportes</strong></h2>
+
+
+
+
+
+
+
+<p>A plataforma <strong>Solved</strong> está concebida especificamente para simplificar a <strong>automatização de relatórios de qualidade</strong> en fábricas. Sus funcionalidades clave incluyen:</p>
+
+
+
+<ul>
+<li>Registro de incidencias desde móvil o tablet con fotos, vídeos y adjuntos.<br></li>
+
+
+
+<li>Generación automática de reportes estandarizados.<br></li>
+
+
+
+<li>Flujos de trabajo configurables para enviar reportes a responsables, proveedores o clientes.<br></li>
+
+
+
+<li>Integração com ERP, MES e GMAO.<br></li>
+
+
+
+<li>Dashboards de calidad que muestran indicadores clave en tiempo real.<br></li>
+</ul>
+
+
+
+<p>Con Solved, el proceso de crear un reporte deja de ser un lastre para convertirse en una herramienta estratégica.</p>
+
+
+
+<h2><strong>Conclusão</strong></h2>
+
+
+
+
+
+
+
+<p>A <strong>automatização de relatórios de qualidade</strong> es un paso crítico para cualquier fábrica que quiera ahorrar tiempo, evitar errores y estar siempre preparada para auditorías. Los métodos manuales no son sostenibles en un mercado que exige rapidez, trazabilidad y transparencia.</p>
+
+
+
+<p>Adoptar soluciones digitales permite transformar un proceso tedioso en una ventaja competitiva. Con plataformas como Solved, las fábricas pueden dejar atrás el papeleo y centrarse en lo que realmente importa: mejorar sus procesos y garantizar la calidad de sus productos.</p>
+
+
+
+<p>¿Quieres ahorrar tiempo y reducir errores en tus reportes de calidad? Solicita una demo de<a href="/pt/dashboards/"> Solved</a> y descubre cómo la <strong>automatização de relatórios de qualidade</strong> puede transformar tu fábrica.</p>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Termos relacionados</h2>
+      <ul>
+        <li><a href="/pt/glossario/iso-22000/">ISO 22000</a></li>
+        <li><a href="/pt/glossario/mermas/">Quebras</a></li>
+      </ul>
+    </aside>
+
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Meça a qualidade em tempo real</span>KPIs, quebras e reincidências num painel de controlo que se atualiza sozinho.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/dashboards/">Ver o dashboard</a>
+    </div>
+  </div>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="/pt/blog/">← Voltar ao blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Continue a ler</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/cuadro-de-mando-de-calidad-en-tiempo-real/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/811efd37d729-480.avif 480w, /blog/assets/811efd37d729-768.avif 768w, /blog/assets/811efd37d729-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/811efd37d729-480.webp 480w, /blog/assets/811efd37d729-768.webp 768w, /blog/assets/811efd37d729-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/811efd37d729-1200.jpg" width="1200" height="655" alt="Ecrãs com gráficos e indicadores de um painel de controlo de qualidade em tempo real" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualidade e melhoria contínua</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/cuadro-de-mando-de-calidad-en-tiempo-real/">Painel de controlo de qualidade em tempo real</a></h2>
+          <p class="blog-card__excerpt">Descubra como criar um painel de controlo de qualidade em tempo real com indicadores que impulsionam resultados e automatização sem folhas de cálculo.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-03T00:00:00Z">3 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/gestion-de-reclamaciones-que-fideliza-clientes/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/52766d0a5b8f-480.avif 480w, /blog/assets/52766d0a5b8f-768.avif 768w, /blog/assets/52766d0a5b8f-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/52766d0a5b8f-480.webp 480w, /blog/assets/52766d0a5b8f-768.webp 768w, /blog/assets/52766d0a5b8f-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/52766d0a5b8f-1200.jpg" width="1200" height="655" alt="Responsável de qualidade a gerir reclamações a partir do seu computador" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualidade e melhoria contínua</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/gestion-de-reclamaciones-que-fideliza-clientes/">Gestão de reclamações que fideliza clientes</a></h2>
+          <p class="blog-card__excerpt">Melhore a sua gestão de reclamações com um sistema que retém clientes, regista cada passo e vincula não conformidades para otimizar o seu serviço.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-01T00:00:00Z">1 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/ficha-tecnica-de-producto-sin-fallos/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/cb4f6713c6a7-480.avif 480w, /blog/assets/cb4f6713c6a7-768.avif 768w, /blog/assets/cb4f6713c6a7-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/cb4f6713c6a7-480.webp 480w, /blog/assets/cb4f6713c6a7-768.webp 768w, /blog/assets/cb4f6713c6a7-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/cb4f6713c6a7-1200.jpg" width="1200" height="655" alt="Mãos com luva a segurar um tablet com a ficha técnica do produto" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualidade e melhoria contínua</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/ficha-tecnica-de-producto-sin-fallos/">Ficha técnica de produto sem falhas</a></h2>
+          <p class="blog-card__excerpt">Descubra o que deve incluir uma ficha técnica de produto, como evitar erros em auditoria e mantê-la atualizada corretamente.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-30T00:00:00Z">30 de julho de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="/pt/chrome.js?v=20261005a"></script>
+
+</body></html>

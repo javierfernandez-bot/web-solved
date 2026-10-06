@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="pt-PT"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>Análise de causa raiz: métodos e exemplos · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Métodos de análise de causa raiz com exemplos: 5 porquês, Ishikawa e análise de barreiras, e como fechar o ciclo para evitar recaídas.">
+<link rel="canonical" href="https://trysolved.com/pt/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="es" href="https://trysolved.com/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="fr" href="https://trysolved.com/fr/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="it" href="https://trysolved.com/it/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="de" href="https://trysolved.com/de/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<link rel="alternate" hreflang="pt-PT" href="https://trysolved.com/pt/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E6BFF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solved">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:url" content="https://trysolved.com/pt/blog/analisis-de-causa-raiz-que-evita-recaidas/">
+<meta property="og:title" content="Análise de causa raiz: métodos e exemplos · Solved">
+<meta property="og:description" content="Métodos de análise de causa raiz com exemplos: 5 porquês, Ishikawa e análise de barreiras, e como fechar o ciclo para evitar recaídas.">
+<meta property="og:image" content="https://trysolved.com/blog/assets/1939735a5b1e-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Análise de causa raiz: métodos e exemplos · Solved">
+<meta name="twitter:description" content="Métodos de análise de causa raiz com exemplos: 5 porquês, Ishikawa e análise de barreiras, e como fechar o ciclo para evitar recaídas.">
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/1939735a5b1e-1200.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/pt/blog/analisis-de-causa-raiz-que-evita-recaidas/"},"headline":"Análise de causa raiz que evita recaídas","description":"Métodos de análise de causa raiz com exemplos: 5 porquês, Ishikawa e análise de barreiras, e como fechar o ciclo para evitar recaídas.","image":["https://trysolved.com/blog/assets/1939735a5b1e-1200.jpg"],"datePublished":"2026-07-27T00:00:00Z","dateModified":"2026-08-05T10:12:02Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/pt/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Calidad y mejora continua"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://trysolved.com/pt/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/pt/blog/"},{"@type":"ListItem","position":3,"name":"Análise de causa raiz que evita recaídas","item":"https://trysolved.com/pt/blog/analisis-de-causa-raiz-que-evita-recaidas/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
+<link rel="stylesheet" href="/solved.css?v=20260910f">
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
+<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Migalhas de pão">
+      <a href="/pt/">Início</a> <span>/</span>
+      <a href="/pt/blog/">Blog</a> <span>/</span>
+      <span aria-current="page">Análise de causa raiz que evita recaídas</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Qualidade e melhoria contínua</span>
+      <h1>Análise de causa raiz: métodos e exemplos</h1>
+      <p class="post__meta">Por Claudia · <time datetime="2026-07-27T00:00:00Z">27 de julho de 2026</time> · 6 min de leitura</p>
+    </header>
+
+    <!-- banner-arriba:inicio -->
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Meça a qualidade em tempo real</span>KPIs, quebras e reincidências num painel de controlo que se atualiza sozinho.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/dashboards/">Ver o dashboard</a>
+    </div>
+  </div>
+    <!-- banner-arriba:fin -->
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/1939735a5b1e-480.avif 480w, /blog/assets/1939735a5b1e-768.avif 768w, /blog/assets/1939735a5b1e-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/1939735a5b1e-480.webp 480w, /blog/assets/1939735a5b1e-768.webp 768w, /blog/assets/1939735a5b1e-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/1939735a5b1e-1200.jpg" width="1200" height="655" alt="Equipa de qualidade a trabalhar numa análise de causa raiz num quadro branco" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<h2>Análise de causa raiz que evita recaídas</h2>
+<p>Quando numa fábrica agroalimentar surge uma não conformidade, a reação imediata costuma ser resolver o problema visível: retirar o lote, repetir o processo, corrigir o registo. No entanto, se não se aplicar uma <strong>análise de causa raiz</strong> rigorosa, esse mesmo problema reaparecerá semanas ou meses depois. Identificar por que algo aconteceu, e não apenas o que aconteceu, é a diferença entre gerir a qualidade de forma reativa ou construir um sistema verdadeiramente robusto.</p>
+<h2>O que é a análise de causa raiz</h2>
+<p>A análise de causa raiz (ACR) é uma metodologia estruturada que permite ir além do sintoma de um problema para identificar a origem real que o gera. No setor alimentar, esta abordagem é imprescindível para cumprir os requisitos dos sistemas de gestão da segurança alimentar e para dar resposta adequada às auditorias internas e externas.</p>
+<p>A sua aplicação não se limita às grandes falhas. Qualquer desvio, por pequeno que pareça, pode esconder uma fragilidade sistémica: um procedimento mal concebido, uma formação insuficiente, uma infraestrutura deteriorada ou uma comunicação deficiente entre departamentos. Tal como estabelece o <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">Regulamento (CE) n.º 852/2004 relativo à higiene dos géneros alimentícios</a> (Regulamento [CE] 852/2004, 2004), os operadores de empresas do setor alimentar devem implementar procedimentos permanentes baseados nos princípios do HACCP, o que exige precisamente este tipo de análise sistemática para garantir o controlo dos pontos críticos.</p>
+<p>Uma análise de causa raiz bem executada gera três resultados: a ação corretora imediata para conter o problema, a ação corretiva para eliminar a causa, e a ação preventiva para evitar que situações semelhantes ocorram noutros processos ou áreas.</p>
+<h2>Métodos principais: os 5 porquês e Ishikawa</h2>
+<p>Existem diversas ferramentas para realizar uma análise de causa raiz. As mais utilizadas na indústria agroalimentar pela sua praticidade e facilidade de comunicação são o método dos 5 porquês e o diagrama de Ishikawa (ou diagrama de causa-efeito).</p>
+<p><strong>O método dos 5 porquês</strong> consiste em perguntar sucessivamente “porquê?” a cada resposta obtida até chegar à causa raiz do problema. Geralmente, entre três e cinco iterações são suficientes para abandonar o plano dos sintomas e alcançar uma causa estrutural. Por exemplo:</p>
+<ul>
+<li><strong>Problema:</strong> Detetou-se presença de metal num lote de <a href="/pt/blog/control-de-calidad-en-conservas-retos-y-soluciones-digitales/">conservas</a>.</li>
+<li><strong>Porquê?</strong> O detetor de metais não ativou o alarme.</li>
+<li><strong>Porquê?</strong> O detetor não estava corretamente calibrado.</li>
+<li><strong>Porquê?</strong> A calibração não foi realizada na data prevista.</li>
+<li><strong>Porquê?</strong> Não existia um sistema de alerta que avisasse o responsável de manutenção.</li>
+<li><strong>Porquê?</strong> O plano de manutenção não contemplava lembretes automáticos.</li>
+</ul>
+<p>A causa raiz não é o detetor por calibrar, mas sim a ausência de um sistema de gestão da manutenção preventiva. A ação corretiva deve dirigir-se a esse nível.</p>
+<p><strong>O diagrama de Ishikawa</strong>, também conhecido como diagrama de espinha de peixe, é especialmente útil quando o problema tem múltiplas causas possíveis ou quando intervêm vários departamentos. Parte-se do efeito (o problema) e exploram-se as causas agrupadas em categorias clássicas como mão de obra, maquinaria, materiais, método, meio ambiente e medição. Esta visão global facilita o trabalho em equipa e evita que a análise fique enviesada pela perspetiva de um único departamento.</p>
+<p>Ambas as ferramentas são complementares: os 5 porquês ajudam a aprofundar cada ramo do Ishikawa, enquanto o diagrama garante que não se ignora nenhuma categoria de causas potenciais.</p>
+<h2>Como aplicar a análise de causa raiz a não conformidades reais</h2>
+<p>O <a href="/pt/blog/gestion-de-calidad-ventaja-competitiva/">análise de não conformidades</a> é o contexto mais habitual para aplicar a ACR numa empresa agroalimentar. O processo tem uma sequência lógica que convém respeitar para obter resultados sólidos.</p>
+<p><strong>1. Descrição precisa do problema.</strong> Antes de analisar, é preciso definir bem o que aconteceu: quando, onde, em que produto, em que processo e com que frequência. Uma descrição vaga conduz a uma análise superficial. Utilize dados objetivos: registos, resultados analíticos, partes de produção.</p>
+
+      <!-- banner-medio:inicio -->
+      <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Meça a qualidade em tempo real</span>KPIs, quebras e reincidências num painel de controlo que se atualiza sozinho.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/dashboards/">Ver o dashboard</a>
+    </div>
+  </div>
+      <!-- banner-medio:fin -->
+
+      
+<p><strong>2. Formação da equipa.</strong> A análise de causa raiz não deve ser tarefa de uma única pessoa. Envolver as pessoas que participaram no processo traz perspetivas diferentes e reduz o risco de as causas organizativas ficarem ocultas. O responsável da qualidade atua como facilitador, não como único juiz.</p>
+<p><strong>3. Aplicação da ferramenta selecionada.</strong> Escolha o método mais adequado consoante a complexidade do problema. Para ocorrências concretas e delimitadas, os 5 porquês são suficientes. Para problemas multifatoriais ou recorrentes, o Ishikawa oferece uma visão mais completa.</p>
+<p><strong>4. Definição de ações.</strong> Uma vez identificada a causa raiz, definem-se as ações corretivas com responsável, prazo e critério de verificação. É fundamental distinguir entre a correção (o que se faz de imediato) e a ação corretiva (o que elimina a causa).</p>
+<p><strong>5. Verificação da eficácia.</strong> Nenhuma análise de causa raiz está completa se não se comprovar que as ações funcionaram. Passado um período razoável, é necessário rever se o problema reapareceu e se os <a href="/pt/blog/7-kpis-de-control-de-calidad-que-si-importan/">indicadores</a> relacionados melhoraram.</p>
+<h2>Como registar a análise e o seu encerramento no Solved</h2>
+<p>Um dos principais obstáculos na gestão de não conformidades é a dispersão da informação: a análise fica num e-mail, a ação numa folha de cálculo e o encerramento na memória do responsável. Isto dificulta as auditorias, impede a aprendizagem organizacional e torna impossível detetar <a href="/pt/blog/como-detectar-patrones-de-incidencias/">padrões</a> de repetição.</p>
+<p>Com <a href="/pt/gestao-de-incidentes/">o módulo de ocorrências do Solved</a>, a análise de causa raiz integra-se diretamente no fluxo de gestão da não conformidade. A partir do próprio registo da ocorrência, a equipa de qualidade pode documentar o método utilizado, as causas identificadas e as ações definidas, atribuindo responsável e data-limite a cada uma delas.</p>
+<p>O sistema permite acompanhar o estado de cada ação em tempo real e gera alertas automáticos quando se aproxima o prazo de encerramento. Quando todas as ações estão concluídas, o responsável pode registar a verificação de eficácia e encerrar formalmente a não conformidade, deixando um rasto completo e auditável de todo o processo.</p>
+<p>Além disso, o Solved facilita a análise de tendências: ao ter todas as não conformidades registadas de forma estruturada, é possível identificar que causas raiz se repetem com mais frequência, que áreas concentram mais ocorrências ou que fornecedores geram mais desvios. Esta informação é de enorme valor para a revisão do sistema de gestão e para priorizar os investimentos em melhoria.</p>
+<p>Gerir a qualidade com dados reais, processos documentados e ferramentas que facilitam o trabalho da equipa não é apenas uma questão de conformidade normativa: é uma <a href="/pt/blog/gestion-de-calidad-ventaja-competitiva/">vantagem competitiva real</a> para qualquer empresa do setor agroalimentar. A análise de causa raiz, bem integrada no sistema, é um dos pilares dessa vantagem.</p>
+<h2>Referências</h2>
+<ul>
+<li>Regulamento (CE) n.o 852/2004 do Parlamento Europeu e do Conselho, de 29 de abril de 2004, relativo à higiene dos géneros alimentícios. (2004). <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es</a></li>
+</ul>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Termos relacionados</h2>
+      <ul>
+        <li><a href="/pt/glossario/analisis-de-causa-raiz/">Análise de causa raiz</a></li>
+        <li><a href="/pt/glossario/no-conformidad/">Não conformidade</a></li>
+        <li><a href="/pt/glossario/mermas/">Quebras</a></li>
+      </ul>
+    </aside>
+
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Meça a qualidade em tempo real</span>KPIs, quebras e reincidências num painel de controlo que se atualiza sozinho.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/pt/dashboards/">Ver o dashboard</a>
+    </div>
+  </div>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="/pt/blog/">← Voltar ao blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Continue a ler</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/cuadro-de-mando-de-calidad-en-tiempo-real/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/811efd37d729-480.avif 480w, /blog/assets/811efd37d729-768.avif 768w, /blog/assets/811efd37d729-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/811efd37d729-480.webp 480w, /blog/assets/811efd37d729-768.webp 768w, /blog/assets/811efd37d729-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/811efd37d729-1200.jpg" width="1200" height="655" alt="Ecrãs com gráficos e indicadores de um painel de controlo de qualidade em tempo real" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualidade e melhoria contínua</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/cuadro-de-mando-de-calidad-en-tiempo-real/">Painel de controlo de qualidade em tempo real</a></h2>
+          <p class="blog-card__excerpt">Descubra como criar um painel de controlo de qualidade em tempo real com indicadores que impulsionam resultados e automatização sem folhas de cálculo.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-03T00:00:00Z">3 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/gestion-de-reclamaciones-que-fideliza-clientes/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/52766d0a5b8f-480.avif 480w, /blog/assets/52766d0a5b8f-768.avif 768w, /blog/assets/52766d0a5b8f-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/52766d0a5b8f-480.webp 480w, /blog/assets/52766d0a5b8f-768.webp 768w, /blog/assets/52766d0a5b8f-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/52766d0a5b8f-1200.jpg" width="1200" height="655" alt="Responsável de qualidade a gerir reclamações a partir do seu computador" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualidade e melhoria contínua</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/gestion-de-reclamaciones-que-fideliza-clientes/">Gestão de reclamações que fideliza clientes</a></h2>
+          <p class="blog-card__excerpt">Melhore a sua gestão de reclamações com um sistema que retém clientes, regista cada passo e vincula não conformidades para otimizar o seu serviço.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-01T00:00:00Z">1 de agosto de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/pt/blog/ficha-tecnica-de-producto-sin-fallos/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/cb4f6713c6a7-480.avif 480w, /blog/assets/cb4f6713c6a7-768.avif 768w, /blog/assets/cb4f6713c6a7-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/cb4f6713c6a7-480.webp 480w, /blog/assets/cb4f6713c6a7-768.webp 768w, /blog/assets/cb4f6713c6a7-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/cb4f6713c6a7-1200.jpg" width="1200" height="655" alt="Mãos com luva a segurar um tablet com a ficha técnica do produto" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualidade e melhoria contínua</span>
+          <h2 class="blog-card__title"><a href="/pt/blog/ficha-tecnica-de-producto-sin-fallos/">Ficha técnica de produto sem falhas</a></h2>
+          <p class="blog-card__excerpt">Descubra o que deve incluir uma ficha técnica de produto, como evitar erros em auditoria e mantê-la atualizada corretamente.</p>
+          <p class="blog-card__meta"><time datetime="2026-07-30T00:00:00Z">30 de julho de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="/pt/chrome.js?v=20261005a"></script>
+
+</body></html>

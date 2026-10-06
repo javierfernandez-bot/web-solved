@@ -1,0 +1,265 @@
+/* =========================================================
+   Solved Design System — LA PÁGINA DE IA, EN OSCURO
+   La única página del sitio que va entera sobre grafito. No es un capricho de
+   estilo: es la regla del sistema llevada a su conclusión —«lo de IA va sobre
+   grafito, todo, no sólo el lienzo de las escenas»—. Si la capa de IA es oscura
+   en el producto y oscura en cada pieza suelta, su página no puede ser blanca.
+
+   CÓMO ESTÁ HECHO: SE REASIGNAN TOKENS, NO SE REESCRIBEN COMPONENTES
+   `ds/site.css`, `ds/sections.css` y `ds/hero.css` están escritos contra los
+   alias semánticos (--ds-text, --ds-surface, --color-hairline…), así que basta
+   con darles otros valores dentro de [data-tema="ia"] para que la hero, los
+   titulares, el trío, la rejilla de argumentos y el encuadre se vuelvan oscuros
+   sin tocar una sola regla de esos ficheros. Lo que hay debajo de los tokens son
+   sólo los seis sitios donde algo estaba escrito a pelo.
+
+   Es también la prueba de que la tokenización servía para algo: si hubiera hecho
+   falta duplicar los componentes, el sistema no estaría bien montado.
+
+   LO QUE NO SE VUELVE OSCURO, Y POR QUÉ
+   - El formulario de contacto. Lo pinta HubSpot dentro de un <iframe> y desde
+     aquí no se puede estilar; forzar la tarjeta a grafito dejaría un rectángulo
+     blanco flotando dentro. Se queda como una isla clara, a propósito.
+   - Los logos de cliente. Son de color sobre blanco y sobre grafito se ensucian,
+     así que en esta página van en silueta blanca. No es una versión nueva de
+     cada logo: es un filtro, y por eso baja la opacidad — una silueta a plena
+     intensidad compite con el titular.
+
+   Requiere ds/tokens.css. Se carga después de site.css, sections.css y hero.css.
+   ========================================================= */
+
+[data-tema="ia"]{
+  /* — Tinta — */
+  --ds-text:#E7E9EC;
+  --ds-text-2:#B9BEC6;
+  --ds-text-mute:#8A929B;
+  --ds-text-nav:#8A929B;
+
+  /* — Lienzo — El grafito del logo, y dos escalones por encima para las bandas
+     que en claro eran #F4F7FA y #EAEFF5. */
+  --ds-surface:var(--color-graphite-900);
+  --ds-surface-soft:#16181B;
+  --ds-surface-steel:#1B2026;
+  --ds-surface-dark:var(--color-graphite-900);
+
+  /* — Líneas — El hairline claro (#DDE3EA) sobre grafito es un brillo, no una
+     línea. Se baja a la misma línea que usan las tarjetas de la banda de IA. */
+  --color-hairline:#2A2E34;
+  --ds-border:#2A2E34;
+  --frame:var(--frame-dark);
+
+  /* — Azul — El primario se mantiene para el botón, que va sobre relleno. Para
+     texto sobre grafito no vale: #0F68F4 da 3,4:1 y AA pide 4,5. Los enlaces
+     usan el azul aclarado, que es el mismo con el que la capa de IA cita sus
+     referencias. */
+  --ia-enlace:#7FB4FF;
+  --color-primary-wash:rgba(15,104,244,.14);
+  --color-primary-subdued:rgba(15,104,244,.22);
+
+  background:var(--ds-surface);
+  color:var(--ds-text);
+}
+
+/* El fondo del <body> lo pone tokens.css con --ds-surface, pero la 2.0
+   (solved.css) también pinta `body` con su propio token. Se gana aquí. */
+body[data-tema="ia"]{ background:var(--color-graphite-900); }
+
+/* — El logotipo de la nav y del pie —
+   Los pinta chrome.js, que es genérico y sirve a todo el sitio, así que no se le
+   puede pasar una variante por página. Se sustituye la imagen desde CSS con
+   `content:url()`, que reemplaza el recurso del <img> dejando intactos el alt y
+   el enlace. La alternativa —un filtro— aplanaría también el isotipo azul, y el
+   azul es la mitad de la marca.
+
+   Si algún día chrome.js aprende a pintar el logotipo según el tema, esto sobra. */
+[data-tema="ia"] .nav__logo img,
+[data-tema="ia"] .f-logo{
+  content:url("/assets/logotipo-solved-claro.webp");
+}
+
+/* — Botones —
+   El primario no cambia: azul de marca con texto blanco, que sobre grafito sigue
+   siendo el único elemento que tiene que gritar. El secundario sí: en claro es
+   una tarjeta blanca con borde, y aquí eso sería un botón blanco. */
+[data-tema="ia"] .ds-btn--secondary{
+  background:transparent; color:var(--ds-text); border-color:#3A4048;
+}
+[data-tema="ia"] .ds-btn--secondary:hover{ background:rgba(255,255,255,.06); }
+[data-tema="ia"] .ds-btn--secondary:active{ background:rgba(255,255,255,.10); }
+
+/* — El botón principal, en los colores de la capa de IA —
+   El azul de marca es el primario del sitio; en esta página la acción es de IA y
+   lleva su color. La rampa NO llega al cian por detrás del texto: blanco sobre
+   #1FD6F5 da 1,9:1 y el rótulo desaparecería. Se queda en morado→magenta, que con
+   blanco pasa de 4,9:1, y el cian entra donde no estorba: en el halo.
+   Los tres colores son los de la etiqueta AI POWERED, no unos nuevos. */
+[data-tema="ia"] .ds-btn--ia{
+  background:linear-gradient(104deg,#8B3FF0 0%,#B4358F 100%);
+  border-color:transparent;
+  box-shadow:0 0 0 1px rgba(31,214,245,.30), 0 10px 26px rgba(168,85,247,.30);
+}
+[data-tema="ia"] .ds-btn--ia:hover{
+  background:linear-gradient(104deg,#7C33E0 0%,#A32C80 100%);
+}
+[data-tema="ia"] .ds-btn--ia:active{
+  background:linear-gradient(104deg,#6B29C6 0%,#8F236F 100%);
+}
+
+/* — Enlaces de trío y de la rejilla de argumentos — */
+[data-tema="ia"] .trio__link,
+[data-tema="ia"] .reasons__link{ color:var(--ia-enlace); }
+
+/* — La franja de clientes, sobre el grafito de la página —
+   Sin banda y sin filtro: los logos van en color sobre el mismo negro que todo
+   lo demás, y la franja es sólo sus dos hairlines.
+
+   AQUÍ SOBREVIVEN OTROS LOGOS, NO LOS MISMOS
+   Sobre blanco manda la tinta oscura; sobre grafito, el color claro y saturado.
+   Los logotipos de tinta negra desaparecen, así que esta página lleva 13 de los
+   29 —elegidos mirándolos uno a uno sobre #111214— y las páginas blancas siguen
+   con los 29. La lista vive en el marcado de `ia/index.html`, con su porqué.
+
+   De paso salieron dos logotipos MAL CORTADOS: COVAP y Patatas Hijolusa tenían
+   los contadores de las letras rellenos de blanco opaco en vez de transparentes.
+   Sobre blanco no se veía —blanco sobre blanco— y sobre grafito eran manchas
+   dentro de las letras. Se corrigió el asset, no se duplicó: un hueco
+   transparente sobre papel blanco se sigue viendo blanco, así que el resto del
+   sitio no cambia.
+
+   La duración va con el largo de la cinta, como manda el componente: 84s son
+   para 29 logos, así que 13 son 38. Sin esto, esta cinta correría el doble de
+   rápido que la del resto del sitio. */
+[data-tema="ia"] .ds-logos__track{ animation-duration:38s }
+
+/* =========================================================
+   LA HERO — LA ÚNICA RECORTADA DEL SITIO
+   La regla del sistema es que todas las heros ocupan el 90 % del alto de la
+   ventana. Esta página es la excepción, y la excepción está decidida: el 3 de
+   septiembre de 2026 se le quitó el recorte para cumplir la regla, se anotó lo
+   que costaba —«el vídeo ya no se ve al llegar, hay que bajar»— y el cliente
+   resolvió el mismo día que pesa más el vídeo. Así que vuelve `min-height:0`.
+
+   POR QUÉ 0 Y NO UN VALOR INTERMEDIO
+   Es la misma nota que dejó escrita quien lo quitó, y sigue valiendo: una hero
+   a media altura no se lee como una hero apretada, se lee como una hero rota
+   —el haz del shader queda cortado por la mitad y el texto flota sin suelo—. O
+   cumple el 90 %, o se recorta a su contenido. Con 0, la hero mide lo que mide
+   su texto (423px en una ventana de 900) y el vídeo entra entero en la primera
+   pantalla, que es lo que esta página tiene que enseñar: la banda de IA
+   funcionando.
+
+   Vale sólo aquí, y por un motivo que no se repite en el sitio: es la única
+   página cuyo argumento principal es una pieza que va DEBAJO de la hero. En
+   cualquier otra, la hero es el argumento y el 90 % se respeta.
+
+   El aire apretado se queda como estaba.
+   ========================================================= */
+[data-tema="ia"] .ds-hero__frame{
+  min-height:0;
+  padding-block:52px 36px;
+  gap:18px;
+}
+/* La maqueta centrada ya no vive aquí: es `.ds-hero--centro` de ds/hero.css, que
+   usa todo el sitio. Lo único que queda es lo que sí es de esta página —el aire
+   más apretado, el titular algo más corto y el velo, que aquí tiene que ser
+   oscuro porque el lienzo es grafito—. */
+[data-tema="ia"] .ds-hero{
+  --hero-velo-centro:rgba(17,18,20,.72);
+  --hero-velo-medio:rgba(17,18,20,.34);
+  --hero-velo-borde:rgba(17,18,20,0);
+}
+[data-tema="ia"] .ds-hero__txt{ gap:22px; }
+[data-tema="ia"] .ds-hero h1{ max-width:25ch; }
+
+/* El marco del vídeo pega con la hero: el aire de sección entero (96-128px)
+   entre los dos volvía a echar el vídeo fuera de pantalla. */
+.frame--ia-video{ padding-block:0 0; }
+
+/* =========================================================
+   EL VÍDEO, DENTRO DEL ENCUADRE
+   En la guía va a sangre porque allí lo que se enseña es la pieza. En la página
+   va dentro del marco, con el ancho del contenedor: la página entera es grafito,
+   así que un vídeo a sangre no se distingue del fondo y pierde el borde. Con el
+   encuadre, el vídeo ocupa exactamente la misma columna que el texto de arriba y
+   la rejilla de abajo, que es lo que hace que se lea como parte de la página y
+   no como un anuncio incrustado.
+   ========================================================= */
+/* La variante `.iavideo--grid` vivía aquí y se mudó a ds/aiband.css el 7 de
+   septiembre de 2026: es una variante del componente, no del tema oscuro, y la
+   usa también /auditorias/, que no carga esta hoja. */
+
+/* =========================================================
+   PREGUNTAS DE EJEMPLO
+   Las que trae el propio producto en «Pregunta a tus datos», agrupadas por el
+   módulo del que sacan el dato. No son un escaparate de prompts bonitos: son
+   literalmente las que la aplicación sugiere al abrir el chat, y por eso la
+   página puede prometerlas.
+
+   Cuatro columnas y no tres: son cuatro módulos, y meter Documentos en una
+   segunda fila lo dejaría pareciendo un añadido.
+   ========================================================= */
+.iaq{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:20px;
+}
+.iaq__col{
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-panel);
+  background:#16181B;
+  padding:16px 16px 8px;
+}
+.iaq__t{
+  display:flex; align-items:center; gap:8px;
+  margin:0 0 12px;
+  font:var(--font-weight-medium) 13px/1.2 var(--font-sans);
+  color:var(--ds-text);
+}
+.iaq__t svg{ width:15px; height:15px; flex:0 0 auto }
+/* El icono lleva el color de su módulo: es la misma señal que el tinte de las
+   escenas, reducida a un icono. Si aquí el color fuese decorativo, la rejilla
+   estaría diciendo que el módulo da igual. */
+.iaq__col--incidencias .iaq__t svg{ color:#4C8DF6 }
+.iaq__col--registros   .iaq__t svg{ color:#A78BFA }
+.iaq__col--acciones    .iaq__t svg{ color:#FB923C }
+.iaq__col--documentos  .iaq__t svg{ color:#8A929B }
+.iaq__col ul{ margin:0; padding:0; list-style:none }
+.iaq__col li{
+  padding:9px 0;
+  font:var(--font-weight-thin) 13.5px/1.4 var(--font-sans);
+  color:var(--ds-text-2);
+  border-top:1px solid #24282E;
+}
+.iaq__col li:first-child{ border-top:0 }
+/* Las comillas van en el CSS y no en el marcado: son puntuación de la cita, no
+   parte de la pregunta, y así el texto se puede copiar sin ellas. */
+.iaq__col li::before{ content:"«" }
+.iaq__col li::after{ content:"»" }
+
+@media (max-width:1000px){
+  .iaq{ grid-template-columns:repeat(2,minmax(0,1fr)) }
+}
+@media (max-width:600px){
+  .iaq{ grid-template-columns:1fr }
+}
+
+/* — La franja de coste —
+   Lo único que se dice del precio es que se mide, que es lo que ya dice el
+   diálogo de la home. Los créditos por función están en el producto y son una
+   decisión de negocio publicarlos: hasta que se decida, aquí no van. */
+.iacoste{
+  display:flex; align-items:center; gap:10px;
+  margin-top:28px;
+  font:var(--font-weight-thin) 14px/1.5 var(--font-sans);
+  color:var(--ds-text-mute);
+}
+.iacoste svg{ width:17px; height:17px; flex:0 0 auto; color:#C88BFA }
+
+/* ---------- Tira de compatibilidad MCP sobre grafito ----------
+   El icono de ChatGPT es un trazo negro sobre transparente: sobre el grafito de
+   esta página desaparece. Se invierte SÓLO ése —queda blanco, que es como la
+   propia marca lo publica sobre fondo oscuro—; el de Claude es naranja y el de
+   Gemini un degradado, y los dos se leen tal cual. Invertirlos a los tres
+   convertiría el naranja en azul y el degradado en su negativo, que ya no sería
+   la marca de nadie. */
+[data-tema="ia"] .mcp__logo--mono img{ filter:invert(1) }

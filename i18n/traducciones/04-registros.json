@@ -1,0 +1,603 @@
+{
+  "Frecuencia programada, con aviso": { "en": "Scheduled frequency, with an alert", "fr": "Fréquence programmée, avec alerte", "it": "Frequenza programmata, con avviso", "de": "Geplante Frequenz, mit Benachrichtigung", "pt": "Frequência programada, com alerta" },
+  "Cada control tiene su periodicidad y su responsable, y avisa antes de vencer.": {
+    "en": "Every check has its interval and its owner, and warns before it falls due.",
+    "fr": "Chaque contrôle a sa périodicité et son responsable, et alerte avant l'échéance.",
+    "it": "Ogni controllo ha la sua periodicità e il suo responsabile, e avvisa prima di scadere.",
+    "de": "Jede Kontrolle hat ihren Turnus und ihren Verantwortlichen und meldet sich vor Ablauf.",
+    "pt": "Cada controlo tem a sua periodicidade e o seu responsável, e avisa antes de o prazo terminar."
+  },
+  "Cada turno · 06:00": { "en": "Every shift · 06:00", "fr": "Chaque poste · 06:00", "it": "Ogni turno · 06:00", "de": "Jede Schicht · 06:00", "pt": "Cada turno · 06:00" },
+  "Vence en 2 h": { "en": "Due in 2 h", "fr": "Échéance dans 2 h", "it": "Scade tra 2 h", "de": "Fällig in 2 Std.", "pt": "Vence em 2 h" },
+  "Firmado, con hora y autor": { "en": "Signed, with time and author", "fr": "Signé, avec heure et auteur", "it": "Firmato, con ora e autore", "de": "Unterschrieben, mit Uhrzeit und Verfasser", "pt": "Assinado, com hora e autor" },
+  "Quién ejecuta, quién supervisa y quién verifica, cada uno con su nombre y su hora.": {
+    "en": "Who performs, who supervises and who verifies, each with a name and a time.",
+    "fr": "Qui exécute, qui supervise et qui vérifie, chacun avec son nom et son heure.",
+    "it": "Chi esegue, chi supervisiona e chi verifica, ciascuno con il proprio nome e la propria ora.",
+    "de": "Wer ausführt, wer überwacht und wer prüft – jeder mit Namen und Uhrzeit.",
+    "pt": "Quem executa, quem supervisiona e quem verifica, cada um com o seu nome e a sua hora."
+  },
+  "Javier · 06:41": { "en": "Javier · 06:41", "fr": "Javier · 06:41", "it": "Javier · 06:41", "de": "Javier · 06:41", "pt": "Javier · 06:41" },
+  "Un KO abre la incidencia solo": { "en": "A KO opens the incident on its own", "fr": "Un KO ouvre l'incident tout seul", "it": "Un KO apre l'anomalia da solo", "de": "Ein KO öffnet die Störung von selbst", "pt": "Um KO abre a ocorrência sozinho" },
+  "El control fuera de límites genera la incidencia con su responsable y su plazo.": {
+    "en": "A check outside its limits raises the incident with its owner and its deadline.",
+    "fr": "Un contrôle hors limites crée l'incident avec son responsable et son échéance.",
+    "it": "Il controllo fuori limite genera l'anomalia con il suo responsabile e la sua scadenza.",
+    "de": "Eine Kontrolle außerhalb der Grenzwerte erzeugt die Störung mit Verantwortlichem und Frist.",
+    "pt": "O controlo fora dos limites gera a ocorrência com o seu responsável e o seu prazo."
+  },
+  "Histórico filtrable y exportable": { "en": "Filterable, exportable history", "fr": "Historique filtrable et exportable", "it": "Storico filtrabile ed esportabile", "de": "Filterbare, exportierbare Historie", "pt": "Histórico filtrável e exportável" },
+  "Un mes entero por línea, turno o producto, con sus evidencias, en un filtro.": {
+    "en": "A whole month by line, shift or product, with its evidence, in one filter.",
+    "fr": "Un mois entier par ligne, poste ou produit, avec ses preuves, en un filtre.",
+    "it": "Un mese intero per linea, turno o prodotto, con le sue evidenze, in un filtro.",
+    "de": "Ein ganzer Monat nach Linie, Schicht oder Produkt, mit Nachweisen, in einem Filter.",
+    "pt": "Um mês inteiro por linha, turno ou produto, com as suas evidências, num filtro."
+  },
+  "Línea 3 · turno mañana": { "en": "Line 3 · morning shift", "fr": "Ligne 3 · poste du matin", "it": "Linea 3 · turno mattina", "de": "Linie 3 · Frühschicht", "pt": "Linha 3 · turno da manhã" },
+  "Línea 1 · turno noche": { "en": "Line 1 · night shift", "fr": "Ligne 1 · poste de nuit", "it": "Linea 1 · turno notte", "de": "Linie 1 · Nachtschicht", "pt": "Linha 1 · turno da noite" },
+  "El sistema se configura sobre los procedimientos e inspecciones propios": {
+    "en": "The system is configured on your own procedures and inspections",
+    "fr": "Le système se configure sur vos propres procédures et inspections",
+    "it": "Il sistema si configura sulle procedure e ispezioni proprie",
+    "de": "Das System wird auf Ihre eigenen Verfahren und Prüfungen aufgesetzt",
+    "pt": "O sistema configura-se sobre os próprios procedimentos e inspeções"
+  },
+  "Controles de temperatura": { "en": "Temperature checks", "fr": "Contrôles de température", "it": "Controlli di temperatura", "de": "Temperaturkontrollen", "pt": "Controlos de temperatura" },
+  "Controles de calidad": { "en": "Quality checks", "fr": "Contrôles qualité", "it": "Controlli di qualità", "de": "Qualitätskontrollen", "pt": "Controlos de qualidade" },
+  "Recepción de mercancías": { "en": "Goods receipt", "fr": "Réception des marchandises", "it": "Ricevimento merci", "de": "Wareneingang", "pt": "Receção de mercadorias" },
+  "Controles de PRL": { "en": "Health and safety checks", "fr": "Contrôles santé et sécurité", "it": "Controlli di sicurezza sul lavoro", "de": "Arbeitsschutzkontrollen", "pt": "Controlos de segurança no trabalho" },
+  "Mantenimiento rutinario": { "en": "Routine maintenance", "fr": "Maintenance de routine", "it": "Manutenzione ordinaria", "de": "Routineinstandhaltung", "pt": "Manutenção de rotina" },
+  "Muestreo del agua": { "en": "Water sampling", "fr": "Échantillonnage de l'eau", "it": "Campionamento dell'acqua", "de": "Wasserprobenahme", "pt": "Amostragem da água" },
+  "Control de apertura y cierre": { "en": "Opening and closing check", "fr": "Contrôle d'ouverture et de fermeture", "it": "Controllo di apertura e chiusura", "de": "Öffnungs- und Schließkontrolle", "pt": "Controlo de abertura e fecho" },
+  "Evaluación del estado de las instalaciones": { "en": "Facility condition assessment", "fr": "Évaluation de l'état des installations", "it": "Valutazione dello stato degli impianti", "de": "Bewertung des Anlagenzustands", "pt": "Avaliação do estado das instalações" },
+  "Control de cámaras": { "en": "Cold room checks", "fr": "Contrôle des chambres froides", "it": "Controllo delle celle", "de": "Kühlraumkontrollen", "pt": "Controlo das câmaras frigoríficas" },
+  "Auditorías internas y de certificación": { "en": "Internal and certification audits", "fr": "Audits internes et de certification", "it": "Audit interni e di certificazione", "de": "Interne und Zertifizierungsaudits", "pt": "Auditorias internas e de certificação" },
+  "Inspección de líneas de producción": { "en": "Production line inspection", "fr": "Inspection des lignes de production", "it": "Ispezione delle linee di produzione", "de": "Inspektion der Fertigungslinien", "pt": "Inspeção das linhas de produção" },
+  "Control de residuos y sostenibilidad": { "en": "Waste and sustainability checks", "fr": "Contrôle des déchets et durabilité", "it": "Controllo rifiuti e sostenibilità", "de": "Abfall- und Nachhaltigkeitskontrollen", "pt": "Controlo de resíduos e sustentabilidade" },
+  "Planificación, registro, revisión y resolución": { "en": "Plan, record, review and resolve", "fr": "Planification, enregistrement, revue et résolution", "it": "Pianificazione, registrazione, revisione e risoluzione", "de": "Planen, erfassen, prüfen und lösen", "pt": "Planeamento, registo, revisão e resolução" },
+  "La frecuencia y la fecha de cada procedimiento se programan, el control se cumplimenta desde móvil, tablet o PC, la ejecución se verifica en plazo y la no conformidad deriva en una acción con responsable.": {
+    "en": "Each procedure's frequency and date are scheduled, the check is filled in from phone, tablet or PC, execution is verified on time and a non-conformity turns into an action with an owner.",
+    "fr": "La fréquence et la date de chaque procédure sont programmées, le contrôle se remplit depuis un téléphone, une tablette ou un PC, l'exécution est vérifiée dans les délais et la non-conformité donne lieu à une action avec responsable.",
+    "it": "La frequenza e la data di ogni procedura si programmano, il controllo si compila da telefono, tablet o PC, l'esecuzione si verifica nei tempi e la non conformità genera un'azione con responsabile.",
+    "de": "Frequenz und Termin jedes Verfahrens werden geplant, die Kontrolle wird per Smartphone, Tablet oder PC ausgefüllt, die Ausführung fristgerecht geprüft, und eine Abweichung wird zur Maßnahme mit Verantwortlichem.",
+    "pt": "A frequência e a data de cada procedimento programam-se, o controlo preenche-se a partir do telemóvel, do tablet ou do PC, a execução verifica-se dentro do prazo e a não conformidade dá origem a uma ação com responsável."
+  },
+  "Planificación": { "en": "Planning", "fr": "Planification", "it": "Pianificazione", "de": "Planung", "pt": "Planeamento" },
+  "Cada control se programa con su frecuencia, su responsable y su fecha de cierre, y el sistema notifica antes del vencimiento.": {
+    "en": "Every check is scheduled with its frequency, its owner and its closing date, and the system notifies before it falls due.",
+    "fr": "Chaque contrôle est programmé avec sa fréquence, son responsable et sa date de clôture, et le système notifie avant l'échéance.",
+    "it": "Ogni controllo si programma con la sua frequenza, il suo responsabile e la sua data di chiusura, e il sistema avvisa prima della scadenza.",
+    "de": "Jede Kontrolle wird mit Frequenz, Verantwortlichem und Abschlusstermin geplant, und das System meldet sich vor Ablauf.",
+    "pt": "Cada controlo programa-se com a sua frequência, o seu responsável e a sua data de encerramento, e o sistema notifica antes de o prazo terminar."
+  },
+  "Registro": { "en": "Recording", "fr": "Enregistrement", "it": "Registrazione", "de": "Erfassung", "pt": "Registo" },
+  "La cumplimentación se realiza sobre plantillas configuradas a medida, desde el móvil o la tablet del puesto y en el punto de ejecución del control.": {
+    "en": "It is filled in on templates configured to fit, from the phone or tablet at the workstation and at the point where the check is done.",
+    "fr": "Le remplissage se fait sur des modèles configurés sur mesure, depuis le téléphone ou la tablette du poste et au point d'exécution du contrôle.",
+    "it": "La compilazione avviene su modelli configurati su misura, dal telefono o dal tablet della postazione e nel punto di esecuzione del controllo.",
+    "de": "Ausgefüllt wird auf maßgeschneiderten Vorlagen, vom Smartphone oder Tablet am Arbeitsplatz und dort, wo die Kontrolle stattfindet.",
+    "pt": "O preenchimento faz-se sobre modelos configurados à medida, a partir do telemóvel ou do tablet do posto e no ponto de execução do controlo."
+  },
+  "Revisión": { "en": "Review", "fr": "Revue", "it": "Revisione", "de": "Prüfung", "pt": "Revisão" },
+  "Supervisión en tiempo real de lo ejecutado y lo pendiente, por turno, por línea y por responsable, sin solicitarlo a cada área.": {
+    "en": "Real-time oversight of what is done and what is pending, by shift, by line and by owner, without asking each area for it.",
+    "fr": "Supervision en temps réel de ce qui est fait et de ce qui reste, par poste, par ligne et par responsable, sans le demander à chaque service.",
+    "it": "Supervisione in tempo reale di ciò che è stato eseguito e di ciò che resta, per turno, per linea e per responsabile, senza chiederlo a ogni area.",
+    "de": "Überblick in Echtzeit über Erledigtes und Offenes – nach Schicht, Linie und Verantwortlichem, ohne bei jedem Bereich nachzufragen.",
+    "pt": "Supervisão em tempo real do que foi executado e do que está pendente, por turno, por linha e por responsável, sem ter de o pedir a cada área."
+  },
+  "Resolución": { "en": "Resolution", "fr": "Résolution", "it": "Risoluzione", "de": "Lösung", "pt": "Resolução" },
+  "Un control con resultado KO genera la incidencia automáticamente, con responsable y plazo, y su seguimiento continúa en el mismo sistema.": {
+    "en": "A check that comes back KO raises the incident automatically, with an owner and a deadline, and the follow-up continues in the same system.",
+    "fr": "Un contrôle au résultat KO crée l'incident automatiquement, avec responsable et échéance, et son suivi se poursuit dans le même système.",
+    "it": "Un controllo con esito KO genera l'anomalia automaticamente, con responsabile e scadenza, e il suo monitoraggio prosegue nello stesso sistema.",
+    "de": "Eine Kontrolle mit Ergebnis KO erzeugt die Störung automatisch, mit Verantwortlichem und Frist, und die Nachverfolgung läuft im selben System weiter.",
+    "pt": "Um controlo com resultado KO gera a ocorrência automaticamente, com responsável e prazo, e o seu acompanhamento continua no mesmo sistema."
+  },
+  "Rellena el control donde se hace, no al acabar el turno": {
+    "en": "Fill in the check where it happens, not when the shift ends",
+    "fr": "Remplissez le contrôle là où il se fait, pas à la fin du poste",
+    "it": "Compila il controllo dove si fa, non a fine turno",
+    "de": "Die Kontrolle dort ausfüllen, wo sie stattfindet – nicht am Schichtende",
+    "pt": "Preencha o controlo onde ele é feito, não no final do turno"
+  },
+  "En la propia línea y sobre la tablet del puesto, no al cierre del turno y de forma retrospectiva.": {
+    "en": "On the line itself and on the workstation tablet, not retrospectively at the end of the shift.",
+    "fr": "Sur la ligne elle-même et sur la tablette du poste, pas en fin de poste et de façon rétrospective.",
+    "it": "Sulla linea stessa e sul tablet della postazione, non a fine turno e a posteriori.",
+    "de": "An der Linie selbst und auf dem Tablet am Arbeitsplatz – nicht nachträglich am Schichtende.",
+    "pt": "Na própria linha e no tablet do posto, não no fim do turno e de forma retrospetiva."
+  },
+  "El control del turno, firmado y con registro único": {
+    "en": "The shift check, signed and logged once",
+    "fr": "Le contrôle du poste, signé et à enregistrement unique",
+    "it": "Il controllo del turno, firmato e con registrazione unica",
+    "de": "Die Schichtkontrolle, unterschrieben und einmalig erfasst",
+    "pt": "O controlo do turno, assinado e com registo único"
+  },
+  "Firmado a las 21:12": { "en": "Signed at 21:12", "fr": "Signé à 21:12", "it": "Firmato alle 21:12", "de": "Unterschrieben um 21:12", "pt": "Assinado às 21:12" },
+  "Control de limpieza · Turno tarde": { "en": "Cleaning check · Afternoon shift", "fr": "Contrôle de nettoyage · Poste d'après-midi", "it": "Controllo di pulizia · Turno pomeriggio", "de": "Reinigungskontrolle · Spätschicht", "pt": "Controlo de limpeza · Turno da tarde" },
+  "Respuestas acotadas, firma y hora": { "en": "Bounded answers, signature and time", "fr": "Réponses fermées, signature et heure", "it": "Risposte chiuse, firma e ora", "de": "Feste Antworten, Unterschrift und Uhrzeit", "pt": "Respostas fechadas, assinatura e hora" },
+  "Superficies de envasado": { "en": "Packaging surfaces", "fr": "Surfaces de conditionnement", "it": "Superfici di confezionamento", "de": "Verpackungsflächen", "pt": "Superfícies de embalagem" },
+  "Conforme": { "en": "Conforming", "fr": "Conforme", "it": "Conforme", "de": "Konform", "pt": "Conforme" },
+  "Sala de despiece": { "en": "Cutting room", "fr": "Salle de découpe", "it": "Sala di sezionamento", "de": "Zerlegeraum", "pt": "Sala de desmancha" },
+  "Con incidencia": { "en": "With an incident", "fr": "Avec incident", "it": "Con anomalia", "de": "Mit Störung", "pt": "Com ocorrência" },
+  "Firmado": { "en": "Signed", "fr": "Signé", "it": "Firmato", "de": "Unterschrieben", "pt": "Assinado" },
+  "3 de 3": { "en": "3 of 3", "fr": "3 sur 3", "it": "3 di 3", "de": "3 von 3", "pt": "3 de 3" },
+  "Un mes completo de registros y evidencias, en un filtro": {
+    "en": "A full month of records and evidence, in one filter",
+    "fr": "Un mois complet d'enregistrements et de preuves, en un filtre",
+    "it": "Un mese completo di registrazioni ed evidenze, in un filtro",
+    "de": "Ein voller Monat an Aufzeichnungen und Nachweisen, in einem Filter",
+    "pt": "Um mês completo de registos e evidências, num filtro"
+  },
+  "Marzo 2026 · 214 registros": { "en": "March 2026 · 214 records", "fr": "Mars 2026 · 214 enregistrements", "it": "Marzo 2026 · 214 registrazioni", "de": "März 2026 · 214 Aufzeichnungen", "pt": "Março de 2026 · 214 registos" },
+  "Filtrados por línea y por turno": { "en": "Filtered by line and by shift", "fr": "Filtrés par ligne et par poste", "it": "Filtrati per linea e per turno", "de": "Gefiltert nach Linie und Schicht", "pt": "Filtrados por linha e por turno" },
+  "Exportar": { "en": "Export", "fr": "Exporter", "it": "Esporta", "de": "Exportieren", "pt": "Exportar" },
+  "PDF con evidencias": { "en": "PDF with evidence", "fr": "PDF avec preuves", "it": "PDF con evidenze", "de": "PDF mit Nachweisen", "pt": "PDF com evidências" },
+  "Tiempo dedicado a volcar checklist en excel o ERP": {
+    "en": "Time spent copying checklists into Excel or the ERP",
+    "fr": "Temps passé à recopier les checklists dans Excel ou l'ERP",
+    "it": "Tempo speso a riversare le checklist in Excel o nell'ERP",
+    "de": "Zeit für das Übertragen von Checklisten nach Excel oder ins ERP",
+    "pt": "Tempo dedicado a copiar checklists para o Excel ou para o ERP"
+  },
+  "Tiempo dedicado al registro de checklist": { "en": "Time spent filling in checklists", "fr": "Temps consacré au remplissage des checklists", "it": "Tempo dedicato alla compilazione delle checklist", "de": "Zeit für das Ausfüllen von Checklisten", "pt": "Tempo dedicado ao preenchimento de checklists" },
+  "Tiempo medio de respuesta para ejecutar las medidas correctivas": {
+    "en": "Average response time to carry out corrective measures",
+    "fr": "Délai moyen de réponse pour exécuter les mesures correctives",
+    "it": "Tempo medio di risposta per eseguire le misure correttive",
+    "de": "Durchschnittliche Reaktionszeit bis zur Umsetzung von Korrekturmaßnahmen",
+    "pt": "Tempo médio de resposta para executar as medidas corretivas"
+  },
+  "Tiempo medio de gestión y comunicación": { "en": "Average handling and communication time", "fr": "Temps moyen de gestion et de communication", "it": "Tempo medio di gestione e comunicazione", "de": "Durchschnittliche Bearbeitungs- und Kommunikationszeit", "pt": "Tempo médio de gestão e comunicação" },
+  "Tiempo medio de paro de producción por incidencia": {
+    "en": "Average production downtime per incident",
+    "fr": "Temps moyen d'arrêt de production par incident",
+    "it": "Tempo medio di fermo produzione per anomalia",
+    "de": "Durchschnittlicher Produktionsstillstand je Störung",
+    "pt": "Tempo médio de paragem de produção por ocorrência"
+  },
+  "Referencias: equipos que ya han sustituido el papel": {
+    "en": "References: teams that have already replaced paper",
+    "fr": "Références : des équipes qui ont déjà remplacé le papier",
+    "it": "Referenze: squadre che hanno già sostituito la carta",
+    "de": "Referenzen: Teams, die das Papier bereits ersetzt haben",
+    "pt": "Referências: equipas que já substituíram o papel"
+  },
+  "«Hay mucha información que manteníamos en papel. Pasarla a digital primero nos ahorra tiempo y segundo nos da una información de mayor calidad y más fiable.»": {
+    "en": "“We kept a lot of information on paper. Moving it to digital saves us time and, second, gives us better and more reliable information.”",
+    "fr": "« Nous conservions beaucoup d'informations sur papier. Le passage au numérique nous fait gagner du temps et, ensuite, nous donne une information de meilleure qualité et plus fiable. »",
+    "it": "«Tenevamo molte informazioni su carta. Passarle al digitale ci fa risparmiare tempo e, in secondo luogo, ci dà informazioni di qualità più alta e più affidabili.»",
+    "de": "„Vieles haben wir auf Papier geführt. Der Wechsel ins Digitale spart uns Zeit und liefert uns zweitens bessere und verlässlichere Informationen.“",
+    "pt": "«Mantínhamos muita informação em papel. Passá-la para digital poupa-nos tempo e, em segundo lugar, dá-nos uma informação de maior qualidade e mais fiável.»"
+  },
+  "Coordinador del dpto. técnico · Panificadora Alcalá": {
+    "en": "Technical department coordinator · Panificadora Alcalá",
+    "fr": "Coordinateur du service technique · Panificadora Alcalá",
+    "it": "Coordinatore del reparto tecnico · Panificadora Alcalá",
+    "de": "Koordinator der technischen Abteilung · Panificadora Alcalá",
+    "pt": "Coordenador do dep. técnico · Panificadora Alcalá"
+  },
+  "Samuel Pardo": { "en": "Samuel Pardo", "fr": "Samuel Pardo", "it": "Samuel Pardo", "de": "Samuel Pardo", "pt": "Samuel Pardo" },
+  "Ver el caso de Panificadora Alcalá en vídeo →": {
+    "en": "Watch the Panificadora Alcalá case study →",
+    "fr": "Voir le cas Panificadora Alcalá en vidéo →",
+    "it": "Guarda il caso Panificadora Alcalá in video →",
+    "de": "Fallstudie Panificadora Alcalá als Video →",
+    "pt": "Ver o caso da Panificadora Alcalá em vídeo →"
+  },
+  "¿Qué es una checklist digital?": { "en": "What is a digital checklist?", "fr": "Qu'est-ce qu'une checklist numérique ?", "it": "Che cos'è una checklist digitale?", "de": "Was ist eine digitale Checkliste?", "pt": "O que é uma checklist digital?" },
+  "Es una lista de verificación que se cumplimenta desde móvil, tablet o PC en lugar de en papel, con registro automático de fecha, responsable y resultado en tiempo real.": {
+    "en": "It is a verification list filled in from a phone, tablet or PC instead of on paper, automatically recording date, owner and result in real time.",
+    "fr": "C'est une liste de vérification remplie depuis un téléphone, une tablette ou un PC plutôt que sur papier, avec enregistrement automatique de la date, du responsable et du résultat en temps réel.",
+    "it": "È una lista di verifica che si compila da telefono, tablet o PC invece che su carta, con registrazione automatica di data, responsabile ed esito in tempo reale.",
+    "de": "Eine Prüfliste, die statt auf Papier per Smartphone, Tablet oder PC ausgefüllt wird – mit automatischer Erfassung von Datum, Verantwortlichem und Ergebnis in Echtzeit.",
+    "pt": "É uma lista de verificação que se preenche a partir do telemóvel, do tablet ou do PC em vez de em papel, com registo automático de data, responsável e resultado em tempo real."
+  },
+  "¿Puedo personalizar las checklists para cada proceso?": {
+    "en": "Can I tailor the checklists to each process?",
+    "fr": "Puis-je personnaliser les checklists pour chaque procédé ?",
+    "it": "Posso personalizzare le checklist per ogni processo?",
+    "de": "Kann ich die Checklisten je Prozess anpassen?",
+    "pt": "É possível personalizar as checklists para cada processo?"
+  },
+  "Sí. Solved permite configurar plantillas a medida para cada control, inspección o procedimiento, adaptadas a los estándares y la operativa de cada planta.": {
+    "en": "Yes. Solved lets you configure bespoke templates for each check, inspection or procedure, matched to each plant's standards and way of working.",
+    "fr": "Oui. Solved permet de configurer des modèles sur mesure pour chaque contrôle, inspection ou procédure, adaptés aux standards et au fonctionnement de chaque usine.",
+    "it": "Sì. Solved permette di configurare modelli su misura per ogni controllo, ispezione o procedura, adattati agli standard e all'operatività di ogni stabilimento.",
+    "de": "Ja. Solved erlaubt maßgeschneiderte Vorlagen für jede Kontrolle, Prüfung oder jedes Verfahren – abgestimmt auf die Standards und Abläufe jedes Werks.",
+    "pt": "Sim. O Solved permite configurar modelos à medida para cada controlo, inspeção ou procedimento, adaptados às normas e à forma de trabalhar de cada fábrica."
+  },
+  "¿Solved ayuda a cumplir IFS, BRC o ISO 9001?": {
+    "en": "Does Solved help with IFS, BRC or ISO 9001 compliance?",
+    "fr": "Solved aide-t-il à satisfaire IFS, BRC ou ISO 9001 ?",
+    "it": "Solved aiuta a rispettare IFS, BRC o ISO 9001?",
+    "de": "Hilft Solved bei IFS, BRC oder ISO 9001?",
+    "pt": "O Solved ajuda a cumprir a IFS, a BRC ou a ISO 9001?"
+  },
+  "Sí. Con los registros digitalizados y disponibles en todo momento, el cumplimiento normativo se documenta sin trabajo previo a la auditoría.": {
+    "en": "Yes. With records digitised and available at all times, compliance is documented without prep work before the audit.",
+    "fr": "Oui. Avec des enregistrements numérisés et disponibles à tout moment, la conformité se documente sans travail préalable à l'audit.",
+    "it": "Sì. Con le registrazioni digitalizzate e sempre disponibili, la conformità si documenta senza lavoro preparatorio prima dell'audit.",
+    "de": "Ja. Mit digitalisierten, jederzeit verfügbaren Aufzeichnungen ist die Normerfüllung ohne Vorarbeit vor dem Audit belegt.",
+    "pt": "Sim. Com os registos digitalizados e disponíveis a qualquer momento, o cumprimento normativo fica documentado sem trabalho prévio à auditoria."
+  },
+  "¿Puedo programar la frecuencia de cada control?": {
+    "en": "Can I schedule how often each check runs?",
+    "fr": "Puis-je programmer la fréquence de chaque contrôle ?",
+    "it": "Posso programmare la frequenza di ogni controllo?",
+    "de": "Kann ich die Frequenz jeder Kontrolle planen?",
+    "pt": "É possível programar a frequência de cada controlo?"
+  },
+  "Sí. Se define la frecuencia y la fecha de cada procedimiento, y el sistema notifica y asigna responsables para que ninguno quede sin ejecutar.": {
+    "en": "Yes. You set each procedure's frequency and date, and the system notifies and assigns owners so none is left undone.",
+    "fr": "Oui. On définit la fréquence et la date de chaque procédure, et le système notifie et attribue des responsables pour qu'aucune ne reste non exécutée.",
+    "it": "Sì. Si definiscono frequenza e data di ogni procedura, e il sistema avvisa e assegna responsabili perché nessuna resti ineseguita.",
+    "de": "Ja. Sie legen Frequenz und Termin jedes Verfahrens fest, und das System benachrichtigt und weist Verantwortliche zu, damit keines liegen bleibt.",
+    "pt": "Sim. Define-se a frequência e a data de cada procedimento, e o sistema notifica e atribui responsáveis para que nenhum fique por executar."
+  },
+  "¿Funciona desde cualquier dispositivo?": { "en": "Does it work on any device?", "fr": "Fonctionne-t-il sur n'importe quel appareil ?", "it": "Funziona da qualsiasi dispositivo?", "de": "Funktioniert es auf jedem Gerät?", "pt": "Funciona a partir de qualquer dispositivo?" },
+  "Sí. Los registros se cumplimentan y se revisan desde móvil, tablet o PC.": {
+    "en": "Yes. Records are filled in and reviewed from a phone, a tablet or a PC.",
+    "fr": "Oui. Les enregistrements se remplissent et se consultent depuis un téléphone, une tablette ou un PC.",
+    "it": "Sì. Le registrazioni si compilano e si rivedono da telefono, tablet o PC.",
+    "de": "Ja. Aufzeichnungen werden per Smartphone, Tablet oder PC ausgefüllt und geprüft.",
+    "pt": "Sim. Os registos preenchem-se e revêem-se a partir do telemóvel, do tablet ou do PC."
+  },
+  "Panificadora Alcalá": { "en": "Panificadora Alcalá", "fr": "Panificadora Alcalá", "it": "Panificadora Alcalá", "de": "Panificadora Alcalá", "pt": "Panificadora Alcalá" },
+  "Registros / Checklist": { "en": "Records / Checklists", "fr": "Enregistrements / Checklists", "it": "Registrazioni / Checklist", "de": "Aufzeichnungen / Checklisten", "pt": "Registos / Checklist" },
+  "Gestión documental para calidad y mantenimiento · Solved": {
+    "en": "Document management for quality and maintenance · Solved",
+    "fr": "Gestion documentaire pour la qualité et la maintenance · Solved",
+    "it": "Gestione documentale per qualità e manutenzione · Solved",
+    "de": "Dokumentenmanagement für Qualität und Instandhaltung · Solved",
+    "pt": "Gestão documental para qualidade e manutenção · Solved"
+  },
+  "Controla la versión vigente, la validación y la caducidad de cada documento de planta, y detecta la carpeta incompleta antes de la auditoría, no durante.": {
+    "en": "Keep track of the current version, the approval and the expiry date of every plant document, and spot the incomplete folder before the audit, not during it.",
+    "fr": "Maîtrisez la version en vigueur, la validation et l'expiration de chaque document d'usine, et repérez le dossier incomplet avant l'audit, pas pendant.",
+    "it": "Controlla la versione vigente, la validazione e la scadenza di ogni documento di stabilimento, e individua la cartella incompleta prima dell'audit, non durante.",
+    "de": "Behalten Sie gültige Version, Freigabe und Ablaufdatum jedes Werksdokuments im Blick – und erkennen Sie den unvollständigen Ordner vor dem Audit, nicht währenddessen.",
+    "pt": "Controle a versão em vigor, a validação e o prazo de validade de cada documento de fábrica, e detete a pasta incompleta antes da auditoria, não durante."
+  },
+  "Gestión documental": { "en": "Document management", "fr": "Gestion documentaire", "it": "Gestione documentale", "de": "Dokumentenmanagement", "pt": "Gestão documental" },
+  "Controla la documentación de toda tu planta:": {
+    "en": "Take control of your plant's whole document set:",
+    "fr": "Maîtrisez toute la documentation de votre usine :",
+    "it": "Controlla la documentazione di tutto il tuo stabilimento:",
+    "de": "Behalten Sie die gesamte Werksdokumentation im Griff:",
+    "pt": "Controle a documentação de toda a sua fábrica:"
+  },
+  "versión vigente, validación y caducidades avisadas antes de que las pida el auditor.": {
+    "en": "current version, approval and expiry dates flagged before the auditor asks.",
+    "fr": "version en vigueur, validation et expirations signalées avant que l'auditeur ne les demande.",
+    "it": "versione vigente, validazione e scadenze segnalate prima che le chieda l'auditor.",
+    "de": "gültige Version, Freigabe und Ablauffristen – gemeldet, bevor der Auditor fragt.",
+    "pt": "versão em vigor, validação e prazos de validade avisados antes de o auditor os pedir."
+  },
+  "Cada documento sabe cuándo caduca, quién lo validó y en qué carpeta falta. Una carpeta compartida no sabe nada de eso.": {
+    "en": "Every document knows when it expires, who approved it and which folder it is missing from. A shared folder knows none of that.",
+    "fr": "Chaque document sait quand il expire, qui l'a validé et dans quel dossier il manque. Un dossier partagé ne sait rien de tout cela.",
+    "it": "Ogni documento sa quando scade, chi l'ha validato e in quale cartella manca. Una cartella condivisa non sa nulla di tutto questo.",
+    "de": "Jedes Dokument weiß, wann es abläuft, wer es freigegeben hat und in welchem Ordner es fehlt. Ein geteilter Ordner weiß davon nichts.",
+    "pt": "Cada documento sabe quando expira, quem o validou e em que pasta falta. Uma pasta partilhada não sabe nada disso."
+  },
+  "Una carpeta compartida guarda archivos; no avisa de lo que caduca ni de lo que falta": {
+    "en": "A shared folder stores files; it does not warn you about what expires or what is missing",
+    "fr": "Un dossier partagé stocke des fichiers ; il n'alerte ni sur ce qui expire ni sur ce qui manque",
+    "it": "Una cartella condivisa conserva file; non avvisa di ciò che scade né di ciò che manca",
+    "de": "Ein geteilter Ordner speichert Dateien; er warnt weder vor Abläufen noch vor Lücken",
+    "pt": "Uma pasta partilhada guarda ficheiros; não avisa do que expira nem do que falta"
+  },
+  "Ni de que el certificado del proveedor caducó el mes pasado, ni de que la versión que circula por planta ya no es la vigente, ni de que a esa carpeta le falta un documento.": {
+    "en": "Not that the supplier's certificate expired last month, not that the version going round the plant is no longer the current one, not that a document is missing from that folder.",
+    "fr": "Ni que le certificat du fournisseur a expiré le mois dernier, ni que la version qui circule dans l'usine n'est plus la version en vigueur, ni qu'il manque un document dans ce dossier.",
+    "it": "Né che il certificato del fornitore è scaduto il mese scorso, né che la versione che circola in stabilimento non è più quella vigente, né che a quella cartella manca un documento.",
+    "de": "Weder dass das Lieferantenzertifikat letzten Monat abgelaufen ist, noch dass die im Werk kursierende Version nicht mehr die gültige ist, noch dass in diesem Ordner ein Dokument fehlt.",
+    "pt": "Nem de que o certificado do fornecedor expirou no mês passado, nem de que a versão que circula na fábrica já não é a vigente, nem de que falta um documento nessa pasta."
+  },
+  "La documentación vive en un SharePoint o en una carpeta del servidor. Guarda bien los archivos; lo que no hace es avisar.": {
+    "en": "The documents live in a SharePoint or a server folder. It stores files well; what it does not do is warn you.",
+    "fr": "La documentation vit dans un SharePoint ou un dossier serveur. Il stocke bien les fichiers ; ce qu'il ne fait pas, c'est alerter.",
+    "it": "La documentazione vive in uno SharePoint o in una cartella del server. Conserva bene i file; quello che non fa è avvisare.",
+    "de": "Die Dokumente liegen in einem SharePoint oder einem Serverordner. Dateien speichert er gut; was er nicht tut, ist warnen.",
+    "pt": "A documentação vive num SharePoint ou numa pasta do servidor. Guarda bem os ficheiros; o que não faz é avisar."
+  },
+  "Se sube la versión 2 y la 1 sigue circulando. Nadie sabe con seguridad cuál es la vigente ni quién le dio el visto bueno.": {
+    "en": "Version 2 goes up and version 1 keeps circulating. Nobody knows for sure which one is current or who signed it off.",
+    "fr": "On téléverse la version 2 et la version 1 continue de circuler. Personne ne sait avec certitude laquelle est en vigueur ni qui l'a validée.",
+    "it": "Si carica la versione 2 e la 1 continua a circolare. Nessuno sa con certezza quale sia quella vigente né chi le ha dato l'approvazione.",
+    "de": "Version 2 wird hochgeladen und Version 1 kursiert weiter. Niemand weiß sicher, welche gilt oder wer sie freigegeben hat.",
+    "pt": "Carrega-se a versão 2 e a 1 continua a circular. Ninguém sabe ao certo qual é a vigente nem quem lhe deu o aval."
+  },
+  "Los certificados de proveedor caducan cada uno en una fecha distinta, y controlarlos consiste en repasar cien vencimientos uno por uno.": {
+    "en": "Supplier certificates each expire on a different date, and keeping track means going through a hundred due dates one by one.",
+    "fr": "Les certificats fournisseurs expirent chacun à une date différente, et les suivre revient à passer en revue cent échéances une par une.",
+    "it": "I certificati dei fornitori scadono ciascuno in una data diversa, e controllarli significa passare in rassegna cento scadenze una per una.",
+    "de": "Lieferantenzertifikate laufen jeweils zu einem anderen Datum ab, und sie zu überwachen heißt, hundert Fristen einzeln durchzugehen.",
+    "pt": "Os certificados de fornecedor expiram cada um numa data diferente, e controlá-los consiste em rever cem prazos um a um."
+  },
+  "El auditor pide el procedimiento y el registro que lo aplica. Están en dos sitios distintos que no se hablan entre ellos.": {
+    "en": "The auditor asks for the procedure and the record that applies it. They are in two different places that do not talk to each other.",
+    "fr": "L'auditeur demande la procédure et l'enregistrement qui l'applique. Ils sont à deux endroits différents qui ne communiquent pas.",
+    "it": "L'auditor chiede la procedura e la registrazione che la applica. Stanno in due posti diversi che non si parlano.",
+    "de": "Der Auditor verlangt das Verfahren und die Aufzeichnung, die es umsetzt. Sie liegen an zwei Orten, die nichts voneinander wissen.",
+    "pt": "O auditor pede o procedimento e o registo que o aplica. Estão em dois sítios diferentes que não comunicam entre si."
+  },
+  "Nadie sabe si la carpeta está completa hasta que falta un documento, y eso se descubre delante de quien lo ha pedido.": {
+    "en": "Nobody knows whether the folder is complete until a document is missing, and that comes to light in front of whoever asked for it.",
+    "fr": "Personne ne sait si le dossier est complet jusqu'à ce qu'un document manque, et cela se découvre devant celui qui l'a demandé.",
+    "it": "Nessuno sa se la cartella è completa finché non manca un documento, e lo si scopre davanti a chi l'ha chiesto.",
+    "de": "Niemand weiß, ob der Ordner vollständig ist, bis ein Dokument fehlt – und das zeigt sich vor demjenigen, der danach gefragt hat.",
+    "pt": "Ninguém sabe se a pasta está completa até faltar um documento, e isso descobre-se diante de quem o pediu."
+  },
+  "La carpeta, con lo que hay y con lo que falta": {
+    "en": "The folder, with what is there and what is missing",
+    "fr": "Le dossier, avec ce qui s'y trouve et ce qui manque",
+    "it": "La cartella, con ciò che c'è e ciò che manca",
+    "de": "Der Ordner – mit dem, was da ist, und dem, was fehlt",
+    "pt": "A pasta, com o que há e com o que falta"
+  },
+  "Cada documento con su fecha de revisión, su fecha de expiración y su estado de validación. Y arriba, la lista de los documentos que esa carpeta debe contener.": {
+    "en": "Every document with its review date, its expiry date and its approval status. And at the top, the list of documents that folder is supposed to hold.",
+    "fr": "Chaque document avec sa date de révision, sa date d'expiration et son statut de validation. Et en haut, la liste des documents que ce dossier doit contenir.",
+    "it": "Ogni documento con la sua data di revisione, la sua data di scadenza e il suo stato di validazione. E in alto, l'elenco dei documenti che quella cartella deve contenere.",
+    "de": "Jedes Dokument mit Revisionsdatum, Ablaufdatum und Freigabestatus. Und oben die Liste der Dokumente, die dieser Ordner enthalten muss.",
+    "pt": "Cada documento com a sua data de revisão, a sua data de expiração e o seu estado de validação. E no topo, a lista dos documentos que essa pasta deve conter."
+  },
+  "Todos los Documentos": { "en": "All documents", "fr": "Tous les documents", "it": "Tutti i documenti", "de": "Alle Dokumente", "pt": "Todos os Documentos" },
+  "PLAN DE ASEGURAMIENTO DE LA CALIDAD": { "en": "QUALITY ASSURANCE PLAN", "fr": "PLAN D'ASSURANCE QUALITÉ", "it": "PIANO DI ASSICURAZIONE DELLA QUALITÀ", "de": "QUALITÄTSSICHERUNGSPLAN", "pt": "PLANO DE GARANTIA DA QUALIDADE" },
+  "Documentos requeridos": { "en": "Required documents", "fr": "Documents requis", "it": "Documenti richiesti", "de": "Erforderliche Dokumente", "pt": "Documentos obrigatórios" },
+  "Lleva el control de qué documentos deben existir en esta carpeta.": {
+    "en": "It keeps track of which documents must exist in this folder.",
+    "fr": "Il assure le suivi des documents qui doivent figurer dans ce dossier.",
+    "it": "Tiene traccia di quali documenti devono esistere in questa cartella.",
+    "de": "Es behält im Blick, welche Dokumente in diesem Ordner vorhanden sein müssen.",
+    "pt": "Mantém o controlo de que documentos devem existir nesta pasta."
+  },
+  "A 1 lista le faltan documentos": { "en": "1 list is missing documents", "fr": "Il manque des documents à 1 liste", "it": "A 1 elenco mancano documenti", "de": "In 1 Liste fehlen Dokumente", "pt": "A 1 lista faltam documentos" },
+  "Nombre": { "en": "Name", "fr": "Nom", "it": "Nome", "de": "Name", "pt": "Nome" },
+  "Subido el": { "en": "Uploaded on", "fr": "Téléversé le", "it": "Caricato il", "de": "Hochgeladen am", "pt": "Carregado em" },
+  "Expiración": { "en": "Expiry", "fr": "Expiration", "it": "Scadenza", "de": "Ablauf", "pt": "Expiração" },
+  "PR-07 Limpieza y desinfección": { "en": "PR-07 Cleaning and disinfection", "fr": "PR-07 Nettoyage et désinfection", "it": "PR-07 Pulizia e disinfezione", "de": "PR-07 Reinigung und Desinfektion", "pt": "PR-07 Limpeza e desinfeção" },
+  "Validado": { "en": "Approved", "fr": "Validé", "it": "Validato", "de": "Freigegeben", "pt": "Validado" },
+  "_nota_gestor": "Las seis de abajo salieron de una edición de /gestor-documental/ hecha FUERA de la sesión que las tradujo (8 sep 2026, 17:17). Si esa página sigue cambiando, hay que volver a pasar i18n:extract antes de dar por bueno un build.",
+  "Validado · Ana": { "en": "Approved · Ana", "fr": "Validé · Ana", "it": "Validato · Ana", "de": "Freigegeben · Ana", "pt": "Validado · Ana" },
+  "Validado · Marta": { "en": "Approved · Marta", "fr": "Validé · Marta", "it": "Validato · Marta", "de": "Freigegeben · Marta", "pt": "Validado · Marta" },
+  "Validado · Pablo": { "en": "Approved · Pablo", "fr": "Validé · Pablo", "it": "Validato · Pablo", "de": "Freigegeben · Pablo", "pt": "Validado · Pablo" },
+  "Pendiente de validación · Marta": { "en": "Awaiting approval · Marta", "fr": "En attente de validation · Marta", "it": "In attesa di validazione · Marta", "de": "Freigabe ausstehend · Marta", "pt": "Pendente de validação · Marta" },
+  "Expira": { "en": "Expires", "fr": "Expire", "it": "Scade", "de": "Läuft ab", "pt": "Expira" },
+  "Subido": { "en": "Uploaded", "fr": "Mis en ligne", "it": "Caricato", "de": "Hochgeladen", "pt": "Carregado" },
+  "Ficha técnica · Palomitas 90 g": { "en": "Spec sheet · Popcorn 90 g", "fr": "Fiche technique · Pop-corn 90 g", "it": "Scheda tecnica · Popcorn 90 g", "de": "Datenblatt · Popcorn 90 g", "pt": "Ficha técnica · Pipocas 90 g" },
+  "Pendiente de validación": { "en": "Awaiting approval", "fr": "En attente de validation", "it": "In attesa di validazione", "de": "Freigabe ausstehend", "pt": "Pendente de validação" },
+  "Certificado IFS · Aceite de girasol": { "en": "IFS certificate · Sunflower oil", "fr": "Certificat IFS · Huile de tournesol", "it": "Certificato IFS · Olio di girasole", "de": "IFS-Zertifikat · Sonnenblumenöl", "pt": "Certificado IFS · Óleo de girassol" },
+  "PR-12 Detección de metales": { "en": "PR-12 Metal detection", "fr": "PR-12 Détection des métaux", "it": "PR-12 Rilevamento metalli", "de": "PR-12 Metalldetektion", "pt": "PR-12 Deteção de metais" },
+  "El ciclo de un documento, del alta al vencimiento": {
+    "en": "A document's life, from upload to expiry",
+    "fr": "Le cycle d'un document, de la création à l'échéance",
+    "it": "Il ciclo di un documento, dall'inserimento alla scadenza",
+    "de": "Der Lebenslauf eines Dokuments, vom Anlegen bis zum Ablauf",
+    "pt": "O ciclo de um documento, da criação ao vencimento"
+  },
+  "Sube": { "en": "Upload", "fr": "Téléverser", "it": "Carica", "de": "Hochladen", "pt": "Carrega" },
+  "El documento entra en su carpeta desde el PC o desde el móvil, con su fecha de revisión y su fecha de expiración si las tiene.": {
+    "en": "The document goes into its folder from the PC or the phone, with its review date and its expiry date if it has them.",
+    "fr": "Le document entre dans son dossier depuis le PC ou le téléphone, avec sa date de révision et sa date d'expiration s'il en a.",
+    "it": "Il documento entra nella sua cartella dal PC o dal telefono, con la sua data di revisione e la sua data di scadenza se le ha.",
+    "de": "Das Dokument kommt vom PC oder Smartphone in seinen Ordner – mit Revisions- und, falls vorhanden, Ablaufdatum.",
+    "pt": "O documento entra na sua pasta a partir do PC ou do telemóvel, com a sua data de revisão e a sua data de expiração, se as tiver."
+  },
+  "Valida": { "en": "Approve", "fr": "Valider", "it": "Valida", "de": "Freigeben", "pt": "Valida" },
+  "Queda como pendiente de validación, marcado, hasta que quien tiene que darle el visto bueno lo valida. Mientras no lo esté, se ve que no lo está.": {
+    "en": "It stays flagged as awaiting approval until whoever has to sign it off does. Until then, you can see that it has not been.",
+    "fr": "Il reste marqué en attente de validation jusqu'à ce que la personne habilitée le valide. Tant que ce n'est pas fait, cela se voit.",
+    "it": "Resta segnato come in attesa di validazione finché chi deve dare l'approvazione non lo valida. Finché non lo è, si vede che non lo è.",
+    "de": "Es bleibt sichtbar als „Freigabe ausstehend“ markiert, bis der Zuständige es freigibt. Solange das nicht geschehen ist, sieht man es.",
+    "pt": "Fica marcado como pendente de validação até quem tem de dar o aval o validar. Enquanto não estiver validado, vê-se que não está."
+  },
+  "Vigente": { "en": "Current", "fr": "En vigueur", "it": "Vigente", "de": "Gültig", "pt": "Vigente" },
+  "Es el documento que abre quien lo necesita, con su número de versión a la vista: no hay dos copias circulando sin saber cuál manda.": {
+    "en": "It is the document whoever needs it opens, with its version number in plain sight: no two copies going round with nobody sure which one rules.",
+    "fr": "C'est le document qu'ouvre celui qui en a besoin, avec son numéro de version bien visible : pas deux copies en circulation sans savoir laquelle fait foi.",
+    "it": "È il documento che apre chi ne ha bisogno, con il numero di versione bene in vista: non ci sono due copie in giro senza sapere quale valga.",
+    "de": "Es ist das Dokument, das öffnet, wer es braucht – mit sichtbarer Versionsnummer: keine zwei Kopien im Umlauf, bei denen niemand weiß, welche gilt.",
+    "pt": "É o documento que abre quem precisa dele, com o número de versão à vista: não há duas cópias em circulação sem se saber qual prevalece."
+  },
+  "Vence": { "en": "Expire", "fr": "Expirer", "it": "Scade", "de": "Ablaufen", "pt": "Vence" },
+  "La fecha de expiración aparece en el calendario del módulo y el documento entra en el listado de pendientes de revisión, sin revisar los vencimientos uno por uno.": {
+    "en": "The expiry date shows up in the module's calendar and the document joins the list of items awaiting review, without going through due dates one by one.",
+    "fr": "La date d'expiration apparaît dans le calendrier du module et le document entre dans la liste des éléments à réviser, sans passer les échéances une par une.",
+    "it": "La data di scadenza compare nel calendario del modulo e il documento entra nell'elenco di quelli da rivedere, senza controllare le scadenze una per una.",
+    "de": "Das Ablaufdatum erscheint im Kalender des Moduls, und das Dokument landet in der Liste der zu prüfenden Einträge – ohne Fristen einzeln durchzusehen.",
+    "pt": "A data de expiração aparece no calendário do módulo e o documento entra na lista dos pendentes de revisão, sem ser preciso rever os prazos um a um."
+  },
+  "Lo que hace esta carpeta y no hace la del servidor": {
+    "en": "What this folder does that the server one does not",
+    "fr": "Ce que fait ce dossier et que celui du serveur ne fait pas",
+    "it": "Cosa fa questa cartella e non fa quella del server",
+    "de": "Was dieser Ordner kann und der Serverordner nicht",
+    "pt": "O que esta pasta faz e a do servidor não faz"
+  },
+  "Lo que distingue a esta carpeta de la del servidor no es dónde está el archivo: es que la carpeta sabe qué tiene que haber dentro y en qué estado.": {
+    "en": "What sets this folder apart from the server one is not where the file sits: it is that the folder knows what should be inside it and in what state.",
+    "fr": "Ce qui distingue ce dossier de celui du serveur n'est pas l'endroit où se trouve le fichier : c'est que le dossier sait ce qui doit s'y trouver et dans quel état.",
+    "it": "Ciò che distingue questa cartella da quella del server non è dove sta il file: è che la cartella sa cosa deve esserci dentro e in che stato.",
+    "de": "Was diesen Ordner vom Serverordner unterscheidet, ist nicht, wo die Datei liegt: Der Ordner weiß, was darin sein muss und in welchem Zustand.",
+    "pt": "O que distingue esta pasta da do servidor não é onde está o ficheiro: é que a pasta sabe o que tem de haver lá dentro e em que estado."
+  },
+  "se define por carpeta qué documentos debe contener, y el módulo avisa cuando a una lista le faltan. La carpeta incompleta se detecta antes de la auditoría, no durante.": {
+    "en": "you define per folder which documents it must hold, and the module warns when a list is short. The incomplete folder is spotted before the audit, not during it.",
+    "fr": "on définit par dossier les documents qu'il doit contenir, et le module alerte quand il en manque à une liste. Le dossier incomplet est repéré avant l'audit, pas pendant.",
+    "it": "si definisce per cartella quali documenti deve contenere, e il modulo avvisa quando a un elenco ne mancano. La cartella incompleta si individua prima dell'audit, non durante.",
+    "de": "Pro Ordner wird festgelegt, welche Dokumente er enthalten muss, und das Modul meldet, wenn einer Liste welche fehlen. Der unvollständige Ordner fällt vor dem Audit auf, nicht währenddessen.",
+    "pt": "define-se por pasta que documentos deve conter, e o módulo avisa quando faltam documentos numa lista. A pasta incompleta deteta-se antes da auditoria, não durante."
+  },
+  "Listas de documentos requeridos:": { "en": "Required-document lists:", "fr": "Listes de documents requis :", "it": "Elenchi di documenti richiesti:", "de": "Listen erforderlicher Dokumente:", "pt": "Listas de documentos obrigatórios:" },
+  "cada documento lleva la suya, y el módulo trae vista de mes, semana, día y agenda, por fecha de expiración o por fecha de modificación. Cien vencimientos dejan de ser cien fechas en un Excel.": {
+    "en": "each document carries its own, and the module comes with month, week, day and agenda views, by expiry date or by modification date. A hundred due dates stop being a hundred dates in a spreadsheet.",
+    "fr": "chaque document porte la sienne, et le module offre des vues mois, semaine, jour et agenda, par date d'expiration ou de modification. Cent échéances cessent d'être cent dates dans un Excel.",
+    "it": "ogni documento porta la propria, e il modulo offre viste mese, settimana, giorno e agenda, per data di scadenza o di modifica. Cento scadenze smettono di essere cento date in un Excel.",
+    "de": "jedes Dokument bringt seines mit, und das Modul bietet Monats-, Wochen-, Tages- und Agenda-Ansicht nach Ablauf- oder Änderungsdatum. Hundert Fristen sind nicht länger hundert Daten in einer Excel-Tabelle.",
+    "pt": "cada documento tem a sua, e o módulo traz vista de mês, semana, dia e agenda, por data de expiração ou por data de modificação. Cem prazos deixam de ser cem datas num Excel."
+  },
+  "Fecha de expiración y calendario:": { "en": "Expiry date and calendar:", "fr": "Date d'expiration et calendrier :", "it": "Data di scadenza e calendario:", "de": "Ablaufdatum und Kalender:", "pt": "Data de expiração e calendário:" },
+  "los dos estados se ven en el listado, y un filtro reúne en una sola vista todo lo que está pendiente de revisión. Un documento sin validar no se confunde con uno vigente.": {
+    "en": "both states are visible in the list, and one filter gathers everything awaiting review into a single view. An unapproved document is not mistaken for a current one.",
+    "fr": "les deux états sont visibles dans la liste, et un filtre réunit en une seule vue tout ce qui est à réviser. Un document non validé ne se confond pas avec un document en vigueur.",
+    "it": "i due stati si vedono nell'elenco, e un filtro raccoglie in un'unica vista tutto ciò che è da rivedere. Un documento non validato non si confonde con uno vigente.",
+    "de": "Beide Zustände sind in der Liste sichtbar, und ein Filter bündelt alles zur Prüfung Anstehende in einer Ansicht. Ein nicht freigegebenes Dokument wird nicht mit einem gültigen verwechselt.",
+    "pt": "os dois estados veem-se na lista, e um filtro reúne numa só vista tudo o que está pendente de revisão. Um documento por validar não se confunde com um vigente."
+  },
+  "Validado o pendiente:": { "en": "Approved or pending:", "fr": "Validé ou en attente :", "it": "Validato o in attesa:", "de": "Freigegeben oder ausstehend:", "pt": "Validado ou pendente:" },
+  "el procedimiento y el parte de control que lo ejecuta viven en el mismo sistema, con el mismo acceso desde la tablet de línea.": {
+    "en": "the procedure and the control report that carries it out live in the same system, reachable from the line tablet with the same login.",
+    "fr": "la procédure et le rapport de contrôle qui l'exécute vivent dans le même système, avec le même accès depuis la tablette de ligne.",
+    "it": "la procedura e il rapporto di controllo che la esegue vivono nello stesso sistema, con lo stesso accesso dal tablet di linea.",
+    "de": "Verfahren und die ausführende Kontrollmeldung liegen im selben System, mit demselben Zugang vom Linien-Tablet.",
+    "pt": "o procedimento e o parte de controlo que o executa vivem no mesmo sistema, com o mesmo acesso a partir do tablet de linha."
+  },
+  "Junto al registro que lo aplica:": { "en": "Next to the record that applies it:", "fr": "À côté de l'enregistrement qui l'applique :", "it": "Accanto alla registrazione che la applica:", "de": "Neben der Aufzeichnung, die es umsetzt:", "pt": "Junto ao registo que o aplica:" },
+  "este mismo gestor aplicado al proveedor —certificado, ficha técnica y analítica— junto al histórico de incidencias de recepción.": {
+    "en": "this same manager applied to the supplier — certificate, spec sheet and lab report — alongside the history of goods-in incidents.",
+    "fr": "ce même gestionnaire appliqué au fournisseur — certificat, fiche technique et analyse — avec l'historique des incidents de réception.",
+    "it": "lo stesso gestore applicato al fornitore — certificato, scheda tecnica e analisi — insieme allo storico delle anomalie di ricevimento.",
+    "de": "dasselbe Management für den Lieferanten – Zertifikat, Datenblatt und Analyse – zusammen mit der Historie der Wareneingangsstörungen.",
+    "pt": "esta mesma gestão aplicada ao fornecedor — certificado, ficha técnica e análise — junto ao histórico de ocorrências de receção."
+  },
+  "Un expediente por proveedor:": { "en": "A file per supplier:", "fr": "Un dossier par fournisseur :", "it": "Un fascicolo per fornitore:", "de": "Eine Akte je Lieferant:", "pt": "Um processo por fornecedor:" },
+  "Ver homologación de proveedores →": { "en": "See supplier approval →", "fr": "Voir l'homologation des fournisseurs →", "it": "Vedi la qualifica fornitori →", "de": "Zur Lieferantenfreigabe →", "pt": "Ver homologação de fornecedores →" },
+  "IFS, BRCGS, ISO 9001 y FSSC 22000 piden versión única y control de la documentación. Es literalmente este módulo.": {
+    "en": "IFS, BRCGS, ISO 9001 and FSSC 22000 all require a single version and document control. That is literally this module.",
+    "fr": "IFS, BRCGS, ISO 9001 et FSSC 22000 exigent une version unique et la maîtrise documentaire. C'est littéralement ce module.",
+    "it": "IFS, BRCGS, ISO 9001 e FSSC 22000 richiedono versione unica e controllo della documentazione. È letteralmente questo modulo.",
+    "de": "IFS, BRCGS, ISO 9001 und FSSC 22000 verlangen eine einzige Version und Dokumentenlenkung. Genau das ist dieses Modul.",
+    "pt": "A IFS, a BRCGS, a ISO 9001 e a FSSC 22000 exigem versão única e controlo da documentação. É literalmente este módulo."
+  },
+  "La información documentada de la norma:": { "en": "The standard's documented information:", "fr": "L'information documentée de la norme :", "it": "Le informazioni documentate della norma:", "de": "Die dokumentierte Information der Norm:", "pt": "A informação documentada da norma:" },
+  "Ver software para certificaciones →": { "en": "See certification software →", "fr": "Voir le logiciel pour les certifications →", "it": "Vedi il software per le certificazioni →", "de": "Zur Zertifizierungssoftware →", "pt": "Ver software para certificações →" },
+  "Lo que SharePoint o Drive no cubren": { "en": "What SharePoint or Drive do not cover", "fr": "Ce que SharePoint ou Drive ne couvrent pas", "it": "Ciò che SharePoint o Drive non coprono", "de": "Was SharePoint oder Drive nicht abdecken", "pt": "O que o SharePoint ou o Drive não cobrem" },
+  "Una carpeta en la nube guarda los archivos y lleva su historial de cambios, y para eso funciona bien. El problema no es dónde está el fichero: es que un archivo suelto no sabe nada de sí mismo.": {
+    "en": "A cloud folder stores the files and keeps their change history, and it does that well. The problem is not where the file sits: a loose file knows nothing about itself.",
+    "fr": "Un dossier dans le cloud stocke les fichiers et conserve leur historique de modifications, et pour cela il fonctionne bien. Le problème n'est pas où se trouve le fichier : c'est qu'un fichier isolé ne sait rien de lui-même.",
+    "it": "Una cartella nel cloud conserva i file e ne tiene lo storico delle modifiche, e per questo funziona bene. Il problema non è dove sta il file: è che un file isolato non sa nulla di sé.",
+    "de": "Ein Cloud-Ordner speichert die Dateien und führt ihre Änderungshistorie – dafür taugt er gut. Das Problem ist nicht, wo die Datei liegt: Eine lose Datei weiß nichts über sich selbst.",
+    "pt": "Uma pasta na nuvem guarda os ficheiros e mantém o seu histórico de alterações, e para isso funciona bem. O problema não é onde está o ficheiro: é que um ficheiro avulso não sabe nada sobre si mesmo."
+  },
+  "No sabe qué documentos debería haber en su carpeta, así que no puede decir que falta uno.": {
+    "en": "It does not know which documents should be in its folder, so it cannot say one is missing.",
+    "fr": "Il ne sait pas quels documents devraient se trouver dans son dossier, il ne peut donc pas signaler qu'il en manque un.",
+    "it": "Non sa quali documenti dovrebbero esserci nella sua cartella, quindi non può dire che ne manca uno.",
+    "de": "Sie weiß nicht, welche Dokumente in ihrem Ordner sein sollten, also kann sie nicht melden, dass eines fehlt.",
+    "pt": "Não sabe que documentos deveria haver na sua pasta, por isso não pode dizer que falta um."
+  },
+  "No tiene fecha de expiración: el certificado caduca y el archivo sigue ahí, exactamente igual.": {
+    "en": "It has no expiry date: the certificate lapses and the file sits there, exactly the same.",
+    "fr": "Il n'a pas de date d'expiration : le certificat périme et le fichier reste là, exactement pareil.",
+    "it": "Non ha data di scadenza: il certificato scade e il file resta lì, esattamente uguale.",
+    "de": "Sie hat kein Ablaufdatum: Das Zertifikat verfällt und die Datei liegt unverändert weiter da.",
+    "pt": "Não tem data de expiração: o certificado expira e o ficheiro continua ali, exatamente igual."
+  },
+  "No distingue un documento validado de uno pendiente de validación, que es la mitad de una auditoría.": {
+    "en": "It does not tell an approved document from one awaiting approval, which is half of an audit.",
+    "fr": "Il ne distingue pas un document validé d'un document en attente de validation, ce qui représente la moitié d'un audit.",
+    "it": "Non distingue un documento validato da uno in attesa di validazione, che è metà di un audit.",
+    "de": "Sie unterscheidet nicht zwischen freigegebenem und noch nicht freigegebenem Dokument – und das ist die Hälfte eines Audits.",
+    "pt": "Não distingue um documento validado de um pendente de validação, o que é metade de uma auditoria."
+  },
+  "No está junto al registro que aplica el procedimiento ni junto a la incidencia que lo incumple.": {
+    "en": "It does not sit next to the record that applies the procedure, nor next to the incident that breaches it.",
+    "fr": "Il n'est pas à côté de l'enregistrement qui applique la procédure ni de l'incident qui l'enfreint.",
+    "it": "Non sta accanto alla registrazione che applica la procedura né all'anomalia che la viola.",
+    "de": "Sie liegt weder neben der Aufzeichnung, die das Verfahren umsetzt, noch neben der Störung, die es verletzt.",
+    "pt": "Não está junto ao registo que aplica o procedimento nem junto à ocorrência que o incumpre."
+  },
+  "Y no se consulta desde planta con el mismo acceso con el que se rellena un control del turno.": {
+    "en": "And it is not opened from the shop floor with the same login used to fill in a shift check.",
+    "fr": "Et il ne se consulte pas depuis l'usine avec le même accès que celui utilisé pour remplir un contrôle de poste.",
+    "it": "E non si consulta dallo stabilimento con lo stesso accesso con cui si compila un controllo di turno.",
+    "de": "Und sie wird nicht aus der Halle mit demselben Zugang geöffnet, mit dem eine Schichtkontrolle ausgefüllt wird.",
+    "pt": "E não se consulta a partir da fábrica com o mesmo acesso com que se preenche um controlo do turno."
+  },
+  "Para quién es": { "en": "Who it is for", "fr": "À qui cela s'adresse", "it": "A chi è rivolto", "de": "Für wen es gedacht ist", "pt": "Para quem é" },
+  "Para quien responde cuando alguien pide un documento concreto —el auditor, el cliente o el técnico delante de la máquina—: calidad, seguridad alimentaria, mantenimiento y sistemas de gestión.": {
+    "en": "For whoever has to answer when someone asks for a specific document — the auditor, the customer or the technician standing at the machine: quality, food safety, maintenance and management systems.",
+    "fr": "Pour celui qui répond quand on demande un document précis — l'auditeur, le client ou le technicien devant la machine : qualité, sécurité alimentaire, maintenance et systèmes de management.",
+    "it": "Per chi risponde quando qualcuno chiede un documento preciso — l'auditor, il cliente o il tecnico davanti alla macchina: qualità, sicurezza alimentare, manutenzione e sistemi di gestione.",
+    "de": "Für alle, die antworten müssen, wenn jemand ein bestimmtes Dokument verlangt – der Auditor, der Kunde oder der Techniker an der Maschine: Qualität, Lebensmittelsicherheit, Instandhaltung und Managementsysteme.",
+    "pt": "Para quem responde quando alguém pede um documento concreto — o auditor, o cliente ou o técnico junto à máquina: qualidade, segurança alimentar, manutenção e sistemas de gestão."
+  },
+  "Quien mantiene el manual de calidad, los procedimientos y las instrucciones de máquina": {
+    "en": "Whoever maintains the quality manual, the procedures and the machine instructions",
+    "fr": "Celui qui tient à jour le manuel qualité, les procédures et les instructions machine",
+    "it": "Chi mantiene il manuale della qualità, le procedure e le istruzioni macchina",
+    "de": "Wer Qualitätshandbuch, Verfahren und Maschinenanweisungen pflegt",
+    "pt": "Quem mantém o manual da qualidade, os procedimentos e as instruções de máquina"
+  },
+  "Quien vigila los vencimientos de los certificados de proveedor": {
+    "en": "Whoever watches supplier certificate expiry dates",
+    "fr": "Celui qui surveille les échéances des certificats fournisseurs",
+    "it": "Chi sorveglia le scadenze dei certificati dei fornitori",
+    "de": "Wer die Fristen der Lieferantenzertifikate überwacht",
+    "pt": "Quem vigia os prazos de validade dos certificados de fornecedor"
+  },
+  "Plantas con IFS, BRCGS, ISO 9001 o FSSC 22000 encima": {
+    "en": "Plants carrying IFS, BRCGS, ISO 9001 or FSSC 22000",
+    "fr": "Des usines soumises à IFS, BRCGS, ISO 9001 ou FSSC 22000",
+    "it": "Stabilimenti con IFS, BRCGS, ISO 9001 o FSSC 22000 addosso",
+    "de": "Werke mit IFS, BRCGS, ISO 9001 oder FSSC 22000",
+    "pt": "Fábricas com IFS, BRCGS, ISO 9001 ou FSSC 22000"
+  },
+  "Equipos que hoy llevan la documentación en carpetas del servidor": {
+    "en": "Teams keeping their documents in server folders today",
+    "fr": "Des équipes qui gèrent aujourd'hui la documentation dans des dossiers serveur",
+    "it": "Squadre che oggi tengono la documentazione in cartelle del server",
+    "de": "Teams, die ihre Dokumente heute in Serverordnern führen",
+    "pt": "Equipas que hoje têm a documentação em pastas do servidor"
+  },
+  "Grupos que quieren el mismo árbol de carpetas en varias plantas": {
+    "en": "Groups that want the same folder tree across several plants",
+    "fr": "Des groupes qui veulent la même arborescence de dossiers dans plusieurs usines",
+    "it": "Gruppi che vogliono lo stesso albero di cartelle in più stabilimenti",
+    "de": "Gruppen, die denselben Ordnerbaum in mehreren Werken wollen",
+    "pt": "Grupos que querem a mesma árvore de pastas em várias fábricas"
+  },
+  "Quien ya usa Solved para registros o incidencias y tiene la documentación fuera": {
+    "en": "Anyone already using Solved for records or incidents whose documents live elsewhere",
+    "fr": "Ceux qui utilisent déjà Solved pour les enregistrements ou les incidents et dont la documentation est ailleurs",
+    "it": "Chi già usa Solved per registrazioni o anomalie e ha la documentazione fuori",
+    "de": "Wer Solved bereits für Aufzeichnungen oder Störungen nutzt und die Dokumente außerhalb hat",
+    "pt": "Quem já usa o Solved para registos ou ocorrências e tem a documentação de fora"
+  },
+  "¿En qué se diferencia de un SharePoint o un Drive?": {
+    "en": "How is it different from SharePoint or Drive?",
+    "fr": "En quoi est-ce différent d'un SharePoint ou d'un Drive ?",
+    "it": "In cosa si differenzia da uno SharePoint o da un Drive?",
+    "de": "Worin unterscheidet es sich von SharePoint oder Drive?",
+    "pt": "Em que se diferencia de um SharePoint ou de um Drive?"
+  },
+  "Una carpeta compartida guarda archivos y lleva su historial de cambios, y para eso funciona bien. Lo que no hace es saber qué documentos debería haber en esa carpeta, avisar de que un certificado expira, distinguir un documento validado de uno pendiente de validación ni estar junto al registro que aplica el procedimiento. Eso es lo que añade el gestor documental de Solved.": {
+    "en": "A shared folder stores files and keeps their change history, and it does that well. What it does not do is know which documents should be in that folder, warn you that a certificate is expiring, tell an approved document from one awaiting approval, or sit next to the record that applies the procedure. That is what Solved's document manager adds.",
+    "fr": "Un dossier partagé stocke des fichiers et conserve leur historique de modifications, et pour cela il fonctionne bien. Ce qu'il ne fait pas, c'est savoir quels documents devraient s'y trouver, alerter qu'un certificat expire, distinguer un document validé d'un document en attente de validation, ni se trouver à côté de l'enregistrement qui applique la procédure. C'est ce qu'ajoute la gestion documentaire de Solved.",
+    "it": "Una cartella condivisa conserva i file e ne tiene lo storico delle modifiche, e per questo funziona bene. Quello che non fa è sapere quali documenti dovrebbero esserci in quella cartella, avvisare che un certificato scade, distinguere un documento validato da uno in attesa di validazione o stare accanto alla registrazione che applica la procedura. È questo che aggiunge la gestione documentale di Solved.",
+    "de": "Ein geteilter Ordner speichert Dateien und führt ihre Änderungshistorie – dafür taugt er gut. Was er nicht tut: wissen, welche Dokumente in diesem Ordner sein sollten, warnen, dass ein Zertifikat abläuft, ein freigegebenes von einem noch nicht freigegebenen Dokument unterscheiden oder neben der Aufzeichnung liegen, die das Verfahren umsetzt. Genau das ergänzt das Dokumentenmanagement von Solved.",
+    "pt": "Uma pasta partilhada guarda ficheiros e mantém o seu histórico de alterações, e para isso funciona bem. O que não faz é saber que documentos deveria haver nessa pasta, avisar que um certificado está a expirar, distinguir um documento validado de um pendente de validação nem estar junto ao registo que aplica o procedimento. É isso que a gestão documental do Solved acrescenta."
+  },
+  "¿Controla versiones?": { "en": "Does it control versions?", "fr": "Gère-t-il les versions ?", "it": "Controlla le versioni?", "de": "Verwaltet es Versionen?", "pt": "Controla versões?" },
+  "Sí. Cada documento lleva su número de versión a la vista, de modo que quien lo abre sabe cuál está mirando y no hay dos copias circulando sin saber cuál manda.": {
+    "en": "Yes. Every document shows its version number, so whoever opens it knows which one they are looking at and there are never two copies going round with nobody sure which rules.",
+    "fr": "Oui. Chaque document affiche son numéro de version : celui qui l'ouvre sait laquelle il consulte et il n'y a pas deux copies en circulation sans savoir laquelle fait foi.",
+    "it": "Sì. Ogni documento porta il numero di versione bene in vista, così chi lo apre sa quale sta guardando e non ci sono due copie in giro senza sapere quale valga.",
+    "de": "Ja. Jedes Dokument zeigt seine Versionsnummer, sodass der Öffnende weiß, welche er vor sich hat – und keine zwei Kopien kursieren, bei denen unklar ist, welche gilt.",
+    "pt": "Sim. Cada documento tem o seu número de versão à vista, de modo que quem o abre sabe qual está a ver e não há duas cópias em circulação sem se saber qual prevalece."
+  },
+  "¿Cómo se controlan las caducidades?": { "en": "How are expiry dates controlled?", "fr": "Comment les échéances sont-elles contrôlées ?", "it": "Come si controllano le scadenze?", "de": "Wie werden Ablauffristen überwacht?", "pt": "Como se controlam os prazos de validade?" },
+  "Cada documento tiene fecha de revisión y fecha de expiración. El módulo trae una vista de calendario —mes, semana, día y agenda— que se puede ordenar por fecha de expiración o por fecha de modificación, y un listado de todo lo que está pendiente de revisión. El control de vencimientos deja de ser una hoja con cien fechas.": {
+    "en": "Every document has a review date and an expiry date. The module comes with a calendar view — month, week, day and agenda — that can be sorted by expiry or by modification date, plus a list of everything awaiting review. Tracking due dates stops being a sheet with a hundred dates on it.",
+    "fr": "Chaque document a une date de révision et une date d'expiration. Le module offre une vue calendrier — mois, semaine, jour et agenda — que l'on peut trier par date d'expiration ou de modification, et une liste de tout ce qui est à réviser. Le suivi des échéances cesse d'être une feuille avec cent dates.",
+    "it": "Ogni documento ha una data di revisione e una data di scadenza. Il modulo offre una vista calendario — mese, settimana, giorno e agenda — ordinabile per data di scadenza o di modifica, e un elenco di tutto ciò che è da rivedere. Il controllo delle scadenze smette di essere un foglio con cento date.",
+    "de": "Jedes Dokument hat ein Revisions- und ein Ablaufdatum. Das Modul bringt eine Kalenderansicht – Monat, Woche, Tag und Agenda –, sortierbar nach Ablauf- oder Änderungsdatum, sowie eine Liste alles zur Prüfung Anstehenden. Fristenkontrolle ist damit keine Tabelle mit hundert Daten mehr.",
+    "pt": "Cada documento tem data de revisão e data de expiração. O módulo traz uma vista de calendário — mês, semana, dia e agenda — que se pode ordenar por data de expiração ou por data de modificação, e uma lista de tudo o que está pendente de revisão. O controlo dos prazos deixa de ser uma folha com cem datas."
+  }
+}

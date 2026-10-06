@@ -1,22 +1,33 @@
 {
-  "name": "solved-web",
+  "name": "solved-web-3",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Sitio estático de Solved (trysolved.com) + generador del blog headless desde WordPress.",
+  "description": "Web Solved 3.0 — rehacer del sitio estático de Solved. En local, sin publicar todavía.",
   "scripts": {
     "build:blog": "node scripts/build-blog.mjs",
     "build:redirects": "node scripts/build-redirects.mjs",
     "build:enlaces": "node scripts/build-enlaces.mjs",
     "build:sitemap": "node scripts/build-sitemap.mjs",
+    "build:preview": "node scripts/build-preview.mjs",
     "check:seo": "node scripts/check-seo.mjs",
-    "serve": "node scripts/serve.mjs"
+    "i18n:extract": "node scripts/i18n-extract.mjs",
+    "build:i18n": "node scripts/build-i18n.mjs",
+    "build:i18n:contenido": "node scripts/build-i18n-contenido.mjs",
+    "translate:contenido": "node scripts/translate-contenido.mjs",
+    "serve": "node scripts/serve.mjs",
+    "render:ia": "node scripts/render-ia-reel.mjs",
+    "render:registros": "REEL=/guidelines/ia.registros.reel.html NOMBRE=registros-reel node scripts/render-ia-reel.mjs",
+    "render:incidencias": "node scripts/render-incidencias.mjs",
+    "musica:incidencias": "bash scripts/musica-incidencias.sh",
+    "check:voz": "node scripts/check-voz.mjs"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "puppeteer-core": "^23.11.1",
     "wawoff2": "^2.0.1"
   }
 }

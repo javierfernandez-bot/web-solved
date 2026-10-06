@@ -1,0 +1,211 @@
+/* =========================================================
+   BANDA DE CELDAS ANIMADAS — .celdas
+   ---------------------------------------------------------
+   Una rejilla de celdas dentro de un recuadro tintado por módulo, donde cada
+   celda enseña UNA capacidad y la enseña funcionando: no un icono y un párrafo,
+   sino la pieza de producto resolviéndose sola.
+
+   POR QUÉ EXISTE, PUDIENDO USAR ESCENAS
+   La escena (`ds/scene.css`) enseña un fragmento real de la aplicación y sólo
+   cabe una idea por tarjeta: para «así es una plantilla» va sobrada. Lo que no
+   sabe hacer es enseñar SEIS capacidades a la vez sin convertirse en seis
+   pantallas casi iguales. Aquí cada celda es un diagrama de dos o tres piezas
+   —un chip, una fila, una fecha— que se resuelve en el ciclo. Es el mismo
+   recurso que `.aiband--canales` en /incidencias/, generalizado a una rejilla.
+
+   LO QUE NO ES
+   No es una pantalla del producto y no puede fingirlo: nada de barras de menú,
+   ni de cabeceras de tabla, ni de aparatos. Si una celda necesita enseñar la
+   interfaz, lo que toca es una escena. Los chips, los estados y los códigos sí
+   son los reales —OK/KO, `UTD26_163_001`—, porque son el vocabulario del
+   producto y cambiarlos aquí sería mentir en pequeño.
+
+   EL TINTE LO DICTA EL MÓDULO, como en las escenas: `data-module` con la misma
+   lista cerrada. No hay forma de pasarle un color.
+
+   EL CICLO
+   Nueve segundos, el mismo que la convergencia de /incidencias/, y las celdas
+   entran escalonadas 0,45s. Obedece a `--play` y, con `prefers-reduced-motion`,
+   todo se queda resuelto y quieto: la foto final, que es la que cuenta.
+   ========================================================= */
+
+.celdas{
+  position:relative;
+  border:1px solid var(--color-hairline);
+  border-radius:16px;                     /* radio de ventana, como la escena */
+  overflow:hidden;
+  background:var(--ds-surface);
+  padding:clamp(20px,2.2vw,30px);
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(16px,1.6vw,22px);
+}
+/* El lienzo teñido va en una capa propia bajo el contenido, igual que en la
+   escena: así el mismo tinte sirve sin tocar el marco ni el fondo de la celda. */
+.celdas::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+}
+.celdas[data-module="incidencias"]::before{ background-image:var(--tint-incidencias) }
+.celdas[data-module="acciones"]::before   { background-image:var(--tint-acciones) }
+.celdas[data-module="checklists"]::before { background-image:var(--tint-checklists) }
+.celdas[data-module="activos"]::before    { background-image:var(--tint-activos) }
+.celdas[data-module="kpis"]::before       { background-image:var(--tint-kpis) }
+
+.celdas[data-module="incidencias"]{ --cel-acento:var(--module-incidencias) }
+.celdas[data-module="acciones"]   { --cel-acento:var(--module-acciones) }
+.celdas[data-module="checklists"] { --cel-acento:var(--module-registros) }
+.celdas[data-module="activos"]    { --cel-acento:var(--module-activos) }
+.celdas[data-module="kpis"]       { --cel-acento:var(--module-kpis) }
+
+/* ---------- La celda ---------- */
+.celda{
+  position:relative; z-index:1;
+  background:#fff;
+  border:1px solid var(--color-hairline);
+  border-radius:var(--ds-radius-card);
+  padding:18px 18px 16px;
+  display:flex; flex-direction:column;
+  animation:celda-entra 9s ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.celda:nth-child(1){ animation-delay:0s }
+.celda:nth-child(2){ animation-delay:.45s }
+.celda:nth-child(3){ animation-delay:.9s }
+.celda:nth-child(4){ animation-delay:1.35s }
+.celda:nth-child(5){ animation-delay:1.8s }
+.celda:nth-child(6){ animation-delay:2.25s }
+@keyframes celda-entra{
+  0%      { opacity:0; transform:translate3d(0,10px,0) }
+  6%,100% { opacity:1; transform:none }
+}
+
+.celda__ico{
+  width:30px; height:30px; flex:none;
+  border-radius:9px;
+  display:grid; place-items:center;
+  background:var(--cel-acento, var(--color-primary));
+  color:#fff;
+  margin-bottom:12px;
+}
+.celda__ico svg{ width:16px; height:16px; display:block }
+.celda__t{
+  margin:0 0 4px;
+  font:var(--font-weight-medium) 14px/1.3 var(--font-sans);
+  letter-spacing:-.01em;
+  color:var(--ds-text);
+}
+.celda__p{
+  margin:0 0 14px;
+  font:var(--type-body-md);
+  letter-spacing:var(--tracking-body);
+  color:var(--ds-text-mute);
+  text-wrap:pretty;
+}
+/* La demo se pega abajo: así las seis celdas alinean su parte animada aunque el
+   texto mida distinto, que es lo que hace que la rejilla se lea como una. */
+.celda__demo{
+  margin-top:auto; padding-top:14px;
+  border-top:1px solid var(--color-hairline);
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+  min-height:38px;
+}
+
+/* ---------- Piezas de la demo ----------
+   Cinco, y ninguna más: chip de estado, fila de campo, chip de fecha, firma y
+   tarjeta de incidencia. Con estas cinco se cuentan las seis capacidades; si
+   hace falta una sexta pieza, probablemente lo que falla es la capacidad. */
+.cel-chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:5px 10px; border-radius:var(--ds-radius-pill);
+  font:var(--font-weight-medium) 12px/1 var(--font-sans);
+  border:1px solid var(--color-hairline);
+  color:var(--color-ink-mute);
+  background:var(--color-canvas);
+}
+.cel-chip--ok { background:rgba(22,163,74,.10);  border-color:rgba(22,163,74,.28);  color:#15803D }
+.cel-chip--ko { background:rgba(229,72,77,.10);  border-color:rgba(229,72,77,.30);  color:#B42318 }
+.cel-chip--vence{ background:rgba(242,164,19,.12); border-color:rgba(242,164,19,.32); color:#96690A }
+.cel-chip--acento{ background:color-mix(in srgb, var(--cel-acento) 10%, #fff); border-color:color-mix(in srgb, var(--cel-acento) 30%, #fff); color:var(--cel-acento) }
+
+.cel-fila{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  width:100%; font:var(--type-body-md); color:var(--ds-text-2);
+}
+.cel-fila + .cel-fila{ margin-top:6px }
+.cel-codigo{ font:var(--font-weight-medium) 12px/1 var(--font-sans); color:var(--cel-acento) }
+
+/* La firma: un trazo que se dibuja solo, con la misma técnica que los hilos de
+   la convergencia —`stroke-dashoffset` de largo a cero—. Es una rúbrica
+   genérica a propósito: dibujar una firma reconocible sería inventar la de una
+   persona, y aquí lo que hay que decir es que la hay, no de quién es. */
+.cel-firma{
+  flex:1; min-width:70px; height:22px; display:block; overflow:visible;
+}
+.cel-firma path{
+  fill:none; stroke:var(--ds-text-2); stroke-width:1.6;
+  stroke-linecap:round; stroke-linejoin:round; opacity:.7;
+  stroke-dasharray:120; stroke-dashoffset:120;
+  animation:cel-firma 9s ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes cel-firma{ 0%,18%{ stroke-dashoffset:120 } 34%,100%{ stroke-dashoffset:0 } }
+
+/* Lo que aparece a media tanda: el chip que se enciende, el aviso de
+   vencimiento, la incidencia que abre el KO. Un solo keyframe para los tres. */
+.cel-tarde{
+  opacity:0;
+  animation:cel-tarde 9s ease-out infinite;
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes cel-tarde{ 0%,30%{ opacity:0; transform:translate3d(-6px,0,0) } 42%,100%{ opacity:1; transform:none } }
+
+/* Las filas de una plantilla, que se rellenan una detrás de otra. */
+.cel-fila--tarde{ opacity:0; animation:cel-fila 9s ease-out infinite; animation-play-state:var(--play,running); animation-iteration-count:var(--iter,infinite); animation-fill-mode:forwards }
+.cel-fila--tarde:nth-of-type(2){ animation-delay:.5s }
+.cel-fila--tarde:nth-of-type(3){ animation-delay:1s }
+/* La cuarta es el lote que se lee del código de barras: entra la última porque
+   es la que cuenta que el campo no se teclea. Sin este escalón heredaría el
+   retardo cero y aparecería a la vez que la primera. */
+.cel-fila--tarde:nth-of-type(4){ animation-delay:1.5s }
+@keyframes cel-fila{ 0%,22%{ opacity:0 } 34%,100%{ opacity:1 } }
+
+/* Lo que se apaga cuando entra el filtro. */
+.cel-fuera{ animation:cel-fuera 9s ease-out infinite; animation-play-state:var(--play,running); animation-iteration-count:var(--iter,infinite); animation-fill-mode:forwards; }
+@keyframes cel-fuera{ 0%,34%{ opacity:1 } 46%,100%{ opacity:.22 } }
+
+/* ---------- Escalones ---------- */
+@media (max-width:1100px){
+  .celdas{ grid-template-columns:repeat(2,minmax(0,1fr)) }
+}
+@media (max-width:680px){
+  .celdas{ grid-template-columns:1fr; padding:16px; gap:12px }
+}
+
+/* ---------- Movimiento reducido ----------
+   Todo resuelto y quieto: la firma trazada, el KO con su incidencia, el filtro
+   aplicado. Es la misma foto con la que acaba el ciclo. */
+@media (prefers-reduced-motion:reduce){
+  .celda,.cel-firma path,.cel-tarde,.cel-fila--tarde,.cel-fuera{ animation:none }
+  .celda,.cel-tarde,.cel-fila--tarde{ opacity:1; transform:none }
+  .cel-firma path{ stroke-dashoffset:0 }
+  .cel-fuera{ opacity:.22 }
+}
+
+/* Mismo estado resuelto, para cuando la capacidad del rotador ya terminó su
+   vuelta única (ver la nota junto a .scene[data-terminado] en ds/scene.css). */
+.scene[data-terminado] .celda,
+.scene[data-terminado] .cel-firma path,
+.scene[data-terminado] .cel-tarde,
+.scene[data-terminado] .cel-fila--tarde,
+.scene[data-terminado] .cel-fuera{ animation:none }
+.scene[data-terminado] .celda,
+.scene[data-terminado] .cel-tarde,
+.scene[data-terminado] .cel-fila--tarde{ opacity:1; transform:none }
+.scene[data-terminado] .cel-firma path{ stroke-dashoffset:0 }
+.scene[data-terminado] .cel-fuera{ opacity:.22 }

@@ -14,50 +14,127 @@
   // (p. ej. dentro de un post del blog), lleva al contacto de la home.
   var demo = document.getElementById('contacto') ? '#contacto' : ROOT + '#contacto';
 
-  /* ====== HubSpot · formulario embebido ======
-     Portal 20010689 (data center na1). */
-  var HUBSPOT = { region: 'na1', portalId: '20010689', formId: 'f8dcbcf5-52c2-464d-a5b1-84824ce89992' };
+  /* ====== HubSpot · formularios embebidos ======
+     Portal 20010689 (data center na1).
 
-  // Enlace al equivalente en inglés (mismo slug bajo /en/).
-  var enPath = '/en' + window.location.pathname;
+     Hay dos formularios y no uno: el de contacto pide lo de siempre, y el de
+     /casos-de-exito/ pide sólo el correo para abrir los vídeos. Pedir nombre,
+     empresa y teléfono para ver dos minutos de vídeo es lo que hace que nadie
+     los vea.
+
+     El de vídeo va por idioma: `formIdVideo` es un mapa y se elige con el lang
+     del documento. Este fichero se copia igual a /en/ /fr/ /it/ /de/ —el
+     traductor sólo toca literales con etiquetas—, así que el mapa entero viaja
+     a los cinco y cada página coge el suyo.
+
+     Los cinco son formularios independientes, no traducciones de HubSpot: su
+     «Crear traducción» pierde la casilla obligatoria de política de privacidad,
+     así que cada idioma es un clon del español con las etiquetas, el botón, el
+     mensaje y el enlace a su política traducidos a mano.
+
+     Si algún idioma se quedara sin id, cae al español: el gate abre y el lead
+     entra bien etiquetado como vídeo, sólo que el formulario se ve en español.
+     Y si `formIdVideo` quedara sin ninguno, se sirve el de contacto: la página
+     funciona entera, pero el lead entra etiquetado como petición de contacto,
+     que no es lo que ha pedido el visitante. */
+  var HUBSPOT = {
+    region: 'na1',
+    portalId: '20010689',
+    formId: 'f8dcbcf5-52c2-464d-a5b1-84824ce89992',
+    formIdVideo: {
+      es: '4043166a-b523-4b6a-bd98-6a45e494bafd',
+      en: '8cf7e45a-be2c-4abc-9c38-d859c819cc8f',
+      fr: 'fe48b6ff-8465-4ff7-831a-b118c9a66304',
+      it: '874a77f5-849b-4002-9aa3-f82b1a77715a',
+      de: 'd13de153-a6ba-4f5c-8569-2f1785dbb71e'
+    }
+  };
+
+  /* El id de vídeo del idioma de la página, con el español de reserva. */
+  function formVideo() {
+    var lang = (document.documentElement.getAttribute('lang') || 'es').slice(0, 2);
+    return HUBSPOT.formIdVideo[lang] || HUBSPOT.formIdVideo.es || '';
+  }
 
   var NAV =
   '<header class="nav"><div class="wrap nav__in">' +
     '<a class="nav__logo" href="' + ROOT + '"><img src="' + ROOT + 'assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" decoding="async"/></a>' +
     '<ul class="nav__links">' +
+      // Productos: estructura de mega-menú calcada de mitti.com/es (menú
+      // «Plataforma») — la lista de módulos arriba y, debajo, IA e
+      // Integraciones como bloque destacado con icono y flecha, no como dos
+      // filas más de la lista. Es la pieza que en Mitti son «IA de Mitti» y
+      // «Ver todas las integraciones».
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
-        '<div class="nav__menu">' +
-          '<a href="' + ROOT + 'incidencias/"><b>Incidencias</b><span>Registra, asigna y resuelve con cierre documentado</span></a>' +
-          '<a href="' + ROOT + 'auditorias/"><b>Registros y auditorías</b><span>Controles, checklists y auditorías digitales</span></a>' +
-          '<a href="' + ROOT + 'no-conformidades/"><b>Tareas, acciones y no conformidades</b><span>Acciones correctivas y seguimiento hasta el cierre</span></a>' +
-          '<a href="' + ROOT + 'dashboard/"><b>KPIs y dashboards</b><span>Visión 360º en tiempo real e informes automáticos</span></a>' +
+        '<div class="nav__menu nav__menu--mega">' +
+          '<div class="nav__mega-cols">' +
+            '<a href="' + ROOT + 'incidencias/"><b>Incidencias</b></a>' +
+            '<a href="' + ROOT + 'auditorias/"><b>Registros</b></a>' +
+            '<a href="' + ROOT + 'no-conformidades/"><b>Tareas</b></a>' +
+            '<a href="' + ROOT + 'dashboard/"><b>KPIs</b></a>' +
+            '<a href="' + ROOT + 'gestor-documental/"><b>Gestor documental</b></a>' +
+            '<a href="' + ROOT + 'gestion-de-activos/"><b>Gestión de activos</b></a>' +
+          '</div>' +
+          '<div class="nav__mega-blocks">' +
+            '<a class="nav__mega-block nav__mega-block--ia" href="' + ROOT + 'ia/">' +
+              '<span class="nav__mega-block__lava" aria-hidden="true"></span>' +
+              '<span class="nav__mega-block__ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">' +
+                '<linearGradient id="navIaGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A855F7"/><stop offset=".52" stop-color="#D34F9D"/><stop offset="1" stop-color="#1FD6F5"/></linearGradient>' +
+                '<path fill="url(#navIaGrad)" d="M12 1.4c.62 5.62 4.56 9.56 10.18 10.18v.84c-5.62.62-9.56 4.56-10.18 10.18h-.84C10.54 17 6.6 13.04.98 12.42v-.84C6.6 10.96 10.54 7.02 11.16 1.4z"/>' +
+              '</svg></span>' +
+              '<span class="nav__mega-block__txt"><b>IA</b></span>' +
+              '<span class="nav__mega-block__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>' +
+            '</a>' +
+            '<a class="nav__mega-block nav__mega-block--int" href="' + ROOT + 'integraciones/">' +
+              '<span class="nav__mega-block__lava" aria-hidden="true"></span>' +
+              '<span class="nav__mega-block__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9.1 9.1l5.8 5.8"/></svg></span>' +
+              '<span class="nav__mega-block__txt"><b>Integraciones</b></span>' +
+              '<span class="nav__mega-block__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>' +
+            '</a>' +
+          '</div>' +
         '</div>' +
       '</li>' +
+      // Casos de uso: la lista de sectores y normas a la izquierda, y a la
+      // derecha dos fichas de caso de éxito con foto — el mismo reparto que
+      // el menú «Soluciones» de Mitti, que lleva sus casos de cliente al
+      // lateral en vez de mezclarlos con la lista. El fondo es una foto de
+      // ambiente de la industria de cada cliente (no su cara, que es la del
+      // vídeo) más su logo, para que se lea la industria de un vistazo.
       '<li class="nav__item">' +
-        '<button class="nav__link" type="button">Industrias <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
-        '<div class="nav__menu">' +
-          '<a href="' + ROOT + 'industria-general/"><b>Industria general</b><span>Fabricación y procesos</span></a>' +
-          '<a href="' + ROOT + 'industria-alimentaria/"><b>Industria alimentaria</b><span>Seguridad y calidad alimentaria</span></a>' +
+        '<button class="nav__link" type="button">Casos de uso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
+        '<div class="nav__menu nav__menu--mega nav__menu--split">' +
+          '<div class="nav__mega-cols">' +
+            '<a href="' + ROOT + 'industria-general/"><b>Industria general</b></a>' +
+            '<a href="' + ROOT + 'industria-alimentaria/"><b>Industria alimentaria</b></a>' +
+            '<a href="' + ROOT + 'software-gmao/"><b>Mantenimiento</b></a>' +
+            '<a href="' + ROOT + 'software-calidad/"><b>Calidad y certificaciones</b></a>' +
+          '</div>' +
+          '<div class="nav__mega-side">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'casos-de-exito/carnavi/" style="background-image:url(\'' + ROOT + 'assets/sala-despiece-cerdo.webp\')">' +
+              '<img class="nav__mega-case__logo" src="' + ROOT + 'assets/clients-color/carnavi.webp" alt="Carnavi" width="120" height="46" loading="lazy" decoding="async">' +
+              '<span class="nav__mega-case__tag">Caso de éxito</span>' +
+              '<span class="nav__mega-case__title">Dos horas diarias dedicadas al registro manual de incidencias</span>' +
+            '</a>' +
+            '<a class="nav__mega-case" href="' + ROOT + 'casos-de-exito/panificadora-alcala/" style="background-image:url(\'' + ROOT + 'assets/panaderia-industrial-hornos.webp\')">' +
+              '<img class="nav__mega-case__logo" src="' + ROOT + 'assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="120" height="46" loading="lazy" decoding="async">' +
+              '<span class="nav__mega-case__tag">Caso de éxito</span>' +
+              '<span class="nav__mega-case__title">De dos plantas a cinco, con el registro todavía en papel</span>' +
+            '</a>' +
+          '</div>' +
         '</div>' +
       '</li>' +
       '<li class="nav__item">' +
         '<button class="nav__link" type="button">Recursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
         '<div class="nav__menu">' +
-          '<a href="' + ROOT + 'blog/"><b>Blog</b><span>Artículos y guías de calidad e industria</span></a>' +
-          '<a href="' + ROOT + 'glosario/"><b>Glosario</b><span>Términos industriales explicados</span></a>' +
+          '<a href="' + ROOT + 'casos-de-exito/"><b>Casos de éxito</b></a>' +
+          '<a href="' + ROOT + 'blog/"><b>Blog</b></a>' +
+          '<a href="' + ROOT + 'glosario/"><b>Glosario</b></a>' +
         '</div>' +
       '</li>' +
-      '<li class="nav__item nav__item--lang">' +
-        '<button class="nav__link" type="button">ES <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>' +
-        '<div class="nav__menu nav__menu--lang">' +
-          '<a href="' + window.location.pathname + '" aria-current="true"><b>Español</b></a>' +
-          '<a href="' + enPath + '"><b>English</b></a>' +
-        '</div>' +
-      '</li>' +
-      '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Solicita una demo</a></li>' +
+      '<li class="nav__cta-mobile"><a class="btn btn--primary" href="' + demo + '">Solicitar demostración</a></li>' +
     '</ul>' +
-    '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Solicita una demo</a>' +
+    '<a class="btn btn--primary nav__cta-desktop" href="' + demo + '">Solicitar demostración</a>' +
     '<button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">' +
       '<span></span><span></span><span></span>' +
     '</button>' +
@@ -78,17 +155,21 @@
           '<li><a href="' + ROOT + '">Inicio</a></li>' +
           '<li><a href="' + ROOT + 'auditorias/">Registros/Checklist</a></li>' +
           '<li><a href="' + ROOT + 'incidencias/">Gestión de incidencias</a></li>' +
+          '<li><a href="' + ROOT + 'gestor-documental/">Gestor documental</a></li>' +
+          '<li><a href="' + ROOT + 'gestion-de-activos/">Gestión de activos</a></li>' +
           '<li><a href="' + ROOT + 'dashboard/">Dashboard</a></li>' +
+          '<li><a href="' + ROOT + 'ia/">IA</a></li>' +
+          '<li><a href="' + ROOT + 'integraciones/">Integraciones</a></li>' +
+          '<li><a href="' + ROOT + 'casos-de-exito/">Casos de éxito</a></li>' +
           '<li><a href="' + ROOT + 'blog/">Blog</a></li>' +
           '<li><a href="' + ROOT + 'glosario/">Glosario</a></li>' +
         '</ul>' +
       '</div>' +
       '<div class="footer__col">' +
-        '<h4>Quick Links</h4>' +
+        '<h4>Enlaces útiles</h4>' +
         '<ul>' +
           '<li><a href="' + ROOT + 'politica-de-cookies/">Política de Cookies</a></li>' +
           '<li><a href="' + ROOT + 'politica-de-privacidad/">Política de privacidad</a></li>' +
-          '<li><a href="' + ROOT + 'terminos-y-condiciones/">Términos y condiciones</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
@@ -99,8 +180,66 @@
       '<img src="' + ROOT + 'assets/ivf-fondo.webp" alt="Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea" width="2238" height="403" loading="lazy" decoding="async"/>' +
     '</div>' +
   '</div></div>' +
-  '<div class="footer__legal"><div class="wrap"><p>VOLSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: "Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.</p></div></div>' +
+  '<div class="footer__legal"><div class="wrap"><p>VOLTSTONE TECHNOLOGY SERVICES S.L. ha recibido una subvención por parte de la Generalitat Valenciana, dentro de la convocatoria: "Ayuda destinada a personas emprendedoras y pymes en apoyo al inicio y consolidación de su proyecto empresarial, para el ejercicio 2025 (EMPYME)", con número de expediente EMPYME/2025/254, por un importe de 14.995,95 €.</p></div></div>' +
   '</footer>';
+
+  /* ====== El formulario de HubSpot, con la estética del sitio ======
+     HubSpot pinta el formulario DENTRO DE UN IFRAME, así que ninguna hoja de la
+     página lo alcanza: por eso se veía como HubSpot y no como Solved. Lo que sí
+     se puede es entrar, porque el iframe es `about:blank` —el embed v2 escribe
+     dentro en vez de cargar una URL— y eso lo deja en el MISMO ORIGEN. Aquí se
+     le meten dos cosas: la tipografía del sitio y `ds/hsform.css`.
+
+     Las rutas van ABSOLUTAS (`ROOT`, que sale del src de este script): dentro de
+     `about:blank` una ruta relativa no resuelve contra nada.
+
+     TRES CAUTELAS, y las tres han hecho falta:
+     · Todo va en try/catch. Si algún día HubSpot sirve el iframe desde su
+       dominio, el navegador bloquea el acceso y lanza; el formulario tiene que
+       seguir funcionando sin vestir, que es exactamente lo que había antes.
+     · La hoja se inyecta una vez por iframe (`data-vestido`): `onFormReady`
+       puede dispararse más de una vez.
+     · El alto lo lleva HubSpot midiendo su contenido, y nuestras reglas cambian
+       ese alto DESPUÉS de que él mida. Por eso se observa el cuerpo del iframe y
+       se le pone el alto que ocupa: sin esto, el botón se queda cortado por
+       abajo. */
+  function vestir(form) {
+    try {
+      var doc = (form && form.ownerDocument) || null;
+      if (!doc || !doc.head || doc.documentElement.getAttribute('data-vestido')) return;
+      doc.documentElement.setAttribute('data-vestido', '1');
+
+      var fuente = doc.createElement('link');
+      fuente.rel = 'stylesheet';
+      fuente.href = 'https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap';
+      doc.head.appendChild(fuente);
+
+      var hoja = doc.createElement('link');
+      hoja.rel = 'stylesheet';
+      hoja.href = ROOT + 'ds/hsform.css?v=20260910a';
+      doc.head.appendChild(hoja);
+
+      var marco = doc.defaultView && doc.defaultView.frameElement;
+      if (!marco) return;
+      var ajusta = function () {
+        /* Se mide el FORMULARIO, no el cuerpo del iframe: el cuerpo trae el aire
+           de HubSpot y dejaba un palmo en blanco debajo del botón, dentro de la
+           tarjeta. Si el formulario ya se ha mandado, lo que hay es el mensaje
+           de gracias, así que se mide lo que haya. */
+        var pieza = doc.querySelector('form') || doc.querySelector('.submitted-message') || doc.body;
+        var alto = pieza ? Math.ceil(pieza.getBoundingClientRect().height) : 0;
+        if (alto) marco.style.height = alto + 'px';
+      };
+      hoja.addEventListener('load', ajusta);
+      if (doc.defaultView.ResizeObserver && doc.body) {
+        new doc.defaultView.ResizeObserver(ajusta).observe(doc.body);
+        doc.defaultView.addEventListener('resize', ajusta);
+      } else {
+        setTimeout(ajusta, 300);
+        setTimeout(ajusta, 1200);
+      }
+    } catch (e) { /* iframe de otro origen: el formulario se queda sin vestir */ }
+  }
 
   function buildHsForms() {
     if (!window.hbspt || !window.hbspt.forms) return;
@@ -109,11 +248,15 @@
       if (holders[i].getAttribute('data-hs-done')) continue;
       if (!holders[i].id) holders[i].id = 'hs-form-' + i;
       holders[i].setAttribute('data-hs-done', '1');
+      // data-hs-form="video" pide el formulario corto del gate de vídeo; sin
+      // atributo —o sin id todavía para ese formulario— va el de contacto.
+      var quiereVideo = holders[i].getAttribute('data-hs-form') === 'video';
       window.hbspt.forms.create({
         region: HUBSPOT.region,
         portalId: HUBSPOT.portalId,
-        formId: HUBSPOT.formId,
-        target: '#' + holders[i].id
+        formId: (quiereVideo && formVideo()) ? formVideo() : HUBSPOT.formId,
+        target: '#' + holders[i].id,
+        onFormReady: vestir
       });
     }
   }
@@ -228,4 +371,206 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inject);
   else inject();
+})();
+
+/* ====== VÍDEOS DE AMBIENTE, QUE NO SE DESCARGAN HASTA QUE SE VEN ======
+   El bloque de contacto lleva un vídeo en bucle en vez de una foto. Con el
+   `src` puesto de entrada, un navegador con preload agresivo se trae el fichero
+   en las 75 páginas que llevan ese bloque, y está al final de la página. Así
+   que el `src` vive en `data-lazy` y se pone al asomar.
+
+   Con `prefers-reduced-motion` no se pone nunca: se queda el póster, que es un
+   fotograma del propio vídeo y cuenta lo mismo. Es la misma regla que ya sigue
+   el vídeo de la banda de IA en ds/aiband.js. */
+(function () {
+  var videos = [].slice.call(document.querySelectorAll('video[data-lazy]'));
+  if (!videos.length) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var arranca = function (v) {
+    if (!v.src) v.src = v.getAttribute('data-lazy');
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  };
+  if (!window.IntersectionObserver) { videos.forEach(arranca); return; }
+  var ojo = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (e) {
+      if (!e.isIntersecting) { if (e.target.src) e.target.pause(); return; }
+      arranca(e.target);
+    });
+  }, { rootMargin: '200px' });
+  videos.forEach(function (v) { ojo.observe(v); });
+})();
+
+
+/* ====== APARICIÓN DE SECCIONES ======================================
+   La entrada de las piezas al entrar en pantalla: opacidad y catorce píxeles
+   de subida, escalonadas dentro de su propia fila. Es lo único que se mueve a
+   nivel de página; todo lo demás que se anima en este sitio —la onda del hero,
+   la banda de IA, las pantallas de producto, el rotador— se anima solo y por
+   dentro.
+
+   VIVE AQUÍ, EN `chrome.js`, Y NO EN UN FICHERO DE `ds/`, por una razón: es el
+   único script que cargan las 702 páginas, incluidas las del blog y el
+   glosario, que se regeneran solas. Un `<script>` nuevo habría que meterlo en
+   cada HTML y en la plantilla del blog, y el de las páginas anidadas va por
+   ruta relativa. Aquí llega a todo y sobrevive a los rebuilds. Al traductor no
+   le afecta: no hay literales con etiquetas.
+
+   ¡OJO CON DÓNDE SE PEGA! `build:i18n` corta este fichero por la cabecera del
+   selector de idioma —la que empieza por «Selector de idioma»— y reescribe de
+   ahí para abajo. Lo que se añada DESPUÉS de esa cabecera desaparece en el
+   siguiente build; este bloque va antes, y por eso sobrevive. Y con la cabecera
+   pasa lo mismo dentro de un comentario: escribirla entera aquí partía este
+   fichero por la mitad en el build. Se nombra, no se copia.
+
+   TRES REGLAS QUE SON EL COMPONENTE, no detalles de implementación:
+
+   1. Sólo se esconde lo que ya está fuera de pantalla. Lo que se ve al cargar
+      no se toca: ni parpadea, ni retrasa el LCP, ni depende de que este script
+      llegue. Si el JS falla, la página se ve entera —el estado oculto lo pone
+      él, no una hoja de estilos.
+   2. Se anima el contenido, no la caja. La misma distinción que el resto del
+      sistema: nada de escalas ni de rebotes; catorce píxeles y medio segundo.
+   3. Con `prefers-reduced-motion` no se hace nada en absoluto. Ni observa, ni
+      esconde: la página queda estática y completa.
+
+   Lo que NO entra, y está elegido: el hero (ya tiene su onda y es el LCP), la
+   composición de planta (su panel lleva `backdrop-filter`, y un ancestro
+   transformado lo rompe mientras dura la animación), las pantallas de producto
+   por dentro y los paneles del rotador, que tienen la suya. */
+(function () {
+  var REDUCIDO = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (REDUCIDO || !window.IntersectionObserver) return;
+
+  /* Las piezas que aparecen. Todas comprobadas contra el marcado del sitio: una
+     lista con selectores que no existen se lee como si el efecto estuviera y no
+     está. */
+  var PIEZAS = [
+    '.section-head > h2', '.section-head > p',
+    '.ds-stats > .ds-stat',
+    '.scene-grid > .scene', '.scene-grid > .aiband',
+    '.reasons > div', '.trio > div',
+    '.card', '.blog-card', '.shot', '.quote', '.faq__item', '.rotador'
+  ].join(',');
+
+  var FUERA = '.ds-hero, .compo, .rotador__vista, .app, .device, .nav, .footer';
+
+  function montar() {
+    var vistos = [];
+    var alto = window.innerHeight || 0;
+
+    [].slice.call(document.querySelectorAll(PIEZAS)).forEach(function (el) {
+      if (el.closest(FUERA)) return;
+      // Ya visible al cargar: se queda como está. Ésta es la regla 1.
+      if (el.getBoundingClientRect().top < alto * 0.92) return;
+      // El escalonado es por fila —el índice va en el padre— y se corta a los
+      // seis: en una rejilla de doce tarjetas, la última entraría casi un
+      // segundo después que la primera y eso ya no se lee como una entrada.
+      var padre = el.parentNode;
+      var i = padre.__revI || 0;
+      padre.__revI = i + 1;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(14px)';
+      el.style.transitionProperty = 'opacity, transform';
+      el.style.transitionDuration = '.52s';
+      el.style.transitionTimingFunction = 'cubic-bezier(.2,.7,.3,1)';
+      el.style.transitionDelay = (Math.min(i, 5) * 0.07) + 's';
+      el.style.willChange = 'opacity, transform';
+      vistos.push(el);
+    });
+
+    if (!vistos.length) return;
+
+    function revelar(el) {
+      ojo.unobserve(el);
+      el.style.opacity = '';
+      el.style.transform = '';
+      // Al acabar se limpia todo: la pieza vuelve a ser una pieza normal y no
+      // se queda con una capa de composición abierta para siempre.
+      setTimeout(function () {
+        el.style.transitionProperty = '';
+        el.style.transitionDuration = '';
+        el.style.transitionTimingFunction = '';
+        el.style.transitionDelay = '';
+        el.style.willChange = '';
+      }, 1000);
+    }
+
+    // `threshold: 0` a propósito: con un umbral por encima de cero, una pieza
+    // cuya imagen aún no ha cargado mide cero de alto, no llega al umbral y se
+    // queda escondida a la vista de todos. Pasó en el índice del blog.
+    var ojo = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) { if (e.isIntersecting) revelar(e.target); });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0 });
+
+    vistos.forEach(function (el) { ojo.observe(el); });
+
+    // Red de seguridad: cuando ha cargado todo —imágenes incluidas— la maqueta
+    // se ha movido, y lo que haya quedado escondido dentro de la ventana se
+    // enseña sin esperar a que el usuario baje. Una pieza invisible es peor que
+    // una pieza sin animar.
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        vistos.forEach(function (el) {
+          if (el.style.opacity !== '0') return;
+          var c = el.getBoundingClientRect();
+          if (c.top < (window.innerHeight || 0) && c.bottom > 0) revelar(el);
+        });
+      }, 300);
+    });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montar);
+  else montar();
+})();
+
+/* ====== Selector de idioma ======
+   Se construye con los <link rel="alternate" hreflang> que ya lleva la página,
+   así que apunta siempre a la traducción exacta de ESTA página y no a la home
+   del idioma, que es el error clásico y el que hace que Google trate las
+   versiones como duplicados sueltos. */
+(function () {
+  var NOMBRES = {"es":"Español","en":"English","fr":"Français","it":"Italiano","de":"Deutsch","pt-PT":"Português"};
+
+/* El resto de chrome.js pinta la nav en DOMContentLoaded, así que esto tiene
+   que esperar igual: montado a la primera no encontraba .nav__links y salía sin
+   hacer nada, que es como el selector estuvo invisible en los cinco idiomas. */
+function montarSelector() {
+  var actual = document.documentElement.lang || 'es';
+  var alt = [].slice.call(document.querySelectorAll('link[rel="alternate"][hreflang]'))
+    .filter(function (l) { return l.hreflang !== 'x-default' && NOMBRES[l.hreflang]; });
+  if (alt.length < 2) return;
+
+  var nav = document.querySelector('.nav__links');
+  if (!nav) return;
+
+  var li = document.createElement('li');
+  li.className = 'nav__item nav__item--lang';
+  var opciones = alt.map(function (l) {
+    var activo = l.hreflang === actual ? ' aria-current="true"' : '';
+    // Sólo la ruta: los hreflang son absolutos contra trysolved.com —tienen que
+    // serlo— y usarlos tal cual sacaba del sitio a quien mirase la web en local
+    // o en la página de github.io. Es la misma razón por la que chrome.js
+    // deriva ROOT en vez de escribir el dominio.
+    var ruta = l.href;
+    try { ruta = new URL(l.href, location.href).pathname; } catch (e) {}
+    return '<a href="' + ruta + '" lang="' + l.hreflang + '"' + activo + '>' +
+           NOMBRES[l.hreflang] + '</a>';
+  }).join('');
+  li.innerHTML =
+    '<button class="nav__link" type="button" aria-label="' + NOMBRES[actual] + '">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">' +
+        '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/>' +
+      '</svg> ' + actual.toUpperCase() +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>' +
+    '</button>' +
+    '<div class="nav__menu nav__menu--lang">' + opciones + '</div>';
+
+  var cta = nav.querySelector('.nav__cta-mobile');
+  if (cta) nav.insertBefore(li, cta); else nav.appendChild(li);
+}
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montarSelector);
+  else montarSelector();
 })();

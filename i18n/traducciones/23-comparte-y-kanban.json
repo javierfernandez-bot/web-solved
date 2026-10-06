@@ -1,0 +1,38 @@
+{
+  "_nota": "Rehecha de la sección «Acciones · Producto» de /no-conformidades/ (23 sep 2026): la tarjeta «Comparte tareas con proveedores y clientes» del rotador afirmaba un envío de la acción con protocolo que no existe; se corrigió contra demo.trysolved.com/incidents (campo compartido con enlace externo, plantilla Reclamación) y se le dio animación propia (`.app__comparte`, ds/app.css). El Kanban (`.app__kan`) se repasó a la vez para que la cabecera y las tarjetas se parezcan a las reales. «Ernesto» es el proveedor de la incidencia comprobada; se mantiene igual en los cinco idiomas, como el resto de nombres propios del sitio.",
+  "El campo del proveedor o del cliente se comparte con un enlace externo. Quien lo recibe lo rellena sin entrar en Solved, y el campo queda marcado como compartido en la incidencia.": {
+    "en": "The supplier or customer field is shared with an external link. Whoever receives it fills it in without logging into Solved, and the field is marked as shared on the incident.",
+    "fr": "Le champ fournisseur ou client se partage avec un lien externe. La personne qui le reçoit le remplit sans se connecter à Solved, et le champ est marqué comme partagé sur l'incident.",
+    "it": "Il campo del fornitore o del cliente si condivide con un link esterno. Chi lo riceve lo compila senza accedere a Solved, e il campo risulta condiviso nell'anomalia.",
+    "de": "Das Feld für Lieferant oder Kunde wird über einen externen Link geteilt. Wer ihn erhält, füllt es aus, ohne sich bei Solved anzumelden, und das Feld wird bei der Störung als geteilt markiert.",
+    "pt": "O campo do fornecedor ou do cliente partilha-se com uma ligação externa. Quem a recebe preenche-o sem entrar no Solved, e o campo fica marcado como partilhado na ocorrência."
+  },
+  "El proveedor rellena su parte sin entrar en Solved": {
+    "en": "The supplier fills in their part without logging into Solved",
+    "fr": "Le fournisseur remplit sa partie sans se connecter à Solved",
+    "it": "Il fornitore compila la sua parte senza accedere a Solved",
+    "de": "Der Lieferant füllt seinen Teil aus, ohne sich bei Solved anzumelden",
+    "pt": "O fornecedor preenche a sua parte sem entrar no Solved"
+  },
+  "Seleccionar proveedor": {
+    "en": "Select a supplier",
+    "fr": "Sélectionner un fournisseur",
+    "it": "Seleziona un fornitore",
+    "de": "Lieferant auswählen",
+    "pt": "Selecionar fornecedor"
+  },
+  "Ernesto": {
+    "en": "Ernesto",
+    "fr": "Ernesto",
+    "it": "Ernesto",
+    "de": "Ernesto",
+    "pt": "Ernesto"
+  },
+  "Compartido con un enlace externo": {
+    "en": "Shared with an external link",
+    "fr": "Partagé avec un lien externe",
+    "it": "Condiviso con un link esterno",
+    "de": "Über externen Link geteilt",
+    "pt": "Partilhado com uma ligação externa"
+  }
+}

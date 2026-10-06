@@ -1,0 +1,273 @@
+{
+  "_nota": "Sección «Ámbitos» de /auditorias/ y las tres FAQ nuevas (7 sep 2026). El copy es de otra sesión; las traducciones se escriben aquí a mano, como el resto del copy de venta.",
+
+  "Servidor MCP": {
+    "en": "MCP server",
+    "fr": "Serveur MCP",
+    "it": "Server MCP",
+    "de": "MCP-Server",
+    "pt": "Servidor MCP"
+  },
+  "Claude": "=",
+  "ChatGPT": "=",
+  "Gemini": "=",
+  "Opera la plataforma de Solved potenciado por las herramientas de IA que ya utilizas": {
+    "en": "Run Solved from the AI tools you already use",
+    "fr": "Pilotez Solved depuis les outils d'IA que vous utilisez déjà",
+    "it": "Usa Solved dagli strumenti di IA che già utilizzi",
+    "de": "Bedienen Sie Solved aus den KI-Werkzeugen, die Sie schon nutzen",
+    "pt": "Opere a Solved a partir das ferramentas de IA que já utiliza"
+  },
+  "Configura sobre tus procedimientos los controles de calidad, mantenimiento, producción y seguridad": {
+    "en": "Configure quality, maintenance, production and safety checks on your own procedures",
+    "fr": "Configurez les contrôles qualité, maintenance, production et sécurité sur vos propres procédures",
+    "it": "Configura sulle tue procedure i controlli di qualità, manutenzione, produzione e sicurezza",
+    "de": "Richten Sie Qualitäts-, Instandhaltungs-, Produktions- und Sicherheitskontrollen auf Ihren eigenen Verfahren ein",
+    "pt": "Configure os controlos de qualidade, manutenção, produção e segurança sobre os seus próprios procedimentos"
+  },
+  "Un mismo módulo de registros, con la frecuencia y el responsable de cada área.": {
+    "en": "One records module, with the frequency and the owner of each area.",
+    "fr": "Un même module d'enregistrements, avec la fréquence et le responsable de chaque domaine.",
+    "it": "Un unico modulo di registrazioni, con la frequenza e il responsabile di ogni area.",
+    "de": "Ein einziges Nachweismodul, mit Frequenz und Verantwortlichem je Bereich.",
+    "pt": "Um único módulo de registos, com a frequência e o responsável de cada área."
+  },
+  "Seguridad y medio ambiente": {
+    "en": "Safety and environment",
+    "fr": "Sécurité et environnement",
+    "it": "Sicurezza e ambiente",
+    "de": "Sicherheit und Umwelt",
+    "pt": "Segurança e ambiente"
+  },
+  "El control de proceso, documentado antes de la auditoría": {
+    "en": "Process control, documented before the audit",
+    "fr": "Le contrôle de process, documenté avant l'audit",
+    "it": "Il controllo di processo, documentato prima dell'audit",
+    "de": "Die Prozesskontrolle, dokumentiert vor dem Audit",
+    "pt": "O controlo de processo, documentado antes da auditoria"
+  },
+  "Los prerrequisitos, los controles de producto y la recepción de materia prima se cumplimentan en la línea y quedan disponibles para la auditoría de IFS, BRC o ISO 9001 sin preparación previa.": {
+    "en": "Prerequisites, product checks and raw material receipt are filled in on the line and are available for an IFS, BRC or ISO 9001 audit with no prior preparation.",
+    "fr": "Les prérequis, les contrôles produit et la réception des matières premières se remplissent sur la ligne et restent disponibles pour l'audit IFS, BRC ou ISO 9001 sans préparation préalable.",
+    "it": "I prerequisiti, i controlli di prodotto e il ricevimento delle materie prime si compilano in linea e restano disponibili per l'audit IFS, BRC o ISO 9001 senza preparazione preventiva.",
+    "de": "Basisanforderungen, Produktkontrollen und Wareneingang werden an der Linie ausgefüllt und stehen ohne Vorbereitung für das IFS-, BRC- oder ISO-9001-Audit bereit.",
+    "pt": "Os pré-requisitos, os controlos de produto e a receção de matéria-prima são preenchidos na linha e ficam disponíveis para a auditoria IFS, BRC ou ISO 9001 sem preparação prévia."
+  },
+  "Los prerrequisitos y los controles de producto quedan disponibles para la auditoría de IFS, BRC o ISO 9001 sin preparación previa.": {
+    "en": "Prerequisites and product checks are available for an IFS, BRC or ISO 9001 audit with no prior preparation.",
+    "fr": "Les prérequis et les contrôles produit restent disponibles pour l'audit IFS, BRC ou ISO 9001 sans préparation préalable.",
+    "it": "I prerequisiti e i controlli di prodotto restano disponibili per l'audit IFS, BRC o ISO 9001 senza preparazione preventiva.",
+    "de": "Basisanforderungen und Produktkontrollen stehen ohne Vorbereitung für das IFS-, BRC- oder ISO-9001-Audit bereit.",
+    "pt": "Os pré-requisitos e os controlos de produto ficam disponíveis para a auditoria IFS, BRC ou ISO 9001 sem preparação prévia."
+  },
+  "Temperaturas de cámara y de proceso, con su límite": {
+    "en": "Cold room and process temperatures, with their limits",
+    "fr": "Températures de chambre et de process, avec leur limite",
+    "it": "Temperature di cella e di processo, con il loro limite",
+    "de": "Kühlraum- und Prozesstemperaturen, mit ihrem Grenzwert",
+    "pt": "Temperaturas de câmara e de processo, com o seu limite"
+  },
+  "Controles de calidad de producto, con su evidencia": {
+    "en": "Product quality checks, with their evidence",
+    "fr": "Contrôles qualité produit, avec leur preuve",
+    "it": "Controlli di qualità del prodotto, con la loro evidenza",
+    "de": "Produktqualitätskontrollen, mit ihrem Nachweis",
+    "pt": "Controlos de qualidade do produto, com a sua evidência"
+  },
+  "Recepción de mercancías y homologación de proveedores": {
+    "en": "Goods receipt and supplier approval",
+    "fr": "Réception des marchandises et homologation des fournisseurs",
+    "it": "Ricevimento merci e qualifica dei fornitori",
+    "de": "Wareneingang und Lieferantenfreigabe",
+    "pt": "Receção de mercadorias e homologação de fornecedores"
+  },
+  "El preventivo es un registro con frecuencia y responsable": {
+    "en": "A preventive job is a record with a frequency and an owner",
+    "fr": "Le préventif est un enregistrement avec fréquence et responsable",
+    "it": "Il preventivo è una registrazione con frequenza e responsabile",
+    "de": "Die Vorbeugung ist ein Nachweis mit Frequenz und Verantwortlichem",
+    "pt": "A preventiva é um registo com frequência e responsável"
+  },
+  "La rutina de mantenimiento se programa como registro periódico sobre el activo. La desviación detectada durante la revisión abre la incidencia sobre ese mismo equipo, con su responsable y su plazo.": {
+    "en": "The maintenance routine is scheduled as a recurring record on the asset. A deviation found during the check opens an incident on that same equipment, with its owner and its deadline.",
+    "fr": "La routine de maintenance se programme comme enregistrement périodique sur l'équipement. L'écart détecté pendant la révision ouvre l'incident sur ce même équipement, avec son responsable et son échéance.",
+    "it": "La routine di manutenzione si programma come registrazione periodica sulla macchina. Lo scostamento rilevato durante la revisione apre l'anomalia sulla stessa macchina, con responsabile e scadenza.",
+    "de": "Die Wartungsroutine wird als wiederkehrender Nachweis auf der Anlage geplant. Eine bei der Prüfung festgestellte Abweichung eröffnet die Störung an derselben Anlage, mit Verantwortlichem und Frist.",
+    "pt": "A rotina de manutenção é programada como registo periódico sobre o ativo. O desvio detetado durante a revisão abre a ocorrência sobre esse mesmo equipamento, com o seu responsável e o seu prazo."
+  },
+  "La rutina de mantenimiento se programa como registro periódico sobre el activo, y la desviación detectada abre la incidencia sobre ese mismo equipo.": {
+    "en": "The maintenance routine is scheduled as a recurring record on the asset, and any deviation found opens the incident on that same equipment.",
+    "fr": "La routine de maintenance se programme comme enregistrement périodique sur l'équipement, et l'écart détecté ouvre l'incident sur ce même équipement.",
+    "it": "La routine di manutenzione si programma come registrazione periodica sulla macchina, e lo scostamento rilevato apre l'anomalia sulla stessa macchina.",
+    "de": "Die Wartungsroutine wird als wiederkehrender Nachweis auf der Anlage geplant, und eine festgestellte Abweichung eröffnet die Störung an derselben Anlage.",
+    "pt": "A rotina de manutenção é programada como registo periódico sobre o ativo, e o desvio detetado abre a ocorrência sobre esse mesmo equipamento."
+  },
+  "Mantenimiento rutinario por equipo y periodicidad": {
+    "en": "Routine maintenance by equipment and frequency",
+    "fr": "Maintenance de routine par équipement et périodicité",
+    "it": "Manutenzione ordinaria per macchina e periodicità",
+    "de": "Routinewartung nach Anlage und Turnus",
+    "pt": "Manutenção de rotina por equipamento e periodicidade"
+  },
+  "Control de cámaras y equipos de frío": {
+    "en": "Checks on cold rooms and refrigeration equipment",
+    "fr": "Contrôle des chambres froides et des équipements frigorifiques",
+    "it": "Controllo di celle e impianti frigoriferi",
+    "de": "Kontrolle von Kühlräumen und Kälteanlagen",
+    "pt": "Controlo de câmaras e equipamentos de frio"
+  },
+  "Cada activo con su ficha, su QR y su historial": {
+    "en": "Every asset with its record, its QR code and its history",
+    "fr": "Chaque équipement avec sa fiche, son QR et son historique",
+    "it": "Ogni macchina con la sua scheda, il suo QR e il suo storico",
+    "de": "Jede Anlage mit Stammblatt, QR-Code und Historie",
+    "pt": "Cada ativo com a sua ficha, o seu QR e o seu histórico"
+  },
+  "El parte del turno, firmado por quien lo ejecuta": {
+    "en": "The shift report, signed by whoever runs it",
+    "fr": "Le rapport de poste, signé par celui qui l'exécute",
+    "it": "Il rapporto di turno, firmato da chi lo esegue",
+    "de": "Der Schichtbericht, unterschrieben von der ausführenden Person",
+    "pt": "O parte do turno, assinado por quem o executa"
+  },
+  "Los controles de línea se registran en el puesto y no al terminar la jornada, con el responsable del turno identificado en cada uno y la hora en la que se cumplimentó.": {
+    "en": "Line checks are recorded at the workstation and not at the end of the day, each one with the shift supervisor identified and the time it was filled in.",
+    "fr": "Les contrôles de ligne s'enregistrent au poste et non en fin de journée, chacun avec le responsable du poste identifié et l'heure à laquelle il a été rempli.",
+    "it": "I controlli di linea si registrano in postazione e non a fine giornata, ognuno con il responsabile del turno identificato e l'ora di compilazione.",
+    "de": "Linienkontrollen werden am Arbeitsplatz erfasst und nicht am Ende des Tages – jede mit dem benannten Schichtverantwortlichen und der Uhrzeit der Erfassung.",
+    "pt": "Os controlos de linha são registados no posto e não no final do dia, cada um com o responsável do turno identificado e a hora em que foi preenchido."
+  },
+  "Los controles de línea se registran en el puesto y no al terminar la jornada, con el responsable del turno identificado en cada uno.": {
+    "en": "Line checks are recorded at the workstation and not at the end of the day, each one with the shift supervisor identified.",
+    "fr": "Les contrôles de ligne s'enregistrent au poste et non en fin de journée, chacun avec le responsable du poste identifié.",
+    "it": "I controlli di linea si registrano in postazione e non a fine giornata, ognuno con il responsabile del turno identificato.",
+    "de": "Linienkontrollen werden am Arbeitsplatz erfasst und nicht am Ende des Tages – jede mit dem benannten Schichtverantwortlichen.",
+    "pt": "Os controlos de linha são registados no posto e não no final do dia, cada um com o responsável do turno identificado."
+  },
+  "Pesos y controles de proceso de la línea": {
+    "en": "Weights and in-line process checks",
+    "fr": "Pesées et contrôles de process de la ligne",
+    "it": "Pesi e controlli di processo della linea",
+    "de": "Gewichte und Prozesskontrollen der Linie",
+    "pt": "Pesos e controlos de processo da linha"
+  },
+  "Firma del responsable del turno, con su hora": {
+    "en": "Shift supervisor's signature, with its timestamp",
+    "fr": "Signature du responsable du poste, avec son heure",
+    "it": "Firma del responsabile del turno, con la sua ora",
+    "de": "Unterschrift des Schichtverantwortlichen, mit Uhrzeit",
+    "pt": "Assinatura do responsável do turno, com a sua hora"
+  },
+  "Las revisiones de seguridad y ambientales, con la misma trazabilidad": {
+    "en": "Safety and environmental inspections, with the same traceability",
+    "fr": "Les inspections de sécurité et environnementales, avec la même traçabilité",
+    "it": "Le verifiche di sicurezza e ambientali, con la stessa tracciabilità",
+    "de": "Sicherheits- und Umweltprüfungen, mit derselben Rückverfolgbarkeit",
+    "pt": "As inspeções de segurança e ambientais, com a mesma rastreabilidade"
+  },
+  "Siguen el circuito de cualquier otro registro: frecuencia programada, evidencia adjunta y desviación derivada a su responsable, sin un sistema aparte para cada norma.": {
+    "en": "They follow the same circuit as any other record: scheduled frequency, attached evidence and deviations routed to their owner, without a separate system for each standard.",
+    "fr": "Elles suivent le circuit de tout autre enregistrement : fréquence programmée, preuve jointe et écart transmis à son responsable, sans système distinct pour chaque référentiel.",
+    "it": "Seguono il circuito di qualsiasi altra registrazione: frequenza programmata, evidenza allegata e scostamento inoltrato al responsabile, senza un sistema separato per ogni norma.",
+    "de": "Sie folgen dem Ablauf jedes anderen Nachweises: geplante Frequenz, angehängter Nachweis und Abweichung an den Verantwortlichen – ohne ein eigenes System je Norm.",
+    "pt": "Seguem o circuito de qualquer outro registo: frequência programada, evidência anexada e desvio encaminhado ao seu responsável, sem um sistema separado para cada norma."
+  },
+  "Siguen el circuito de cualquier otro registro: frecuencia programada y desviación derivada a su responsable, sin un sistema aparte para cada norma.": {
+    "en": "They follow the same circuit as any other record: scheduled frequency and deviations routed to their owner, without a separate system for each standard.",
+    "fr": "Elles suivent le circuit de tout autre enregistrement : fréquence programmée et écart transmis à son responsable, sans système distinct pour chaque référentiel.",
+    "it": "Seguono il circuito di qualsiasi altra registrazione: frequenza programmata e scostamento inoltrato al responsabile, senza un sistema separato per ogni norma.",
+    "de": "Sie folgen dem Ablauf jedes anderen Nachweises: geplante Frequenz und Abweichung an den Verantwortlichen – ohne ein eigenes System je Norm.",
+    "pt": "Seguem o circuito de qualquer outro registo: frequência programada e desvio encaminhado ao seu responsável, sem um sistema separado para cada norma."
+  },
+  "Controles de prevención de riesgos laborales": {
+    "en": "Occupational health and safety checks",
+    "fr": "Contrôles de prévention des risques professionnels",
+    "it": "Controlli di prevenzione dei rischi sul lavoro",
+    "de": "Kontrollen des Arbeitsschutzes",
+    "pt": "Controlos de prevenção de riscos laborais"
+  },
+  "Controles de limpieza y prerrequisitos de higiene": {
+    "en": "Cleaning checks and hygiene prerequisites",
+    "fr": "Contrôles de nettoyage et prérequis d'hygiène",
+    "it": "Controlli di pulizia e prerequisiti di igiene",
+    "de": "Reinigungskontrollen und Hygiene-Basisanforderungen",
+    "pt": "Controlos de limpeza e pré-requisitos de higiene"
+  },
+  "¿Sirve para los mantenimientos preventivos?": {
+    "en": "Does it work for preventive maintenance?",
+    "fr": "Est-ce utilisable pour la maintenance préventive ?",
+    "it": "Va bene per le manutenzioni preventive?",
+    "de": "Eignet es sich für die vorbeugende Instandhaltung?",
+    "pt": "Serve para as manutenções preventivas?"
+  },
+  "Sí. Un preventivo se configura como registro programado sobre el activo, con su frecuencia y su responsable, y la desviación detectada durante la revisión abre la incidencia sobre ese mismo equipo.": {
+    "en": "Yes. A preventive job is set up as a scheduled record on the asset, with its frequency and its owner, and a deviation found during the check opens an incident on that same equipment.",
+    "fr": "Oui. Un préventif se configure comme enregistrement programmé sur l'équipement, avec sa fréquence et son responsable, et l'écart détecté pendant la révision ouvre l'incident sur ce même équipement.",
+    "it": "Sì. Un preventivo si configura come registrazione programmata sulla macchina, con frequenza e responsabile, e lo scostamento rilevato durante la revisione apre l'anomalia sulla stessa macchina.",
+    "de": "Ja. Eine Vorbeugung wird als geplanter Nachweis auf der Anlage eingerichtet, mit Frequenz und Verantwortlichem, und eine bei der Prüfung festgestellte Abweichung eröffnet die Störung an derselben Anlage.",
+    "pt": "Sim. Uma preventiva configura-se como registo programado sobre o ativo, com a sua frequência e o seu responsável, e o desvio detetado durante a revisão abre a ocorrência sobre esse mesmo equipamento."
+  },
+  "¿Un control fuera de límites abre la incidencia de forma automática?": {
+    "en": "Does an out-of-range check open the incident automatically?",
+    "fr": "Un contrôle hors limites ouvre-t-il l'incident automatiquement ?",
+    "it": "Un controllo fuori limite apre l'anomalia in automatico?",
+    "de": "Eröffnet eine Kontrolle außerhalb der Grenzwerte die Störung automatisch?",
+    "pt": "Um controlo fora dos limites abre a ocorrência de forma automática?"
+  },
+  "Sí. El control con resultado KO genera la incidencia con su responsable y su plazo, enlazada al registro que la originó.": {
+    "en": "Yes. A check with a KO result generates the incident with its owner and its deadline, linked to the record that produced it.",
+    "fr": "Oui. Le contrôle au résultat KO génère l'incident avec son responsable et son échéance, lié à l'enregistrement qui l'a produit.",
+    "it": "Sì. Il controllo con esito KO genera l'anomalia con responsabile e scadenza, collegata alla registrazione che l'ha originata.",
+    "de": "Ja. Eine Kontrolle mit KO-Ergebnis erzeugt die Störung mit Verantwortlichem und Frist, verknüpft mit dem auslösenden Nachweis.",
+    "pt": "Sim. O controlo com resultado KO gera a ocorrência com o seu responsável e o seu prazo, associada ao registo que a originou."
+  },
+  "¿Se puede exportar el histórico de registros?": {
+    "en": "Can the record history be exported?",
+    "fr": "L'historique des enregistrements est-il exportable ?",
+    "it": "Si può esportare lo storico delle registrazioni?",
+    "de": "Lässt sich die Nachweishistorie exportieren?",
+    "pt": "É possível exportar o histórico de registos?"
+  },
+  "Sí. El histórico se filtra por línea, turno o producto y se exporta con las evidencias adjuntas, y la IA del producto emite además informes a medida y el informe semanal de cada planta.": {
+    "en": "Yes. The history is filtered by line, shift or product and exported with the attached evidence, and the product's AI also issues tailored reports and each site's weekly report.",
+    "fr": "Oui. L'historique se filtre par ligne, poste ou produit et s'exporte avec les preuves jointes, et l'IA du produit émet en plus des rapports sur mesure et le rapport hebdomadaire de chaque site.",
+    "it": "Sì. Lo storico si filtra per linea, turno o prodotto e si esporta con le evidenze allegate, e l'IA del prodotto emette inoltre report su misura e il report settimanale di ogni stabilimento.",
+    "de": "Ja. Die Historie wird nach Linie, Schicht oder Produkt gefiltert und mit den angehängten Nachweisen exportiert; die KI des Produkts erstellt zusätzlich maßgeschneiderte Berichte und den Wochenbericht jedes Werks.",
+    "pt": "Sim. O histórico é filtrado por linha, turno ou produto e é exportado com as evidências anexadas, e a IA do produto emite ainda relatórios personalizados e o relatório semanal de cada fábrica."
+  },
+  "Ámbitos de planta que registran en Solved": {
+    "en": "Plant areas that record in Solved",
+    "fr": "Domaines de l'usine qui enregistrent dans Solved",
+    "it": "Ambiti di stabilimento che registrano in Solved",
+    "de": "Werksbereiche, die in Solved erfassen",
+    "pt": "Áreas de fábrica que registam na Solved"
+  },
+  "Operaria con móvil revisa una muestra de producto en la mesa de control de calidad de una planta industrial": {
+    "en": "Operator with a phone checks a product sample at the quality control table of an industrial plant",
+    "fr": "Une opératrice avec un mobile contrôle un échantillon de produit sur la table de contrôle qualité d'une usine industrielle",
+    "it": "Un'operatrice con lo smartphone controlla un campione di prodotto al tavolo di controllo qualità di uno stabilimento industriale",
+    "de": "Eine Mitarbeiterin prüft mit dem Smartphone eine Produktprobe am Qualitätskontrolltisch einer Industrieanlage",
+    "pt": "Operadora com telemóvel verifica uma amostra de produto na mesa de controlo de qualidade de uma fábrica industrial"
+  },
+  "Técnico con tablet revisa el cuadro eléctrico de una máquina en una planta industrial": {
+    "en": "Technician with a tablet checks the electrical control panel of a machine in an industrial plant",
+    "fr": "Un technicien avec une tablette contrôle l'armoire électrique d'une machine dans une usine industrielle",
+    "it": "Un tecnico con un tablet controlla il quadro elettrico di una macchina in uno stabilimento industriale",
+    "de": "Ein Techniker prüft mit einem Tablet den Schaltschrank einer Maschine in einer Industrieanlage",
+    "pt": "Técnico com tablet verifica o quadro elétrico de uma máquina numa fábrica industrial"
+  },
+  "Supervisor con tablet camina junto a la línea de producción de una planta industrial": {
+    "en": "Supervisor with a tablet walks along the production line of an industrial plant",
+    "fr": "Un superviseur avec une tablette marche le long de la ligne de production d'une usine industrielle",
+    "it": "Un supervisore con un tablet cammina lungo la linea di produzione di uno stabilimento industriale",
+    "de": "Ein Vorarbeiter geht mit einem Tablet entlang der Produktionslinie einer Industrieanlage",
+    "pt": "Supervisor com tablet caminha junto à linha de produção de uma fábrica industrial"
+  },
+  "Operaria con móvil revisa la estación de seguridad e higiene de una planta industrial": {
+    "en": "Operator with a phone checks the safety and hygiene station of an industrial plant",
+    "fr": "Une opératrice avec un mobile contrôle le poste de sécurité et d'hygiène d'une usine industrielle",
+    "it": "Un'operatrice con lo smartphone controlla la postazione di sicurezza e igiene di uno stabilimento industriale",
+    "de": "Eine Mitarbeiterin prüft mit dem Smartphone die Sicherheits- und Hygienestation einer Industrieanlage",
+    "pt": "Operadora com telemóvel verifica a estação de segurança e higiene de uma fábrica industrial"
+  }
+}

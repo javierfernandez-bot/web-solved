@@ -1,0 +1,788 @@
+/* =========================================================
+   EL MONTAJE DE UNA PLANTILLA — los tres caminos, en bucle
+   ---------------------------------------------------------
+   Réplica en versión Solved de la animación de
+   `mitti.com/es/inspecciones-e-informes` («Digitalice cualquier auditoría y
+   proceso en unos pocos clics»), medida sobre su GIF —600×500, 144 fotogramas,
+   10 s— el 9 de septiembre de 2026. Se copia LO QUE CUENTA, que son tres
+   caminos para tener una plantilla, y no cómo se ve: lo que se enseña aquí es
+   la aplicación de Solved, pantalla por pantalla.
+
+   QUÉ HACE MITTI Y QUÉ HACE ESTA
+   | Mitti                                   | Aquí                              |
+   |-----------------------------------------|-----------------------------------|
+   | «Find a template» · tarjetas de la       | «Modelos de registros», las        |
+   | biblioteca, clic en Get, y el editor de  | tarjetas de la empresa, clic en    |
+   | preguntas con sus asas de arrastre       | una y el editor con sus secciones, |
+   |                                         | sus controles y su tipo            |
+   | «Convert an image or PDF» · zona de      | «Importar Checklist                |
+   | soltar y el PDF cayendo                  | Automáticamente» · Excel, PDF o    |
+   |                                         | Word cayendo en la zona            |
+   | «Describe a topic» · un campo donde se   | «Contexto para la IA» · el campo   |
+   | teclea el tema de la plantilla           | donde se le dice cómo leer el      |
+   |                                         | documento, tecleándose             |
+
+   NI UN DATO INVENTADO
+   Las tres pantallas están comprobadas en `demo.trysolved.com` el 9 de
+   septiembre de 2026: la biblioteca (`/settings/checklist-templates-settings`),
+   el editor (`/checklist/edit/<id>`) y la importación (`/checklist/auto-import`).
+   De ahí salen los rótulos —«Modelos de Registros», «Importar Checklist
+   Automáticamente», «Sube un archivo Excel, PDF o Word…», «Formatos soportados:
+   Excel (.xlsx, .xls), PDF (.pdf), Word (.doc, .docx)», «Contexto para la IA
+   (Opcional)», «Procesar archivo»—, la barra de diecisiete tipos de control y el
+   ejemplo de instrucción, que es uno de los tres que la propia pantalla sugiere.
+   El contenido de la plantilla es el de la página —«Temperatura cámara 3»,
+   «Estado de la junta»—, como en el resto del sitio.
+
+   LAS TARJETAS NO LLEVAN FOTO, Y ES A PROPÓSITO
+   Las de Mitti sí, porque venden un catálogo de 9.000 plantillas ajenas. Aquí la
+   biblioteca es la de la propia empresa y la portada es opcional: en la app se
+   ven a diario tarjetas sin portada. Poner una foto de banco en cada una diría
+   que hay un catálogo ilustrado que no hay. Lo que identifica la tarjeta es lo
+   que la identifica en la app: el nombre, el contador de secciones y los chips
+   de departamento y de tipo de producto.
+
+   POR QUÉ EL LIENZO ES VIOLETA
+   Es el tinte de Registros (`--tint-checklists`, #7C3AED al 10 %), y el tinte lo
+   dicta el módulo, no el gusto. La pieza es del módulo de registros de principio
+   a fin —también el tramo de la IA, que aquí no es una pieza de la web sino la
+   pantalla del producto—, así que el lienzo no cambia entre actos: lo que cambia
+   es lo que flota encima.
+
+   EL RELOJ ES UNO SOLO
+   Veintiún segundos, tres actos de siete. Todo —el rótulo, las pantallas, el
+   cursor, el fichero que cae, el texto que se teclea— cuelga del mismo ciclo con
+   retardos negativos, que es como está hecho el reel de IA: dos relojes que
+   empiezan a la vez se separan en cuanto uno se pausa.
+
+     0 → 7   Elige un modelo. Las tarjetas, el clic, y el editor donde un control
+             cambia de sitio arrastrándolo por su asa.
+     7 → 14  Importa el parte que ya tienes. El fichero cae en la zona de soltar.
+     14 → 21 Dile cómo estructurarlo. Se teclea el contexto y se procesa.
+
+   Requiere `ds/tokens.css`, `ds/tint.css` y `ds/app.css` (de donde salen los
+   tokens `--app-*`: el selector de esa hoja incluye `.montaje`).
+   Guía viva en `/guidelines/plantilla.montaje.html`.
+   ========================================================= */
+
+.montaje{
+  position:relative;
+  width:100%;
+  aspect-ratio:6/5;
+  min-height:380px;
+  border-radius:var(--radius-lg,16px);
+  border:1px solid var(--color-hairline);
+  /* El lienzo teñido del módulo, sobre blanco. Mismo material que el de una
+     escena de producto: dos paradas, 10 %, sin filamentos. */
+  background:var(--tint-checklists),#fff;
+  overflow:hidden;
+  isolation:isolate;
+  /* El ciclo, en un solo sitio. Todo lo de dentro lo lee. */
+  --ciclo:21s;
+
+  /* LOS TOKENS DEL PRODUCTO, DECLARADOS AQUÍ Y NO HEREDADOS DE `ds/app.css`.
+     Son los mismos valores y los mismos nombres, con los mismos valores de
+     reserva, pero la hoja de las pantallas de app pesa 60 KB y esta pieza sólo
+     necesita los doce colores: `/auditorias/` la retiró a propósito el 7 de
+     septiembre y no se le va a devolver por un componente. Si algún día se
+     montan las dos en la misma página no hay conflicto: mismos nombres, mismos
+     valores, y esta hoja va después. */
+  --app-blue:var(--blue,#1E6BFF);
+  --app-blue-deep:var(--blue-700,#1450C7);
+  --app-blue-wash:var(--blue-50,#EAF1FF);
+  --app-canvas:var(--ink-50,#F4F6FB);
+  --app-line:var(--ink-100,#E6EAF2);
+  --app-line-2:var(--ink-200,#C7CFDD);
+  --app-mute:var(--ink-400,#8B95A7);
+  --app-text-2:var(--ink-600,#4A5468);
+  --app-text:var(--ink-800,#1B2230);
+  --app-registro:var(--module-registros,#7C3AED);
+
+  /* Roboto es la fuente de la aplicación, y dentro del fragmento manda ella.
+     Fuera manda Geist: el rótulo de arriba es de la web, no del producto. */
+  font-family:Roboto,'Helvetica Neue',Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+  color:var(--app-text);
+}
+
+/* ---------------------------------------------------------
+   EL RÓTULO — tres pastillas que se relevan
+   Es la pastilla de Mitti, que va arriba a la izquierda sobre el lienzo limpio y
+   nombra el camino que se está viendo. Aquí además es lo único de la pieza que
+   habla el idioma de la web, así que va en Geist y no en Roboto.
+   --------------------------------------------------------- */
+.montaje__rot{
+  position:absolute; z-index:4;
+  top:20px; left:20px; right:20px;
+  margin:0; height:34px;
+}
+.montaje__pill{
+  position:absolute; top:0; left:0;
+  display:inline-flex; align-items:center;
+  height:34px; padding:0 15px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--color-hairline);
+  box-shadow:rgba(12,32,64,.10) 0 6px 18px;
+  font:var(--font-weight-regular,400) 13px/1 var(--font-sans);
+  color:var(--color-ink);
+  white-space:nowrap;
+  opacity:0;
+  animation:montaje-releva var(--ciclo) steps(1,end) infinite;
+  animation-delay:calc(var(--i) * 7s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* Un tercio encendida, dos tercios apagada. Sin transición: el rótulo cambia
+   cuando cambia la pantalla, y una pastilla que se desvanece mientras la otra
+   entra deja medio segundo con las dos a la vez. */
+@keyframes montaje-releva{
+  0%      { opacity:1 }
+  33.33%  { opacity:0 }
+  100%    { opacity:0 }
+}
+
+/* ---------------------------------------------------------
+   LAS PANTALLAS
+   Dos, no tres: los actos 2 y 3 son la MISMA pantalla de la app —la de importar—
+   y separarlos en dos capas metía un fundido entre dos imágenes casi iguales,
+   que se lee como un parpadeo. Lo que cambia entre el segundo y el tercero es lo
+   que pasa dentro, que es justo lo que pasa en el producto.
+   --------------------------------------------------------- */
+.montaje__esc{
+  position:absolute; z-index:2;
+  background:#fff;
+  border:1px solid var(--app-line);
+  border-radius:12px;
+  box-shadow:rgba(12,32,64,.10) 0 14px 40px,rgba(12,32,64,.05) 0 2px 6px;
+  overflow:hidden;
+  display:flex; flex-direction:column;
+  opacity:0;
+  animation-duration:var(--ciclo);
+  animation-timing-function:cubic-bezier(.4,0,.2,1);
+  animation-iteration-count:var(--iter,infinite);
+  animation-play-state:var(--play,running);
+  animation-fill-mode:forwards;
+}
+
+/* LAS DOS OCUPAN LA MISMA CAJA, y eso no es ahorro de líneas: entre el primer
+   acto y el segundo lo que cambia es lo que hay dentro de la pantalla, igual que
+   en la aplicación. Con dos cajas distintas el panel daba un salto de tamaño en
+   el relevo y se leía como dos piezas.
+
+   LO QUE SANGRA ES EL CONTENIDO, NO EL PANEL. El panel se ve entero —los
+   rótulos de la app no se pueden cortar, «4 Contro…» no es un fragmento, es un
+   defecto—; lo que se sale por el borde es la rejilla de tarjetas por la derecha
+   y la lista de controles por abajo, que es donde el recorte sí dice «esto
+   continúa». */
+.montaje__esc{
+  top:66px; left:34px; right:34px; bottom:26px;
+}
+.montaje__esc--modelo{ animation-name:montaje-esc-modelo }
+.montaje__esc--importa{
+  animation-name:montaje-esc-importa;
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+}
+@keyframes montaje-esc-modelo{
+  0%       { opacity:0; transform:translateY(10px) }
+  2.4%,31% { opacity:1; transform:none }
+  33.33%   { opacity:0; transform:translateY(-6px) }
+  100%     { opacity:0; transform:translateY(-6px) }
+}
+/* Catorce segundos en pantalla —los dos tercios del ciclo—, con dos cosas
+   pasando dentro. */
+@keyframes montaje-esc-importa{
+  0%          { opacity:0; transform:translateY(10px) }
+  2.4%,64.5%  { opacity:1; transform:none }
+  66.67%      { opacity:0; transform:translateY(-6px) }
+  100%        { opacity:0; transform:translateY(-6px) }
+}
+
+/* --- Cromo compartido de las dos pantallas ------------------------------- */
+.montaje__hd{
+  display:flex; align-items:center; gap:9px;
+  padding:11px 14px;
+  border-bottom:1px solid var(--app-line);
+  background:#fff;
+}
+.montaje__hd svg{ width:14px; height:14px; color:var(--app-mute); flex:none }
+.montaje__ht{ font-size:12.5px; font-weight:500; color:var(--app-text) }
+.montaje__hsp{ flex:1 1 auto }
+.montaje__btn{
+  display:inline-flex; align-items:center; gap:6px;
+  height:24px; padding:0 10px;
+  border:1px solid var(--app-blue); border-radius:6px;
+  background:#fff; color:var(--app-blue);
+  font-size:10.5px; font-weight:500; white-space:nowrap;
+}
+.montaje__btn svg{ width:12px; height:12px; color:currentColor }
+.montaje__btn--full{ background:var(--app-blue); color:#fff }
+.montaje__btn--off{ border-color:var(--app-line-2); color:var(--app-mute); background:var(--app-canvas) }
+.montaje__cuerpo{ flex:1 1 auto; padding:13px 14px; display:flex; flex-direction:column; gap:9px }
+
+/* Buscador de la lista, apagado: está en la pantalla y no se usa. */
+.montaje__busca{
+  display:flex; align-items:center; gap:7px;
+  height:26px; padding:0 9px;
+  border:1px solid var(--app-line); border-radius:6px;
+  background:var(--app-canvas);
+  font-size:10.5px; color:var(--app-mute);
+}
+.montaje__busca svg{ width:12px; height:12px }
+
+/* ---------------------------------------------------------
+   ACTO 1a — LAS TARJETAS DE MODELO
+   --------------------------------------------------------- */
+.montaje__cards{
+  display:grid;
+  /* Cuatro columnas de ancho fijo en un hueco que da para tres y pico: la cuarta
+     la corta el borde del panel. Es la rejilla de la app, que tampoco cabe
+     entera en pantalla. El margen negativo es lo que le da sitio para asomar. */
+  grid-template-columns:repeat(4,152px);
+  gap:11px;
+  margin-right:-70px;
+}
+.montaje__card{
+  border:1px solid var(--app-line);
+  border-radius:9px;
+  background:#fff;
+  overflow:hidden;
+  opacity:0;
+  animation:montaje-card var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-delay:calc(var(--i) * .07s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes montaje-card{
+  0%       { opacity:0; transform:translateY(9px) }
+  3%,29%   { opacity:1; transform:none }
+  31%,100% { opacity:0; transform:none }
+}
+/* LA BANDA DE PORTADA, CON FOTO (9 sep 2026, petición del cliente).
+   Hasta hoy iba sin foto y estaba razonado: las tarjetas de Mitti llevan foto
+   porque venden un catálogo de 9.000 plantillas ajenas, y aquí la biblioteca es
+   la de la propia empresa. **Lo que decidió el cambio es la aplicación**: en
+   `demo.trysolved.com/settings/checklist-templates-settings` las tarjetas de los
+   modelos SÍ llevan portada, y esa portada es una foto del asunto del registro
+   —la cámara, la línea, el almacén—. Sin ella la maqueta se parecía menos a la
+   pantalla que copia.
+
+   Las ocho son de `assets/registros/`, generadas para esto y **sin usar en
+   ninguna otra página** (procedencia y prompts en `assets/registros/FUENTES.md`).
+   Cada una es la cosa de la que va su registro, no una foto de fábrica genérica:
+   si se cambia el nombre de una tarjeta hay que cambiar su foto.
+
+   El tinte del módulo se queda DEBAJO como fondo: es lo que se ve mientras la
+   foto carga, y lo que quedaría si algún día una tarjeta se queda sin portada,
+   que en la aplicación pasa. */
+.montaje__port{
+  position:relative;
+  height:52px;
+  background:var(--tint-checklists),var(--app-canvas);
+  border-bottom:1px solid var(--app-line);
+  overflow:hidden;
+}
+.montaje__foto{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; display:block;
+}
+/* El contador de secciones, en la esquina, como en la app. */
+.montaje__sec{
+  position:absolute; top:6px; right:6px;
+  display:inline-flex; align-items:center; gap:4px;
+  height:17px; padding:0 6px;
+  border-radius:5px;
+  background:rgba(17,18,20,.55); color:#fff;
+  font-size:9.5px; font-weight:500;
+}
+.montaje__sec svg{ position:static; width:10px; height:10px; color:#fff; opacity:1 }
+.montaje__cbody{ padding:9px 10px 11px; display:flex; flex-direction:column; gap:7px }
+.montaje__cnom{ font-size:11.5px; font-weight:500; line-height:1.25; color:var(--app-text) }
+.montaje__chips{ display:flex; flex-wrap:wrap; gap:4px }
+.montaje__chip{
+  display:inline-block; padding:2px 6px; border-radius:4px;
+  font-size:9px; line-height:1.35; white-space:nowrap;
+}
+/* Los dos colores de chip de la app: verde el departamento, violeta el tipo de
+   producto. No son tintes de módulo, son los de la propia pantalla. */
+.montaje__chip--dep{ background:#E7F5EA; color:#1E6A32 }
+.montaje__chip--pro{ background:#F1EAFE; color:#5B2BB8 }
+
+/* El clic: la tarjeta se hunde y suelta un aro. Los dos a la vez, que es lo que
+   hace que se lea como un clic y no como un cambio de color. */
+.montaje__card--diana{
+  animation:montaje-card var(--ciclo) cubic-bezier(.4,0,.2,1) infinite,
+            montaje-pulsa var(--ciclo) ease-out infinite;
+  animation-delay:calc(var(--i) * .07s - var(--ciclo)),calc(0s - var(--ciclo));
+}
+@keyframes montaje-pulsa{
+  0%,11.4%  { box-shadow:none; transform:none }
+  12.1%     { box-shadow:rgba(30,107,255,.28) 0 0 0 4px; transform:scale(.985) }
+  14%,100%  { box-shadow:none; transform:none }
+}
+
+/* ---------------------------------------------------------
+   ACTO 1b — EL EDITOR
+   Entra cuando la biblioteca sale, dentro de la misma pantalla: en la app es una
+   navegación, no un diálogo nuevo.
+   --------------------------------------------------------- */
+.montaje__capa{
+  position:absolute; inset:0;
+  background:#fff;
+  display:flex; flex-direction:column;
+  opacity:0;
+  animation:montaje-editor var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-delay:calc(0s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes montaje-editor{
+  0%,13.8%   { opacity:0; transform:translateX(14px) }
+  16.2%,31%  { opacity:1; transform:none }
+  33.33%,100%{ opacity:0; transform:none }
+}
+/* La barra de la sección abierta: el filete azul y el «1 / 3» son los de la
+   propia pantalla, y el paso importa —dice que la plantilla tiene tres secciones
+   y que ésta es la primera—, que es lo que sostiene el contador de la tarjeta de
+   la biblioteca. */
+.montaje__sub{
+  display:flex; align-items:center; gap:9px;
+  padding:9px 14px;
+  border-bottom:1px solid var(--app-line);
+  background:var(--app-blue-wash);
+}
+.montaje__sect{
+  position:relative; padding-left:9px;
+  font-size:11px; font-weight:500; color:var(--app-blue-deep);
+}
+.montaje__sect::before{
+  content:""; position:absolute; left:0; top:1px; bottom:1px;
+  width:2.5px; border-radius:2px; background:var(--app-blue);
+}
+.montaje__paso{ font-size:10px; color:var(--app-text-2) }
+.montaje__fila{
+  display:flex; align-items:center; gap:9px;
+  padding:0 10px; height:32px;
+  border:1px solid var(--app-line); border-radius:7px;
+  background:#fff;
+}
+.montaje__asa{ width:11px; height:11px; color:var(--app-line-2); flex:none }
+.montaje__n{
+  flex:none; width:17px; height:17px; border-radius:50%;
+  background:var(--app-blue-wash); color:var(--app-blue-deep);
+  font-size:9.5px; font-weight:500;
+  display:grid; place-items:center;
+}
+.montaje__fnom{ font-size:11px; color:var(--app-text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+.montaje__cuenta{
+  margin-left:auto; flex:none;
+  padding:2px 7px; border-radius:999px;
+  background:var(--app-canvas); color:var(--app-text-2);
+  font-size:9.5px;
+}
+/* El tipo del control. En tinta neutra: el tipo no es un estado, y pintarlo del
+   color de OK o de KO diría algo que no dice. Es la misma razón por la que
+   `.aiband__tag--tipo` va en gris. */
+.montaje__tipo{
+  margin-left:auto; flex:none;
+  padding:2px 7px; border-radius:4px;
+  border:1px solid var(--app-line);
+  background:var(--app-canvas); color:var(--app-text-2);
+  font-size:8.5px; font-weight:500; letter-spacing:.04em; text-transform:uppercase;
+}
+
+/* --- El arrastre --------------------------------------------------------- */
+/* Sube un puesto la tercera fila y baja la segunda. Las dos van con el mismo
+   reloj y con el mismo recorrido —34 px, que es la altura de fila más el hueco—
+   porque si una llega antes que la otra se pisan a mitad de camino. */
+.montaje__fila--sube{
+  position:relative;
+  animation:montaje-sube var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-delay:calc(0s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.montaje__fila--baja{
+  animation:montaje-baja var(--ciclo) cubic-bezier(.4,0,.2,1) infinite;
+  animation-delay:calc(0s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes montaje-sube{
+  0%,21.4%   { transform:none; box-shadow:none; z-index:auto }
+  23.8%      { transform:translateY(-3px) scale(1.012); box-shadow:rgba(12,32,64,.16) 0 8px 20px; z-index:3 }
+  28.6%      { transform:translateY(-37px) scale(1.012); box-shadow:rgba(12,32,64,.16) 0 8px 20px; z-index:3 }
+  30.5%,100% { transform:translateY(-34px); box-shadow:none; z-index:3 }
+}
+@keyframes montaje-baja{
+  0%,23.8%   { transform:none }
+  28.6%,100% { transform:translateY(34px) }
+}
+/* El número de la fila viaja con ella, así que al soltar tiene que ser otro. Se
+   cruzan los dos dígitos en el instante del soltado —no antes: mientras la fila
+   está en el aire su número sigue siendo el de donde salió—. */
+.montaje__n--cambia{ position:relative }
+.montaje__n--cambia b{
+  position:absolute; inset:0; display:grid; place-items:center;
+  font-weight:500;
+  animation:montaje-digito var(--ciclo) steps(1,end) infinite;
+  animation-delay:calc(0s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+.montaje__n--cambia b:last-child{ opacity:0; animation-name:montaje-digito-2 }
+@keyframes montaje-digito  { 0%,28.6%{opacity:1} 28.7%,100%{opacity:0} }
+@keyframes montaje-digito-2{ 0%,28.6%{opacity:0} 28.7%,100%{opacity:1} }
+
+/* ---------------------------------------------------------
+   ACTO 2 — LA ZONA DE SOLTAR
+   --------------------------------------------------------- */
+.montaje__intro{ font-size:10.5px; line-height:1.45; color:var(--app-text-2); margin:0 }
+.montaje__zona{
+  position:relative;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px;
+  min-height:104px;
+  border:1px dashed var(--app-line-2); border-radius:9px;
+  background:#fff;
+  text-align:center;
+  animation:montaje-zona var(--ciclo) ease-out infinite;
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* Tres estados y no dos: en reposo, encendida cuando el fichero entra, y
+   aceptada. El azul dura lo que dura el gesto; lo que se queda es el verde. */
+@keyframes montaje-zona{
+  0%,8%     { border-color:var(--app-line-2); background:#fff }
+  11%,13.5% { border-color:var(--app-blue); background:var(--app-blue-wash) }
+  15.5%,100%{ border-color:#9AD3A8; background:#F2FAF4 }
+}
+.montaje__nube{ width:26px; height:26px; color:var(--app-line-2) }
+.montaje__zt{ font-size:11px; font-weight:500; color:var(--app-text) }
+.montaje__zs{ font-size:9.5px; color:var(--app-mute) }
+/* Lo que dice la zona cambia cuando el fichero está dentro: el texto de invitar
+   se va y entra el nombre del fichero. */
+.montaje__zvacia,
+.montaje__zllena{
+  display:flex; flex-direction:column; align-items:center; gap:5px;
+  animation-duration:var(--ciclo); animation-timing-function:steps(1,end);
+  animation-iteration-count:var(--iter,infinite);
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-fill-mode:forwards;
+}
+.montaje__zvacia{ animation-name:montaje-zvacia }
+.montaje__zllena{ position:absolute; inset:0; justify-content:center; opacity:0; animation-name:montaje-zllena }
+@keyframes montaje-zvacia{ 0%,13.5%{opacity:1} 13.6%,100%{opacity:0} }
+@keyframes montaje-zllena{ 0%,13.5%{opacity:0} 13.6%,100%{opacity:1} }
+.montaje__file{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:7px 11px; border-radius:7px;
+  border:1px solid var(--app-line); background:#fff;
+  box-shadow:rgba(12,32,64,.08) 0 3px 10px;
+  font-size:10.5px; color:var(--app-text);
+}
+.montaje__file svg{ width:16px; height:16px; flex:none }
+.montaje__fpeso{ color:var(--app-mute); font-size:9.5px }
+
+/* El fichero que cae. Entra por arriba, de fuera de la pantalla, y aterriza en
+   la zona: es el gesto que todo el mundo reconoce, y es lo que explica de dónde
+   sale la plantilla sin una palabra más. Mismo recurso que el reel de IA. */
+.montaje__cae{
+  position:absolute; z-index:3;
+  left:50%; top:0;
+  opacity:0;
+  animation:montaje-cae var(--ciclo) cubic-bezier(.34,.9,.4,1) infinite;
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes montaje-cae{
+  0%,7.6%  { opacity:0; transform:translate(-50%,-56px) rotate(-7deg) scale(.94) }
+  9%       { opacity:1; transform:translate(-50%,-42px) rotate(-5deg) scale(.97) }
+  13%      { opacity:1; transform:translate(-50%,6px) rotate(0deg) scale(1) }
+  13.9%    { opacity:0; transform:translate(-50%,6px) rotate(0deg) scale(1) }
+  100%     { opacity:0; transform:translate(-50%,6px) }
+}
+
+/* ---------------------------------------------------------
+   ACTO 3 — EL CONTEXTO PARA LA IA
+   La pantalla no cambia: cambia dónde está el foco. En la app este panel vive
+   debajo de la zona de soltar, y es donde se le dice a la IA cómo leer el
+   documento. Va en blanco, con el azul del producto, porque es la pantalla de la
+   app tal cual: la regla del grafito gobierna las piezas de la web —la banda,
+   la insignia de IA—, no una captura del producto, que es blanco.
+   --------------------------------------------------------- */
+.montaje__ia{
+  border:1px solid var(--app-line); border-radius:9px;
+  background:var(--app-canvas);
+  padding:10px;
+  display:flex; flex-direction:column; gap:7px;
+  animation:montaje-panel var(--ciclo) ease-out infinite;
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* El panel se enciende cuando le toca: hasta entonces está en la pantalla, pero
+   apagado. Es el mismo criterio que el botón de procesar. */
+@keyframes montaje-panel{
+  0%,31%    { border-color:var(--app-line); box-shadow:none }
+  35%,95%   { border-color:var(--app-blue); box-shadow:rgba(30,107,255,.10) 0 0 0 3px }
+  100%      { border-color:var(--app-line); box-shadow:none }
+}
+.montaje__iahd{ display:flex; align-items:center; gap:7px }
+.montaje__iahd svg{ width:13px; height:13px; color:var(--app-blue); flex:none }
+.montaje__iat{ font-size:10.5px; font-weight:500; color:var(--app-text) }
+.montaje__campo{
+  min-height:44px; padding:8px 9px;
+  border:1px solid var(--app-line); border-radius:6px;
+  background:#fff;
+  font-size:10.5px; line-height:1.45; color:var(--app-text);
+}
+/* EL TECLEO SE HACE CON UNA CORTINA, NO RECORTANDO LA CAJA.
+   La forma de libro —una caja con `overflow:hidden` que crece de 0 al ancho del
+   texto— obliga a escribir ese ancho a mano, y el ancho depende del idioma: la
+   misma frase mide 282 px en español y otra cosa en alemán, así que el caret se
+   quedaba flotando a la derecha de la última letra en cuatro de los cinco. Aquí
+   lo que se mueve es una cortina del color del campo que se retira hacia la
+   derecha, y el caret es SU borde izquierdo. Como la cortina vive dentro del
+   propio texto, su 100 % es el ancho del texto, sea el que sea: la pieza se
+   traduce sin tocar una medida.
+   El caret sólo existe en el tercer acto —antes el campo no tiene el foco, y un
+   cursor parpadeando en un campo que nadie ha tocado es un error de la
+   pantalla—, y mientras se escribe no parpadea. */
+.montaje__teclea{
+  position:relative;
+  display:inline-block;
+  width:max-content; max-width:100%;
+  white-space:nowrap;
+}
+.montaje__teclea::after{
+  content:"";
+  position:absolute; top:-2px; bottom:-2px; right:0;
+  left:0;
+  background:#fff;
+  border-left:0 solid var(--app-blue);
+  animation:montaje-teclea var(--ciclo) steps(56,end) infinite,
+            montaje-caret 1s steps(1,end) infinite,
+            montaje-caret-vis var(--ciclo) steps(1,end) infinite;
+  animation-delay:calc(0s - var(--ciclo) + 7s),0s,calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes montaje-teclea{
+  0%,34%     { left:0 }
+  46%,100%   { left:100% }
+}
+@keyframes montaje-caret{ 0%{border-color:var(--app-blue)} 50%{border-color:transparent} }
+@keyframes montaje-caret-vis{
+  0%,33.9%   { border-left-width:0 }
+  34%,64.5%  { border-left-width:1.5px }
+  64.6%,100% { border-left-width:0 }
+}
+/* Segunda línea del ejemplo: entra entera al acabar la primera, como la
+   sugerencia que la pantalla propone debajo del campo. */
+.montaje__ejemplo{
+  font-size:9px; color:var(--app-mute); line-height:1.4;
+}
+
+/* La barra de progreso del final, la misma del reel: del 0 al 100 entre el clic
+   y la plantilla. Sin ella, el botón se pulsa y no pasa nada. */
+.montaje__pie{ display:flex; align-items:center; gap:9px; margin-top:auto }
+.montaje__prog{
+  flex:1 1 auto; height:4px; border-radius:999px;
+  background:var(--app-line); overflow:hidden;
+}
+.montaje__prog i{
+  display:block; height:100%; width:0;
+  background:var(--app-blue);
+  animation:montaje-prog var(--ciclo) cubic-bezier(.3,0,.3,1) infinite;
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+@keyframes montaje-prog{
+  0%,55%   { width:0 }
+  63%      { width:64% }
+  66%,100% { width:100% }
+}
+.montaje__btn--proc{
+  animation:montaje-enciende var(--ciclo) steps(1,end) infinite;
+  animation-delay:calc(0s - var(--ciclo) + 7s);
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+}
+/* El botón está apagado hasta que hay fichero. Es literal: en la pantalla real
+   «Procesar archivo» no se puede pulsar sin uno. */
+@keyframes montaje-enciende{
+  0%,13.5%  { border-color:var(--app-line-2); color:var(--app-mute); background:var(--app-canvas) }
+  13.6%,100%{ border-color:var(--app-blue); color:#fff; background:var(--app-blue) }
+}
+
+/* ---------------------------------------------------------
+   EL CURSOR
+   Uno solo, con el mismo reloj: clica la tarjeta, arrastra el control por su
+   asa, y en el tercer acto va al campo y al botón. En el segundo no está —lo que
+   pasa ahí es un fichero que se suelta, y una mano que además empuje el fichero
+   son dos cosas contándose a la vez—.
+   --------------------------------------------------------- */
+.montaje__cursor{
+  position:absolute; z-index:6;
+  /* Se mueve con `left`/`top` y no con `transform`, que es lo que pediría el
+     rendimiento: un porcentaje dentro de `translate()` se mide sobre la propia
+     flecha —17 px— y no sobre la caja, así que el recorrido entero cabía en la
+     esquina. Con `left`/`top` el porcentaje sí es el de la caja, que es lo que
+     hace falta para que la pieza escale con la columna sin despegarse de lo que
+     señala. Es una flecha de 17 px: el coste de maquetar es nada. */
+  top:92%; left:36%;
+  width:17px; height:17px;
+  /* LA PUNTA, Y NO LA ESQUINA DE LA CAJA. `left`/`top` colocan la esquina
+     superior izquierda del cuadro de 17px, pero la punta de la flecha está
+     dibujada en (5, 2.5) de un viewBox de 24 —o sea, 3,5px a la derecha y
+     1,8px por debajo de esa esquina—, así que todo lo que señalaba caía
+     desplazado ese medio dedo. El traslado lo devuelve a su sitio y las
+     coordenadas de los fotogramas pasan a ser lo que de verdad se clica.
+     Aquí sí se puede usar `translate` en píxeles: es un desplazamiento fijo
+     de la flecha sobre sí misma, no el recorrido, que sigue en porcentajes
+     de la caja. */
+  transform:translate(-3.5px,-1.8px);
+  opacity:0;
+  filter:drop-shadow(rgba(12,32,64,.35) 0 2px 3px);
+  animation:montaje-cursor var(--ciclo) cubic-bezier(.4,0,.4,1) infinite;
+  animation-delay:calc(0s - var(--ciclo));
+  animation-play-state:var(--play,running);
+  animation-iteration-count:var(--iter,infinite);
+  animation-fill-mode:forwards;
+  pointer-events:none;
+}
+.montaje__cursor svg{ width:100%; height:100%; display:block }
+/* Las posiciones son porcentajes de la caja, no píxeles: la pieza se escala con
+   la columna y un cursor en píxeles se despega de lo que señala. */
+/* CADA PARADA ES EL CENTRO DE LO QUE SE CLICA, medido sobre la pieza con las
+   animaciones pausadas en ese instante —no a ojo—. Importa que se midan EN SU
+   MOMENTO y no en reposo: la tarjeta entra desde abajo, el asa se desplaza al
+   agarrarla y las dos pantallas del acto 3 suben un punto largo cuando aparece
+   el fichero, así que el sitio de cada cosa cambia a lo largo del ciclo. Si se
+   toca la maqueta de dentro, estas cifras se vuelven a medir. */
+@keyframes montaje-cursor{
+  0%,3%      { opacity:0; left:36%;   top:94% }
+  5%         { opacity:1; left:36%;   top:94% }
+  11.4%      { opacity:1; left:18.6%; top:46.3% } /* llega a la primera tarjeta */
+  14.5%      { opacity:1; left:18.6%; top:46.3% } /* y la clica, en su centro */
+  21.4%      { opacity:1; left:9.7%;  top:51.9% } /* al asa del control */
+  23.8%      { opacity:1; left:9.3%;  top:51.3% } /* la agarra, y el asa se le va medio punto */
+  28.6%      { opacity:1; left:9.3%;  top:44.5% } /* y la sube un puesto, pegado a ella */
+  31%        { opacity:0; left:9.7%;  top:45.1% }
+  33.3%,67%  { opacity:0; left:50%;   top:98% }   /* fuera durante el acto 2 */
+  70%        { opacity:1; left:12%;   top:62.8% } /* entra al campo de la IA, donde se teclea */
+  85%        { opacity:1; left:12%;   top:62.8% } /* y espera a que se escriba */
+  89%        { opacity:1; left:85.2%; top:89.7% } /* al botón, en su centro */
+  97%        { opacity:1; left:85.2%; top:89.7% }
+  100%       { opacity:0; left:85.2%; top:89.7% }
+}
+
+
+
+
+/* ---------------------------------------------------------
+   MOVIMIENTO REDUCIDO
+   No hay ciclo: se queda el primer acto entero —las tarjetas de la biblioteca—,
+   que es el que se entiende sin que nada se mueva. Las otras dos pantallas no se
+   quedan a medias: se van.
+   --------------------------------------------------------- */
+@media (prefers-reduced-motion:reduce){
+  .montaje *,
+  .montaje{ animation:none !important }
+  .montaje__esc--modelo{ opacity:1 }
+  .montaje__esc--importa,
+  .montaje__capa,
+  .montaje__cursor,
+  .montaje__cae{ opacity:0 }
+  .montaje__card{ opacity:1 }
+  .montaje__pill{ opacity:0 }
+  .montaje__pill:first-child{ opacity:1 }
+}
+
+/* Mismo estado resuelto, para cuando la capacidad del rotador ya terminó su
+   vuelta única (ver la nota junto a .scene[data-terminado] en ds/scene.css). */
+.scene[data-terminado] .montaje *,
+.scene[data-terminado] .montaje{ animation:none !important }
+.scene[data-terminado] .montaje__esc--modelo{ opacity:1 }
+.scene[data-terminado] .montaje__esc--importa,
+.scene[data-terminado] .montaje__capa,
+.scene[data-terminado] .montaje__cursor,
+.scene[data-terminado] .montaje__cae{ opacity:0 }
+.scene[data-terminado] .montaje__card{ opacity:1 }
+.scene[data-terminado] .montaje__pill{ opacity:0 }
+.scene[data-terminado] .montaje__pill:first-child{ opacity:1 }
+
+/* =========================================================
+   EL REPARTO DE LA SECCIÓN — texto a la izquierda, pieza a la derecha
+   ---------------------------------------------------------
+   Opcional: el componente no lo necesita para funcionar, pero es el reparto con
+   el que va montado en `/auditorias/` y en la guía, y es el de Mitti, que es de
+   donde sale la pieza. **Es el mismo 5fr/7fr de `.rotador`** (patrón 12 de
+   `ds/sections.css`), y a propósito: dos rejillas de texto y pantalla con
+   proporciones distintas en el mismo sitio se leen como dos maquetaciones.
+
+   La pieza no crece más allá de 640px aunque la columna dé para más. Sus medidas
+   de dentro —los 34px del panel, los 152 de la tarjeta, el cuerpo de 11— están
+   en píxeles, así que una caja más ancha no agranda el contenido: sólo añade
+   lienzo alrededor y la aplicación se lee más pequeña de lo que es.
+   ========================================================= */
+.montaje-fila{
+  display:grid;
+  grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+  gap:48px;
+  align-items:center;
+}
+.montaje-fila .montaje{ max-width:640px; margin-inline:auto }
+@media (max-width:900px){
+  .montaje-fila{ grid-template-columns:1fr; gap:32px }
+}
+.montaje-punto{ display:flex; gap:12px }
+.montaje-punto + .montaje-punto{ margin-top:22px }
+/* El icono en el color del módulo: es el mismo violeta del lienzo, y aquí sí
+   codifica —los tres puntos son tres caminos del módulo de registros—. */
+.montaje-punto > svg{
+  width:19px; height:19px; flex:none; margin-top:3px;
+  color:var(--module-registros,#7C3AED);
+}
+.montaje-punto h3{
+  font:var(--type-body-lg); font-weight:var(--font-weight-medium);
+  margin:0 0 4px;
+}
+.montaje-punto p{ font:var(--type-body-md); color:var(--ds-text-2); margin:0 }
+
+
+/* =========================================================
+   LA VARIANTE DE PANEL — .montaje--panel (9 sep 2026)
+   El montaje pasa a ser el primer panel del rotador de capacidades de
+   /auditorias/, y ahí dentro ya hay una escena: la escena pone el marco, el
+   radio y el lienzo teñido —del mismo módulo, así que del mismo violeta—. Con
+   los dos, la pieza salía con dos bordes concéntricos y el tinte al 20 %.
+
+   La proporción también la manda la escena (4:3 en el rotador, 1:1 por debajo de
+   900px), no el 6/5 de la pieza. Las pantallas de dentro no se deforman porque
+   sus medidas van en píxeles y no en porcentaje: lo único que cambia es cuánto
+   lienzo queda alrededor.
+   ========================================================= */
+.montaje--panel{
+  position:absolute; inset:0;
+  width:auto; aspect-ratio:auto; min-height:0;
+  border:0; border-radius:0;
+  background:none;
+}
