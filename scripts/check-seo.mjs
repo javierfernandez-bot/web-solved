@@ -87,7 +87,7 @@ for (const file of htmls) {
     const dest = (s.match(/content="0;\s*url=([^"]+)"/) || [])[1];
     const canon = (s.match(/<link rel="canonical" href="([^"]+)"/) || [])[1];
     if (!dest) fallo('stub', file, 'sin meta refresh con destino');
-    else if (!resolver(dest)) fallo('stub', file, `redirige a ${dest}, que no existe`);
+    else if (!resolver(dest.split('#')[0])) fallo('stub', file, `redirige a ${dest}, que no existe`);
     if (!noindex) fallo('stub', file, 'un stub debe llevar robots noindex');
     if (!canon) fallo('stub', file, 'sin canonical');
     else if (dest && canon !== SITE + dest) fallo('stub', file, `canonical ${canon} ≠ destino ${dest}`);

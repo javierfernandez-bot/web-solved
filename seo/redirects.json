@@ -29,5 +29,9 @@
   "author/pablo": "/blog/",
   "category/uncategorized": "/blog/",
   "category/uncategorized/page/2": "/blog/",
-  "category/uncategorized/page/3": "/blog/"
+  "category/uncategorized/page/3": "/blog/",
+  "casos-de-exito/carnavi": "/casos-de-exito/#carnavi",
+  "casos-de-exito/panificadora-alcala": "/casos-de-exito/#panificadora-alcala",
+  "casos-de-exito/prilux": "/casos-de-exito/#prilux",
+  "casos-de-exito/patatas-aguilar": "/casos-de-exito/#patatas-aguilar"
 }

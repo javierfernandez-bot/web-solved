@@ -77,6 +77,12 @@
    El contenido de los tres paneles está entero en el marcado; esto sólo lo
    pliega. Si el script no corre, se ven los tres seguidos —contenido completo,
    sin JS—, que es el estado seguro. Por eso los `hidden` los pone el script.
+
+   Si la URL llega con un `#ancla` que coincide con el `id` de un panel, ese
+   panel abre directamente en vez del primero, y la página se posiciona sobre
+   él — nace para /casos-de-exito/#carnavi (el enlace a un caso concreto desde
+   el resto del sitio), pero vale para cualquier `[data-switch]`: si ningún
+   panel tiene ese id, no cambia nada del comportamiento de siempre.
    ========================================================= */
 (() => {
   'use strict';
@@ -105,7 +111,12 @@
       });
     });
 
-    mostrar(0, false);
+    const porAncla = paneles.findIndex((p) => p.id && p.id === location.hash.slice(1));
+    mostrar(porAncla >= 0 ? porAncla : 0, false);
+    // El salto nativo del navegador pudo ocurrir ANTES de que el resto de
+    // paneles se escondiera, con todos a la vista y otra altura de página:
+    // se corrige la posición ahora que el panel ya es el único visible.
+    if (porAncla >= 0) paneles[porAncla].scrollIntoView({ block: 'start' });
   });
 })();
 

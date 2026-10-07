@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-06",
-  "total": 1516,
+  "generado": "2026-10-07",
+  "total": 1448,
   "cadenas": [
     {
       "es": "Software de gestión de operaciones industriales · Solved",
@@ -303,8 +303,6 @@
         "/gestor-documental/",
         "/gestion-de-activos/",
         "/dashboard/",
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/prilux/",
         "chrome.js"
       ]
     },
@@ -522,10 +520,6 @@
         "/industria-general/",
         "/industria-alimentaria/",
         "/casos-de-exito/",
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/",
         "chrome.js"
       ]
     },
@@ -2187,7 +2181,6 @@
         "/industria-general/",
         "/industria-alimentaria/",
         "/casos-de-exito/",
-        "/casos-de-exito/carnavi/",
         "chrome.js"
       ]
     },
@@ -2358,8 +2351,7 @@
         "/integraciones/",
         "/industria-general/",
         "/industria-alimentaria/",
-        "/casos-de-exito/",
-        "/casos-de-exito/prilux/"
+        "/casos-de-exito/"
       ]
     },
     {
@@ -2459,8 +2451,7 @@
         "/",
         "/auditorias/",
         "/dashboard/",
-        "/casos-de-exito/",
-        "/casos-de-exito/panificadora-alcala/"
+        "/casos-de-exito/"
       ]
     },
     {
@@ -3316,10 +3307,7 @@
     {
       "es": "Registros y auditorías",
       "en": [
-        "/auditorias/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
+        "/auditorias/"
       ]
     },
     {
@@ -5315,8 +5303,7 @@
     {
       "es": "Acciones y no conformidades",
       "en": [
-        "/no-conformidades/",
-        "/casos-de-exito/carnavi/"
+        "/no-conformidades/"
       ]
     },
     {
@@ -5850,8 +5837,7 @@
     {
       "es": "KPIs y dashboards",
       "en": [
-        "/dashboard/",
-        "/casos-de-exito/panificadora-alcala/"
+        "/dashboard/"
       ]
     },
     {
@@ -7927,7 +7913,6 @@
       "es": "Industria general",
       "en": [
         "/industria-general/",
-        "/casos-de-exito/prilux/",
         "chrome.js"
       ]
     },
@@ -8231,9 +8216,6 @@
       "es": "Industria alimentaria",
       "en": [
         "/industria-alimentaria/",
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/patatas-aguilar/",
         "chrome.js"
       ]
     },
@@ -8505,8 +8487,7 @@
       "es": "Patatas Aguilar",
       "en": [
         "/industria-alimentaria/",
-        "/casos-de-exito/",
-        "/casos-de-exito/patatas-aguilar/"
+        "/casos-de-exito/"
       ]
     },
     {
@@ -8531,10 +8512,6 @@
       "es": "Casos de éxito",
       "en": [
         "/casos-de-exito/",
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/",
         "chrome.js"
       ]
     },
@@ -8570,12 +8547,6 @@
     },
     {
       "es": "Es el tiempo que Ana y su compañero dedicaban al registro manual de incidencias. En el vídeo explica por qué canales llegaban y cómo se gestionan ahora.",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Ver el caso",
       "en": [
         "/casos-de-exito/"
       ]
@@ -8635,97 +8606,7 @@
       ]
     },
     {
-      "es": "Lo que cambió en cada planta",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Los tres casos parten del mismo punto: papel, hoja de cálculo o mensajería, con calidad, producción y mantenimiento avisándose entre ellos. La diferencia está en el sistema que utiliza hoy el personal de línea.",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Carnavi sustituyó el registro manual de incidencias",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "2 h/día, antes",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Antes: dos horas al día",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "WhatsApp, correo y el pasillo",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Ahora",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "El parte se abre en la línea",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Con",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Foto, responsable y plazo",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Prilux: del papel a la hoja de cálculo y de ahí a Solved",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Inspecciones de entrada",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Cuatro unidades de negocio, una herramienta",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Al año",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Quién la usa",
-      "en": [
-        "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "De planta a dirección",
+      "es": "Elige un caso",
       "en": [
         "/casos-de-exito/"
       ]
@@ -8733,423 +8614,73 @@
     {
       "es": "Ana Domínguez, responsable de calidad de Carnavi, durante la entrevista",
       "en": [
-        "/casos-de-exito/",
-        "/casos-de-exito/carnavi/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, durante la entrevista",
       "en": [
-        "/casos-de-exito/",
-        "/casos-de-exito/panificadora-alcala/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Álvaro Sobrino, director de calidad de producto de Prilux, durante la entrevista",
       "en": [
-        "/casos-de-exito/",
-        "/casos-de-exito/prilux/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Jose Vicente Doria, director de Calidad y Medioambiente de Patatas Aguilar, durante la entrevista",
       "en": [
-        "/casos-de-exito/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Casos de éxito de Solved",
-      "en": [
         "/casos-de-exito/"
-      ]
-    },
-    {
-      "es": "Caso Carnavi: incidencias en industria cárnica · Solved",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Ana Domínguez, responsable de calidad de Carnavi, explica en dos minutos cómo se gestionaban las incidencias antes de Solved y qué cambió tras la implantación.",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Ana Domínguez, responsable de calidad de Carnavi, explica en dos minutos cómo se gestionaban las incidencias antes de Solved y qué cambió.",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Caso de éxito · Industria cárnica",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Dos horas diarias",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "dedicadas al registro manual de incidencias.",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Ana Domínguez lleva la calidad de Carnavi, una industria cárnica de más de cuarenta años. En dos minutos explica por qué canales llegaban las incidencias —mensajería, correo y aviso verbal—, qué ocurrió cuando la dirección cuantificó su coste y cómo se gestionan ahora.",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Acceso al vídeo con el correo profesional",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Sin descarga ni registro previo: el vídeo queda disponible en esta misma página y permanece accesible en visitas posteriores.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Sólo se remiten novedades de Solved, con baja disponible en cualquier momento. Los datos se tratan conforme a la",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "política de privacidad",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Si el formulario no se muestra, es posible que un bloqueador esté impidiendo su carga. El vídeo puede solicitarse en info@trysolved.com.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Acceso concedido. El vídeo está disponible en la parte superior.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Contenido relacionado",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "— Panificadora Alcalá: del registro en papel a cinco plantas sobre un único sistema.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Otro caso",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "— Prilux: más de mil inspecciones de material de entrada al año.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "— Patatas Aguilar: una hora, dos, caminando la planta con un Excel, cada mes.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "— registro en la línea, con evidencia y responsable.",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "— reclamación al proveedor con análisis de causa y plazo.",
-      "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "— aplicación de Solved en plantas con certificación de seguridad alimentaria.",
-      "en": [
-        "/casos-de-exito/carnavi/",
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Ver el vídeo de Carnavi — hay que dejar el correo primero",
-      "en": [
-        "/casos-de-exito/carnavi/"
       ]
     },
     {
       "es": "Caso de éxito Carnavi: dos horas al día registrando incidencias a mano",
       "en": [
-        "/casos-de-exito/carnavi/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Ana Domínguez, responsable de calidad de Carnavi, cuenta cómo llegaban las incidencias antes de Solved —por WhatsApp, por correo o por el pasillo—, cuánto tiempo se iba en registrarlas y qué cambió al hacerlo desde el móvil.",
       "en": [
-        "/casos-de-exito/carnavi/"
-      ]
-    },
-    {
-      "es": "Caso Panificadora Alcalá: de dos plantas a cinco · Solved",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "Samuel Pardo, coordinador técnico de Panificadora Alcalá, explica qué dejó de funcionar al pasar de dos plantas a cinco y de 200 a más de 500 personas.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "Samuel Pardo, coordinador técnico de Panificadora Alcalá, explica en dos minutos y medio qué dejó de funcionar al pasar de dos plantas a cinco.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "Caso de éxito · Panificación industrial",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "De dos plantas a cinco,",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "con el registro todavía en papel.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "Samuel Pardo coordina el departamento técnico de Panificadora Alcalá, que en ocho años ha pasado de 200 personas a más de 500. En dos minutos y medio explica qué dejó de funcionar en primer lugar al crecer, por qué el puesto de ordenador no cubría la fábrica y qué requisitos buscaba en un sistema.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "— Carnavi: dos horas diarias dedicadas al registro manual de incidencias.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/",
-        "/casos-de-exito/prilux/",
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "— la transición del papel al registro digital con respuestas acotadas.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "— los indicadores disponibles en tiempo real, sin solicitar un informe.",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "Ver el vídeo de Panificadora Alcalá — hay que dejar el correo primero",
-      "en": [
-        "/casos-de-exito/panificadora-alcala/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Caso de éxito Panificadora Alcalá: de papel y boli a cinco plantas",
       "en": [
-        "/casos-de-exito/panificadora-alcala/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, cuenta qué se rompía cuando la empresa pasó de dos plantas a cinco y de 200 a más de 500 personas, y cómo unificaron tres herramientas en una.",
       "en": [
-        "/casos-de-exito/panificadora-alcala/"
-      ]
-    },
-    {
-      "es": "Caso Prilux: mil inspecciones de entrada al año · Solved",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "Álvaro Sobrino, director de calidad de Prilux, explica el paso del papel a la hoja de cálculo y de ahí a Solved en una planta con cuatro unidades de negocio.",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "Caso de éxito · Iluminación",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "Más de mil inspecciones al año,",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "registradas inicialmente en papel.",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "Álvaro Sobrino lleva la calidad de producto de Prilux, un grupo de iluminación con fábrica propia y cuatro unidades de negocio muy distintas entre sí. En dos minutos explica la transición del papel a la hoja de cálculo y de ahí a Solved en 2024, por qué el criterio principal de selección fue la adopción por toda la organización —del operario de fábrica a dirección— y los resultados de los primeros meses.",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "— controles e inspecciones de material de entrada en soporte digital.",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "— apertura del parte desde el móvil, con evidencia y responsable.",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "— aplicación de Solved en fabricación, metal, packaging y plantas con varias líneas de negocio.",
-      "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "Ver el vídeo de Prilux — hay que dejar el correo primero",
-      "en": [
-        "/casos-de-exito/prilux/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Caso de éxito Prilux: del papel al Excel y del Excel a Solved",
       "en": [
-        "/casos-de-exito/prilux/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Álvaro Sobrino, director de calidad de producto de Prilux, cuenta cómo llevaban los controles e inspecciones antes —primero en papel, después en tablas de Excel—, por qué en 2024 se lanzaron a implantar Solved y qué han visto en los primeros meses con toda la planta usándolo desde el móvil y la tablet.",
       "en": [
-        "/casos-de-exito/prilux/"
-      ]
-    },
-    {
-      "es": "Caso Patatas Aguilar: del Excel a Solved en 2024 · Solved",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Jose Vicente Doria, director de Calidad y Medioambiente de Patatas Aguilar, explica el paso del papel y el Excel a Solved, y por qué dice que le cambió la vida.",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Caso de éxito · Manipulado de patata",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Una hora, o dos,",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "paseando la planta con un Excel, para el checklist general de cada mes.",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Jose Vicente Doria dirige Calidad y Medioambiente en Patatas Aguilar, una empresa valenciana con más de 50 años dedicada a la selección y el envasado de patata. Cuenta cómo hacían antes el checklist mensual, por qué probaron otro sistema antes de Solved y no les sirvió, qué cambió desde 2024, y qué dice a un responsable que todavía se lo está pensando.",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "— el checklist general de planta, con fotos y comentarios, en el móvil.",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
-      ]
-    },
-    {
-      "es": "Ver el vídeo de Patatas Aguilar — hay que dejar el correo primero",
-      "en": [
-        "/casos-de-exito/patatas-aguilar/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Caso de éxito Patatas Aguilar: del papel y el Excel a Solved",
       "en": [
-        "/casos-de-exito/patatas-aguilar/"
+        "/casos-de-exito/"
       ]
     },
     {
       "es": "Jose Vicente Doria, director de Calidad y Medioambiente de Patatas Aguilar, cuenta cómo llevaban el checklist mensual de planta antes —con Excel, fotos sueltas y una hora o dos caminando la fábrica—, por qué un ERP no les sirvió antes de probar Solved, qué ha cambiado desde 2024 —incluida la reacción de sus auditores de IFS— y qué le diría a un responsable de calidad que todavía se lo está pensando.",
       "en": [
-        "/casos-de-exito/patatas-aguilar/"
+        "/casos-de-exito/"
       ]
     },
     {

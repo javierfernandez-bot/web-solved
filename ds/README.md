@@ -22,7 +22,7 @@ los tokens usan otros nombres, así que no se pisan.
 | `hsform.css` | El formulario de HubSpot con la estética del sitio. **No la carga ninguna página**: la mete `chrome.js` dentro del iframe de HubSpot. |
 | `integrations.css` · `integrations.js` | El catálogo de integraciones de `/integraciones/`: rejilla de logos, buscador y filtro por tipo. |
 | `dialog.css` · `scene.js` | El diálogo que abre una escena, y el halo del borde que sigue al cursor. |
-| `gate.css` · `gate.js` | El gate de vídeo de las dos landings de caso —un vídeo, un formulario, uno por página— y `.vcase`, la tarjeta con la que el índice manda a cada una. |
+| `vcase.css` | `.vcase`, la tarjeta de vídeo de `/casos-de-exito/`: cada caso se reproduce ahí mismo, con los controles nativos del `<video>`. En pestañas (patrón 7, abajo), una a la vez. Sin landing propia, sin formulario. |
 | `aiband.css` · `aiband.js` | La banda de IA: barra de prompt sobre grafito, la pregunta que se teclea sola y las piezas de la respuesta alrededor. Cuatro turnos en bucle. |
 | `ia-dark.css` | El tema oscuro de `/ia/`: reasigna los alias del DS dentro de `[data-tema="ia"]`. Única página del sitio sobre grafito. |
 

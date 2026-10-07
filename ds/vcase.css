@@ -1,0 +1,104 @@
+/* =========================================================
+   Solved Design System — TARJETA DE VÍDEO (.vcase)
+   La tarjeta con la que /casos-de-exito/ enseña los cuatro vídeos de caso.
+   Hasta el 7 de octubre de 2026 cada vídeo vivía en su propia landing —con un
+   gate de correo primero y, después, sin gate pero todavía en página aparte—;
+   ahora se reproduce aquí mismo, dentro de su tarjeta, con los controles
+   nativos del <video>. Sin JS, sin landing, sin formulario.
+
+   EN PESTAÑAS, UNA A LA VEZ (patrón 7 de ds/sections.css)
+   `.switch__panel` reparte 5fr/7fr pensado para texto + imagen a los lados; un
+   único `.vcase` dentro se vería descolocado a un lado con el resto en blanco.
+   `.switch__panel--vcase` lo anula (`display:block`) y centra la tarjeta a un
+   ancho de lectura cómodo — el mismo 860px que ya usaba el vídeo abierto del
+   gate que esta página sustituye, "cabeza hablando, no una película". Va en
+   ds/vcase.css y no en ds/sections.css porque es específico de esta
+   combinación, no un modificador general del conmutador.
+
+   LA REGLA DEL COMPONENTE SIGUE EN PIE
+   El póster es un fotograma real del vídeo —con su rótulo de nombre y cargo,
+   que ya viene grabado—, la duración es la de verdad.
+
+   EL VÍDEO NO SE DESCARGA HASTA QUE SE PULSA PLAY
+   `preload="none"`: el navegador no se trae el MP4 sólo porque la página haya
+   cargado, así que el peso real de la página es el de los cuatro pósteres.
+
+   Requiere ds/tokens.css y, para las pestañas, ds/sections.css + ds/sections.js.
+   ========================================================= */
+
+.switch__panel--vcase{ display:block }
+.switch__panel--vcase .vcase{
+  max-width:860px;
+  margin-inline:auto;
+}
+
+.vcase{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+/* `minmax(0,1fr)` y no `1fr` por lo mismo que en .photo-band: una pista
+   automática se dimensiona por el contenido y el vídeo la estira. */
+.vcase__frame{
+  position:relative;
+  display:grid;
+  grid-template-rows:minmax(0, 1fr);
+  aspect-ratio:16/9;
+  border-radius:var(--ds-radius-card, 12px);
+  overflow:hidden;
+  background:var(--ds-surface-steel);
+  border:1px solid var(--ds-border);
+  box-shadow:var(--ds-elev-1);
+}
+.vcase__video{
+  grid-area:1/1;
+  width:100%; height:100%;
+  object-fit:contain;
+  display:block;
+  background:#000;
+}
+
+/* La duración, arriba a la derecha, sobre un velo propio: el fotograma lleva
+   subtítulos quemados y el blanco sobre blanco se pierde. Pointer-events:none
+   para no estorbar a los controles nativos del vídeo. */
+.vcase__dur{
+  position:absolute;
+  top:10px; right:10px;
+  z-index:1;
+  padding:4px 9px;
+  border-radius:var(--ds-radius-chip);
+  background:rgba(12,16,24,.72);
+  color:#fff;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  font-variant-numeric:tabular-nums;
+  pointer-events:none;
+}
+
+.vcase__who{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.vcase__logo{
+  height:26px;
+  width:auto;
+  display:block;
+  flex:0 0 auto;
+}
+.vcase__role{
+  margin:0;
+  font:var(--type-caption);
+  letter-spacing:var(--tracking-caption);
+  color:var(--ds-text-mute);
+}
+.vcase__hook{
+  margin:0;
+  font:var(--type-heading-md);
+  color:var(--ds-text);
+  text-wrap:pretty;
+}
+/* La segunda frase, apagada: la primera pica y la segunda sitúa. Es el párrafo
+   a dos tintas de los tríos de ds/sections.css, no un color nuevo. */
+.vcase__hook span{ color:var(--ds-text-mute) }

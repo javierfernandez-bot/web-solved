@@ -723,6 +723,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="website">
@@ -738,9 +752,11 @@
 <meta name="twitter:title" content="Cas clients dans l'industrie : 4 déploiements · Solved">
 <meta name="twitter:description" content="Quatre conversations enregistrées avec ceux qui utilisent Solved chaque jour : la responsable qualité d'une industrie de la viande, le coordinateur technique d'une boulangerie à cinq sites, le directeur qualité d'un groupe d'éclairage et le directeur qualité d'une entreprise de conditionnement de pommes de terre.">
 <meta name="twitter:image" content="https://trysolved.com/assets/og-image.png">
-<!-- Los VideoObject NO van aquí: cada vídeo vive en su landing y su ficha va en
-     la página que lo sirve. Aquí sólo la lista, que es lo que esta página es. -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://trysolved.com/fr/"},{"@type":"ListItem","position":2,"name":"Études de cas","item":"https://trysolved.com/fr/etudes-de-cas/"}]},{"@type":"ItemList","name":"Études de cas Solved","itemListElement":[{"@type":"ListItem","position":1,"name":"Carnavi","url":"https://trysolved.com/fr/etudes-de-cas/carnavi/"},{"@type":"ListItem","position":2,"name":"Panificadora Alcalá","url":"https://trysolved.com/fr/etudes-de-cas/panificadora-alcala/"},{"@type":"ListItem","position":3,"name":"Prilux","url":"https://trysolved.com/fr/etudes-de-cas/prilux/"},{"@type":"ListItem","position":4,"name":"Patatas Aguilar","url":"https://trysolved.com/fr/etudes-de-cas/patatas-aguilar/"}]}]}</script>
+<!-- Los cuatro VideoObject van aquí: desde el 7 de octubre de 2026 cada vídeo
+     se reproduce en esta misma página (ya no tiene landing propia), así que
+     su ficha estructurada vive donde vive el <video>. "url" apunta al ancla
+     de su tarjeta (#carnavi, etc.), no a una página aparte. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://trysolved.com/fr/"},{"@type":"ListItem","position":2,"name":"Études de cas","item":"https://trysolved.com/fr/etudes-de-cas/"}]},{"@type":"VideoObject","name":"Étude de cas Carnavi : deux heures par jour à saisir les incidents à la main","description":"Ana Domínguez, responsable qualité de Carnavi, raconte comment arrivaient les incidents avant Solved — par WhatsApp, par courriel ou dans le couloir —, le temps que prenait leur saisie et ce qui a changé en le faisant depuis le téléphone.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-carnavi.webp","uploadDate":"2026-08-15","duration":"PT2M4S","contentUrl":"https://trysolved.com/assets/casos/caso-carnavi.mp4","isAccessibleForFree":true,"inLanguage":"es","url":"https://trysolved.com/fr/etudes-de-cas/#carnavi","publisher":{"@id":"https://trysolved.com/#organization"}},{"@type":"VideoObject","name":"Étude de cas Panificadora Alcalá : du papier-crayon à cinq usines","description":"Samuel Pardo, coordinateur du service technique de Panificadora Alcalá, raconte ce qui cassait quand l'entreprise est passée de deux usines à cinq et de 200 à plus de 500 personnes, et comment ils ont unifié trois outils en un seul.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-panificadora-alcala.webp","uploadDate":"2026-08-15","duration":"PT2M39S","contentUrl":"https://trysolved.com/assets/casos/caso-panificadora-alcala.mp4","isAccessibleForFree":true,"inLanguage":"es","url":"https://trysolved.com/fr/etudes-de-cas/#panificadora-alcala","publisher":{"@id":"https://trysolved.com/#organization"}},{"@type":"VideoObject","name":"Étude de cas Prilux : du papier à Excel et d'Excel à Solved","description":"Álvaro Sobrino, directeur qualité produit de Prilux, raconte comment ils menaient les contrôles et inspections avant — d'abord sur papier, puis dans des tableaux Excel —, pourquoi ils se sont lancés dans Solved en 2024 et ce qu'ils ont constaté les premiers mois avec toute l'usine qui l'utilise depuis le téléphone et la tablette.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-prilux.webp","uploadDate":"2026-08-17","duration":"PT2M6S","contentUrl":"https://trysolved.com/assets/casos/caso-prilux.mp4","isAccessibleForFree":true,"inLanguage":"es","url":"https://trysolved.com/fr/etudes-de-cas/#prilux","publisher":{"@id":"https://trysolved.com/#organization"}},{"@type":"VideoObject","name":"Étude de cas Patatas Aguilar : du papier et d'Excel à Solved","description":"Jose Vicente Doria, directeur Qualité et Environnement de Patatas Aguilar, raconte comment ils menaient le checklist mensuel de l'usine avant — avec Excel, des photos éparses et une heure ou deux à parcourir l'usine —, pourquoi un ERP ne leur convenait pas avant d'essayer Solved, ce qui a changé depuis 2024 — y compris la réaction de leurs auditeurs IFS — et ce qu'il dirait à un responsable qualité encore hésitant.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-patatas-aguilar.webp","uploadDate":"2026-09-29","duration":"PT4M22S","contentUrl":"https://trysolved.com/assets/casos/caso-patatas-aguilar.mp4","isAccessibleForFree":true,"inLanguage":"es","url":"https://trysolved.com/fr/etudes-de-cas/#patatas-aguilar","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/fr/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -753,12 +769,12 @@
 <link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
 <link rel="stylesheet" href="/ds/site.css?v=20260911k">
 <link rel="stylesheet" href="/ds/hero.css?v=20260930a">
-<link rel="stylesheet" href="/ds/tint.css?v=20260928a">
-<link rel="stylesheet" href="/ds/scene.css?v=20261005a">
-<!-- De ds/gate.css esta página sólo usa .vcase, la tarjeta que manda a cada
-     landing. El vídeo en sí vive en su propia página de caso, y se reproduce
-     directamente al llegar: no hay formulario por delante. -->
-<link rel="stylesheet" href="/ds/gate.css?v=20261007a">
+<!-- Pestañas (patrón 7 de ds/sections.css): un vídeo a la vez, no los cuatro
+     a rejilla. El script que las pliega va en ds/sections.js. -->
+<link rel="stylesheet" href="/ds/sections.css?v=20260930a">
+<!-- El vídeo de cada caso se reproduce directamente en su tarjeta (.vcase),
+     sin landing propia ni formulario por delante. -->
+<link rel="stylesheet" href="/ds/vcase.css?v=20261007b">
 </head>
 <body data-screen-label="Casos de éxito">
 
@@ -766,8 +782,11 @@
 
 <main>
 
-<!-- ============ HERO ============ -->
-<section class="ds-hero" data-screen-label="Casos · Hero">
+<!-- ============ HERO ============
+     Compacta (ds/hero.css): la creatividad —los vídeos— va justo debajo, en
+     el mismo encuadre (frame--bajo-hero), y tiene que asomar sin hacer scroll.
+     Mismo recurso que ya usan /ia/ y /gestion-de-activos/. -->
+<section class="ds-hero ds-hero--compacta" data-screen-label="Casos · Hero">
   <canvas class="ds-hero__weave" aria-hidden="true" id="dsWeave"></canvas>
   <div class="frame frame--seam ds-hero__frame">
     <div class="ds-hero__txt">
@@ -778,162 +797,95 @@
   </div>
 </section>
 
-<!-- ============ LOS CUATRO CASOS ============
-     Esta página no lleva formulario: cada vídeo se reproduce directamente en
-     su landing, sin pedir el correo primero. El icono de play sobre el póster
-     sólo avisa de que lo que hay detrás del enlace es un vídeo. -->
-<section class="section" data-screen-label="Casos · Lista">
-  <div class="wrap">
-    <div class="vcase-grid">
+<!-- ============ LOS CUATRO CASOS, EN PESTAÑAS ============
+     Un vídeo a la vez, no los cuatro a rejilla: pestañas (patrón 7 de
+     ds/sections.css), pegadas a la hero compacta para que el primer vídeo
+     asome sin hacer scroll. Sin landing propia: se reproduce aquí mismo, con
+     los controles nativos del <video>.
 
-      <a class="vcase" href="/fr/etudes-de-cas/carnavi/">
+     El `id` de cada PANEL (no de la tarjeta) es el ancla que usan los enlaces
+     de "otro caso" del resto del sitio (/casos-de-exito/#carnavi, etc.) y el
+     "url" de su VideoObject: ds/sections.js lee `location.hash` al montar y
+     abre directamente esa pestaña, en vez de la primera.
+
+     Sin JS las cuatro pestañas siguen siendo botones y los cuatro paneles se
+     ven uno detrás de otro —contenido completo, nada se pierde—, que es la
+     misma regla que el resto de usos de `.switch` en el sitio. -->
+<div class="frame frame--seam frame--bajo-hero" data-screen-label="Casos · Vídeos">
+  <div data-switch="">
+    <div class="switch__tabs" role="tablist" aria-label="Choisissez un cas">
+      <button class="switch__tab" type="button" role="tab" id="tab-carnavi" aria-controls="carnavi" aria-selected="false">Carnavi</button>
+      <button class="switch__tab" type="button" role="tab" id="tab-panificadora-alcala" aria-controls="panificadora-alcala" aria-selected="false">Panificadora Alcalá</button>
+      <button class="switch__tab" type="button" role="tab" id="tab-prilux" aria-controls="prilux" aria-selected="false">Prilux</button>
+      <button class="switch__tab" type="button" role="tab" id="tab-patatas-aguilar" aria-controls="patatas-aguilar" aria-selected="false">Patatas Aguilar</button>
+    </div>
+
+    <div class="switch__panel switch__panel--vcase" role="tabpanel" id="carnavi" aria-labelledby="tab-carnavi">
+      <article class="vcase">
         <div class="vcase__frame">
-          <img class="vcase__poster" src="/assets/casos/poster-carnavi.webp" alt="Ana Domínguez, responsable qualité de Carnavi, pendant l'entretien" width="1280" height="720" decoding="async">
+          <video class="vcase__video" src="/assets/casos/caso-carnavi.mp4" poster="/assets/casos/poster-carnavi.webp" controls="" preload="none" playsinline="" aria-label="Ana Domínguez, responsable qualité de Carnavi, pendant l'entretien"></video>
           <span class="vcase__dur">2:04</span>
-          <span class="vcase__playicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
-          </span>
         </div>
         <div class="vcase__who">
           <img class="vcase__logo" src="/assets/testimonios/logo-carnavi.webp" alt="Carnavi" width="217" height="112" loading="lazy" decoding="async">
           <p class="vcase__role">Ana Domínguez · Responsable qualité</p>
         </div>
         <p class="vcase__hook">Deux heures par jour. <span>C'est le temps qu'Ana et son collègue consacraient à la saisie manuelle des incidents. Dans la vidéo, elle explique par quels canaux ils arrivaient et comment ils sont gérés aujourd'hui.</span></p>
-        <span class="vcase__go">Voir le cas
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </span>
-      </a>
+      </article>
+    </div>
 
-      <a class="vcase" href="/fr/etudes-de-cas/panificadora-alcala/">
+    <div class="switch__panel switch__panel--vcase" role="tabpanel" id="panificadora-alcala" aria-labelledby="tab-panificadora-alcala">
+      <article class="vcase">
         <div class="vcase__frame">
-          <img class="vcase__poster" src="/assets/casos/poster-panificadora-alcala.webp" alt="Samuel Pardo, coordinateur du service technique de Panificadora Alcalá, pendant l'entretien" width="1280" height="720" decoding="async">
+          <video class="vcase__video" src="/assets/casos/caso-panificadora-alcala.mp4" poster="/assets/casos/poster-panificadora-alcala.webp" controls="" preload="none" playsinline="" aria-label="Samuel Pardo, coordinateur du service technique de Panificadora Alcalá, pendant l'entretien"></video>
           <span class="vcase__dur">2:39</span>
-          <span class="vcase__playicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
-          </span>
         </div>
         <div class="vcase__who">
           <img class="vcase__logo" src="/assets/testimonios/logo-panificadora-alcala.webp" alt="Panificadora Alcalá" width="256" height="112" loading="lazy" decoding="async">
           <p class="vcase__role">Samuel Pardo · Coordinateur du service technique</p>
         </div>
         <p class="vcase__hook">De deux usines à cinq. <span>Et de 200 personnes à plus de 500, avec la saisie encore sur papier. Samuel explique ce qui a cessé de fonctionner en montant en échelle.</span></p>
-        <span class="vcase__go">Voir le cas
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </span>
-      </a>
+      </article>
+    </div>
 
-      <a class="vcase" href="/fr/etudes-de-cas/prilux/">
+    <div class="switch__panel switch__panel--vcase" role="tabpanel" id="prilux" aria-labelledby="tab-prilux">
+      <article class="vcase">
         <div class="vcase__frame">
-          <img class="vcase__poster" src="/assets/casos/poster-prilux.webp" alt="Álvaro Sobrino, directeur qualité produit de Prilux, pendant l'entretien" width="1280" height="720" decoding="async">
+          <video class="vcase__video" src="/assets/casos/caso-prilux.mp4" poster="/assets/casos/poster-prilux.webp" controls="" preload="none" playsinline="" aria-label="Álvaro Sobrino, directeur qualité produit de Prilux, pendant l'entretien"></video>
           <span class="vcase__dur">2:06</span>
-          <span class="vcase__playicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
-          </span>
         </div>
         <div class="vcase__who">
           <img class="vcase__logo" src="/assets/testimonios/logo-prilux.webp" alt="Prilux" width="295" height="112" loading="lazy" decoding="async">
           <p class="vcase__role">Álvaro Sobrino · Directeur qualité</p>
         </div>
         <p class="vcase__hook">Plus de mille inspections par an. <span>Rien que sur le matériel entrant. Álvaro explique le passage du papier au tableur, puis à la saisie sur téléphone ou tablette.</span></p>
-        <span class="vcase__go">Voir le cas
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </span>
-      </a>
+      </article>
+    </div>
 
-      <a class="vcase" href="/fr/etudes-de-cas/patatas-aguilar/">
+    <div class="switch__panel switch__panel--vcase" role="tabpanel" id="patatas-aguilar" aria-labelledby="tab-patatas-aguilar">
+      <article class="vcase">
         <div class="vcase__frame">
-          <img class="vcase__poster" src="/assets/casos/poster-patatas-aguilar.webp" alt="Jose Vicente Doria, directeur Qualité et Environnement de Patatas Aguilar, pendant l'entretien" width="1280" height="720" decoding="async">
+          <video class="vcase__video" src="/assets/casos/caso-patatas-aguilar.mp4" poster="/assets/casos/poster-patatas-aguilar.webp" controls="" preload="none" playsinline="" aria-label="Jose Vicente Doria, directeur Qualité et Environnement de Patatas Aguilar, pendant l'entretien"></video>
           <span class="vcase__dur">4:22</span>
-          <span class="vcase__playicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
-          </span>
         </div>
         <div class="vcase__who">
           <img class="vcase__logo" src="/assets/testimonios/logo-patatas-aguilar.webp" alt="Patatas Aguilar" width="357" height="112" loading="lazy" decoding="async">
           <p class="vcase__role">Jose Vicente Doria · Directeur Qualité et Environnement</p>
         </div>
         <p class="vcase__hook">Une heure, voire deux, à parcourir l'usine chaque mois. <span>C'est ce que coûtait le checklist général avec un Excel. José explique pourquoi il dit que Solved « nous a changé la vie ».</span></p>
-        <span class="vcase__go">Voir le cas
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </span>
-      </a>
-
+      </article>
     </div>
-  </div>
-</section>
 
-<!-- Sin cierre ni CTA de demo: el índice es sólo la puerta a las tres landings, y
+  </div>
+</div>
+
+<!-- Sin cierre ni CTA de demo: el índice es sólo la puerta a los cuatro vídeos, y
      la llamada a la demo ya la lleva la nav en todas las páginas. -->
-
-
-<!-- ============================================================
-     ESCENAS DE PLANTA — ds/scene.css (.scene[data-canvas="foto"])
-     Casos: la foto de planta es el sitio donde pasó lo que cuenta el vídeo.
-     Fotos en assets/planta/, procedencia en assets/planta/FUENTES.md.
-     Los identificadores son los mismos del tour de /incidencias/: si un
-     UTD26_… sale en dos páginas, es la misma avería.
-     ============================================================ -->
-<section class="section" data-screen-label="Casos · En planta">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Ce qui a changé dans chaque usine</h2>
-      <p>Les trois cas partent du même point : papier, tableur ou messagerie, avec qualité, production et maintenance qui se préviennent entre elles. La différence tient au système qu'utilise aujourd'hui le personnel de ligne.</p>
-    </div>
-
-    <div class="scene-grid">
-
-      <article class="scene" data-module="incidencias" data-span="6" data-ratio="1:1" data-canvas="foto">
-        <img class="scene__foto" src="/assets/planta/equipo-tablet-cascos.webp" alt="" width="1100" height="1100" loading="lazy" decoding="async">
-        <span class="scene__velo" aria-hidden="true"></span>
-        <h3 class="scene__title">Carnavi a remplacé la saisie manuelle des incidents</h3>
-        <span class="scene__glow" aria-hidden="true"></span>
-        <span class="res-pill" style="left:6%; top:16%" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span>2 h/jour, avant</span></span>
-        <div class="scene__media" data-crop="res">
-          <div class="res">
-            <div class="res__hd">
-              <span class="res__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4"></path><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 17h.01"></path></svg></span>
-              <div>
-                <p class="res__t">Avant : deux heures par jour</p>
-                <p class="res__s">WhatsApp, courriel et le couloir</p>
-              </div>
-            </div>
-            <dl class="res__rows">
-              <div class="res__kv"><dt>Maintenant</dt><dd>Le rapport s'ouvre sur la ligne</dd></div>
-              <div class="res__kv"><dt>Avec</dt><dd>Photo, responsable et échéance</dd></div>
-            </dl>
-          </div>
-        </div>
-      </article>
-
-      <article class="scene" data-module="checklists" data-span="6" data-ratio="1:1" data-canvas="foto">
-        <img class="scene__foto" src="/assets/planta/almacen-tablet-chaleco.webp" alt="" width="1100" height="1100" loading="lazy" decoding="async">
-        <span class="scene__velo" aria-hidden="true"></span>
-        <h3 class="scene__title">Prilux : du papier au tableur, puis à Solved</h3>
-        <span class="scene__glow" aria-hidden="true"></span>
-        <div class="scene__media" data-crop="res">
-          <div class="res">
-            <div class="res__hd">
-              <span class="res__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
-              <div>
-                <p class="res__t">Inspections à réception</p>
-                <p class="res__s">Quatre unités d'affaires, un seul outil</p>
-              </div>
-            </div>
-            <dl class="res__rows">
-              <div class="res__kv"><dt>Par an</dt><dd>+1.000</dd></div>
-              <div class="res__kv"><dt>Qui l'utilise</dt><dd>De l'usine à la direction</dd></div>
-            </dl>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
 </main>
 
 <div id="footer"></div>
-<script src="/fr/chrome.js?v=20261005a"></script>
+<script src="/fr/chrome.js?v=20261007a"></script>
+<script src="/ds/sections.js?v=20261007a" defer=""></script>
 <script src="/ds/hero-wave.js?v=20260928a" defer=""></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

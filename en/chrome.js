@@ -111,12 +111,12 @@
             '<a href="' + ROOT + 'software-calidad/"><b>Quality and certifications</b></a>' +
           '</div>' +
           '<div class="nav__mega-side">' +
-            '<a class="nav__mega-case" href="' + ROOT + 'case-studies/carnavi/" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'case-studies/#carnavi" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/carnavi.webp" alt="Carnavi" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Success story</span>' +
               '<span class="nav__mega-case__title">Two hours a day spent on manual incident logging</span>' +
             '</a>' +
-            '<a class="nav__mega-case" href="' + ROOT + 'case-studies/panificadora-alcala/" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'case-studies/#panificadora-alcala" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Success story</span>' +
               '<span class="nav__mega-case__title">From two plants to five, with records still on paper</span>' +

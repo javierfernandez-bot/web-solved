@@ -111,12 +111,12 @@
             '<a href="' + ROOT + 'software-calidad/"><b>Qualité et certifications</b></a>' +
           '</div>' +
           '<div class="nav__mega-side">' +
-            '<a class="nav__mega-case" href="' + ROOT + 'etudes-de-cas/carnavi/" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'etudes-de-cas/#carnavi" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/carnavi.webp" alt="Carnavi" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Étude de cas</span>' +
               '<span class="nav__mega-case__title">Deux heures par jour consacrées à l\'enregistrement manuel des incidents</span>' +
             '</a>' +
-            '<a class="nav__mega-case" href="' + ROOT + 'etudes-de-cas/panificadora-alcala/" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'etudes-de-cas/#panificadora-alcala" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Étude de cas</span>' +
               '<span class="nav__mega-case__title">De deux usines à cinq, avec un enregistrement encore sur papier</span>' +

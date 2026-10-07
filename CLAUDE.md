@@ -110,7 +110,104 @@ compuesto a propósito. Referencia del cliente: **mitti.com/es/activos** — la 
 encuadre y el resto es cielo o fondo liso, con fichas de activo pequeñas y sueltas flotando ahí, nunca
 sobre ella.
 
-## Estado a 7 octubre 2026 — los cuatro vídeos de casos de éxito, desbloqueados: fuera el gate de correo
+## Estado a 7 octubre 2026 (3) — `/casos-de-exito/` en pestañas: un vídeo a la vez, hero compacta
+
+Dos peticiones del cliente sobre la página recién consolidada del estado (2): que la hero se acorte
+para que el vídeo asome sin hacer scroll, y que los cuatro casos se vean «de uno en uno» en vez de la
+rejilla 2×2.
+
+**Reutilizado el conmutador de paneles que ya existía (patrón 7 de `ds/sections.css` +
+`ds/sections.js`, el mismo de «Ámbitos de aplicación» en la home, de `/auditorias/` y de
+`/dashboard/`), no inventado uno nuevo.** Cuatro pestañas con el nombre del cliente (Carnavi ·
+Panificadora Alcalá · Prilux · Patatas Aguilar, sin icono — mismo estilo de texto plano que ya usan
+`/dashboard/` y `/auditorias/`) y cuatro paneles `[hidden]`; el script pliega el que no toca y dentro
+de cada panel va el `.vcase` de siempre, sin tocarlo. **Sin JS, los cuatro siguen viéndose uno detrás
+de otro** —contenido completo en el marcado—, que es la regla del componente.
+
+**`.switch__panel` reparte 5fr/7fr porque nació para texto + imagen, y aquí sólo hay un `.vcase`.**
+Entra `.switch__panel--vcase` (en `ds/vcase.css`, no en `ds/sections.css`: es específico de esta
+combinación) que anula la rejilla y centra la tarjeta a 860px — el mismo ancho que ya usaba el vídeo
+abierto del gate que esta página sustituyó, «cabeza hablando, no una película».
+
+**La hero cede alto con `ds-hero--compacta`** (`ds/hero.css`), el mismo recurso que ya usan `/ia/` y
+`/gestion-de-activos/` para que la creatividad de debajo asome sin scroll; el bloque de pestañas va en
+un `.frame.frame--seam.frame--bajo-hero` pegado a la hero, sin su propio aire.
+
+> **Y el ancla a un caso concreto necesitaba algo que el conmutador no tenía: abrir directamente la
+> pestaña que toca, no siempre la primera.** `/casos-de-exito/#carnavi` —el destino de las páginas
+> puente del estado (2), del mega-menú y de las tarjetas `case-card--banda` del resto del sitio—
+> llegaba siempre a la pestaña de Carnavi, porque el script montaba el panel 0 sin mirar la URL.
+> **`ds/sections.js` gana una comprobación genérica, no sólo para esta página:** si el `id` de algún
+> panel coincide con `location.hash`, ese panel abre el primero; si no coincide ninguno —el caso de
+> cualquier otro `[data-switch]` del sitio, cuyos paneles no se llaman como un ancla real—, el
+> comportamiento de siempre no cambia. Y como el salto nativo del navegador a la ancla puede ocurrir
+> **antes** de que el script esconda el resto de paneles —con los cuatro visibles y la página mucho
+> más alta—, se corrige la posición con `scrollIntoView` justo después de abrir el panel que toca.
+> `ds/sections.js` sube a `?v=20261007a` en las 37 páginas que lo cargan.
+
+**Una cadena nueva** («Elige un caso», la etiqueta del `role="tablist"`), traducida a mano en
+`i18n/traducciones/10-casos-legales.json`. `npm run i18n:extract` (1448/1448 en los cinco idiomas) →
+`build:i18n` → `check:seo` (799 HTML, ✔ sin fallos) → `check:voz` (53 páginas, ✔, mismos avisos
+previos y ajenos a esta página) pasan. Verificado en el navegador: el vídeo de Carnavi ya es visible
+sin scroll al cargar, cambiar de pestaña sustituye el vídeo al instante, y
+`/casos-de-exito/#patatas-aguilar` abre directamente esa pestaña —con su posición corregida— en vez de
+la de Carnavi.
+
+## Estado a 7 octubre 2026 (2) — fuera las cuatro landings de caso: el vídeo vive en `/casos-de-exito/`
+
+Petición del cliente, justo detrás del desbloqueo del gate (ver el estado (1), debajo): quitar la
+página propia de cada caso y que el vídeo se reproduzca desde el índice. `/casos-de-exito/` deja de
+ser una lista de enlaces y pasa a ser la única página de la familia: sus cuatro tarjetas `.vcase`
+llevan ahora el `<video>` de verdad (controles nativos, `src` directo, `preload="none"`), cada una con
+`id` (`#carnavi`, `#panificadora-alcala`, `#prilux`, `#patatas-aguilar`) para enlazar al vídeo
+concreto.
+
+**Las cuatro carpetas (`casos-de-exito/carnavi/`, …) se borran**, en español y en sus veinte copias
+traducidas. En su lugar, `seo/redirects.json` gana las cuatro rutas con destino
+`/casos-de-exito/#<caso>` y `npm run build:redirects` genera ahí una página puente —el mismo
+mecanismo que ya usa el sitio para las URLs de la época WordPress—: quien tenga un enlace o un
+marcador a la landing vieja cae directo en la tarjeta de su vídeo, no en el índice a secas.
+
+> **Y salió un hueco real en `check-seo.mjs`:** el validador de páginas puente comprobaba que el
+> destino del `meta refresh` existiera como fichero **con el ancla incluida** —`/casos-de-exito/
+> #carnavi` no es una ruta de fichero—, así que las cuatro páginas puente daban falso positivo. El
+> comprobador de enlaces normales ya sabía quitar el `#` antes de resolver (`raw.split('#')[0]`); el
+> de stubs no lo hacía. Se iguala con la misma regla.
+
+**`ds/gate.css` se retira y nace `ds/vcase.css`.** Con las cuatro landings fuera no queda ni un
+`.gate`/`.gate--hero` en todo el sitio —la pieza que daba nombre al fichero—, así que no tenía sentido
+conservarlo sólo por `.vcase`. El componente nuevo es sólo la tarjeta: marco 16/9, `<video>`, la
+píldora de duración (`pointer-events:none`, para no estorbar a los controles nativos) y los datos de
+quién habla. Sin link, sin candado, sin icono de play propio —el que ya trae el `<video>` basta—.
+`ds/gate.js` ya no hacía falta desde el estado (1) y sigue sin existir.
+
+**Los enlaces de otras páginas al caso de un cliente concreto pasan a anclar, no a navegar a una
+página que ya no existe:** la cinta de la home (`rail__item`), las tarjetas anchas `case-card--banda`
+de `/incidencias/`, `/auditorias/`, `/dashboard/`, `/no-conformidades/`, `/industria-general/` e
+`/industria-alimentaria/`, el `case-list__item` de `/industria-general/`, y **las dos fichas del
+mega-menú «Casos de uso»** en `chrome.js` (Carnavi y Panificadora Alcalá, la navegación global del
+sitio). Todas pasan de `href="/casos-de-exito/<caso>/"` a `href="/casos-de-exito/#<caso>"`.
+`chrome.js` sube a `?v=20261007a` en las 746 páginas que lo cargan.
+
+**Se retira también la sección «Lo que cambió en cada planta»** del final de `/casos-de-exito/` (dos
+escenas con foto de planta, Carnavi y Prilux), a petición expresa del cliente. Con ella se van
+`ds/tint.css` y `ds/scene.css` de esta página, que sólo los cargaba por esa sección.
+
+**El JSON-LD cambia de forma, no sólo de contenido.** El `ItemList` que enlazaba a las cuatro landings
+sale; entran los cuatro `VideoObject` que antes vivían uno por página, con `isAccessibleForFree:true`
+y `url` apuntando al ancla de su tarjeta — la ficha estructurada vive ahora donde vive el vídeo.
+
+`npm run i18n:extract` (1447/1447 en los cinco idiomas, sin cadenas nuevas: el `aria-label` del
+`<video>` reutiliza el mismo texto que ya tenía el `alt` del póster) → `build:i18n` → `build:sitemap`
+(452 URLs, bajó de 476: menos cuatro páginas españolas y sus veinte traducciones) → `check:seo` (799
+HTML, ✔ sin fallos) → `check:voz` (53 páginas, ✔, un aviso nuevo y esperado: «encuadre sólo de
+calidad» en `/casos-de-exito/` — la sección que se retira a petición del cliente era la única que
+nombraba mantenimiento y producción en esta página; es aviso, no fallo, y no se ha compensado
+escribiendo esas palabras de vuelta a la fuerza). Verificado en el navegador: los cuatro vídeos
+reproducen en su tarjeta, la ficha de Carnavi del mega-menú aterriza en `#carnavi` con scroll
+automático, y la URL vieja `/casos-de-exito/prilux/` redirige a `/casos-de-exito/#prilux`.
+
+## Estado a 7 octubre 2026 (1) — los cuatro vídeos de casos de éxito, desbloqueados: fuera el gate de correo
 
 Petición del cliente: quitar el gate de correo de las cuatro landings de caso
 (`/casos-de-exito/<caso>/`) y que el vídeo se reproduzca directamente. Decisión

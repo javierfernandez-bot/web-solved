@@ -714,5 +714,6 @@
     "de": "Die Adresse hat sich möglicherweise geändert oder existiert nicht. Über die Startseite gelangen Sie zum Modulkatalog.",
     "pt": "O endereço pode ter mudado ou não existir. A partir do início acede-se ao catálogo de módulos."
   },
-  "Volver al inicio": { "en": "Back to home", "fr": "Retour à l'accueil", "it": "Torna alla home", "de": "Zurück zur Startseite", "pt": "Voltar ao início" }
+  "Volver al inicio": { "en": "Back to home", "fr": "Retour à l'accueil", "it": "Torna alla home", "de": "Zurück zur Startseite", "pt": "Voltar ao início" },
+  "Elige un caso": { "en": "Choose a case", "fr": "Choisissez un cas", "it": "Scegli un caso", "de": "Fall auswählen", "pt": "Escolha um caso" }
 }

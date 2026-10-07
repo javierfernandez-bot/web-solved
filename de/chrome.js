@@ -111,12 +111,12 @@
             '<a href="' + ROOT + 'software-calidad/"><b>Qualität und Zertifizierungen</b></a>' +
           '</div>' +
           '<div class="nav__mega-side">' +
-            '<a class="nav__mega-case" href="' + ROOT + 'fallstudien/carnavi/" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'fallstudien/#carnavi" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/carnavi.webp" alt="Carnavi" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Erfolgsgeschichte</span>' +
               '<span class="nav__mega-case__title">Zwei Stunden täglich für die manuelle Erfassung von Störungen</span>' +
             '</a>' +
-            '<a class="nav__mega-case" href="' + ROOT + 'fallstudien/panificadora-alcala/" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'fallstudien/#panificadora-alcala" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Erfolgsgeschichte</span>' +
               '<span class="nav__mega-case__title">Von zwei auf fünf Werke, mit Aufzeichnungen noch auf Papier</span>' +

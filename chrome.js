@@ -111,12 +111,12 @@
             '<a href="' + ROOT + 'software-calidad/"><b>Calidad y certificaciones</b></a>' +
           '</div>' +
           '<div class="nav__mega-side">' +
-            '<a class="nav__mega-case" href="' + ROOT + 'casos-de-exito/carnavi/" style="background-image:url(\'' + ROOT + 'assets/sala-despiece-cerdo.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'casos-de-exito/#carnavi" style="background-image:url(\'' + ROOT + 'assets/sala-despiece-cerdo.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + ROOT + 'assets/clients-color/carnavi.webp" alt="Carnavi" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Caso de éxito</span>' +
               '<span class="nav__mega-case__title">Dos horas diarias dedicadas al registro manual de incidencias</span>' +
             '</a>' +
-            '<a class="nav__mega-case" href="' + ROOT + 'casos-de-exito/panificadora-alcala/" style="background-image:url(\'' + ROOT + 'assets/panaderia-industrial-hornos.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'casos-de-exito/#panificadora-alcala" style="background-image:url(\'' + ROOT + 'assets/panaderia-industrial-hornos.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + ROOT + 'assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Caso de éxito</span>' +
               '<span class="nav__mega-case__title">De dos plantas a cinco, con el registro todavía en papel</span>' +

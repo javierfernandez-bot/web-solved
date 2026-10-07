@@ -111,12 +111,12 @@
             '<a href="' + ROOT + 'software-calidad/"><b>Qualità e certificazioni</b></a>' +
           '</div>' +
           '<div class="nav__mega-side">' +
-            '<a class="nav__mega-case" href="' + ROOT + 'casi-di-successo/carnavi/" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'casi-di-successo/#carnavi" style="background-image:url(\'' + '/assets/sala-despiece-cerdo.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/carnavi.webp" alt="Carnavi" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Caso di successo</span>' +
               '<span class="nav__mega-case__title">Due ore al giorno dedicate alla registrazione manuale delle anomalie</span>' +
             '</a>' +
-            '<a class="nav__mega-case" href="' + ROOT + 'casi-di-successo/panificadora-alcala/" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
+            '<a class="nav__mega-case" href="' + ROOT + 'casi-di-successo/#panificadora-alcala" style="background-image:url(\'' + '/assets/panaderia-industrial-hornos.webp\')">' +
               '<img class="nav__mega-case__logo" src="' + '/assets/clients-color/panificadora-alcala.webp" alt="Panificadora de Alcalá" width="120" height="46" loading="lazy" decoding="async">' +
               '<span class="nav__mega-case__tag">Caso di successo</span>' +
               '<span class="nav__mega-case__title">Da due stabilimenti a cinque, con la registrazione ancora su carta</span>' +
