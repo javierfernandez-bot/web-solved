@@ -4,7 +4,7 @@
    (build-i18n.mjs) y el del contenido (build-i18n-contenido.mjs)— y si cada
    uno reescribiera los enlaces a su manera, el blog en inglés apuntaría a la
    home en español y nadie lo vería hasta rastrear el sitio entero. */
-import { existsSync, readdirSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { LANGS, RUTAS, SOURCE, traducirRuta } from '../../i18n/config.mjs';
 
@@ -79,8 +79,30 @@ export function aAbsoluta(href, dirEs) {
    blog/page/2/…/7/ y con un solo nivel se quedaba fuera, así que el índice
    traducido enlazaba a siete páginas que no existían.
    Lo usan el build del contenido y translate-contenido.mjs: si los dos no
-   recorrieran lo mismo habría páginas traducidas sin cadenas en la caché. */
+   recorrieran lo mismo habría páginas traducidas sin cadenas en la caché.
+
+   Las páginas puente de artículos fusionados (seo/plan-fusion.md) viven en
+   blog/<slug>/index.html, igual que un post real —el repo no distingue un
+   directorio de otro—, así que sin esto el traductor las trata como
+   contenido: les pone hreflang y un canonical propio en cada idioma, que es
+   justo lo que una página con noindex+refresh no debe llevar. Se excluyen
+   los slugs que seo/redirects.json mapea bajo "blog/…", la misma regla que
+   ya usa build-sitemap.mjs para el mismo problema. */
+function slugsPuente(raiz) {
+  try {
+    const mapa = JSON.parse(readFileSync(path.join(raiz, 'seo/redirects.json'), 'utf8'));
+    return new Set(
+      Object.keys(mapa)
+        .filter((k) => k.startsWith('blog/'))
+        .map((k) => k.slice('blog/'.length))
+    );
+  } catch {
+    return new Set();
+  }
+}
+
 export function paginasContenido(raiz, dirs = ['blog', 'glosario']) {
+  const puente = slugsPuente(raiz);
   const fuera = [];
   const bajar = (rel) => {
     const base = path.join(raiz, rel);
@@ -88,6 +110,7 @@ export function paginasContenido(raiz, dirs = ['blog', 'glosario']) {
     if (existsSync(path.join(base, 'index.html'))) fuera.push(`${rel}/index.html`);
     for (const sub of readdirSync(base, { withFileTypes: true })) {
       if (!sub.isDirectory() || sub.name === 'assets') continue;
+      if (rel === 'blog' && puente.has(sub.name)) continue;
       bajar(path.posix.join(rel, sub.name));
     }
   };

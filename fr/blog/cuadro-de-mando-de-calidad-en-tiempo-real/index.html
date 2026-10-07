@@ -4,7 +4,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<title>Cuadro de mando de calidad en tiempo real · Solved</title>
+<title>Tableau de bord qualité en temps réel · Solved</title>
 <!-- SEO:start -->
 <meta name="description" content="Découvrez comment créer un tableau de bord qualité en temps réel avec des indicateurs qui améliorent les résultats, et une automatisation sans feuilles de calcul.">
 <link rel="canonical" href="https://trysolved.com/fr/blog/cuadro-de-mando-de-calidad-en-tiempo-real/">
@@ -36,55 +36,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Solved">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://trysolved.com/fr/blog/cuadro-de-mando-de-calidad-en-tiempo-real/">
-<meta property="og:title" content="Cuadro de mando de calidad en tiempo real · Solved">
+<meta property="og:title" content="Tableau de bord qualité en temps réel · Solved">
 <meta property="og:description" content="Découvrez comment créer un tableau de bord qualité en temps réel avec des indicateurs qui améliorent les résultats, et une automatisation sans feuilles de calcul.">
 <meta property="og:image" content="https://trysolved.com/blog/assets/811efd37d729-1200.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cuadro de mando de calidad en tiempo real · Solved">
+<meta name="twitter:title" content="Tableau de bord qualité en temps réel · Solved">
 <meta name="twitter:description" content="Découvrez comment créer un tableau de bord qualité en temps réel avec des indicateurs qui améliorent les résultats, et une automatisation sans feuilles de calcul.">
 <meta name="twitter:image" content="https://trysolved.com/blog/assets/811efd37d729-1200.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/fr/blog/cuadro-de-mando-de-calidad-en-tiempo-real/"},"headline":"Tableau de bord qualité en temps réel","description":"Découvrez comment créer un tableau de bord qualité en temps réel avec des indicateurs qui améliorent les résultats, et une automatisation sans feuilles de calcul.","image":["https://trysolved.com/blog/assets/811efd37d729-1200.jpg"],"datePublished":"2026-08-03T00:00:00Z","dateModified":"2026-08-05T10:12:06Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/fr/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Calidad y mejora continua"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://trysolved.com/fr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Tableau de bord qualité en temps réel","item":"https://trysolved.com/fr/blog/cuadro-de-mando-de-calidad-en-tiempo-real/"}]}]}</script>
@@ -93,12 +57,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
-<link rel="stylesheet" href="/solved.css?v=20260910f">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260911e">
+<link rel="stylesheet" href="/solved.css?v=20260911e">
 <!-- Solved Design System — va después de solved.css para que mande -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
-<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
-<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260911e">
+<link rel="stylesheet" href="/ds/site.css?v=20260911e">
+<!-- Sólo las variables de tinte (ds/tint.css), para el banner de producto del blog -->
+<link rel="stylesheet" href="/ds/tint.css?v=20260911e">
 </head>
 <body data-screen-label="Blog · Post">
 
@@ -134,36 +100,36 @@
     <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/811efd37d729-480.avif 480w, /blog/assets/811efd37d729-768.avif 768w, /blog/assets/811efd37d729-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/811efd37d729-480.webp 480w, /blog/assets/811efd37d729-768.webp 768w, /blog/assets/811efd37d729-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/811efd37d729-1200.jpg" width="1200" height="655" alt="Écrans avec graphiques et indicateurs d'un tableau de bord qualité en temps réel" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
 
     <div class="post__body">
-<h2>Cuadro de mando de calidad en tiempo real: toma decisiones antes de que el problema escale</h2>
-<p>En la industria agroalimentaria, la información que llega tarde no sirve. Un <strong>cuadro de mando de calidad</strong> en tiempo real cambia las reglas del juego: en lugar de descubrir una desviación cuando el lote ya ha salido de la planta, la ves en el momento en que ocurre y puedes actuar de inmediato. Si todavía gestionas tus indicadores en hojas de cálculo o a través de informes semanales, este artículo es para ti.</p>
-<h2>Qué debe mostrar un cuadro de mando de calidad</h2>
-<p>Un buen dashboard de calidad no es una pantalla llena de números. Es una herramienta de toma de decisiones. Para que cumpla esa función, debe mostrar exactamente lo que necesita ver un <a href="/fr/blog/kpis-de-calidad/">responsable de calidad</a> de un vistazo, sin tener que cruzar datos de diferentes fuentes.</p>
-<p>Estos son los elementos esenciales que no pueden faltar:</p>
+<h2>Tableau de bord qualité en temps réel : prenez des décisions avant que le problème ne s'aggrave</h2>
+<p>Dans l'industrie agroalimentaire, une information qui arrive trop tard ne sert à rien. Un <strong>tableau de bord qualité</strong> en temps réel change les règles du jeu : au lieu de découvrir un écart une fois le lot déjà sorti de l'usine, vous le voyez au moment où il se produit et pouvez agir immédiatement. Si vous gérez encore vos indicateurs dans des feuilles de calcul ou via des rapports hebdomadaires, cet article est pour vous.</p>
+<h2>Ce qu'un tableau de bord qualité doit afficher</h2>
+<p>Un buen dashboard de calidad no es una pantalla llena de números. Es una herramienta de toma de decisiones. Para que cumpla esa función, debe mostrar exactamente lo que necesita ver un responsable de calidad de un vistazo, sin tener que cruzar datos de diferentes fuentes.</p>
+<p>Voici les éléments essentiels qui ne peuvent pas manquer :</p>
 <ul>
-<li><strong>Estado de los puntos de control críticos (PCC):</strong> si algún parámetro se ha salido de límite, debe ser lo primero que veas, con alerta visual inmediata.</li>
-<li><strong>Resultados de inspecciones y auditorías:</strong> porcentaje de conformidad, incidencias abiertas y su antigüedad.</li>
-<li><strong>Registro de no conformidades:</strong> cuántas hay, en qué área se concentran y cuál es su estado de resolución.</li>
-<li><strong>Trazabilidad de lotes:</strong> capacidad de saber, en segundos, dónde está cada lote y qué controles ha pasado.</li>
-<li><strong>Indicadores de higiene y limpieza:</strong> verificaciones completadas frente a planificadas, resultados de análisis microbiológicos.</li>
-<li><strong>Reclamaciones de cliente:</strong> evolución temporal y categorización por tipo de defecto.</li>
+<li><strong>État des points de contrôle critiques (CCP) :</strong> si un paramètre a dépassé sa limite, cela doit être la première chose que vous voyez, avec une alerte visuelle immédiate.</li>
+<li><strong>Résultats des inspections et des audits :</strong> taux de conformité, incidents ouverts et leur ancienneté.</li>
+<li><strong>Registre des non-conformités :</strong> combien il y en a, dans quelle zone elles se concentrent et quel est leur état de résolution.</li>
+<li><strong>Traçabilité des lots :</strong> la capacité de savoir, en quelques secondes, où se trouve chaque lot et quels contrôles il a passés.</li>
+<li><strong>Indicateurs d'hygiène et de nettoyage :</strong> vérifications réalisées par rapport à celles planifiées, résultats des analyses microbiologiques.</li>
+<li><strong>Réclamations clients :</strong> évolution dans le temps et catégorisation par type de défaut.</li>
 </ul>
-<p>La clave está en que todos estos datos estén centralizados y actualizados en tiempo real, no exportados manualmente cada lunes por la mañana.</p>
-<h2>Indicadores que de verdad mueven la aguja</h2>
-<p>Uno de los errores más comunes al diseñar un dashboard de calidad es incluir demasiados indicadores. Más no siempre es mejor. Los KPIs de calidad en tiempo real que realmente aportan valor son aquellos que están directamente vinculados a riesgos para la seguridad alimentaria o a la satisfacción del cliente.</p>
-<p>Antes de elegir tus indicadores, conviene recordar que el marco legal europeo obliga a los operadores a establecer, aplicar y mantener procedimientos basados en los principios del análisis de peligros, tal y como recoge el <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">Règlement (CE) 852/2004 relatif à l'hygiène des denrées alimentaires</a> (Reglamento [CE] 852/2004, 2004). Esto significa que los indicadores no son opcionales: son la evidencia de que tu sistema funciona.</p>
-<p>Con eso en mente, estos son los KPIs de calidad en tiempo real que más impacto tienen en la operativa:</p>
+<p>La clé est que toutes ces données soient centralisées et mises à jour en temps réel, et non exportées manuellement chaque lundi matin.</p>
+<h2>Les indicateurs qui font vraiment bouger l'aiguille</h2>
+<p>Une des erreurs les plus courantes lors de la conception d'un dashboard qualité est d'y inclure trop d'indicateurs. Plus n'est pas toujours synonyme de mieux. Les KPI qualité en temps réel qui apportent réellement de la valeur sont ceux qui sont directement liés aux risques pour la sécurité alimentaire ou à la satisfaction client.</p>
+<p>Avant de choisir vos indicateurs, il convient de rappeler que le cadre légal européen oblige les opérateurs à établir, appliquer et maintenir des procédures fondées sur les principes de l'analyse des dangers, comme le prévoit le <a href="https://eur-lex.europa.eu/eli/reg/2004/852/oj?locale=es" target="_blank" rel="noopener noreferrer">Règlement (CE) 852/2004 relatif à l'hygiène des denrées alimentaires</a> (Règlement [CE] 852/2004, 2004). Cela signifie que les indicateurs ne sont pas optionnels : ils sont la preuve que votre système fonctionne.</p>
+<p>Dans cet esprit, voici les KPI qualité en temps réel qui ont le plus d'impact sur l'exploitation :</p>
 <ul>
-<li><strong>Tasa de no conformidad por línea o proceso:</strong> te dice dónde se concentran los fallos de forma objetiva.</li>
-<li><strong>Tiempo medio de cierre de incidencias:</strong> un tiempo elevado indica que el sistema de gestión no es ágil.</li>
-<li><strong>Porcentaje de controles completados sobre planificados:</strong> mide la disciplina operativa de los equipos.</li>
-<li><strong>Índice de reclamaciones por cada 100.000 unidades producidas:</strong> es el indicador que más directamente conecta calidad interna con experiencia de cliente.</li>
-<li><strong>Evolución de resultados analíticos:</strong> tendencias microbiológicas o fisicoquímicas que pueden anticipar problemas antes de que se conviertan en alertas.</li>
-<li><strong>Eficacia de acciones correctoras:</strong> porcentaje de acciones correctoras que resuelven el problema sin reincidencia.</li>
+<li><strong>Taux de non-conformité par ligne ou par processus :</strong> vous indique où se concentrent objectivement les défaillances.</li>
+<li><strong>Délai moyen de clôture des incidents :</strong> un délai élevé indique que le système de gestion n'est pas agile.</li>
+<li><strong>Pourcentage de contrôles réalisés par rapport à ceux planifiés :</strong> mesure la discipline opérationnelle des équipes.</li>
+<li><strong>Taux de réclamations pour 100 000 unités produites :</strong> c'est l'indicateur qui relie le plus directement la qualité interne à l'expérience client.</li>
+<li><strong>Évolution des résultats analytiques :</strong> tendances microbiologiques ou physico-chimiques pouvant anticiper des problèmes avant qu'ils ne deviennent des alertes.</li>
+<li><strong>Efficacité des actions correctives :</strong> pourcentage d'actions correctives qui résolvent le problème sans récidive.</li>
 </ul>
-<p>Un dashboard eficaz no solo muestra el dato puntual, sino que lo pone en contexto: comparado con el periodo anterior, con el objetivo establecido y con la tendencia de las últimas semanas.</p>
-<h2>Del registro al KPI sin hojas de cálculo</h2>
-<p>El gran cuello de botella en la mayoría de las empresas agroalimentarias no es la falta de datos, sino la dificultad de convertirlos en información útil. El ciclo habitual suele ser: el operario registra en papel o en un Excel, alguien lo transcribe a otro documento, el responsable de calidad consolida y calcula manualmente, y el informe llega dos días después de que el problema ocurrió.</p>
-<p>Este modelo tiene tres problemas estructurales: introduce errores en cada traspaso, consume horas de trabajo que podrían dedicarse a analizar en lugar de a copiar, y genera información siempre en pasado.</p>
+<p>Un tableau de bord efficace n'affiche pas seulement la donnée ponctuelle, mais la met en contexte : comparée à la période précédente, à l'objectif fixé et à la tendance des dernières semaines.</p>
+<h2>De l'enregistrement au KPI sans feuilles de calcul</h2>
+<p>Le principal goulot d'étranglement dans la plupart des entreprises agroalimentaires n'est pas le manque de données, mais la difficulté à les transformer en information utile. Le cycle habituel est le suivant : l'opérateur enregistre sur papier ou dans un fichier Excel, quelqu'un le retranscrit dans un autre document, le responsable qualité consolide et calcule manuellement, et le rapport arrive deux jours après que le problème s'est produit.</p>
+<p>Ce modèle présente trois problèmes structurels : il introduit des erreurs à chaque transfert, il consomme des heures de travail qui pourraient être consacrées à l'analyse plutôt qu'à la copie, et il génère toujours une information passée.</p>
 
       <!-- banner-medio:inicio -->
       <div class="blog-banner" data-modulo="kpis">
@@ -179,19 +145,19 @@
       <!-- banner-medio:fin -->
 
       
-<p>La alternativa es <a href="/fr/blog/appcc-digital-como-pasar-del-papel-al-software-en-tu-empresa/">digitalizar</a> el registro en el origen. Cuando el dato se introduce directamente en el sistema —desde una tablet en línea, desde un sensor conectado o desde un equipo de medición integrado— el KPI se calcula automáticamente y el dashboard se actualiza al instante. No hay intermediarios, no hay esperas y no hay errores de transcripción.</p>
-<p>Además, un sistema digital permite configurar alertas automáticas: si una temperatura supera el límite crítico, el responsable recibe una notificación en tiempo real, no cuando hace la ronda de revisión de datos. Esto es especialmente relevante en el contexto de la <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">legislación alimentaria general europea</a> (Reglamento [CE] 178/2002, 2002), que establece la obligación de los operadores de retirar del mercado cualquier alimento que no sea seguro y de notificarlo a las autoridades competentes. Detectar antes implica reaccionar antes y, en el mejor de los casos, evitar que el problema llegue al consumidor.</p>
-<h2>Cómo montar dashboards automáticos en Solved</h2>
-<p>Solved está diseñado específicamente para que los responsables de calidad en la industria agroalimentaria tengan su cuadro de mando operativo desde el primer día, sin necesidad de programar ni de depender del departamento de IT.</p>
-<p>El proceso para poner en marcha un <a href="/fr/tableaux-de-bord/">dashboard de calidad en Solved</a> sigue tres pasos muy sencillos:</p>
+<p>L'alternative est <a href="/fr/blog/appcc-digital-como-pasar-del-papel-al-software-en-tu-empresa/">digitaliser</a> l'enregistrement à la source. Lorsque la donnée est saisie directement dans le système —depuis une tablette en ligne, depuis un capteur connecté ou depuis un équipement de mesure intégré— le KPI se calcule automatiquement et le tableau de bord se met à jour instantanément. Pas d'intermédiaires, pas d'attente et pas d'erreurs de retranscription.</p>
+<p>De plus, un système numérique permet de configurer des alertes automatiques : si une température dépasse la limite critique, le responsable reçoit une notification en temps réel, et non lors de sa tournée de vérification des données. Ceci est particulièrement pertinent dans le contexte de la <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">législation alimentaire générale européenne</a> (Règlement [CE] 178/2002, 2002), qui établit l'obligation pour les exploitants de retirer du marché tout aliment qui ne serait pas sûr et de le notifier aux autorités compétentes. Détecter plus tôt implique de réagir plus tôt et, dans le meilleur des cas, d'éviter que le problème n'atteigne le consommateur.</p>
+<h2>Comment mettre en place des tableaux de bord automatiques dans Solved</h2>
+<p>Solved est conçu spécifiquement pour que les responsables qualité de l'industrie agroalimentaire disposent de leur tableau de bord opérationnel dès le premier jour, sans avoir besoin de programmer ni de dépendre du service informatique.</p>
+<p>Le processus de mise en place d'un <a href="/fr/tableaux-de-bord/">tableau de bord qualité dans Solved</a> suit trois étapes très simples :</p>
 <ol>
-<li><strong>Digitaliza tus formularios de control:</strong> Solved incluye una biblioteca de formularios estándar adaptados al sector —controles de PCC, verificaciones de limpieza, inspecciones de producto, auditorías internas— que puedes personalizar según tu proceso. Los operarios los completan desde cualquier dispositivo, sin papel.</li>
-<li><strong>Define tus indicadores:</strong> en el panel de configuración seleccionas qué métricas quieres monitorizar, estableces los objetivos y los umbrales de alerta. Solved calcula automáticamente los KPIs a partir de los registros introducidos, sin fórmulas manuales.</li>
-<li><strong>Activa la <a href="/fr/blog/automatizacion-de-reportes-de-calidad/">automatisation des rapports qualité</a>:</strong> programa la generación automática de informes diarios, semanales o mensuales que se envían directamente a las personas que los necesitan. Sin exportaciones manuales, sin correos con adjuntos de Excel.</li>
+<li><strong>Digitalisez vos formulaires de contrôle :</strong> Solved inclut une bibliothèque de formulaires standards adaptés au secteur —contrôles de CCP, vérifications de nettoyage, inspections de produit, audits internes— que vous pouvez personnaliser selon votre process. Les opérateurs les complètent depuis n'importe quel appareil, sans papier.</li>
+<li><strong>Définissez vos indicateurs :</strong> dans le panneau de configuration, vous sélectionnez les indicateurs à suivre, vous définissez les objectifs et les seuils d'alerte. Solved calcule automatiquement les KPI à partir des enregistrements saisis, sans formules manuelles.</li>
+<li><strong>Activa la automatización de reportes de calidad:</strong> programmez la génération automatique de rapports quotidiens, hebdomadaires ou mensuels, envoyés directement aux personnes qui en ont besoin. Sans export manuel, sans e-mails avec pièces jointes Excel.</li>
 </ol>
-<p>El resultado es un dashboard que se actualiza en tiempo real cada vez que alguien introduce un dato, con visualización clara de semáforos de estado, gráficas de tendencia y alertas configurables. Los responsables de calidad pueden ver de un vistazo si la operativa del día está dentro de parámetros o si hay algo que requiere atención inmediata.</p>
-<p>Además, Solved centraliza toda la <a href="/fr/blog/gestion-documental-calidad-alimentaria-guia-practica-2026/">documentation</a> asociada: si un KPI está en rojo, puedes acceder directamente al registro que lo ha generado, al historial del punto de control y a las acciones correctoras abiertas. Todo conectado, todo trazable.</p>
-<p>Si quieres dejar de gestionar la calidad mirando al retrovisor y pasar a tomar decisiones con información del momento, el cuadro de mando de calidad en tiempo real de Solved es el punto de partida. Solicita una demo y ve cómo funciona aplicado a tu proceso real.</p>
+<p>Le résultat est un tableau de bord qui se met à jour en temps réel chaque fois qu'une donnée est saisie, avec une visualisation claire des indicateurs d'état, des graphiques de tendance et des alertes configurables. Les responsables qualité peuvent voir d'un coup d'œil si l'activité du jour est dans les paramètres ou si quelque chose nécessite une attention immédiate.</p>
+<p>De plus, Solved centralise toute la <a href="/fr/blog/gestion-documental-calidad-alimentaria-guia-practica-2026/">documentation</a> associée : si un KPI est au rouge, vous pouvez accéder directement à l'enregistrement qui l'a généré, à l'historique du point de contrôle et aux actions correctives ouvertes. Tout est connecté, tout est traçable.</p>
+<p>Si vous voulez arrêter de gérer la qualité en regardant dans le rétroviseur et passer à des décisions basées sur l'information du moment, le tableau de bord qualité en temps réel de Solved est le point de départ. Demandez une démo et voyez comment il fonctionne appliqué à votre processus réel.</p>
 <h2>Références</h2>
 <ul>
 <li>Règlement (CE) n° 178/2002 du Parlement européen et du Conseil du 28 janvier 2002 établissant les principes généraux et les prescriptions générales de la législation alimentaire. (2002). <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es</a></li>
@@ -229,30 +195,30 @@
       <h2>Poursuivre la lecture</h2>
       <div class="blog-grid blog-grid--related">
         <article class="blog-card">
-        <a class="blog-card__media" href="/fr/blog/gestion-de-reclamaciones-que-fideliza-clientes/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/52766d0a5b8f-480.avif 480w, /blog/assets/52766d0a5b8f-768.avif 768w, /blog/assets/52766d0a5b8f-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/52766d0a5b8f-480.webp 480w, /blog/assets/52766d0a5b8f-768.webp 768w, /blog/assets/52766d0a5b8f-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/52766d0a5b8f-1200.jpg" width="1200" height="655" alt="Responsable qualité gérant les réclamations depuis son ordinateur" loading="lazy" decoding="async"></picture></a>
+        <a class="blog-card__media" href="/fr/blog/compartir-datos-de-calidad-con-tus-clientes/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/59cebd07e68e-480.avif 480w, /blog/assets/59cebd07e68e-768.avif 768w, /blog/assets/59cebd07e68e-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/59cebd07e68e-480.webp 480w, /blog/assets/59cebd07e68e-768.webp 768w, /blog/assets/59cebd07e68e-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/59cebd07e68e-1200.jpg" width="1200" height="670" alt="Compartir datos de calidad con tus clientes" loading="lazy" decoding="async"></picture></a>
         <div class="blog-card__body">
           <span class="blog-card__cat">Qualité et amélioration continue</span>
-          <h2 class="blog-card__title"><a href="/fr/blog/gestion-de-reclamaciones-que-fideliza-clientes/">Gestion des réclamations qui fidélise les clients</a></h2>
-          <p class="blog-card__excerpt">Améliorez votre gestion des réclamations avec un système qui fidélise les clients, enregistre chaque étape et relie les non-conformités pour optimiser votre service.</p>
-          <p class="blog-card__meta"><time datetime="2026-08-01T00:00:00Z">1er août 2026</time></p>
+          <h2 class="blog-card__title"><a href="/fr/blog/compartir-datos-de-calidad-con-tus-clientes/">Compartir datos de calidad con tus clientes</a></h2>
+          <p class="blog-card__excerpt">Aprende a compartir datos de calidad con clientes de forma segura. Transparencia en certificados, trazabilidad y auditorías para cerrar más ventas.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-07T00:00:00Z">7 de octubre de 2026</time></p>
         </div>
       </article>
         <article class="blog-card">
-        <a class="blog-card__media" href="/fr/blog/ficha-tecnica-de-producto-sin-fallos/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/cb4f6713c6a7-480.avif 480w, /blog/assets/cb4f6713c6a7-768.avif 768w, /blog/assets/cb4f6713c6a7-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/cb4f6713c6a7-480.webp 480w, /blog/assets/cb4f6713c6a7-768.webp 768w, /blog/assets/cb4f6713c6a7-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/cb4f6713c6a7-1200.jpg" width="1200" height="655" alt="Mains gantées tenant une tablette avec la fiche technique produit" loading="lazy" decoding="async"></picture></a>
+        <a class="blog-card__media" href="/fr/blog/notificaciones-y-alertas-en-un-software-de-calidad/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/33f504dbf1d4-480.avif 480w, /blog/assets/33f504dbf1d4-768.avif 768w, /blog/assets/33f504dbf1d4-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/33f504dbf1d4-480.webp 480w, /blog/assets/33f504dbf1d4-768.webp 768w, /blog/assets/33f504dbf1d4-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/33f504dbf1d4-1200.jpg" width="1200" height="670" alt="Notificaciones y alertas en un software de calidad" loading="lazy" decoding="async"></picture></a>
         <div class="blog-card__body">
           <span class="blog-card__cat">Qualité et amélioration continue</span>
-          <h2 class="blog-card__title"><a href="/fr/blog/ficha-tecnica-de-producto-sin-fallos/">Fiche technique produit sans erreurs</a></h2>
-          <p class="blog-card__excerpt">Découvrez ce que doit inclure une fiche technique produit, comment éviter les erreurs en audit et la maintenir correctement à jour.</p>
-          <p class="blog-card__meta"><time datetime="2026-07-30T00:00:00Z">30 juillet 2026</time></p>
+          <h2 class="blog-card__title"><a href="/fr/blog/notificaciones-y-alertas-en-un-software-de-calidad/">Notificaciones y alertas en un software de calidad</a></h2>
+          <p class="blog-card__excerpt">Descubre cómo implementar notificaciones y alertas en un software de calidad para evitar pérdidas y mejorar la eficiencia operativa sin saturar a tu equipo.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-06T00:00:00Z">6 de octubre de 2026</time></p>
         </div>
       </article>
         <article class="blog-card">
-        <a class="blog-card__media" href="/fr/blog/analisis-de-causa-raiz-que-evita-recaidas/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/1939735a5b1e-480.avif 480w, /blog/assets/1939735a5b1e-768.avif 768w, /blog/assets/1939735a5b1e-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/1939735a5b1e-480.webp 480w, /blog/assets/1939735a5b1e-768.webp 768w, /blog/assets/1939735a5b1e-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/1939735a5b1e-1200.jpg" width="1200" height="655" alt="Équipe qualité en train de travailler sur une analyse des causes racines devant un tableau blanc" loading="lazy" decoding="async"></picture></a>
+        <a class="blog-card__media" href="/fr/blog/app-movil-de-un-software-de-calidad-que-debe-permitir/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/e8de9d167cbc-480.avif 480w, /blog/assets/e8de9d167cbc-768.avif 768w, /blog/assets/e8de9d167cbc-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/e8de9d167cbc-480.webp 480w, /blog/assets/e8de9d167cbc-768.webp 768w, /blog/assets/e8de9d167cbc-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/e8de9d167cbc-1200.jpg" width="1200" height="670" alt="App móvil de un software de calidad: qué debe permitir" loading="lazy" decoding="async"></picture></a>
         <div class="blog-card__body">
           <span class="blog-card__cat">Qualité et amélioration continue</span>
-          <h2 class="blog-card__title"><a href="/fr/blog/analisis-de-causa-raiz-que-evita-recaidas/">Analyse des causes racines qui évite les récidives</a></h2>
-          <p class="blog-card__excerpt">Descubre qué es el análisis de causa raíz y cómo aplicarlo para evitar recaídas en tus procesos. Métodos, ejemplos y herramientas prácticas.</p>
-          <p class="blog-card__meta"><time datetime="2026-07-27T00:00:00Z">27 juillet 2026</time></p>
+          <h2 class="blog-card__title"><a href="/fr/blog/app-movil-de-un-software-de-calidad-que-debe-permitir/">App móvil de un software de calidad: qué debe permitir</a></h2>
+          <p class="blog-card__excerpt">Descubre qué funciones debe permitir una app móvil de un software de calidad para responsables de producción y calidad en planta.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-05T00:00:00Z">5 de octubre de 2026</time></p>
         </div>
       </article>
       </div>
@@ -261,6 +227,6 @@
 </article>
 
 <div id="footer"></div>
-<script src="/fr/chrome.js?v=20261007a"></script>
+<script src="/fr/chrome.js?v=20260911e"></script>
 
 </body></html>

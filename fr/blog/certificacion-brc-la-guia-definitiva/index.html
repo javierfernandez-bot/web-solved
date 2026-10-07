@@ -36,42 +36,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="article">
@@ -93,12 +57,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260909a">
-<link rel="stylesheet" href="/solved.css?v=20260910f">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260911e">
+<link rel="stylesheet" href="/solved.css?v=20260911e">
 <!-- Solved Design System — va después de solved.css para que mande -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
-<link rel="stylesheet" href="/ds/tokens.css?v=20260928a">
-<link rel="stylesheet" href="/ds/site.css?v=20260911k">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260911e">
+<link rel="stylesheet" href="/ds/site.css?v=20260911e">
+<!-- Sólo las variables de tinte (ds/tint.css), para el banner de producto del blog -->
+<link rel="stylesheet" href="/ds/tint.css?v=20260911e">
 </head>
 <body data-screen-label="Blog · Post">
 
@@ -119,14 +85,14 @@
     </header>
 
     <!-- banner-arriba:inicio -->
-    <div class="blog-banner" data-modulo="registros">
+    <div class="blog-banner" data-modulo="marca">
     <div class="blog-banner__in">
       <div class="blog-banner__icon-wrap">
         <span class="blog-banner__halo" aria-hidden="true"></span>
-        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/lista.svg')"></i></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/seguridad.svg')"></i></span>
       </div>
-      <p class="blog-banner__text"><span class="blog-banner__title">Préparez vos audits sans course de dernière minute</span>Checklists, preuves et constats organisés pour ISO 9001, IFS, BRCGS ou FSSC 22000.</p>
-      <a class="btn btn--primary blog-banner__btn" href="/fr/registres-et-controles/">Voir les audits</a>
+      <p class="blog-banner__text"><span class="blog-banner__title">Un seul système pour toutes vos certifications</span>IFS, BRC, ISO 9001 et ISO 22000 sur la même base d'enregistrements, avec les preuves prêtes avant l'audit.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/software-calidad/">Voir Solved pour la qualité et les certifications</a>
     </div>
   </div>
     <!-- banner-arriba:fin -->
@@ -139,7 +105,7 @@
 <h2>Qu'est-ce que la certification BRCGS et à qui s'applique-t-elle</h2>
 <p>La <strong>norme BRCGS</strong> (auparavant connue simplement sous le nom de BRC) est une norme mondiale de sécurité alimentaire développée par le <a href="https://www.brcgs.com/" target="_blank" rel="noopener noreferrer">BRCGS (British Retail Consortium Global Standards)</a> (BRCGS, s.d.). Elle est née au Royaume-Uni à la fin des années quatre-vingt-dix pour répondre au besoin des grands distributeurs d'évaluer la sécurité et la qualité de leurs fournisseurs de façon homogène, et depuis, elle est devenue une référence mondiale reconnue par la <a href="https://mygfsi.com/" target="_blank" rel="noopener noreferrer">Global Food Safety Initiative (GFSI)</a> (GFSI, s.d.).</p>
 <p>La certification s'applique principalement aux fabricants et transformateurs d'aliments qui approvisionnent de grandes chaînes de distribution, des supermarchés, des opérateurs de foodservice ou tout client exigeant des garanties formelles sur la gestion de la sécurité alimentaire. Des entreprises d'autres maillons de la chaîne peuvent également être certifiées grâce à des variantes de la norme, comme BRCGS Packaging, BRCGS Storage &amp; Distribution ou BRCGS Agents &amp; Brokers. Dans cet article, nous nous concentrons sur la version la plus répandue : <strong>BRC Food</strong>, actuellement dans sa 9ᵉ édition.</p>
-<p>Si vous souhaitez comprendre comment cette norme s'intègre dans l'écosystème plus large des normes de qualité et de sécurité alimentaire, nous vous recommandons de lire notre article sur <a href="/fr/blog/normas-y-estandares-de-calidad/">normes et standards de qualité</a> dans le secteur agroalimentaire.</p>
+<p>Si quieres entender cómo encaja esta norma dentro del ecosistema más amplio de estándares de calidad y seguridad alimentaria, te recomendamos que leas nuestro artículo sobre normas y estándares de calidad en el sector agroalimentario.</p>
 <h2>Structure et exigences de la norme BRCGS</h2>
 <p>La norme BRC Food est organisée autour d'une série de sections qui couvrent tous les aspects critiques de la production alimentaire sûre. Bien connaître son architecture est la première étape pour aborder les <strong>exigences BRC</strong> de façon structurée.</p>
 <p>La norme s'articule autour des blocs principaux suivants :</p>
@@ -161,20 +127,20 @@
 <p><strong>2. Assurez la documentation et les enregistrements.</strong> La norme exige <a href="/fr/blog/documentar-incidencias-evidencias-digitales/">preuves</a> que les processus soient gérés correctement et de manière systématique. Cela inclut des procédures actualisées, des plans HACCP validés, des enregistrements de contrôle des processus, des étalonnages, des analyses, des audits internes, des formations et des actions correctives. Sans enregistrements, il n'y a pas de preuve.</p>
 
       <!-- banner-medio:inicio -->
-      <div class="blog-banner" data-modulo="registros">
+      <div class="blog-banner" data-modulo="marca">
     <div class="blog-banner__in">
       <div class="blog-banner__icon-wrap">
         <span class="blog-banner__halo" aria-hidden="true"></span>
-        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/lista.svg')"></i></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/seguridad.svg')"></i></span>
       </div>
-      <p class="blog-banner__text"><span class="blog-banner__title">Préparez vos audits sans course de dernière minute</span>Checklists, preuves et constats organisés pour ISO 9001, IFS, BRCGS ou FSSC 22000.</p>
-      <a class="btn btn--primary blog-banner__btn" href="/fr/registres-et-controles/">Voir les audits</a>
+      <p class="blog-banner__text"><span class="blog-banner__title">Un seul système pour toutes vos certifications</span>IFS, BRC, ISO 9001 et ISO 22000 sur la même base d'enregistrements, avec les preuves prêtes avant l'audit.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/software-calidad/">Voir Solved pour la qualité et les certifications</a>
     </div>
   </div>
       <!-- banner-medio:fin -->
 
       
-<p><strong>3. Réalisez des audits internes périodiques.</strong> Les audits internes sont une exigence explicite de la norme et, de plus, constituent le meilleur outil pour détecter les écarts avant que l'auditeur externe ne les trouve. Vous pouvez approfondir la structuration de ce processus dans notre article sur <a href="/fr/blog/auditoria-iso-9001/">audit ISO 9001</a>, dont les principes d'audit sont parfaitement transposables.</p>
+<p><strong>3. Réalisez des audits internes périodiques.</strong> Las auditorías internas son un requisito explícito de la norma y, además, son la mejor herramienta para detectar desviaciones antes de que las encuentre el auditor externo. Puedes ampliar información sobre cómo estructurar este proceso en nuestro artículo sobre auditoría ISO 9001, cuyos principios de auditoría son perfectamente extrapolables.</p>
 <p><strong>4. Impliquez la direction et tous les services.</strong> La certification BRC n'est pas seulement la responsabilité du service qualité. La production, la maintenance, la logistique, les achats et les ressources humaines ont des rôles actifs. La direction doit démontrer un leadership visible et engagé.</p>
 <p><strong>5. Gérez les non-conformités avec rigueur.</strong> Chaque écart détecté —aussi bien lors des audits internes que dans le quotidien— doit être traité au moyen d'un processus formel d'analyse de cause racine et d'action corrective. L'historique des non-conformités et leur résolution est l'un des éléments que les auditeurs externes analysent le plus attentivement.</p>
 <p><strong>6. Préparez l'équipe pour le jour de l'audit.</strong> Le personnel doit connaître le système, savoir répondre aux questions sur ses processus et avoir un accès rapide aux enregistrements qui le concernent. La formation et la communication interne sont aussi importantes que la documentation.</p>
@@ -203,18 +169,18 @@
         <li><a href="/fr/glossaire/analisis-de-causa-raiz/">Analyse de cause racine</a></li>
         <li><a href="/fr/glossaire/seguridad-alimentaria/">Sécurité alimentaire</a></li>
         <li><a href="/fr/glossaire/gestion-documental/">Gestion documentaire</a></li>
-        <li><a href="/fr/glossaire/fssc-22000/">FSSC 22000</a></li>
+        <li><a href="/fr/glossaire/alergenos/">Allergènes</a></li>
       </ul>
     </aside>
 
-    <div class="blog-banner" data-modulo="registros">
+    <div class="blog-banner" data-modulo="marca">
     <div class="blog-banner__in">
       <div class="blog-banner__icon-wrap">
         <span class="blog-banner__halo" aria-hidden="true"></span>
-        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/lista.svg')"></i></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/seguridad.svg')"></i></span>
       </div>
-      <p class="blog-banner__text"><span class="blog-banner__title">Préparez vos audits sans course de dernière minute</span>Checklists, preuves et constats organisés pour ISO 9001, IFS, BRCGS ou FSSC 22000.</p>
-      <a class="btn btn--primary blog-banner__btn" href="/fr/registres-et-controles/">Voir les audits</a>
+      <p class="blog-banner__text"><span class="blog-banner__title">Un seul système pour toutes vos certifications</span>IFS, BRC, ISO 9001 et ISO 22000 sur la même base d'enregistrements, avec les preuves prêtes avant l'audit.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/software-calidad/">Voir Solved pour la qualité et les certifications</a>
     </div>
   </div>
     <!-- enlazado:fin -->
@@ -227,30 +193,30 @@
       <h2>Poursuivre la lecture</h2>
       <div class="blog-grid blog-grid--related">
         <article class="blog-card">
-        <a class="blog-card__media" href="/fr/blog/auditoria-interna-de-calidad-sin-sustos/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/f264648cdcb7-480.avif 480w, /blog/assets/f264648cdcb7-768.avif 768w, /blog/assets/f264648cdcb7-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/f264648cdcb7-480.webp 480w, /blog/assets/f264648cdcb7-768.webp 768w, /blog/assets/f264648cdcb7-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/f264648cdcb7-1200.jpg" width="1200" height="655" alt="Auditeurs examinant une ligne de production avec un porte-bloc pendant un audit interne qualité" loading="lazy" decoding="async"></picture></a>
+        <a class="blog-card__media" href="/fr/blog/que-debe-exportar-tu-software-para-auditorias-externas/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/a69c869760c1-480.avif 480w, /blog/assets/a69c869760c1-768.avif 768w, /blog/assets/a69c869760c1-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/a69c869760c1-480.webp 480w, /blog/assets/a69c869760c1-768.webp 768w, /blog/assets/a69c869760c1-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/a69c869760c1-1200.jpg" width="1200" height="670" alt="Qué debe exportar tu software para auditorías externas" loading="lazy" decoding="async"></picture></a>
         <div class="blog-card__body">
           <span class="blog-card__cat">Audits et certifications</span>
-          <h2 class="blog-card__title"><a href="/fr/blog/auditoria-interna-de-calidad-sin-sustos/">Audit interne qualité sans mauvaises surprises</a></h2>
-          <p class="blog-card__excerpt">Découvrez comment réaliser un audit interne qualité efficace. Étapes, checklists et gestion des constats pour améliorer votre système.</p>
-          <p class="blog-card__meta"><time datetime="2026-07-29T00:00:00Z">29 juillet 2026</time></p>
+          <h2 class="blog-card__title"><a href="/fr/blog/que-debe-exportar-tu-software-para-auditorias-externas/">Qué debe exportar tu software para auditorías externas</a></h2>
+          <p class="blog-card__excerpt">Descubre qué informes para auditorías externas de calidad necesita exportar tu software, formatos PDF, Excel y trazas certificadas.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-04T00:00:00Z">4 de octubre de 2026</time></p>
         </div>
       </article>
         <article class="blog-card">
-        <a class="blog-card__media" href="/fr/blog/certificacion-ifs-food-guia-esencial/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/77aa5420999a-480.avif 480w, /blog/assets/77aa5420999a-768.avif 768w, /blog/assets/77aa5420999a-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/77aa5420999a-480.webp 480w, /blog/assets/77aa5420999a-768.webp 768w, /blog/assets/77aa5420999a-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/77aa5420999a-1200.jpg" width="1200" height="655" alt="Jeune femme assise par terre consultant des informations, image illustrative de l'article sur la certification IFS Food" loading="lazy" decoding="async"></picture></a>
+        <a class="blog-card__media" href="/fr/blog/ifs-logistics-que-es-y-a-quien-exige-certificarse/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/c25cb4204c8d-480.avif 480w, /blog/assets/c25cb4204c8d-768.avif 768w, /blog/assets/c25cb4204c8d-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/c25cb4204c8d-480.webp 480w, /blog/assets/c25cb4204c8d-768.webp 768w, /blog/assets/c25cb4204c8d-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/c25cb4204c8d-1200.jpg" width="1200" height="670" alt="IFS Logistics: qué es y a quién exige certificarse" loading="lazy" decoding="async"></picture></a>
         <div class="blog-card__body">
           <span class="blog-card__cat">Audits et certifications</span>
-          <h2 class="blog-card__title"><a href="/fr/blog/certificacion-ifs-food-guia-esencial/">Certification IFS Food, guide essentiel</a></h2>
-          <p class="blog-card__excerpt">Découvrez ce qu'est la certification IFS Food, ses exigences, sa structure et comment préparer votre audit avec des preuves et des enregistrements complets.</p>
-          <p class="blog-card__meta"><time datetime="2026-07-25T00:00:00Z">25 juillet 2026</time></p>
+          <h2 class="blog-card__title"><a href="/fr/blog/ifs-logistics-que-es-y-a-quien-exige-certificarse/">IFS Logistics: qué es y a quién exige certificarse</a></h2>
+          <p class="blog-card__excerpt">Descubre qué es IFS Logistics, quién debe certificarse y los requisitos clave de trazabilidad, temperatura y gestión de incidencias en la cadena de suministro alimentario.</p>
+          <p class="blog-card__meta"><time datetime="2026-09-13T00:00:00Z">13 de septiembre de 2026</time></p>
         </div>
       </article>
         <article class="blog-card">
-        <a class="blog-card__media" href="/fr/blog/iso-22000-la-guia-practica-y-definitiva/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/92716c713f30-480.avif 480w, /blog/assets/92716c713f30-768.avif 768w, /blog/assets/92716c713f30-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/92716c713f30-480.webp 480w, /blog/assets/92716c713f30-768.webp 768w, /blog/assets/92716c713f30-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/92716c713f30-1200.jpg" width="1200" height="655" alt="Technicien avec la documentation ISO 22000 face à une ligne d'embouteillage" loading="lazy" decoding="async"></picture></a>
+        <a class="blog-card__media" href="/fr/blog/fssc-22000-que-es-y-como-obtener-la-certificacion/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/a30a3973b634-480.avif 480w, /blog/assets/a30a3973b634-768.avif 768w, /blog/assets/a30a3973b634-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/a30a3973b634-480.webp 480w, /blog/assets/a30a3973b634-768.webp 768w, /blog/assets/a30a3973b634-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/a30a3973b634-1200.jpg" width="1200" height="670" alt="FSSC 22000: qué es y cómo obtener la certificación" loading="lazy" decoding="async"></picture></a>
         <div class="blog-card__body">
           <span class="blog-card__cat">Audits et certifications</span>
-          <h2 class="blog-card__title"><a href="/fr/blog/iso-22000-la-guia-practica-y-definitiva/">ISO 22000, le guide pratique et définitif</a></h2>
-          <p class="blog-card__excerpt">ISO 22000 est la norme internationale de sécurité alimentaire. Découvrez ce qu'elle est, ses exigences clés, ses différences avec l'HACCP et l'ISO 9001, et comment la mettre en œuvre.</p>
-          <p class="blog-card__meta"><time datetime="2026-07-23T00:00:00Z">23 juillet 2026</time></p>
+          <h2 class="blog-card__title"><a href="/fr/blog/fssc-22000-que-es-y-como-obtener-la-certificacion/">FSSC 22000: qué es y cómo obtener la certificación</a></h2>
+          <p class="blog-card__excerpt">Descubre qué es FSSC 22000, cómo obtener esta certificación reconocida por GFSI y los requisitos clave para superar la auditoría.</p>
+          <p class="blog-card__meta"><time datetime="2026-08-20T00:00:00Z">20 de agosto de 2026</time></p>
         </div>
       </article>
       </div>
@@ -259,6 +225,6 @@
 </article>
 
 <div id="footer"></div>
-<script src="/fr/chrome.js?v=20261007a"></script>
+<script src="/fr/chrome.js?v=20260911e"></script>
 
 </body></html>

@@ -43,7 +43,19 @@ entries.push({
 // (imágenes) y blog/page/ (paginación del índice: /blog/page/2/…), que nunca
 // ha estado en el sitemap y se deja igual para no cambiar lo que ya rastrea
 // Google. Los posts se alcanzan igual desde el índice y desde el sitemap.
-const EXCLUIDAS = new Set(['assets', 'page']);
+//
+// Las páginas puente de artículos fusionados (seo/plan-fusion.md) viven en
+// blog/<slug>/index.html, igual que un post real, así que el escaneo por
+// disco no las distingue solo: se excluyen los slugs que seo/redirects.json
+// mapea bajo "blog/…". Sin esto, build:sitemap mete la página puente
+// fusionada en el sitemap como si fuera el post.
+const redirectsMap = JSON.parse(await fs.readFile('seo/redirects.json', 'utf8'));
+const EXCLUIDAS = new Set([
+  'assets', 'page',
+  ...Object.keys(redirectsMap)
+    .filter(k => k.startsWith('blog/'))
+    .map(k => k.slice('blog/'.length)),
+]);
 const dirs = (await fs.readdir('blog', { withFileTypes: true }))
   .filter(e => e.isDirectory() && !EXCLUIDAS.has(e.name))
   .map(e => e.name)

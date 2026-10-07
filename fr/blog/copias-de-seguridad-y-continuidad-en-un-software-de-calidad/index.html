@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<title>Copias de seguridad y continuidad en un software de calidad · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Copias de seguridad automáticas y plan de continuidad para tu software de calidad. Evita pérdidas críticas en auditorías y producción.">
+<link rel="canonical" href="https://trysolved.com/fr/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="x-default" href="https://trysolved.com/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="es" href="https://trysolved.com/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="en" href="https://trysolved.com/en/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="fr" href="https://trysolved.com/fr/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="it" href="https://trysolved.com/it/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="de" href="https://trysolved.com/de/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<link rel="alternate" hreflang="pt-PT" href="https://trysolved.com/pt/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1E6BFF">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Solved">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://trysolved.com/fr/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/">
+<meta property="og:title" content="Copias de seguridad y continuidad en un software de calidad · Solved">
+<meta property="og:description" content="Copias de seguridad automáticas y plan de continuidad para tu software de calidad. Evita pérdidas críticas en auditorías y producción.">
+<meta property="og:image" content="https://trysolved.com/blog/assets/f70332607945-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Copias de seguridad y continuidad en un software de calidad · Solved">
+<meta name="twitter:description" content="Copias de seguridad automáticas y plan de continuidad para tu software de calidad. Evita pérdidas críticas en auditorías y producción.">
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/f70332607945-1200.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/fr/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/"},"headline":"Copias de seguridad y continuidad en un software de calidad","description":"Copias de seguridad automáticas y plan de continuidad para tu software de calidad. Evita pérdidas críticas en auditorías y producción.","image":["https://trysolved.com/blog/assets/f70332607945-1200.jpg"],"datePublished":"2026-10-03T00:00:00Z","dateModified":"2026-10-03T00:00:00Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/fr/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Calidad y mejora continua"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://trysolved.com/fr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/fr/blog/"},{"@type":"ListItem","position":3,"name":"Copias de seguridad y continuidad en un software de calidad","item":"https://trysolved.com/fr/blog/copias-de-seguridad-y-continuidad-en-un-software-de-calidad/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260911e">
+<link rel="stylesheet" href="/solved.css?v=20260911e">
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/ds/tokens.css?v=20260911e">
+<link rel="stylesheet" href="/ds/site.css?v=20260911e">
+<!-- Sólo las variables de tinte (ds/tint.css), para el banner de producto del blog -->
+<link rel="stylesheet" href="/ds/tint.css?v=20260911e">
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Fil d'Ariane">
+      <a href="/fr/">Accueil</a> <span>/</span>
+      <a href="/fr/blog/">Blog</a> <span>/</span>
+      <span aria-current="page">Copias de seguridad y continuidad en un software de calidad</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Qualité et amélioration continue</span>
+      <h1>Copias de seguridad y continuidad en un software de calidad</h1>
+      <p class="post__meta">Par Claudia · <time datetime="2026-10-03T00:00:00Z">3 de octubre de 2026</time> · 6 min de lecture</p>
+    </header>
+
+    <!-- banner-arriba:inicio -->
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Mesurez la qualité en temps réel</span>KPI, pertes et récidives dans un tableau de bord qui se met à jour automatiquement.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/fr/tableaux-de-bord/">Voir le tableau de bord</a>
+    </div>
+  </div>
+    <!-- banner-arriba:fin -->
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="/blog/assets/f70332607945-480.avif 480w, /blog/assets/f70332607945-768.avif 768w, /blog/assets/f70332607945-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="/blog/assets/f70332607945-480.webp 480w, /blog/assets/f70332607945-768.webp 768w, /blog/assets/f70332607945-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="/blog/assets/f70332607945-1200.jpg" width="1200" height="670" alt="Copias de seguridad y continuidad en un software de calidad" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<h2>Copias de seguridad y continuidad en un software de calidad</h2>
+<p>Las copias de seguridad de un software de calidad no suelen protagonizar las conversaciones del departamento hasta que ocurre lo inevitable: un fallo, una caída, una pérdida de datos en el peor momento posible. Y en la industria agroalimentaria, los peores momentos tienen nombre propio: una auditoría de certificación, un cierre de lote o una inspección oficial. Por eso, antes de que llegue ese día, conviene entender qué protección real ofrece tu herramienta y qué deberías exigirle.</p>
+<h2>Qué pasa el día que el software de calidad se cae en mitad de una auditoría o una línea de producción</h2>
+<p>Imagina la escena: el auditor está sentado frente a ti, pide el registro de verificaciones del plan APPCC del último trimestre y tú abres el sistema… que no responde. O peor, la línea de producción está en marcha y los operarios no pueden registrar los controles de temperatura porque la aplicación ha dejado de funcionar. Ese escenario no es tan improbable como parece.</p>
+<p>Cuando un software de calidad cae, las consecuencias se ramifican rápido. En términos de auditoría, la falta de acceso a registros equivale, en la práctica, a no tenerlos. Esto puede suponer no conformidades graves frente a estándares como <a href="https://www.brcgs.com/" target="_blank" rel="noopener noreferrer">BRCGS</a> (BRCGS, s.f.) o IFS, donde la trazabilidad documental es un requisito central. En términos operativos, los registros en papel de emergencia generan reprocesos, errores y una trazabilidad fragmentada que costará tiempo reconstruir.</p>
+<p>El problema de fondo no es solo técnico: es de confianza. Un responsable de calidad necesita saber que el sistema en el que vuelca toda la información crítica del proceso va a estar disponible cuando se le necesite, y que si algo falla, los datos estarán intactos y recuperables en el menor tiempo posible.</p>
+<h2>Qué es una copia de seguridad automática y cada cuánto debería hacerse</h2>
+<p>Las copias de seguridad de un software de calidad son, en esencia, instantáneas del estado de los datos en un momento concreto. Si el sistema falla o los datos se corrompen, esa copia permite restaurar la información hasta el punto en que se realizó la última copia guardada.</p>
+<p>La palabra clave aquí es <strong>automática</strong>. Depender de que alguien recuerde hacer una exportación manual antes de cerrar el día es una estrategia que falla exactamente cuando más se necesita. Un sistema bien configurado realiza copias de forma automática, sin intervención humana, y las almacena en una ubicación separada del servidor principal.</p>
+<p>¿Cada cuánto tiempo deberían realizarse esas copias? La respuesta depende del volumen de datos críticos que genera tu operativa y de cuánta información estás dispuesto a perder en el peor caso. En entornos agroalimentarios con producción continua o registros de control en línea, lo recomendable es que las copias se realicen al menos cada 24 horas, y en entornos más exigentes, cada pocas horas o incluso en tiempo casi real.</p>
+<p>Hay dos conceptos técnicos que cualquier responsable de calidad debería conocer:</p>
+<ul>
+<li><strong>RPO (Recovery Point Objective):</strong> cuánto tiempo de datos puedes permitirte perder. Si tu RPO es de 4 horas, necesitas copias cada 4 horas como máximo.</li>
+<li><strong>RTO (Recovery Time Objective):</strong> cuánto tiempo puedes estar sin el sistema operativo. Si tu RTO es de 2 horas, el proveedor debe garantizarte que en ese plazo el sistema estará de nuevo en funcionamiento.</li>
+</ul>
+<p>Pedir estos datos al proveedor no es ser exigente en exceso: es hacer bien tu trabajo. Si quieres profundizar en cómo afecta la arquitectura del sistema a estas garantías, te recomendamos leer nuestro artículo sobre <a href="/fr/blog/software-de-calidad-en-la-nube-vs-on-premise/">software de calidad en la nube vs. on-premise</a>, donde analizamos las diferencias en disponibilidad y gestión según el modelo de despliegue.</p>
+<h2>La diferencia entre backup y plan de continuidad real</h2>
+<p>Muchos proveedores de software anuncian que “realizan copias de seguridad diarias” y con eso consideran cubierta la continuidad del negocio. No es lo mismo. Un backup es una herramienta dentro de un plan de continuidad, pero no es el plan completo.</p>
+
+      <!-- banner-medio:inicio -->
+      <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Mesurez la qualité en temps réel</span>KPI, pertes et récidives dans un tableau de bord qui se met à jour automatiquement.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/fr/tableaux-de-bord/">Voir le tableau de bord</a>
+    </div>
+  </div>
+      <!-- banner-medio:fin -->
+
+      
+<p>Un plan de continuidad de negocio real para un software de calidad contempla, además de las copias de seguridad, al menos estos elementos:</p>
+<ul>
+<li><strong>Redundancia de servidores:</strong> si un servidor falla, otro toma el relevo automáticamente sin que el usuario perciba la interrupción.</li>
+<li><strong>Procedimientos de recuperación probados:</strong> no basta con tener los backups; hay que comprobar periódicamente que la restauración funciona y en cuánto tiempo se completa.</li>
+<li><strong>Plan de comunicación ante incidencias:</strong> quién avisa a quién, en qué plazos y con qué información cuando hay un problema.</li>
+<li><strong>Protocolo de operación en modo degradado:</strong> qué hacer mientras el sistema no está disponible, cómo documentar de forma provisional y cómo reintegrar esos datos cuando el sistema vuelva.</li>
+</ul>
+<p>Todo esto está directamente relacionado con los requisitos de seguridad e integridad de datos que impone la normativa alimentaria. Tal y como establece el <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">Reglamento (CE) n.º 178/2002</a> (Reglamento [CE] 178/2002, 2002), los operadores de empresas alimentarias deben ser capaces de identificar y rastrear los productos en todas las etapas de producción, transformación y distribución. Si la herramienta que soporta esa trazabilidad no ofrece garantías de continuidad, la responsabilidad recae igualmente sobre la empresa.</p>
+<p>Para entender mejor cómo proteger la información que gestiona tu sistema, puedes consultar también nuestro artículo sobre <a href="/fr/blog/seguridad-de-los-datos-en-un-software-de-calidad/">seguridad de los datos en un software de calidad</a>, donde abordamos aspectos como el cifrado, los accesos y la gestión de permisos.</p>
+<h2>Qué exigir por contrato sobre disponibilidad y recuperación ante fallos</h2>
+<p>La conversación sobre copias de seguridad y continuidad no debería quedarse en una promesa verbal o en una descripción genérica de la ficha técnica del producto. Debe traducirse en compromisos contractuales concretos. Estos son los puntos que no deberían faltar en el contrato con tu proveedor de software de calidad:</p>
+<ul>
+<li><strong>SLA de disponibilidad (Service Level Agreement):</strong> porcentaje garantizado de tiempo que el sistema estará operativo. Lo habitual en soluciones profesionales es un 99,5 % o superior. Exige que ese porcentaje se mida y que haya penalizaciones claras si no se cumple.</li>
+<li><strong>Frecuencia y ubicación de los backups:</strong> cada cuánto se realizan, dónde se almacenan (idealmente en centros de datos separados geográficamente) y durante cuánto tiempo se conservan las copias.</li>
+<li><strong>RTO y RPO garantizados:</strong> por escrito, con los tiempos máximos de recuperación en caso de fallo.</li>
+<li><strong>Procedimiento de notificación de incidencias:</strong> plazos en los que el proveedor debe comunicarte cualquier problema que afecte a la disponibilidad o integridad de tus datos.</li>
+<li><strong>Derecho a exportar tus datos:</strong> en caso de cambio de proveedor o cierre del servicio, debes poder recuperar toda tu información en un formato utilizable, sin condiciones abusivas.</li>
+<li><strong>Auditorías y certificaciones del proveedor:</strong> solicita evidencias de que el proveedor cuenta con certificaciones de seguridad como ISO 27001 o que sus centros de datos tienen certificaciones equivalentes.</li>
+</ul>
+<p>Negociar estos puntos no solo protege a tu empresa en caso de fallo técnico: también demuestra ante clientes, certificadoras e inspectores que gestionas la calidad con rigor en todos sus niveles, incluida la infraestructura digital que la soporta.</p>
+<p>En Solved sabemos que la tranquilidad de un responsable de calidad depende de que cada parte del sistema funcione cuando se la necesita. Por eso nuestro software está diseñado con criterios de disponibilidad, redundancia y protección de datos que te permiten centrarte en lo que importa: garantizar la seguridad y calidad de tus productos, con o sin auditor delante.</p>
+<h2>Références</h2>
+<ul>
+<li>BRCGS. (s.d.). BRCGS Global Standards. <a href="https://www.brcgs.com/" target="_blank" rel="noopener noreferrer">https://www.brcgs.com/</a></li>
+<li>Règlement (CE) n° 178/2002 du Parlement européen et du Conseil du 28 janvier 2002 établissant les principes généraux et les prescriptions générales de la législation alimentaire. (2002). <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es</a></li>
+</ul>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Termes associés</h2>
+      <ul>
+        <li><a href="/fr/glossaire/mermas/">Pertes</a></li>
+        <li><a href="/fr/glossaire/brcgs/">BRCGS</a></li>
+      </ul>
+    </aside>
+
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Mesurez la qualité en temps réel</span>KPI, pertes et récidives dans un tableau de bord qui se met à jour automatiquement.</p>
+      <a class="btn btn--primary blog-banner__btn" href="/fr/tableaux-de-bord/">Voir le tableau de bord</a>
+    </div>
+  </div>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="/fr/blog/">← Retour au blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Poursuivre la lecture</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="/fr/blog/compartir-datos-de-calidad-con-tus-clientes/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/59cebd07e68e-480.avif 480w, /blog/assets/59cebd07e68e-768.avif 768w, /blog/assets/59cebd07e68e-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/59cebd07e68e-480.webp 480w, /blog/assets/59cebd07e68e-768.webp 768w, /blog/assets/59cebd07e68e-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/59cebd07e68e-1200.jpg" width="1200" height="670" alt="Compartir datos de calidad con tus clientes" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualité et amélioration continue</span>
+          <h2 class="blog-card__title"><a href="/fr/blog/compartir-datos-de-calidad-con-tus-clientes/">Compartir datos de calidad con tus clientes</a></h2>
+          <p class="blog-card__excerpt">Aprende a compartir datos de calidad con clientes de forma segura. Transparencia en certificados, trazabilidad y auditorías para cerrar más ventas.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-07T00:00:00Z">7 de octubre de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/fr/blog/notificaciones-y-alertas-en-un-software-de-calidad/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/33f504dbf1d4-480.avif 480w, /blog/assets/33f504dbf1d4-768.avif 768w, /blog/assets/33f504dbf1d4-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/33f504dbf1d4-480.webp 480w, /blog/assets/33f504dbf1d4-768.webp 768w, /blog/assets/33f504dbf1d4-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/33f504dbf1d4-1200.jpg" width="1200" height="670" alt="Notificaciones y alertas en un software de calidad" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualité et amélioration continue</span>
+          <h2 class="blog-card__title"><a href="/fr/blog/notificaciones-y-alertas-en-un-software-de-calidad/">Notificaciones y alertas en un software de calidad</a></h2>
+          <p class="blog-card__excerpt">Descubre cómo implementar notificaciones y alertas en un software de calidad para evitar pérdidas y mejorar la eficiencia operativa sin saturar a tu equipo.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-06T00:00:00Z">6 de octubre de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="/fr/blog/app-movil-de-un-software-de-calidad-que-debe-permitir/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="/blog/assets/e8de9d167cbc-480.avif 480w, /blog/assets/e8de9d167cbc-768.avif 768w, /blog/assets/e8de9d167cbc-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="/blog/assets/e8de9d167cbc-480.webp 480w, /blog/assets/e8de9d167cbc-768.webp 768w, /blog/assets/e8de9d167cbc-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="/blog/assets/e8de9d167cbc-1200.jpg" width="1200" height="670" alt="App móvil de un software de calidad: qué debe permitir" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Qualité et amélioration continue</span>
+          <h2 class="blog-card__title"><a href="/fr/blog/app-movil-de-un-software-de-calidad-que-debe-permitir/">App móvil de un software de calidad: qué debe permitir</a></h2>
+          <p class="blog-card__excerpt">Descubre qué funciones debe permitir una app móvil de un software de calidad para responsables de producción y calidad en planta.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-05T00:00:00Z">5 de octubre de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="/fr/chrome.js?v=20260911e"></script>
+
+</body></html>
