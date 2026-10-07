@@ -163,6 +163,13 @@
 
 
 
+
+
+
+
+
+
+
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="video.other">
@@ -181,11 +188,8 @@
 <!-- Sin Article, igual que las otras tres landings de caso: esta página es la
      landing del vídeo, no el caso escrito.
 
-     El VideoObject lleva su contentUrl y `isAccessibleForFree:false`. La URL del
-     vídeo queda a la vista a propósito: en un sitio estático el gate filtra al
-     visitante normal, no al que quiera saltárselo, y esconderla del marcado sólo
-     cambiaría dónde se encuentra. A cambio, el vídeo puede salir en resultados
-     enriquecidos, que es de lo que va esta página.
+     El VideoObject lleva su contentUrl e `isAccessibleForFree:true`: el vídeo
+     se reproduce directamente, sin formulario por delante.
 
      Fuente: webinar «El reto de la digitalización en la industria
      agroalimentaria — El caso de éxito de Patatas Aguilar», grabado el 29 de
@@ -193,7 +197,7 @@
      Vicente Doria). Transcrito con faster-whisper y montado con el mismo
      pipeline que Carnavi, Panificadora Alcalá y Prilux — ver
      ~/Vídeos/casos-exito-solved/_montaje/. -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://trysolved.com/fr/"},{"@type":"ListItem","position":2,"name":"Études de cas","item":"https://trysolved.com/fr/etudes-de-cas/"},{"@type":"ListItem","position":3,"name":"Patatas Aguilar","item":"https://trysolved.com/fr/etudes-de-cas/patatas-aguilar/"}]},{"@type":"VideoObject","name":"Étude de cas Patatas Aguilar : du papier et d'Excel à Solved","description":"Jose Vicente Doria, directeur Qualité et Environnement de Patatas Aguilar, raconte comment ils menaient le checklist mensuel de l'usine avant — avec Excel, des photos éparses et une heure ou deux à parcourir l'usine —, pourquoi un ERP ne leur convenait pas avant d'essayer Solved, ce qui a changé depuis 2024 — y compris la réaction de leurs auditeurs IFS — et ce qu'il dirait à un responsable qualité encore hésitant.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-patatas-aguilar.webp","uploadDate":"2026-09-29","duration":"PT4M22S","contentUrl":"https://trysolved.com/assets/casos/caso-patatas-aguilar.mp4","isAccessibleForFree":false,"inLanguage":"es","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://trysolved.com/fr/"},{"@type":"ListItem","position":2,"name":"Études de cas","item":"https://trysolved.com/fr/etudes-de-cas/"},{"@type":"ListItem","position":3,"name":"Patatas Aguilar","item":"https://trysolved.com/fr/etudes-de-cas/patatas-aguilar/"}]},{"@type":"VideoObject","name":"Étude de cas Patatas Aguilar : du papier et d'Excel à Solved","description":"Jose Vicente Doria, directeur Qualité et Environnement de Patatas Aguilar, raconte comment ils menaient le checklist mensuel de l'usine avant — avec Excel, des photos éparses et une heure ou deux à parcourir l'usine —, pourquoi un ERP ne leur convenait pas avant d'essayer Solved, ce qui a changé depuis 2024 — y compris la réaction de leurs auditeurs IFS — et ce qu'il dirait à un responsable qualité encore hésitant.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-patatas-aguilar.webp","uploadDate":"2026-09-29","duration":"PT4M22S","contentUrl":"https://trysolved.com/assets/casos/caso-patatas-aguilar.mp4","isAccessibleForFree":true,"inLanguage":"es","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/fr/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -208,7 +212,7 @@
 <link rel="stylesheet" href="/ds/hero.css?v=20260930a">
 <!-- De ds/sections.css sólo se usa .case-list, la lista de enlaces del pie. -->
 <link rel="stylesheet" href="/ds/sections.css?v=20260930a">
-<link rel="stylesheet" href="/ds/gate.css?v=20260929a">
+<link rel="stylesheet" href="/ds/gate.css?v=20261007a">
 </head>
 <body data-screen-label="Caso · Patatas Aguilar">
 
@@ -230,13 +234,12 @@
      montaje pone el rótulo con el nombre y el cargo; por eso aquí no se repite
      el nombre encima de la foto.
 
-     Componente en ds/gate.css + ds/gate.js. El data-caso da la llave de
-     localStorage: quien ya vio este vídeo no vuelve a ver el formulario, y los
-     otros tres casos siguen pidiendo el suyo. -->
+     Componente en ds/gate.css. Vídeo reproducible directamente, sin
+     formulario por delante (desbloqueado el 7 de octubre de 2026). -->
 <section class="ds-hero" data-screen-label="Caso Patatas Aguilar · Hero">
   <canvas class="ds-hero__weave" aria-hidden="true" id="dsWeave"></canvas>
   <div class="frame frame--seam ds-hero__frame">
-    <div class="gate gate--hero" data-caso="patatas-aguilar">
+    <div class="gate gate--hero">
 
       <div class="gate__intro">
         <span class="ds-eyebrow">Étude de cas · Conditionnement de pommes de terre</span>
@@ -244,30 +247,11 @@
         <p class="ds-hero__sub">Jose Vicente Doria dirige Qualité et Environnement chez Patatas Aguilar, une entreprise valencienne de plus de 50 ans spécialisée dans la sélection et le conditionnement de pommes de terre. Il explique comment ils faisaient le checklist mensuel avant, pourquoi un autre système essayé avant Solved ne leur a pas convenu, ce qui a changé depuis 2024, et ce qu'il dit à un responsable encore hésitant.</p>
 
         <div class="gate__frame">
-          <img class="gate__poster" src="/assets/casos/poster-patatas-aguilar.webp" alt="Jose Vicente Doria, directeur Qualité et Environnement de Patatas Aguilar, pendant l'entretien" width="1280" height="720" decoding="async">
-          <!-- El vídeo entra sin src: lo pone ds/gate.js al abrir. -->
-          <video class="gate__video" data-src="/assets/casos/caso-patatas-aguilar.mp4" poster="/assets/casos/poster-patatas-aguilar.webp" preload="none" playsinline=""></video>
+          <video class="gate__video" src="/assets/casos/caso-patatas-aguilar.mp4" poster="/assets/casos/poster-patatas-aguilar.webp" controls="" preload="none" playsinline=""></video>
           <span class="gate__dur">4:22</span>
-          <button type="button" class="gate__open" aria-label="Voir la vidéo de Patatas Aguilar — l'e-mail est requis au préalable">
-            <span class="gate__lockicon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
-            </span>
-          </button>
         </div>
       </div>
 
-      <div class="gate__ask">
-        <h2 class="gate__askttl">Accès à la vidéo avec l'adresse professionnelle</h2>
-        <p class="gate__askp">Sans téléchargement ni inscription préalable : la vidéo reste disponible sur cette page et accessible lors des visites suivantes.</p>
-        <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689).
-             data-hs-form="video" pide el formulario corto; mientras no exista en
-             HubSpot, chrome.js sirve el de contacto y el gate abre igual. -->
-        <div class="hs-contact-form" data-hs-form="video"></div>
-        <p class="gate__note">Nous n'envoyons que les nouveautés de Solved, avec désinscription possible à tout moment. Les données sont traitées conformément à la <a href="/fr/politique-de-confidentialite/">politique de confidentialité</a>.</p>
-        <p class="gate__rescue">Si le formulaire ne s'affiche pas, un bloqueur empêche peut-être son chargement. La vidéo peut être demandée à info@trysolved.com.</p>
-      </div>
-
-      <p class="gate__done">Accès accordé. La vidéo est disponible en haut de la page.</p>
     </div>
   </div>
 </section>
@@ -307,7 +291,6 @@
 
 <div id="footer"></div>
 <script src="/fr/chrome.js?v=20261005a"></script>
-<script src="/ds/gate.js?v=20260817b" defer=""></script>
 <script src="/ds/hero-wave.js?v=20260928a" defer=""></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

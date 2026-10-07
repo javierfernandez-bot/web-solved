@@ -716,6 +716,13 @@
 
 
 
+
+
+
+
+
+
+
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="website">
@@ -749,9 +756,9 @@
 <link rel="stylesheet" href="/ds/tint.css?v=20260928a">
 <link rel="stylesheet" href="/ds/scene.css?v=20261005a">
 <!-- De ds/gate.css esta página sólo usa .vcase, la tarjeta que manda a cada
-     landing. El gate en sí —el vídeo y su formulario— vive en las dos páginas
-     de caso, una cada uno. -->
-<link rel="stylesheet" href="/ds/gate.css?v=20260929a">
+     landing. El vídeo en sí vive en su propia página de caso, y se reproduce
+     directamente al llegar: no hay formulario por delante. -->
+<link rel="stylesheet" href="/ds/gate.css?v=20261007a">
 </head>
 <body data-screen-label="Casos de éxito">
 
@@ -771,11 +778,10 @@
   </div>
 </section>
 
-<!-- ============ LOS TRES CASOS ============
-     Esta página no gatea nada y no lleva formulario: cada vídeo tiene el suyo
-     en su landing. Lo que hace aquí el candado es avisar de lo que hay al otro
-     lado — prometer «ver el vídeo» y aterrizar en un formulario sorpresa es lo
-     que hace que la siguiente página no se lea. -->
+<!-- ============ LOS CUATRO CASOS ============
+     Esta página no lleva formulario: cada vídeo se reproduce directamente en
+     su landing, sin pedir el correo primero. El icono de play sobre el póster
+     sólo avisa de que lo que hay detrás del enlace es un vídeo. -->
 <section class="section" data-screen-label="Casos · Lista">
   <div class="wrap">
     <div class="vcase-grid">
@@ -784,8 +790,8 @@
         <div class="vcase__frame">
           <img class="vcase__poster" src="/assets/casos/poster-carnavi.webp" alt="Ana Domínguez, Qualitätsleiterin bei Carnavi, während des Interviews" width="1280" height="720" decoding="async">
           <span class="vcase__dur">2:04</span>
-          <span class="vcase__lockicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+          <span class="vcase__playicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
           </span>
         </div>
         <div class="vcase__who">
@@ -802,8 +808,8 @@
         <div class="vcase__frame">
           <img class="vcase__poster" src="/assets/casos/poster-panificadora-alcala.webp" alt="Samuel Pardo, Koordinator der technischen Abteilung von Panificadora Alcalá, während des Interviews" width="1280" height="720" decoding="async">
           <span class="vcase__dur">2:39</span>
-          <span class="vcase__lockicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+          <span class="vcase__playicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
           </span>
         </div>
         <div class="vcase__who">
@@ -820,8 +826,8 @@
         <div class="vcase__frame">
           <img class="vcase__poster" src="/assets/casos/poster-prilux.webp" alt="Álvaro Sobrino, Leiter Produktqualität bei Prilux, während des Interviews" width="1280" height="720" decoding="async">
           <span class="vcase__dur">2:06</span>
-          <span class="vcase__lockicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+          <span class="vcase__playicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
           </span>
         </div>
         <div class="vcase__who">
@@ -838,8 +844,8 @@
         <div class="vcase__frame">
           <img class="vcase__poster" src="/assets/casos/poster-patatas-aguilar.webp" alt="Jose Vicente Doria, Leiter Qualität und Umwelt bei Patatas Aguilar, während des Interviews" width="1280" height="720" decoding="async">
           <span class="vcase__dur">4:22</span>
-          <span class="vcase__lockicon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+          <span class="vcase__playicon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
           </span>
         </div>
         <div class="vcase__who">

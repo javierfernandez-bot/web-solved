@@ -709,6 +709,13 @@
 
 
 
+
+
+
+
+
+
+
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="video.other">
@@ -728,12 +735,9 @@
      Declarar un Article para un titular y cuatro párrafos sería describir una
      página que no existe.
 
-     El VideoObject lleva su contentUrl y `isAccessibleForFree:false`. La URL del
-     vídeo queda a la vista a propósito: en un sitio estático el gate filtra al
-     visitante normal, no al que quiera saltárselo, y esconderla del marcado sólo
-     cambiaría dónde se encuentra. A cambio, el vídeo puede salir en resultados
-     enriquecidos, que es de lo que va esta página. -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"Casos de éxito","item":"https://trysolved.com/casos-de-exito/"},{"@type":"ListItem","position":3,"name":"Panificadora Alcalá","item":"https://trysolved.com/casos-de-exito/panificadora-alcala/"}]},{"@type":"VideoObject","name":"Caso de éxito Panificadora Alcalá: de papel y boli a cinco plantas","description":"Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, cuenta qué se rompía cuando la empresa pasó de dos plantas a cinco y de 200 a más de 500 personas, y cómo unificaron tres herramientas en una.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-panificadora-alcala.webp","uploadDate":"2026-08-15","duration":"PT2M39S","contentUrl":"https://trysolved.com/assets/casos/caso-panificadora-alcala.mp4","isAccessibleForFree":false,"inLanguage":"es","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
+     El VideoObject lleva su contentUrl e `isAccessibleForFree:true`: el vídeo
+     se reproduce directamente, sin formulario por delante. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"Casos de éxito","item":"https://trysolved.com/casos-de-exito/"},{"@type":"ListItem","position":3,"name":"Panificadora Alcalá","item":"https://trysolved.com/casos-de-exito/panificadora-alcala/"}]},{"@type":"VideoObject","name":"Caso de éxito Panificadora Alcalá: de papel y boli a cinco plantas","description":"Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, cuenta qué se rompía cuando la empresa pasó de dos plantas a cinco y de 200 a más de 500 personas, y cómo unificaron tres herramientas en una.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-panificadora-alcala.webp","uploadDate":"2026-08-15","duration":"PT2M39S","contentUrl":"https://trysolved.com/assets/casos/caso-panificadora-alcala.mp4","isAccessibleForFree":true,"inLanguage":"es","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -748,7 +752,7 @@
 <link rel="stylesheet" href="/ds/hero.css?v=20260930a">
 <!-- De ds/sections.css sólo se usa .case-list, la lista de enlaces del pie. -->
 <link rel="stylesheet" href="/ds/sections.css?v=20260930a">
-<link rel="stylesheet" href="/ds/gate.css?v=20260929a">
+<link rel="stylesheet" href="/ds/gate.css?v=20261007a">
 </head>
 <body data-screen-label="Caso · Panificadora Alcalá">
 
@@ -769,13 +773,12 @@
      montaje pone el rótulo con el nombre y el cargo; por eso aquí no se repite
      el nombre encima de la foto.
 
-     Componente en ds/gate.css + ds/gate.js. El data-caso da la llave de
-     localStorage: quien ya vio este vídeo no vuelve a ver el formulario, y el
-     de Carnavi y el de Prilux siguen pidiendo el suyo. -->
+     Componente en ds/gate.css. Vídeo reproducible directamente, sin
+     formulario por delante (desbloqueado el 7 de octubre de 2026). -->
 <section class="ds-hero" data-screen-label="Caso Panalca · Hero">
   <canvas class="ds-hero__weave" aria-hidden="true" id="dsWeave"></canvas>
   <div class="frame frame--seam ds-hero__frame">
-    <div class="gate gate--hero" data-caso="panificadora-alcala">
+    <div class="gate gate--hero">
 
       <div class="gate__intro">
         <span class="ds-eyebrow">Caso de éxito · Panificación industrial</span>
@@ -783,30 +786,11 @@
         <p class="ds-hero__sub">Samuel Pardo coordina el departamento técnico de Panificadora Alcalá, que en ocho años ha pasado de 200 personas a más de 500. En dos minutos y medio explica qué dejó de funcionar en primer lugar al crecer, por qué el puesto de ordenador no cubría la fábrica y qué requisitos buscaba en un sistema.</p>
 
         <div class="gate__frame">
-          <img class="gate__poster" src="/assets/casos/poster-panificadora-alcala.webp" alt="Samuel Pardo, coordinador del departamento técnico de Panificadora Alcalá, durante la entrevista" width="1280" height="720" decoding="async">
-          <!-- El vídeo entra sin src: lo pone ds/gate.js al abrir. -->
-          <video class="gate__video" data-src="/assets/casos/caso-panificadora-alcala.mp4" poster="/assets/casos/poster-panificadora-alcala.webp" preload="none" playsinline=""></video>
+          <video class="gate__video" src="/assets/casos/caso-panificadora-alcala.mp4" poster="/assets/casos/poster-panificadora-alcala.webp" controls="" preload="none" playsinline=""></video>
           <span class="gate__dur">2:39</span>
-          <button type="button" class="gate__open" aria-label="Ver el vídeo de Panificadora Alcalá — hay que dejar el correo primero">
-            <span class="gate__lockicon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
-            </span>
-          </button>
         </div>
       </div>
 
-      <div class="gate__ask">
-        <h2 class="gate__askttl">Acceso al vídeo con el correo profesional</h2>
-        <p class="gate__askp">Sin descarga ni registro previo: el vídeo queda disponible en esta misma página y permanece accesible en visitas posteriores.</p>
-        <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689).
-             data-hs-form="video" pide el formulario corto; mientras no exista en
-             HubSpot, chrome.js sirve el de contacto y el gate abre igual. -->
-        <div class="hs-contact-form" data-hs-form="video"></div>
-        <p class="gate__note">Sólo se remiten novedades de Solved, con baja disponible en cualquier momento. Los datos se tratan conforme a la <a href="/politica-de-privacidad/">política de privacidad</a>.</p>
-        <p class="gate__rescue">Si el formulario no se muestra, es posible que un bloqueador esté impidiendo su carga. El vídeo puede solicitarse en info@trysolved.com.</p>
-      </div>
-
-      <p class="gate__done">Acceso concedido. El vídeo está disponible en la parte superior.</p>
     </div>
   </div>
 </section>
@@ -850,7 +834,6 @@
 
 <div id="footer"></div>
 <script src="/chrome.js?v=20261005a"></script>
-<script src="/ds/gate.js?v=20260817b" defer=""></script>
 <script src="/ds/hero-wave.js?v=20260928a" defer=""></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

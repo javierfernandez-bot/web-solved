@@ -110,6 +110,47 @@ compuesto a propósito. Referencia del cliente: **mitti.com/es/activos** — la 
 encuadre y el resto es cielo o fondo liso, con fichas de activo pequeñas y sueltas flotando ahí, nunca
 sobre ella.
 
+## Estado a 7 octubre 2026 — los cuatro vídeos de casos de éxito, desbloqueados: fuera el gate de correo
+
+Petición del cliente: quitar el gate de correo de las cuatro landings de caso
+(`/casos-de-exito/<caso>/`) y que el vídeo se reproduzca directamente. Decisión
+de negocio explícita, confirmada antes de tocar nada: se pierde la captura de
+lead de estas cuatro páginas a cambio de que el vídeo se vea sin fricción.
+
+**Las cuatro páginas pierden el formulario de HubSpot, el candado y
+`ds/gate.js` entero.** El `<video>` pasa de `data-src` (lo ponía el script al
+abrir) a `src` directo, con `controls` nativo y el mismo `poster`; sin JS que
+lo abra no hace falta. `ds/gate.css` se reescribe para un solo estado —ya no
+hay «cerrado»/«abierto»—: `.gate--hero` es una columna (texto arriba, vídeo
+centrado debajo, máximo 860px), que es literalmente el layout que antes sólo
+se veía tras dejar el correo. Se borra `ds/gate.js` del repositorio: sin
+botón que abrir, sin formulario que escuchar por `postMessage` y sin
+`localStorage` que marcar, no quedaba nada que hiciera. `ds/gate.css` sube a
+`?v=20261007a` en las cinco páginas que lo cargan (el índice + los cuatro
+casos).
+
+**El índice (`/casos-de-exito/`) cambia el candado por un icono de play** en
+las cuatro tarjetas (`.vcase__lockicon` → `.vcase__playicon`): prometía «hay
+que dejar el correo» y ya no es cierto. El SVG es un triángulo de play, no un
+candado.
+
+**El JSON-LD de los cuatro `VideoObject` pasa `isAccessibleForFree` de
+`false` a `true`**, que es lo que ahora es verdad.
+
+`npm run check:seo` (819 HTML, ✔ sin fallos) y `npm run check:voz` (53
+páginas, ✔, los dos avisos de «plataforma» en `industria-alimentaria/` e
+`integraciones/` son previos y ajenos a este cambio) pasan. `npm run
+build:i18n` propagó el cambio a las 19 páginas de cada uno de los cinco
+idiomas. Verificado en el navegador: el vídeo de Carnavi reproduce al pulsar
+play, sin ningún formulario de por medio.
+
+**Pendiente de negocio, ahora irrelevante para estas cuatro páginas:** el
+pendiente #0 sobre crear el formulario corto de vídeo en HubSpot
+(`formIdVideo` en `chrome.js`) ya no aplica aquí — el componente `hs-contact-
+form[data-hs-form="video"]` que lo necesitaba se ha retirado de las cuatro
+landings. Si `chrome.js` sigue sirviendo ese tipo de formulario en algún otro
+sitio, revisar si conviene retirarlo también de ahí.
+
 ## Estado a 30 septiembre 2026 (8) — cuándo se mueve una animación, en todo el sitio: empieza al llegar, y el acordeón no repite en bucle
 
 Petición del cliente: revisar las animaciones de producto de todas las páginas para que arranquen al

@@ -716,6 +716,13 @@
 
 
 
+
+
+
+
+
+
+
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1E6BFF">
 <meta property="og:type" content="video.other">
@@ -734,12 +741,9 @@
 <!-- Sin Article, igual que las otras dos landings de caso: esta página es la
      landing del vídeo, no el caso escrito.
 
-     El VideoObject lleva su contentUrl y `isAccessibleForFree:false`. La URL del
-     vídeo queda a la vista a propósito: en un sitio estático el gate filtra al
-     visitante normal, no al que quiera saltárselo, y esconderla del marcado sólo
-     cambiaría dónde se encuentra. A cambio, el vídeo puede salir en resultados
-     enriquecidos, que es de lo que va esta página. -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://trysolved.com/en/"},{"@type":"ListItem","position":2,"name":"Case studies","item":"https://trysolved.com/en/case-studies/"},{"@type":"ListItem","position":3,"name":"Prilux","item":"https://trysolved.com/en/case-studies/prilux/"}]},{"@type":"VideoObject","name":"Prilux case study: from paper to Excel and from Excel to Solved","description":"Álvaro Sobrino, product quality director at Prilux, describes how they used to run checks and inspections — first on paper, then in Excel tables —, why they went ahead with Solved in 2024 and what they have seen in the first months with the whole plant using it from phone and tablet.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-prilux.webp","uploadDate":"2026-08-17","duration":"PT2M6S","contentUrl":"https://trysolved.com/assets/casos/caso-prilux.mp4","isAccessibleForFree":false,"inLanguage":"es","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
+     El VideoObject lleva su contentUrl e `isAccessibleForFree:true`: el vídeo
+     se reproduce directamente, sin formulario por delante. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://trysolved.com/en/"},{"@type":"ListItem","position":2,"name":"Case studies","item":"https://trysolved.com/en/case-studies/"},{"@type":"ListItem","position":3,"name":"Prilux","item":"https://trysolved.com/en/case-studies/prilux/"}]},{"@type":"VideoObject","name":"Prilux case study: from paper to Excel and from Excel to Solved","description":"Álvaro Sobrino, product quality director at Prilux, describes how they used to run checks and inspections — first on paper, then in Excel tables —, why they went ahead with Solved in 2024 and what they have seen in the first months with the whole plant using it from phone and tablet.","thumbnailUrl":"https://trysolved.com/assets/casos/poster-prilux.webp","uploadDate":"2026-08-17","duration":"PT2M6S","contentUrl":"https://trysolved.com/assets/casos/caso-prilux.mp4","isAccessibleForFree":true,"inLanguage":"es","publisher":{"@id":"https://trysolved.com/#organization"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/en/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]}</script>
 <!-- SEO:end -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -754,7 +758,7 @@
 <link rel="stylesheet" href="/ds/hero.css?v=20260930a">
 <!-- De ds/sections.css sólo se usa .case-list, la lista de enlaces del pie. -->
 <link rel="stylesheet" href="/ds/sections.css?v=20260930a">
-<link rel="stylesheet" href="/ds/gate.css?v=20260929a">
+<link rel="stylesheet" href="/ds/gate.css?v=20261007a">
 </head>
 <body data-screen-label="Caso · Prilux">
 
@@ -776,13 +780,12 @@
      pone el rótulo con el nombre y el cargo; por eso aquí no se repite el
      nombre encima de la foto.
 
-     Componente en ds/gate.css + ds/gate.js. El data-caso da la llave de
-     localStorage: quien ya vio este vídeo no vuelve a ver el formulario, y los
-     otros dos casos siguen pidiendo el suyo. -->
+     Componente en ds/gate.css. Vídeo reproducible directamente, sin
+     formulario por delante (desbloqueado el 7 de octubre de 2026). -->
 <section class="ds-hero" data-screen-label="Caso Prilux · Hero">
   <canvas class="ds-hero__weave" aria-hidden="true" id="dsWeave"></canvas>
   <div class="frame frame--seam ds-hero__frame">
-    <div class="gate gate--hero" data-caso="prilux">
+    <div class="gate gate--hero">
 
       <div class="gate__intro">
         <span class="ds-eyebrow">Case study · Lighting</span>
@@ -790,30 +793,11 @@
         <p class="ds-hero__sub">Álvaro Sobrino runs product quality at Prilux, a lighting group with its own factory and four very different business units. In two minutes he explains the move from paper to spreadsheet and from there to Solved in 2024, why the main selection criterion was adoption across the whole organisation — from the shop-floor operator to management — and the results of the first months.</p>
 
         <div class="gate__frame">
-          <img class="gate__poster" src="/assets/casos/poster-prilux.webp" alt="Álvaro Sobrino, product quality director at Prilux, during the interview" width="1280" height="720" decoding="async">
-          <!-- El vídeo entra sin src: lo pone ds/gate.js al abrir. -->
-          <video class="gate__video" data-src="/assets/casos/caso-prilux.mp4" poster="/assets/casos/poster-prilux.webp" preload="none" playsinline=""></video>
+          <video class="gate__video" src="/assets/casos/caso-prilux.mp4" poster="/assets/casos/poster-prilux.webp" controls="" preload="none" playsinline=""></video>
           <span class="gate__dur">2:06</span>
-          <button type="button" class="gate__open" aria-label="Watch the Prilux video — leave your email first">
-            <span class="gate__lockicon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
-            </span>
-          </button>
         </div>
       </div>
 
-      <div class="gate__ask">
-        <h2 class="gate__askttl">Watch the video with your work email</h2>
-        <p class="gate__askp">No download and no prior sign-up: the video stays available on this page and remains accessible on later visits.</p>
-        <!-- Formulario HubSpot (se renderiza vía chrome.js → Portal 20010689).
-             data-hs-form="video" pide el formulario corto; mientras no exista en
-             HubSpot, chrome.js sirve el de contacto y el gate abre igual. -->
-        <div class="hs-contact-form" data-hs-form="video"></div>
-        <p class="gate__note">We only send Solved news, and you can unsubscribe at any time. Data is processed in accordance with the <a href="/en/privacy-policy/">privacy policy</a>.</p>
-        <p class="gate__rescue">If the form does not appear, a blocker may be stopping it from loading. You can request the video at info@trysolved.com.</p>
-      </div>
-
-      <p class="gate__done">Access granted. The video is available at the top of the page.</p>
     </div>
   </div>
 </section>
@@ -857,7 +841,6 @@
 
 <div id="footer"></div>
 <script src="/en/chrome.js?v=20261005a"></script>
-<script src="/ds/gate.js?v=20260817b" defer=""></script>
 <script src="/ds/hero-wave.js?v=20260928a" defer=""></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
