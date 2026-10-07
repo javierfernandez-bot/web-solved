@@ -26,7 +26,15 @@
    Requiere ds/tokens.css y, para las pestañas, ds/sections.css + ds/sections.js.
    ========================================================= */
 
-.switch__panel--vcase{ display:block }
+.switch__panel--vcase{
+  display:block;
+  /* frame--bajo-hero quita el aire del marco para que el bloque de pestañas
+     quede pegado a la hero (eso es lo que lo trae al primer pantallazo). Pero
+     esta página no lleva nada después: sin este margen, la tarjeta visible
+     toca directamente el pie oscuro. --s-12 es el mismo "turno" que separa
+     cualquier `.section` del siguiente bloque. */
+  margin-bottom:var(--s-12, 96px);
+}
 .switch__panel--vcase .vcase{
   max-width:860px;
   margin-inline:auto;
