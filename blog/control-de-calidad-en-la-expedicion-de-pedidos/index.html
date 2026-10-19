@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicon.png"/>
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png"/>
+<title>Control de calidad en la expedición de pedidos · Solved</title>
+<!-- SEO:start -->
+<meta name="description" content="Descubre cómo implementar control de calidad en la expedición de pedidos para verificar lote, caducidad, cantidad y documentación antes de salir."/>
+<link rel="canonical" href="https://trysolved.com/blog/control-de-calidad-en-la-expedicion-de-pedidos/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#1E6BFF"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Solved"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:url" content="https://trysolved.com/blog/control-de-calidad-en-la-expedicion-de-pedidos/"/>
+<meta property="og:title" content="Control de calidad en la expedición de pedidos · Solved"/>
+<meta property="og:description" content="Descubre cómo implementar control de calidad en la expedición de pedidos para verificar lote, caducidad, cantidad y documentación antes de salir."/>
+<meta property="og:image" content="https://trysolved.com/blog/assets/fe1e02248c31-1200.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Control de calidad en la expedición de pedidos · Solved"/>
+<meta name="twitter:description" content="Descubre cómo implementar control de calidad en la expedición de pedidos para verificar lote, caducidad, cantidad y documentación antes de salir."/>
+<meta name="twitter:image" content="https://trysolved.com/blog/assets/fe1e02248c31-1200.jpg"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://trysolved.com/blog/control-de-calidad-en-la-expedicion-de-pedidos/"},"headline":"Control de calidad en la expedición de pedidos","description":"Descubre cómo implementar control de calidad en la expedición de pedidos para verificar lote, caducidad, cantidad y documentación antes de salir.","image":["https://trysolved.com/blog/assets/fe1e02248c31-1200.jpg"],"datePublished":"2026-10-17T00:00:00Z","dateModified":"2026-10-17T00:00:00Z","author":{"@type":"Person","name":"Claudia"},"publisher":{"@type":"Organization","@id":"https://trysolved.com/#organization","name":"Solved","legalName":"VOLTSTONE TECHNOLOGY SERVICES S.L.","url":"https://trysolved.com/","logo":{"@type":"ImageObject","url":"https://trysolved.com/assets/logotipo-solved.webp"},"sameAs":["https://www.linkedin.com/company/trysolved","https://www.youtube.com/@trysolved"]},"articleSection":"Calidad y mejora continua"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://trysolved.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://trysolved.com/blog/"},{"@type":"ListItem","position":3,"name":"Control de calidad en la expedición de pedidos","item":"https://trysolved.com/blog/control-de-calidad-en-la-expedicion-de-pedidos/"}]}]}</script>
+<!-- SEO:end -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/fonts/DMSans-VariableFont_opsz_wght.woff2"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap"/>
+<link rel="stylesheet" href="../../_ds/solved-design-system-019dd861-f654-7208-a0d9-ce01d38606b8/colors-and-type.css?v=20260911e"/>
+<link rel="stylesheet" href="../../solved.css?v=20260911e"/>
+<!-- Solved Design System — va después de solved.css para que mande -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap"/>
+<link rel="stylesheet" href="../../ds/tokens.css?v=20260911e"/>
+<link rel="stylesheet" href="../../ds/site.css?v=20260911e"/>
+<!-- Sólo las variables de tinte (ds/tint.css), para el banner de producto del blog -->
+<link rel="stylesheet" href="../../ds/tint.css?v=20260911e"/>
+</head>
+<body data-screen-label="Blog · Post">
+
+<div id="nav"></div>
+
+<article class="post">
+  <div class="wrap post__wrap">
+    <nav class="post__crumbs" aria-label="Migas de pan">
+      <a href="../../">Inicio</a> <span>/</span>
+      <a href="../">Blog</a> <span>/</span>
+      <span aria-current="page">Control de calidad en la expedición de pedidos</span>
+    </nav>
+
+    <header class="post__head">
+      <span class="post__cat">Calidad y mejora continua</span>
+      <h1>Control de calidad en la expedición de pedidos</h1>
+      <p class="post__meta">Por Claudia · <time datetime="2026-10-17T00:00:00Z">17 de octubre de 2026</time> · 6 min de lectura</p>
+    </header>
+
+    <!-- banner-arriba:inicio -->
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Mide la calidad en tiempo real</span>KPIs, mermas y reincidencias en un cuadro de mando que se actualiza solo.</p>
+      <a class="btn btn--primary blog-banner__btn" href="../../dashboard/">Ver el dashboard</a>
+    </div>
+  </div>
+    <!-- banner-arriba:fin -->
+
+    <figure class="post__cover"><picture><source type="image/avif" srcset="../assets/fe1e02248c31-480.avif 480w, ../assets/fe1e02248c31-768.avif 768w, ../assets/fe1e02248c31-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 760px"><source type="image/webp" srcset="../assets/fe1e02248c31-480.webp 480w, ../assets/fe1e02248c31-768.webp 768w, ../assets/fe1e02248c31-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 760px"><img src="../assets/fe1e02248c31-1200.jpg" width="1200" height="669" alt="Control de calidad en la expedición de pedidos" loading="eager" decoding="async" fetchpriority="high"></picture></figure>
+
+    <div class="post__body">
+<h2>Control de calidad en la expedición de pedidos</h2>
+<p>Cuando hablamos de control de calidad en la expedición de pedidos, la mayoría de los responsables de calidad de empresas agroalimentarias reconocen, casi con cierta incomodidad, que este punto del proceso recibe mucha menos atención de la que merece. Se revisan minuciosamente las materias primas que entran, se auditan las líneas de producción y se controlan los almacenes intermedios, pero el momento en que un pallet sale por el muelle de carga suele transcurrir sin un protocolo de verificación riguroso. Y ese descuido puede salir muy caro.</p>
+<h2>Por qué los controles se concentran en la recepción y casi ninguno llega a la expedición</h2>
+<p>La lógica tradicional de la cadena de calidad alimentaria ha situado siempre el mayor esfuerzo en los puntos de entrada. Tiene sentido: si una materia prima defectuosa entra en la planta, contamina todo lo que toca. Por eso la <a href="../inspeccion-de-recepcion-de-materia-prima/">inspección de recepción de materias primas</a> está bien desarrollada en casi cualquier empresa del sector, con registros, criterios de aceptación y rechazos documentados.</p>
+<p>Sin embargo, el muelle de salida suele quedar en tierra de nadie. Operativamente pertenece a logística; desde el punto de vista de la inocuidad, el producto ya está terminado y aprobado. Esta doble desvinculación hace que la expedición quede fuera del radar de calidad con demasiada frecuencia. Además, la presión de los tiempos de entrega convierte cualquier control adicional en un freno que nadie quiere asumir.</p>
+<p>El problema es que un producto que ha superado todos los controles internos puede llegar al cliente incorrecto, con el lote equivocado, con una temperatura inadecuada o sin la documentación obligatoria. En ese momento, todo el trabajo previo pierde valor. Y la responsabilidad legal sigue siendo del expedidor, no del transportista.</p>
+<h2>Control de calidad en la expedición de pedidos: qué hay que verificar antes de que el pedido salga</h2>
+<p>Establecer un checklist de expedición no es burocracia innecesaria: es la última barrera entre un posible error interno y el mercado. Estos son los elementos críticos que deben verificarse sistemáticamente en el muelle de salida:</p>
+<p><strong>Lote correcto.</strong> Parece obvio, pero es uno de los errores más frecuentes. En entornos con alta rotación y múltiples referencias similares, el picking puede servir un lote diferente al indicado en la orden de pedido. Verificar el código de lote antes del cierre del transporte es imprescindible, especialmente si el cliente exige trazabilidad específica o si hay lotes bajo vigilancia interna.</p>
+<p><strong>Fecha de caducidad o consumo preferente.</strong> No basta con que el producto esté dentro de vida útil en el momento del envío: hay que garantizar que el cliente recibirá el producto con margen comercial suficiente. Muchos distribuidores aplican reglas de aceptación propias —por ejemplo, que el producto llegue con al menos el 50 % de su vida útil restante— y un error aquí puede derivar en una devolución o en una reclamación formal.</p>
+<p><strong>Cantidad y unidades.</strong> La verificación de bultos, cajas o unidades respecto a lo indicado en el albarán es un control básico que, sin embargo, se omite frecuentemente cuando hay prisa. Un pedido incompleto genera insatisfacción en el cliente; uno con exceso puede crear desajustes de inventario y trazabilidad difíciles de corregir a posteriori.</p>
+<p><strong>Documentación de acompañamiento.</strong> Según lo establece el <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">Reglamento (CE) n.º 178/2002 sobre legislación alimentaria general</a> (Reglamento [CE] 178/2002, 2002), los operadores de empresas alimentarias deben ser capaces de identificar a cualquier empresa a la que hayan suministrado sus productos. Esto implica que la documentación que acompaña al pedido —albarán, certificado de análisis, declaración de conformidad, o cualquier ficha técnica exigida por el cliente— debe estar completa y correctamente vinculada al lote expedido. Una expedición sin documentación trazable es, en la práctica, una brecha de trazabilidad.</p>
+<p><strong>Estado de la mercancía y condiciones de temperatura.</strong> En productos refrigerados o congelados, verificar que el vehículo de transporte alcanza la temperatura requerida antes de cargar no es opcional. El responsable de calidad debe definir quién hace esta comprobación, cómo se registra y qué ocurre si el vehículo no cumple las condiciones.</p>
+<h2>El error de picking que parece logístico pero es una no conformidad de calidad</h2>
+<p>Existe una tendencia extendida a clasificar los errores de picking como incidencias logísticas y registrarlos, cuando se registran, en los sistemas del departamento de operaciones o transporte. Esto es un error conceptual con consecuencias prácticas importantes.</p>
+
+      <!-- banner-medio:inicio -->
+      <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Mide la calidad en tiempo real</span>KPIs, mermas y reincidencias en un cuadro de mando que se actualiza solo.</p>
+      <a class="btn btn--primary blog-banner__btn" href="../../dashboard/">Ver el dashboard</a>
+    </div>
+  </div>
+      <!-- banner-medio:fin -->
+
+      
+<p>Un error de picking en un almacén alimentario —servir el artículo equivocado, el lote incorrecto o la cantidad incorrecta— es una no conformidad de calidad. Afecta a la trazabilidad, puede implicar que un producto con restricciones de uso llegue a un cliente que no debería recibirlo, y en casos extremos puede dificultar o imposibilitar una retirada de mercado eficaz.</p>
+<p>Los responsables de calidad deben reclamar la gestión de estos errores dentro de su sistema de no conformidades, analizarlos con las mismas herramientas que usarían para una desviación de proceso —análisis de causa raíz, acciones correctoras, seguimiento de reincidencia— y no dejarlos como simples anotaciones en un parte de transporte. La calidad en el muelle de salida es calidad alimentaria, no logística.</p>
+<p>Además, cuando se produce una <a href="../retirada-de-producto-alimentario-sin-caos/">retirada de producto del mercado</a>, los errores de expedición no documentados se convierten en obstáculos críticos: si no se sabe con exactitud qué lote fue a qué cliente, el alcance de la retirada se amplía innecesariamente, con el coste económico y reputacional que eso conlleva.</p>
+<h2>Cómo un software de calidad conecta la expedición con el principio del proceso para que la trazabilidad no se rompa</h2>
+<p>La <a href="../trazabilidad-alimentaria-que-es-y-como-gestionarla-bien/">trazabilidad alimentaria</a> no es un registro puntual: es un hilo que debe mantenerse intacto desde la recepción de la materia prima hasta la expedición al cliente. El problema es que, en muchas empresas, ese hilo se gestiona con herramientas distintas en cada etapa —ERP para producción, hoja de Excel para almacén, papel en el muelle— y en el momento de la expedición el hilo se corta o se vuelve inmanejable.</p>
+<p>Un software de calidad integrado permite que todos los controles realizados a lo largo del proceso —análisis de materias primas, controles de proceso, resultados de laboratorio, no conformidades internas— estén vinculados al lote de producto terminado y, por tanto, accesibles en el momento de la expedición. El responsable de calidad o el operario en el muelle puede verificar, antes de firmar el albarán, que el lote que va a salir tiene todos sus controles cerrados y aprobados.</p>
+<p>Además, cuando se registra una incidencia en expedición —un error de picking, una temperatura de vehículo fuera de rango, un documento faltante— el sistema la vincula automáticamente al pedido, al cliente y al lote, generando una no conformidad trazable que puede seguirse y resolverse sin perder el contexto.</p>
+<p>Este enfoque conectado transforma el muelle de salida en un punto de control activo, no en un punto ciego. Y convierte la expedición en lo que debería ser siempre: la última verificación antes de que el producto llegue a manos del consumidor.</p>
+<p>Implementar controles sistemáticos en la expedición no requiere grandes inversiones ni ralentizar los procesos logísticos. Requiere decisión, un protocolo claro y las herramientas adecuadas para que la información fluya sin fricciones desde el primer análisis de materia prima hasta el último albarán firmado en el muelle.</p>
+<h2>Referencias</h2>
+<ul>
+<li>Reglamento (CE) n.o 178/2002 del Parlamento Europeo y del Consejo, de 28 de enero de 2002, por el que se establecen los principios y los requisitos generales de la legislacion alimentaria. (2002). <a href="https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es" target="_blank" rel="noopener noreferrer">https://eur-lex.europa.eu/eli/reg/2002/178/oj?locale=es</a></li>
+</ul>
+    </div>
+
+    <!-- enlazado:inicio -->
+    <aside class="post__terms">
+      <h2 class="post__terms-title">Terminos relacionados</h2>
+      <ul>
+        <li><a href="../../glosario/trazabilidad-alimentaria/">Trazabilidad alimentaria</a></li>
+        <li><a href="../../glosario/inspeccion-de-recepcion/">Inspección de recepción</a></li>
+        <li><a href="../../glosario/analisis-de-causa-raiz/">Análisis de causa raíz</a></li>
+        <li><a href="../../glosario/no-conformidad/">No conformidad</a></li>
+      </ul>
+    </aside>
+
+    <div class="blog-banner" data-modulo="kpis">
+    <div class="blog-banner__in">
+      <div class="blog-banner__icon-wrap">
+        <span class="blog-banner__halo" aria-hidden="true"></span>
+        <span class="blog-banner__icon" aria-hidden="true"><i class="bico" style="--bico:url('/assets/iconos/grafico-torta.svg')"></i></span>
+      </div>
+      <p class="blog-banner__text"><span class="blog-banner__title">Mide la calidad en tiempo real</span>KPIs, mermas y reincidencias en un cuadro de mando que se actualiza solo.</p>
+      <a class="btn btn--primary blog-banner__btn" href="../../dashboard/">Ver el dashboard</a>
+    </div>
+  </div>
+    <!-- enlazado:fin -->
+
+    <footer class="post__foot">
+      <a class="btn btn--secondary" href="../">← Volver al blog</a>
+    </footer>
+
+    <aside class="post__related">
+      <h2>Sigue leyendo</h2>
+      <div class="blog-grid blog-grid--related">
+        <article class="blog-card">
+        <a class="blog-card__media" href="../periodo-de-prueba-poc-antes-de-un-software-de-calidad/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="../assets/fd45f18508b2-480.avif 480w, ../assets/fd45f18508b2-768.avif 768w, ../assets/fd45f18508b2-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="../assets/fd45f18508b2-480.webp 480w, ../assets/fd45f18508b2-768.webp 768w, ../assets/fd45f18508b2-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="../assets/fd45f18508b2-1200.jpg" width="1200" height="670" alt="Periodo de prueba (POC) antes de un software de calidad" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Calidad y mejora continua</span>
+          <h2 class="blog-card__title"><a href="../periodo-de-prueba-poc-antes-de-un-software-de-calidad/">Periodo de prueba (POC) antes de un software de calidad</a></h2>
+          <p class="blog-card__excerpt">Prueba antes de comprar: qué debe incluir un periodo de prueba de un software de calidad para validar realmente en tu planta.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-16T00:00:00Z">16 de octubre de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="../software-de-calidad-para-marca-blanca-private-label/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="../assets/7fe6ef2c6fe1-480.avif 480w, ../assets/7fe6ef2c6fe1-768.avif 768w, ../assets/7fe6ef2c6fe1-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="../assets/7fe6ef2c6fe1-480.webp 480w, ../assets/7fe6ef2c6fe1-768.webp 768w, ../assets/7fe6ef2c6fe1-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="../assets/7fe6ef2c6fe1-1200.jpg" width="1200" height="670" alt="Software de calidad para marca blanca (private label)" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Calidad y mejora continua</span>
+          <h2 class="blog-card__title"><a href="../software-de-calidad-para-marca-blanca-private-label/">Software de calidad para marca blanca (private label)</a></h2>
+          <p class="blog-card__excerpt">Soluciona el control de calidad en marca blanca con software especializado. Gestiona especificaciones, auditorías y trazabilidad según exigencias del retailer y fabricante simultáneamente.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-15T00:00:00Z">15 de octubre de 2026</time></p>
+        </div>
+      </article>
+        <article class="blog-card">
+        <a class="blog-card__media" href="../software-de-calidad-para-restauracion-colectiva/" aria-hidden="true" tabindex="-1"><picture class="blog-card__img"><source type="image/avif" srcset="../assets/67411e4798ff-480.avif 480w, ../assets/67411e4798ff-768.avif 768w, ../assets/67411e4798ff-1200.avif 1200w" sizes="(max-width: 760px) 100vw, 360px"><source type="image/webp" srcset="../assets/67411e4798ff-480.webp 480w, ../assets/67411e4798ff-768.webp 768w, ../assets/67411e4798ff-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 360px"><img src="../assets/67411e4798ff-1200.jpg" width="1200" height="670" alt="Software de calidad para restauración colectiva" loading="lazy" decoding="async"></picture></a>
+        <div class="blog-card__body">
+          <span class="blog-card__cat">Calidad y mejora continua</span>
+          <h2 class="blog-card__title"><a href="../software-de-calidad-para-restauracion-colectiva/">Software de calidad para restauración colectiva</a></h2>
+          <p class="blog-card__excerpt">Descubre el software de calidad para restauración colectiva que asegura trazabilidad, control de alérgenos y temperatura en el transporte. Solución integral.</p>
+          <p class="blog-card__meta"><time datetime="2026-10-14T00:00:00Z">14 de octubre de 2026</time></p>
+        </div>
+      </article>
+      </div>
+    </aside>
+  </div>
+</article>
+
+<div id="footer"></div>
+<script src="../../chrome.js?v=20260911e"></script>
+</body>
+</html>
