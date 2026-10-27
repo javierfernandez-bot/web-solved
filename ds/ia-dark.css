@@ -77,6 +77,29 @@ body[data-tema="ia"]{ background:var(--color-graphite-900); }
   content:url("/assets/logotipo-solved-claro.webp");
 }
 
+/* — El botón hamburguesa y el panel que abre, en móvil —
+   Los dos venían con un color fijo de la 2.0, de los seis sitios que el
+   comentario de arriba avisa que quedaban «escritos a pelo»: las tres barras
+   del botón (`.nav__toggle span`) en `--ink-900` (#0B1220) y el panel
+   desplegable (`.nav__links`) en blanco opaco. `--ink-900` no es ningún alias
+   del sistema —no lo reasigna este fichero—, así que sobre la barra de nav ya
+   en grafito (`--ds-surface`, #111214 aquí) quedaba casi del mismo negro:
+   botón invisible, sin nada que tocar para abrir el menú. Se reasigna a
+   `--ds-text` (claro en esta página), que es el mismo criterio que ya usa el
+   resto del fichero. Y el panel que abre, con fondo blanco fijo, habría sido
+   la única pieza clara de una página entera en grafito —la regla del
+   sistema que ya cita este fichero—; pasa al mismo grafito casi opaco que el
+   resto de bandas de la página, con su hairline oscuro. El texto de dentro
+   (`.nav__link`, `--ds-text-nav`) ya se reasigna arriba; no hace falta
+   tocarlo aparte. */
+@media (max-width:1000px){
+  [data-tema="ia"] .nav__toggle span{ background:var(--ds-text); }
+  [data-tema="ia"] .nav__links{
+    background:rgba(17,18,20,.98);
+    border-bottom-color:var(--color-hairline);
+  }
+}
+
 /* — Botones —
    El primario no cambia: azul de marca con texto blanco, que sobre grafito sigue
    siendo el único elemento que tiene que gritar. El secundario sí: en claro es
