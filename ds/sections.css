@@ -1229,6 +1229,17 @@ a.rail-card:focus-visible{ outline:2px solid var(--color-primary); outline-offse
    encima de una foto clara convierten el conjunto en una mancha. */
 .compo--hielo .compo__ui{ overflow:hidden }
 
+/* Los valores de esta instancia (panel más estrecho y centrado que el
+   52cqw/-4cqw por defecto) viven aquí, en una regla normal, y NO en el
+   `style` del `<figure>`: un `style` inline gana siempre a la reset de
+   `@container (max-width:760px)` de más abajo —la misma trampa de
+   especificidad ya documentada varias veces en este sistema—, así que con
+   los valores inline el panel se quedaba a su ancho de escritorio (40cqw)
+   en móvil y chocaba con el `.res-pill` de abajo a la derecha. Puestos aquí,
+   la regla del `@container`, que llega después en la hoja, gana a partir de
+   760px de contenedor sin que haga falta `!important`. */
+.compo--hielo{ --compo-ui-w:40cqw; --compo-ui-x:29cqw; --compo-ui-t:50% }
+
 /* La píldora flotante es la `.res-pill` de ds/scene.css, que ya viene
    posicionada: aquí se usa tal cual y su sitio se declara en el marcado con
    `style`, igual que en las escenas. No hace falta clase propia. */
@@ -1246,11 +1257,33 @@ a.rail-card:focus-visible{ outline:2px solid var(--color-primary); outline-offse
    que se enseña menos: la capa crece en proporción y se corta más. La foto
    pasa a un encuadre más cuadrado, como en `.stage`. */
 @container (max-width: 760px){
-  .compo{ --compo-ui-w:96cqw; --compo-ui-x:-10cqw; --compo-ui-t:44% }
   .compo__mira{ display:none }
   /* Sin sitio para tres planos: la capa del frente se apaga y la pantalla
      queda sobre la foto, que es lo que cabe. */
   .compo__frente{ display:none }
+  /* Y sin sitio para cuatro: con el panel casi a ancho completo (96cqw, ver
+     el `@media` de arriba) la píldora de abajo a la derecha queda debajo de
+     la ficha —comprobado con `getBoundingClientRect`, se solapan de los 320
+     a los 900px—, y encima repite un dato que la ficha ya dice en su propio
+     título («ENV-002 · Envasadora vertical»). Se apaga, no se reposiciona:
+     no hay hueco libre en la foto para moverla a otro sitio. */
+  .res-pill{ display:none }
+}
+/* El ensanchado del panel (96cqw/-10cqw/44%) no puede ir dentro del
+   `@container` de arriba: `.compo` es el propio contenedor —lleva
+   `container-type:inline-size`— y un contenedor no puede consultar su
+   PROPIO tamaño para cambiar SU PROPIO estilo (sí el de sus descendientes,
+   que es justo lo que hacen `.compo__mira`/`.compo__frente` ahí arriba). Con
+   la regla dentro del `@container`, `--compo-ui-w` nunca cambiaba de 40cqw/
+   29cqw/50% —comprobado con `getComputedStyle`, no sólo sospechado—, y el
+   panel se quedaba a su ancho de escritorio en cualquier móvil, chocando con
+   el `.res-pill` de la esquina. Aquí sí funciona: es `@media`, contra el
+   ancho de la VENTANA, no del contenedor. 1032px es el ancho de ventana al
+   que `.compo` —que mide un 73-74% del contenido— cruza esos mismos 760px
+   de contenedor, medido contra la página real; no es el breakpoint de
+   tablet habitual del sistema (900/1000px), es el de ESTA proporción. */
+@media (max-width:1032px){
+  .compo{ --compo-ui-w:96cqw; --compo-ui-x:-10cqw; --compo-ui-t:44% }
 }
 @media (max-width:820px){
   .compo{ aspect-ratio:4/3 }
