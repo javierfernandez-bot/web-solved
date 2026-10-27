@@ -1559,13 +1559,48 @@ a.rail-card:focus-visible{ outline:2px solid var(--color-primary); outline-offse
   .rotador__item[data-activo="true"]::before{ animation:none; transform:scaleY(1) }
 }
 
+/* En móvil el panel es un carrusel, no un acordeón con un solo panel fijo
+   (27 oct 2026, petición del cliente: en un iPhone con Chrome el panel
+   animado no se veía —sólo la lista de texto—, y la causa no se pudo acotar
+   con certeza: reproducible contra producción con DevTools y con Chrome de
+   escritorio emulando móvil, pero no en un iPhone real, lo que apunta a un
+   fallo de pintado de WebKit con el contenido compuesto de la escena, algo
+   que esta sesión no puede reproducir ni depurar sin el dispositivo—. En vez
+   de perseguir un bug que no se puede ver, se cambia el patrón: los cuatro
+   paneles van en fila dentro de `.rotador__vista`, uno por pantalla, y el
+   gesto de deslizar —nativo, sin JS de por medio para el desplazamiento en
+   sí— decide cuál se ve. `ds/rotador.js` escucha qué panel queda centrado
+   para marcar su capacidad activa en la lista, igual que al elegirla a mano.
+
+   Los paneles YA NO SE OCULTAN con `[hidden]` aquí: en un acordeón de un solo
+   panel ocultar los otros tres es correcto, pero en una fila que se desliza
+   haría que la mayoría del carrusel no existiera para el navegador. Por eso
+   `.rotador__vista > .scene[hidden]{ display:block }` cancela el
+   `display:none` de la regla de más arriba sólo dentro de este `@media`. */
 @media (max-width:900px){
   .rotador{ grid-template-columns:1fr; gap:28px }
-  .rotador__vista{ order:-1 }
-  /* En una columna el panel mide la mitad de ancho, y a 4:3 eso deja 270px de
-     alto: el móvil de la primera capacidad salía cortado por la pantalla, que
-     es lo que la escena enseña. Cuadrado cabe entero. */
-  .rotador__vista > .scene{ aspect-ratio:1/1 }
+  .rotador__vista{
+    order:-1;
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .rotador__vista::-webkit-scrollbar{ display:none }
+  .rotador__vista > .scene{
+    flex:0 0 100%;
+    scroll-snap-align:center;
+    /* En una columna el panel mide el ancho entero, y a 4:3 eso deja más
+       alto del que cabe sin desplazar la pantalla. Cuadrado cabe entero. */
+    aspect-ratio:1/1;
+  }
+  .rotador__vista > .scene[hidden]{ display:block }
+  /* El riel de la lista ya no cuenta una cuenta atrás hacia un avance
+     automático que no existe en el carrusel —es el dedo quien decide—: se
+     queda lleno y quieto en la capacidad activa, mismo criterio que ya usa
+     este riel con movimiento reducido. */
+  .rotador__item[data-activo="true"]::before{ animation:none; transform:scaleY(1) }
 }
 
 /* =========================================================

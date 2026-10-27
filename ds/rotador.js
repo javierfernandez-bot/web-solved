@@ -19,12 +19,24 @@
 
    Duración: `data-intervalo` en el contenedor para todas, y `data-dur` en un
    `.rotador__item` para la que necesite más —una capacidad cuya pantalla es una
-   animación larga—. Las dos en milisegundos. */
+   animación larga—. Las dos en milisegundos.
+
+   EN MÓVIL ES UN CARRUSEL, NO UN ACORDEÓN (27 oct 2026). La causa fue un panel
+   que no se pintaba en un iPhone real —no reproducible desde aquí, ver el
+   comentario de `ds/sections.css`—, y la salida fue cambiar el patrón: los
+   cuatro paneles van en fila (ese CSS) y aquí sólo cambia QUÉ CONTROLA que uno
+   esté «activo» — en escritorio lo decide el reloj o un clic; en el carrusel,
+   qué panel queda centrado tras deslizar. El resto —el riel por `--rot-dur`,
+   el reloj de «terminado» por `data-dur», el pausar fuera de pantalla— es el
+   mismo mecanismo en los dos modos, factorizado en `marcar()`/`contar()` para
+   no mantenerlo duplicado. */
 (function () {
   var REDUCIDO = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var MQ_CARRUSEL = window.matchMedia && window.matchMedia('(max-width:900px)');
 
   function montar(raiz) {
     var items   = [].slice.call(raiz.querySelectorAll('.rotador__item'));
+    var vista   = raiz.querySelector('.rotador__vista');
     var paneles = [].slice.call(raiz.querySelectorAll('.rotador__vista > .scene'));
     if (items.length < 2 || items.length !== paneles.length) return;
 
@@ -38,34 +50,20 @@
 
     var espera = parseInt(raiz.getAttribute('data-intervalo'), 10) || 7000;
 
-    /* CADA CAPACIDAD PUEDE DURAR LO SUYO (`data-dur`, en ms, en el item).
-       El intervalo común vale mientras las pantallas cuenten lo mismo en el
-       mismo tiempo, y dejó de valer en cuanto una de ellas fue una animación de
-       tres actos: el montaje de la plantilla dura 21 s y el rotador la cortaba
-       a los 7, así que de los tres caminos que promete el rótulo se veía uno.
-       Alargar el intervalo de todas habría dejado las otras tres —que se
-       resuelven en menos de siete segundos— paradas y esperando.
-       El riel de avance se pinta con la duración del item activo, no con una
-       del contenedor: si no, la barra llega al final y la capacidad sigue ahí,
-       que es peor que no tener barra. */
     function duracion(i) {
       var d = parseInt(items[i].getAttribute('data-dur'), 10);
       return d > 0 ? d : espera;
     }
 
-    /* Un temporizador de «terminado» por panel, aparte del que avanza de
-       capacidad (`reloj`, más abajo): una cosa es CUÁNDO SE PASA a la
-       siguiente capacidad y otra CUÁNDO SE DA POR ACABADA la que se ve — la
-       segunda no se para al pasar el ratón, la primera sí (`pausar`, más
-       abajo). Sin este segundo reloj, una capacidad vista más tiempo del que
-       dura su gesto —parado el avance con el ratón encima— se quedaría
-       corriendo en bucle otra vez, que es justo lo que el acordeón no tiene
-       que hacer. */
     var finReloj = new Array(items.length).fill(null);
+    var actual = 0, reloj = null, visible = true, quieto = false, carrusel = false;
 
-    var actual = 0, reloj = null, visible = true, quieto = false;
-
-    function activar(i, porClic) {
+    /* Marca qué capacidad está activa en la lista —rótulo, cuerpo desplegado,
+       riel— y arranca su panel. En escritorio esto también oculta el resto de
+       paneles; en el carrusel no se oculta ninguno —viven todos en fila, es
+       el scroll quien decide cuál se ve—, así que ese `hidden` sólo se toca
+       fuera de modo carrusel. */
+    function marcar(i) {
       actual = i;
       items.forEach(function (it, j) {
         var btn = it.querySelector('.rotador__btn');
@@ -75,34 +73,41 @@
         if (btn) btn.setAttribute('aria-selected', on ? 'true' : 'false');
         if (btn) btn.tabIndex = on ? 0 : -1;
         if (cuerpo) cuerpo.hidden = !on;
-        paneles[j].hidden = !on;
+        if (!carrusel) paneles[j].hidden = !on;
         if (on) {
           it.style.setProperty('--rot-dur', (duracion(j) / 1000) + 's');
           void it.offsetWidth; it.setAttribute('data-activo', 'true');
-
-          /* La capacidad vuelve a contarse desde el principio: se quita el
-             «terminado» de la vez anterior, se reinician a 0 los fotogramas
-             de dentro —si no, un panel ya visto retomaría donde se quedó, no
-             empezaría de cero— y se programa cuándo se da por resuelta, en
-             el mismo instante en que su propio reloj (`data-dur`) se cumple. */
-          clearTimeout(finReloj[j]);
-          paneles[j].removeAttribute('data-terminado');
-          if (paneles[j].getAnimations) {
-            paneles[j].getAnimations({ subtree: true }).forEach(function (a) { a.currentTime = 0; });
-          }
-          finReloj[j] = setTimeout(function () {
-            paneles[j].setAttribute('data-terminado', 'true');
-          }, duracion(j));
-        } else {
-          clearTimeout(finReloj[j]);
         }
       });
+    }
+
+    /* La capacidad vuelve a contarse desde el principio: se quita el
+       «terminado» de la vez anterior, se reinician a 0 los fotogramas de
+       dentro —si no, un panel ya visto retomaría donde se quedó— y se
+       programa cuándo se da por resuelta, en el mismo instante en que su
+       propio reloj (`data-dur`) se cumple. */
+    function contar(i) {
+      var panel = paneles[i];
+      clearTimeout(finReloj[i]);
+      panel.removeAttribute('data-terminado');
+      if (panel.getAnimations) {
+        panel.getAnimations({ subtree: true }).forEach(function (a) { a.currentTime = 0; });
+      }
+      finReloj[i] = setTimeout(function () {
+        panel.setAttribute('data-terminado', 'true');
+      }, duracion(i));
+    }
+
+    function activar(i, porClic) {
+      marcar(i);
+      contar(i);
       if (porClic) programar();
     }
 
     function programar() {
       clearTimeout(reloj);
-      if (REDUCIDO || !visible || quieto) return;
+      // El carrusel no avanza solo: lo mueve el dedo, no un reloj.
+      if (carrusel || REDUCIDO || !visible || quieto) return;
       reloj = setTimeout(function () { activar((actual + 1) % items.length); programar(); }, duracion(actual));
     }
 
@@ -112,17 +117,25 @@
       if (v) clearTimeout(reloj); else programar();
     }
 
+    // Clic en la lista o flechas de teclado: en escritorio activa la
+    // capacidad; en el carrusel desliza su panel al centro, y es el propio
+    // scroll —más abajo— quien la marca activa al llegar.
+    function irA(i) {
+      if (carrusel) paneles[i].scrollIntoView({ behavior: REDUCIDO ? 'auto' : 'smooth', inline: 'center', block: 'nearest' });
+      else activar(i, true);
+    }
+
     items.forEach(function (it, i) {
       var btn = it.querySelector('.rotador__btn');
       if (!btn) return;
-      btn.addEventListener('click', function () { activar(i, true); });
+      btn.addEventListener('click', function () { irA(i); });
       btn.addEventListener('keydown', function (e) {
         var d = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1
               : e.key === 'ArrowUp'   || e.key === 'ArrowLeft'  ? -1 : 0;
         if (!d) return;
         e.preventDefault();
         var n = (i + d + items.length) % items.length;
-        activar(n, true);
+        irA(n);
         items[n].querySelector('.rotador__btn').focus();
       });
     });
@@ -138,12 +151,15 @@
       new IntersectionObserver(function (entradas) {
         var antes = visible;
         visible = entradas[0].isIntersecting;
+        // El carrusel no tiene avance automático que parar al salir de
+        // pantalla; el pausado de cada panel ya lo hace ds/scene.js por su
+        // cuenta (su propio IntersectionObserver, por panel).
+        if (carrusel) return;
         if (visible) {
           programar();
           // Se ha perdido de vista y se ha vuelto a encontrar: la capacidad
           // activa se cuenta otra vez desde el principio, no desde donde se
-          // quedó. `activar` ya limpia su propio reloj de «terminado» y
-          // reinicia los fotogramas, así que basta con volver a llamarla.
+          // quedó.
           if (!antes) activar(actual);
         } else {
           clearTimeout(reloj);
@@ -151,8 +167,52 @@
       }, { threshold: 0.25 }).observe(raiz);
     }
 
-    activar(0);
-    programar();
+    /* EL CARRUSEL: los cuatro paneles van en fila dentro de `.rotador__vista`
+       (ds/sections.css, @media max-width:900px) — ninguno se oculta, es la
+       posición de scroll quien decide cuál se ve. Qué panel está centrado lo
+       dice este observer, con `root` en la propia vista —no en el viewport,
+       que no sabe de su scroll horizontal—: al cruzar el 60% de un panel, su
+       capacidad se marca activa en la lista y su gesto arranca, igual que al
+       elegirla a mano. */
+    var obsCarrusel = null;
+    function entrarCarrusel() {
+      if (carrusel) return;
+      carrusel = true;
+      clearTimeout(reloj);
+      paneles.forEach(function (p) { p.hidden = false; });
+      obsCarrusel = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var i = paneles.indexOf(e.target);
+          if (i !== -1 && i !== actual) { marcar(i); contar(i); }
+        });
+      }, { root: vista, threshold: 0.6 });
+      paneles.forEach(function (p) { obsCarrusel.observe(p); });
+      marcar(actual);
+      contar(actual);
+    }
+    function salirCarrusel() {
+      if (!carrusel) return;
+      carrusel = false;
+      if (obsCarrusel) { obsCarrusel.disconnect(); obsCarrusel = null; }
+      activar(actual);
+      programar();
+    }
+
+    if (MQ_CARRUSEL) {
+      if (MQ_CARRUSEL.matches) {
+        entrarCarrusel();
+      } else {
+        marcar(0); contar(0); programar();
+      }
+      // Cruzar el punto de corte en caliente —una tablet que gira, una
+      // ventana que se redimensiona en pruebas— cambia de modo sin recargar.
+      var alCambiar = function () { if (MQ_CARRUSEL.matches) entrarCarrusel(); else salirCarrusel(); };
+      if (MQ_CARRUSEL.addEventListener) MQ_CARRUSEL.addEventListener('change', alCambiar);
+      else if (MQ_CARRUSEL.addListener) MQ_CARRUSEL.addListener(alCambiar); // Safari antiguo
+    } else {
+      marcar(0); contar(0); programar();
+    }
   }
 
   function arrancar() {
