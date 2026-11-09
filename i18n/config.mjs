@@ -39,6 +39,11 @@ export const RUTAS = {
   '/casos-de-exito/':                    { en: '/case-studies/',        fr: '/etudes-de-cas/',              it: '/casi-di-successo/',         de: '/fallstudien/',             pt: '/casos-de-sucesso/' },
   '/politica-de-privacidad/':            { en: '/privacy-policy/',      fr: '/politique-de-confidentialite/', it: '/informativa-sulla-privacy/', de: '/datenschutzerklaerung/', pt: '/politica-de-privacidade/' },
   '/politica-de-cookies/':               { en: '/cookie-policy/',       fr: '/politique-de-cookies/',       it: '/informativa-sui-cookie/',   de: '/cookie-richtlinie/',       pt: '/politica-de-cookies/' },
+  /* Sólo en inglés por ahora: fr/it/de/pt no tienen esta página escrita
+     todavía, y sin entrada aquí el enlace cae en la de español — el mismo
+     comportamiento ya aceptado en otras páginas sin traducir (p. ej.
+     /software-gmao/). */
+  '/terminos-y-condiciones/':            { en: '/terms-and-conditions/' },
   '/blog/':                              { en: '/blog/',                fr: '/blog/',                       it: '/blog/',                     de: '/blog/',                    pt: '/blog/' },
   '/glosario/':                          { en: '/glossary/',            fr: '/glossaire/',                  it: '/glossario/',                de: '/glossar/',                 pt: '/glossario/' },
 };

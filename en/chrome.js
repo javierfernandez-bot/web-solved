@@ -170,6 +170,7 @@
         '<ul>' +
           '<li><a href="' + ROOT + 'cookie-policy/">Cookie Policy</a></li>' +
           '<li><a href="' + ROOT + 'privacy-policy/">Privacy policy</a></li>' +
+          '<li><a href="' + ROOT + 'terms-and-conditions/">Terms and Conditions</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
