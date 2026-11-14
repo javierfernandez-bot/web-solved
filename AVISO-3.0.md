@@ -1,4 +1,10 @@
-# Web Solved 3.0 — copia local, sin publicar
+# Web Solved 3.0 — copia local, sin publicar (HISTÓRICO)
+
+> **Este aviso ya no aplica.** La 3.0 está publicada: este repo es
+> `javierfernandez-bot/web-solved`, con GitHub Pages y `CNAME` `trysolved.com`,
+> y cada push a `main` sale a producción. Los crons del blog están activos. Lo
+> que sigue describe la etapa en que la 3.0 era una copia desconectada y se
+> conserva solo como historia.
 
 Réplica de `/home/javi/web solved 2.0` (commit `be0553a`) para trabajar la
 versión 3.0 sin tocar producción. **Esta carpeta no puede publicar nada**: se le

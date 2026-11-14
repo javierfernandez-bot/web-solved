@@ -1,8 +1,11 @@
 # Web Solved 3.0 — contexto para trabajar aquí
 
 Sitio estático (HTML + CSS + JS a pelo, **sin build, sin React, sin bundler**) que rehace
-trysolved.com. Es una **copia desconectada de producción**: su remoto es un repo privado propio
-(`javifer31/web-solved-3`), sin Pages, sin CNAME y con los crons del blog comentados. Lee `AVISO-3.0.md` antes de tocar nada relacionado con publicar.
+trysolved.com. **Este repo ES producción**: `javierfernandez-bot/web-solved`, rama `main`, servida
+por GitHub Pages con `CNAME` `trysolved.com`. **Cada push a `main` se publica en la web en un par de
+minutos**, y los crons y el `repository_dispatch` de `.github/workflows/blog.yml` están activos (el
+blog se regenera y commitea solo). `AVISO-3.0.md` describe la etapa anterior, cuando la 3.0 era una
+copia desconectada; se conserva como historia.
 
 ## Cómo se trabaja
 
@@ -24,7 +27,8 @@ titular con promesa, medidas de SEO, nada de «vosotros» ni de coloquialismos. 
 `✔ El registro se sostiene`. Está porque se escribieron tres páginas seguidas sin seguir la ficha.
 
 Los HTML de raíz usan rutas absolutas (`/assets/…`, `/ds/…`), así que hay que verlos por el servidor,
-no abriendo el fichero. `node_modules` viene copiado: no hace falta `npm ci`.
+no abriendo el fichero. `node_modules` no está en git: en un clon nuevo hay que instalar antes
+(`npm ci`).
 
 ## Arquitectura de estilos — tres capas, en este orden
 
