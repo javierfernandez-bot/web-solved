@@ -1,249 +1,826 @@
 {
-  "_nota": "Política de Privacidad, revisión de noviembre de 2026 (es -> en). Sin fr/it/de/pt todavía.",
+  "_nota": "Páginas legales y aviso de cookies, revisión de noviembre de 2026 (es -> en, fr, it, de, pt).",
   "En Solved valoramos y protegemos la privacidad de las personas cuyos datos tratamos. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos los datos personales cuando accede a nuestro sitio web": {
-    "en": "At Solved we value and protect the privacy of the people whose data we process. This Privacy Policy explains how we collect, use and protect personal data when you visit our website"
+    "en": "At Solved we value and protect the privacy of the people whose data we process. This Privacy Policy explains how we collect, use and protect personal data when you visit our website",
+    "fr": "Chez Solved, nous respectons et protégeons la vie privée des personnes dont nous traitons les données. La présente politique de confidentialité explique comment nous collectons, utilisons et protégeons les données personnelles lorsque vous accédez à notre site web",
+    "it": "In Solved teniamo alla privacy delle persone di cui trattiamo i dati e la proteggiamo. La presente informativa spiega come raccogliamo, utilizziamo e proteggiamo i dati personali quando accedi al nostro sito web",
+    "de": "Bei Solved achten und schützen wir die Privatsphäre der Personen, deren Daten wir verarbeiten. Diese Datenschutzerklärung erläutert, wie wir personenbezogene Daten erheben, verwenden und schützen, wenn Sie unsere Website",
+    "pt": "Na Solved, valorizamos e protegemos a privacidade das pessoas cujos dados tratamos. Esta Política de Privacidade explica como recolhemos, utilizamos e protegemos os dados pessoais quando acede ao nosso sítio web"
   },
   "y cuando utiliza la plataforma Solved.": {
-    "en": "and when you use the Solved platform."
+    "en": "and when you use the Solved platform.",
+    "fr": "et lorsque vous utilisez la plateforme Solved.",
+    "it": "e quando utilizzi la piattaforma Solved.",
+    "de": "besuchen und wenn Sie die Solved-Plattform nutzen.",
+    "pt": "e quando utiliza a plataforma Solved."
   },
   "Inscrita en el Registro Mercantil de Valencia, Tomo 10983, Libro 8261, Folio 169, Hoja V-198036": {
-    "en": "Registered with the Commercial Registry of Valencia, Volume 10983, Book 8261, Page 169, Sheet V-198036"
+    "en": "Registered with the Commercial Registry of Valencia, Volume 10983, Book 8261, Page 169, Sheet V-198036",
+    "fr": "Immatriculée au Registre du commerce de Valencia, tome 10983, livre 8261, folio 169, feuille V-198036",
+    "it": "Iscritta al Registro delle imprese di Valencia, Tomo 10983, Libro 8261, Folio 169, Foglio V-198036",
+    "de": "Eingetragen im Handelsregister von Valencia, Band 10983, Buch 8261, Folio 169, Blatt V-198036",
+    "pt": "Registada na Conservatória do Registo Comercial de Valencia, Tomo 10983, Livro 8261, Fólio 169, Folha V-198036"
   },
   "Delegado de Protección de Datos (DPO): no se ha designado DPO. Las consultas sobre privacidad se atienden en la dirección anterior.": {
-    "en": "Data Protection Officer (DPO): no DPO has been appointed. Privacy enquiries are handled at the address above."
+    "en": "Data Protection Officer (DPO): no DPO has been appointed. Privacy enquiries are handled at the address above.",
+    "fr": "Délégué à la protection des données (DPO) : aucun DPO n'a été désigné. Les demandes relatives à la vie privée sont traitées à l'adresse ci-dessus.",
+    "it": "Responsabile della protezione dei dati (DPO): non è stato nominato un DPO. Le richieste in materia di privacy vengono gestite all'indirizzo sopra indicato.",
+    "de": "Datenschutzbeauftragter (DSB): Es wurde kein DSB benannt. Anfragen zum Datenschutz werden unter der oben genannten Anschrift bearbeitet.",
+    "pt": "Encarregado de Proteção de Dados (EPD): não foi nomeado um EPD. Os pedidos relativos à privacidade são tratados no endereço indicado acima."
   },
   "2. Ámbito: cuándo actuamos como responsable y cuándo como encargado": {
-    "en": "2. Scope: when we act as controller and when as processor"
+    "en": "2. Scope: when we act as controller and when as processor",
+    "fr": "2. Champ d'application : quand nous agissons en tant que responsable du traitement et quand en tant que sous-traitant",
+    "it": "2. Ambito: quando agiamo come titolare e quando come responsabile del trattamento",
+    "de": "2. Geltungsbereich: wann wir Verantwortlicher und wann wir Auftragsverarbeiter sind",
+    "pt": "2. Âmbito: quando atuamos como responsável pelo tratamento e quando como subcontratante"
   },
   "Solved actúa como responsable del tratamiento de los datos del sitio web, de los contactos comerciales, de la gestión de las cuentas de sus clientes, del soporte y de la analítica de uso de la plataforma.": {
-    "en": "Solved acts as data controller for website data, sales contacts, the management of its customers' accounts, support and usage analytics of the platform."
+    "en": "Solved acts as data controller for website data, sales contacts, the management of its customers' accounts, support and usage analytics of the platform.",
+    "fr": "Solved agit en tant que responsable du traitement pour les données du site web, des contacts commerciaux, de la gestion des comptes de ses clients, du support et de l'analyse d'utilisation de la plateforme.",
+    "it": "Solved agisce in qualità di titolare del trattamento per i dati del sito web, dei contatti commerciali, della gestione degli account dei propri clienti, dell'assistenza e dell'analisi d'uso della piattaforma.",
+    "de": "Solved ist Verantwortlicher für die Daten der Website, der Vertriebskontakte, der Verwaltung der Konten seiner Kunden, des Supports und der Nutzungsanalyse der Plattform.",
+    "pt": "A Solved atua como responsável pelo tratamento dos dados do sítio web, dos contactos comerciais, da gestão das contas dos seus clientes, do suporte e da análise de utilização da plataforma."
   },
   "Los datos que cada empresa cliente introduce en la plataforma (incidencias, registros, checklists, documentos, activos y los datos de sus empleados) pertenecen al cliente, que es su responsable. Solved los trata únicamente como encargado del tratamiento, por cuenta del cliente y conforme al contrato del artículo 28 del RGPD firmado con él. Si su empresa utiliza Solved y quiere ejercer sus derechos sobre esos datos, diríjase a su empresa; Solved le prestará la asistencia necesaria.": {
-    "en": "The data each customer company enters into the platform (incidents, records, checklists, documents, assets and its employees' data) belongs to the customer, which is its controller. Solved processes it solely as a data processor, on the customer's behalf and under the Article 28 GDPR agreement signed with it. If your company uses Solved and you wish to exercise your rights over that data, please contact your company; Solved will provide the necessary assistance."
+    "en": "The data each customer company enters into the platform (incidents, records, checklists, documents, assets and its employees' data) belongs to the customer, which is its controller. Solved processes it solely as a data processor, on the customer's behalf and under the Article 28 GDPR agreement signed with it. If your company uses Solved and you wish to exercise your rights over that data, please contact your company; Solved will provide the necessary assistance.",
+    "fr": "Les données que chaque entreprise cliente saisit dans la plateforme (incidents, enregistrements, checklists, documents, actifs et données de ses salariés) appartiennent au client, qui en est le responsable du traitement. Solved les traite uniquement en tant que sous-traitant, pour le compte du client et conformément au contrat prévu à l'article 28 du RGPD conclu avec lui. Si votre entreprise utilise Solved et que vous souhaitez exercer vos droits sur ces données, adressez-vous à votre entreprise ; Solved apportera l'assistance nécessaire.",
+    "it": "I dati che ogni azienda cliente inserisce nella piattaforma (anomalie, registrazioni, checklist, documenti, asset e dati dei propri dipendenti) appartengono al cliente, che ne è il titolare del trattamento. Solved li tratta esclusivamente in qualità di responsabile del trattamento, per conto del cliente e in conformità al contratto ai sensi dell'articolo 28 del GDPR sottoscritto con esso. Se la tua azienda utilizza Solved e desideri esercitare i tuoi diritti su tali dati, rivolgiti alla tua azienda; Solved fornirà l'assistenza necessaria.",
+    "de": "Die Daten, die jedes Kundenunternehmen in die Plattform eingibt (Störungen, Aufzeichnungen, Checklisten, Dokumente, Anlagen und die Daten seiner Beschäftigten), gehören dem Kunden, der dafür Verantwortlicher ist. Solved verarbeitet sie ausschließlich als Auftragsverarbeiter, im Auftrag des Kunden und auf Grundlage des mit ihm geschlossenen Vertrags nach Art. 28 DSGVO. Wenn Ihr Unternehmen Solved nutzt und Sie Ihre Rechte an diesen Daten ausüben möchten, wenden Sie sich bitte an Ihr Unternehmen; Solved leistet dabei die erforderliche Unterstützung.",
+    "pt": "Os dados que cada empresa cliente introduz na plataforma (ocorrências, registos, checklists, documentos, ativos e os dados dos seus trabalhadores) pertencem ao cliente, que é o respetivo responsável pelo tratamento. A Solved trata-os unicamente na qualidade de subcontratante, por conta do cliente e nos termos do contrato previsto no artigo 28.º do RGPD celebrado com ele. Se a sua empresa utiliza a Solved e pretende exercer os seus direitos sobre esses dados, dirija-se à sua empresa; a Solved prestará a assistência necessária."
   },
   "3. Información que recopilamos": {
-    "en": "3. Information we collect"
+    "en": "3. Information we collect",
+    "fr": "3. Informations que nous collectons",
+    "it": "3. Informazioni che raccogliamo",
+    "de": "3. Welche Daten wir erheben",
+    "pt": "3. Informação que recolhemos"
   },
   "Datos de cuenta en la plataforma: nombre, correo electrónico, puesto, empresa, plantas y departamentos asignados, idioma y, si se activa la verificación en dos pasos, número de teléfono.": {
-    "en": "Platform account data: name, email address, job title, company, assigned plants and departments, language and, if two-step verification is enabled, phone number."
+    "en": "Platform account data: name, email address, job title, company, assigned plants and departments, language and, if two-step verification is enabled, phone number.",
+    "fr": "Données de compte sur la plateforme : nom, adresse électronique, fonction, entreprise, usines et services assignés, langue et, si la vérification en deux étapes est activée, numéro de téléphone.",
+    "it": "Dati dell'account sulla piattaforma: nome, email, ruolo, azienda, stabilimenti e reparti assegnati, lingua e, se è attivata la verifica in due passaggi, numero di telefono.",
+    "de": "Kontodaten auf der Plattform: Name, E-Mail-Adresse, Position, Unternehmen, zugewiesene Werke und Abteilungen, Sprache und, wenn die Zwei-Faktor-Verifizierung aktiviert ist, Telefonnummer.",
+    "pt": "Dados de conta na plataforma: nome, e-mail, cargo, empresa, fábricas e departamentos atribuídos, idioma e, se a verificação em dois passos estiver ativada, número de telefone."
   },
   "Datos de uso de la plataforma: pantallas visitadas, acciones realizadas, fecha del último acceso, dispositivo y navegador, y registros técnicos de errores.": {
-    "en": "Platform usage data: screens visited, actions performed, last sign-in date, device and browser, and technical error logs."
+    "en": "Platform usage data: screens visited, actions performed, last sign-in date, device and browser, and technical error logs.",
+    "fr": "Données d'utilisation de la plateforme : écrans consultés, actions effectuées, date de la dernière connexion, appareil et navigateur, et journaux techniques d'erreurs.",
+    "it": "Dati di utilizzo della piattaforma: schermate visitate, azioni eseguite, data dell'ultimo accesso, dispositivo e browser, e log tecnici degli errori.",
+    "de": "Nutzungsdaten der Plattform: aufgerufene Bildschirme, durchgeführte Aktionen, Datum der letzten Anmeldung, Gerät und Browser sowie technische Fehlerprotokolle.",
+    "pt": "Dados de utilização da plataforma: ecrãs visitados, ações realizadas, data do último acesso, dispositivo e navegador, e registos técnicos de erros."
   },
   "Mensajes de soporte: lo que el usuario escribe en el asistente de soporte, junto con su nombre, correo electrónico y las capturas que adjunte.": {
-    "en": "Support messages: what the user writes in the support assistant, together with their name, email address and any screenshots they attach."
+    "en": "Support messages: what the user writes in the support assistant, together with their name, email address and any screenshots they attach.",
+    "fr": "Messages au support : ce que l'utilisateur écrit dans l'assistant de support, ainsi que son nom, son adresse électronique et les captures d'écran qu'il joint.",
+    "it": "Messaggi all'assistenza: ciò che l'utente scrive nell'assistente di supporto, insieme a nome, email e alle schermate che allega.",
+    "de": "Support-Nachrichten: was der Nutzer in den Support-Assistenten schreibt, zusammen mit seinem Namen, seiner E-Mail-Adresse und den Screenshots, die er anhängt.",
+    "pt": "Mensagens de suporte: o que o utilizador escreve no assistente de suporte, juntamente com o seu nome, e-mail e as capturas de ecrã que anexar."
   },
   "Datos de navegación en el sitio web: dirección IP, tipo de navegador, sistema operativo, páginas visitadas y tiempo de navegación.": {
-    "en": "Website browsing data: IP address, browser type, operating system, pages visited and browsing time."
+    "en": "Website browsing data: IP address, browser type, operating system, pages visited and browsing time.",
+    "fr": "Données de navigation sur le site web : adresse IP, type de navigateur, système d'exploitation, pages visitées et durée de navigation.",
+    "it": "Dati di navigazione sul sito web: indirizzo IP, tipo di browser, sistema operativo, pagine visitate e tempo di navigazione.",
+    "de": "Nutzungsdaten der Website: IP-Adresse, Browsertyp, Betriebssystem, besuchte Seiten und Verweildauer.",
+    "pt": "Dados de navegação no sítio web: endereço IP, tipo de navegador, sistema operativo, páginas visitadas e tempo de navegação."
   },
   "4. Finalidad y base legal del tratamiento": {
-    "en": "4. Purpose and legal basis for processing"
+    "en": "4. Purpose and legal basis for processing",
+    "fr": "4. Finalité et base légale du traitement",
+    "it": "4. Finalità e base giuridica del trattamento",
+    "de": "4. Zweck und Rechtsgrundlage der Verarbeitung",
+    "pt": "4. Finalidade e base jurídica do tratamento"
   },
   "Gestionar las cuentas de usuario, el acceso y el soporte técnico": {
-    "en": "Managing user accounts, access and technical support"
+    "en": "Managing user accounts, access and technical support",
+    "fr": "Gérer les comptes utilisateurs, l'accès et le support technique",
+    "it": "Gestire gli account utente, l'accesso e l'assistenza tecnica",
+    "de": "Benutzerkonten, Zugang und technischen Support verwalten",
+    "pt": "Gerir as contas de utilizador, o acesso e o suporte técnico"
   },
   "Medir el uso de la plataforma para mejorarla": {
-    "en": "Measuring platform usage in order to improve it"
+    "en": "Measuring platform usage in order to improve it",
+    "fr": "Mesurer l'utilisation de la plateforme afin de l'améliorer",
+    "it": "Misurare l'utilizzo della piattaforma per migliorarla",
+    "de": "Die Nutzung der Plattform messen, um sie zu verbessern",
+    "pt": "Medir a utilização da plataforma para a melhorar"
   },
   "Garantizar la seguridad del servicio y diagnosticar errores": {
-    "en": "Ensuring the security of the service and diagnosing errors"
+    "en": "Ensuring the security of the service and diagnosing errors",
+    "fr": "Garantir la sécurité du service et diagnostiquer les erreurs",
+    "it": "Garantire la sicurezza del servizio e diagnosticare gli errori",
+    "de": "Die Sicherheit des Dienstes gewährleisten und Fehler diagnostizieren",
+    "pt": "Garantir a segurança do serviço e diagnosticar erros"
   },
   "5. Conservación de los datos": {
-    "en": "5. Data retention"
+    "en": "5. Data retention",
+    "fr": "5. Conservation des données",
+    "it": "5. Conservazione dei dati",
+    "de": "5. Speicherdauer",
+    "pt": "5. Conservação dos dados"
   },
   "Contactos comerciales y datos de clientes: mientras se mantenga la relación y, después, durante los plazos necesarios para cumplir obligaciones legales o atender posibles reclamaciones.": {
-    "en": "Sales contacts and customer data: for as long as the relationship lasts and, afterwards, for the periods needed to meet legal obligations or handle possible claims."
+    "en": "Sales contacts and customer data: for as long as the relationship lasts and, afterwards, for the periods needed to meet legal obligations or handle possible claims.",
+    "fr": "Contacts commerciaux et données des clients : tant que dure la relation et, ensuite, pendant les délais nécessaires pour respecter les obligations légales ou traiter d'éventuelles réclamations.",
+    "it": "Contatti commerciali e dati dei clienti: finché dura il rapporto e, successivamente, per i termini necessari ad adempiere obblighi di legge o gestire eventuali reclami.",
+    "de": "Vertriebskontakte und Kundendaten: solange die Geschäftsbeziehung besteht und anschließend für die Fristen, die zur Erfüllung gesetzlicher Pflichten oder zur Bearbeitung möglicher Ansprüche erforderlich sind.",
+    "pt": "Contactos comerciais e dados de clientes: enquanto se mantiver a relação e, posteriormente, durante os prazos necessários para cumprir obrigações legais ou responder a eventuais reclamações."
   },
   "Usuarios dados de baja en la plataforma: su cuenta se elimina definitivamente a los 7 días.": {
-    "en": "Users removed from the platform: their account is permanently deleted after 7 days."
+    "en": "Users removed from the platform: their account is permanently deleted after 7 days.",
+    "fr": "Utilisateurs désactivés sur la plateforme : leur compte est définitivement supprimé au bout de 7 jours.",
+    "it": "Utenti disattivati sulla piattaforma: il loro account viene eliminato definitivamente dopo 7 giorni.",
+    "de": "Von der Plattform abgemeldete Nutzer: Ihr Konto wird nach 7 Tagen endgültig gelöscht.",
+    "pt": "Utilizadores removidos da plataforma: a sua conta é eliminada definitivamente ao fim de 7 dias."
   },
   "Elementos eliminados por el cliente (incidencias, acciones, checklists, plantillas): se purgan definitivamente a los 3 meses.": {
-    "en": "Items deleted by the customer (incidents, actions, checklists, templates): permanently purged after 3 months."
+    "en": "Items deleted by the customer (incidents, actions, checklists, templates): permanently purged after 3 months.",
+    "fr": "Éléments supprimés par le client (incidents, actions, checklists, modèles) : définitivement purgés au bout de 3 mois.",
+    "it": "Elementi eliminati dal cliente (anomalie, azioni, checklist, modelli): vengono eliminati definitivamente dopo 3 mesi.",
+    "de": "Vom Kunden gelöschte Elemente (Störungen, Maßnahmen, Checklisten, Vorlagen): werden nach 3 Monaten endgültig bereinigt.",
+    "pt": "Elementos eliminados pelo cliente (ocorrências, ações, checklists, modelos): são definitivamente purgados ao fim de 3 meses."
   },
   "Registros técnicos y de actividad del sistema: se eliminan automáticamente a los 90 días.": {
-    "en": "Technical and system activity logs: automatically deleted after 90 days."
+    "en": "Technical and system activity logs: automatically deleted after 90 days.",
+    "fr": "Journaux techniques et d'activité du système : supprimés automatiquement au bout de 90 jours.",
+    "it": "Log tecnici e di attività del sistema: vengono eliminati automaticamente dopo 90 giorni.",
+    "de": "Technische Protokolle und Systemaktivitätsprotokolle: werden nach 90 Tagen automatisch gelöscht.",
+    "pt": "Registos técnicos e de atividade do sistema: são eliminados automaticamente ao fim de 90 dias."
   },
   "Copias de seguridad: caducan automáticamente en un máximo de 30 días.": {
-    "en": "Backups: automatically expire within 30 days at most."
+    "en": "Backups: automatically expire within 30 days at most.",
+    "fr": "Sauvegardes : elles expirent automatiquement dans un délai maximal de 30 jours.",
+    "it": "Backup: scadono automaticamente entro un massimo di 30 giorni.",
+    "de": "Sicherungskopien: laufen automatisch nach höchstens 30 Tagen ab.",
+    "pt": "Cópias de segurança: expiram automaticamente num prazo máximo de 30 dias."
   },
   "Datos del cliente al terminar el servicio: se pueden exportar durante 30 días y después se eliminan, salvo obligación legal de conservación.": {
-    "en": "Customer data when the service ends: can be exported for 30 days and are then deleted, unless there is a legal obligation to retain them."
+    "en": "Customer data when the service ends: can be exported for 30 days and are then deleted, unless there is a legal obligation to retain them.",
+    "fr": "Données du client à la fin du service : elles peuvent être exportées pendant 30 jours, puis sont supprimées, sauf obligation légale de conservation.",
+    "it": "Dati del cliente al termine del servizio: possono essere esportati per 30 giorni e vengono poi eliminati, salvo obbligo di conservazione previsto dalla legge.",
+    "de": "Kundendaten bei Vertragsende: können 30 Tage lang exportiert werden und werden danach gelöscht, sofern keine gesetzliche Aufbewahrungspflicht besteht.",
+    "pt": "Dados do cliente no termo do serviço: podem ser exportados durante 30 dias e são depois eliminados, salvo obrigação legal de conservação."
   },
   "6. Proveedores y subencargados del tratamiento": {
-    "en": "6. Providers and sub-processors"
+    "en": "6. Providers and sub-processors",
+    "fr": "6. Prestataires et sous-traitants ultérieurs",
+    "it": "6. Fornitori e sub-responsabili del trattamento",
+    "de": "6. Dienstleister und Unterauftragsverarbeiter",
+    "pt": "6. Prestadores e subcontratantes ulteriores"
   },
   "Solved recurre a los siguientes proveedores, con los que mantiene contratos de encargo del tratamiento conforme al artículo 28 del RGPD:": {
-    "en": "Solved relies on the following providers, with which it has data processing agreements under Article 28 GDPR:"
+    "en": "Solved relies on the following providers, with which it has data processing agreements under Article 28 GDPR:",
+    "fr": "Solved fait appel aux prestataires suivants, avec lesquels il a conclu des contrats de sous-traitance conformément à l'article 28 du RGPD :",
+    "it": "Solved si avvale dei seguenti fornitori, con i quali ha stipulato contratti di nomina a responsabile del trattamento ai sensi dell'articolo 28 del GDPR:",
+    "de": "Solved setzt die folgenden Dienstleister ein, mit denen Auftragsverarbeitungsverträge nach Art. 28 DSGVO bestehen:",
+    "pt": "A Solved recorre aos seguintes prestadores, com os quais mantém contratos de subcontratação nos termos do artigo 28.º do RGPD:"
   },
   "Uso": {
-    "en": "Use"
+    "en": "Use",
+    "fr": "Utilisation",
+    "it": "Utilizzo",
+    "de": "Verwendung",
+    "pt": "Utilização"
   },
   "Garantía": {
-    "en": "Safeguard"
+    "en": "Safeguard",
+    "fr": "Garantie",
+    "it": "Garanzia",
+    "de": "Garantie",
+    "pt": "Garantia"
   },
   "Google Cloud / Firebase (Firestore, Functions, Storage)": {
-    "en": "Google Cloud / Firebase (Firestore, Functions, Storage)"
+    "en": "Google Cloud / Firebase (Firestore, Functions, Storage)",
+    "fr": "Google Cloud / Firebase (Firestore, Functions, Storage)",
+    "it": "Google Cloud / Firebase (Firestore, Functions, Storage)",
+    "de": "Google Cloud / Firebase (Firestore, Functions, Storage)",
+    "pt": "Google Cloud / Firebase (Firestore, Functions, Storage)"
   },
   "Base de datos, lógica de la aplicación y archivos": {
-    "en": "Database, application logic and files"
+    "en": "Database, application logic and files",
+    "fr": "Base de données, logique applicative et fichiers",
+    "it": "Database, logica dell'applicazione e file",
+    "de": "Datenbank, Anwendungslogik und Dateien",
+    "pt": "Base de dados, lógica da aplicação e ficheiros"
   },
   "UE (Bélgica y Países Bajos)": {
-    "en": "EU (Belgium and the Netherlands)"
+    "en": "EU (Belgium and the Netherlands)",
+    "fr": "UE (Belgique et Pays-Bas)",
+    "it": "UE (Belgio e Paesi Bassi)",
+    "de": "EU (Belgien und Niederlande)",
+    "pt": "UE (Bélgica e Países Baixos)"
   },
   "DPA de Google Cloud": {
-    "en": "Google Cloud DPA"
+    "en": "Google Cloud DPA",
+    "fr": "DPA de Google Cloud",
+    "it": "DPA di Google Cloud",
+    "de": "DPA von Google Cloud",
+    "pt": "DPA da Google Cloud"
   },
   "Google Firebase Authentication": {
-    "en": "Google Firebase Authentication"
+    "en": "Google Firebase Authentication",
+    "fr": "Google Firebase Authentication",
+    "it": "Google Firebase Authentication",
+    "de": "Google Firebase Authentication",
+    "pt": "Google Firebase Authentication"
   },
   "Inicio de sesión, cuentas y teléfono para la verificación en dos pasos por SMS": {
-    "en": "Sign-in, accounts and phone number for SMS two-step verification"
+    "en": "Sign-in, accounts and phone number for SMS two-step verification",
+    "fr": "Connexion, comptes et téléphone pour la vérification en deux étapes par SMS",
+    "it": "Accesso, account e telefono per la verifica in due passaggi tramite SMS",
+    "de": "Anmeldung, Konten und Telefonnummer für die Zwei-Faktor-Verifizierung per SMS",
+    "pt": "Início de sessão, contas e telefone para a verificação em dois passos por SMS"
   },
   "EE. UU.": {
-    "en": "USA"
+    "en": "USA",
+    "fr": "États-Unis",
+    "it": "USA",
+    "de": "USA",
+    "pt": "EUA"
   },
   "SCC y DPF": {
-    "en": "SCCs and DPF"
+    "en": "SCCs and DPF",
+    "fr": "CCT et DPF",
+    "it": "CCT e DPF",
+    "de": "SCC und DPF",
+    "pt": "CCT e DPF"
   },
   "Google Firebase Cloud Messaging": {
-    "en": "Google Firebase Cloud Messaging"
+    "en": "Google Firebase Cloud Messaging",
+    "fr": "Google Firebase Cloud Messaging",
+    "it": "Google Firebase Cloud Messaging",
+    "de": "Google Firebase Cloud Messaging",
+    "pt": "Google Firebase Cloud Messaging"
   },
   "Notificaciones push, solo si el usuario las activa": {
-    "en": "Push notifications, only if the user enables them"
+    "en": "Push notifications, only if the user enables them",
+    "fr": "Notifications push, uniquement si l'utilisateur les active",
+    "it": "Notifiche push, solo se l'utente le attiva",
+    "de": "Push-Benachrichtigungen, nur wenn der Nutzer sie aktiviert",
+    "pt": "Notificações push, apenas se o utilizador as ativar"
   },
   "Google Workspace (Gmail)": {
-    "en": "Google Workspace (Gmail)"
+    "en": "Google Workspace (Gmail)",
+    "fr": "Google Workspace (Gmail)",
+    "it": "Google Workspace (Gmail)",
+    "de": "Google Workspace (Gmail)",
+    "pt": "Google Workspace (Gmail)"
   },
   "Envío de los correos de la plataforma": {
-    "en": "Sending platform emails"
+    "en": "Sending platform emails",
+    "fr": "Envoi des e-mails de la plateforme",
+    "it": "Invio delle email della piattaforma",
+    "de": "Versand der E-Mails der Plattform",
+    "pt": "Envio dos e-mails da plataforma"
   },
   "UE (datos en reposo); tratamiento puntual fuera": {
-    "en": "EU (data at rest); occasional processing outside"
+    "en": "EU (data at rest); occasional processing outside",
+    "fr": "UE (données au repos) ; traitement ponctuel hors UE",
+    "it": "UE (dati a riposo); trattamento occasionale al di fuori",
+    "de": "EU (ruhende Daten); gelegentliche Verarbeitung außerhalb",
+    "pt": "UE (dados em repouso); tratamento pontual fora"
   },
   "DPA de Google Workspace, SCC y DPF": {
-    "en": "Google Workspace DPA, SCCs and DPF"
+    "en": "Google Workspace DPA, SCCs and DPF",
+    "fr": "DPA de Google Workspace, CCT et DPF",
+    "it": "DPA di Google Workspace, CCT e DPF",
+    "de": "DPA von Google Workspace, SCC und DPF",
+    "pt": "DPA da Google Workspace, CCT e DPF"
   },
   "Amazon Web Services": {
-    "en": "Amazon Web Services"
+    "en": "Amazon Web Services",
+    "fr": "Amazon Web Services",
+    "it": "Amazon Web Services",
+    "de": "Amazon Web Services",
+    "pt": "Amazon Web Services"
   },
   "Servidores propios de Solved: búsqueda e informes (OpenSearch), registro de errores (Exceptionless) y automatizaciones del soporte (n8n)": {
-    "en": "Solved's own servers: search and reports (OpenSearch), error logging (Exceptionless) and support automations (n8n)"
+    "en": "Solved's own servers: search and reports (OpenSearch), error logging (Exceptionless) and support automations (n8n)",
+    "fr": "Serveurs propres à Solved : recherche et rapports (OpenSearch), journalisation des erreurs (Exceptionless) et automatisations du support (n8n)",
+    "it": "Server propri di Solved: ricerca e report (OpenSearch), registrazione degli errori (Exceptionless) e automazioni dell'assistenza (n8n)",
+    "de": "Eigene Server von Solved: Suche und Berichte (OpenSearch), Fehlerprotokollierung (Exceptionless) und Support-Automatisierungen (n8n)",
+    "pt": "Servidores próprios da Solved: pesquisa e relatórios (OpenSearch), registo de erros (Exceptionless) e automatizações do suporte (n8n)"
   },
   "UE (París)": {
-    "en": "EU (Paris)"
+    "en": "EU (Paris)",
+    "fr": "UE (Paris)",
+    "it": "UE (Parigi)",
+    "de": "EU (Paris)",
+    "pt": "UE (Paris)"
   },
   "DPA de AWS": {
-    "en": "AWS DPA"
+    "en": "AWS DPA",
+    "fr": "DPA d'AWS",
+    "it": "DPA di AWS",
+    "de": "DPA von AWS",
+    "pt": "DPA da AWS"
   },
   "Google Vertex AI, modelos Mistral": {
-    "en": "Google Vertex AI, Mistral models"
+    "en": "Google Vertex AI, Mistral models",
+    "fr": "Google Vertex AI, modèles Mistral",
+    "it": "Google Vertex AI, modelli Mistral",
+    "de": "Google Vertex AI, Mistral-Modelle",
+    "pt": "Google Vertex AI, modelos Mistral"
   },
   "Funciones de inteligencia artificial, por defecto": {
-    "en": "Artificial intelligence features, by default"
+    "en": "Artificial intelligence features, by default",
+    "fr": "Fonctions d'intelligence artificielle, par défaut",
+    "it": "Funzioni di intelligenza artificiale, per impostazione predefinita",
+    "de": "Funktionen der künstlichen Intelligenz, standardmäßig",
+    "pt": "Funções de inteligência artificial, por predefinição"
   },
   "UE (Países Bajos)": {
-    "en": "EU (the Netherlands)"
+    "en": "EU (the Netherlands)",
+    "fr": "UE (Pays-Bas)",
+    "it": "UE (Paesi Bassi)",
+    "de": "EU (Niederlande)",
+    "pt": "UE (Países Baixos)"
   },
   "OpenAI, Anthropic, Google Gemini": {
-    "en": "OpenAI, Anthropic, Google Gemini"
+    "en": "OpenAI, Anthropic, Google Gemini",
+    "fr": "OpenAI, Anthropic, Google Gemini",
+    "it": "OpenAI, Anthropic, Google Gemini",
+    "de": "OpenAI, Anthropic, Google Gemini",
+    "pt": "OpenAI, Anthropic, Google Gemini"
   },
   "Funciones de inteligencia artificial, solo con el consentimiento firmado de la empresa cliente": {
-    "en": "Artificial intelligence features, only with the signed consent of the customer company"
+    "en": "Artificial intelligence features, only with the signed consent of the customer company",
+    "fr": "Fonctions d'intelligence artificielle, uniquement avec le consentement signé de l'entreprise cliente",
+    "it": "Funzioni di intelligenza artificiale, solo con il consenso firmato dell'azienda cliente",
+    "de": "Funktionen der künstlichen Intelligenz, nur mit unterzeichneter Einwilligung des Kundenunternehmens",
+    "pt": "Funções de inteligência artificial, apenas com o consentimento assinado da empresa cliente"
   },
   "OpenAI": {
-    "en": "OpenAI"
+    "en": "OpenAI",
+    "fr": "OpenAI",
+    "it": "OpenAI",
+    "de": "OpenAI",
+    "pt": "OpenAI"
   },
   "Respuestas del asistente de soporte, a partir de los mensajes que escribe el usuario": {
-    "en": "Support assistant answers, based on the messages the user writes"
+    "en": "Support assistant answers, based on the messages the user writes",
+    "fr": "Réponses de l'assistant de support, à partir des messages que l'utilisateur écrit",
+    "it": "Risposte dell'assistente di supporto, a partire dai messaggi che scrive l'utente",
+    "de": "Antworten des Support-Assistenten auf Grundlage der Nachrichten, die der Nutzer schreibt",
+    "pt": "Respostas do assistente de suporte, a partir das mensagens que o utilizador escreve"
   },
   "Slack": {
-    "en": "Slack"
+    "en": "Slack",
+    "fr": "Slack",
+    "it": "Slack",
+    "de": "Slack",
+    "pt": "Slack"
   },
   "Recepción interna de los mensajes y avisos del soporte": {
-    "en": "Internal handling of support messages and reports"
+    "en": "Internal handling of support messages and reports",
+    "fr": "Réception interne des messages et signalements du support",
+    "it": "Ricezione interna dei messaggi e delle segnalazioni dell'assistenza",
+    "de": "Interner Empfang von Support-Nachrichten und -Meldungen",
+    "pt": "Receção interna das mensagens e avisos do suporte"
   },
   "Mixpanel": {
-    "en": "Mixpanel"
+    "en": "Mixpanel",
+    "fr": "Mixpanel",
+    "it": "Mixpanel",
+    "de": "Mixpanel",
+    "pt": "Mixpanel"
   },
   "Analítica de uso de la plataforma": {
-    "en": "Platform usage analytics"
+    "en": "Platform usage analytics",
+    "fr": "Analyse d'utilisation de la plateforme",
+    "it": "Analisi dell'utilizzo della piattaforma",
+    "de": "Nutzungsanalyse der Plattform",
+    "pt": "Análise de utilização da plataforma"
   },
   "Google Analytics": {
-    "en": "Google Analytics"
+    "en": "Google Analytics",
+    "fr": "Google Analytics",
+    "it": "Google Analytics",
+    "de": "Google Analytics",
+    "pt": "Google Analytics"
   },
   "Analítica de uso de la plataforma y del sitio web": {
     "en": "Platform and website usage analytics"
   },
   "Formularios del sitio web y gestión de contactos comerciales": {
-    "en": "Website forms and sales contact management"
+    "en": "Website forms and sales contact management",
+    "fr": "Formulaires du site web et gestion des contacts commerciaux",
+    "it": "Moduli del sito web e gestione dei contatti commerciali",
+    "de": "Formulare der Website und Verwaltung von Vertriebskontakten",
+    "pt": "Formulários do sítio web e gestão de contactos comerciais"
   },
   "Zapier": {
-    "en": "Zapier"
+    "en": "Zapier",
+    "fr": "Zapier",
+    "it": "Zapier",
+    "de": "Zapier",
+    "pt": "Zapier"
   },
   "Entrada de incidencias por correo electrónico, solo si la empresa activa este caso de uso": {
-    "en": "Email-to-incident intake, only if the company enables this use case"
+    "en": "Email-to-incident intake, only if the company enables this use case",
+    "fr": "Création d'incidents par e-mail, uniquement si l'entreprise active ce cas d'usage",
+    "it": "Ricezione di anomalie via email, solo se l'azienda attiva questo caso d'uso",
+    "de": "Erfassung von Störungen per E-Mail, nur wenn das Unternehmen diesen Anwendungsfall aktiviert",
+    "pt": "Entrada de ocorrências por e-mail, apenas se a empresa ativar este caso de utilização"
   },
   "Las integraciones que activa el propio cliente, como conectar su buzón de Microsoft 365 o Gmail o su espacio de Microsoft Teams, se rigen por el contrato del cliente con ese proveedor y no son subencargados de Solved.": {
-    "en": "Integrations enabled by the customer itself, such as connecting its Microsoft 365 or Gmail mailbox or its Microsoft Teams workspace, are governed by the customer's contract with that provider and are not Solved sub-processors."
+    "en": "Integrations enabled by the customer itself, such as connecting its Microsoft 365 or Gmail mailbox or its Microsoft Teams workspace, are governed by the customer's contract with that provider and are not Solved sub-processors.",
+    "fr": "Les intégrations que le client active lui-même, comme la connexion de sa boîte aux lettres Microsoft 365 ou Gmail ou de son espace Microsoft Teams, sont régies par le contrat du client avec ce fournisseur et ne sont pas des sous-traitants ultérieurs de Solved.",
+    "it": "Le integrazioni attivate dal cliente stesso, come il collegamento della propria casella Microsoft 365 o Gmail o del proprio spazio Microsoft Teams, sono disciplinate dal contratto del cliente con tale fornitore e non sono sub-responsabili di Solved.",
+    "de": "Integrationen, die der Kunde selbst aktiviert, etwa die Anbindung seines Microsoft-365- oder Gmail-Postfachs oder seines Microsoft-Teams-Bereichs, unterliegen dem Vertrag des Kunden mit diesem Anbieter und sind keine Unterauftragsverarbeiter von Solved.",
+    "pt": "As integrações ativadas pelo próprio cliente, como ligar a sua caixa de correio Microsoft 365 ou Gmail ou o seu espaço Microsoft Teams, regem-se pelo contrato do cliente com esse fornecedor e não são subcontratantes ulteriores da Solved."
   },
   "Además, Solved podrá comunicar datos cuando sea necesario para cumplir una ley, un procedimiento judicial o una solicitud de una autoridad competente, y en caso de fusión, adquisición o transmisión de activos, garantizando siempre la confidencialidad.": {
-    "en": "Solved may also disclose data when required to comply with a law, legal proceedings or a request from a competent authority, and in the event of a merger, acquisition or transfer of assets, always ensuring confidentiality."
+    "en": "Solved may also disclose data when required to comply with a law, legal proceedings or a request from a competent authority, and in the event of a merger, acquisition or transfer of assets, always ensuring confidentiality.",
+    "fr": "En outre, Solved pourra communiquer des données lorsque cela est nécessaire pour respecter une loi, une procédure judiciaire ou la demande d'une autorité compétente, ainsi qu'en cas de fusion, d'acquisition ou de cession d'actifs, en garantissant toujours la confidentialité.",
+    "it": "Inoltre, Solved potrà comunicare dati quando necessario per rispettare una legge, un procedimento giudiziario o la richiesta di un'autorità competente, nonché in caso di fusione, acquisizione o cessione di asset, garantendo sempre la riservatezza.",
+    "de": "Darüber hinaus kann Solved Daten weitergeben, soweit dies zur Erfüllung eines Gesetzes, eines Gerichtsverfahrens oder einer Anforderung einer zuständigen Behörde erforderlich ist, sowie bei einer Fusion, Übernahme oder Vermögensübertragung, stets unter Wahrung der Vertraulichkeit.",
+    "pt": "Além disso, a Solved poderá comunicar dados quando necessário para cumprir uma lei, um processo judicial ou um pedido de uma autoridade competente, bem como em caso de fusão, aquisição ou transmissão de ativos, garantindo sempre a confidencialidade."
   },
   "7. Transferencias internacionales": {
-    "en": "7. International transfers"
+    "en": "7. International transfers",
+    "fr": "7. Transferts internationaux",
+    "it": "7. Trasferimenti internazionali",
+    "de": "7. Internationale Datenübermittlungen",
+    "pt": "7. Transferências internacionais"
   },
   "Cuando un proveedor trata datos fuera del Espacio Económico Europeo, la transferencia se ampara en las Cláusulas Contractuales Tipo de la Comisión Europea (SCC) y, cuando el proveedor está adherido, en el Marco de Privacidad de Datos UE-EE. UU. (DPF).": {
-    "en": "When a provider processes data outside the European Economic Area, the transfer relies on the European Commission's Standard Contractual Clauses (SCCs) and, where the provider is certified, on the EU-U.S. Data Privacy Framework (DPF)."
+    "en": "When a provider processes data outside the European Economic Area, the transfer relies on the European Commission's Standard Contractual Clauses (SCCs) and, where the provider is certified, on the EU-U.S. Data Privacy Framework (DPF).",
+    "fr": "Lorsqu'un prestataire traite des données en dehors de l'Espace économique européen, le transfert repose sur les clauses contractuelles types de la Commission européenne (CCT) et, lorsque le prestataire y a adhéré, sur le cadre de protection des données UE-États-Unis (DPF).",
+    "it": "Quando un fornitore tratta dati al di fuori dello Spazio Economico Europeo, il trasferimento si basa sulle Clausole Contrattuali Tipo della Commissione europea (CCT) e, se il fornitore vi ha aderito, sul Quadro UE-USA per la protezione dei dati personali (DPF).",
+    "de": "Verarbeitet ein Dienstleister Daten außerhalb des Europäischen Wirtschaftsraums, stützt sich die Übermittlung auf die Standardvertragsklauseln der Europäischen Kommission (SCC) und, sofern der Dienstleister zertifiziert ist, auf den EU-USA-Datenschutzrahmen (DPF).",
+    "pt": "Quando um prestador trata dados fora do Espaço Económico Europeu, a transferência baseia-se nas Cláusulas Contratuais-Tipo da Comissão Europeia (CCT) e, quando o prestador tiver aderido, no Quadro de Privacidade de Dados UE-EUA (DPF)."
   },
   "8. Inteligencia artificial": {
-    "en": "8. Artificial intelligence"
+    "en": "8. Artificial intelligence",
+    "fr": "8. Intelligence artificielle",
+    "it": "8. Intelligenza artificiale",
+    "de": "8. Künstliche Intelligenz",
+    "pt": "8. Inteligência artificial"
   },
   "Las funciones de inteligencia artificial de la plataforma procesan los datos en la Unión Europea, con modelos Mistral alojados en Google Cloud. Solo si la empresa cliente lo autoriza por escrito se utilizan proveedores con tratamiento en EE. UU. (OpenAI, Anthropic, Google Gemini). Cada empresa cliente puede desactivar estas funciones.": {
-    "en": "The platform's artificial intelligence features process data in the European Union, using Mistral models hosted on Google Cloud. Providers with processing in the USA (OpenAI, Anthropic, Google Gemini) are only used if the customer company authorises it in writing. Each customer company can turn these features off."
+    "en": "The platform's artificial intelligence features process data in the European Union, using Mistral models hosted on Google Cloud. Providers with processing in the USA (OpenAI, Anthropic, Google Gemini) are only used if the customer company authorises it in writing. Each customer company can turn these features off.",
+    "fr": "Les fonctions d'intelligence artificielle de la plateforme traitent les données dans l'Union européenne, avec des modèles Mistral hébergés sur Google Cloud. Des prestataires traitant les données aux États-Unis (OpenAI, Anthropic, Google Gemini) ne sont utilisés que si l'entreprise cliente l'autorise par écrit. Chaque entreprise cliente peut désactiver ces fonctions.",
+    "it": "Le funzioni di intelligenza artificiale della piattaforma trattano i dati nell'Unione europea, con modelli Mistral ospitati su Google Cloud. Fornitori con trattamento negli USA (OpenAI, Anthropic, Google Gemini) vengono utilizzati solo se l'azienda cliente lo autorizza per iscritto. Ogni azienda cliente può disattivare queste funzioni.",
+    "de": "Die KI-Funktionen der Plattform verarbeiten die Daten in der Europäischen Union mit Mistral-Modellen, die in Google Cloud gehostet werden. Anbieter mit Verarbeitung in den USA (OpenAI, Anthropic, Google Gemini) werden nur eingesetzt, wenn das Kundenunternehmen dies schriftlich genehmigt. Jedes Kundenunternehmen kann diese Funktionen deaktivieren.",
+    "pt": "As funções de inteligência artificial da plataforma tratam os dados na União Europeia, com modelos Mistral alojados na Google Cloud. Só são utilizados prestadores com tratamento nos EUA (OpenAI, Anthropic, Google Gemini) se a empresa cliente o autorizar por escrito. Cada empresa cliente pode desativar estas funções."
   },
   "Solved no utiliza los datos de sus clientes para entrenar modelos de inteligencia artificial, ni propios ni de terceros. Los proveedores de IA procesan los datos únicamente para generar la respuesta solicitada y, conforme a sus condiciones contractuales, no los utilizan para entrenar sus modelos.": {
-    "en": "Solved does not use its customers' data to train artificial intelligence models, whether its own or third parties'. AI providers process the data solely to generate the requested response and, under their contractual terms, do not use it to train their models."
+    "en": "Solved does not use its customers' data to train artificial intelligence models, whether its own or third parties'. AI providers process the data solely to generate the requested response and, under their contractual terms, do not use it to train their models.",
+    "fr": "Solved n'utilise pas les données de ses clients pour entraîner des modèles d'intelligence artificielle, ni les siens ni ceux de tiers. Les prestataires d'IA traitent les données uniquement pour générer la réponse demandée et, conformément à leurs conditions contractuelles, ne les utilisent pas pour entraîner leurs modèles.",
+    "it": "Solved non utilizza i dati dei propri clienti per addestrare modelli di intelligenza artificiale, né propri né di terzi. I fornitori di IA trattano i dati esclusivamente per generare la risposta richiesta e, in base alle loro condizioni contrattuali, non li utilizzano per addestrare i propri modelli.",
+    "de": "Solved verwendet die Daten seiner Kunden nicht zum Training von KI-Modellen, weder eigener noch solcher Dritter. Die KI-Anbieter verarbeiten die Daten ausschließlich, um die angeforderte Antwort zu erzeugen, und verwenden sie gemäß ihren Vertragsbedingungen nicht zum Training ihrer Modelle.",
+    "pt": "A Solved não utiliza os dados dos seus clientes para treinar modelos de inteligência artificial, nem próprios nem de terceiros. Os prestadores de IA tratam os dados unicamente para gerar a resposta pedida e, nos termos das suas condições contratuais, não os utilizam para treinar os seus modelos."
   },
   "9. Derechos de los usuarios": {
-    "en": "9. Your rights"
+    "en": "9. Your rights",
+    "fr": "9. Droits des utilisateurs",
+    "it": "9. Diritti degli utenti",
+    "de": "9. Rechte der Nutzer",
+    "pt": "9. Direitos dos utilizadores"
   },
   ", indicando el derecho que desea ejercer e incluyendo un documento acreditativo de su identidad. Si se trata de datos que su empresa ha introducido en la plataforma, diríjase a su empresa, que es la responsable de esos datos.": {
-    "en": ", stating the right you wish to exercise and including proof of your identity. For data your company has entered into the platform, please contact your company, which is the controller of that data."
+    "en": ", stating the right you wish to exercise and including proof of your identity. For data your company has entered into the platform, please contact your company, which is the controller of that data.",
+    "fr": ", en indiquant le droit que vous souhaitez exercer et en joignant un justificatif d'identité. S'il s'agit de données que votre entreprise a saisies dans la plateforme, adressez-vous à votre entreprise, qui est le responsable du traitement de ces données.",
+    "it": ", indicando il diritto che desideri esercitare e allegando un documento che attesti la tua identità. Se si tratta di dati che la tua azienda ha inserito nella piattaforma, rivolgiti alla tua azienda, che ne è il titolare del trattamento.",
+    "de": " und nennen Sie dabei das Recht, das Sie ausüben möchten, unter Beifügung eines Identitätsnachweises. Handelt es sich um Daten, die Ihr Unternehmen in die Plattform eingegeben hat, wenden Sie sich bitte an Ihr Unternehmen, das für diese Daten Verantwortlicher ist.",
+    "pt": ", indicando o direito que deseja exercer e anexando um documento comprovativo da sua identidade. Caso se trate de dados que a sua empresa introduziu na plataforma, dirija-se à sua empresa, que é a responsável pelo tratamento desses dados."
   },
   "10. Seguridad de la información": {
-    "en": "10. Information security"
+    "en": "10. Information security",
+    "fr": "10. Sécurité de l'information",
+    "it": "10. Sicurezza delle informazioni",
+    "de": "10. Informationssicherheit",
+    "pt": "10. Segurança da informação"
   },
   "Solved aplica medidas técnicas y organizativas adecuadas para proteger la información personal frente a pérdida, uso indebido, acceso no autorizado, alteración o destrucción. Entre ellas:": {
-    "en": "Solved applies appropriate technical and organisational measures to protect personal information against loss, misuse, unauthorised access, alteration or destruction. They include:"
+    "en": "Solved applies appropriate technical and organisational measures to protect personal information against loss, misuse, unauthorised access, alteration or destruction. They include:",
+    "fr": "Solved applique des mesures techniques et organisationnelles appropriées pour protéger les informations personnelles contre la perte, l'usage abusif, l'accès non autorisé, l'altération ou la destruction. Parmi celles-ci :",
+    "it": "Solved applica misure tecniche e organizzative adeguate per proteggere le informazioni personali da perdita, uso improprio, accesso non autorizzato, alterazione o distruzione. Tra queste:",
+    "de": "Solved trifft geeignete technische und organisatorische Maßnahmen, um personenbezogene Informationen vor Verlust, Missbrauch, unbefugtem Zugriff, Veränderung oder Zerstörung zu schützen. Dazu gehören:",
+    "pt": "A Solved aplica medidas técnicas e organizativas adequadas para proteger a informação pessoal contra perda, uso indevido, acesso não autorizado, alteração ou destruição. Entre elas:"
   },
   "Cifrado de las comunicaciones (TLS) y de los datos en reposo.": {
-    "en": "Encryption of communications (TLS) and of data at rest."
+    "en": "Encryption of communications (TLS) and of data at rest.",
+    "fr": "Chiffrement des communications (TLS) et des données au repos.",
+    "it": "Cifratura delle comunicazioni (TLS) e dei dati a riposo.",
+    "de": "Verschlüsselung der Kommunikation (TLS) und der ruhenden Daten.",
+    "pt": "Cifragem das comunicações (TLS) e dos dados em repouso."
   },
   "Separación lógica de los datos de cada empresa cliente, comprobada en cada acceso.": {
-    "en": "Logical separation of each customer company's data, checked on every access."
+    "en": "Logical separation of each customer company's data, checked on every access.",
+    "fr": "Séparation logique des données de chaque entreprise cliente, vérifiée à chaque accès.",
+    "it": "Separazione logica dei dati di ogni azienda cliente, verificata a ogni accesso.",
+    "de": "Logische Trennung der Daten jedes Kundenunternehmens, bei jedem Zugriff geprüft.",
+    "pt": "Separação lógica dos dados de cada empresa cliente, verificada em cada acesso."
   },
   "Acceso solo para usuarios dados de alta por su empresa, con roles y permisos, e inicio de sesión con Google o Microsoft y verificación en dos pasos disponibles.": {
-    "en": "Access only for users created by their company, with roles and permissions, and Google or Microsoft sign-in and two-step verification available."
+    "en": "Access only for users created by their company, with roles and permissions, and Google or Microsoft sign-in and two-step verification available.",
+    "fr": "Accès réservé aux utilisateurs créés par leur entreprise, avec des rôles et des autorisations, et connexion avec Google ou Microsoft et vérification en deux étapes disponibles.",
+    "it": "Accesso riservato agli utenti registrati dalla propria azienda, con ruoli e permessi, e accesso con Google o Microsoft e verifica in due passaggi disponibili.",
+    "de": "Zugang nur für Nutzer, die von ihrem Unternehmen angelegt wurden, mit Rollen und Berechtigungen; Anmeldung mit Google oder Microsoft und Zwei-Faktor-Verifizierung verfügbar.",
+    "pt": "Acesso apenas para utilizadores registados pela sua empresa, com funções e permissões, e início de sessão com Google ou Microsoft e verificação em dois passos disponíveis."
   },
   "Copias de seguridad diarias y recuperación a un instante concreto, con pruebas de restauración periódicas.": {
-    "en": "Daily backups and point-in-time recovery, with regular restore tests."
+    "en": "Daily backups and point-in-time recovery, with regular restore tests.",
+    "fr": "Sauvegardes quotidiennes et restauration à un instant précis, avec des tests de restauration réguliers.",
+    "it": "Backup giornalieri e ripristino a un momento preciso, con test di ripristino periodici.",
+    "de": "Tägliche Sicherungen und Wiederherstellung zu einem bestimmten Zeitpunkt, mit regelmäßigen Wiederherstellungstests.",
+    "pt": "Cópias de segurança diárias e recuperação para um momento concreto, com testes de restauro periódicos."
   },
   "Notificación al cliente, en menos de 36 horas desde que se tenga conocimiento, de cualquier violación de seguridad que afecte a datos personales tratados por su cuenta.": {
-    "en": "Notification to the customer, within 36 hours of becoming aware, of any security breach affecting personal data processed on its behalf."
+    "en": "Notification to the customer, within 36 hours of becoming aware, of any security breach affecting personal data processed on its behalf.",
+    "fr": "Notification au client, dans un délai de moins de 36 heures après en avoir pris connaissance, de toute violation de sécurité affectant des données personnelles traitées pour son compte.",
+    "it": "Notifica al cliente, entro 36 ore dal momento in cui se ne viene a conoscenza, di qualsiasi violazione di sicurezza che riguardi dati personali trattati per suo conto.",
+    "de": "Benachrichtigung des Kunden innerhalb von weniger als 36 Stunden ab Kenntnisnahme über jede Sicherheitsverletzung, die personenbezogene Daten betrifft, die in seinem Auftrag verarbeitet werden.",
+    "pt": "Notificação ao cliente, em menos de 36 horas a contar do momento em que se tenha conhecimento, de qualquer violação de segurança que afete dados pessoais tratados por sua conta."
   },
   "No obstante, ningún sistema es completamente seguro, por lo que no se puede garantizar la seguridad absoluta de la información.": {
-    "en": "However, no system is completely secure, so absolute security of information cannot be guaranteed."
+    "en": "However, no system is completely secure, so absolute security of information cannot be guaranteed.",
+    "fr": "Toutefois, aucun système n'est totalement sûr : la sécurité absolue des informations ne peut donc pas être garantie.",
+    "it": "Tuttavia nessun sistema è completamente sicuro, quindi non si può garantire la sicurezza assoluta delle informazioni.",
+    "de": "Kein System ist jedoch vollständig sicher, sodass absolute Sicherheit der Informationen nicht garantiert werden kann.",
+    "pt": "Ainda assim, nenhum sistema é totalmente seguro, pelo que não é possível garantir a segurança absoluta da informação."
   },
   "11. Enlaces a terceros": {
-    "en": "11. Third-party links"
+    "en": "11. Third-party links",
+    "fr": "11. Liens vers des tiers",
+    "it": "11. Link a terzi",
+    "de": "11. Links zu Dritten",
+    "pt": "11. Ligações a terceiros"
   },
   "12. Cambios en esta política": {
-    "en": "12. Changes to this policy"
+    "en": "12. Changes to this policy",
+    "fr": "12. Modifications de la présente politique",
+    "it": "12. Modifiche alla presente informativa",
+    "de": "12. Änderungen dieser Erklärung",
+    "pt": "12. Alterações a esta política"
   },
   "Última actualización: noviembre de 2026": {
-    "en": "Last updated: November 2026"
+    "en": "Last updated: November 2026",
+    "fr": "Dernière mise à jour : novembre 2026",
+    "it": "Ultimo aggiornamento: novembre 2026",
+    "de": "Zuletzt aktualisiert: November 2026",
+    "pt": "Última atualização: novembro de 2026"
   },
   "Subencargado": {
-    "en": "Sub-processor"
+    "en": "Sub-processor",
+    "fr": "Sous-traitant ultérieur",
+    "it": "Sub-responsabile",
+    "de": "Unterauftragsverarbeiter",
+    "pt": "Subcontratante ulterior"
+  },
+  "Domicilio social: Calle Utiel 58, bajo, 46901 Torrent (Valencia), España": {
+    "en": "Registered office: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spain",
+    "fr": "Siège social : Calle Utiel 58, bajo, 46901 Torrent (Valencia), Espagne",
+    "it": "Sede legale: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spagna",
+    "de": "Sitz: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spanien",
+    "pt": "Sede social: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Espanha"
+  },
+  "Oficinas: Edificio Angels, Carrer del Port 13, 46024 Valencia, España": {
+    "en": "Offices: Edificio Angels, Carrer del Port 13, 46024 Valencia, Spain",
+    "fr": "Bureaux : Edificio Angels, Carrer del Port 13, 46024 Valencia, Espagne",
+    "it": "Uffici: Edificio Angels, Carrer del Port 13, 46024 Valencia, Spagna",
+    "de": "Büros: Edificio Angels, Carrer del Port 13, 46024 Valencia, Spanien",
+    "pt": "Escritórios: Edificio Angels, Carrer del Port 13, 46024 Valencia, Espanha"
+  },
+  "Cookies: el sitio web no utiliza cookies de analítica ni de publicidad; solo carga el mapa de Google Maps si usted lo acepta. Puede consultar más información en nuestra": {
+    "en": "Cookies: the website uses no analytics or advertising cookies; it only loads the Google Maps map if you accept it. You can find more information in our",
+    "fr": "Cookies : le site web n'utilise aucun cookie d'analyse ni de publicité ; il charge uniquement la carte Google Maps si vous l'acceptez. Plus d'informations dans notre",
+    "it": "Cookie: il sito web non utilizza cookie di analisi né pubblicitari; carica la mappa di Google Maps solo se lo accetti. Maggiori informazioni nella nostra",
+    "de": "Cookies: Die Website verwendet keine Analyse- oder Werbe-Cookies; sie lädt die Google-Maps-Karte nur, wenn Sie dem zustimmen. Weitere Informationen finden Sie in unserer",
+    "pt": "Cookies: o sítio web não utiliza cookies de análise nem de publicidade; só carrega o mapa do Google Maps se o aceitar. Pode consultar mais informação na nossa"
+  },
+  "Google (Maps y Fonts)": {
+    "en": "Google (Maps and Fonts)",
+    "fr": "Google (Maps et Fonts)",
+    "it": "Google (Maps e Fonts)",
+    "de": "Google (Maps und Fonts)",
+    "pt": "Google (Maps e Fonts)"
+  },
+  "Mapa del pie de página del sitio web, solo si se acepta en el aviso de cookies, y tipografías del sitio web": {
+    "en": "Map in the website footer, only if accepted in the cookie notice, and website fonts",
+    "fr": "Carte du pied de page du site web, uniquement si elle est acceptée dans l'avis relatif aux cookies, et polices du site web",
+    "it": "Mappa nel piè di pagina del sito web, solo se accettata nell'avviso sui cookie, e font del sito web",
+    "de": "Karte in der Fußzeile der Website, nur wenn sie im Cookie-Hinweis akzeptiert wird, sowie Schriftarten der Website",
+    "pt": "Mapa do rodapé do sítio web, apenas se for aceite no aviso de cookies, e tipos de letra do sítio web"
+  },
+  "El asistente de soporte de la plataforma utiliza OpenAI para responder a los mensajes que el usuario le escribe. Solo trata lo que el usuario escribe y adjunta en la conversación, junto con su nombre, correo electrónico y empresa; no accede al resto de datos de la empresa en la plataforma.": {
+    "en": "The platform's support assistant uses OpenAI to answer the messages the user writes to it. It only processes what the user writes and attaches in the conversation, together with their name, email address and company; it does not access the rest of the company's data in the platform.",
+    "fr": "L'assistant de support de la plateforme utilise OpenAI pour répondre aux messages que l'utilisateur lui écrit. Il ne traite que ce que l'utilisateur écrit et joint dans la conversation, ainsi que son nom, son adresse électronique et son entreprise ; il n'accède pas aux autres données de l'entreprise dans la plateforme.",
+    "it": "L'assistente di supporto della piattaforma utilizza OpenAI per rispondere ai messaggi che l'utente gli scrive. Tratta solo ciò che l'utente scrive e allega nella conversazione, insieme a nome, email e azienda; non accede agli altri dati dell'azienda presenti nella piattaforma.",
+    "de": "Der Support-Assistent der Plattform nutzt OpenAI, um die Nachrichten zu beantworten, die der Nutzer ihm schreibt. Er verarbeitet nur, was der Nutzer im Gespräch schreibt und anhängt, zusammen mit seinem Namen, seiner E-Mail-Adresse und seinem Unternehmen; auf die übrigen Daten des Unternehmens in der Plattform greift er nicht zu.",
+    "pt": "O assistente de suporte da plataforma utiliza a OpenAI para responder às mensagens que o utilizador lhe escreve. Trata apenas o que o utilizador escreve e anexa na conversa, juntamente com o seu nome, e-mail e empresa; não acede aos restantes dados da empresa na plataforma."
+  },
+  "Esta Política de Cookies explica qué cookies y tecnologías similares utiliza el sitio web trysolved.com, para qué sirven y cómo puede gestionarlas. Para saber cómo tratamos sus datos personales, consulte nuestra": {
+    "en": "This Cookie Policy explains which cookies and similar technologies the trysolved.com website uses, what they are for and how you can manage them. To find out how we process your personal data, please see our",
+    "fr": "La présente politique de cookies explique quels cookies et technologies similaires le site web trysolved.com utilise, à quoi ils servent et comment vous pouvez les gérer. Pour savoir comment nous traitons vos données personnelles, consultez notre",
+    "it": "La presente informativa sui cookie spiega quali cookie e tecnologie simili utilizza il sito web trysolved.com, a cosa servono e come puoi gestirli. Per sapere come trattiamo i tuoi dati personali, consulta la nostra",
+    "de": "Diese Cookie-Richtlinie erklärt, welche Cookies und ähnlichen Technologien die Website trysolved.com verwendet, wozu sie dienen und wie Sie sie verwalten können. Wie wir Ihre personenbezogenen Daten verarbeiten, erfahren Sie in unserer",
+    "pt": "Esta Política de Cookies explica que cookies e tecnologias semelhantes o sítio web trysolved.com utiliza, para que servem e como os pode gerir. Para saber como tratamos os seus dados pessoais, consulte a nossa"
+  },
+  "Las cookies son pequeños archivos que un sitio web guarda en su navegador. Otras tecnologías, como el almacenamiento local del navegador, sirven para fines parecidos. En esta política nos referimos a todas ellas como cookies.": {
+    "en": "Cookies are small files that a website stores in your browser. Other technologies, such as the browser's local storage, serve similar purposes. In this policy we refer to all of them as cookies.",
+    "fr": "Les cookies sont de petits fichiers qu'un site web enregistre dans votre navigateur. D'autres technologies, comme le stockage local du navigateur, servent à des fins similaires. Dans la présente politique, nous les désignons toutes sous le terme de cookies.",
+    "it": "I cookie sono piccoli file che un sito web salva nel tuo browser. Altre tecnologie, come la memoria locale del browser, servono a scopi simili. In questa informativa ci riferiamo a tutte come cookie.",
+    "de": "Cookies sind kleine Dateien, die eine Website in Ihrem Browser speichert. Andere Technologien, etwa der lokale Speicher des Browsers, dienen ähnlichen Zwecken. In dieser Richtlinie bezeichnen wir sie alle als Cookies.",
+    "pt": "Os cookies são pequenos ficheiros que um sítio web guarda no seu navegador. Outras tecnologias, como o armazenamento local do navegador, servem fins semelhantes. Nesta política referimo-nos a todas elas como cookies."
+  },
+  "Qué utiliza este sitio web": {
+    "en": "What this website uses",
+    "fr": "Ce que ce site web utilise",
+    "it": "Cosa utilizza questo sito web",
+    "de": "Was diese Website verwendet",
+    "pt": "O que este sítio web utiliza"
+  },
+  "El sitio web de Solved no utiliza cookies de analítica, de publicidad ni de seguimiento. Solo utiliza lo siguiente:": {
+    "en": "The Solved website uses no analytics, advertising or tracking cookies. It only uses the following:",
+    "fr": "Le site web de Solved n'utilise aucun cookie d'analyse, de publicité ou de suivi. Il utilise uniquement les éléments suivants :",
+    "it": "Il sito web di Solved non utilizza cookie di analisi, pubblicitari né di tracciamento. Utilizza soltanto quanto segue:",
+    "de": "Die Website von Solved verwendet keine Analyse-, Werbe- oder Tracking-Cookies. Sie verwendet nur Folgendes:",
+    "pt": "O sítio web da Solved não utiliza cookies de análise, de publicidade nem de rastreamento. Utiliza apenas o seguinte:"
+  },
+  "Elemento": {
+    "en": "Item",
+    "fr": "Élément",
+    "it": "Elemento",
+    "de": "Element",
+    "pt": "Elemento"
+  },
+  "Duración": {
+    "en": "Duration",
+    "fr": "Durée",
+    "it": "Durata",
+    "de": "Dauer",
+    "pt": "Duração"
+  },
+  "solved_cookie_consent (almacenamiento local)": {
+    "en": "solved_cookie_consent (local storage)",
+    "fr": "solved_cookie_consent (stockage local)",
+    "it": "solved_cookie_consent (memoria locale)",
+    "de": "solved_cookie_consent (lokaler Speicher)",
+    "pt": "solved_cookie_consent (armazenamento local)"
+  },
+  "Técnica, propia": {
+    "en": "Technical, first-party",
+    "fr": "Technique, propre",
+    "it": "Tecnico, proprio",
+    "de": "Technisch, Erstanbieter",
+    "pt": "Técnico, próprio"
+  },
+  "Recordar si ha aceptado o rechazado el aviso de cookies, para no volver a mostrarlo": {
+    "en": "Remembering whether you accepted or rejected the cookie notice, so it is not shown again",
+    "fr": "Mémoriser si vous avez accepté ou refusé l'avis relatif aux cookies, afin de ne plus l'afficher",
+    "it": "Ricordare se hai accettato o rifiutato l'avviso sui cookie, per non mostrarlo di nuovo",
+    "de": "Speichern, ob Sie den Cookie-Hinweis akzeptiert oder abgelehnt haben, damit er nicht erneut angezeigt wird",
+    "pt": "Lembrar se aceitou ou rejeitou o aviso de cookies, para não voltar a mostrá-lo"
+  },
+  "Hasta que borre los datos del navegador": {
+    "en": "Until you clear your browser data",
+    "fr": "Jusqu'à ce que vous effaciez les données du navigateur",
+    "it": "Finché non cancelli i dati del browser",
+    "de": "Bis Sie die Browserdaten löschen",
+    "pt": "Até apagar os dados do navegador"
+  },
+  "Mapa de Google Maps del pie de página": {
+    "en": "Google Maps map in the footer",
+    "fr": "Carte Google Maps du pied de page",
+    "it": "Mappa di Google Maps nel piè di pagina",
+    "de": "Google-Maps-Karte in der Fußzeile",
+    "pt": "Mapa do Google Maps no rodapé"
+  },
+  "Google": {
+    "en": "Google",
+    "fr": "Google",
+    "it": "Google",
+    "de": "Google",
+    "pt": "Google"
+  },
+  "De terceros; solo se carga si acepta el aviso": {
+    "en": "Third-party; only loaded if you accept the notice",
+    "fr": "Tiers ; chargée uniquement si vous acceptez l'avis",
+    "it": "Di terze parti; viene caricata solo se accetti l'avviso",
+    "de": "Drittanbieter; wird nur geladen, wenn Sie dem Hinweis zustimmen",
+    "pt": "De terceiros; só é carregado se aceitar o aviso"
+  },
+  "Mostrar la ubicación de nuestras oficinas. Al cargarse, Google puede instalar sus propias cookies": {
+    "en": "Showing the location of our offices. When it loads, Google may set its own cookies",
+    "fr": "Afficher l'emplacement de nos bureaux. Lors de son chargement, Google peut déposer ses propres cookies",
+    "it": "Mostrare la posizione dei nostri uffici. Al caricamento, Google può installare i propri cookie",
+    "de": "Den Standort unserer Büros anzeigen. Beim Laden kann Google eigene Cookies setzen",
+    "pt": "Mostrar a localização dos nossos escritórios. Ao carregar, a Google pode instalar os seus próprios cookies"
+  },
+  "Según la política de Google": {
+    "en": "As set by Google's policy",
+    "fr": "Selon la politique de Google",
+    "it": "Secondo l'informativa di Google",
+    "de": "Gemäß der Richtlinie von Google",
+    "pt": "De acordo com a política da Google"
+  },
+  "Formularios de HubSpot": {
+    "en": "HubSpot forms",
+    "fr": "Formulaires HubSpot",
+    "it": "Moduli di HubSpot",
+    "de": "HubSpot-Formulare",
+    "pt": "Formulários da HubSpot"
+  },
+  "Técnica, de terceros": {
+    "en": "Technical, third-party",
+    "fr": "Technique, tiers",
+    "it": "Tecnico, di terze parti",
+    "de": "Technisch, Drittanbieter",
+    "pt": "Técnico, de terceiros"
+  },
+  "Enviar las solicitudes de demostración y de contacto que usted rellena": {
+    "en": "Submitting the demo and contact requests you fill in",
+    "fr": "Envoyer les demandes de démonstration et de contact que vous remplissez",
+    "it": "Inviare le richieste di demo e di contatto che compili",
+    "de": "Die von Ihnen ausgefüllten Demo- und Kontaktanfragen übermitteln",
+    "pt": "Enviar os pedidos de demonstração e de contacto que preenche"
+  },
+  "Según la política de HubSpot": {
+    "en": "As set by HubSpot's policy",
+    "fr": "Selon la politique de HubSpot",
+    "it": "Secondo l'informativa di HubSpot",
+    "de": "Gemäß der Richtlinie von HubSpot",
+    "pt": "De acordo com a política da HubSpot"
+  },
+  "Google Fonts": {
+    "en": "Google Fonts",
+    "fr": "Google Fonts",
+    "it": "Google Fonts",
+    "de": "Google Fonts",
+    "pt": "Google Fonts"
+  },
+  "Sin cookies": {
+    "en": "No cookies",
+    "fr": "Sans cookies",
+    "it": "Nessun cookie",
+    "de": "Keine Cookies",
+    "pt": "Sem cookies"
+  },
+  "Cargar las tipografías del sitio. El navegador se conecta a los servidores de Google, que reciben su dirección IP": {
+    "en": "Loading the site's fonts. Your browser connects to Google's servers, which receive your IP address",
+    "fr": "Charger les polices du site. Le navigateur se connecte aux serveurs de Google, qui reçoivent votre adresse IP",
+    "it": "Caricare i font del sito. Il browser si collega ai server di Google, che ricevono il tuo indirizzo IP",
+    "de": "Die Schriftarten der Website laden. Der Browser verbindet sich mit den Servern von Google, die Ihre IP-Adresse erhalten",
+    "pt": "Carregar os tipos de letra do sítio. O navegador liga-se aos servidores da Google, que recebem o seu endereço IP"
+  },
+  "No aplica": {
+    "en": "Not applicable",
+    "fr": "Sans objet",
+    "it": "Non applicabile",
+    "de": "Entfällt",
+    "pt": "Não aplicável"
+  },
+  "Cómo gestionar las cookies": {
+    "en": "How to manage cookies",
+    "fr": "Comment gérer les cookies",
+    "it": "Come gestire i cookie",
+    "de": "Cookies verwalten",
+    "pt": "Como gerir os cookies"
+  },
+  "La primera vez que entra en el sitio verá un aviso con dos opciones. Si pulsa Aceptar, se carga el mapa de Google Maps del pie de página. Si pulsa Rechazar, el mapa no se carga y en su lugar aparece un enlace para abrirlo en Google Maps. Para cambiar su elección, borre los datos de este sitio en su navegador y el aviso volverá a aparecer.": {
+    "en": "The first time you visit the site you will see a notice with two options. If you click Accept, the Google Maps map in the footer is loaded. If you click Reject, the map is not loaded and a link to open it in Google Maps is shown instead. To change your choice, clear this site's data in your browser and the notice will appear again.",
+    "fr": "La première fois que vous accédez au site, un avis vous propose deux options. Si vous cliquez sur Accepter, la carte Google Maps du pied de page est chargée. Si vous cliquez sur Refuser, la carte n'est pas chargée et un lien permettant de l'ouvrir dans Google Maps s'affiche à la place. Pour modifier votre choix, effacez les données de ce site dans votre navigateur et l'avis réapparaîtra.",
+    "it": "La prima volta che accedi al sito vedrai un avviso con due opzioni. Se fai clic su Accetta, viene caricata la mappa di Google Maps nel piè di pagina. Se fai clic su Rifiuta, la mappa non viene caricata e al suo posto compare un link per aprirla in Google Maps. Per modificare la tua scelta, cancella i dati di questo sito nel tuo browser e l'avviso comparirà di nuovo.",
+    "de": "Beim ersten Besuch der Website sehen Sie einen Hinweis mit zwei Optionen. Wenn Sie auf Akzeptieren klicken, wird die Google-Maps-Karte in der Fußzeile geladen. Wenn Sie auf Ablehnen klicken, wird die Karte nicht geladen und stattdessen ein Link angezeigt, um sie in Google Maps zu öffnen. Um Ihre Auswahl zu ändern, löschen Sie die Daten dieser Website in Ihrem Browser; der Hinweis erscheint dann erneut.",
+    "pt": "Na primeira vez que aceder ao sítio, verá um aviso com duas opções. Se clicar em Aceitar, o mapa do Google Maps do rodapé é carregado. Se clicar em Rejeitar, o mapa não é carregado e, em seu lugar, aparece uma ligação para o abrir no Google Maps. Para alterar a sua escolha, apague os dados deste sítio no seu navegador e o aviso voltará a aparecer."
+  },
+  "Además, puede bloquear o eliminar las cookies desde la configuración de su navegador. Encontrará más información en": {
+    "en": "You can also block or delete cookies in your browser settings. You will find more information at",
+    "fr": "Vous pouvez également bloquer ou supprimer les cookies dans les paramètres de votre navigateur. Vous trouverez plus d'informations sur",
+    "it": "Puoi inoltre bloccare o eliminare i cookie dalle impostazioni del tuo browser. Troverai maggiori informazioni su",
+    "de": "Außerdem können Sie Cookies in den Einstellungen Ihres Browsers blockieren oder löschen. Weitere Informationen finden Sie unter",
+    "pt": "Além disso, pode bloquear ou eliminar os cookies nas definições do seu navegador. Encontrará mais informação em"
+  },
+  "Contacto": {
+    "en": "Contact",
+    "fr": "Contact",
+    "it": "Contatti",
+    "de": "Kontakt",
+    "pt": "Contacto"
+  },
+  "Si tiene alguna pregunta sobre esta Política de Cookies, escríbanos a": {
+    "en": "If you have any questions about this Cookie Policy, write to us at",
+    "fr": "Si vous avez des questions sur la présente politique de cookies, écrivez-nous à",
+    "it": "Per qualsiasi domanda su questa informativa sui cookie, scrivici a",
+    "de": "Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, schreiben Sie uns an",
+    "pt": "Se tiver alguma questão sobre esta Política de Cookies, escreva-nos para"
+  },
+  "Edificio Angels, Carrer del Port 13, 46024 Valencia": "=",
+  "Ver la ubicación en Google Maps": {
+    "en": "View the location on Google Maps",
+    "fr": "Voir l'emplacement sur Google Maps",
+    "it": "Vedi la posizione su Google Maps",
+    "de": "Standort in Google Maps ansehen",
+    "pt": "Ver a localização no Google Maps"
+  },
+  "No usamos cookies de analítica ni de publicidad. Si aceptas, cargamos el mapa de Google Maps del pie de página, que instala cookies de Google. Más información en nuestra": {
+    "en": "We do not use analytics or advertising cookies. If you accept, we load the Google Maps map in the footer, which sets Google cookies. More information in our",
+    "fr": "Nous n'utilisons pas de cookies d'analyse ni de publicité. Si vous acceptez, nous chargeons la carte Google Maps du pied de page, qui dépose des cookies de Google. Plus d'informations dans notre",
+    "it": "Non usiamo cookie di analisi né pubblicitari. Se accetti, carichiamo la mappa di Google Maps nel piè di pagina, che installa cookie di Google. Maggiori informazioni nella nostra",
+    "de": "Wir verwenden keine Analyse- oder Werbe-Cookies. Wenn Sie zustimmen, laden wir die Google-Maps-Karte in der Fußzeile, die Cookies von Google setzt. Mehr dazu in unserer",
+    "pt": "Não utilizamos cookies de análise nem de publicidade. Se aceitar, carregamos o mapa do Google Maps no rodapé, que instala cookies da Google. Mais informação na nossa"
   }
 }

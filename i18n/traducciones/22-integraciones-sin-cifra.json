@@ -15,11 +15,11 @@
     "pt": "Integra-se com todos os seus sistemas —ERP, MES e CMMS—, para que o dado de fábrica não fique isolado nem seja introduzido duas vezes."
   },
   "Se integra con todos tus sistemas: ERP, MES y GMAO, como SAP, Dynamics, Odoo o Maximo. Solved opera de forma autónoma; integrar es opción, no requisito.": {
-    "en": "It integrates with all your systems: ERP, MES and CMMS, such as SAP, Dynamics, Odoo or Maximo. Solved runs on its own; integrating is an option, not a requirement.",
-    "fr": "Il s'intègre à tous vos systèmes : ERP, MES et GMAO, comme SAP, Dynamics, Odoo ou Maximo. Solved fonctionne de façon autonome ; intégrer est une option, pas une condition.",
+    "en": "Integrates with all your systems: ERP, MES and CMMS, such as SAP, Dynamics, Odoo or Maximo. Solved runs on its own; integrating is an option, not a requirement.",
+    "fr": "S'intègre à vos ERP, MES et GMAO, comme SAP, Dynamics, Odoo ou Maximo. Solved fonctionne de façon autonome : l'intégration est une option, pas une condition.",
     "it": "Si integra con tutti i tuoi sistemi: ERP, MES e CMMS, come SAP, Dynamics, Odoo o Maximo. Solved opera in autonomia; integrare è un'opzione, non un requisito.",
-    "de": "Es verbindet sich mit allen Ihren Systemen: ERP, MES und Instandhaltungssysteme, etwa SAP, Dynamics, Odoo oder Maximo. Solved läuft eigenständig; die Integration ist eine Option, keine Voraussetzung.",
-    "pt": "Integra-se com todos os seus sistemas: ERP, MES e CMMS, como SAP, Dynamics, Odoo ou Maximo. O Solved funciona de forma autónoma; integrar é opção, não requisito."
+    "de": "Anbindung an ERP-, MES- und Instandhaltungssysteme wie SAP, Dynamics, Odoo oder Maximo. Solved läuft eigenständig; Integration ist Option, kein Muss.",
+    "pt": "Integra-se com os seus sistemas: ERP, MES e CMMS, como SAP, Dynamics, Odoo ou Maximo. O Solved funciona de forma autónoma; integrar é opção, não requisito."
   },
   "Ver los sistemas conectados": {
     "en": "See the connected systems",

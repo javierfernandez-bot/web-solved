@@ -387,15 +387,15 @@
   "Informes y KPIs de planta industrial en tiempo real · Solved": {
     "en": "Real-time industrial plant reports and KPIs · Solved",
     "fr": "Rapports et KPI d'usine industrielle en temps réel · Solved",
-    "it": "Report e KPI di stabilimento industriale in tempo reale · Solved",
+    "it": "Report e KPI di stabilimento in tempo reale · Solved",
     "de": "Berichte und KPIs für Industriewerke in Echtzeit · Solved",
-    "pt": "Relatórios e KPIs de fábrica industrial em tempo real · Solved"
+    "pt": "Relatórios e KPIs de fábrica em tempo real · Solved"
   },
   "Incidencias por área, tiempo medio de cierre, registros pendientes y tasa de reincidencia, actualizados en tiempo real y sin elaboración manual del informe.": {
     "en": "Incidents by area, average time to close, pending records and repeat rate, updated in real time and with no report to build by hand.",
     "fr": "Incidents par service, délai moyen de clôture, enregistrements en attente et taux de récidive, mis à jour en temps réel et sans élaboration manuelle du rapport.",
     "it": "Anomalie per area, tempo medio di chiusura, registrazioni in sospeso e tasso di ricaduta, aggiornati in tempo reale e senza elaborare il report a mano.",
-    "de": "Störungen nach Bereich, durchschnittliche Abschlusszeit, offene Aufzeichnungen und Wiederholungsquote – in Echtzeit aktualisiert, ohne den Bericht von Hand zu bauen.",
+    "de": "Störungen nach Bereich, mittlere Abschlusszeit, offene Aufzeichnungen und Wiederholungsquote – in Echtzeit aktualisiert, ohne manuell erstellten Bericht.",
     "pt": "Ocorrências por área, tempo médio de encerramento, registos pendentes e taxa de reincidência, atualizados em tempo real e sem elaboração manual do relatório."
   },
   "KPIs y dashboards": {

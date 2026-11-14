@@ -11,7 +11,7 @@
 //   - resto de páginas → fecha del último commit que tocó su index.html
 // =========================================================
 import { execFile } from 'node:child_process';
-import { promises as fs, existsSync } from 'node:fs';
+import { promises as fs, existsSync, readFileSync } from 'node:fs';
 import { promisify } from 'node:util';
 import { config } from '../config.mjs';
 import { TARGETS } from '../../i18n/config.mjs';
@@ -50,14 +50,20 @@ export function urlBlock({ loc, lastmod, changefreq, priority }) {
    Sólo entra lo que existe en disco: la tubería de idiomas se construye aparte
    (npm run build:i18n y build:i18n:contenido) y anunciar en el sitemap una
    página que todavía no se ha generado es un 404 servido a Google. El <lastmod>
-   se hereda del español, que es de donde sale el texto. */
+   se hereda del español, que es de donde sale el texto.
+   Tampoco entra una traducción con noindex: build-i18n-contenido.mjs se lo pone
+   a las páginas que todavía salen mayormente en español. */
+function esNoindex(file) {
+  return /<meta name="robots" content="noindex/i.test(readFileSync(file, 'utf8'));
+}
+
 export function conIdiomas(entries) {
   const fuera = [];
   for (const e of entries) {
     fuera.push(e);
     for (const lang of TARGETS) {
       const loc = rutaContenido(e.loc, lang);
-      if (!loc || !existsSync(locToFile(loc))) continue;
+      if (!loc || !existsSync(locToFile(loc)) || esNoindex(locToFile(loc))) continue;
       fuera.push({ ...e, loc });
     }
   }

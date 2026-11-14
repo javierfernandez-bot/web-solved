@@ -1,6 +1,6 @@
 {
-  "generado": "2026-10-07",
-  "total": 1448,
+  "generado": "2026-11-14",
+  "total": 1523,
   "cadenas": [
     {
       "es": "Software de gestión de operaciones industriales · Solved",
@@ -5063,7 +5063,8 @@
       "es": "Proveedor",
       "en": [
         "/no-conformidades/",
-        "/dashboard/"
+        "/dashboard/",
+        "/politica-de-cookies/"
       ]
     },
     {
@@ -5531,7 +5532,8 @@
     {
       "es": "Tipo",
       "en": [
-        "/gestion-de-activos/"
+        "/gestion-de-activos/",
+        "/politica-de-cookies/"
       ]
     },
     {
@@ -5543,7 +5545,8 @@
     {
       "es": "Ubicación",
       "en": [
-        "/gestion-de-activos/"
+        "/gestion-de-activos/",
+        "/politica-de-privacidad/"
       ]
     },
     {
@@ -7701,7 +7704,8 @@
       "es": "info@trysolved.com",
       "en": [
         "/integraciones/",
-        "/politica-de-privacidad/"
+        "/politica-de-privacidad/",
+        "/politica-de-cookies/"
       ]
     },
     {
@@ -8692,35 +8696,31 @@
     {
       "es": "Política de Privacidad",
       "en": [
-        "/politica-de-privacidad/"
+        "/politica-de-privacidad/",
+        "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Última actualización: noviembre de 2025",
+      "es": "Última actualización: noviembre de 2026",
+      "en": [
+        "/politica-de-privacidad/",
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "En Solved valoramos y protegemos la privacidad de las personas cuyos datos tratamos. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos los datos personales cuando accede a nuestro sitio web",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "En Solved, valoramos y protegemos la privacidad de nuestros usuarios. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos los datos personales cuando accede a nuestro sitio web",
-      "en": [
-        "/politica-de-privacidad/"
-      ]
-    },
-    {
-      "es": "y utiliza nuestros servicios.",
+      "es": "y cuando utiliza la plataforma Solved.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
       "es": "www.trysolved.com",
-      "en": [
-        "/politica-de-privacidad/"
-      ]
-    },
-    {
-      "es": "Al utilizar nuestro sitio web o nuestros servicios, usted acepta esta Política de Privacidad.",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -8744,7 +8744,19 @@
       ]
     },
     {
-      "es": "Domicilio: Calle Utiel 58, bajo, 46901 Torrent (Valencia), España",
+      "es": "Domicilio social: Calle Utiel 58, bajo, 46901 Torrent (Valencia), España",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Oficinas: Edificio Angels, Carrer del Port 13, 46024 Valencia, España",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Inscrita en el Registro Mercantil de Valencia, Tomo 10983, Libro 8261, Folio 169, Hoja V-198036",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -8756,13 +8768,31 @@
       ]
     },
     {
-      "es": "Delegado de Protección de Datos (DPO): No se ha designado DPO.",
+      "es": "Delegado de Protección de Datos (DPO): no se ha designado DPO. Las consultas sobre privacidad se atienden en la dirección anterior.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "2. Información que recopilamos",
+      "es": "2. Ámbito: cuándo actuamos como responsable y cuándo como encargado",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Solved actúa como responsable del tratamiento de los datos del sitio web, de los contactos comerciales, de la gestión de las cuentas de sus clientes, del soporte y de la analítica de uso de la plataforma.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Los datos que cada empresa cliente introduce en la plataforma (incidencias, registros, checklists, documentos, activos y los datos de sus empleados) pertenecen al cliente, que es su responsable. Solved los trata únicamente como encargado del tratamiento, por cuenta del cliente y conforme al contrato del artículo 28 del RGPD firmado con él. Si su empresa utiliza Solved y quiere ejercer sus derechos sobre esos datos, diríjase a su empresa; Solved le prestará la asistencia necesaria.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "3. Información que recopilamos",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -8774,19 +8804,37 @@
       ]
     },
     {
-      "es": "Datos de navegación: dirección IP, tipo de navegador, sistema operativo, páginas visitadas y tiempo de navegación.",
-      "en": [
-        "/politica-de-privacidad/"
-      ]
-    },
-    {
       "es": "Datos proporcionados a través de formularios: información que usted nos facilita voluntariamente al solicitar una demo, contacto o suscripción.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Cookies: utilizamos cookies propias y de terceros para mejorar la experiencia de navegación y obtener estadísticas de uso. Puede consultar más información en nuestra",
+      "es": "Datos de cuenta en la plataforma: nombre, correo electrónico, puesto, empresa, plantas y departamentos asignados, idioma y, si se activa la verificación en dos pasos, número de teléfono.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Datos de uso de la plataforma: pantallas visitadas, acciones realizadas, fecha del último acceso, dispositivo y navegador, y registros técnicos de errores.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Mensajes de soporte: lo que el usuario escribe en el asistente de soporte, junto con su nombre, correo electrónico y las capturas que adjunte.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Datos de navegación en el sitio web: dirección IP, tipo de navegador, sistema operativo, páginas visitadas y tiempo de navegación.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Cookies: el sitio web no utiliza cookies de analítica ni de publicidad; solo carga el mapa de Google Maps si usted lo acepta. Puede consultar más información en nuestra",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -8800,7 +8848,7 @@
       ]
     },
     {
-      "es": "3. Finalidad y base legal del tratamiento",
+      "es": "4. Finalidad y base legal del tratamiento",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -8808,7 +8856,8 @@
     {
       "es": "Finalidad",
       "en": [
-        "/politica-de-privacidad/"
+        "/politica-de-privacidad/",
+        "/politica-de-cookies/"
       ]
     },
     {
@@ -8842,6 +8891,30 @@
       ]
     },
     {
+      "es": "Gestionar las cuentas de usuario, el acceso y el soporte técnico",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Medir el uso de la plataforma para mejorarla",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Interés legítimo de Solved",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Garantizar la seguridad del servicio y diagnosticar errores",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
       "es": "Envío de comunicaciones comerciales o información sobre Solved",
       "en": [
         "/politica-de-privacidad/"
@@ -8860,12 +8933,6 @@
       ]
     },
     {
-      "es": "Interés legítimo de Solved",
-      "en": [
-        "/politica-de-privacidad/"
-      ]
-    },
-    {
       "es": "Cumplimiento de obligaciones legales o requerimientos de autoridades",
       "en": [
         "/politica-de-privacidad/"
@@ -8878,73 +8945,337 @@
       ]
     },
     {
-      "es": "4. Conservación de los datos",
+      "es": "5. Conservación de los datos",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Los datos personales se conservarán:",
+      "es": "Contactos comerciales y datos de clientes: mientras se mantenga la relación y, después, durante los plazos necesarios para cumplir obligaciones legales o atender posibles reclamaciones.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Mientras se mantenga la relación comercial o contractual.",
+      "es": "Usuarios dados de baja en la plataforma: su cuenta se elimina definitivamente a los 7 días.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Mientras el usuario no solicite su supresión.",
+      "es": "Elementos eliminados por el cliente (incidencias, acciones, checklists, plantillas): se purgan definitivamente a los 3 meses.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Y posteriormente, durante los plazos necesarios para cumplir obligaciones legales o atender posibles reclamaciones.",
+      "es": "Registros técnicos y de actividad del sistema: se eliminan automáticamente a los 90 días.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "5. Comunicación de datos a terceros",
+      "es": "Copias de seguridad: caducan automáticamente en un máximo de 30 días.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Podemos compartir datos personales únicamente en los siguientes casos:",
+      "es": "Datos del cliente al terminar el servicio: se pueden exportar durante 30 días y después se eliminan, salvo obligación legal de conservación.",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Proveedores de servicios: terceros que prestan servicios técnicos, de alojamiento, marketing o soporte, con los que Solved mantiene contratos de encargo de tratamiento conforme al art. 28 RGPD.",
+      "es": "6. Proveedores y subencargados del tratamiento",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Obligaciones legales: cuando sea necesario para cumplir con una ley, procedimiento judicial o solicitud de una autoridad competente.",
+      "es": "Solved recurre a los siguientes proveedores, con los que mantiene contratos de encargo del tratamiento conforme al artículo 28 del RGPD:",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Operaciones corporativas: en caso de fusión, adquisición o transmisión de activos, siempre garantizando la confidencialidad.",
+      "es": "Subencargado",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "No se realizan transferencias internacionales de datos fuera del Espacio Económico Europeo sin las garantías adecuadas.",
+      "es": "Uso",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "6. Derechos de los usuarios",
+      "es": "Garantía",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google Cloud / Firebase (Firestore, Functions, Storage)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Base de datos, lógica de la aplicación y archivos",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "UE (Bélgica y Países Bajos)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "DPA de Google Cloud",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google Firebase Authentication",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Inicio de sesión, cuentas y teléfono para la verificación en dos pasos por SMS",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "EE. UU.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "SCC y DPF",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google Firebase Cloud Messaging",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Notificaciones push, solo si el usuario las activa",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google Workspace (Gmail)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Envío de los correos de la plataforma",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "UE (datos en reposo); tratamiento puntual fuera",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "DPA de Google Workspace, SCC y DPF",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Amazon Web Services",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Servidores propios de Solved: búsqueda e informes (OpenSearch), registro de errores (Exceptionless) y automatizaciones del soporte (n8n)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "UE (París)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "DPA de AWS",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google Vertex AI, modelos Mistral",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Funciones de inteligencia artificial, por defecto",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "UE (Países Bajos)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "OpenAI, Anthropic, Google Gemini",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Funciones de inteligencia artificial, solo con el consentimiento firmado de la empresa cliente",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "OpenAI",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Respuestas del asistente de soporte, a partir de los mensajes que escribe el usuario",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Slack",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Recepción interna de los mensajes y avisos del soporte",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Mixpanel",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Analítica de uso de la plataforma",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google Analytics",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Google (Maps y Fonts)",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Mapa del pie de página del sitio web, solo si se acepta en el aviso de cookies, y tipografías del sitio web",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Formularios del sitio web y gestión de contactos comerciales",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Zapier",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Entrada de incidencias por correo electrónico, solo si la empresa activa este caso de uso",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Las integraciones que activa el propio cliente, como conectar su buzón de Microsoft 365 o Gmail o su espacio de Microsoft Teams, se rigen por el contrato del cliente con ese proveedor y no son subencargados de Solved.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Además, Solved podrá comunicar datos cuando sea necesario para cumplir una ley, un procedimiento judicial o una solicitud de una autoridad competente, y en caso de fusión, adquisición o transmisión de activos, garantizando siempre la confidencialidad.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "7. Transferencias internacionales",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Cuando un proveedor trata datos fuera del Espacio Económico Europeo, la transferencia se ampara en las Cláusulas Contractuales Tipo de la Comisión Europea (SCC) y, cuando el proveedor está adherido, en el Marco de Privacidad de Datos UE-EE. UU. (DPF).",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "8. Inteligencia artificial",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Las funciones de inteligencia artificial de la plataforma procesan los datos en la Unión Europea, con modelos Mistral alojados en Google Cloud. Solo si la empresa cliente lo autoriza por escrito se utilizan proveedores con tratamiento en EE. UU. (OpenAI, Anthropic, Google Gemini). Cada empresa cliente puede desactivar estas funciones.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "El asistente de soporte de la plataforma utiliza OpenAI para responder a los mensajes que el usuario le escribe. Solo trata lo que el usuario escribe y adjunta en la conversación, junto con su nombre, correo electrónico y empresa; no accede al resto de datos de la empresa en la plataforma.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Solved no utiliza los datos de sus clientes para entrenar modelos de inteligencia artificial, ni propios ni de terceros. Los proveedores de IA procesan los datos únicamente para generar la respuesta solicitada y, conforme a sus condiciones contractuales, no los utilizan para entrenar sus modelos.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "9. Derechos de los usuarios",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -8998,7 +9329,7 @@
       ]
     },
     {
-      "es": ", indicando el derecho que desea ejercer e incluyendo un documento acreditativo de su identidad.",
+      "es": ", indicando el derecho que desea ejercer e incluyendo un documento acreditativo de su identidad. Si se trata de datos que su empresa ha introducido en la plataforma, diríjase a su empresa, que es la responsable de esos datos.",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -9016,19 +9347,55 @@
       ]
     },
     {
-      "es": "7. Seguridad de la información",
+      "es": "10. Seguridad de la información",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "Solved aplica medidas técnicas y organizativas adecuadas para proteger la información personal frente a pérdida, uso indebido, acceso no autorizado, alteración o destrucción. No obstante, ningún sistema es completamente seguro, por lo que no se puede garantizar la seguridad absoluta de la información.",
+      "es": "Solved aplica medidas técnicas y organizativas adecuadas para proteger la información personal frente a pérdida, uso indebido, acceso no autorizado, alteración o destrucción. Entre ellas:",
       "en": [
         "/politica-de-privacidad/"
       ]
     },
     {
-      "es": "8. Enlaces a terceros",
+      "es": "Cifrado de las comunicaciones (TLS) y de los datos en reposo.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Separación lógica de los datos de cada empresa cliente, comprobada en cada acceso.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Acceso solo para usuarios dados de alta por su empresa, con roles y permisos, e inicio de sesión con Google o Microsoft y verificación en dos pasos disponibles.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Copias de seguridad diarias y recuperación a un instante concreto, con pruebas de restauración periódicas.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "Notificación al cliente, en menos de 36 horas desde que se tenga conocimiento, de cualquier violación de seguridad que afecte a datos personales tratados por su cuenta.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "No obstante, ningún sistema es completamente seguro, por lo que no se puede garantizar la seguridad absoluta de la información.",
+      "en": [
+        "/politica-de-privacidad/"
+      ]
+    },
+    {
+      "es": "11. Enlaces a terceros",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -9040,7 +9407,7 @@
       ]
     },
     {
-      "es": "9. Cambios en esta política",
+      "es": "12. Cambios en esta política",
       "en": [
         "/politica-de-privacidad/"
       ]
@@ -9052,31 +9419,13 @@
       ]
     },
     {
-      "es": "Fecha de la última actualización: noviembre de 2025",
-      "en": [
-        "/politica-de-privacidad/"
-      ]
-    },
-    {
       "es": "Solved · Política de Cookies",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Última actualización: 08 de agosto de 2023",
-      "en": [
-        "/politica-de-cookies/"
-      ]
-    },
-    {
-      "es": "Esta Política de Cookies explica qué son las cookies y cómo las utilizamos. Debes leer esta política para entender qué son las cookies, cómo las utilizamos, los tipos de cookies que utilizamos, es decir, la información que recopilamos mediante las cookies, cómo se utiliza esa información y cómo controlar las preferencias de cookies. Para obtener más información sobre cómo utilizamos, almacenamos y mantenemos seguros tus datos personales, consulta nuestra Política de Privacidad.",
-      "en": [
-        "/politica-de-cookies/"
-      ]
-    },
-    {
-      "es": "Tu consentimiento se aplica a los siguientes dominios: trysolved.es, trysolved.com",
+      "es": "Esta Política de Cookies explica qué cookies y tecnologías similares utiliza el sitio web trysolved.com, para qué sirven y cómo puede gestionarlas. Para saber cómo tratamos sus datos personales, consulte nuestra",
       "en": [
         "/politica-de-cookies/"
       ]
@@ -9088,55 +9437,151 @@
       ]
     },
     {
-      "es": "Las cookies son pequeños archivos de texto que se utilizan para almacenar pequeñas piezas de información. Se almacenan en tu dispositivo cuando el sitio web se carga en tu navegador. Estas cookies nos ayudan a que el sitio web funcione correctamente, lo hagan más seguro, proporcionen una mejor experiencia de usuario, y comprendan cómo funciona el sitio web y para analizar qué funciona y dónde necesita mejoras.",
+      "es": "Las cookies son pequeños archivos que un sitio web guarda en su navegador. Otras tecnologías, como el almacenamiento local del navegador, sirven para fines parecidos. En esta política nos referimos a todas ellas como cookies.",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "¿Cómo utilizamos las cookies?",
+      "es": "Qué utiliza este sitio web",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Como con la mayoría de los servicios en línea, nuestro sitio web utiliza cookies de primeras y terceras partes para varios propósitos. Las cookies de primeras partes son en su mayoría necesarias para que el sitio web funcione de la manera correcta, y no recopilan ninguno de tus datos de identificación personal.",
+      "es": "El sitio web de Solved no utiliza cookies de analítica, de publicidad ni de seguimiento. Solo utiliza lo siguiente:",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "¿Qué tipos de cookies utilizamos?",
+      "es": "Elemento",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Esenciales: Algunas cookies son esenciales para que puedas experimentar la funcionalidad completa de nuestro sitio. Nos permiten mantener las sesiones de usuario y prevenir amenazas de seguridad. No recopilan ni almacenan ninguna información personal.",
+      "es": "Duración",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Estadísticas: Estas cookies almacenan información como el número de visitantes al sitio web, el número de visitantes únicos, qué páginas del sitio web se han visitado, la fuente de la visita, etc. Estos datos nos ayudan a entender y analizar cuán bien funciona el sitio web y dónde necesita mejoras.",
+      "es": "solved_cookie_consent (almacenamiento local)",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "¿Cómo puedo controlar las preferencias de cookies?",
+      "es": "Técnica, propia",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Puedes administrar tus preferencias de cookies haciendo clic en el botón “Configuración” y habilitando o deshabilitando las categorías de cookies en la ventana emergente según tus preferencias.",
+      "es": "Recordar si ha aceptado o rechazado el aviso de cookies, para no volver a mostrarlo",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Además de esto, los diferentes navegadores proporcionan diferentes métodos para bloquear y eliminar las cookies utilizadas por los sitios web. Puedes cambiar la configuración de tu navegador para bloquear/eliminar las cookies. Para obtener más información sobre cómo administrar y eliminar cookies, visita wikipedia.org,",
+      "es": "Hasta que borre los datos del navegador",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Mapa de Google Maps del pie de página",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Google",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "De terceros; solo se carga si acepta el aviso",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Mostrar la ubicación de nuestras oficinas. Al cargarse, Google puede instalar sus propias cookies",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Según la política de Google",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Formularios de HubSpot",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Técnica, de terceros",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Enviar las solicitudes de demostración y de contacto que usted rellena",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Según la política de HubSpot",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Google Fonts",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Sin cookies",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Cargar las tipografías del sitio. El navegador se conecta a los servidores de Google, que reciben su dirección IP",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "No aplica",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Cómo gestionar las cookies",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "La primera vez que entra en el sitio verá un aviso con dos opciones. Si pulsa Aceptar, se carga el mapa de Google Maps del pie de página. Si pulsa Rechazar, el mapa no se carga y en su lugar aparece un enlace para abrirlo en Google Maps. Para cambiar su elección, borre los datos de este sitio en su navegador y el aviso volverá a aparecer.",
+      "en": [
+        "/politica-de-cookies/"
+      ]
+    },
+    {
+      "es": "Además, puede bloquear o eliminar las cookies desde la configuración de su navegador. Encontrará más información en",
       "en": [
         "/politica-de-cookies/"
       ]
@@ -9148,13 +9593,13 @@
       ]
     },
     {
-      "es": "Contáctanos",
+      "es": "Contacto",
       "en": [
         "/politica-de-cookies/"
       ]
     },
     {
-      "es": "Si tienes alguna pregunta sobre esta Política de Cookies, por favor contáctanos a info@trysolved.com.",
+      "es": "Si tiene alguna pregunta sobre esta Política de Cookies, escríbanos a",
       "en": [
         "/politica-de-cookies/"
       ]
@@ -9256,13 +9701,13 @@
       ]
     },
     {
-      "es": "Edificio Angels, Sc Puerto, 13, Poblados Marítimos, 46024 Valencia",
+      "es": "Edificio Angels, Carrer del Port 13, 46024 Valencia",
       "en": [
         "chrome.js"
       ]
     },
     {
-      "es": "Ubicación de Solved — Edificio Angels, Valencia",
+      "es": "Ver la ubicación en Google Maps",
       "en": [
         "chrome.js"
       ]
@@ -9286,6 +9731,12 @@
       ]
     },
     {
+      "es": "Términos y Condiciones",
+      "en": [
+        "chrome.js"
+      ]
+    },
+    {
       "es": "Financiado por la Generalitat Valenciana, IVF (Institut Valencià de Finances) y la Unión Europea",
       "en": [
         "chrome.js"
@@ -9298,7 +9749,13 @@
       ]
     },
     {
-      "es": "Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el uso del sitio. Puedes aceptarlas o rechazarlas. Más información en nuestra",
+      "es": "Ubicación de Solved — Edificio Angels, Valencia",
+      "en": [
+        "chrome.js"
+      ]
+    },
+    {
+      "es": "No usamos cookies de analítica ni de publicidad. Si aceptas, cargamos el mapa de Google Maps del pie de página, que instala cookies de Google. Más información en nuestra",
       "en": [
         "chrome.js"
       ]

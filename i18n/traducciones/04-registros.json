@@ -250,16 +250,16 @@
   "Registros / Checklist": { "en": "Records / Checklists", "fr": "Enregistrements / Checklists", "it": "Registrazioni / Checklist", "de": "Aufzeichnungen / Checklisten", "pt": "Registos / Checklist" },
   "Gestión documental para calidad y mantenimiento · Solved": {
     "en": "Document management for quality and maintenance · Solved",
-    "fr": "Gestion documentaire pour la qualité et la maintenance · Solved",
+    "fr": "Gestion documentaire qualité et maintenance · Solved",
     "it": "Gestione documentale per qualità e manutenzione · Solved",
-    "de": "Dokumentenmanagement für Qualität und Instandhaltung · Solved",
+    "de": "Dokumentenmanagement für Qualität & Instandhaltung · Solved",
     "pt": "Gestão documental para qualidade e manutenção · Solved"
   },
   "Controla la versión vigente, la validación y la caducidad de cada documento de planta, y detecta la carpeta incompleta antes de la auditoría, no durante.": {
     "en": "Keep track of the current version, the approval and the expiry date of every plant document, and spot the incomplete folder before the audit, not during it.",
     "fr": "Maîtrisez la version en vigueur, la validation et l'expiration de chaque document d'usine, et repérez le dossier incomplet avant l'audit, pas pendant.",
     "it": "Controlla la versione vigente, la validazione e la scadenza di ogni documento di stabilimento, e individua la cartella incompleta prima dell'audit, non durante.",
-    "de": "Behalten Sie gültige Version, Freigabe und Ablaufdatum jedes Werksdokuments im Blick – und erkennen Sie den unvollständigen Ordner vor dem Audit, nicht währenddessen.",
+    "de": "Gültige Version, Freigabe und Ablaufdatum jedes Werksdokuments im Blick – und den unvollständigen Ordner vor dem Audit erkennen, nicht währenddessen.",
     "pt": "Controle a versão em vigor, a validação e o prazo de validade de cada documento de fábrica, e detete a pasta incompleta antes da auditoria, não durante."
   },
   "Gestión documental": { "en": "Document management", "fr": "Gestion documentaire", "it": "Gestione documentale", "de": "Dokumentenmanagement", "pt": "Gestão documental" },

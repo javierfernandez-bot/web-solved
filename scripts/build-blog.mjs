@@ -41,10 +41,12 @@ async function writeFile(relPath, html) {
 
 // Construye el objeto que consume card() para un post, con la imagen ya
 // resuelta al prefijo de la página que va a renderizar la tarjeta.
-function makeCardItem(post, blogPrefix, featuredMap) {
+// eager: la primera tarjeta de un índice es el LCP de la página; en diferido
+// el navegador la pide tarde.
+function makeCardItem(post, blogPrefix, featuredMap, eager = false) {
   const img = post.featured ? featuredMap.get(post.featured.url) : null;
   const cardPicture = img
-    ? buildPicture(img, { blogPrefix, alt: post.featured.alt || post.title, sizes: '(max-width: 760px) 100vw, 360px', className: 'blog-card__img' })
+    ? buildPicture(img, { blogPrefix, alt: post.featured.alt || post.title, eager, sizes: '(max-width: 760px) 100vw, 360px', className: 'blog-card__img' })
     : '';
   return {
     slug: post.slug,
@@ -132,7 +134,7 @@ async function main() {
     const idxRootPrefix = isFirst ? '../' : '../../../';
     const idxBlogPrefix = isFirst ? '' : '../../';
     const canonical = isFirst ? `${SITE_URL}/blog/` : `${SITE_URL}/blog/page/${page}/`;
-    const cards = slice.map((p) => card(makeCardItem(p, idxBlogPrefix, featuredMap), idxBlogPrefix));
+    const cards = slice.map((p, i) => card(makeCardItem(p, idxBlogPrefix, featuredMap, i === 0), idxBlogPrefix));
     const html = renderIndex({ cards, page, totalPages, rootPrefix: idxRootPrefix, blogPrefix: idxBlogPrefix, canonical });
     await writeFile(isFirst ? 'blog/index.html' : `blog/page/${page}/index.html`, html);
   }

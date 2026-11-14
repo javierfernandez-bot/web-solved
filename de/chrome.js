@@ -145,8 +145,10 @@
     '<div class="footer__in">' +
       '<div class="footer__brand">' +
         '<img class="f-logo" src="' + '/assets/logotipo-solved.webp" alt="Solved" width="1975" height="713" loading="lazy" decoding="async"/>' +
-        '<p class="footer__addr">Edificio Angels, Sc Puerto, 13, Poblados Marítimos, 46024 Valencia</p>' +
-        '<iframe class="footer__map" src="https://maps.google.com/maps?q=Edificio%20Angels%2C%20Carrer%20del%20Port%2013%2C%2046024%20Valencia&z=16&output=embed" title="Standort von Solved — Edificio Angels, Valencia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>' +
+        '<p class="footer__addr">Edificio Angels, Carrer del Port 13, 46024 Valencia</p>' +
+        /* El mapa de Google instala cookies de Google, así que sólo se carga si
+           se ha aceptado el aviso (cargarMapa). Mientras tanto, un enlace. */
+        '<div class="footer__map" data-mapa style="display:flex;align-items:center;justify-content:center;text-align:center;padding:0 16px;background:rgba(255,255,255,.06);font-size:13px"><a href="https://www.google.com/maps/search/?api=1&query=Edificio%20Angels%2C%20Carrer%20del%20Port%2013%2C%2046024%20Valencia" target="_blank" rel="noopener noreferrer">Standort in Google Maps ansehen</a></div>' +
         '<a class="footer__social" href="https://www.linkedin.com/company/trysolved" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21H19.6v-5.3c0-1.26-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg></a>' +
       '</div>' +
       '<div class="footer__col">' +
@@ -170,6 +172,7 @@
         '<ul>' +
           '<li><a href="' + ROOT + 'cookie-richtlinie/">Cookie-Richtlinie</a></li>' +
           '<li><a href="' + ROOT + 'datenschutzerklaerung/">Datenschutzerklärung</a></li>' +
+          '<li><a href="' + ROOT + 'terminos-y-condiciones/">Allgemeine Geschäftsbedingungen</a></li>' +
         '</ul>' +
       '</div>' +
     '</div>' +
@@ -333,8 +336,23 @@
     });
   }
 
+  var CONSENT_KEY = 'solved_cookie_consent';
+
+  /* El iframe de Google Maps sólo entra con el consentimiento aceptado: es lo
+     único del sitio que instala cookies de terceros (ver politica-de-cookies). */
+  function cargarMapa() {
+    var ok = null;
+    try { ok = localStorage.getItem(CONSENT_KEY) === 'accept'; } catch (e) {}
+    if (!ok) return;
+    var hueco = document.querySelector('[data-mapa]');
+    if (!hueco) return;
+    var f = document.createElement('div');
+    f.innerHTML = '<iframe class="footer__map" src="https://maps.google.com/maps?q=Edificio%20Angels%2C%20Carrer%20del%20Port%2013%2C%2046024%20Valencia&z=16&output=embed" title="Standort von Solved — Edificio Angels, Valencia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>';
+    hueco.parentNode.replaceChild(f.firstChild, hueco);
+  }
+
   function initCookieBanner() {
-    var KEY = 'solved_cookie_consent';
+    var KEY = CONSENT_KEY;
     var saved = null;
     try { saved = localStorage.getItem(KEY); } catch (e) {}
     if (saved) return; // ya eligió antes: no volver a mostrar
@@ -343,7 +361,7 @@
     el.setAttribute('role', 'dialog');
     el.setAttribute('aria-label', 'Cookie-Hinweis');
     el.innerHTML =
-      '<p class="cookie-banner__text">Wir verwenden eigene Cookies und Cookies von Dritten, um Ihre Erfahrung zu verbessern und die Nutzung der Website zu analysieren. Sie können sie annehmen oder ablehnen. Weitere Informationen in unserer <a href="' + ROOT + 'cookie-richtlinie/">Cookie-Richtlinie</a>.</p>' +
+      '<p class="cookie-banner__text">Wir verwenden keine Analyse- oder Werbe-Cookies. Wenn Sie zustimmen, laden wir die Google-Maps-Karte in der Fußzeile, die Cookies von Google setzt. Mehr dazu in unserer <a href="' + ROOT + 'cookie-richtlinie/">Cookie-Richtlinie</a>.</p>' +
       '<div class="cookie-banner__actions">' +
         '<button class="btn btn--secondary" type="button" data-cookie="reject">Ablehnen</button>' +
         '<button class="btn btn--primary" type="button" data-cookie="accept">Akzeptieren</button>' +
@@ -354,6 +372,7 @@
       var btn = e.target.closest('[data-cookie]');
       if (!btn) return;
       try { localStorage.setItem(KEY, btn.getAttribute('data-cookie')); } catch (e2) {}
+      cargarMapa();
       el.classList.remove('cookie-banner--in');
       setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 300);
     });
@@ -364,6 +383,7 @@
     if (n) n.innerHTML = NAV;
     var f = document.getElementById('footer');
     if (f) f.innerHTML = FOOTER;
+    cargarMapa();
     injectHubSpot();
     initBenefitsToggle();
     initMobileNav();

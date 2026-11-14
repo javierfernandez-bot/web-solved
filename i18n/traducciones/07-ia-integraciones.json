@@ -144,7 +144,7 @@
     "en": "Integrations with industrial ERP, MES and CMMS · Solved",
     "fr": "Intégrations avec ERP, MES et GMAO industriels · Solved",
     "it": "Integrazioni con ERP, MES e CMMS industriali · Solved",
-    "de": "Integrationen mit industriellen ERP-, MES- und Instandhaltungssystemen · Solved",
+    "de": "Integration mit ERP, MES und Instandhaltung · Solved",
     "pt": "Integrações com ERP, MES e CMMS industriais · Solved"
   },
   "API abierta y 64 conectores con ERP, MES y GMAO: SAP, Dynamics, Odoo, Maximo o Fracttal. Solved opera de forma autónoma; integrar es opción, no requisito.": {
@@ -339,14 +339,14 @@
   "Software de planta para industria no alimentaria · Solved": {
     "en": "Plant software for non-food industry · Solved",
     "fr": "Logiciel d'usine pour l'industrie non alimentaire · Solved",
-    "it": "Software di stabilimento per l'industria non alimentare · Solved",
+    "it": "Software di stabilimento per l'industria non food · Solved",
     "de": "Werkssoftware für die Nicht-Lebensmittelindustrie · Solved",
     "pt": "Software de fábrica para a indústria não alimentar · Solved"
   },
   "Automoción, químico, plástico o iluminación: los partes de control, las incidencias y las acciones correctivas de planta en un único sistema, bajo ISO 9001.": {
     "en": "Automotive, chemicals, plastics or lighting: the plant's control reports, incidents and corrective actions in a single system, under ISO 9001.",
     "fr": "Automobile, chimie, plasturgie ou éclairage : les rapports de contrôle, les incidents et les actions correctives de l'usine dans un seul système, sous ISO 9001.",
-    "it": "Automotive, chimico, plastica o illuminazione: i rapporti di controllo, le anomalie e le azioni correttive dello stabilimento in un unico sistema, sotto ISO 9001.",
+    "it": "Automotive, chimico, plastica o illuminazione: rapporti di controllo, anomalie e azioni correttive dello stabilimento in un unico sistema, secondo ISO 9001.",
     "de": "Automobil, Chemie, Kunststoff oder Beleuchtung: Kontrollmeldungen, Störungen und Korrekturmaßnahmen des Werks in einem System, nach ISO 9001.",
     "pt": "Automóvel, química, plástico ou iluminação: os partes de controlo, as ocorrências e as ações corretivas da fábrica num único sistema, sob a norma ISO 9001."
   },

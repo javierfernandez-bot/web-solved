@@ -58,9 +58,9 @@
   },
   "Registro de incidencias desde el móvil y en el punto de detección. Cada una deriva en una acción con responsable, fecha y trazabilidad hasta su cierre.": {
     "en": "Log incidents from a phone, right where they are spotted. Each one turns into an action with an owner, a date and traceability through to closure.",
-    "fr": "Enregistrement des incidents depuis le téléphone, au point de détection. Chacun donne lieu à une action avec responsable, date et traçabilité jusqu'à sa clôture.",
+    "fr": "Enregistrement des incidents sur le téléphone, au point de détection. Chacun donne lieu à une action avec responsable, date et traçabilité jusqu'à la clôture.",
     "it": "Registrazione delle anomalie dal telefono, nel punto di rilevazione. Ognuna genera un'azione con responsabile, data e tracciabilità fino alla chiusura.",
-    "de": "Störungen per Smartphone direkt am Ort der Feststellung erfassen. Jede wird zu einer Maßnahme mit Verantwortlichem, Termin und Nachvollziehbarkeit bis zum Abschluss.",
+    "de": "Störungen per Smartphone am Ort der Feststellung erfassen. Jede wird zur Maßnahme mit Verantwortlichem, Termin und Nachvollziehbarkeit bis zum Abschluss.",
     "pt": "Registo de ocorrências a partir do telemóvel e no ponto de deteção. Cada uma dá origem a uma ação com responsável, data e rastreabilidade até ao encerramento."
   },
   "Gestión de incidencias": {
@@ -982,9 +982,9 @@
   },
   "Limpieza, temperaturas, pesos y preventivos de mantenimiento, en el móvil de planta. Un control con resultado KO abre la incidencia con responsable y plazo.": {
     "en": "Cleaning, temperatures, weights and preventive maintenance, on the shop-floor phone. A check that comes back KO opens the incident with an owner and a deadline.",
-    "fr": "Nettoyage, températures, pesées et préventifs de maintenance, sur le téléphone de l'usine. Un contrôle au résultat KO ouvre l'incident avec responsable et échéance.",
+    "fr": "Nettoyage, températures, pesées et préventifs de maintenance, sur le téléphone de l'usine. Un contrôle KO ouvre l'incident avec responsable et échéance.",
     "it": "Pulizia, temperature, pesi e preventivi di manutenzione, sul telefono di stabilimento. Un controllo con esito KO apre l'anomalia con responsabile e scadenza.",
-    "de": "Reinigung, Temperaturen, Gewichte und vorbeugende Instandhaltung – auf dem Smartphone im Werk. Eine Kontrolle mit Ergebnis KO öffnet die Störung mit Verantwortlichem und Frist.",
+    "de": "Reinigung, Temperaturen, Gewichte und vorbeugende Wartung auf dem Smartphone im Werk. Eine KO-Kontrolle öffnet die Störung mit Verantwortlichem und Frist.",
     "pt": "Limpeza, temperaturas, pesos e preventivos de manutenção, no telemóvel de fábrica. Um controlo com resultado KO abre a ocorrência com responsável e prazo."
   },
   "Registros y auditorías": {

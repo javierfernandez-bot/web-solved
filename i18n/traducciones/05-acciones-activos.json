@@ -45,7 +45,7 @@
   },
   "Gestor documental": { "en": "Document manager", "fr": "Gestionnaire documentaire", "it": "Gestore documentale", "de": "Dokumentenverwaltung", "pt": "Gestão documental" },
   "Acciones correctivas y no conformidades en planta · Solved": {
-    "en": "Corrective actions and non-conformities on the plant floor · Solved",
+    "en": "Corrective actions and non-conformities in plants · Solved",
     "fr": "Actions correctives et non-conformités en usine · Solved",
     "it": "Azioni correttive e non conformità in stabilimento · Solved",
     "de": "Korrekturmaßnahmen und Abweichungen im Werk · Solved",
@@ -53,10 +53,10 @@
   },
   "Cada no conformidad, con responsable, fecha y análisis de causa raíz. Trazabilidad completa de la detección al cierre, con seguimiento automático del plazo.": {
     "en": "Every non-conformity, with an owner, a date and a root cause analysis. Full traceability from detection to closure, with the deadline tracked automatically.",
-    "fr": "Chaque non-conformité, avec responsable, date et analyse de cause racine. Traçabilité complète de la détection à la clôture, avec suivi automatique de l'échéance.",
-    "it": "Ogni non conformità, con responsabile, data e analisi della causa radice. Tracciabilità completa dal rilevamento alla chiusura, con monitoraggio automatico della scadenza.",
-    "de": "Jede Abweichung mit Verantwortlichem, Datum und Ursachenanalyse. Vollständige Nachvollziehbarkeit von der Erkennung bis zum Abschluss, mit automatischer Fristenverfolgung.",
-    "pt": "Cada não conformidade, com responsável, data e análise da causa raiz. Rastreabilidade completa da deteção ao encerramento, com acompanhamento automático do prazo."
+    "fr": "Chaque non-conformité, avec responsable, date et analyse des causes. Traçabilité complète de la détection à la clôture, avec suivi automatique de l'échéance.",
+    "it": "Ogni non conformità con responsabile, data e analisi della causa radice. Tracciabilità dal rilevamento alla chiusura e monitoraggio automatico della scadenza.",
+    "de": "Jede Abweichung mit Verantwortlichem, Datum und Ursachenanalyse. Nachvollziehbar von der Erkennung bis zum Abschluss, mit automatischer Fristkontrolle.",
+    "pt": "Cada não conformidade com responsável, data e análise da causa raiz. Rastreabilidade completa da deteção ao encerramento e acompanhamento automático do prazo."
   },
   "Acciones · Tareas · No conformidades": { "en": "Actions · Tasks · Non-conformities", "fr": "Actions · Tâches · Non-conformités", "it": "Azioni · Attività · Non conformità", "de": "Maßnahmen · Aufgaben · Abweichungen", "pt": "Ações · Tarefas · Não conformidades" },
   "Cierra cada no conformidad con responsable y plazo,": {
@@ -366,7 +366,7 @@
   },
   "Cada máquina con su ficha, su QR y su historial: las incidencias, los registros y las acciones de ese equipo en un solo sitio, sin cambiar de herramienta.": {
     "en": "Every machine with its record, its QR code and its history: that asset's incidents, records and actions in one place, without switching tools.",
-    "fr": "Chaque machine avec sa fiche, son QR et son historique : les incidents, les enregistrements et les actions de cet équipement au même endroit, sans changer d'outil.",
+    "fr": "Chaque machine avec sa fiche, son QR et son historique : incidents, enregistrements et actions de cet équipement au même endroit, sans changer d'outil.",
     "it": "Ogni macchina con la sua scheda, il suo QR e il suo storico: anomalie, registrazioni e azioni di quell'asset in un solo posto, senza cambiare strumento.",
     "de": "Jede Maschine mit Datensatz, QR-Code und Historie: Störungen, Aufzeichnungen und Maßnahmen dieser Anlage an einem Ort, ohne Werkzeugwechsel.",
     "pt": "Cada máquina com a sua ficha, o seu QR e o seu histórico: as ocorrências, os registos e as ações desse equipamento num único sítio, sem mudar de ferramenta."

@@ -365,9 +365,9 @@
   },
   "Registros de APPCC, controles de proceso y trazabilidad de lote en el móvil de planta. La documentación de IFS o BRC, generada en la propia línea de producción.": {
     "en": "HACCP records, process checks and batch traceability on the shop-floor phone. The IFS or BRC paperwork, produced on the production line itself.",
-    "fr": "Enregistrements HACCP, contrôles de procédé et traçabilité de lot sur le téléphone de l'usine. La documentation IFS ou BRC, produite sur la ligne de production elle-même.",
-    "it": "Registrazioni HACCP, controlli di processo e tracciabilità di lotto sul telefono di stabilimento. La documentazione IFS o BRC, generata sulla linea di produzione stessa.",
-    "de": "HACCP-Aufzeichnungen, Prozesskontrollen und Chargenrückverfolgbarkeit auf dem Werks-Smartphone. Die IFS- oder BRC-Unterlagen entstehen direkt an der Produktionslinie.",
+    "fr": "Enregistrements HACCP, contrôles de procédé et traçabilité des lots sur le téléphone de l'usine. La documentation IFS ou BRC, produite sur la ligne même.",
+    "it": "Registrazioni HACCP, controlli di processo e tracciabilità di lotto sul telefono di stabilimento. La documentazione IFS o BRC, generata sulla linea stessa.",
+    "de": "HACCP-Aufzeichnungen, Prozesskontrollen und Chargenrückverfolgung auf dem Werks-Smartphone. Die IFS- oder BRC-Unterlagen entstehen direkt an der Linie.",
     "pt": "Registos de HACCP, controlos de processo e rastreabilidade de lote no telemóvel de fábrica. A documentação de IFS ou BRC, gerada na própria linha de produção."
   },
   "Industria alimentaria": {

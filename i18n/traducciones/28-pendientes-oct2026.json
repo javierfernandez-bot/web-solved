@@ -1646,10 +1646,10 @@
  },
  "Funciones de IA integradas en Solved: crea incidencias desde un correo, importa checklists, genera informes y responde preguntas citando el registro de origen.": {
   "en": "AI features built into Solved: create incidents from an email, import checklists, generate reports and answer questions citing the source record.",
-  "fr": "Fonctionnalités d'IA intégrées à Solved : créer des incidents à partir d'un e-mail, importer des checklists, générer des rapports et répondre aux questions en citant l'enregistrement source.",
-  "it": "Funzionalità di IA integrate in Solved: crea anomalie da un'e-mail, importa checklist, genera report e risponde alle domande citando la registrazione di origine.",
-  "de": "In Solved integrierte KI-Funktionen: Erstellt Störungen aus einer E-Mail, importiert Checklisten, erstellt Berichte und beantwortet Fragen unter Angabe der Quellaufzeichnung.",
-  "pt": "Funcionalidades de IA integradas no Solved: cria ocorrências a partir de um e-mail, importa checklists, gera relatórios e responde a perguntas citando o registo de origem."
+  "fr": "L'IA intégrée à Solved crée des incidents depuis un e-mail, importe des checklists, génère des rapports et répond en citant l'enregistrement source.",
+  "it": "Funzioni di IA integrate in Solved: crea anomalie da un'e-mail, importa checklist, genera report e risponde alle domande citando la registrazione d'origine.",
+  "de": "KI in Solved: Störungen aus einer E-Mail anlegen, Checklisten importieren, Berichte erstellen und Fragen mit Verweis auf die Quellaufzeichnung beantworten.",
+  "pt": "Funções de IA integradas no Solved: cria ocorrências a partir de um e-mail, importa checklists, gera relatórios e responde citando o registo de origem."
  },
  "Multiplica la capacidad de": {
   "en": "Multiply the capacity of",

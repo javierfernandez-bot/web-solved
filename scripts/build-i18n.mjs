@@ -45,7 +45,12 @@ function urlAbsoluta(ruta) { return SITIO + ruta; }
 const alternos = (rutaEs) => alternosDe(rutaEs, SITIO, TARGETS);
 
 function ponerAlternos($, rutaEs) {
-  $('link[rel="alternate"][hreflang]').remove();
+  /* Con el salto de línea que precede a cada enlace: si no, cada ejecución deja
+     una línea en blanco más en todas las páginas. */
+  $('link[rel="alternate"][hreflang]').each((_, el) => {
+    const prev = el.prev;
+    if (prev && prev.type === 'text' && !prev.data.trim()) $(prev).remove();
+  }).remove();
   const marca = alternos(rutaEs)
     .map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}"/>`)
     .join('\n');
@@ -81,7 +86,10 @@ function traducirPagina(htmlEs, { rutaEs, lang, noIndexar }) {
     });
   }
 
-  // JSON-LD: las URLs también cambian de idioma.
+  /* JSON-LD: las URLs también cambian de idioma. Salvo las de la empresa
+     (#organization) y el sitio (#website): son el mismo nodo en los seis
+     idiomas, y darle a cada idioma una `url` distinta es declarar a Google seis
+     valores para una misma entidad. */
   $('script[type="application/ld+json"]').each((_, el) => {
     const $el = $(el);
     let datos;
@@ -89,6 +97,7 @@ function traducirPagina(htmlEs, { rutaEs, lang, noIndexar }) {
     const paseo = (o) => {
       if (Array.isArray(o)) return o.forEach(paseo);
       if (!o || typeof o !== 'object') return;
+      if (typeof o['@id'] === 'string' && /#(organization|website)$/.test(o['@id'])) return;
       for (const [k, v] of Object.entries(o)) {
         if (typeof v === 'string' && (k === 'url' || k === 'item') && v.startsWith(SITIO)) {
           const ruta = v.slice(SITIO.length) || '/';

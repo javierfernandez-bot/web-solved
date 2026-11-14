@@ -135,6 +135,22 @@ jobs:
         if: steps.build.outcome == 'success'
         run: npm run build:enlaces
 
+      # Traducciones del blog y del glosario, y hreflang del español. build:blog
+      # reescribe /blog desde WordPress y se lleva los hreflang por delante: sin
+      # este paso los posts españoles se quedaban sin enlaces a sus traducciones
+      # (pasó de octubre a noviembre de 2026). También pone noindex a las
+      # traducciones que siguen mayormente en español. Va después de
+      # build:enlaces para que las traducciones lleven el enlazado interno.
+      - name: Traducciones del blog y del glosario
+        if: steps.build.outcome == 'success'
+        run: npm run build:i18n:contenido
+
+      # El sitemap que escribe build:blog se rehace aquí para que deje fuera las
+      # traducciones que el paso anterior ha marcado noindex.
+      - name: Sitemap
+        if: steps.build.outcome == 'success'
+        run: npm run build:sitemap
+
       - name: Commit si hay cambios
         if: steps.build.outcome == 'success'
         run: |
