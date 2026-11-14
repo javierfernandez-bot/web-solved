@@ -1,0 +1,249 @@
+{
+  "_nota": "Política de Privacidad, revisión de noviembre de 2026 (es -> en). Sin fr/it/de/pt todavía.",
+  "En Solved valoramos y protegemos la privacidad de las personas cuyos datos tratamos. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos los datos personales cuando accede a nuestro sitio web": {
+    "en": "At Solved we value and protect the privacy of the people whose data we process. This Privacy Policy explains how we collect, use and protect personal data when you visit our website"
+  },
+  "y cuando utiliza la plataforma Solved.": {
+    "en": "and when you use the Solved platform."
+  },
+  "Inscrita en el Registro Mercantil de Valencia, Tomo 10983, Libro 8261, Folio 169, Hoja V-198036": {
+    "en": "Registered with the Commercial Registry of Valencia, Volume 10983, Book 8261, Page 169, Sheet V-198036"
+  },
+  "Delegado de Protección de Datos (DPO): no se ha designado DPO. Las consultas sobre privacidad se atienden en la dirección anterior.": {
+    "en": "Data Protection Officer (DPO): no DPO has been appointed. Privacy enquiries are handled at the address above."
+  },
+  "2. Ámbito: cuándo actuamos como responsable y cuándo como encargado": {
+    "en": "2. Scope: when we act as controller and when as processor"
+  },
+  "Solved actúa como responsable del tratamiento de los datos del sitio web, de los contactos comerciales, de la gestión de las cuentas de sus clientes, del soporte y de la analítica de uso de la plataforma.": {
+    "en": "Solved acts as data controller for website data, sales contacts, the management of its customers' accounts, support and usage analytics of the platform."
+  },
+  "Los datos que cada empresa cliente introduce en la plataforma (incidencias, registros, checklists, documentos, activos y los datos de sus empleados) pertenecen al cliente, que es su responsable. Solved los trata únicamente como encargado del tratamiento, por cuenta del cliente y conforme al contrato del artículo 28 del RGPD firmado con él. Si su empresa utiliza Solved y quiere ejercer sus derechos sobre esos datos, diríjase a su empresa; Solved le prestará la asistencia necesaria.": {
+    "en": "The data each customer company enters into the platform (incidents, records, checklists, documents, assets and its employees' data) belongs to the customer, which is its controller. Solved processes it solely as a data processor, on the customer's behalf and under the Article 28 GDPR agreement signed with it. If your company uses Solved and you wish to exercise your rights over that data, please contact your company; Solved will provide the necessary assistance."
+  },
+  "3. Información que recopilamos": {
+    "en": "3. Information we collect"
+  },
+  "Datos de cuenta en la plataforma: nombre, correo electrónico, puesto, empresa, plantas y departamentos asignados, idioma y, si se activa la verificación en dos pasos, número de teléfono.": {
+    "en": "Platform account data: name, email address, job title, company, assigned plants and departments, language and, if two-step verification is enabled, phone number."
+  },
+  "Datos de uso de la plataforma: pantallas visitadas, acciones realizadas, fecha del último acceso, dispositivo y navegador, y registros técnicos de errores.": {
+    "en": "Platform usage data: screens visited, actions performed, last sign-in date, device and browser, and technical error logs."
+  },
+  "Mensajes de soporte: lo que el usuario escribe en el asistente de soporte, junto con su nombre, correo electrónico y las capturas que adjunte.": {
+    "en": "Support messages: what the user writes in the support assistant, together with their name, email address and any screenshots they attach."
+  },
+  "Datos de navegación en el sitio web: dirección IP, tipo de navegador, sistema operativo, páginas visitadas y tiempo de navegación.": {
+    "en": "Website browsing data: IP address, browser type, operating system, pages visited and browsing time."
+  },
+  "4. Finalidad y base legal del tratamiento": {
+    "en": "4. Purpose and legal basis for processing"
+  },
+  "Gestionar las cuentas de usuario, el acceso y el soporte técnico": {
+    "en": "Managing user accounts, access and technical support"
+  },
+  "Medir el uso de la plataforma para mejorarla": {
+    "en": "Measuring platform usage in order to improve it"
+  },
+  "Garantizar la seguridad del servicio y diagnosticar errores": {
+    "en": "Ensuring the security of the service and diagnosing errors"
+  },
+  "5. Conservación de los datos": {
+    "en": "5. Data retention"
+  },
+  "Contactos comerciales y datos de clientes: mientras se mantenga la relación y, después, durante los plazos necesarios para cumplir obligaciones legales o atender posibles reclamaciones.": {
+    "en": "Sales contacts and customer data: for as long as the relationship lasts and, afterwards, for the periods needed to meet legal obligations or handle possible claims."
+  },
+  "Usuarios dados de baja en la plataforma: su cuenta se elimina definitivamente a los 7 días.": {
+    "en": "Users removed from the platform: their account is permanently deleted after 7 days."
+  },
+  "Elementos eliminados por el cliente (incidencias, acciones, checklists, plantillas): se purgan definitivamente a los 3 meses.": {
+    "en": "Items deleted by the customer (incidents, actions, checklists, templates): permanently purged after 3 months."
+  },
+  "Registros técnicos y de actividad del sistema: se eliminan automáticamente a los 90 días.": {
+    "en": "Technical and system activity logs: automatically deleted after 90 days."
+  },
+  "Copias de seguridad: caducan automáticamente en un máximo de 30 días.": {
+    "en": "Backups: automatically expire within 30 days at most."
+  },
+  "Datos del cliente al terminar el servicio: se pueden exportar durante 30 días y después se eliminan, salvo obligación legal de conservación.": {
+    "en": "Customer data when the service ends: can be exported for 30 days and are then deleted, unless there is a legal obligation to retain them."
+  },
+  "6. Proveedores y subencargados del tratamiento": {
+    "en": "6. Providers and sub-processors"
+  },
+  "Solved recurre a los siguientes proveedores, con los que mantiene contratos de encargo del tratamiento conforme al artículo 28 del RGPD:": {
+    "en": "Solved relies on the following providers, with which it has data processing agreements under Article 28 GDPR:"
+  },
+  "Uso": {
+    "en": "Use"
+  },
+  "Garantía": {
+    "en": "Safeguard"
+  },
+  "Google Cloud / Firebase (Firestore, Functions, Storage)": {
+    "en": "Google Cloud / Firebase (Firestore, Functions, Storage)"
+  },
+  "Base de datos, lógica de la aplicación y archivos": {
+    "en": "Database, application logic and files"
+  },
+  "UE (Bélgica y Países Bajos)": {
+    "en": "EU (Belgium and the Netherlands)"
+  },
+  "DPA de Google Cloud": {
+    "en": "Google Cloud DPA"
+  },
+  "Google Firebase Authentication": {
+    "en": "Google Firebase Authentication"
+  },
+  "Inicio de sesión, cuentas y teléfono para la verificación en dos pasos por SMS": {
+    "en": "Sign-in, accounts and phone number for SMS two-step verification"
+  },
+  "EE. UU.": {
+    "en": "USA"
+  },
+  "SCC y DPF": {
+    "en": "SCCs and DPF"
+  },
+  "Google Firebase Cloud Messaging": {
+    "en": "Google Firebase Cloud Messaging"
+  },
+  "Notificaciones push, solo si el usuario las activa": {
+    "en": "Push notifications, only if the user enables them"
+  },
+  "Google Workspace (Gmail)": {
+    "en": "Google Workspace (Gmail)"
+  },
+  "Envío de los correos de la plataforma": {
+    "en": "Sending platform emails"
+  },
+  "UE (datos en reposo); tratamiento puntual fuera": {
+    "en": "EU (data at rest); occasional processing outside"
+  },
+  "DPA de Google Workspace, SCC y DPF": {
+    "en": "Google Workspace DPA, SCCs and DPF"
+  },
+  "Amazon Web Services": {
+    "en": "Amazon Web Services"
+  },
+  "Servidores propios de Solved: búsqueda e informes (OpenSearch), registro de errores (Exceptionless) y automatizaciones del soporte (n8n)": {
+    "en": "Solved's own servers: search and reports (OpenSearch), error logging (Exceptionless) and support automations (n8n)"
+  },
+  "UE (París)": {
+    "en": "EU (Paris)"
+  },
+  "DPA de AWS": {
+    "en": "AWS DPA"
+  },
+  "Google Vertex AI, modelos Mistral": {
+    "en": "Google Vertex AI, Mistral models"
+  },
+  "Funciones de inteligencia artificial, por defecto": {
+    "en": "Artificial intelligence features, by default"
+  },
+  "UE (Países Bajos)": {
+    "en": "EU (the Netherlands)"
+  },
+  "OpenAI, Anthropic, Google Gemini": {
+    "en": "OpenAI, Anthropic, Google Gemini"
+  },
+  "Funciones de inteligencia artificial, solo con el consentimiento firmado de la empresa cliente": {
+    "en": "Artificial intelligence features, only with the signed consent of the customer company"
+  },
+  "OpenAI": {
+    "en": "OpenAI"
+  },
+  "Respuestas del asistente de soporte, a partir de los mensajes que escribe el usuario": {
+    "en": "Support assistant answers, based on the messages the user writes"
+  },
+  "Slack": {
+    "en": "Slack"
+  },
+  "Recepción interna de los mensajes y avisos del soporte": {
+    "en": "Internal handling of support messages and reports"
+  },
+  "Mixpanel": {
+    "en": "Mixpanel"
+  },
+  "Analítica de uso de la plataforma": {
+    "en": "Platform usage analytics"
+  },
+  "Google Analytics": {
+    "en": "Google Analytics"
+  },
+  "Analítica de uso de la plataforma y del sitio web": {
+    "en": "Platform and website usage analytics"
+  },
+  "Formularios del sitio web y gestión de contactos comerciales": {
+    "en": "Website forms and sales contact management"
+  },
+  "Zapier": {
+    "en": "Zapier"
+  },
+  "Entrada de incidencias por correo electrónico, solo si la empresa activa este caso de uso": {
+    "en": "Email-to-incident intake, only if the company enables this use case"
+  },
+  "Las integraciones que activa el propio cliente, como conectar su buzón de Microsoft 365 o Gmail o su espacio de Microsoft Teams, se rigen por el contrato del cliente con ese proveedor y no son subencargados de Solved.": {
+    "en": "Integrations enabled by the customer itself, such as connecting its Microsoft 365 or Gmail mailbox or its Microsoft Teams workspace, are governed by the customer's contract with that provider and are not Solved sub-processors."
+  },
+  "Además, Solved podrá comunicar datos cuando sea necesario para cumplir una ley, un procedimiento judicial o una solicitud de una autoridad competente, y en caso de fusión, adquisición o transmisión de activos, garantizando siempre la confidencialidad.": {
+    "en": "Solved may also disclose data when required to comply with a law, legal proceedings or a request from a competent authority, and in the event of a merger, acquisition or transfer of assets, always ensuring confidentiality."
+  },
+  "7. Transferencias internacionales": {
+    "en": "7. International transfers"
+  },
+  "Cuando un proveedor trata datos fuera del Espacio Económico Europeo, la transferencia se ampara en las Cláusulas Contractuales Tipo de la Comisión Europea (SCC) y, cuando el proveedor está adherido, en el Marco de Privacidad de Datos UE-EE. UU. (DPF).": {
+    "en": "When a provider processes data outside the European Economic Area, the transfer relies on the European Commission's Standard Contractual Clauses (SCCs) and, where the provider is certified, on the EU-U.S. Data Privacy Framework (DPF)."
+  },
+  "8. Inteligencia artificial": {
+    "en": "8. Artificial intelligence"
+  },
+  "Las funciones de inteligencia artificial de la plataforma procesan los datos en la Unión Europea, con modelos Mistral alojados en Google Cloud. Solo si la empresa cliente lo autoriza por escrito se utilizan proveedores con tratamiento en EE. UU. (OpenAI, Anthropic, Google Gemini). Cada empresa cliente puede desactivar estas funciones.": {
+    "en": "The platform's artificial intelligence features process data in the European Union, using Mistral models hosted on Google Cloud. Providers with processing in the USA (OpenAI, Anthropic, Google Gemini) are only used if the customer company authorises it in writing. Each customer company can turn these features off."
+  },
+  "Solved no utiliza los datos de sus clientes para entrenar modelos de inteligencia artificial, ni propios ni de terceros. Los proveedores de IA procesan los datos únicamente para generar la respuesta solicitada y, conforme a sus condiciones contractuales, no los utilizan para entrenar sus modelos.": {
+    "en": "Solved does not use its customers' data to train artificial intelligence models, whether its own or third parties'. AI providers process the data solely to generate the requested response and, under their contractual terms, do not use it to train their models."
+  },
+  "9. Derechos de los usuarios": {
+    "en": "9. Your rights"
+  },
+  ", indicando el derecho que desea ejercer e incluyendo un documento acreditativo de su identidad. Si se trata de datos que su empresa ha introducido en la plataforma, diríjase a su empresa, que es la responsable de esos datos.": {
+    "en": ", stating the right you wish to exercise and including proof of your identity. For data your company has entered into the platform, please contact your company, which is the controller of that data."
+  },
+  "10. Seguridad de la información": {
+    "en": "10. Information security"
+  },
+  "Solved aplica medidas técnicas y organizativas adecuadas para proteger la información personal frente a pérdida, uso indebido, acceso no autorizado, alteración o destrucción. Entre ellas:": {
+    "en": "Solved applies appropriate technical and organisational measures to protect personal information against loss, misuse, unauthorised access, alteration or destruction. They include:"
+  },
+  "Cifrado de las comunicaciones (TLS) y de los datos en reposo.": {
+    "en": "Encryption of communications (TLS) and of data at rest."
+  },
+  "Separación lógica de los datos de cada empresa cliente, comprobada en cada acceso.": {
+    "en": "Logical separation of each customer company's data, checked on every access."
+  },
+  "Acceso solo para usuarios dados de alta por su empresa, con roles y permisos, e inicio de sesión con Google o Microsoft y verificación en dos pasos disponibles.": {
+    "en": "Access only for users created by their company, with roles and permissions, and Google or Microsoft sign-in and two-step verification available."
+  },
+  "Copias de seguridad diarias y recuperación a un instante concreto, con pruebas de restauración periódicas.": {
+    "en": "Daily backups and point-in-time recovery, with regular restore tests."
+  },
+  "Notificación al cliente, en menos de 36 horas desde que se tenga conocimiento, de cualquier violación de seguridad que afecte a datos personales tratados por su cuenta.": {
+    "en": "Notification to the customer, within 36 hours of becoming aware, of any security breach affecting personal data processed on its behalf."
+  },
+  "No obstante, ningún sistema es completamente seguro, por lo que no se puede garantizar la seguridad absoluta de la información.": {
+    "en": "However, no system is completely secure, so absolute security of information cannot be guaranteed."
+  },
+  "11. Enlaces a terceros": {
+    "en": "11. Third-party links"
+  },
+  "12. Cambios en esta política": {
+    "en": "12. Changes to this policy"
+  },
+  "Última actualización: noviembre de 2026": {
+    "en": "Last updated: November 2026"
+  },
+  "Subencargado": {
+    "en": "Sub-processor"
+  }
+}
