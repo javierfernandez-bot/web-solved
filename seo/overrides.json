@@ -1,9 +1,9 @@
 {
   "_readme": "Overrides SEO por slug de post. El build los aplica ENCIMA de lo que llega de WordPress. Campos opcionales: title (etiqueta title completa, con sufijo de marca), description, h1, robots, canonical. Si un slug no aparece aquí, se comporta como siempre.",
   "ficha-tecnica-de-producto-sin-fallos": {
-    "title": "Ficha técnica de producto: qué incluir y ejemplo · Solved",
+    "title": "Ficha técnica de producto que pasa la auditoría · Solved",
     "h1": "Ficha técnica de producto: qué incluir y ejemplo",
-    "description": "Qué debe incluir una ficha técnica de producto alimentario: campos obligatorios, errores que fallan en auditoría y cómo versionarla sin líos."
+    "description": "Qué campos debe llevar una ficha técnica de producto alimentario, los errores que hacen fallar una auditoría y cómo versionarla sin perder el control."
   },
   "analisis-de-peligros-que-evita-sustos": {
     "title": "Análisis de peligros APPCC: tipos y cómo evaluarlos · Solved",
@@ -11,9 +11,9 @@
     "description": "Qué es el análisis de peligros en APPCC, tipos de peligros biológicos, químicos y físicos y cómo evaluar probabilidad y gravedad con criterio."
   },
   "plan-appcc-sin-errores-paso-a-paso": {
-    "title": "Plan APPCC: cómo hacerlo paso a paso · Solved",
+    "title": "Plan APPCC paso a paso: los 7 principios explicados · Solved",
     "h1": "Plan APPCC: cómo hacerlo paso a paso",
-    "description": "Cómo hacer un plan APPCC paso a paso: prerrequisitos, análisis de peligros, PCC, límites críticos, vigilancia y registros. Con ejemplo práctico."
+    "description": "Los 7 principios del APPCC explicados y cómo elaborar tu plan paso a paso: prerrequisitos, análisis de peligros, PCC, límites críticos y registros, con ejemplo."
   },
   "auditoria-interna-de-calidad-sin-sustos": {
     "title": "Auditoría interna de calidad: guía y checklist · Solved",
@@ -36,9 +36,9 @@
     "description": "Métodos de análisis de causa raíz con ejemplos: 5 porqués, Ishikawa y análisis de barreras, y cómo cerrar el ciclo para evitar recaídas."
   },
   "acciones-correctivas-y-preventivas-que-funcionan": {
-    "title": "Acciones correctivas y preventivas: CAPA y ejemplos · Solved",
+    "title": "Acción correctiva vs preventiva: ejemplos · Solved",
     "h1": "Acciones correctivas y preventivas: CAPA y ejemplos",
-    "description": "Diferencia entre acción correctiva y preventiva, ejemplos reales de CAPA y cómo verificar la eficacia antes de cerrar una no conformidad."
+    "description": "Qué separa una acción correctiva de una preventiva, ejemplos de CAPA bien documentados y cómo cerrarlas verificando que la causa no vuelva a aparecer."
   },
   "plan-de-limpieza-y-desinfeccion-clave": {
     "title": "Plan de limpieza y desinfección: cómo hacerlo · Solved",
@@ -49,5 +49,33 @@
     "title": "Gestión de reclamaciones: proceso paso a paso · Solved",
     "h1": "Gestión de reclamaciones: proceso paso a paso",
     "description": "Proceso paso a paso para gestionar reclamaciones de clientes: registro, clasificación, investigación, respuesta y análisis de recurrencias."
+  },
+  "punto-de-control-critico-pcc-guia-practica": {
+    "title": "Punto de control crítico (PCC): 4 preguntas clave · Solved",
+    "description": "Las 4 preguntas del árbol de decisiones del Codex para saber si una etapa es un PCC, cómo fijar límites críticos y cómo registrar la vigilancia sin papel."
+  },
+  "vida-util-de-un-alimento-como-calcularla-bien": {
+    "title": "Vida útil de un alimento: 3 métodos para calcularla · Solved",
+    "description": "Cómo calcular la vida útil de un alimento con estudios acelerados, challenge test y análisis microbiológico, y cuándo aplica caducidad o consumo preferente."
+  },
+  "certificacion-ifs-food-guia-esencial": {
+    "title": "IFS Food: qué exige el auditor y cómo prepararte · Solved",
+    "description": "Qué exige un auditor IFS Food, cómo puntúa las desviaciones y los KO, y qué evidencias y registros conviene tener listos antes del día de la auditoría."
+  },
+  "iso-22000-la-guia-practica-y-definitiva": {
+    "title": "ISO 22000 vs APPCC: diferencias y requisitos clave · Solved",
+    "description": "ISO 22000 y APPCC no son lo mismo: diferencias entre ambos y con la ISO 9001, requisitos clave y la documentación que pide el auditor para certificar."
+  },
+  "gfsi-que-es-y-que-norma-te-conviene": {
+    "title": "GFSI: BRCGS, IFS o FSSC 22000, cuál te conviene · Solved",
+    "description": "GFSI no es una certificación: reconoce BRCGS, IFS Food y FSSC 22000. Cómo elegir según tu cliente y tu mercado y qué documentos te pedirán en cualquiera."
+  },
+  "etiquetado-alimentario-que-exige-la-normativa": {
+    "title": "Etiquetado alimentario: 11 menciones y 6 errores · Solved",
+    "description": "Las 11 menciones obligatorias del etiquetado alimentario, los alérgenos según el Reglamento 1169/2011 y los 6 errores que acaban en una retirada de producto."
+  },
+  "checklist-auditoria-iso-9001-imprescindible": {
+    "title": "Checklist de auditoría ISO 9001 por cláusula · Solved",
+    "description": "Qué debe llevar un checklist de auditoría ISO 9001: criterio de aceptación, evidencias y puntos clave por cláusula, y cómo digitalizarlo con evidencias."
   }
 }
