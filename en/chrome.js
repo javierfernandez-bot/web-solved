@@ -38,7 +38,7 @@
      funciona entera, pero el lead entra etiquetado como petición de contacto,
      que no es lo que ha pedido el visitante. */
   var HUBSPOT = {
-    region: 'na1',
+    region: 'eu1',
     portalId: '20010689',
     formId: 'f8dcbcf5-52c2-464d-a5b1-84824ce89992',
     formIdVideo: {
