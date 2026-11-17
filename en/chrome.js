@@ -165,6 +165,7 @@
           '<li><a href="' + ROOT + 'case-studies/">Case studies</a></li>' +
           '<li><a href="' + ROOT + 'blog/">Blog</a></li>' +
           '<li><a href="' + ROOT + 'glossary/">Glossary</a></li>' +
+          '<li><a href="/empleo/implementation-project-manager/">Careers</a></li>' +
         '</ul>' +
       '</div>' +
       '<div class="footer__col">' +
