@@ -165,6 +165,7 @@
           '<li><a href="' + ROOT + 'casi-di-successo/">Casi di successo</a></li>' +
           '<li><a href="' + ROOT + 'blog/">Blog</a></li>' +
           '<li><a href="' + ROOT + 'glossario/">Glossario</a></li>' +
+          '<li><a href="/empleo/implementation-project-manager/">Lavora con noi</a></li>' +
         '</ul>' +
       '</div>' +
       '<div class="footer__col">' +
