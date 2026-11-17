@@ -577,13 +577,6 @@
     "de": "Sitz: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Spanien",
     "pt": "Sede social: Calle Utiel 58, bajo, 46901 Torrent (Valencia), Espanha"
   },
-  "Oficinas: Edificio Angels, Carrer del Port 13, 46024 Valencia, España": {
-    "en": "Offices: Edificio Angels, Carrer del Port 13, 46024 Valencia, Spain",
-    "fr": "Bureaux : Edificio Angels, Carrer del Port 13, 46024 Valencia, Espagne",
-    "it": "Uffici: Edificio Angels, Carrer del Port 13, 46024 Valencia, Spagna",
-    "de": "Büros: Edificio Angels, Carrer del Port 13, 46024 Valencia, Spanien",
-    "pt": "Escritórios: Edificio Angels, Carrer del Port 13, 46024 Valencia, Espanha"
-  },
   "Oficinas: Marina de Empresas, Sc Puerto 6, 46024 Valencia, España": {
     "en": "Offices: Marina de Empresas, Sc Puerto 6, 46024 Valencia, Spain",
     "fr": "Bureaux : Marina de Empresas, Sc Puerto 6, 46024 Valencia, Espagne",
@@ -815,7 +808,7 @@
     "de": "Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, schreiben Sie uns an",
     "pt": "Se tiver alguma questão sobre esta Política de Cookies, escreva-nos para"
   },
-  "Edificio Angels, Carrer del Port 13, 46024 Valencia": "=",
+  "Marina de Empresas, Sc Puerto 6, 46024 Valencia": "=",
   "Ver la ubicación en Google Maps": {
     "en": "View the location on Google Maps",
     "fr": "Voir l'emplacement sur Google Maps",
