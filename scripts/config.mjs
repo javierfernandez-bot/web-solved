@@ -58,6 +58,7 @@ export const config = {
     { loc: '/industria-alimentaria/',              changefreq: 'monthly', priority: '0.8' },
     { loc: '/industria-general/',                  changefreq: 'monthly', priority: '0.8' },
     { loc: '/software-gmao/',                      changefreq: 'monthly', priority: '0.8' },
+    { loc: '/empleo/implementation-project-manager/', changefreq: 'monthly', priority: '0.5' },
     { loc: '/software-calidad/',                   changefreq: 'monthly', priority: '0.8' },
     { loc: '/glosario/',                           changefreq: 'weekly',  priority: '0.7' },
   ],
